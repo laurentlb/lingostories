@@ -145,21 +145,32 @@ summary {
     top: 0;
     border-radius: 16px;
     padding: 8px 16px;
+    display: none;
 }
 
 .footer {
-    border-top: 2px solid var(--header-border);
+    border-top: 1px solid #aaa;
     position: fixed;
-    /* background: var(--body-background);
-    z-index: 10;
-    bottom: 0;
-    left: 0; */
     bottom: 0;
     height: 140px;
-    /* padding: 30px;
+    background: inherit;
     width: 100%;
-    box-sizing: border-box;
-    padding: 0; */
+    padding: 8px;
+    align-items: center;
+    /* display: flex; */
+    justify-content: center;
+    display: none;
+}
+
+.noVoices, .languageSelector {
+    border: 1px solid #444;
+    border-radius: 16px;
+    padding: 16px 16px;
+    margin: 8px 0;
+}
+
+.noVoices {
+    display: none;
 }
 
 .choices {
@@ -221,24 +232,28 @@ li > label {
     </details>
     </div>
     <div class="middle">
-        <input type="button" value="French" onclick="setLanguage('fr')">
-        <input type="button" value="English" onclick="setLanguage('en')">
-        <input type="button" value="German" onclick="setLanguage('de')">
+        <div class="languageSelector">
+            <p>Select a language to study.</p>
+            <input type="button" value="French" onclick="setLanguage('fr')"><br>
+            <input type="button" value="English" onclick="setLanguage('en')"><br>
+            <input type="button" value="German" onclick="setLanguage('de')">
+        </div>
+        <div class="noVoices" id="no-voices">No voices available.</div>
 
         <div class="story"></div>
         <input type="button" value="..." id="inlineNext"  style="display: none;" onclick="next()">
+        <div style="height: 30vh;"></div>
     </div>
 
-    <div class="footer">
-        <input type="button" value="Next" id="next" onclick="next()">
-        <!-- <input type="button" value="Show All" id="next" onclick="next()"> -->
-    </div>
+</div>
+<div class="footer">
+    <input type="button" value="Next" id="next" onclick="next()">
+    <!-- <input type="button" value="Show All" id="next" onclick="next()"> -->
 </div>
 
 <script>
 let synth = window.speechSynthesis;
 let voices = [];
-let voice = null;
 let spoiler = null;
 let lang = null; // "en-GB";
 const inlineNext = document.getElementById("inlineNext");
@@ -248,10 +263,11 @@ synth.getVoices();
 function updateVoices() {
   synth = window.speechSynthesis;
   voices = synth.getVoices();
-  console.log("updated", voices);
+  console.log("Available voices", voices);
 
   const voiceSelect = document.querySelector("#voice");
   voiceSelect.innerHTML = "";
+  let voicesAvailable = false;
   for (let i = 0; i < voices.length; i++) {
     const option = document.createElement("option");
     if (!voices[i].lang.startsWith(lang)) {
@@ -263,22 +279,14 @@ function updateVoices() {
     option.setAttribute("data-lang", voices[i].lang);
     option.setAttribute("data-name", voices[i].name);
     voiceSelect.appendChild(option);
+    voicesAvailable = true;
   }
 
-  voice = voices.find(voice => voice.lang.replace("_", "-") === lang);
-
-  const main = document.querySelector('.story');
-  const elt = document.createElement("span");
-  elt.textContent = voices.map(voice => voice.lang).join(", ");
-  if (voice) elt.textContent += " --- " + voice.lang;
-  // main.appendChild(elt);
+  document.querySelector("#no-voices").style.display = voicesAvailable ? "none" : "block";
+  if (!voicesAvailable) {
+      document.querySelector("#mode").value = "textOnly";
+  }
 }
-
-window.speechSynthesis.addEventListener("voiceschanged", () => {
-    updateVoices();
-});
-
-updateVoices();
 
 function setLanguage(l) {
     lang = l;
@@ -286,11 +294,12 @@ function setLanguage(l) {
     transLang = l === "en" ? "fr" : "en";
     sentenceIndex = 0;
     document.querySelector('.story').innerHTML = "";
+    document.querySelector('.footer').style.display = "flex";
+    document.querySelector('.top').style.display = "block";
     spoiler = null;
     updateVoices();
     next();
 }
-
 
 const sentences2 =
     {0: 
@@ -353,8 +362,11 @@ let sentenceIndex = 0;
 let pageIndex = 0;
 
 function listen(text) {
-    var msg = new SpeechSynthesisUtterance(text);
     const voice = voices[document.querySelector("#voice").value];
+    if (voice == null) {
+        return;
+    }
+    var msg = new SpeechSynthesisUtterance(text);
     msg.voice = voice;
     msg.lang = lang;
     msg.rate = document.querySelector("#rate").value;
@@ -411,6 +423,7 @@ function showText() {
     if (document.querySelector("#mode").value !== "audioFirst") {
         next();
     }
+    window.scrollTo(0, document.body.scrollHeight);
 }
 
 function openPage(index) {
@@ -451,6 +464,7 @@ function showChoices() {
         container.appendChild(elt);
     }
     main.appendChild(container);
+    window.scrollTo(0, document.body.scrollHeight);
     sentenceIndex++;
 }
 
