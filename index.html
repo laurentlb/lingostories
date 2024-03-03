@@ -16,7 +16,7 @@ body, html {
     letter-spacing: .05em;
     font-size: 1rem;
 
-    --border-color: #555;
+    --border-color: #444;
     --main-text-color: #ddd;
     --secondary-text-color: #8a8;
     --panel-bg-color: ##18181e;
@@ -25,10 +25,7 @@ body, html {
 }
 
 .spoiler {
-    /* color: transparent; */
-    /* background-color: #222; */
     user-select: none;
-    /* border-bottom: 1px #ccc dashed; */
     filter: blur(5px);
     transition: all .2s;
     animation: spoilertext 1s;
@@ -48,13 +45,14 @@ body, html {
 }
 
 input[type="button"] {
-    border: 1px solid #444;
-    background: #0008;
+    border: 1px solid var(--border-color);
+    background: #000;
     color: #fff;
     cursor: pointer;
     border-radius: 16px;
     padding: 8px 16px;
     transition: all .2s;
+    margin: 2px;
 }
 
 input {
@@ -62,7 +60,7 @@ input {
 }
 
 input[type="button"] {
-    border: 1px solid #444;
+    border: 1px solid var(--border-color);
     background: #0008;
     color: #fff;
     cursor: pointer;
@@ -83,13 +81,9 @@ input[type="button"] {
 @keyframes reveal {
     0% {
         filter: blur(5px);
-        /* color: transparent;
-        background-color: #222; */
     }
     100% {
         filter: blur(0px);
-        /* background-color: transparent;
-        color: var(--main-text-color); */
     }
 }
 
@@ -108,7 +102,8 @@ input[type="button"] {
 .img-choice {
     height: 48px;
     cursor: pointer;
-    float: right;
+    vertical-align: middle;
+    margin-right: 8px;
 }
 
 .translation {
@@ -117,15 +112,6 @@ input[type="button"] {
     font-style: italic;
     margin-block-start: 0.2em;
 }
-
-/* body {
-    --color-background: #303030;
-    --color-text: #f9f9f9;
-    --color-accent: #fca;
-
-    background-color: var(--color-background);
-    color: var(--color-text);
-} */
 
 .main {
     max-width: 500px;
@@ -138,7 +124,7 @@ summary {
 
 .top {
     background-color: #101010;
-    border: 1px #444 solid;
+    border: 1px solid var(--border-color);
     padding: 4px;
     position: fixed;
     left: 0;
@@ -149,7 +135,7 @@ summary {
 }
 
 .footer {
-    border-top: 1px solid #aaa;
+    border-top: 1px solid var(--border-color);
     position: fixed;
     bottom: 0;
     height: 140px;
@@ -162,31 +148,30 @@ summary {
     display: none;
 }
 
-.noVoices, .languageSelector {
-    border: 1px solid #444;
+.info {
+    border: 1px solid var(--border-color);
     border-radius: 16px;
     padding: 16px 16px;
     margin: 8px 0;
 }
 
-.noVoices {
-    display: none;
-}
-
 .choices {
-    border: 1px solid #444;
+    border: 1px solid var(--border-color);
     background-color: #000;
     border-radius: 16px;
     padding: 8px 16px;
+    cursor: help;
 }
 
 .choice {
-    line-height: 48px;
+    display: inline-block;
+    width: 80%;
+    vertical-align: middle;
 }
 
 .middle {
     padding: 4px;
-    margin-top: 3em;
+    margin-top: 2em;
 }
 
 li > label {
@@ -213,15 +198,8 @@ li > label {
             <li>
                 <label>Voice speed</label>
                 <input type="range" min="0.4" max="1.2" step="0.2" value="1" class="slider" id="rate">
-            <!-- <li>
-                <label for="showText">Show text immediately</label>
-                <input type="checkbox" id="showText"> -->
             <li> <label>Voice</label>
-                <select id="voice">
-                <!-- <option value="en-GB">English</option>
-                <option value="fr-FR">French</option>
-                <option value="de-DE">German</option> -->
-            </select>
+                <select id="voice"></select>
             <!-- <li> <label>Translations</label>
             <select id="targetLang">
                 <option value="en-GB">English</option>
@@ -232,13 +210,18 @@ li > label {
     </details>
     </div>
     <div class="middle">
-        <div class="languageSelector">
+        <div class="info" id="languageSelector">
             <p>Select a language to study.</p>
             <input type="button" value="French" onclick="setLanguage('fr')"><br>
             <input type="button" value="English" onclick="setLanguage('en')"><br>
             <input type="button" value="German" onclick="setLanguage('de')">
         </div>
-        <div class="noVoices" id="no-voices">No voices available.</div>
+        <div class="info" style="display: none;" id="storySelector">
+            <p>Select a story to read.</p>
+            <input type="button" value="Introduction" onclick="chooseStory(0)"><br>
+            <input type="button" value="Restaurant" onclick="chooseStory(1)"><br>
+        </div>
+        <div class="info" style="display: none;" id="no-voices">No voices available.</div>
 
         <div class="story"></div>
         <input type="button" value="..." id="inlineNext"  style="display: none;" onclick="next()">
@@ -248,15 +231,17 @@ li > label {
 </div>
 <div class="footer">
     <input type="button" value="Next" id="next" onclick="next()">
-    <!-- <input type="button" value="Show All" id="next" onclick="next()"> -->
+    <input type="button" value="Show All" id="next" onclick="showAll();">
+    <input type="button" value="Restart" id="next" onclick="resetStory(); next();">
 </div>
 
 <script>
 let synth = window.speechSynthesis;
 let voices = [];
 let spoiler = null;
-let lang = null; // "en-GB";
-const inlineNext = document.getElementById("inlineNext");
+let lang = null;
+let sentenceIndex = 0;
+let pageIndex = 0;
 
 synth.getVoices();
 
@@ -288,33 +273,86 @@ function updateVoices() {
   }
 }
 
-function setLanguage(l) {
-    lang = l;
-    pageIndex = 0;
-    transLang = l === "en" ? "fr" : "en";
+function resetStory() {
     sentenceIndex = 0;
-    document.querySelector('.story').innerHTML = "";
-    document.querySelector('.footer').style.display = "flex";
-    document.querySelector('.top').style.display = "block";
+    pageIndex = 0;
     spoiler = null;
+    document.querySelector('.story').innerHTML = "";
+}
+
+function setLanguage(l) {
+    resetStory();
+    lang = l;
+    transLang = l === "en" ? "fr" : "en";
+    document.querySelector('.top').style.display = "block";
     updateVoices();
+    document.querySelector("#storySelector").style.display = "block";
+}
+
+let sentences = {};
+
+function chooseStory(index) {
+    document.querySelector('.footer').style.display = "flex";
+
+    const story = index === 0 ? sentences1 : sentences2;
+    for (let page in story) {
+        sentences[page] = {};
+        for (let lang in story[page]) {
+            sentences[page][lang] = story[page][lang][0].split("|");
+            sentences[page][lang].choices = story[page][lang].slice(1);
+        }
+    }
+
+    console.log(sentences);
+    resetStory();
     next();
 }
+
+const sentences1 = {
+    0: {
+        "fr": [
+            "Introduction|Bonjour !|Bienvenue dans LingoStories.|Clique sur une phrase pour voir sa traduction.|Comment ça va ?",
+            "1#Bien, merci.",
+            "1#Pas mal.",
+        ],
+        "en": [
+            "Introduction|Hello!|Welcome to LingoStories.|Click on a sentence to see its translation.|How are you?",
+            "1#Good, thank you.",
+            "1#Not bad.",
+        ],
+        "de": [
+            "Einführung|Hallo!|Willkommen bei LingoStories.|Klick auf einen Satz, um seine Übersetzung zu sehen.|Wie geht es dir?",
+            "1#Gut, danke.",
+            "1#Nicht schlecht.",
+        ]
+    },
+    1: {
+        "fr": [
+            "Sur ce site, il y a des histoires interactives.|Choisis une histoire qui est facile pour toi.|Tu ne comprendras peut-être pas tous les mots.|Ce n'est pas grave.|Continue quand même.|Écoute chaque phrase.|Lis chaque phrase.|Écoute chaque phrase plusieurs fois si tu veux.|Tu reconnaîtras peut-être quelques mots.|Clique sur une phrase pour voir sa traduction.|Ça t'aidera à suivre l'histoire.|Ça t'aidera à comprendre.|Tu peux maintenant choisir une histoire.",
+        ],
+        "en": [
+            "On this website, there are interactive stories.|Choose a story that is easy for you.|You may not understand all the words.|That's okay.|Continue anyway.|Listen to each sentence.|Read each sentence.|Listen to each sentence several times if you want.|You may recognize some words.|Click on a sentence to see its translation.|It will help you follow the story.|It will help you understand.|You can now choose a story.",
+        ],
+        "de": [
+            "Auf dieser Website gibt es interaktive Geschichten.|Wähle eine Geschichte, die für dich einfach ist.|Du verstehst vielleicht nicht alle Wörter.|Das ist in Ordnung.|Mach trotzdem weiter.|Höre dir jeden Satz an.|Lies jeden Satz.|Höre dir jeden Satz mehrmals an, wenn du willst.|Du erkennst vielleicht einige Wörter.|Klicke auf einen Satz, um seine Übersetzung zu sehen.|Es wird dir helfen, der Geschichte zu folgen.|Es wird dir helfen, zu verstehen.|Du kannst jetzt eine Geschichte auswählen.",
+        ]
+    }
+};
 
 const sentences2 =
     {0: 
         {"en": [
-             "You walk in the city and you are hungry.|You look around you.|You see a nice restaurant.|You enter the restaurant.|Inside the restaurant, there are many tables.|There are many people too.|They are eating and talking.|You see a waiter.|The waiter says: \"Hello and welcome to our restaurant!\"|You reply: \"Hello, I would like a table for one.\"|The waiter brings you to a table and asks what you would like to drink.",
+             "At the restaurant|You walk in the city. You are hungry.|You look around you.|You see a nice restaurant.|You enter the restaurant.|Inside the restaurant, there are many tables.|There are many people too.|They are eating and chatting.|You see a waiter.|The waiter says: \"Hello and welcome to our restaurant!\"|You reply: \"Hello, I would like a table for one.\"|The waiter brings you to a table and asks what you would like to drink.",
              "1#Ask for water",
              "2#Ask for wine",
         ],
          "fr": [
-            "Tu marches dans la ville et tu as faim.|Tu regardes autour de toi.|Tu vois un bon restaurant.|Tu entres dans le restaurant.|Dans le restaurant, il y a beaucoup de tables.|Il y a beaucoup de gens.|Ils mangent et discutent.|Tu vois un serveur.|Le serveur dit: \"Bonjour et bienvenue dans notre restaurant!\"|Tu réponds: \"Bonjour, je voudrais une table pour une personne, s'il vous plaît.\"",
+            "Au restaurant|Tu marches dans la ville. Tu as faim.|Tu regardes autour de toi.|Tu vois un bon restaurant.|Tu entres dans le restaurant.|Dans le restaurant, il y a beaucoup de tables.|Il y a beaucoup de gens.|Ils mangent et discutent.|Tu vois un serveur.|Le serveur dit: \"Bonjour et bienvenue dans notre restaurant!\"|Tu réponds: \"Bonjour, je voudrais une table pour une personne, s'il vous plaît.\"",
             "1#Demander de l'eau",
             "2#Demander du vin",
         ],
         "de": [
-            "Du gehst durch die Stadt und bist hungrig.|Du siehst dich um.|Du siehst ein schönes Restaurant.|Du betrittst das Restaurant.|Im Restaurant gibt es viele Tische.|Da sind auch viele Leute.|Das sind sie Essen und Reden.|Du siehst einen Kellner.|Der Kellner sagt: „Hallo und willkommen in unserem Restaurant!“|Du antwortest: „Hallo, ich hätte gerne einen Tisch für eine Person.“|Der Kellner bringt dich zu einen Tisch und fragt, was du trinken möchtest.",
+            "Im Restaurant|Du gehst durch die Stadt. Du bist hungrig.|Du siehst dich um.|Du siehst ein schönes Restaurant.|Du betrittst das Restaurant.|Im Restaurant gibt es viele Tische.|Da sind auch viele Leute.|Sie essen und quatschen.|Du siehst einen Kellner.|Der Kellner sagt: „Hallo und willkommen in unserem Restaurant!“|Du antwortest: „Hallo, ich hätte gerne einen Tisch für eine Person.“|Der Kellner bringt dich zu einen Tisch und fragt, was du trinken möchtest.",
             "1#Bitten Sie um Wasser.",
             "2#Fragen Sie nach Wein.",
         ]
@@ -346,21 +384,6 @@ const sentences2 =
         }
     };
 
-let sentences = {};
-
-for (let page in sentences2) {
-    sentences[page] = {};
-    for (let lang in sentences2[page]) {
-        sentences[page][lang] = sentences2[page][lang][0].split("|");
-        sentences[page][lang].choices = sentences2[page][lang].slice(1);
-    }
-}
-
-console.log(sentences);
-
-let sentenceIndex = 0;
-let pageIndex = 0;
-
 function listen(text) {
     const voice = voices[document.querySelector("#voice").value];
     if (voice == null) {
@@ -375,7 +398,7 @@ function listen(text) {
     speechSynthesis.speak(msg);
 }
 
-function showText() {
+function showText(useSpoiler) {
     const content = sentences[pageIndex][lang][sentenceIndex];
     const icon = document.createElement("img");
     icon.src = "https://d35aaqx5ub95lt.cloudfront.net/images/d636e9502812dfbb94a84e9dfa4e642d.svg";
@@ -385,10 +408,10 @@ function showText() {
     };
 
     const elt = document.createElement("span");
-    if (document.querySelector("#mode").value === "audioFirst") {
+    if (useSpoiler) {
         elt.classList.add("spoiler");
+        spoiler = elt;
     }
-    spoiler = elt;
 
     elt.classList.add("text");
     elt.textContent = content;
@@ -420,9 +443,6 @@ function showText() {
     div.appendChild(transl);
     main.appendChild(div);
 
-    if (document.querySelector("#mode").value !== "audioFirst") {
-        next();
-    }
     window.scrollTo(0, document.body.scrollHeight);
 }
 
@@ -446,11 +466,28 @@ function showChoices() {
         elt.textContent = sentences[pageIndex][lang].choices[i].split("#")[1];
         elt.title = sentences[pageIndex][transLang].choices[i].split("#")[1];
 
+        const transl = document.createElement("p");
+        transl.textContent = sentences[pageIndex][transLang].choices[i].split("#")[1];
+        transl.classList.add("translation");
+        transl.style.display = "none";
+        elt.appendChild(transl);
+
+        elt.onclick = () => {
+            if (transl.style.display === "block") {
+                transl.style.display = "none";
+            }
+            else {
+                transl.style.display = "block";
+            }
+        }
+
         const icon = document.createElement("img");
         icon.src = "https://upload.wikimedia.org/wikipedia/commons/0/0d/Arrow-right-narrow-small.svg";
         icon.classList.add("img-choice");
         icon.onclick = () => {
-            container.style.display = "none";
+            container.innerHTML = "";
+            container.appendChild(elt);
+            
             openPage(Number(text.split("#")[0]));
         };
 
@@ -459,23 +496,54 @@ function showChoices() {
     }
 
     if (choices.length === 0) {
-        const elt = document.createElement("span");
-        elt.textContent = "This is the end of the preview.";
-        container.appendChild(elt);
+        const elt = document.createElement("div");
+        elt.classList.add("info");
+        elt.textContent = "This is the end of the story.";
+        const btn = document.createElement("input");
+        btn.type = "button";
+        btn.value = "End";
+        btn.onclick = () => {
+            resetStory();
+        };
+        elt.appendChild(btn);
+        main.appendChild(elt);
+    } else {
+        main.appendChild(container);
+        sentenceIndex++;
     }
-    main.appendChild(container);
+    const inlineNext = document.getElementById("inlineNext");
+    inlineNext.style.display = "none";
+
     window.scrollTo(0, document.body.scrollHeight);
-    sentenceIndex++;
+}
+
+function revealSpoiler() {
+    spoiler.classList.remove("spoiler");
+    spoiler.classList.add("revealed");
+    spoiler = null;
+    const inlineNext = document.getElementById("inlineNext");
+    inlineNext.style.display = "block";
+}
+
+function showAll() {
+    if (sentenceIndex > sentences[pageIndex][lang].length) {
+        return;
+    }
+    if (spoiler) {
+        revealSpoiler();
+    }
+    while (sentenceIndex < sentences[pageIndex][lang].length) {
+        showText();
+        sentenceIndex++;
+    }
+    showChoices();
 }
 
 const next = () => {
+    const inlineNext = document.getElementById("inlineNext");
+
     if (spoiler) {
-        if (spoiler.classList.contains("spoiler")) {
-            spoiler.classList.remove("spoiler");
-            spoiler.classList.add("revealed");
-        }
-        spoiler = null;
-        inlineNext.style.display = "block";
+        revealSpoiler();
         return;
     }
 
@@ -488,7 +556,11 @@ const next = () => {
     if (sentenceIndex > sentences[pageIndex][lang].length) {
         return;
     }
-    showText();
+    const useSpoiler = document.querySelector("#mode").value === "audioFirst";
+    showText(useSpoiler);
+    if (document.querySelector("#mode").value !== "audioFirst") {
+        inlineNext.style.display = "block";
+    }
     if (document.querySelector("#mode").value !== "textOnly") {
         listen(sentences[pageIndex][lang][sentenceIndex]);
     }
