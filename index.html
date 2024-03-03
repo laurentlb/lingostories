@@ -1,0 +1,484 @@
+<!doctype html>
+<html lang="en">
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+body, html {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(122deg, var(--main-bg-color) 0%, #141414 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: sans-serif;
+    color: var(--main-text-color);
+    letter-spacing: .05em;
+    font-size: 1rem;
+
+    --border-color: #555;
+    --main-text-color: #ddd;
+    --secondary-text-color: #8a8;
+    --panel-bg-color: ##18181e;
+    --panel-hover-bg-color: #101010;
+    --main-bg-color: #303030;
+}
+
+.spoiler {
+    /* color: transparent; */
+    /* background-color: #222; */
+    user-select: none;
+    /* border-bottom: 1px #ccc dashed; */
+    filter: blur(5px);
+    transition: all .2s;
+    animation: spoilertext 1s;
+}
+
+@keyframes spoilertext {
+    0% {
+        color: transparent;
+    }
+    100% {
+        color: var(--main-text-color);
+    }
+}
+
+.revealed {
+    animation: reveal 1s;
+}
+
+input[type="button"] {
+    border: 1px solid #444;
+    background: #0008;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 16px;
+    padding: 8px 16px;
+    transition: all .2s;
+}
+
+input {
+    font-size: 1rem;
+}
+
+input[type="button"] {
+    border: 1px solid #444;
+    background: #0008;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 16px;
+    padding: 8px 16px;
+    transition: all .2s;
+}
+
+.audio:hover, input[type="button"]:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.text:hover {
+    text-shadow: 4px 4px 8px #fff4;
+}
+
+@keyframes reveal {
+    0% {
+        filter: blur(5px);
+        /* color: transparent;
+        background-color: #222; */
+    }
+    100% {
+        filter: blur(0px);
+        /* background-color: transparent;
+        color: var(--main-text-color); */
+    }
+}
+
+.text {
+    cursor: help;
+}
+
+.audio {
+    width: 1rem;
+    height: 1rem;
+    cursor: pointer;
+    padding-right: 8px;
+    transition: all .2s;
+}
+
+.img-choice {
+    height: 48px;
+    cursor: pointer;
+    float: right;
+}
+
+.translation {
+    font-size: 0.8rem;
+    color: #999;
+    font-style: italic;
+    margin-block-start: 0.2em;
+}
+
+/* body {
+    --color-background: #303030;
+    --color-text: #f9f9f9;
+    --color-accent: #fca;
+
+    background-color: var(--color-background);
+    color: var(--color-text);
+} */
+
+.main {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+summary {
+    cursor: pointer;
+}
+
+.top {
+    background-color: #101010;
+    border: 1px #444 solid;
+    padding: 4px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    border-radius: 16px;
+    padding: 8px 16px;
+}
+
+.footer {
+    border-top: 2px solid var(--header-border);
+    position: fixed;
+    /* background: var(--body-background);
+    z-index: 10;
+    bottom: 0;
+    left: 0; */
+    bottom: 0;
+    height: 140px;
+    /* padding: 30px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0; */
+}
+
+.choices {
+    border: 1px solid #444;
+    background-color: #000;
+    border-radius: 16px;
+    padding: 8px 16px;
+}
+
+.choice {
+    line-height: 48px;
+}
+
+.middle {
+    padding: 4px;
+    margin-top: 3em;
+}
+
+li > label {
+    display: inline-block;
+    width: 180px;
+}
+</style>
+
+<div class="main">
+    <div class="top">
+    <details>
+        <summary>Settings</summary>
+        <ul>
+            <li>
+                <label>Navigation mode</label>
+                <select id="mode">
+                    <option value="audioFirst">Audio first, then text</option>
+                    <option value="audioAndText">Audio and text</option>
+                    <option value="textOnly">Text only</option>
+                </select>
+            <li>
+                <label for="volume">Volume</label>
+                <input type="range" min="0" max="1" step="0.01" value="1" class="slider" id="volume">
+            <li>
+                <label>Voice speed</label>
+                <input type="range" min="0.4" max="1.2" step="0.2" value="1" class="slider" id="rate">
+            <!-- <li>
+                <label for="showText">Show text immediately</label>
+                <input type="checkbox" id="showText"> -->
+            <li> <label>Voice</label>
+                <select id="voice">
+                <!-- <option value="en-GB">English</option>
+                <option value="fr-FR">French</option>
+                <option value="de-DE">German</option> -->
+            </select>
+            <!-- <li> <label>Translations</label>
+            <select id="targetLang">
+                <option value="en-GB">English</option>
+                <option value="fr-FR">French</option>
+                <option value="pl-PL">Polish</option>
+            </select> -->
+        </ul>
+    </details>
+    </div>
+    <div class="middle">
+        <input type="button" value="French" onclick="setLanguage('fr')">
+        <input type="button" value="English" onclick="setLanguage('en')">
+        <input type="button" value="German" onclick="setLanguage('de')">
+
+        <div class="story"></div>
+        <input type="button" value="..." id="inlineNext"  style="display: none;" onclick="next()">
+    </div>
+
+    <div class="footer">
+        <input type="button" value="Next" id="next" onclick="next()">
+        <!-- <input type="button" value="Show All" id="next" onclick="next()"> -->
+    </div>
+</div>
+
+<script>
+let synth = window.speechSynthesis;
+let voices = [];
+let voice = null;
+let spoiler = null;
+let lang = null; // "en-GB";
+const inlineNext = document.getElementById("inlineNext");
+
+synth.getVoices();
+
+function updateVoices() {
+  synth = window.speechSynthesis;
+  voices = synth.getVoices();
+  console.log("updated", voices);
+
+  const voiceSelect = document.querySelector("#voice");
+  voiceSelect.innerHTML = "";
+  for (let i = 0; i < voices.length; i++) {
+    const option = document.createElement("option");
+    if (!voices[i].lang.startsWith(lang)) {
+        continue;
+    }
+    option.textContent = voices[i].name;
+    option.value = i;
+
+    option.setAttribute("data-lang", voices[i].lang);
+    option.setAttribute("data-name", voices[i].name);
+    voiceSelect.appendChild(option);
+  }
+
+  voice = voices.find(voice => voice.lang.replace("_", "-") === lang);
+
+  const main = document.querySelector('.story');
+  const elt = document.createElement("span");
+  elt.textContent = voices.map(voice => voice.lang).join(", ");
+  if (voice) elt.textContent += " --- " + voice.lang;
+  // main.appendChild(elt);
+}
+
+window.speechSynthesis.addEventListener("voiceschanged", () => {
+    updateVoices();
+});
+
+updateVoices();
+
+function setLanguage(l) {
+    lang = l;
+    pageIndex = 0;
+    transLang = l === "en" ? "fr" : "en";
+    sentenceIndex = 0;
+    document.querySelector('.story').innerHTML = "";
+    spoiler = null;
+    updateVoices();
+    next();
+}
+
+
+const sentences2 =
+    {0: 
+        {"en": [
+             "You walk in the city and you are hungry.|You look around you.|You see a nice restaurant.|You enter the restaurant.|Inside the restaurant, there are many tables.|There are many people too.|They are eating and talking.|You see a waiter.|The waiter says: \"Hello and welcome to our restaurant!\"|You reply: \"Hello, I would like a table for one.\"|The waiter brings you to a table and asks what you would like to drink.",
+             "1#Ask for water",
+             "2#Ask for wine",
+        ],
+         "fr": [
+            "Tu marches dans la ville et tu as faim.|Tu regardes autour de toi.|Tu vois un bon restaurant.|Tu entres dans le restaurant.|Dans le restaurant, il y a beaucoup de tables.|Il y a beaucoup de gens.|Ils mangent et discutent.|Tu vois un serveur.|Le serveur dit: \"Bonjour et bienvenue dans notre restaurant!\"|Tu réponds: \"Bonjour, je voudrais une table pour une personne, s'il vous plaît.\"",
+            "1#Demander de l'eau",
+            "2#Demander du vin",
+        ],
+        "de": [
+            "Du gehst durch die Stadt und bist hungrig.|Du siehst dich um.|Du siehst ein schönes Restaurant.|Du betrittst das Restaurant.|Im Restaurant gibt es viele Tische.|Da sind auch viele Leute.|Das sind sie Essen und Reden.|Du siehst einen Kellner.|Der Kellner sagt: „Hallo und willkommen in unserem Restaurant!“|Du antwortest: „Hallo, ich hätte gerne einen Tisch für eine Person.“|Der Kellner bringt dich zu einen Tisch und fragt, was du trinken möchtest.",
+            "1#Bitten Sie um Wasser.",
+            "2#Fragen Sie nach Wein.",
+        ]
+        },
+    1:
+        {"en": [
+            "You order water.",
+            "2#Ask for wine",
+        ],
+        "fr": [
+            "Tu commandes de l'eau.",
+            "2#Demander du vin",
+        ],
+        "de": [
+            "Du bestellst Wasser.",
+            "2#Fragen Sie nach Wein.",
+        ],
+    },
+    2:
+        {"en": [
+            "You order wine.",
+        ],
+        "fr": [
+            "Tu commandes du vin.",
+        ],
+        "de": [
+            "Du bestellst Wein.",
+        ],
+        }
+    };
+
+let sentences = {};
+
+for (let page in sentences2) {
+    sentences[page] = {};
+    for (let lang in sentences2[page]) {
+        sentences[page][lang] = sentences2[page][lang][0].split("|");
+        sentences[page][lang].choices = sentences2[page][lang].slice(1);
+    }
+}
+
+console.log(sentences);
+
+let sentenceIndex = 0;
+let pageIndex = 0;
+
+function listen(text) {
+    var msg = new SpeechSynthesisUtterance(text);
+    const voice = voices[document.querySelector("#voice").value];
+    msg.voice = voice;
+    msg.lang = lang;
+    msg.rate = document.querySelector("#rate").value;
+    msg.volume = document.querySelector("#volume").value;
+    speechSynthesis.cancel();
+    speechSynthesis.speak(msg);
+}
+
+function showText() {
+    const content = sentences[pageIndex][lang][sentenceIndex];
+    const icon = document.createElement("img");
+    icon.src = "https://d35aaqx5ub95lt.cloudfront.net/images/d636e9502812dfbb94a84e9dfa4e642d.svg";
+    icon.classList.add("audio");
+    icon.onclick = () => {
+        listen(content);
+    };
+
+    const elt = document.createElement("span");
+    if (document.querySelector("#mode").value === "audioFirst") {
+        elt.classList.add("spoiler");
+    }
+    spoiler = elt;
+
+    elt.classList.add("text");
+    elt.textContent = content;
+
+    const main = document.querySelector('.story');
+
+    const transl = document.createElement("p");
+    transl.textContent = sentences[pageIndex][transLang][sentenceIndex];
+    transl.classList.add("translation");
+    transl.style.display = "none";
+    elt.title = sentences[pageIndex][transLang][sentenceIndex];
+
+    elt.onclick = () => {
+        if (elt.classList.contains("spoiler")) {
+            next();
+            return;
+        }
+        if (transl.style.display === "block") {
+            transl.style.display = "none";
+        }
+        else {
+            transl.style.display = "block";
+        }
+    }
+
+    const div = document.createElement("p");
+    div.appendChild(icon);
+    div.appendChild(elt);
+    div.appendChild(transl);
+    main.appendChild(div);
+
+    if (document.querySelector("#mode").value !== "audioFirst") {
+        next();
+    }
+}
+
+function openPage(index) {
+    pageIndex = index;
+    sentenceIndex = 0;
+    spoiler = null;
+    next();
+}
+
+function showChoices() {
+    const main = document.querySelector('.story');
+    const container = document.createElement("div");
+    container.classList.add("choices");
+
+    const choices = sentences[pageIndex][lang].choices;
+    for (let i = 0; i < choices.length; i++) {
+        const text = sentences[pageIndex][lang].choices[i];
+        const elt = document.createElement("div");
+        elt.classList.add("choice");
+        elt.textContent = sentences[pageIndex][lang].choices[i].split("#")[1];
+        elt.title = sentences[pageIndex][transLang].choices[i].split("#")[1];
+
+        const icon = document.createElement("img");
+        icon.src = "https://upload.wikimedia.org/wikipedia/commons/0/0d/Arrow-right-narrow-small.svg";
+        icon.classList.add("img-choice");
+        icon.onclick = () => {
+            container.style.display = "none";
+            openPage(Number(text.split("#")[0]));
+        };
+
+        container.appendChild(icon);
+        container.appendChild(elt);
+    }
+
+    if (choices.length === 0) {
+        const elt = document.createElement("span");
+        elt.textContent = "This is the end of the preview.";
+        container.appendChild(elt);
+    }
+    main.appendChild(container);
+    sentenceIndex++;
+}
+
+const next = () => {
+    if (spoiler) {
+        if (spoiler.classList.contains("spoiler")) {
+            spoiler.classList.remove("spoiler");
+            spoiler.classList.add("revealed");
+        }
+        spoiler = null;
+        inlineNext.style.display = "block";
+        return;
+    }
+
+    inlineNext.style.display = "none";
+    if (sentenceIndex == sentences[pageIndex][lang].length) {
+        showChoices();
+        sentenceIndex++;
+        return;
+    }
+    if (sentenceIndex > sentences[pageIndex][lang].length) {
+        return;
+    }
+    showText();
+    if (document.querySelector("#mode").value !== "textOnly") {
+        listen(sentences[pageIndex][lang][sentenceIndex]);
+    }
+    sentenceIndex++;
+};
+
+</script>
