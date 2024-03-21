@@ -14,7 +14,7 @@ body, html {
     font-family: sans-serif;
     color: var(--main-text-color);
     letter-spacing: .05em;
-    font-size: 1rem;
+    font-size: 18px;
 
     --border-color: #444;
     --main-text-color: #ddd;
@@ -172,6 +172,7 @@ summary {
     border-radius: 16px;
     padding: 8px 16px;
     cursor: help;
+    margin: 1em 0em;
 }
 
 .choice {
@@ -196,6 +197,11 @@ a {
 
 p {
     margin-block-start: 0em;
+}
+
+details > ul {
+    padding-left: 0;
+    list-style-type: none;
 }
 
 </style>
@@ -224,7 +230,10 @@ p {
                 <input type="range" min="0.4" max="1.2" step="0.2" value="1" class="slider" id="rate">
             <li> <label>Voice</label>
                 <select id="voice"></select>
-            <!-- <li> <label>Translations</label>
+            <li>
+                <label>Show translations</label>
+                <input type="checkbox" id="showTranslations" checked>
+                <!-- <li> <label>Translations</label>
             <select id="targetLang">
                 <option value="en-GB">English</option>
                 <option value="fr-FR">French</option>
@@ -280,13 +289,22 @@ let spoiler = null;
 let lang = null;
 let sentenceIndex = 0;
 let pageIndex = 0;
+let openTransl = null;
 
 synth.getVoices();
+
+synth.onvoiceschanged = function() {
+    updateVoices();
+};
 
 function updateVoices() {
   synth = window.speechSynthesis;
   voices = synth.getVoices();
   console.log("Available voices", voices);
+
+  if (lang == null) {
+    return;
+  }
 
   const voiceSelect = document.querySelector("#voice");
   voiceSelect.innerHTML = "";
@@ -307,8 +325,9 @@ function updateVoices() {
 
   document.querySelector("#no-voices").style.display = voicesAvailable ? "none" : "block";
   if (!voicesAvailable) {
-        console.log("set textonly");
-      document.querySelector("#mode").value = "textOnly";
+    document.querySelector("#mode").value = "textOnly";
+  } else {
+    document.querySelector("#mode").value = "audioAndText";
   }
 }
 
@@ -465,7 +484,11 @@ function showText(useSpoiler) {
     const transl = document.createElement("p");
     transl.textContent = sentences[pageIndex][transLang][sentenceIndex];
     transl.classList.add("translation");
-    transl.style.display = "none";
+    if (openTransl) {
+        openTransl.style.display = "none";
+    }
+    transl.style.display = document.querySelector("#showTranslations").checked ? "block" : "none";
+    openTransl = transl;
     elt.title = sentences[pageIndex][transLang][sentenceIndex];
 
     elt.onclick = () => {
@@ -477,7 +500,11 @@ function showText(useSpoiler) {
             transl.style.display = "none";
         }
         else {
+            if (openTransl) {
+                openTransl.style.display = "none";
+            }
             transl.style.display = "block";
+            openTransl = transl;
         }
     }
 
