@@ -358,12 +358,15 @@ function setLanguage(l) {
 
 let sentences = {};
 
-function chooseStory(index) {
+async function chooseStory(index) {
     document.querySelector('.footer').style.display = "flex";
     document.querySelector('#infoHeader').style.display = "none";
     document.querySelector("#storySelector").style.display = "none";
 
-    const story = index === 0 ? sentences1 : sentences2;
+    const file = index === 0 ? "intro.json" : "restaurant.json";
+    const response = await fetch("/stories/" + file);
+    const story = await response.json();
+
     for (let page in story) {
         sentences[page] = {};
         for (let lang in story[page]) {
@@ -377,84 +380,7 @@ function chooseStory(index) {
     next();
 }
 
-const sentences1 = {
-    0: {
-        "fr": [
-            "Introduction|Bonjour !|Bienvenue dans LingoStories.|Comment ça va ?",
-            "1#Bien, merci.",
-            "1#Pas mal.",
-        ],
-        "en": [
-            "Introduction|Hello!|Welcome to LingoStories.|How are you?",
-            "1#Good, thank you.",
-            "1#Not bad.",
-        ],
-        "de": [
-            "Einführung|Hallo!|Willkommen bei LingoStories.|Wie geht es dir?",
-            "1#Gut, danke.",
-            "1#Nicht schlecht.",
-        ]
-    },
-    1: {
-        "fr": [
-            "Sur ce site, il y a des histoires interactives.|Choisis une histoire qui est facile pour toi.|Tu ne comprendras peut-être pas tous les mots.|Ce n'est pas grave.|Continue quand même.|Écoute chaque phrase.|Lis chaque phrase.|Écoute chaque phrase plusieurs fois si tu veux.|Tu reconnaîtras peut-être quelques mots.|Clique sur une phrase pour voir sa traduction.|Ça t'aidera à suivre l'histoire.|Ça t'aidera à comprendre.|Tu peux maintenant choisir une histoire.",
-        ],
-        "en": [
-            "On this website, there are interactive stories.|Choose a story that is easy for you.|You may not understand all the words.|That's okay.|Continue anyway.|Listen to each sentence.|Read each sentence.|Listen to each sentence several times if you want.|You may recognize some words.|Click on a sentence to see its translation.|It will help you follow the story.|It will help you understand.|You can now choose a story.",
-        ],
-        "de": [
-            "Auf dieser Website gibt es interaktive Geschichten.|Wähl eine Geschichte, die für dich einfach ist.|Vielleicht verstehst du nicht alle Wörter.|Das ist in Ordnung.|Mach trotzdem weiter.|Hör dir jeden Satz an.|Lies jeden Satz.|Hör dir jeden Satz mehrmals an, wenn du willst.|Vielleicht erkennst du einige Wörter.|Klick auf einen Satz, um seine Übersetzung zu sehen.|Es wird dir helfen, der Geschichte zu folgen.|Es wird dir helfen, zu verstehen.|Du kannst jetzt eine Geschichte auswählen.",
-        ]
-    }
-};
-
-const sentences2 =
-    {0: 
-        {"en": [
-             "At the restaurant|You walk in the city. You are hungry.|You look around you.|You see a nice restaurant.|You enter the restaurant.|Inside the restaurant, there are many tables.|There are many people too.|They are eating and chatting.|You see a waiter.|The waiter says: \"Hello and welcome to our restaurant!\"|You reply: \"Hello, I would like a table for one.\"|The waiter brings you to a table and asks what you would like to drink.",
-             "1#Ask for water",
-             "2#Ask for wine",
-        ],
-         "fr": [
-            "Au restaurant|Tu marches dans la ville. Tu as faim.|Tu regardes autour de toi.|Tu vois un bon restaurant.|Tu entres dans le restaurant.|Dans le restaurant, il y a beaucoup de tables.|Il y a beaucoup de gens.|Ils mangent et discutent.|Tu vois un serveur.|Le serveur dit: \"Bonjour et bienvenue dans notre restaurant!\"|Tu réponds: \"Bonjour, je voudrais une table pour une personne, s'il vous plaît.\"",
-            "1#Demander de l'eau",
-            "2#Demander du vin",
-        ],
-        "de": [
-            "Im Restaurant|Du gehst durch die Stadt. Du bist hungrig.|Du siehst dich um.|Du siehst ein schönes Restaurant.|Du betrittst das Restaurant.|Im Restaurant gibt es viele Tische.|Da sind auch viele Leute.|Sie essen und quatschen.|Du siehst einen Kellner.|Der Kellner sagt: „Hallo und willkommen in unserem Restaurant!“|Du antwortest: „Hallo, ich hätte gerne einen Tisch für eine Person.“|Der Kellner bringt dich an einen Tisch und fragt, was du trinken möchtest.",
-            "1#Nach Wasser fragen.",
-            "2#Nach Wein fragen.",
-        ]
-        },
-    1:
-        {"en": [
-            "You order water.",
-            "2#Ask for wine",
-        ],
-        "fr": [
-            "Tu commandes de l'eau.",
-            "2#Demander du vin",
-        ],
-        "de": [
-            "Du bestellst Wasser.",
-            "2#Nach Wein fragen.",
-        ],
-    },
-    2:
-        {"en": [
-            "You order wine.",
-        ],
-        "fr": [
-            "Tu commandes du vin.",
-        ],
-        "de": [
-            "Du bestellst Wein.",
-        ],
-        }
-    };
-
 function listen(text) {
-    console.log("listen", text);
     const voice = voices[document.querySelector("#voice").value];
     if (voice == null) {
         return;
@@ -466,7 +392,6 @@ function listen(text) {
     msg.volume = document.querySelector("#volume").value;
     speechSynthesis.cancel();
     speechSynthesis.speak(msg);
-    console.log("speak", msg.volume, text);
 }
 
 function showText(useSpoiler) {
@@ -568,7 +493,7 @@ function showChoices() {
             container.innerHTML = "";
             container.appendChild(elt);
             
-            openPage(Number(text.split("#")[0]));
+            openPage(text.split("#")[0]);
         };
 
         container.appendChild(icon);

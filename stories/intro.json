@@ -1,0 +1,30 @@
+{
+    "0": {
+        "fr": [
+            "Introduction|Bonjour !|Bienvenue dans LingoStories.|Comment ça va ?",
+            "1#Bien, merci.",
+            "1#Pas mal."
+        ],
+        "en": [
+            "Introduction|Hello!|Welcome to LingoStories.|How are you?",
+            "1#Good, thank you.",
+            "1#Not bad."
+        ],
+        "de": [
+            "Einführung|Hallo!|Willkommen bei LingoStories.|Wie geht es dir?",
+            "1#Gut, danke.",
+            "1#Nicht schlecht."
+        ]
+    },
+    "1": {
+        "fr": [
+            "Sur ce site, il y a des histoires interactives.|Choisis une histoire qui est facile pour toi.|Tu ne comprendras peut-être pas tous les mots.|Ce n'est pas grave.|Continue quand même.|Écoute chaque phrase.|Lis chaque phrase.|Écoute chaque phrase plusieurs fois si tu veux.|Tu reconnaîtras peut-être quelques mots.|Clique sur une phrase pour voir sa traduction.|Ça t'aidera à suivre l'histoire.|Ça t'aidera à comprendre.|Tu peux maintenant choisir une histoire."
+        ],
+        "en": [
+            "On this website, there are interactive stories.|Choose a story that is easy for you.|You may not understand all the words.|That's okay.|Continue anyway.|Listen to each sentence.|Read each sentence.|Listen to each sentence several times if you want.|You may recognize some words.|Click on a sentence to see its translation.|It will help you follow the story.|It will help you understand.|You can now choose a story."
+        ],
+        "de": [
+            "Auf dieser Website gibt es interaktive Geschichten.|Wähl eine Geschichte, die für dich einfach ist.|Vielleicht verstehst du nicht alle Wörter.|Das ist in Ordnung.|Mach trotzdem weiter.|Hör dir jeden Satz an.|Lies jeden Satz.|Hör dir jeden Satz mehrmals an, wenn du willst.|Vielleicht erkennst du einige Wörter.|Klick auf einen Satz, um seine Übersetzung zu sehen.|Es wird dir helfen, der Geschichte zu folgen.|Es wird dir helfen, zu verstehen.|Du kannst jetzt eine Geschichte auswählen."
+        ]
+    }
+}
