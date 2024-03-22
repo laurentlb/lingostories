@@ -67,7 +67,7 @@ input[type="button"]:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
-.audio-icon:hover {
+.audio-icon:hover, .arrow-choice:hover {
     transform: translateY(-4px);
     rotate: -5deg;
     filter: saturate(2);
@@ -97,11 +97,12 @@ input[type="button"]:hover {
     transition: all .2s;
 }
 
-.img-choice {
-    height: 48px;
+.arrow-choice {
+    height: 24px;
     cursor: pointer;
     vertical-align: middle;
-    margin-right: 8px;
+    margin: 8px 8px 8px 0px;
+    transition: all .2s;
 }
 
 .translation {
@@ -175,7 +176,7 @@ summary {
 
 .choice {
     display: inline-block;
-    width: 80%;
+    width: 90%;
     vertical-align: middle;
 }
 
