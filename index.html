@@ -189,8 +189,8 @@ function listen(text) {
 function showText(useSpoiler) {
     const content = sentences[pageIndex][lang][sentenceIndex];
     const icon = document.createElement("img");
-    icon.src = "https://d35aaqx5ub95lt.cloudfront.net/images/d636e9502812dfbb94a84e9dfa4e642d.svg";
-    icon.classList.add("audio");
+    icon.src = "img/speaker.svg";
+    icon.classList.add("audio-icon");
     icon.onclick = () => {
         listen(content);
     };

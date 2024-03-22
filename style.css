@@ -62,9 +62,15 @@ input[type="button"] {
     transition: all .2s;
 }
 
-.audio:hover, input[type="button"]:hover {
+input[type="button"]:hover {
     transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.audio-icon:hover {
+    transform: translateY(-4px);
+    rotate: -5deg;
+    filter: saturate(2);
 }
 
 .text:hover {
@@ -84,8 +90,7 @@ input[type="button"] {
     cursor: help;
 }
 
-.audio {
-    width: 1rem;
+.audio-icon {
     height: 1rem;
     cursor: pointer;
     padding-right: 8px;
