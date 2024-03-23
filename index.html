@@ -150,6 +150,13 @@ function setLanguage(l) {
 
 let sentences = {};
 
+class Page {
+    constructor(text, choices) {
+        this.text = text;
+        this.choices = choices;
+    }
+}
+
 async function chooseStory(index) {
     document.querySelector('.footer').style.display = "flex";
     document.querySelector('#infoHeader').style.display = "none";
@@ -160,11 +167,12 @@ async function chooseStory(index) {
     const story = await response.json();
 
     for (let page in story) {
-        sentences[page] = {};
-        for (let lang in story[page]) {
-            sentences[page][lang] = story[page][lang][0].split("|");
-            sentences[page][lang].choices = story[page][lang].slice(1);
+        const text = story[page][0];
+        for (let lang in text) {
+            text[lang] = text[lang].split("|");
         }
+        const choices = story[page].slice(1);
+        sentences[page] = new Page(text, choices);
     }
 
     console.log(sentences);
@@ -187,13 +195,17 @@ function listen(text) {
 }
 
 function showText(useSpoiler) {
-    const content = sentences[pageIndex][lang][sentenceIndex];
+    const content = sentences[pageIndex].text[lang][sentenceIndex];
     const icon = document.createElement("img");
     icon.src = "img/speaker.svg";
     icon.classList.add("audio-icon");
     icon.onclick = () => {
         listen(content);
     };
+
+    const container = document.createElement("span");
+    container.classList.add("audio-icon-container");
+    container.appendChild(icon);
 
     const elt = document.createElement("span");
     if (useSpoiler) {
@@ -207,14 +219,14 @@ function showText(useSpoiler) {
     const main = document.querySelector('.story');
 
     const transl = document.createElement("p");
-    transl.textContent = sentences[pageIndex][transLang][sentenceIndex];
+    transl.textContent = sentences[pageIndex].text[transLang][sentenceIndex];
     transl.classList.add("translation");
     if (openTransl) {
         openTransl.style.display = "none";
     }
     transl.style.display = document.querySelector("#showTranslations").checked ? "block" : "none";
     openTransl = transl;
-    elt.title = sentences[pageIndex][transLang][sentenceIndex];
+    elt.title = sentences[pageIndex].text[transLang][sentenceIndex];
 
     elt.onclick = () => {
         if (elt.classList.contains("spoiler")) {
@@ -235,7 +247,7 @@ function showText(useSpoiler) {
 
     const title = pageIndex === 0 && sentenceIndex === 0;
     const div = document.createElement(title ? "h2" : "p");
-    div.appendChild(icon);
+    div.appendChild(container);
     div.appendChild(elt);
     div.appendChild(transl);
     main.appendChild(div);
@@ -255,16 +267,16 @@ function showChoices() {
     const container = document.createElement("div");
     container.classList.add("choices");
 
-    const choices = sentences[pageIndex][lang].choices;
+    const choices = sentences[pageIndex].choices;
     for (let i = 0; i < choices.length; i++) {
-        const text = sentences[pageIndex][lang].choices[i];
+        const text = sentences[pageIndex].choices[i][lang];
         const elt = document.createElement("div");
         elt.classList.add("choice");
-        elt.textContent = sentences[pageIndex][lang].choices[i].split("#")[1];
-        elt.title = sentences[pageIndex][transLang].choices[i].split("#")[1];
+        elt.textContent = text;
+        elt.title = text;
 
         const transl = document.createElement("p");
-        transl.textContent = sentences[pageIndex][transLang].choices[i].split("#")[1];
+        transl.textContent = sentences[pageIndex].choices[i][transLang];
         transl.classList.add("translation");
         transl.style.display = "none";
         elt.appendChild(transl);
@@ -285,7 +297,8 @@ function showChoices() {
             container.innerHTML = "";
             container.appendChild(elt);
             
-            openPage(text.split("#")[0]);
+            openPage(sentences[pageIndex].choices[i]["goto"]);
+            //openPage(text.split("#")[0]);
         };
 
         container.appendChild(icon);
@@ -325,13 +338,13 @@ function revealSpoiler() {
 }
 
 function showAll() {
-    if (sentenceIndex > sentences[pageIndex][lang].length) {
+    if (sentenceIndex > sentences[pageIndex].text[lang].length) {
         return;
     }
     if (spoiler) {
         revealSpoiler();
     }
-    while (sentenceIndex < sentences[pageIndex][lang].length) {
+    while (sentenceIndex < sentences[pageIndex].text[lang].length) {
         showText();
         sentenceIndex++;
     }
@@ -347,12 +360,12 @@ const next = () => {
     }
 
     inlineNext.style.display = "none";
-    if (sentenceIndex == sentences[pageIndex][lang].length) {
+    if (sentenceIndex == sentences[pageIndex].text[lang].length) {
         showChoices();
         sentenceIndex++;
         return;
     }
-    if (sentenceIndex > sentences[pageIndex][lang].length) {
+    if (sentenceIndex > sentences[pageIndex].text[lang].length) {
         return;
     }
     const useSpoiler = document.querySelector("#mode").value === "audioFirst";
@@ -361,7 +374,7 @@ const next = () => {
         inlineNext.style.display = "block";
     }
     if (document.querySelector("#mode").value !== "textOnly") {
-        listen(sentences[pageIndex][lang][sentenceIndex]);
+        listen(sentences[pageIndex].text[lang][sentenceIndex]);
     }
     sentenceIndex++;
 };
