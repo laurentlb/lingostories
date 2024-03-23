@@ -90,6 +90,7 @@ let lang = null;
 let sentenceIndex = 0;
 let pageIndex = 0;
 let openTransl = null;
+let storyName = null;
 
 synth.getVoices();
 
@@ -162,8 +163,8 @@ async function chooseStory(index) {
     document.querySelector('#infoHeader').style.display = "none";
     document.querySelector("#storySelector").style.display = "none";
 
-    const file = index === 0 ? "intro.json" : "restaurant.json";
-    const response = await fetch("/stories/" + file);
+    storyName = index === 0 ? "intro" : "restaurant";
+    const response = await fetch(`stories/${storyName}.json`);
     const story = await response.json();
 
     for (let page in story) {
@@ -178,6 +179,16 @@ async function chooseStory(index) {
     console.log(sentences);
     resetStory();
     next();
+}
+
+function listenMP3(sentenceIndex) {
+    const file = `audio/${storyName}-${lang}-${pageIndex}-${sentenceIndex}.mp3`;
+    const audio = new Audio(file);
+    audio.playbackRate = document.querySelector("#rate").value;
+    audio.volume = document.querySelector("#volume").value;
+    audio.play().catch((e) => {
+        listen(sentences[pageIndex].text[lang][sentenceIndex]);
+    });
 }
 
 function listen(text) {
@@ -196,11 +207,12 @@ function listen(text) {
 
 function showText(useSpoiler) {
     const content = sentences[pageIndex].text[lang][sentenceIndex];
+    const index = sentenceIndex;
     const icon = document.createElement("img");
     icon.src = "img/speaker.svg";
     icon.classList.add("audio-icon");
     icon.onclick = () => {
-        listen(content);
+        listenMP3(index);
     };
 
     const container = document.createElement("span");
@@ -374,7 +386,7 @@ const next = () => {
         inlineNext.style.display = "block";
     }
     if (document.querySelector("#mode").value !== "textOnly") {
-        listen(sentences[pageIndex].text[lang][sentenceIndex]);
+        listenMP3(sentenceIndex);
     }
     sentenceIndex++;
 };
