@@ -36,7 +36,7 @@
                 <select id="voice"></select>
             <li>
                 <label>Show translations</label>
-                <input type="checkbox" id="showTranslations" checked>
+                <input type="checkbox" id="showTranslations">
                 <!-- <li> <label>Translations</label>
             <select id="targetLang">
                 <option value="en-GB">English</option>
@@ -157,9 +157,10 @@ function setLanguage(l) {
 let sentences = {};
 
 class Page {
-    constructor(text, choices) {
+    constructor(text, choices, image) {
         this.text = text;
         this.choices = choices;
+        this.image = image;
     }
 }
 
@@ -178,7 +179,8 @@ async function chooseStory(index) {
             text[lang] = text[lang].split("|");
         }
         const choices = story[page].slice(1);
-        sentences[page] = new Page(text, choices);
+        const image = story[page][0]["img"];
+        sentences[page] = new Page(text, choices, image);
     }
 
     console.log(sentences);
@@ -241,7 +243,8 @@ function showText(useSpoiler) {
     if (openTransl) {
         openTransl.style.display = "none";
     }
-    transl.style.display = document.querySelector("#showTranslations").checked ? "block" : "none";
+    const showTranslations = document.querySelector("#showTranslations").checked || storyName === "intro";
+    transl.style.display = showTranslations ? "block" : "none";
     openTransl = transl;
     elt.title = sentences[pageIndex].text[transLang][sentenceIndex];
 
@@ -276,24 +279,41 @@ function openPage(index) {
     pageIndex = index;
     sentenceIndex = 0;
     spoiler = null;
+
+    const image = sentences[pageIndex].image;
+    if (image) {
+        const img = document.createElement("img");
+        img.src = `img/stories/${image}`;
+        img.classList.add("story-image");
+        const main = document.querySelector('.story');
+        main.appendChild(img);
+    }
+
     next();
 }
 
 function showChoices() {
+    const choices = sentences[pageIndex].choices;
+
+    // Automatically go to the next page if there is only one choice.
+    if (choices.length === 1 && !choices[0]["en"]) {
+        openPage(choices[0]["goto"]);
+        return;
+    }
+
     const main = document.querySelector('.story');
     const container = document.createElement("div");
     container.classList.add("choices");
 
-    const choices = sentences[pageIndex].choices;
     for (let i = 0; i < choices.length; i++) {
-        const text = sentences[pageIndex].choices[i][lang];
+        const text = choices[i][lang];
         const elt = document.createElement("div");
         elt.classList.add("choice");
         elt.textContent = text;
         elt.title = text;
 
         const transl = document.createElement("p");
-        transl.textContent = sentences[pageIndex].choices[i][transLang];
+        transl.textContent = choices[i][transLang];
         transl.classList.add("translation");
         transl.style.display = "none";
         elt.appendChild(transl);
@@ -378,8 +398,8 @@ const next = () => {
 
     inlineNext.style.display = "none";
     if (sentenceIndex == sentences[pageIndex].text[lang].length) {
-        showChoices();
         sentenceIndex++;
+        showChoices();
         return;
     }
     if (sentenceIndex > sentences[pageIndex].text[lang].length) {

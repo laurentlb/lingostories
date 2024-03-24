@@ -119,6 +119,12 @@ input[type="button"]:hover {
     transition: all .2s;
 }
 
+.story-image {
+    width: 100%;
+    border-radius: 16px;
+    border: 1px solid var(--border-color);
+}
+
 .translation {
     font-size: 0.8rem;
     color: #999;

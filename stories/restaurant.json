@@ -1,43 +1,121 @@
 {
 "0": [
     {
-        "en": "At the restaurant|You walk in the city. You are hungry.|You look around you.|You see a nice restaurant.|You enter the restaurant.|Inside the restaurant, there are many tables.|There are many people too.|They are eating and chatting.|You see a waiter.|The waiter says: \"Hello and welcome to our restaurant!\"|You reply: \"Hello, I would like a table for one.\"|The waiter brings you to a table and asks what you would like to drink.",
-        "fr": "Au restaurant|Tu marches dans la ville. Tu as faim.|Tu regardes autour de toi.|Tu vois un bon restaurant.|Tu entres dans le restaurant.|Dans le restaurant, il y a beaucoup de tables.|Il y a beaucoup de gens.|Ils mangent et discutent.|Tu vois un serveur.|Le serveur dit: \"Bonjour et bienvenue dans notre restaurant!\"|Tu réponds: \"Bonjour, je voudrais une table pour une personne, s'il vous plaît.\"",
-        "de": "Im Restaurant|Du gehst durch die Stadt. Du bist hungrig.|Du siehst dich um.|Du siehst ein schönes Restaurant.|Du betrittst das Restaurant.|Im Restaurant gibt es viele Tische.|Da sind auch viele Leute.|Sie essen und quatschen.|Du siehst einen Kellner.|Der Kellner sagt: „Hallo und willkommen in unserem Restaurant!“|Du antwortest: „Hallo, ich hätte gerne einen Tisch für eine Person.“|Der Kellner bringt dich an einen Tisch und fragt, was du trinken möchtest."
+        "en": "At the restaurant|You walk in the street.|It is noon and you are hungry.|You see a restaurant.",
+        "fr": "Au restaurant|Tu marches dans la rue.|Il est midi et tu as faim.|Tu vois un restaurant."
     },
     {
         "goto": "1",
-        "en": "Ask for water",
-        "fr": "Demander de l'eau",
-        "de": "Nach Wasser fragen"
+        "en": "Enter the restaurant",
+        "fr": "Entrer dans le restaurant"
     },
     {
         "goto": "2",
-        "en": "Ask for wine",
-        "fr": "Demander du vin",
-        "de": "Nach Wein fragen"
+        "en": "Look for a better restaurant",
+        "fr": "Chercher un meilleur restaurant"
     }
 ],
 
 "1": [
     {
-        "en": "You order water.",
-        "fr": "Tu commandes de l'eau.",
-        "de": "Du bestellst Wasser."
+        "img": "restaurant-1.jpg",
+        "en": "You enter the restaurant.|There's a good smell of food.",
+        "fr": "Tu entres dans le restaurant.|Il y a une bonne odeur de nourriture."
     },
     {
-        "goto": "2",
-        "en": "Ask for wine",
-        "fr": "Demander du vin",
-        "de": "Nach Wein fragen."
+        "goto": "3",
+        "en": "Look around",
+        "fr": "Regarder autour de toi"
+    },
+    {
+        "goto": "4",
+        "en": "Talk to a waiter",
+        "fr": "Parler à un serveur"
     }
 ],
 
 "2": [
     {
-        "en": "You order wine.",
-        "fr": "Tu commandes du vin.",
-        "de": "Du bestellst Wein."
+        "en": "You continue walking.|You see another restaurant. It looks very good.",
+        "fr": "Tu continues de marcher.|Tu vois un autre restaurant. Il a l'air très bon."
+    },
+    {
+        "goto": "1",
+        "en": "Enter the restaurant",
+        "fr": "Entrer dans le restaurant"
+    }
+],
+
+"3": [
+    {
+        "en": "You see many tables.|You see many people eating and chatting.|A waiter comes to you.",
+        "fr": "Tu vois beaucoup de tables.|Tu vois beaucoup de gens manger et discuter.|Un serveur vient vers toi."
+    },
+    {
+        "goto": "4"
+    }
+],
+
+"4": [
+    {
+        "en": "The waiter says: \"Hello and welcome to our restaurant!\"|\"A table for one?\"|- Yes, please.|You follow the waiter.|He asks: \"Here's the menu. Would you like something to drink?\"",
+        "fr": "Le serveur dit: \"Bonjour et bienvenue dans notre restaurant!\"|\"Une table pour une personne?\"|- Oui, s'il vous plaît.|Tu suis le serveur.|Il demande: \"Voici le menu. Voulez-vous boire quelque chose?\""
+    },
+    {
+        "goto": "5",
+        "en": "Yes, I'll have a glass of wine.",
+        "fr": "Oui, je vais prendre un verre de vin."
+    },
+    {
+        "goto": "7",
+        "en": "Just water for now.",
+        "fr": "Juste de l'eau pour le moment."
+    },
+    {
+        "goto": "6",
+        "en": "Do you have beer?",
+        "fr": "Avez-vous de la bière?"
+    }
+],
+
+"5": [
+    {
+        "en": "- We have a red wine and a white wine. What would you like?",
+        "fr": "- Nous avons un vin rouge et un vin blanc. Que souhaitez-vous?"
+    },
+    {
+        "goto": "7",
+        "en": "- Red wine, please.",
+        "fr": "- Du vin rouge, s'il vous plaît."
+    },
+    {
+        "goto": "7",
+        "en": "- White wine, please.",
+        "fr": "- Du vin blanc, s'il vous plaît."
+    }
+],
+
+"6": [
+    {
+        "en": "- No. Unfortunately we don't have beer anymore.|- Would you like some wine?",
+        "fr": "- Non. Malheureusement, nous n'avons plus de bière.|- Voulez-vous du vin?"
+    },
+    {
+        "goto": "5",
+        "en": "Yes, please.",
+        "fr": "Oui, s'il vous plaît."
+    },
+    {
+        "goto": "7",
+        "en": "No, thanks. Just water, please.",
+        "fr": "Non, merci. Juste de l'eau, s'il vous plaît."
+    }
+],
+
+"7": [
+    {
+        "en": "A few minutes later, the waiter comes back with your glass.",
+        "fr": "Quelques minutes plus tard, le serveur revient avec votre verre."
     }
 ]
 }
