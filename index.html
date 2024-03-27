@@ -50,6 +50,9 @@
             <p style="font-style: italic;">
                 A free collection of interactive stories for language learners.
             </p>
+            <a href="https://discord.gg/7hCdq7Fj"><img class="logo" title="Discord community" src="img/discord.svg"></a>
+            <a href="https://github.com/laurentlb/lingostories"><img class="inv-logo" title="GitHub" src="img/github.svg"></a>
+
             <p>
                 <details>
                 <summary>
@@ -60,9 +63,7 @@
                 </details>
             </p>
             <p>
-                <a href="https://docs.google.com/document/d/1LppZEDHxceiFuagMOTKEwsR2ZfXev2sJ1TzfrVokNoc/edit?usp=sharing">About</a> -
-                <a href="https://discord.gg/7hCdq7Fj">Discord</a> -
-                <a href="https://github.com/laurentlb/lingostories">GitHub</a> -
+                <a href="https://docs.google.com/document/d/1LppZEDHxceiFuagMOTKEwsR2ZfXev2sJ1TzfrVokNoc/edit?usp=sharing">Read FAQ on Google Docs</a> -
                 <a href="https://forms.gle/9djaTH25wUN74psm8">Request new language</a>
             </p>
         </div>
@@ -166,7 +167,6 @@ function resetStory() {
 }
 
 function setLanguage(l) {
-    resetStory();
     lang = l;
     transLang = l === "en" ? "fr" : "en";
     document.querySelector('.top').style.display = "block";

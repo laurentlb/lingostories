@@ -260,6 +260,15 @@ li > label {
     width: 180px;
 }
 
+.inv-logo, .logo {
+    width: 32px;
+    margin-right: 16px;
+}
+
+.inv-logo {
+    filter: invert(1);
+}
+
 a {
     color: #aaf;
 }
