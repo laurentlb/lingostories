@@ -101,9 +101,9 @@
     ],
     "5": [
         {
-            "en": "- We have a red wine and a white wine. What would you like?",
-            "fr": "- Nous avons un vin rouge et un vin blanc. Que souhaitez-vous?",
-            "de": "- Wir haben einen Rotwein und einen Weißwein. Was möchten Sie?",
+            "en": "- We have red wine and white wine. What would you like?",
+            "fr": "- Nous avons du vin rouge et du vin blanc. Que souhaitez-vous?",
+            "de": "- Wir haben Rotwein und Weißwein. Was möchten Sie?",
             "pl": "- Mamy czerwone i białe wino. Które wolisz?"
         },
         {
