@@ -190,11 +190,16 @@ async function chooseStory(index) {
     next();
 }
 
+const audio = new Audio();
+
 function listenMP3(sentenceIndex) {
     const file = `audio/${storyName}-${lang}-${pageIndex}-${sentenceIndex}.mp3`;
-    const audio = new Audio(file);
+    audio.src = file;
     audio.playbackRate = document.querySelector("#rate").value;
     audio.volume = document.querySelector("#volume").value;
+
+    // audio.onended = (event) => {console.log("ended");};
+
     audio.play().catch((e) => {
         listen(sentences[pageIndex].text[lang][sentenceIndex]);
     });
