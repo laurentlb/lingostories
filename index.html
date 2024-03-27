@@ -19,22 +19,22 @@
             <li>
                 <label>Navigation mode</label>
                 <select id="mode">
-                    <option value="audioAndText">Audio and text</option>
-                    <option value="audioFirst">Audio first, then text</option>
-                    <option value="textOnly">Text only</option>
+                    <option title="Show the transcript immediately" value="audioAndText">Audio and text</option>
+                    <option title="Show the transcript after a click" value="audioFirst">Audio first, then text</option>
+                    <option title="Disable audio" value="textOnly">Text only</option>
                 </select>
             <li>
                 <label for="volume">Volume</label>
                 <input type="range" min="0" max="1" step="0.01" value="1" class="slider" id="volume">
-            <li>
+            <li title="How fast the voice speaks">
                 <label>Voice speed</label>
                 <input type="range" min="0.4" max="1.2" step="0.2" value="1" class="slider" id="rate">
-            <li> <label>Voice</label>
+            <li title="Voice used for the local TTS, which is used only as a backup"> <label>Voice</label>
                 <select id="voice"></select>
-            <li>
+            <li title="Automatically show the translation below the transcript">
                 <label>Show translations</label>
                 <input type="checkbox" id="showTranslations">
-            <li> <label>Translation</label>
+            <li title="Language used for the translations"> <label>Translation</label>
                 <select id="targetLang">
                     <option value="en">English</option>
                     <option value="fr">French</option>
@@ -176,7 +176,6 @@ function setLanguage(l) {
     document.querySelector("#languageSelector").style.display = "none";
 
     const target = document.querySelector("#targetLang").value;
-    console.log(target, lang);
     if (target === lang) {
         document.querySelector("#targetLang").value =
             lang === "en" ? "fr" : "en";
