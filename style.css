@@ -67,15 +67,12 @@ input[type="button"]:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
-.audio-icon:hover, .arrow-choice:hover {
+.top-icon:hover, .player-icon:hover, .bubble-icon:hover, .audio-icon:hover, .choice-icon:hover {
     transform: translateY(-4px);
     rotate: -5deg;
-    filter: saturate(2);
 }
 
-.audio-icon:hover {
-    rotate: -5deg;
-    filter: saturate(2);
+.bubble-icon:hover, .audio-icon:hover {
     transform: scale(1.5);
 }
 
@@ -104,19 +101,32 @@ input[type="button"]:hover {
     height: 1rem;
 }
 
-.audio-icon {
-    height: 1rem;
-    cursor: pointer;
+.icon {
+    /* https://isotropic.co/tool/hex-color-to-css-filter/ */
+    filter: invert(76%) sepia(25%) saturate(532%) hue-rotate(202deg) brightness(103%) contrast(101%);
     transition: all .2s;
+    cursor: pointer;
+}
+
+.audio-icon {
+    height: 1.2rem;
     position: absolute;
 }
 
-.arrow-choice {
-    height: 24px;
-    cursor: pointer;
+.bubble-icon {
+    height: 2rem;
+    display: none;
+}
+
+.player-icon {
+    height: 2rem;
+    margin: 0 auto;
+}
+
+.choice-icon {
+    height: 1.5em;
     vertical-align: middle;
     margin: 8px 8px 8px 0px;
-    transition: all .2s;
 }
 
 .story-image {
@@ -151,15 +161,23 @@ summary {
     border-radius: 16px;
     padding: 8px 16px;
     display: none;
+    transition: all .5s;
+    z-index: 10;
 }
 
-.home-icon {
-    position: fixed;
-    right: 0;
-    top: 0;
-    width: 48px;
-    margin: 4px;
-    display: none;
+.top-icon {
+    width: 36px;
+    height: 36px;
+    display: inline;
+    vertical-align: top;
+}
+
+.top summary {
+    list-style: none;
+}
+
+.top details {
+    display: inline-block;
 }
 
 .footer {

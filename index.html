@@ -11,11 +11,10 @@
 <link rel="stylesheet" href="style.css">
 
 <div class="main">
-    <a href="/"><img src="img/home-house.svg" class="home-icon" title="Back to the main page"></a>
-
     <div class="top">
-    <details>
-        <summary>Settings</summary>
+        <a href="/"><img src="img/home.svg" class="icon top-icon" title="Back to the main page"></a>
+        <details>
+        <summary><img src="img/options.svg" class="icon top-icon" title="Settings"></summary>
         <ul>
             <li>
                 <label>Navigation mode</label>
@@ -71,21 +70,23 @@
         </div>
         <div class="info" style="display: none;" id="storySelector">
             <p>Select a story to read.</p>
-            <input type="button" value="Introduction" onclick="chooseStory(0)"><br>
-            <input type="button" value="Restaurant" onclick="chooseStory(1)"><br>
+            <img src="img/arrow-right-3-square.svg" class="icon choice-icon" onclick="chooseStory(0)">
+            Introduction<br>
+            <img src="img/arrow-right-3-square.svg" class="icon choice-icon" onclick="chooseStory(1)">
+            Restaurant<br>
         </div>
         <div class="info" style="display: none;" id="no-voices">No voices available.</div>
 
         <div class="story"></div>
-        <input type="button" value="..." id="inlineNext"  style="display: none;" onclick="next()">
+        <img src="img/comment-dots.svg" id="inlineNext" class="icon bubble-icon" onclick="next()">
         <div style="height: 30vh;"></div>
     </div>
 
 </div>
 <div class="footer">
-    <input type="button" value="Next" id="next" onclick="next()">
-    <input type="button" value="Show All" id="next" onclick="showAll();">
-    <input type="button" value="Restart" id="next" onclick="resetStory(); next();">
+    <img class="icon player-icon" src="img/player-play.svg" title="Next" onclick="next();">
+    <img class="icon player-icon" src="img/player-end.svg" title="Show All" onclick="showAll();">
+    <img class="icon player-icon" src="img/restart.svg" title="Restart the story" onclick="resetStory(); next();">
 </div>
 
 <script>
@@ -153,7 +154,6 @@ function setLanguage(l) {
     updateVoices();
     document.querySelector("#storySelector").style.display = "block";
     document.querySelector("#languageSelector").style.display = "none";
-    document.querySelector(".home-icon").style.display = "block";
 }
 
 let sentences = {};
@@ -223,8 +223,8 @@ function showText(useSpoiler) {
     const content = sentences[pageIndex].text[lang][sentenceIndex];
     const index = sentenceIndex;
     const icon = document.createElement("img");
-    icon.src = "img/speaker.svg";
-    icon.classList.add("audio-icon");
+    icon.src = "img/volume-up.svg";
+    icon.classList.add("icon", "audio-icon");
     icon.onclick = () => {
         listenMP3(index);
     };
@@ -335,8 +335,8 @@ function showChoices() {
         }
 
         const icon = document.createElement("img");
-        icon.src = "img/right-arrow.svg";
-        icon.classList.add("arrow-choice");
+        icon.src = "img/arrow-right-3-square.svg";
+        icon.classList.add("icon", "choice-icon");
         icon.onclick = () => {
             container.innerHTML = "";
             container.appendChild(elt);
