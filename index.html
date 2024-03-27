@@ -285,7 +285,7 @@ function showText(pageIndex, sentenceIndex, useSpoiler) {
     elt.textContent = content;
 
     const main = document.querySelector('.story');
-    let showTranslation = document.querySelector("#showTranslations").checked || storyName === "intro";
+    const showTranslation = document.querySelector("#showTranslations").checked || storyName === "intro";
     if (showTranslation) {
         createTranslation(elt, pageIndex, sentenceIndex);
     }
@@ -295,17 +295,12 @@ function showText(pageIndex, sentenceIndex, useSpoiler) {
             next();
             return;
         }
-        if (showTranslation) {
+        if (openTransl && openTransl.parentElement === elt) {
             openTransl.remove();
             openTransl = null;
-            showTranslation = false;
+            return;
         }
         else {
-            if (openTransl) {
-                openTransl.remove();
-                openTransl = null;
-            }
-            showTranslation = true;
             createTranslation(elt, pageIndex, sentenceIndex);
         }
     }
