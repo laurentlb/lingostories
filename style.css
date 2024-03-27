@@ -133,7 +133,7 @@ input[type="button"]:hover {
 }
 
 .main {
-    max-width: 500px;
+    max-width: 600px;
     margin: 0 auto;
 }
 
@@ -153,15 +153,13 @@ summary {
     display: none;
 }
 
-.topRight {
-    background-color: #101010;
-    border: 1px solid var(--border-color);
-    padding: 4px;
+.home-icon {
     position: fixed;
     right: 0;
     top: 0;
-    border-radius: 16px;
-    padding: 8px 16px;
+    width: 48px;
+    margin: 4px;
+    display: none;
 }
 
 .footer {

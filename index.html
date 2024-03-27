@@ -11,9 +11,7 @@
 <link rel="stylesheet" href="style.css">
 
 <div class="main">
-    <div class="topRight">
-        <a href="?">X</a>
-    </div>
+    <a href="/"><img src="img/home-house.svg" class="home-icon" title="Back to the main page"></a>
 
     <div class="top">
     <details>
@@ -155,6 +153,7 @@ function setLanguage(l) {
     updateVoices();
     document.querySelector("#storySelector").style.display = "block";
     document.querySelector("#languageSelector").style.display = "none";
+    document.querySelector(".home-icon").style.display = "block";
 }
 
 let sentences = {};
