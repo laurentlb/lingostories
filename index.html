@@ -34,12 +34,13 @@
             <li>
                 <label>Show translations</label>
                 <input type="checkbox" id="showTranslations">
-                <!-- <li> <label>Translations</label>
-            <select id="targetLang">
-                <option value="en-GB">English</option>
-                <option value="fr-FR">French</option>
-                <option value="pl-PL">Polish</option>
-            </select> -->
+            <li> <label>Translation</label>
+                <select id="targetLang">
+                    <option value="en">English</option>
+                    <option value="fr">French</option>
+                    <option value="de">German</option>
+                    <option value="pl">Polish</option>
+                </select>
         </ul>
     </details>
     </div>
@@ -173,6 +174,13 @@ function setLanguage(l) {
     updateVoices();
     document.querySelector("#storySelector").style.display = "block";
     document.querySelector("#languageSelector").style.display = "none";
+
+    const target = document.querySelector("#targetLang").value;
+    console.log(target, lang);
+    if (target === lang) {
+        document.querySelector("#targetLang").value =
+            lang === "en" ? "fr" : "en";
+    }
 }
 
 let sentences = {};
@@ -238,7 +246,23 @@ function listen(text) {
     speechSynthesis.speak(msg);
 }
 
-function showText(useSpoiler) {
+function createTranslation(parent, pageIndex, sentenceIndex) {
+    const transl = document.createElement("p");
+    const transLang = document.querySelector("#targetLang").value;
+    transl.textContent = sentences[pageIndex].text[transLang][sentenceIndex];
+    transl.textContent = sentences[pageIndex].text[transLang][sentenceIndex];
+    transl.classList.add("translation");
+    if (openTransl) {
+        openTransl.remove();
+        openTransl = null;
+    }
+    transl.style.display = showTranslations ? "block" : "none";
+    openTransl = transl;
+
+    parent.appendChild(transl);
+}
+
+function showText(pageIndex, sentenceIndex, useSpoiler) {
     const content = sentences[pageIndex].text[lang][sentenceIndex];
     const index = sentenceIndex;
     const icon = document.createElement("img");
@@ -262,32 +286,28 @@ function showText(useSpoiler) {
     elt.textContent = content;
 
     const main = document.querySelector('.story');
-
-    const transl = document.createElement("p");
-    transl.textContent = sentences[pageIndex].text[transLang][sentenceIndex];
-    transl.classList.add("translation");
-    if (openTransl) {
-        openTransl.style.display = "none";
+    let showTranslation = document.querySelector("#showTranslations").checked || storyName === "intro";
+    if (showTranslation) {
+        createTranslation(elt, pageIndex, sentenceIndex);
     }
-    const showTranslations = document.querySelector("#showTranslations").checked || storyName === "intro";
-    transl.style.display = showTranslations ? "block" : "none";
-    openTransl = transl;
-    elt.title = sentences[pageIndex].text[transLang][sentenceIndex];
 
     elt.onclick = () => {
         if (elt.classList.contains("spoiler")) {
             next();
             return;
         }
-        if (transl.style.display === "block") {
-            transl.style.display = "none";
+        if (showTranslation) {
+            openTransl.remove();
+            openTransl = null;
+            showTranslation = false;
         }
         else {
             if (openTransl) {
-                openTransl.style.display = "none";
+                openTransl.remove();
+                openTransl = null;
             }
-            transl.style.display = "block";
-            openTransl = transl;
+            showTranslation = true;
+            createTranslation(elt, pageIndex, sentenceIndex);
         }
     }
 
@@ -295,7 +315,6 @@ function showText(useSpoiler) {
     const div = document.createElement(title ? "h2" : "p");
     div.appendChild(container);
     div.appendChild(elt);
-    div.appendChild(transl);
     main.appendChild(div);
 
     window.scrollTo(0, document.body.scrollHeight);
@@ -403,7 +422,7 @@ function showAll() {
         revealSpoiler();
     }
     while (sentenceIndex < sentences[pageIndex].text[lang].length) {
-        showText();
+        showText(pageIndex, sentenceIndex, false);
         sentenceIndex++;
     }
     showChoices();
@@ -427,7 +446,7 @@ const next = () => {
         return;
     }
     const useSpoiler = document.querySelector("#mode").value === "audioFirst";
-    showText(useSpoiler);
+    showText(pageIndex, sentenceIndex, useSpoiler);
     if (document.querySelector("#mode").value !== "audioFirst") {
         inlineNext.style.display = "block";
     }
