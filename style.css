@@ -67,6 +67,18 @@ input[type="button"]:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
+h1 {
+    color: #aaf;
+    text-transform: capitalize;
+    font-variant: small-caps;
+    border-bottom: 1px #aaf solid;
+}
+
+h2 {
+    margin-block-start: 0;
+    font-size: 1.2em;
+}
+
 .top-icon:hover, .player-icon:hover, .bubble-icon:hover, .audio-icon:hover, .choice-icon:hover {
     transform: translateY(-4px);
     rotate: -5deg;
@@ -201,6 +213,28 @@ summary {
     margin: 8px 0;
 }
 
+.story-end {
+    border: 1px solid #8f8;
+    border-radius: 16px;
+    padding: 16px 16px;
+    margin: 8px 0;
+    display: none;
+}
+
+.certificate {
+    width: 64px;
+    filter: invert(1);
+    float: left;
+}
+
+.certificate {
+    animation: beat .5s infinite alternate;
+}
+
+@keyframes beat{
+	to { transform: scale(1.2); }
+}
+
 .choices {
     border: 1px solid var(--border-color);
     background-color: #000;
@@ -217,8 +251,8 @@ summary {
 }
 
 .middle {
-    padding: 4px;
-    margin-top: 2em;
+    padding: 6px;
+    margin-top: 48px;
 }
 
 li > label {
