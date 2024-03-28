@@ -272,7 +272,7 @@ async function chooseStory(name) {
 const audio = new Audio();
 
 function listenMP3(pageIndex, sentenceIndex, mayAutoPlay) {
-    const file = `audio/${state.storyName}-${state.lang}-${pageIndex}-${sentenceIndex}.mp3`;
+    const file = `audio/${state.storyName}/${state.storyName}-${state.lang}-${pageIndex}-${sentenceIndex}.mp3`;
     audio.src = file;
     audio.playbackRate = document.querySelector("#rate").value;
     audio.volume = document.querySelector("#volume").value;
