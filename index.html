@@ -288,6 +288,15 @@ function listenMP3(pageIndex, sentenceIndex, mayAutoPlay) {
     });
 }
 
+function soundEffect(name) {
+    const file = `audio/${name}.mp3`;
+    audio.src = file;
+    audio.onended = null;
+    audio.playbackRate = 1;
+    audio.volume = document.querySelector("#volume").value;
+    audio.play();
+}
+
 function listen(text) {
     const voice = voices[document.querySelector("#voice").value];
     if (voice == null) {
@@ -429,6 +438,7 @@ function showChoices() {
     if (choices.length === 0) {
         document.querySelector(".story-end").style.display = "block";
         document.querySelector('.footer').style.display = "none";
+        soundEffect('level-end');
     } else {
         main.appendChild(container);
     }
