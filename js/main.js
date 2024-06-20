@@ -1,156 +1,9 @@
-"use strict";
+import { State } from "./state.js";
 
 let synth = window.speechSynthesis;
 let voices = [];
 
-class State {
-    constructor() {
-        this.spoiler = null;
-        this.lang = null;
-        this.sentenceIndex = 0;
-        this.pageIndex = 0;
-        this.openTransl = null;
-        this.storyName = null;
-    }
-
-    resetStory() {
-        this.sentenceIndex = 0;
-        this.pageIndex = 0;
-        this.spoiler = null;
-    }
-
-    openPage(index) {
-        this.pageIndex = index;
-        this.sentenceIndex = 0;
-        this.spoiler = null;
-    }
-
-    endOfPage() {
-        return this.sentenceIndex >= sentences[this.pageIndex].text[this.lang].length;
-    }
-
-    hasNext() {
-        return this.sentenceIndex <= sentences[this.pageIndex].text[this.lang].length;
-    }
-
-    targetLang() {
-        return document.querySelector("#targetLang").value;
-    }
-
-    get choices() {
-        return sentences[this.pageIndex].choices;
-    }
-
-    nextLine() {
-        this.sentenceIndex++;
-        if (this.endOfPage()) {
-            const choices = this.choices;
-            if (choices.length === 1 && !choices[0]["en"]) {
-                this.openPage(choices[0]["goto"]);
-            }
-            return;
-        }
-    }
-
-    sentence(pageIndex, sentenceIndex, lang) {
-        return sentences[pageIndex].text[lang][sentenceIndex];
-    }
-};
-
 const state = new State();
-let sentences = {};
-
-class Page {
-    constructor(text, choices, image) {
-        this.text = text;
-        this.choices = choices;
-        this.image = image;
-    }
-}
-
-synth.getVoices();
-
-synth.onvoiceschanged = function() {
-    updateVoices();
-};
-
-function updateVoices() {
-  synth = window.speechSynthesis;
-  voices = synth.getVoices();
-  console.log("Available voices", voices);
-
-  if (state.lang == null) {
-    return;
-  }
-
-  const voiceSelect = document.querySelector("#voice");
-  voiceSelect.innerHTML = "";
-  let voicesAvailable = false;
-  for (let i = 0; i < voices.length; i++) {
-    const option = document.createElement("option");
-    if (!voices[i].lang.startsWith(state.lang)) {
-        continue;
-    }
-    option.textContent = voices[i].name;
-    option.value = i;
-
-    option.setAttribute("data-lang", voices[i].lang);
-    option.setAttribute("data-name", voices[i].name);
-    voiceSelect.appendChild(option);
-    voicesAvailable = true;
-  }
-
-  document.querySelector("#no-voices").style.display = voicesAvailable ? "none" : "block";
-  if (!voicesAvailable) {
-    document.querySelector("#mode").value = "textOnly";
-  } else {
-    document.querySelector("#mode").value = "audioAndText";
-  }
-}
-
-function resetStory() {
-    state.resetStory();
-    document.querySelector('.story').innerHTML = "";
-    document.querySelector('.story-end').style.display = "none";
-    document.querySelector('.footer').style.display = "flex";
-}
-
-function setLanguage(l) {
-    state.lang = l;
-    document.querySelector('.top').style.display = "block";
-    updateVoices();
-    document.querySelector("#storySelector").style.display = "block";
-    document.querySelector("#languageSelector").style.display = "none";
-
-    if (state.targetLang() === state.lang) {
-        document.querySelector("#targetLang").value =
-            state.lang === "en" ? "fr" : "en";
-    }
-}
-
-async function chooseStory(name) {
-    document.querySelector('#infoHeader').style.display = "none";
-    document.querySelector("#storySelector").style.display = "none";
-
-    state.storyName = name;
-    const response = await fetch(`stories/${state.storyName}.json`);
-    const story = await response.json();
-
-    for (let page in story) {
-        const text = story[page][0];
-        for (let lang in text) {
-            text[lang] = text[lang].split("|");
-        }
-        const choices = story[page].slice(1);
-        const image = story[page][0]["img"];
-        sentences[page] = new Page(text, choices, image);
-    }
-
-    console.log(sentences);
-    resetStory();
-    next();
-}
-
 const audio = new Audio();
 
 function listenMP3(pageIndex, sentenceIndex, mayAutoPlay) {
@@ -179,6 +32,79 @@ function soundEffect(name) {
     audio.play();
 }
 
+synth.getVoices();
+
+synth.onvoiceschanged = function() {
+    updateVoices(state.lang);
+};
+
+function updateVoices(lang) {
+  synth = window.speechSynthesis;
+  voices = synth.getVoices();
+  console.log("Available voices", voices);
+
+  if (lang == null) {
+    return;
+  }
+
+  const voiceSelect = document.querySelector("#voice");
+  voiceSelect.innerHTML = "";
+  let voicesAvailable = false;
+  for (let i = 0; i < voices.length; i++) {
+    const option = document.createElement("option");
+    if (!voices[i].lang.startsWith(lang)) {
+        continue;
+    }
+    option.textContent = voices[i].name;
+    option.value = i;
+
+    option.setAttribute("data-lang", voices[i].lang);
+    option.setAttribute("data-name", voices[i].name);
+    voiceSelect.appendChild(option);
+    voicesAvailable = true;
+  }
+
+  document.querySelector("#no-voices").style.display = voicesAvailable ? "none" : "block";
+  if (!voicesAvailable) {
+    document.querySelector("#mode").value = "textOnly";
+  } else {
+    document.querySelector("#mode").value = "audioAndText";
+  }
+}
+
+function resetStory() {
+    state.resetStory();
+    document.querySelector('.story').innerHTML = "";
+    document.querySelector('.story-end').style.display = "none";
+    document.querySelector('.footer').style.display = "flex";
+}
+
+function targetLang() {
+    return document.querySelector("#targetLang").value;
+}
+
+export function setLanguage(l) {
+    state.lang = l;
+    document.querySelector('.top').style.display = "block";
+    updateVoices(state.lang);
+    document.querySelector("#storySelector").style.display = "block";
+    document.querySelector("#languageSelector").style.display = "none";
+
+    if (targetLang() === state.lang) {
+        document.querySelector("#targetLang").value =
+            state.lang === "en" ? "fr" : "en";
+    }
+}
+
+async function chooseStory(name) {
+    document.querySelector('#infoHeader').style.display = "none";
+    document.querySelector("#storySelector").style.display = "none";
+
+    await state.loadStory(name);
+    resetStory();
+    next();
+}
+
 function listen(text) {
     const voice = voices[document.querySelector("#voice").value];
     if (voice == null) {
@@ -195,7 +121,7 @@ function listen(text) {
 
 function createTranslation(parent, pageIndex, sentenceIndex) {
     const transl = document.createElement("p");
-    const transLang = state.targetLang();
+    const transLang = targetLang();
     transl.textContent = state.sentence(pageIndex, sentenceIndex, transLang);
     transl.classList.add("translation");
     if (state.openTransl) {
@@ -210,7 +136,7 @@ function createTranslation(parent, pageIndex, sentenceIndex) {
 
 function showText(pageIndex, sentenceIndex, useSpoiler) {
 
-    const image = sentences[pageIndex].image;
+    const image = state.getImage();
     if (sentenceIndex == 0 && image) {
         const img = document.createElement("img");
         img.src = `img/stories/${image}`;
@@ -268,18 +194,13 @@ function showText(pageIndex, sentenceIndex, useSpoiler) {
     main.appendChild(div);
 }
 
-function openPage(index) {
-    state.openPage(index);
-    next();
-}
-
 function showChoices() {
     const choices = state.choices;
     const main = document.querySelector('.story');
     const container = document.createElement("div");
     container.classList.add("choices");
 
-    const transLang = state.targetLang();
+    const transLang = targetLang();
     for (let i = 0; i < choices.length; i++) {
         const text = choices[i][state.lang];
         const elt = document.createElement("div");
@@ -309,7 +230,9 @@ function showChoices() {
             container.innerHTML = "";
             container.appendChild(elt);
 
-            openPage(state.choices[i]["goto"]);
+            state.openPage(state.choices[i]["goto"]);
+            next();
+        
         };
 
         container.appendChild(icon);
@@ -388,3 +311,12 @@ function next() {
     state.nextLine();
     updateButtons();
 };
+
+
+// Expose entry points to the browser
+window.chooseStory = chooseStory;
+window.setLanguage = setLanguage;
+window.next = next;
+window.showAll = showAll;
+window.resetStory = resetStory;
+window.backToMenu = backToMenu;
