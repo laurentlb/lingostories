@@ -212,6 +212,7 @@ summary {
     border: 1px solid var(--border-color);
     border-radius: 16px;
     padding: 16px 16px;
+    padding-bottom: 4px;
     margin: 8px 0;
 }
 
@@ -300,6 +301,10 @@ p {
 details > ul {
     padding-left: 0;
     list-style-type: none;
+}
+
+details h2 {
+    display: inline-block;
 }
 
 .flag {
