@@ -28,8 +28,7 @@ export function setLanguage(l) {
 }
 
 async function chooseStory(name) {
-    document.querySelector('#infoHeader').style.display = "none";
-    document.querySelector("#storySelector").style.display = "none";
+    showHome(false);
 
     await state.loadStory(name);
     resetStory();
@@ -166,9 +165,19 @@ function showChoices() {
     }
 }
 
+function showHome(show) {
+    const display = show ? "block" : "none";
+    console.log(document.querySelectorAll('.home'));
+    document.querySelectorAll('.home').forEach(e => {
+        e.style.display = display;
+    });
+
+    document.querySelector("#storySelector").style.display = display;
+}
+
 function backToMenu() {
     resetStory();
-    document.querySelector('#infoHeader').style.display = "block";
+    showHome(true);
     document.querySelector('#storySelector').style.display = "block";
     document.querySelector('.footer').style.display = "none";
 }

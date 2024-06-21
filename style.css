@@ -12,6 +12,7 @@ body, html {
     --border-color: #444;
     --main-text-color: #ddd;
     --secondary-text-color: #8a8;
+    --highlight-color: #aaf;
     --panel-bg-color: ##18181e;
     --panel-hover-bg-color: #101010;
     --main-bg-color: #303030;
@@ -68,15 +69,16 @@ input[type="button"]:hover {
 }
 
 h1 {
-    color: #aaf;
+    color: var(--highlight-color);
     text-transform: capitalize;
     font-variant: small-caps;
-    border-bottom: 1px #aaf solid;
+    border-bottom: 1px var(--highlight-color) solid;
 }
 
 h2 {
     margin-block-start: 0;
     font-size: 1.2em;
+    color: var(--highlight-color);
 }
 
 .top-icon:hover, .player-icon:hover, .bubble-icon:hover, .audio-icon:hover, .choice-icon:hover {
@@ -270,7 +272,7 @@ li > label {
 }
 
 a {
-    color: #aaf;
+    color: var(--highlight-color);
 }
 
 a:hover {
@@ -280,6 +282,15 @@ a:hover {
 #languageSelector a {
     font-weight: bold;
     text-decoration: none;
+}
+
+#languageSelector ul {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    padding: 0;
+    text-align: center;
+    grid-gap: 0.5em;
 }
 
 p {
@@ -292,7 +303,7 @@ details > ul {
 }
 
 .flag {
-    width: 48px;
+    width: 64px;
     vertical-align: middle;
     border-radius: 4px;
     margin: 8px;
