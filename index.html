@@ -93,7 +93,7 @@
         <div class="info" style="display: none;" id="no-voices">No voices available.</div>
 
         <div class="story"></div>
-        <img src="img/comment-dots.svg" id="inlineNext" class="icon bubble-icon" onclick="next()">
+        <img src="img/comment-dots.svg" id="inlineNext" class="icon bubble-icon" title="Continue (Space key)" onclick="next()">
 
         <div class="story-end">
             <img class="certificate" src="img/certificate-badge.svg">
@@ -147,25 +147,10 @@
 
 </div>
 <div class="footer">
-    <img class="icon player-icon" id="player-next" src="img/player-play.svg" title="Next" onclick="next();">
+    <img class="icon player-icon" id="player-next" src="img/player-play.svg" title="Continue (Space key)" onclick="next();">
     <img class="icon player-icon" id="player-all" src="img/player-end.svg" title="Show All" onclick="showAll();">
     <img class="icon player-icon" id="player-restart" src="img/restart.svg" title="Restart the story" onclick="resetStory(); next();">
 </div>
-
-<script>
-
-window.onload = function(){
-    const urlParams = new URLSearchParams(window.location.search);
-    if (urlParams.has("lang")) {
-        setLanguage(urlParams.get("lang"));
-    }
-
-    if (urlParams.has("story")) {
-        chooseStory(urlParams.get("story"));
-    }
-};
-
-</script>
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-SJPVM9P6EP"></script>

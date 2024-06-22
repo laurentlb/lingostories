@@ -19,10 +19,10 @@ export function listenMP3(state, pageIndex, sentenceIndex, mayAutoPlay) {
     });
 }
 
-export function soundEffect(name) {
+export function soundEffect(name, callback = null) {
     const file = `audio/${name}.mp3`;
     audio.src = file;
-    audio.onended = null;
+    audio.onended = callback;
     audio.playbackRate = 1;
     audio.volume = document.querySelector("#volume").value;
     audio.play();

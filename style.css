@@ -342,4 +342,10 @@ details h2 {
         background-color: #0004;
         border-radius: 8px;
     }
+
+    .correct-sentence {
+        color: #f44;
+        font-weight: bold;
+        cursor: pointer;
+    }
 }

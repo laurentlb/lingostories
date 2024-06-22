@@ -6,10 +6,9 @@ class Page {
     }
 }
 
-export class State {
+export class Story {
     constructor() {
         this.sentences = {};
-        this.spoiler = null;
         this.lang = null;
         this.sentenceIndex = 0;
         this.pageIndex = 0;
@@ -20,13 +19,11 @@ export class State {
     resetStory() {
         this.sentenceIndex = 0;
         this.pageIndex = 0;
-        this.spoiler = null;
     }
 
     openPage(index) {
         this.pageIndex = index;
         this.sentenceIndex = 0;
-        this.spoiler = null;
     }
 
     endOfPage() {
