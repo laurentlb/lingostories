@@ -1,5 +1,6 @@
 import { State } from "./state.js";
 import { initTTS, listenMP3, soundEffect, updateVoices } from "./audio.js";
+import { WordShuffleGame } from "./wordShuffleGame.js";
 
 const state = new State();
 
@@ -50,14 +51,38 @@ function createTranslation(parent, pageIndex, sentenceIndex) {
     parent.appendChild(transl);
 }
 
+function shouldShowMinigame(content, pageIndex, sentenceIndex) {
+    const nbWords = content.split(" ").length;
+    if (nbWords < 4 || nbWords > 10) {
+        return false;
+    }
+
+    if (state.spoiler) {
+        return false;
+    }
+
+    if (state.storyName === "intro") {
+        return false;
+    }
+
+    if (pageIndex === 0 && sentenceIndex === 0) {
+        return false;
+    }
+
+    return Math.random() < 0.2;
+}
+
 function showText(pageIndex, sentenceIndex, useSpoiler) {
+    const main = document.querySelector('.story');
+    const container = document.createElement("div");
+    container.classList.add("sentence-container");
+    main.appendChild(container);
 
     const image = state.getImage();
     if (sentenceIndex == 0 && image) {
         const img = document.createElement("img");
         img.src = `img/stories/${image}`;
         img.classList.add("story-image");
-        const main = document.querySelector('.story');
         main.appendChild(img);
     }
 
@@ -69,11 +94,31 @@ function showText(pageIndex, sentenceIndex, useSpoiler) {
         listenMP3(state, pageIndex, sentenceIndex, false);
     };
 
-    const container = document.createElement("span");
-    container.classList.add("audio-icon-container");
-    container.appendChild(icon);
+    const audio = document.createElement("span");
+    audio.classList.add("audio-icon-container");
+    audio.appendChild(icon);
+    container.appendChild(audio);
 
-    const elt = document.createElement("span");
+    const showMinigame = shouldShowMinigame(content, pageIndex, sentenceIndex);
+
+    if (showMinigame) {
+        const minigame = document.createElement("div");
+        const game = new WordShuffleGame(content, minigame,
+            () => {
+                minigame.remove();
+                actuallyShowText(container, pageIndex, sentenceIndex, useSpoiler);
+                next();
+            });
+        container.appendChild(minigame);
+    } else {
+        actuallyShowText(container, pageIndex, sentenceIndex, useSpoiler);
+    }
+}
+
+function actuallyShowText(container, pageIndex, sentenceIndex, useSpoiler) {
+    const content = state.sentence(pageIndex, sentenceIndex, state.lang);
+    const title = pageIndex === 0 && sentenceIndex === 0;
+    const elt = document.createElement(title ? "h2" : "p");
     if (useSpoiler) {
         elt.classList.add("spoiler");
         state.spoiler = elt;
@@ -82,7 +127,6 @@ function showText(pageIndex, sentenceIndex, useSpoiler) {
     elt.classList.add("text");
     elt.textContent = content;
 
-    const main = document.querySelector('.story');
     const showTranslation = document.querySelector("#showTranslations").checked || state.storyName === "intro";
     if (showTranslation) {
         createTranslation(elt, pageIndex, sentenceIndex);
@@ -103,11 +147,7 @@ function showText(pageIndex, sentenceIndex, useSpoiler) {
         }
     }
 
-    const title = pageIndex === 0 && sentenceIndex === 0;
-    const div = document.createElement(title ? "h2" : "p");
-    div.appendChild(container);
-    div.appendChild(elt);
-    main.appendChild(div);
+    container.appendChild(elt);
 }
 
 function showChoices() {

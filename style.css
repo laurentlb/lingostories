@@ -313,3 +313,33 @@ details h2 {
     border-radius: 4px;
     margin: 8px;
 }
+
+.sentence-container > * {
+    display: inline-block;
+}
+
+.word-shuffle-game {
+
+    .word {
+        display: inline-block;
+        padding: 4px;
+        margin: 4px;
+        border: 1px solid var(--border-color);
+        border-radius: 8px;
+        background-color: var(--panel-bg-color);
+        cursor: pointer;
+        transition: all .2s;
+    }
+
+    .greyed-out {
+        color: transparent;
+        user-select: none;
+        background-color: #444;
+    }
+
+    .sentence {
+        height: 2em;
+        background-color: #0004;
+        border-radius: 8px;
+    }
+}
