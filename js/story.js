@@ -52,7 +52,13 @@ export class Story {
     }
 
     getImage() {
-        return this.sentences[this.pageIndex].image;
+        const img = this.sentences[this.pageIndex].image;
+        if (!img) {
+            return null;
+        }
+        if (parseInt(img[0]) === this.sentenceIndex) {
+            return img[1];
+        }
     }
 
     sentence(pageIndex, sentenceIndex, lang) {

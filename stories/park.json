@@ -23,7 +23,7 @@
     ],
     "1": [
         {
-            "img": "park-1.jpg",
+            "img": "0|park-1.jpg",
             "en": "Anna finds a nice spot under a big tree.|She sits on the grass and takes out a book and a sandwich.|She loves to read.|After a while, a dog runs up to her.|The dog is friendly and wants to play.|What does Anna do?",
             "fr": "Anna trouve un endroit agréable sous un grand arbre.|Elle s'assoit sur l'herbe et sort un livre et un sandwich.|Elle adore lire.|Au bout d'un moment, un chien s'approche d'elle.|Le chien est amical et veut jouer.|Que fait Anna ?",
             "pl": "Anna znajduje przyjemne miejsce pod dużym drzewem.|Siada na trawie, wyjmuje książkę i kanapkę.|Uwielbia czytać.|Po chwili podbiega do niej pies.|Pies jest przyjazny i chce się bawić.|Czym zajmuje się Anna?",
@@ -68,10 +68,11 @@
     ],
     "3": [
         {
-            "en": "Anna plays with the dog.|They run around and have a lot of fun.|The dogâ€™s owner comes and thanks Anna.|The owner gives Anna a ball to keep.|What does Anna do next?",
-            "fr": "Anna joue avec le chien.|Ils courent partout et s'amusent beaucoup.|Le propriétaire du chien vient remercier Anna.|Le propriétaire donne à Anna une balle à garder.|Que fait Anna ensuite ?",
-            "pl": "Anna bawi się z psem.|Biegają i świetnie się bawią.|Właściciel psa przychodzi i dziękuje Annie.|Właściciel daje Annie piłkę do zatrzymania.|Co dalej zrobi Anna?",
-            "de": "Anna spielt mit dem Hund.|Sie rennen herum und haben eine Menge Spaß.|Der Besitzer des Hundes kommt und bedankt sich bei Anna.|Der Besitzer gibt Anna einen Ball, den sie behalten darf.|Was macht Anna als nächstes?"
+            "img": "1|park-3.jpg",
+            "en": "Anna plays with the dog.|They run around and have a lot of fun.|The dog's owner comes and thanks Anna.|What does Anna do next?",
+            "fr": "Anna joue avec le chien.|Ils courent partout et s'amusent beaucoup.|Le propriétaire du chien vient remercier Anna.|Que fait Anna ensuite ?",
+            "pl": "Anna bawi się z psem.|Biegają i świetnie się bawią.|Właściciel psa przychodzi i dziękuje Annie.|Co dalej zrobi Anna?",
+            "de": "Anna spielt mit dem Hund.|Sie rennen herum und haben eine Menge Spaß.|Der Besitzer des Hundes kommt und bedankt sich bei Anna.|Was macht Anna als nächstes?"
         },
         {
             "goto": "7",
@@ -112,7 +113,7 @@
     ],
     "5": [
         {
-            "en": "Anna helps the little girl with her shoe.|The girl smiles and thanks her.|The girlâ€™s parents come and also thank Anna.|They offer Anna some snacks as a thank you.|What does Anna do?",
+            "en": "Anna helps the little girl with her shoe.|The girl smiles and thanks her.|The girl's parents come and also thank Anna.|They offer Anna some snacks as a thank you.|What does Anna do?",
             "fr": "Anna aide la petite fille à mettre sa chaussure.|La jeune fille sourit et la remercie.|Les parents de la jeune fille arrivent et remercient également Anna.|En guise de remerciement, ils offrent à Anna des collations.|Que fait Anna ?",
             "pl": "Anna pomaga dziewczynce założyć but.|Dziewczyna uśmiecha się i dziękuje.|Rodzice dziewczynki przychodzą i również dziękują Annie.|W ramach podziękowania oferują Annie przekąski.|Czym zajmuje się Anna?",
             "de": "Anna hilft dem kleinen Mädchen mit ihrem Schuh.|Das Mädchen lächelt und dankt ihr.|Die Eltern des Mädchens kommen und danken Anna ebenfalls.|Sie bieten Anna als Dankeschön einige Snacks an.|Was macht Anna?"
@@ -208,7 +209,7 @@
     ],
     "10": [
         {
-            "en": "Anna accepts the snacks and eats them.|They are very tasty.|Anna thanks the girlâ€™s parents.|She feels happy and decides to do something else.",
+            "en": "Anna accepts the snacks and eats them.|They are very tasty.|Anna thanks the girl's parents.|She feels happy and decides to do something else.",
             "fr": "Anna accepte les en-cas et les mange.|Ils sont très savoureux.|Anna remercie les parents de la jeune fille.|Elle se sent heureuse et décide de faire autre chose.",
             "pl": "Anna przyjmuje przekąski i zjada je.|Są bardzo smaczne.|Anna dziękuje rodzicom dziewczynki.|Czuje się szczęśliwa i postanawia zrobić coś innego.",
             "de": "Anna nimmt die Snacks an und isst sie.|Sie sind sehr schmackhaft.|Anna bedankt sich bei den Eltern des Mädchens.|Sie fühlt sich glücklich und beschließt, etwas anderes zu tun."
@@ -245,7 +246,8 @@
     ],
     "14": [
         {
-            "en": "Anna and the girl play a game.|They play tag and have a lot of fun.|The girlâ€™s parents thank Anna again.|Anna feels joyful and decides to take one last walk before going home.",
+            "img": "0|park-4.jpg",
+            "en": "Anna and the girl play a game.|They play tag and have a lot of fun.|The girl's parents thank Anna again.|Anna feels joyful and decides to take one last walk before going home.",
             "fr": "Anna et la jeune fille jouent à un jeu.|Ils jouent au chat et à la souris et s'amusent beaucoup.|Les parents de la jeune fille remercient à nouveau Anna.|Anna se sent joyeuse et décide de faire une dernière promenade avant de rentrer chez elle.",
             "pl": "Anna i dziewczyna grają w grę.|Grają w berka i świetnie się bawią.|Rodzice dziewczynki jeszcze raz dziękują Annie.|Anna czuje się szczęśliwa i postanawia wybrać się na ostatni spacer przed powrotem do domu.",
             "de": "Anna und das Mädchen spielen ein Spiel.|Sie spielen Fangen und haben eine Menge Spaß dabei.|Die Eltern des Mädchens bedanken sich noch einmal bei Anna.|Anna ist glücklich und beschließt, einen letzten Spaziergang zu machen, bevor sie nach Hause geht."
@@ -260,7 +262,7 @@
     ],
     "15": [
         {
-            "img": "park-2.jpg",
+            "img": "0|park-2.jpg",
             "en": "Anna smiles and waves at Tom.|Tom waves back and walks over to her.|\"Hi Anna!|It's great to see you here,\" Tom says.|What does Anna say?",
             "fr": "Anna sourit et salue Tom.|Tom lui répond par un signe de la main et s'approche d'elle.|\"Bonjour Anna !|C'est un plaisir de vous voir ici\", dit Tom.|Que dit Anna ?",
             "pl": "Anna uśmiecha się i macha do Toma.|Tom macha i podchodzi do niej.|\"Cześć Anna!|Miło cię tu widzieć\", mówi Tom.|Co mówi Anna?",

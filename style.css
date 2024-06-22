@@ -143,9 +143,19 @@ h2 {
 }
 
 .story-image {
-    width: 100%;
+    width: 80%;
     border-radius: 16px;
-    border: 1px solid var(--border-color);
+    display: block;
+    margin: 1em auto;
+    border-radius: 16px;
+    border: 1px solid #000;
+}
+
+.small-story-image {
+    width: 31%;
+    margin: 4px;
+    border-radius: 16px;
+    border: 1px solid #000;
 }
 
 .translation {
@@ -168,6 +178,15 @@ h2 {
     :hover {
         color: var(--highlight-color);
         cursor: pointer;
+    }
+
+    .story-count {
+        margin-left: auto;
+    }
+
+    .story-complete {
+        color: var(--highlight-color);
+        font-weight: bold;
     }
 }
 
@@ -338,7 +357,6 @@ details h2 {
 }
 
 .word-shuffle-game {
-
     .word {
         display: inline-block;
         padding: 4px;

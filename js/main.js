@@ -1,12 +1,14 @@
 import { Story } from "./story.js";
 import { initTTS, listenMP3, soundEffect, updateVoices } from "./audio.js";
 import { WordShuffleGame } from "./wordShuffleGame.js";
+import { UserData } from "./userdata.js";
 
 const story = new Story();
+const userData = new UserData();
 
 const stories = [
-    { id: "intro", title: "Introduction"},
-    { id: "park", title: "At the Park" },
+    { id: "intro", title: "Introduction", imageCount: 1 },
+    { id: "park", title: "At the Park", imageCount: 4 },
 ];
 
 var nextAction = null;
@@ -85,11 +87,12 @@ function showText(pageIndex, sentenceIndex, useSpoiler) {
     container.classList.add("sentence-container");
 
     const image = story.getImage();
-    if (sentenceIndex == 0 && image) {
+    if (image) {
         const img = document.createElement("img");
         img.src = `img/stories/${image}`;
         img.classList.add("story-image");
         main.appendChild(img);
+        userData.collectImage(story.storyName, image);
     }
 
     main.appendChild(container);
@@ -213,10 +216,34 @@ function showChoices() {
     story.sentenceIndex++;
     if (choices.length === 0) {
         document.querySelector(".story-end").style.display = "block";
+        const storyData = stories.find(s => s.id === story.storyName);
+        const collectedImages = userData.nbCollectedImages(story.storyName);
+        let text = "You have completed this story. "
+        if (collectedImages === storyData.imageCount) {
+            text += `You have collected all images in this story!`;
+        } else {
+            text += `You have collected ${collectedImages} out of ${storyData.imageCount} images in this story.`;
+        }
+        document.querySelector('.story-end-text').textContent = text;
         document.querySelector('.footer').style.display = "none";
         soundEffect('level-end');
     } else {
         main.appendChild(container);
+    }
+}
+
+function createImageCollection() {
+    const container = document.querySelector(".image-collection");
+    container.innerHTML = "";
+
+    for (const sto of stories) {
+        const images = userData.collectedImages[sto.id] || [];
+        for (const img of images) {
+            const elt = document.createElement("img");
+            elt.src = `img/stories/${img}`;
+            elt.classList.add("small-story-image");
+            container.appendChild(elt);
+        }
     }
 }
 
@@ -239,6 +266,18 @@ function createStoryList() {
         link.textContent = sto.title;
         elt.appendChild(link);
 
+        const countLabel = document.createElement("span");
+        countLabel.classList.add("story-count");
+        const collected = userData.nbCollectedImages(sto.id);
+        countLabel.textContent = `${collected}/${sto.imageCount}`;
+        if (collected === sto.imageCount) {
+            countLabel.classList.add("story-complete");
+            countLabel.title = `You have collected all images in this story!`;
+        } else {
+            countLabel.title = `You have collected ${collected} out of ${sto.imageCount} images in this story.`
+        }
+        elt.appendChild(countLabel);
+
         container.appendChild(elt);
     }
 }
@@ -251,6 +290,7 @@ function showHome(show) {
     });
 
     createStoryList();
+    createImageCollection();
     document.querySelector("#storySelector").style.display = display;
 }
 
@@ -341,6 +381,8 @@ window.onload = function(){
     if (urlParams.has("story")) {
         chooseStory(urlParams.get("story"));
     }
+
+    createImageCollection();
 };
 
 // Expose entry points to the browser
