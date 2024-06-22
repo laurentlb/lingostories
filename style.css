@@ -155,6 +155,22 @@ h2 {
     margin-block-start: 0.2em;
 }
 
+.story-list {
+    .story-info {
+        display: flex;
+    }
+
+    * {
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    :hover {
+        color: var(--highlight-color);
+        cursor: pointer;
+    }
+}
+
 .main {
     max-width: 600px;
     margin: 0 auto;

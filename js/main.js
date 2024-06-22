@@ -4,6 +4,11 @@ import { WordShuffleGame } from "./wordShuffleGame.js";
 
 const story = new Story();
 
+const stories = [
+    { id: "intro", title: "Introduction"},
+    { id: "park", title: "At the Park" },
+];
+
 var nextAction = null;
 var actionPending = false;
 
@@ -24,6 +29,7 @@ function setLanguage(l) {
     story.lang = l;
     document.querySelector('.top').style.display = "block";
     updateVoices(story.lang);
+    createStoryList();
     document.querySelector("#storySelector").style.display = "block";
     document.querySelector("#languageSelector").style.display = "none";
 
@@ -214,6 +220,29 @@ function showChoices() {
     }
 }
 
+function createStoryList() {
+    const container = document.querySelector(".story-list");
+    container.innerHTML = "";
+
+    for (const sto of stories) {
+        const elt = document.createElement("div");
+        elt.onclick = () => { chooseStory(sto.id); };
+        elt.classList.add("story-info");
+
+        const img = document.createElement("img");
+        img.src = `img/arrow-right-3-square.svg`;
+        img.classList.add("icon", "choice-icon");
+        elt.appendChild(img);
+
+        const link = document.createElement("span");
+        link.classList.add("story-choice");
+        link.textContent = sto.title;
+        elt.appendChild(link);
+
+        container.appendChild(elt);
+    }
+}
+
 function showHome(show) {
     const display = show ? "block" : "none";
     console.log(document.querySelectorAll('.home'));
@@ -221,13 +250,13 @@ function showHome(show) {
         e.style.display = display;
     });
 
+    createStoryList();
     document.querySelector("#storySelector").style.display = display;
 }
 
 function backToMenu() {
     resetStory();
     showHome(true);
-    document.querySelector('#storySelector').style.display = "block";
     document.querySelector('.footer').style.display = "none";
 }
 
