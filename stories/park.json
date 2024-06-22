@@ -115,7 +115,7 @@
             "en": "Anna helps the little girl with her shoe.|The girl smiles and thanks her.|The girlâ€™s parents come and also thank Anna.|They offer Anna some snacks as a thank you.|What does Anna do?",
             "fr": "Anna aide la petite fille à mettre sa chaussure.|La jeune fille sourit et la remercie.|Les parents de la jeune fille arrivent et remercient également Anna.|En guise de remerciement, ils offrent à Anna des collations.|Que fait Anna ?",
             "pl": "Anna pomaga dziewczynce założyć but.|Dziewczyna uśmiecha się i dziękuje.|Rodzice dziewczynki przychodzą i również dziękują Annie.|W ramach podziękowania oferują Annie przekąski.|Czym zajmuje się Anna?",
-            "de": "Anna hilft dem kleinen Mädchen mit ihrem Schuh.|Das Mädchen lächelt und dankt ihr.|Die Eltern des MÃ?dchens kommen und danken Anna ebenfalls.|Sie bieten Anna als Dankeschön einige Snacks an.|Was macht Anna?"
+            "de": "Anna hilft dem kleinen Mädchen mit ihrem Schuh.|Das Mädchen lächelt und dankt ihr.|Die Eltern des Mädchens kommen und danken Anna ebenfalls.|Sie bieten Anna als Dankeschön einige Snacks an.|Was macht Anna?"
         },
         {
             "goto": "10",
@@ -489,12 +489,6 @@
         }
     ],
     "27": [
-        {
-            "en": "",
-            "fr": "",
-            "pl": "",
-            "de": ""
-        },
         {
             "goto": "28",
             "en": "That's great! Maybe we can read one together sometime.",

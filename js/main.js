@@ -77,7 +77,6 @@ function showText(pageIndex, sentenceIndex, useSpoiler) {
     const main = document.querySelector('.story');
     const container = document.createElement("div");
     container.classList.add("sentence-container");
-    main.appendChild(container);
 
     const image = story.getImage();
     if (sentenceIndex == 0 && image) {
@@ -87,12 +86,14 @@ function showText(pageIndex, sentenceIndex, useSpoiler) {
         main.appendChild(img);
     }
 
+    main.appendChild(container);
+
     const content = story.sentence(pageIndex, sentenceIndex, story.lang);
     const icon = document.createElement("img");
     icon.src = "img/volume-up.svg"; 
     icon.classList.add("icon", "audio-icon");
     icon.onclick = () => {
-        listenMP3(story, pageIndex, sentenceIndex, false);
+        listenMP3(story, pageIndex, sentenceIndex, null);
     };
 
     const audio = document.createElement("span");
@@ -284,7 +285,11 @@ function next() {
         inlineNext.style.display = "block";
     }
     if (document.querySelector("#mode").value !== "textOnly") {
-        listenMP3(story, story.pageIndex, story.sentenceIndex, true);
+        listenMP3(story, story.pageIndex, story.sentenceIndex, () => {
+            if (!actionPending) {
+                next();
+            }
+        });
     }
     story.nextLine();
     updateButtons();

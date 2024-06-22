@@ -42,8 +42,10 @@ export class Story {
         this.sentenceIndex++;
         if (this.endOfPage()) {
             const choices = this.choices;
-            if (choices.length === 1 && !choices[0]["en"]) {
-                this.openPage(choices[0]["goto"]);
+            if (choices.length === 1) { // skip superfluous choices
+                if (!choices[0]["en"] || choices[0]["en"] === "...") {
+                    this.openPage(choices[0]["goto"]);
+                }
             }
             return;
         }

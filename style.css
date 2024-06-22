@@ -111,8 +111,8 @@ h2 {
 .audio-icon-container {
     display: inline-block;
     margin-right: 8px;
-    width: 1rem;
     height: 1rem;
+    vertical-align: top;
 }
 
 .icon {
@@ -124,7 +124,6 @@ h2 {
 
 .audio-icon {
     height: 1.2rem;
-    position: absolute;
 }
 
 .bubble-icon {
@@ -314,6 +313,10 @@ details h2 {
     margin: 8px;
 }
 
+.sentence-container {
+    display: flex;
+}
+
 .sentence-container > * {
     display: inline-block;
 }
@@ -338,7 +341,7 @@ details h2 {
     }
 
     .sentence {
-        height: 2em;
+        min-height: 2em;
         background-color: #0004;
         border-radius: 8px;
     }

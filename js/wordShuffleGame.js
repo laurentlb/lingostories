@@ -4,9 +4,8 @@ export class WordShuffleGame {
     constructor(sentence, minigameContainer, callback) {
         this.minigameContainer = minigameContainer;
         this.sentence = sentence;
-        this.cleanedSentence = sentence.replace(/[.,!;:()?"]/g, '');
-        const words = this.cleanedSentence.split(' ');
-        this.shuffledWords = this.shuffleArray([...words]);
+        this.words = sentence.match(/[^.,!;:()?" ]+/g);
+        this.shuffledWords = this.shuffleArray([...this.words]);
         this.selectedWords = [];
         this.callback = callback;
         this.init();
@@ -74,7 +73,7 @@ export class WordShuffleGame {
 
     checkSentence() {
         const selectedSentence = this.selectedWords.map(i => this.shuffledWords[i]).join(' ');
-        if (selectedSentence !== this.cleanedSentence) {
+        if (selectedSentence !== this.words.join(' ')) {
             this.wordContainer.innerHTML = "";
             this.wordContainer.textContent = this.sentence;
             this.wordContainer.classList.add('correct-sentence');
@@ -85,7 +84,9 @@ export class WordShuffleGame {
             
         } else {
             soundEffect('game-success');
-            this.callback();
+            setTimeout(() => {
+                this.callback();
+            }, 100);
         }
     }
 }
