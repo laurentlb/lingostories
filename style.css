@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body, html {
     margin: 0;
     padding: 0;
@@ -36,6 +42,15 @@ body, html {
 
 .revealed {
     animation: reveal 1s;
+}
+
+select {
+    background-color: #444;
+    color: var(--main-text-color);
+}
+
+input[type="range"], input[type="checkbox"] {
+    filter: invert(1) hue-rotate(160deg);
 }
 
 input[type="button"] {
