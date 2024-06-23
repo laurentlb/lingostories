@@ -17,6 +17,7 @@ var actionPending = false;
 function resetStory() {
     story.resetStory();
     document.querySelector('.story').innerHTML = "";
+    document.querySelector('.story').style.display = "block";
     document.querySelector('.story-end').style.display = "none";
     document.querySelector('.footer').style.display = "flex";
     nextAction = null;
@@ -81,20 +82,29 @@ function shouldShowMinigame(content, pageIndex, sentenceIndex) {
     return Math.random() < 0.2;
 }
 
+function showTextOrImage(pageIndex, sentenceIndex, useSpoiler) {
+    const image = story.getImage();
+    if (!image) {
+        showText(pageIndex, sentenceIndex, useSpoiler);
+        return;
+    }
+
+    const main = document.querySelector('.story');
+    const img = document.createElement("img");
+    img.src = `img/stories/${image}`;
+    img.classList.add("story-image");
+    main.appendChild(img);
+    userData.collectImage(story.storyName, image);
+    soundEffect('image-collected');
+    nextAction = () => {
+        showText(pageIndex, sentenceIndex, useSpoiler);
+    };
+}
+
 function showText(pageIndex, sentenceIndex, useSpoiler) {
     const main = document.querySelector('.story');
     const container = document.createElement("div");
     container.classList.add("sentence-container");
-
-    const image = story.getImage();
-    if (image) {
-        const img = document.createElement("img");
-        img.src = `img/stories/${image}`;
-        img.classList.add("story-image");
-        main.appendChild(img);
-        userData.collectImage(story.storyName, image);
-    }
-
     main.appendChild(container);
 
     const content = story.sentence(pageIndex, sentenceIndex, story.lang);
@@ -128,6 +138,14 @@ function showText(pageIndex, sentenceIndex, useSpoiler) {
         container.appendChild(minigame);
     } else {
         actuallyShowText(container, pageIndex, sentenceIndex, useSpoiler);
+    }
+
+    if (document.querySelector("#mode").value !== "textOnly") {
+        listenMP3(story, pageIndex, sentenceIndex, () => {
+            if (!actionPending) {
+                next();
+            }
+        });
     }
 }
 
@@ -289,6 +307,11 @@ function showHome(show) {
         e.style.display = display;
     });
 
+    document.querySelectorAll('.in-story').forEach(e => {
+        const display = !show ? "block" : "none";
+        e.style.display = display;
+    });
+
     createStoryList();
     createImageCollection();
     document.querySelector("#storySelector").style.display = display;
@@ -309,26 +332,12 @@ function updateButtons() {
     const storyContinues = story.hasNext();
     const hasNext = storyContinues;
     const hasInlineNext = (hasNext || nextAction) && !actionPending;
-    document.getElementById("inlineNext").style.display = hasInlineNext ? "block" : "none";
+    // document.getElementById("inlineNext").style.display = hasInlineNext ? "block" : "none";
     document.getElementById("player-next").style.visibility = hasNext ? "visible" : "hidden";
-    document.getElementById("player-all").style.visibility = hasNext ? "visible" : "hidden";
 
     setTimeout(function () {
         window.scrollTo({top: document.body.scrollHeight, behavior: "smooth"});
     }, 10);
-}
-
-function showAll() {
-    if (nextAction) {
-        nextAction();
-        nextAction = null;
-    }
-    while (!story.endOfPage()) {
-        showText(story.pageIndex, story.sentenceIndex, false);
-        story.nextLine();
-    }
-    showChoices();
-    updateButtons();
 }
 
 function next() {
@@ -349,17 +358,7 @@ function next() {
     }
 
     const useSpoiler = document.querySelector("#mode").value === "audioFirst";
-    showText(story.pageIndex, story.sentenceIndex, useSpoiler);
-    if (document.querySelector("#mode").value !== "audioFirst") {
-        inlineNext.style.display = "block";
-    }
-    if (document.querySelector("#mode").value !== "textOnly") {
-        listenMP3(story, story.pageIndex, story.sentenceIndex, () => {
-            if (!actionPending) {
-                next();
-            }
-        });
-    }
+    showTextOrImage(story.pageIndex, story.sentenceIndex, useSpoiler);
     story.nextLine();
     updateButtons();
 };
@@ -389,6 +388,5 @@ window.onload = function(){
 window.chooseStory = chooseStory;
 window.setLanguage = setLanguage;
 window.next = next;
-window.showAll = showAll;
 window.resetStory = resetStory;
 window.backToMenu = backToMenu;

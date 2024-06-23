@@ -200,14 +200,14 @@ summary {
 }
 
 .top {
-    background-color: #101010;
-    border: 1px solid var(--border-color);
+    background: inherit;
+    border-bottom: 1px solid var(--border-color);
     padding: 4px;
     position: fixed;
     left: 0;
     top: 0;
-    border-radius: 16px;
-    padding: 8px 16px;
+    width: 100%;
+    padding: 8px;
     display: none;
     transition: all .5s;
     z-index: 10;
@@ -385,4 +385,12 @@ details h2 {
         font-weight: bold;
         cursor: pointer;
     }
+}
+
+.in-story {
+    display: none;
+}
+
+.story {
+    padding-top: 1em;
 }

@@ -4,7 +4,7 @@ export class WordShuffleGame {
     constructor(sentence, minigameContainer, callback) {
         this.minigameContainer = minigameContainer;
         this.sentence = sentence;
-        this.words = sentence.match(/[^.,!;:()?" ]+/g);
+        this.words = sentence.match(/[^-.,!;:()?" ]+/g);
         this.shuffledWords = this.shuffleArray([...this.words]);
         this.selectedWords = [];
         this.callback = callback;
