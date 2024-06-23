@@ -1,188 +1,181 @@
 {
     "0": [
         {
-            "en": "It is a sunny day.|Anna wants to go to the park.|She likes the park because it is quiet and beautiful.|Anna puts on her shoes and takes her bag.|She walks to the park.|When Anna arrives, she sees many people.|Some are walking, some are sitting on benches, and some are playing with their dogs.|Where does Anna want to go first?",
-            "fr": "C'est une journée ensoleillée.|Anna veut aller au parc.|Elle aime le parc parce qu'il est calme et beau.|Anna met ses chaussures et prend son sac.|Elle marche jusqu'au parc.|Lorsqu'Anna arrive, elle voit beaucoup de monde.|Certains marchent, d'autres sont assis sur des bancs, d'autres encore jouent avec leur chien.|Où Anna veut-elle aller en premier ?",
-            "pl": "Jest słoneczny dzień.|Anna chce iść do parku.|Lubi park, ponieważ jest cichy i piękny.|Anna zakłada buty i bierze torebkę.|Idzie do parku.|Kiedy Anna przybywa na miejsce, widzi wielu ludzi.|Niektórzy spacerują, inni siedzą na ławkach, a jeszcze inni bawią się ze swoimi psami.|Gdzie Anna chce pojechać najpierw?",
-            "de": "Es ist ein sonniger Tag.|Anna möchte in den Park gehen.|Sie mag den Park, weil er ruhig und schön ist.|Anna zieht ihre Schuhe an und nimmt ihre Tasche.|Sie geht in den Park.|Als Anna ankommt, sieht sie viele Menschen.|Einige gehen spazieren, andere sitzen auf Bänken, wieder andere spielen mit ihren Hunden.|Wo will Anna zuerst hin?"
+            "img": "6|park-1.jpg",
+            "en": "A day in the Park.|It is a sunny day.|Anna wants to go to the park.|The park is always quiet and beautiful.|Anna puts on her shoes.|She walks to the park.|When Anna arrives, there are many people.|Many people are also walking.|Some people are sitting on benches and talking.|Where does Anna go first?",
+            "fr": "Une journée au parc.|C'est une journée ensoleillée.|Anna veut aller au parc.|Le parc est toujours calme et magnifique.|Anna met ses chaussures.|Elle marche jusqu'au parc.|Quand Anna arrive, il y a beaucoup de monde.|De nombreuses personnes marchent également.|Certaines personnes sont assises sur des bancs et discutent.|Où Anna va-t-elle d'abord ?",
+            "pl": "Dzień w parku.|Jest słoneczny dzień.|Anna chce iść do parku.|Park jest zawsze spokojny i piękny.|Anna zakłada buty.|Idzie do parku.|Kiedy Anna przybywa na miejsce, wokół jest mnóstwo ludzi.|Wiele osób również chodzi pieszo.|Niektórzy siedzą na ławkach i rozmawiają.|Gdzie w pierwszej kolejności udaje się Anna?",
+            "de": "Ein Tag im Park.|Es ist ein sonniger Tag.|Anna möchte in den Park gehen.|Der Park ist immer ruhig und wunderschön.|Anna zieht ihre Schuhe an.|Sie läuft zum Park.|Als Anna ankommt, sind viele Menschen unterwegs.|Viele Menschen gehen auch zu Fuß.|Einige Leute sitzen auf Bänken und unterhalten sich.|Wohin geht Anna zuerst?"
         },
         {
             "goto": "1",
-            "en": "Anna goes to sit under a big tree.",
-            "fr": "Anna va s'asseoir sous un grand arbre.",
-            "pl": "Anna idzie usiąść pod wielkim drzewem.",
-            "de": "Anna setzt sich unter einen großen Baum."
+            "en": "Under a big tree.",
+            "fr": "Sous un grand arbre.",
+            "pl": "Pod wielkim drzewem.",
+            "de": "Unter einem großen Baum"
         },
         {
             "goto": "2",
-            "en": "Anna goes to the playground.",
-            "fr": "Anna va au terrain de jeu.",
-            "pl": "Anna idzie na plac zabaw.",
-            "de": "Anna geht auf den Spielplatz."
+            "en": "To the playground.",
+            "fr": "Au terrain de jeu.",
+            "pl": "Na placu zabaw.",
+            "de": "Auf dem Spielplatz."
         }
     ],
     "1": [
         {
-            "img": "0|park-1.jpg",
-            "en": "Anna finds a nice spot under a big tree.|She sits on the grass and takes out a book and a sandwich.|She loves to read.|After a while, a dog runs up to her.|The dog is friendly and wants to play.|What does Anna do?",
-            "fr": "Anna trouve un endroit agréable sous un grand arbre.|Elle s'assoit sur l'herbe et sort un livre et un sandwich.|Elle adore lire.|Au bout d'un moment, un chien s'approche d'elle.|Le chien est amical et veut jouer.|Que fait Anna ?",
-            "pl": "Anna znajduje przyjemne miejsce pod dużym drzewem.|Siada na trawie, wyjmuje książkę i kanapkę.|Uwielbia czytać.|Po chwili podbiega do niej pies.|Pies jest przyjazny i chce się bawić.|Czym zajmuje się Anna?",
-            "de": "Anna findet einen schönen Platz unter einem großen Baum.|Sie setzt sich ins Gras und nimmt ein Buch und ein Sandwich heraus.|Sie liebt es zu lesen.|Nach einer Weile läuft ein Hund auf sie zu.|Der Hund ist freundlich und will spielen.|Was macht Anna?"
+            "en": "Anna finds a nice, big tree.|She sits down on the grass.|She takes a book and reads it.|She loves to read.|After a while, a dog comes to her.|The dog is friendly and wants to play.|What does Anna do?",
+            "fr": "Anna trouve un arbre grand et beau.|Elle s'assoit sur l'herbe.|Elle prend un livre et le lit.|Elle adore lire.|Au bout d'un moment, un chien vient à elle.|Le chien est gentil et veut jouer.|Que fait Anna ?",
+            "pl": "Anna znajduje duże, piękne drzewo.|Siada na trawie.|Podnosi książkę i czyta ją.|Uwielbia czytać.|Po chwili podszedł do niej pies.|Pies jest przyjazny i chce się bawić.|Co robi Anna?",
+            "de": "Anna findet einen großen und schönen Baum.|Sie setzt sich auf das Gras.|Sie nimmt ein Buch und liest es.|Sie liest gerne.|Nach einer Weile kommt ein Hund zu ihr.|Der Hund ist freundlich und will spielen.|Was macht Anna?"
         },
         {
             "goto": "3",
-            "en": "Anna plays with the dog.",
-            "fr": "Anna joue avec le chien.",
-            "pl": "Anna bawi się z psem.",
-            "de": "Anna spielt mit dem Hund."
+            "en": "Play with the dog.",
+            "fr": "Jouer avec le chien.",
+            "pl": "Zabawa z psem.",
+            "de": "Mit dem Hund spielen."
         },
         {
             "goto": "4",
-            "en": "Anna ignores the dog and keeps reading.",
-            "fr": "Anna ignore le chien et continue à lire.",
-            "pl": "Anna ignoruje psa i czyta dalej.",
-            "de": "Anna ignoriert den Hund und liest weiter."
+            "en": "Keep reading.",
+            "fr": "Continuer à lire.",
+            "pl": "Czytaj dalej.",
+            "de": "Weiterlesen."
         }
     ],
     "2": [
         {
-            "en": "Anna goes to the playground.|She sees children playing on the swings and the slide.|She sits on a bench nearby and watches them.|A little girl comes up to Anna and asks for help with her shoe.|What does Anna do?",
-            "fr": "Anna va au terrain de jeu.|Elle voit des enfants jouer sur les balançoires et le toboggan.|Elle s'assoit sur un banc à proximité et les observe.|Une petite fille s'approche d'Anna et lui demande de l'aide pour sa chaussure.|Que fait Anna ?",
-            "pl": "Anna idzie na plac zabaw.|Widzi dzieci bawiące się na huśtawkach i zjeżdżalni.|Siada na pobliskiej ławce i obserwuje ich.|Mała dziewczynka podchodzi do Anny i prosi o pomoc z butem.|Czym zajmuje się Anna?",
-            "de": "Anna geht auf den Spielplatz.|Sie sieht Kinder auf den Schaukeln und der Rutsche spielen.|Sie setzt sich auf eine Bank in der Nähe und beobachtet die beiden.|Ein kleines Mädchen kommt auf Anna zu und bittet um Hilfe mit ihrem Schuh.|Was macht Anna?"
+            "en": "Anna goes to the playground.|Many children are playing.|Anna sits on a bench nearby and watches the children.|A little girl comes up to Anna.|The girl asks for help with her shoe.|What does Anna do?",
+            "fr": "Anna va au terrain de jeu.|De nombreux enfants jouent.|Anna s'assoit sur un banc et observe les enfants.|Une petite fille s'approche d'Anna.|La jeune fille demande de l'aide pour sa chaussure.|Que fait Anna ?",
+            "pl": "Anna idzie na plac zabaw.|Bawi się wiele dzieci.|Anna siada na ławce i obserwuje dzieci.|Do Anny podchodzi mała dziewczynka.|Młoda dziewczyna prosi o pomoc z butem.|Co robi Anna?",
+            "de": "Anna geht zum Spielplatz.|Viele Kinder spielen.|Anna setzt sich auf eine Bank und beobachtet die Kinder.|Ein kleines Mädchen nähert sich Anna.|Das Mädchen bittet um Hilfe bei ihrem Schuh.|Was macht Anna?"
         },
         {
             "goto": "5",
-            "en": "Anna helps the little girl with her shoe.",
-            "fr": "Anna aide la petite fille à mettre sa chaussure.",
-            "pl": "Anna pomaga dziewczynce założyć but.",
-            "de": "Anna hilft dem kleinen Mädchen mit ihrem Schuh."
+            "en": "Help the little girl.",
+            "fr": "Aider la petite fille.",
+            "pl": "Pomóż małej dziewczynce.",
+            "de": "Dem kleinen Mädchen helfen."
         },
         {
             "goto": "6",
-            "en": "Anna tells the girl to ask her parents.",
-            "fr": "Anna dit à la jeune fille de demander à ses parents.",
-            "pl": "Anna mówi dziewczynie, by zapytała rodziców.",
-            "de": "Anna sagt dem Mädchen, es solle seine Eltern fragen."
+            "en": "Tell the girl to ask her parents.",
+            "fr": "Dire à la jeune fille de demander à ses parents.",
+            "pl": "Powiedz dziewczynie, żeby zapytała rodziców.",
+            "de": "Sag dem Mädchen, dass sie ihre Eltern fragen soll."
         }
     ],
     "3": [
         {
-            "img": "1|park-3.jpg",
-            "en": "Anna plays with the dog.|They run around and have a lot of fun.|The dog's owner comes and thanks Anna.|What does Anna do next?",
-            "fr": "Anna joue avec le chien.|Ils courent partout et s'amusent beaucoup.|Le propriétaire du chien vient remercier Anna.|Que fait Anna ensuite ?",
-            "pl": "Anna bawi się z psem.|Biegają i świetnie się bawią.|Właściciel psa przychodzi i dziękuje Annie.|Co dalej zrobi Anna?",
-            "de": "Anna spielt mit dem Hund.|Sie rennen herum und haben eine Menge Spaß.|Der Besitzer des Hundes kommt und bedankt sich bei Anna.|Was macht Anna als nächstes?"
+            "img": "2|park-3.jpg",
+            "en": "Anna plays with the dog.|Anna throws a ball to the dog.|The dog is having fun.|Later, the dog's owner comes and thanks Anna.|What does Anna do next?",
+            "fr": "Anna joue avec le chien.|Anna lance une balle au chien.|Le chien s'amuse.| Plus tard, le propriétaire du chien vient remercier Anna.|Que fait Anna ensuite ?",
+            "pl": "Anna bawi się z psem.|Anna rzuca psu piłkę.|Pies dobrze się bawi.|Później właściciel psa przychodzi podziękować Annie.|Co dalej zrobi Anna?",
+            "de": "Anna spielt mit dem Hund.|Anna wirft dem Hund einen Ball zu.|Der Hund hat Spaß.|Später kommt der Besitzer des Hundes und bedankt sich bei Anna.|Was macht Anna als Nächstes?"
         },
         {
             "goto": "7",
-            "en": "Anna sits back down to read her book.",
-            "fr": "Anna se rassied pour lire son livre.",
-            "pl": "Anna wraca do czytania swojej książki.",
-            "de": "Anna setzt sich wieder hin und liest ihr Buch."
+            "en": "Read a book.",
+            "fr": "Lire un livre.",
+            "pl": "Przeczytaj książkę.",
+            "de": "Ein Buch lesen."
         },
         {
             "goto": "8",
-            "en": "Anna decides to take a walk around the park.",
-            "fr": "Anna décide de se promener dans le parc.",
-            "pl": "Anna postanawia wybrać się na spacer po parku.",
-            "de": "Anna beschließt, einen Spaziergang durch den Park zu machen."
+            "en": "Go for a walk.",
+            "fr": "Aller se promener.",
+            "pl": "Idź na spacer.",
+            "de": "Spazieren gehen."
         }
     ],
     "4": [
         {
-            "en": "Anna ignores the dog and keeps reading.|The dog eventually leaves.|Anna enjoys her book and finishes her sandwich.|What does Anna do next?",
-            "fr": "Anna ignore le chien et continue à lire.|Le chien finit par partir.|Anna savoure son livre et termine son sandwich.|Que fait Anna ensuite ?",
-            "pl": "Anna ignoruje psa i czyta dalej.|Pies w końcu odchodzi.|Anna delektuje się książką i kończy kanapkę.|Co dalej zrobi Anna?",
-            "de": "Anna ignoriert den Hund und liest weiter.|Der Hund geht schließlich weg.|Anna genießt ihr Buch und isst ihr Sandwich auf.|Was macht Anna als nächstes?"
+            "en": "Anna ignores the dog and continues reading.|The dog finally leaves.|Anna enjoys her book and eats her sandwich.|What does Anna do next?",
+            "fr": "Anna ignore le chien et continue à lire.|Le chien finit par s'en aller.|Anna apprécie son livre et mange un sandwich.|Que fait Anna ensuite ?",
+            "pl": "Anna ignoruje psa i kontynuuje czytanie.|W końcu pies odszedł.|Anna cieszy się książką i je kanapkę.|Co dalej zrobi Anna?",
+            "de": "Anna ignoriert den Hund und liest weiter.|Der Hund geht schließlich weg.|Anna genießt ihr Buch und isst ein Sandwich.|Was macht Anna als Nächstes?"
         },
         {
             "goto": "9",
-            "en": "Anna takes a nap under the tree.",
-            "fr": "Anna fait une sieste sous le sapin.",
-            "pl": "Anna ucina sobie drzemkę pod drzewem.",
-            "de": "Anna macht ein Nickerchen unter dem Baum."
+            "en": "Take a nap.",
+            "fr": "Faire une sieste.",
+            "pl": "Zdrzemnij się.",
+            "de": "Ein Nickerchen machen."
         },
         {
             "goto": "8",
-            "en": "Anna decides to take a walk around the park.",
-            "fr": "Anna décide de se promener dans le parc.",
-            "pl": "Anna postanawia wybrać się na spacer po parku.",
-            "de": "Anna beschließt, einen Spaziergang durch den Park zu machen."
+            "en": "Go for a walk.",
+            "fr": "Aller se promener.",
+            "pl": "Idź na spacer.",
+            "de": "Spazieren gehen."
         }
     ],
     "5": [
         {
-            "en": "Anna helps the little girl with her shoe.|The girl smiles and thanks her.|The girl's parents come and also thank Anna.|They offer Anna some snacks as a thank you.|What does Anna do?",
-            "fr": "Anna aide la petite fille à mettre sa chaussure.|La jeune fille sourit et la remercie.|Les parents de la jeune fille arrivent et remercient également Anna.|En guise de remerciement, ils offrent à Anna des collations.|Que fait Anna ?",
-            "pl": "Anna pomaga dziewczynce założyć but.|Dziewczyna uśmiecha się i dziękuje.|Rodzice dziewczynki przychodzą i również dziękują Annie.|W ramach podziękowania oferują Annie przekąski.|Czym zajmuje się Anna?",
-            "de": "Anna hilft dem kleinen Mädchen mit ihrem Schuh.|Das Mädchen lächelt und dankt ihr.|Die Eltern des Mädchens kommen und danken Anna ebenfalls.|Sie bieten Anna als Dankeschön einige Snacks an.|Was macht Anna?"
+            "en": "Anna helps the little girl with her shoe.|The girl smiles and thanks Anna.|The girl's parents come over and thank Anna as well.|The parents offer Anna some cookies.",
+            "fr": "Anna aide la petite fille avec sa chaussure.|La fille sourit et remercie Anna.|Les parents de la jeune fille s'approchent et remercient aussi Anna.|Les parents offrent des biscuits à Anna.",
+            "pl": "Anna pomaga dziewczynce założyć but.|Dziewczyna uśmiecha się i dziękuje Annie.|Rodzice dziewczynki podchodzą i również dziękują Annie.|Rodzice dają Annie ciasteczka.",
+            "de": "Anna hilft dem kleinen Mädchen mit ihrem Schuh.|Das Mädchen lächelt und bedankt sich bei Anna.|Die Eltern des Mädchens kommen herbei und bedanken sich ebenfalls bei Anna.|Die Eltern schenken Anna Kekse."
         },
         {
             "goto": "10",
-            "en": "Anna accepts the snacks and eats them.",
-            "fr": "Anna accepte les en-cas et les mange.",
-            "pl": "Anna przyjmuje przekąski i zjada je.",
-            "de": "Anna nimmt die Snacks an und isst sie."
-        },
-        {
-            "goto": "11",
-            "en": "Anna politely says no and goes for a walk.",
-            "fr": "Anna dit poliment non et va se promener.",
-            "pl": "Anna grzecznie odmawia i idzie na spacer.",
-            "de": "Anna sagt höflich nein und geht spazieren."
+            "en": "...",
+            "fr": "...",
+            "pl": "...",
+            "de": "..."
         }
     ],
     "6": [
         {
-            "en": "Anna tells the girl to ask her parents.|The girl runs back to her parents.|Anna feels a bit bad, but she stays on the bench.|After a while, she decides to do something else.",
-            "fr": "Anna dit à la jeune fille de demander à ses parents.|La jeune fille retourne en courant chez ses parents.|Anna se sent un peu mal, mais elle reste sur le banc.|Au bout d'un moment, elle décide de faire autre chose.",
-            "pl": "Anna mówi dziewczynie, by zapytała rodziców.|Dziewczynka biegnie z powrotem do rodziców.|Anna czuje się trochę źle, ale pozostaje na ławce.|Po chwili postanawia zrobić coś innego.",
-            "de": "Anna sagt dem Mädchen, es solle seine Eltern fragen.|Das Mädchen läuft zurück zu ihren Eltern.|Anna fühlt sich ein bisschen schlecht, aber sie bleibt auf der Bank sitzen.|Nach einiger Zeit beschließt sie, etwas anderes zu tun."
+            "en": "Anna tells the girl to ask her parents.|The girl runs back to her parents.|Anna stays on the bench.|After a while, she decides to do something else.",
+            "fr": "Anna dit à la jeune fille de demander à ses parents.|La jeune fille part en courant vers ses parents.|Anna reste sur le banc.|Au bout d'un moment, elle décide de faire autre chose.",
+            "pl": "Anna mówi dziewczynie, by zapytała rodziców.|Młoda dziewczyna ucieka w kierunku swoich rodziców.|Anna pozostaje na ławce.|Po chwili postanowiła zrobić coś innego.",
+            "de": "Anna sagt dem Mädchen, dass sie ihre Eltern fragen soll.|Das Mädchen rennt zu ihren Eltern.|Anna bleibt auf der Bank sitzen.|Nach einer Weile beschließt sie, etwas anderes zu machen."
         },
         {
             "goto": "1",
-            "en": "Anna goes to sit under a big tree.",
-            "fr": "Anna va s'asseoir sous un grand arbre.",
-            "pl": "Anna idzie usiąść pod wielkim drzewem.",
-            "de": "Anna setzt sich unter einen großen Baum."
+            "en": "Sit under a big tree.",
+            "fr": "Aller sous un arbre.",
+            "pl": "Idź pod drzewo.",
+            "de": "Unter einen Baum gehen."
         },
         {
             "goto": "8",
-            "en": "Anna decides to take a walk around the park.",
-            "fr": "Anna décide de se promener dans le parc.",
-            "pl": "Anna postanawia wybrać się na spacer po parku.",
-            "de": "Anna beschließt, einen Spaziergang durch den Park zu machen."
+            "en": "Go for a walk.",
+            "fr": "Aller se promener.",
+            "pl": "Idź na spacer.",
+            "de": "Spazieren gehen."
         }
     ],
     "7": [
         {
-            "en": "Anna sits back down to read her book.|She reads for a while and feels very relaxed.|The park is very peaceful.",
-            "fr": "Anna se rassied pour lire son livre.|Elle lit un moment et se sent très détendue.|Le parc est très paisible.",
-            "pl": "Anna wraca do czytania swojej książki.|Czyta przez chwilę i czuje się bardzo zrelaksowana.|Park jest bardzo spokojny.",
-            "de": "Anna setzt sich wieder hin und liest ihr Buch.|Sie liest eine Weile und fühlt sich sehr entspannt.|Der Park ist sehr ruhig."
+            "en": "Anna sits down to read her book.|She reads for a while.|She feels very relaxed.|The park is very peaceful.",
+            "fr": "Anna s'assoit pour lire son livre.|Elle lit pendant un moment.|Elle se sent très détendue.|Le parc est très calme.",
+            "pl": "Anna siada, by poczytać książkę.|Czyta przez chwilę.|Czuje się bardzo zrelaksowana.|Park jest bardzo cichy.",
+            "de": "Anna setzt sich hin, um ihr Buch zu lesen.|Sie liest eine Weile.|Sie fühlt sich sehr entspannt.|Der Park ist sehr ruhig."
         },
         {
             "goto": "9",
-            "en": "Anna takes a nap under the tree.",
-            "fr": "Anna fait une sieste sous le sapin.",
-            "pl": "Anna ucina sobie drzemkę pod drzewem.",
-            "de": "Anna macht ein Nickerchen unter dem Baum."
+            "en": "Take a nap.",
+            "fr": "Faire une sieste.",
+            "pl": "Zdrzemnij się.",
+            "de": "Ein Nickerchen machen."
         },
         {
             "goto": "8",
-            "en": "Anna decides to take a walk around the park.",
-            "fr": "Anna décide de se promener dans le parc.",
-            "pl": "Anna postanawia wybrać się na spacer po parku.",
-            "de": "Anna beschließt, einen Spaziergang durch den Park zu machen."
+            "en": "Go for a walk.",
+            "fr": "Aller se promener.",
+            "pl": "Idź na spacer.",
+            "de": "Spazieren gehen."
         }
     ],
     "8": [
         {
-            "en": "Anna decides to take a walk around the park.|She sees beautiful flowers and listens to the birds singing.|She feels happy and calm.|She sees her friend Tom, who is also walking in the park.",
-            "fr": "Anna décide de se promener dans le parc.|Elle voit de belles fleurs et écoute le chant des oiseaux.|Elle se sent heureuse et calme.|Elle aperçoit son ami Tom, qui se promène lui aussi dans le parc.",
-            "pl": "Anna postanawia wybrać się na spacer po parku.|Widzi piękne kwiaty i słucha śpiewu ptaków.|Czuje się szczęśliwa i spokojna.|Widzi swojego przyjaciela Toma, który również spaceruje po parku.",
-            "de": "Anna beschließt, einen Spaziergang durch den Park zu machen.|Sie sieht schöne Blumen und lauscht dem Gesang der Vögel.|Sie fühlt sich glücklich und ruhig.|Sie sieht ihren Freund Tom, der ebenfalls im Park spazieren geht."
+            "en": "Anna decides to go for a walk in the park.|Anna looks at some beautiful flowers.|She listens to the birds singing.|She feels happy.|Then she sees her friend Tom.|Tom is also walking in the park.",
+            "fr": "Anna décide d'aller se promener dans le parc.|Anna regarde les belles fleurs.|Elle écoute le chant des oiseaux.|Elle est heureuse.|Puis elle voit son ami Tom.|Tom se promène lui aussi dans le parc.",
+            "pl": "Anna postanawia wybrać się na spacer do parku.|Anna patrzy na piękne kwiaty.|Słucha śpiewu ptaków.|Jest szczęśliwa.|Potem widzi swojego przyjaciela Toma.|Tom również spaceruje po parku.",
+            "de": "Anna beschließt, einen Spaziergang im Park zu machen.|Anna schaut sich die schönen Blumen an.|Sie lauscht dem Gesang der Vögel.|Sie ist glücklich.|Dann sieht sie ihren Freund Tom.|Tom geht ebenfalls im Park spazieren."
         },
         {
             "goto": "15",
@@ -194,101 +187,87 @@
     ],
     "9": [
         {
-            "en": "Anna takes a nap under the tree.|She dreams of flying in the sky like a bird.|She wakes up feeling refreshed and happy.",
-            "fr": "Anna fait une sieste sous le sapin.|Elle rêve de voler dans le ciel comme un oiseau.|Elle se réveille avec un sentiment de fraîcheur et de bonheur.",
-            "pl": "Anna ucina sobie drzemkę pod drzewem.|Marzy o lataniu po niebie jak ptak.|Budzi się wypoczęta i szczęśliwa.",
-            "de": "Anna macht ein Nickerchen unter dem Baum.|Sie träumt davon, wie ein Vogel durch die Lüfte zu fliegen.|Sie wacht auf und fühlt sich erfrischt und glücklich."
+            "img": "2|park-5.jpg",
+            "en": "Anna takes a nap under the tree.|She dreams that she flies like a bird.|She wakes up feeling relaxed and happy.",
+            "fr": "Anna fait une sieste sous l'arbre.|Elle rêve qu'elle vole comme un oiseau.|Elle se réveille détendue et heureuse.",
+            "pl": "Anna ucina sobie drzemkę pod drzewem.|Marzy o lataniu jak ptak.|Budzi się zrelaksowana i szczęśliwa.",
+            "de": "Anna macht ein Nickerchen unter dem Baum.|Sie träumt, dass sie wie ein Vogel fliegt.|Sie wacht entspannt und glücklich auf."
         },
         {
             "goto": "8",
-            "en": "Anna decides to take a walk around the park.",
-            "fr": "Anna décide de se promener dans le parc.",
-            "pl": "Anna postanawia wybrać się na spacer po parku.",
-            "de": "Anna beschließt, einen Spaziergang durch den Park zu machen."
+            "en": "Go for a walk.",
+            "fr": "Aller se promener.",
+            "pl": "Idź na spacer.",
+            "de": "Spazieren gehen."
         }
     ],
     "10": [
         {
-            "en": "Anna accepts the snacks and eats them.|They are very tasty.|Anna thanks the girl's parents.|She feels happy and decides to do something else.",
-            "fr": "Anna accepte les en-cas et les mange.|Ils sont très savoureux.|Anna remercie les parents de la jeune fille.|Elle se sent heureuse et décide de faire autre chose.",
-            "pl": "Anna przyjmuje przekąski i zjada je.|Są bardzo smaczne.|Anna dziękuje rodzicom dziewczynki.|Czuje się szczęśliwa i postanawia zrobić coś innego.",
-            "de": "Anna nimmt die Snacks an und isst sie.|Sie sind sehr schmackhaft.|Anna bedankt sich bei den Eltern des Mädchens.|Sie fühlt sich glücklich und beschließt, etwas anderes zu tun."
+            "en": "The cookies are very tasty.|Anna feels happy and decides to do something else.",
+            "fr": "Les biscuits sont très bons.|Anna est heureuse et décide de faire autre chose.",
+            "pl": "Ciastka są bardzo dobre.|Anna jest szczęśliwa i postanawia zrobić coś innego.",
+            "de": "Die Kekse sind sehr lecker.|Anna ist glücklich und beschließt, etwas anderes zu tun."
         },
         {
             "goto": "14",
-            "en": "Anna and the girl play a game.",
-            "fr": "Anna et la jeune fille jouent à un jeu.",
-            "pl": "Anna i dziewczyna grają w grę.",
-            "de": "Anna und das Mädchen spielen ein Spiel."
+            "en": "Play with the girl.",
+            "fr": "Jouer avec la fille.",
+            "pl": "Bawisz się z dziewczyną.",
+            "de": "Mit dem Mädchen spielen."
         },
         {
             "goto": "8",
-            "en": "Anna decides to take a walk around the park.",
-            "fr": "Anna décide de se promener dans le parc.",
-            "pl": "Anna postanawia wybrać się na spacer po parku.",
-            "de": "Anna beschließt, einen Spaziergang durch den Park zu machen."
-        }
-    ],
-    "11": [
-        {
-            "en": "Anna politely says no and goes for a walk.|She enjoys the fresh air and the sounds of the park.|She feels peaceful and content.",
-            "fr": "Anna dit poliment non et va se promener.|Elle apprécie l'air frais et les bruits du parc.|Elle se sent en paix et satisfaite.",
-            "pl": "Anna grzecznie odmawia i idzie na spacer.|Lubi świeże powietrze i dźwięki parku.|Czuje się spokojna i zadowolona.",
-            "de": "Anna sagt höflich nein und geht spazieren.|Sie genießt die frische Luft und die Geräusche des Parks.|Sie fühlt sich friedlich und zufrieden."
-        },
-        {
-            "goto": "8",
-            "en": "Anna decides to take a walk around the park.",
-            "fr": "Anna décide de se promener dans le parc.",
-            "pl": "Anna postanawia wybrać się na spacer po parku.",
-            "de": "Anna beschließt, einen Spaziergang durch den Park zu machen."
+            "en": "Go for a walk.",
+            "fr": "Aller se promener.",
+            "pl": "Idź na spacer.",
+            "de": "Spazieren gehen."
         }
     ],
     "14": [
         {
-            "img": "0|park-4.jpg",
-            "en": "Anna and the girl play a game.|They play tag and have a lot of fun.|The girl's parents thank Anna again.|Anna feels joyful and decides to take one last walk before going home.",
-            "fr": "Anna et la jeune fille jouent à un jeu.|Ils jouent au chat et à la souris et s'amusent beaucoup.|Les parents de la jeune fille remercient à nouveau Anna.|Anna se sent joyeuse et décide de faire une dernière promenade avant de rentrer chez elle.",
-            "pl": "Anna i dziewczyna grają w grę.|Grają w berka i świetnie się bawią.|Rodzice dziewczynki jeszcze raz dziękują Annie.|Anna czuje się szczęśliwa i postanawia wybrać się na ostatni spacer przed powrotem do domu.",
-            "de": "Anna und das Mädchen spielen ein Spiel.|Sie spielen Fangen und haben eine Menge Spaß dabei.|Die Eltern des Mädchens bedanken sich noch einmal bei Anna.|Anna ist glücklich und beschließt, einen letzten Spaziergang zu machen, bevor sie nach Hause geht."
+            "img": "1|park-4.jpg",
+            "en": "Anna and the girl play a game.|They play tag and have a lot of fun.|After a while, the girl has to go.|Anna says goodbye.",
+            "fr": "Anna et la fille jouent à un jeu.|Ils jouent au chat et à la souris et s'amusent beaucoup.|Au bout d'un moment, la fille doit partir.|Anna dit au revoir.",
+            "pl": "Anna i dziewczyna grają w grę.|Grają w kotka i myszkę i świetnie się przy tym bawią.|Po chwili dziewczyna musi odejść.|Anna żegna się.",
+            "de": "Anna und das Mädchen spielen ein Spiel.|Sie spielen Katz und Maus und haben viel Spaß.|Nach einer Weile muss das Mädchen gehen.|Anna verabschiedet sich."
         },
         {
             "goto": "8",
-            "en": "Anna decides to take a walk around the park.",
-            "fr": "Anna décide de se promener dans le parc.",
-            "pl": "Anna postanawia wybrać się na spacer po parku.",
-            "de": "Anna beschließt, einen Spaziergang durch den Park zu machen."
+            "en": "Go for a walk.",
+            "fr": "Aller se promener.",
+            "pl": "Idź na spacer.",
+            "de": "Spazieren gehen."
         }
     ],
     "15": [
         {
-            "img": "0|park-2.jpg",
-            "en": "Anna smiles and waves at Tom.|Tom waves back and walks over to her.|\"Hi Anna!|It's great to see you here,\" Tom says.|What does Anna say?",
-            "fr": "Anna sourit et salue Tom.|Tom lui répond par un signe de la main et s'approche d'elle.|\"Bonjour Anna !|C'est un plaisir de vous voir ici\", dit Tom.|Que dit Anna ?",
-            "pl": "Anna uśmiecha się i macha do Toma.|Tom macha i podchodzi do niej.|\"Cześć Anna!|Miło cię tu widzieć\", mówi Tom.|Co mówi Anna?",
-            "de": "Anna lächelt und winkt Tom zu.|Tom winkt zurück und geht zu ihr hinüber.|\"Hallo Anna!|Es ist schön, dich hier zu sehen\", sagt Tom.|Was sagt Anna dazu?"
+            "img": "1|park-2.jpg",
+            "en": "Anna smiles and waves to Tom.|Tom waves back and walks over to her.|\"Hi Anna, it's great to see you here,\" Tom says.",
+            "fr": "Anna sourit et fait signe à Tom.|Tom lui répond par un signe de la main et s'approche d'elle.|\"Salut Anna, c'est super de te voir ici\", dit Tom.",
+            "pl": "Anna uśmiecha się i macha do Toma.|Tom pomachał i podszedł do niej.|\"Cześć Anna, miło cię tu widzieć\", mówi Tom.",
+            "de": "Anna lächelt und winkt Tom zu.|Tom antwortet ihr mit einem Handzeichen und geht auf sie zu.|\"Hallo Anna, toll, dass du hier bist\", sagt Tom."
         },
         {
             "goto": "16",
             "en": "What a nice surprise!",
             "fr": "Quelle belle surprise !",
-            "pl": "Co za miła niespodzianka!",
+            "pl": "Co za wspaniała niespodzianka!",
             "de": "Was für eine schöne Überraschung!"
         },
         {
             "goto": "17",
             "en": "Do you come here often?",
-            "fr": "Venez-vous souvent ici ?",
+            "fr": "Tu viens souvent ici ?",
             "pl": "Często tu przychodzisz?",
-            "de": "Kommen Sie oft hierher?"
+            "de": "Kommst du oft hierher?"
         }
     ],
     "16": [
         {
-            "en": "\"Hi Tom!|What a nice surprise!\" Anna says.",
-            "fr": "\"Bonjour Tom !|Quelle belle surprise !\" dit Anna.",
-            "pl": "\"Cześć Tom!|Co za miła niespodzianka!\" mówi Anna.",
-            "de": "\"Hallo Tom!|Was für eine schöne Überraschung!\" sagt Anna."
+            "en": "\"Hi Tom, what a nice surprise!\" Anna says.",
+            "fr": "\"Bonjour Tom, quelle belle surprise !\" dit Anna.",
+            "pl": "\"Witaj Tom, co za urocza niespodzianka!\" - powiedziała Anna.",
+            "de": "\"Hallo Tom, was für eine schöne Überraschung!\", sagte Anna."
         },
         {
             "goto": "31",
@@ -300,10 +279,10 @@
     ],
     "17": [
         {
-            "en": "\"Hi Tom!|Do you come here often?\" Anna asks.",
-            "fr": "\"Bonjour Tom !|Vous venez souvent ici ?\" demande Anna.",
-            "pl": "\"Cześć Tom!|Często tu przychodzisz?\" pyta Anna.",
-            "de": "\"Hallo Tom!|Kommst du oft hierher?\" fragt Anna."
+            "en": "\"Hi Tom, do you come here often?\" Anna asks.",
+            "fr": "\"Salut Tom, tu viens souvent ici ?\" demande Anna.",
+            "pl": "\"Cześć Tom, często tu przychodzisz?\" - pyta Anna.",
+            "de": "\"Hallo Tom, bist du oft hier?\", fragt Anna."
         },
         {
             "goto": "31",
@@ -315,225 +294,172 @@
     ],
     "18": [
         {
-            "en": "\"I love coming here to read and enjoy the fresh air,\" Anna says.|\"That sounds nice,\" Tom replies.|\"What book are you reading?\"",
-            "fr": "\"J'aime venir ici pour lire et profiter de l'air frais\", déclare Anna.|\"Ça m'a l'air sympa\", répond Tom.|\"Quel livre lis-tu ?\"",
-            "pl": "\"Uwielbiam tu przychodzić, by czytać i cieszyć się świeżym powietrzem\" - mówi Anna.|\"Brzmi nieźle\" - odpowiada Tom.|\"Jaką książkę czytasz?\"",
-            "de": "\"Ich komme gerne hierher, um zu lesen und die frische Luft zu genießen\", sagt Anna.|\"Das klingt gut\", antwortet Tom.|\"Welches Buch lesen Sie?\""
+            "en": "\"I like to come here to read and enjoy the fresh air,\" Anna says.|\"That sounds nice,\" Tom replies.|\"What book are you reading?\"",
+            "fr": "\"J'aime venir ici pour lire et profiter de l'air frais\", dit Anna.|\"Ça a l'air sympa\", répond Tom.|\"Quel livre lis-tu ?\"",
+            "pl": "\"Lubię tu przychodzić, by czytać i cieszyć się świeżym powietrzem\" - mówi Anna.|\"Brzmi nieźle\", odpowiada Tom.|\"Jaką książkę czytasz?\"",
+            "de": "\"Ich komme gerne hierher, um zu lesen und die frische Luft zu genießen\", sagt Anna.|\"Das klingt nach Spaß\", antwortet Tom.|\"Welches Buch liest du?\""
         },
         {
             "goto": "20",
-            "en": "It's a mystery book.",
-            "fr": "Il s'agit d'un livre de mystère.",
-            "pl": "To tajemnicza książka.",
-            "de": "Es ist ein geheimnisvolles Buch."
+            "en": "A detective story.",
+            "fr": "Un roman policier.",
+            "pl": "Powieść kryminalna.",
+            "de": "Ein Kriminalroman."
         },
         {
             "goto": "21",
-            "en": "It's an adventure book.",
-            "fr": "C'est un livre d'aventures.",
-            "pl": "To książka przygodowa.",
-            "de": "Es ist ein Abenteuerbuch."
+            "en": "An adventure novel.",
+            "fr": "Un roman d'aventures.",
+            "pl": "Powieść przygodowa.",
+            "de": "Ein Abenteuerroman."
         }
     ],
     "19": [
         {
-            "en": "\"I like to watch the people and the animals,\" Anna says.|\"Me too,\" Tom replies.|\"It's fun to see everyone having a good time.\"",
-            "fr": "\"J'aime observer les gens et les animaux\", explique Anna.|\"Moi aussi\", répond Tom.|\"C'est agréable de voir tout le monde s'amuser.",
-            "pl": "\"Lubię obserwować ludzi i zwierzęta\" - mówi Anna.|\"Ja też\" - odpowiada Tom.|\"Fajnie jest widzieć, że wszyscy dobrze się bawią\".",
-            "de": "\"Ich beobachte gerne die Menschen und die Tiere\", sagt Anna.|\"Ich auch\", antwortet Tom.|\"Es macht Spaß, zu sehen, wie sich alle amüsieren."
+            "en": "\"I like to watch the people,\" Anna says.|\"Me too,\" Tom replies.|\"It's fun to see everyone having a good time.|I also like watching the animals.\"",
+            "fr": "\"J'aime observer les gens\", dit Anna.|\"Moi aussi\", répond Tom.|\"C'est amusant de voir que tout le monde passe un bon moment.|J'aime aussi observer les animaux.\"",
+            "pl": "\"Lubię obserwować ludzi\", mówi Anna.|\"Ja też\", odpowiada Tom.|\"Fajnie jest widzieć, że wszyscy dobrze się bawią.|Lubię też obserwować zwierzęta.",
+            "de": "\"Ich beobachte gerne Menschen\", sagt Anna.|\"Ich auch\", antwortet Tom.|\"Es macht Spaß zu sehen, dass alle eine gute Zeit haben.|Ich beobachte auch gerne Tiere\"."
         },
         {
             "goto": "22",
             "en": "Do you have a favorite animal here?",
-            "fr": "Avez-vous un animal préféré ici ?",
+            "fr": "As-tu un animal préféré ici ?",
             "pl": "Czy masz tutaj ulubione zwierzę?",
-            "de": "Haben Sie hier ein Lieblingstier?"
+            "de": "Hast du ein Lieblingstier hier?"
         },
         {
             "goto": "23",
-            "en": "Do you like to play with the dogs here?",
-            "fr": "Tu aimes jouer avec les chiens ?",
+            "en": "Do you like playing with the dogs here?",
+            "fr": "Tu aimes jouer avec les chiens ici ?",
             "pl": "Lubisz bawić się z tutejszymi psami?",
-            "de": "Spielst du gerne mit den Hunden hier?"
+            "de": "Spielst du hier gerne mit den Hunden?"
         }
     ],
     "20": [
         {
-            "en": "\"It's a mystery book,\" Anna says.|\"Mystery books are great!|They always keep you guessing,\" Tom replies.",
-            "fr": "\"C'est un livre mystérieux\", dit Anna.|\"Les livres de mystère sont géniaux !|Ils vous laissent toujours dans l'expectative\", répond Tom.",
-            "pl": "\"To tajemnicza książka\" - mówi Anna.|\"Tajemnicze książki są świetne!|Zawsze trzymają cię w niepewności\" - odpowiada Tom.",
-            "de": "\"Es ist ein geheimnisvolles Buch\", sagt Anna.|\"Krimis sind toll!|Sie lassen dich immer im Ungewissen\", antwortet Tom."
-        },
-        {
-            "goto": "24",
-            "en": "Do you like mystery books too?",
-            "fr": "Vous aimez aussi les livres policiers ?",
-            "pl": "Czy ty też lubisz tajemnicze książki?",
-            "de": "Mögen Sie auch Krimis?"
+            "en": "\"It's a detective story,\" Anna says.|\"Detective stories are great, they are full of surprises,\" Tom replies.",
+            "fr": "\"C'est un roman policier\", dit Anna.|\"Les romans policiers sont super, ils sont pleins de surprises\", répond Tom.",
+            "pl": "\"To historia detektywistyczna\" - mówi Anna.|\"Powieści kryminalne są świetne, pełne niespodzianek\" - odpowiada Tom.",
+            "de": "\"Das ist ein Krimi\", sagt Anna.|\"Kriminalromane sind toll, sie stecken voller Überraschungen\", antwortet Tom."
         },
         {
             "goto": "25",
-            "en": "What other types of books do you like?",
-            "fr": "Quels sont les autres types de livres que vous aimez ?",
-            "pl": "Jakie inne rodzaje książek lubisz?",
-            "de": "Welche anderen Arten von Büchern mögen Sie?"
+            "en": "...",
+            "fr": "...",
+            "pl": "...",
+            "de": "..."
         }
     ],
     "21": [
         {
-            "en": "\"It's an adventure book,\" Anna says.|\"Adventure books are so exciting!|They take you to new places,\" Tom replies.",
-            "fr": "\"C'est un livre d'aventures\", dit Anna.|\"Les livres d'aventure sont si passionnants !|Ils vous emmènent dans de nouveaux endroits\", répond Tom.",
-            "pl": "\"To książka przygodowa\" - mówi Anna.|\"Książki przygodowe są takie ekscytujące!|Zabierają cię w nowe miejsca\" - odpowiada Tom.",
-            "de": "\"Es ist ein Abenteuerbuch\", sagt Anna.|\"Abenteuerbücher sind so spannend!|Sie bringen dich an neue Orte\", antwortet Tom."
-        },
-        {
-            "goto": "26",
-            "en": "Do you like adventure books too?",
-            "fr": "Vous aimez aussi les livres d'aventure ?",
-            "pl": "Też lubisz książki przygodowe?",
-            "de": "Mögen Sie auch Abenteuerbücher?"
+            "en": "\"It's an adventure novel,\" Anna says.|\"Adventure novels are so exciting!|They take you to new places,\" Tom replies.",
+            "fr": "\"C'est un roman d'aventures\", dit Anna.|\"Les romans d'aventure sont si passionnants !|Ils t'emmènent dans de nouveaux endroits\", répond Tom.",
+            "pl": "\"To powieść przygodowa\" - mówi Anna.|\"Powieści przygodowe są takie ekscytujące!|Zabierają cię w nowe miejsca\" - odpowiada Tom.",
+            "de": "\"Das ist ein Abenteuerroman\", sagt Anna.|\"Abenteuerromane sind so spannend!|Sie bringen dich an neue Orte\", antwortet Tom."
         },
         {
             "goto": "25",
-            "en": "What other types of books do you like?",
-            "fr": "Quels sont les autres types de livres que vous aimez ?",
-            "pl": "Jakie inne rodzaje książek lubisz?",
-            "de": "Welche anderen Arten von Büchern mögen Sie?"
+            "en": "...",
+            "fr": "...",
+            "pl": "...",
+            "de": "..."
         }
     ],
     "22": [
         {
-            "en": "\"Do you have a favorite animal here?\" Anna asks.|\"I really like the squirrels,\" Tom replies.|\"They are so playful and cute.\"",
-            "fr": "\"As-tu un animal préféré ici ?\" demande Anna.|\"J'aime beaucoup les écureuils\", répond Tom.|\"Ils sont si enjoués et si mignons.",
-            "pl": "\"Czy masz tu jakieś ulubione zwierzę?\" pyta Anna.|\"Naprawdę lubię wiewiórki\" - odpowiada Tom.|\"Są takie figlarne i słodkie\".",
-            "de": "\"Hast du hier ein Lieblingstier?\" fragt Anna.|\"Ich mag die Eichhörnchen sehr\", antwortet Tom.|\"Sie sind so verspielt und süß.\""
+            "en": "\"Do you have a favorite animal here?\" Anna asks.|\"I really like the squirrels,\" Tom replies.|\"They're so cute!\"",
+            "fr": "\"As-tu un animal préféré ici ?\" demande Anna.|\"J'aime beaucoup les écureuils\", répond Tom.|\"Ils sont si mignons !\"",
+            "pl": "\"Czy masz tu jakieś ulubione zwierzę?\" - pyta Anna.|\"Naprawdę lubię wiewiórki\" - odpowiada Tom.|\"Są takie słodkie!\"",
+            "de": "\"Hast du hier ein Lieblingstier?\", fragt Anna.|\"Ich mag Eichhörnchen sehr\", antwortet Tom.|\"Sie sind so süß!\""
         },
         {
             "goto": "28",
             "en": "I like the squirrels too!",
             "fr": "J'aime aussi les écureuils !",
-            "pl": "Ja też lubię wiewiórki!",
-            "de": "Ich mag auch die Eichhörnchen!"
+            "pl": "Ja też uwielbiam wiewiórki!",
+            "de": "Ich mag auch Eichhörnchen!"
         },
         {
             "goto": "28",
             "en": "I like the birds more.",
             "fr": "Je préfère les oiseaux.",
-            "pl": "Bardziej podobają mi się ptaki.",
-            "de": "Ich mag die Vögel mehr."
+            "pl": "Wolę ptaki.",
+            "de": "Ich bevorzuge Vögel."
         }
     ],
     "23": [
         {
-            "en": "\"Do you like to play with the dogs here?\" Anna asks.|\"Yes, I love dogs,\" Tom replies.|\"They are always so happy.\"",
-            "fr": "\"Tu aimes jouer avec les chiens ? demande Anna.|\"Oui, j'aime les chiens\", répond Tom.|\"Ils sont toujours si heureux.",
-            "pl": "\"Lubisz bawić się z tutejszymi psami?\" pyta Anna.|\"Tak, kocham psy\" - odpowiada Tom.|\"Zawsze są tacy szczęśliwi\".",
-            "de": "\"Spielst du gerne mit den Hunden hier?\" fragt Anna.|\"Ja, ich liebe Hunde\", antwortet Tom.|\"Sie sind immer so glücklich.\""
+            "en": "\"Do you like playing with the dogs here?\" Anna asks.|\"Yes, I love dogs,\" Tom answers.|\"Dogs always look so happy.\"",
+            "fr": "\"Tu aimes jouer avec les chiens ici ?\" demande Anna.|\"Oui, j'aime les chiens\", répond Tom.|\"Les chiens ont toujours l'air si heureux\".",
+            "pl": "\"Lubisz bawić się z tutejszymi psami?\" - pyta Anna.|\"Tak, lubię psy\" - odpowiada Tom.|\"Psy zawsze wyglądają na szczęśliwe\".",
+            "de": "\"Spielst du hier gerne mit den Hunden?\", fragt Anna.|\"Ja, ich mag Hunde\", antwortet Tom.|\"Hunde sehen immer so glücklich aus\"."
         },
         {
             "goto": "28",
             "en": "I played with a dog earlier today.",
             "fr": "J'ai joué avec un chien plus tôt dans la journée.",
             "pl": "Bawiłem się dziś z psem.",
-            "de": "Ich habe heute Morgen mit einem Hund gespielt."
+            "de": "Ich habe früher am Tag mit einem Hund gespielt."
         },
         {
             "goto": "28",
             "en": "I like watching them play too.",
             "fr": "J'aime aussi les regarder jouer.",
-            "pl": "Też lubię oglądać ich grę.",
+            "pl": "Lubię też oglądać ich grę.",
             "de": "Ich sehe ihnen auch gerne beim Spielen zu."
-        }
-    ],
-    "24": [
-        {
-            "en": "\"Do you like mystery books too?\" Anna asks.|\"Yes, I do!|They are so interesting and fun to read,\" Tom replies.",
-            "fr": "\"Tu aimes aussi les romans policiers ? demande Anna.|\"Oui, c'est vrai !|Ils sont tellement intéressants et amusants à lire\", répond Tom.",
-            "pl": "\"Czy ty też lubisz tajemnicze książki?\" pyta Anna.|\"Tak!|Są bardzo interesujące i fajnie się je czyta\" - odpowiada Tom.",
-            "de": "\"Magst du auch Krimis?\" fragt Anna.|\"Ja, ich weiß!|Sie sind so interessant und machen Spaß zu lesen\", antwortet Tom."
-        },
-        {
-            "goto": "27",
-            "en": "...",
-            "fr": "...",
-            "pl": "...",
-            "de": "..."
         }
     ],
     "25": [
         {
-            "en": "\"What other types of books do you like?\" Anna asks.|\"I like science fiction and fantasy,\" Tom replies.|\"They are full of imagination.\"",
-            "fr": "\"Quels sont les autres types de livres que tu aimes ? demande Anna.|\"J'aime la science-fiction et le fantastique\", répond Tom.|\"Ils sont pleins d'imagination.",
-            "pl": "\"Jakie inne rodzaje książek lubisz?\" pyta Anna.|\"Lubię science fiction i fantasy\" - odpowiada Tom.|\"Są pełne wyobraźni\".",
-            "de": "\"Welche anderen Arten von Büchern magst du?\" fragt Anna.|\"Ich mag Science Fiction und Fantasy\", antwortet Tom.|\"Sie sind voller Fantasie.\""
+            "en": "\"What other kinds of books do you like?\" Anna asks.|\"I also read science fiction books,\" Tom replies.|\"Science fiction books make you think about the future.\"",
+            "fr": "\"Tu aimes quels autres types de livres ?\" demande Anna.|\"Je lis aussi des livres de science-fiction\", répond Tom.|\"Les livres de science-fiction te font réfléchir à l'avenir\".",
+            "pl": "\"Jakie inne rodzaje książek lubisz?\" - pyta Anna.|\"Czytam też science fiction\" - odpowiada Tom.|\"Książki science fiction sprawiają, że myślisz o przyszłości.",
+            "de": "\"Welche anderen Arten von Büchern magst du?\", fragt Anna.|\"Ich lese auch Science-Fiction-Bücher\", antwortet Tom.|\"Science-Fiction-Bücher lassen dich über die Zukunft nachdenken\"."
         },
-        {
-            "goto": "27",
-            "en": "...",
-            "fr": "...",
-            "pl": "...",
-            "de": "..."
-        }
-    ],
-    "26": [
-        {
-            "en": "\"Do you like adventure books too?\" Anna asks.|\"Yes, I do!|They are so exciting and fun to read,\" Tom replies.",
-            "fr": "\"Tu aimes aussi les livres d'aventures ? demande Anna.|\"Oui, c'est vrai !|Ils sont tellement passionnants et amusants à lire\", répond Tom.",
-            "pl": "\"Czy ty też lubisz książki przygodowe?\" pyta Anna.|\"Tak!|Są tak ekscytujące i przyjemne w czytaniu\" - odpowiada Tom.",
-            "de": "\"Magst du auch Abenteuerbücher?\" fragt Anna.|\"Ja, ich weiß!|Sie sind so spannend und machen Spaß beim Lesen\", antwortet Tom."
-        },
-        {
-            "goto": "27",
-            "en": "...",
-            "fr": "...",
-            "pl": "...",
-            "de": "..."
-        }
-    ],
-    "27": [
         {
             "goto": "28",
-            "en": "That's great! Maybe we can read one together sometime.",
-            "fr": "C'est très bien ! Nous pourrons peut-être en lire un ensemble un jour.",
-            "pl": "To świetnie! Może uda nam się kiedyś przeczytać jedną razem.",
-            "de": "Das ist großartig! Vielleicht können wir ja mal eins zusammen lesen."
+            "en": "Maybe we can read one together sometime?",
+            "fr": "On pourrait peut-être en lire un ensemble un jour ?",
+            "pl": "Może kiedyś przeczytamy go razem?",
+            "de": "Vielleicht können wir ja irgendwann mal ein Buch zusammen lesen?"
         },
         {
             "goto": "28",
             "en": "We should talk about our favorite books more often.",
-            "fr": "Nous devrions parler plus souvent de nos livres préférés.",
+            "fr": "On devrait parler plus souvent de nos livres préférés.",
             "pl": "Powinniśmy częściej rozmawiać o naszych ulubionych książkach.",
             "de": "Wir sollten öfter über unsere Lieblingsbücher sprechen."
         }
     ],
     "28": [
         {
-            "en": "Anna and Tom continue to talk and laugh.|They enjoy each other's company.|The sun starts to set, and it is time to go home.|Anna says goodbye to Tom and walks home, feeling happy and relaxed.",
-            "fr": "Anna et Tom continuent de parler et de rire.|Ils apprécient la compagnie de l'autre.|Le soleil commence à se coucher et il est temps de rentrer à la maison.|Anna dit au revoir à Tom et rentre chez elle, heureuse et détendue.",
-            "pl": "Anna i Tom nadal rozmawiają i śmieją się.|Cieszą się swoim towarzystwem.|Słońce zaczyna zachodzić i czas wracać do domu.|Anna żegna się z Tomem i wraca do domu, czując się szczęśliwa i zrelaksowana.",
-            "de": "Anna und Tom reden und lachen weiter.|Sie genießen die Gesellschaft des jeweils anderen.|Die Sonne geht langsam unter, und es ist Zeit, nach Hause zu gehen.|Anna verabschiedet sich von Tom und geht glücklich und entspannt nach Hause."
+            "en": "Anna and Tom continue to talk and laugh for a while.|It's getting dark and it's time to go home.|Anna says goodbye to Tom and goes home.|It was a good day.",
+            "fr": "Anna et Tom continuent de parler et de rire pendant un moment.|La nuit tombe et il est temps de rentrer à la maison.|Anna dit au revoir à Tom et rentre chez elle.|C'était une bonne journée.",
+            "pl": "Anna i Tom kontynuują rozmowę i śmieją się przez chwilę.|Zapada noc i czas wracać do domu.|Anna żegna się z Tomem i wraca do domu.|To był dobry dzień.",
+            "de": "Anna und Tom reden und lachen noch eine Weile weiter.|Die Nacht bricht an und es ist Zeit, nach Hause zu gehen.|Anna verabschiedet sich von Tom und geht nach Hause.|Es war ein guter Tag."
         }
     ],
     "31": [
         {
-            "en": "Tom smiles and nods.|\"Yeah, I come here sometimes to relax,\" Tom replies.|\"What about you?\"",
-            "fr": "Tom sourit et acquiesce.|\"Oui, je viens parfois ici pour me détendre\", répond Tom.|\"Et toi ?\"",
-            "pl": "Tom uśmiecha się i kiwa głową.|\"Tak, przychodzę tu czasem, by się zrelaksować\" - odpowiada Tom.|\"A ty?\"",
-            "de": "Tom lächelt und nickt.|\"Ja, ich komme manchmal hierher, um mich zu entspannen\", antwortet Tom.|\"Was ist mit dir?\""
+            "en": "Tom smiles.|\"Yes, I come here sometimes to relax,\" Tom replies.|\"What about you?\"",
+            "fr": "Tom sourit.|\"Oui, je viens parfois ici pour me détendre\", répond Tom.|\"Et toi ?\"",
+            "pl": "Tom uśmiechnął się.|\"Tak, czasami przychodzę tutaj, aby się zrelaksować\" - odpowiada Tom.|\"A co z tobą?\"",
+            "de": "Tom lächelt.|\"Ja, ich komme manchmal hierher, um mich zu entspannen\", antwortet Tom.|\"Und du?\""
         },
         {
             "goto": "18",
-            "en": "I love coming here to read and enjoy the fresh air.",
-            "fr": "J'aime venir ici pour lire et profiter de l'air frais.",
-            "pl": "Uwielbiam tu przychodzić, aby czytać i cieszyć się świeżym powietrzem.",
-            "de": "Ich komme gerne hierher, um zu lesen und die frische Luft zu genießen."
+            "en": "I like to read here.",
+            "fr": "J'aime lire ici.",
+            "pl": "Uwielbiam tu czytać.",
+            "de": "Ich lese hier gerne."
         },
         {
             "goto": "19",
-            "en": "I like to watch the people and the animals.",
-            "fr": "J'aime observer les gens et les animaux.",
-            "pl": "Lubię obserwować ludzi i zwierzęta.",
-            "de": "Ich beobachte gerne die Menschen und die Tiere."
+            "en": "I like to watch the people here.",
+            "fr": "J'aime observer les gens ici.",
+            "pl": "Uwielbiam obserwować tutejszych ludzi.",
+            "de": "Ich beobachte gerne die Menschen hier."
         }
     ]
 }

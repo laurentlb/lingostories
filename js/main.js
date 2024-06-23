@@ -8,7 +8,7 @@ const userData = new UserData();
 
 const stories = [
     { id: "intro", title: "Introduction", imageCount: 1 },
-    { id: "park", title: "At the Park", imageCount: 4 },
+    { id: "park", title: "At the Park", imageCount: 5 },
 ];
 
 var nextAction = null;
@@ -220,6 +220,8 @@ function showChoices() {
         icon.classList.add("icon", "choice-icon");
         icon.onclick = () => {
             container.innerHTML = "";
+            icon.onclick = null;
+            container.appendChild(icon);
             container.appendChild(elt);
 
             story.openPage(story.choices[i]["goto"]);
