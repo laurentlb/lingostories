@@ -273,18 +273,15 @@ summary {
 }
 
 .choices {
+    display: grid;
+    grid-template-columns: 3em auto;
+    align-items: center;
     border: 1px solid var(--border-color);
     background-color: #000;
     border-radius: 16px;
     padding: 8px 16px;
     cursor: help;
     margin: 1em 0em;
-}
-
-.choice {
-    display: inline-block;
-    width: 90%;
-    vertical-align: middle;
 }
 
 .middle {

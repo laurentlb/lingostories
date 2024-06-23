@@ -198,7 +198,7 @@ function showChoices() {
         const elt = document.createElement("div");
         elt.classList.add("choice");
         elt.textContent = text;
-        elt.title = text;
+        elt.title = choices[i][transLang];
 
         const transl = document.createElement("p");
         transl.textContent = choices[i][transLang];
