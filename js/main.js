@@ -47,6 +47,7 @@ async function chooseStory(name) {
 
     await story.loadStory(name);
     resetStory();
+    gtag('event', 'load-story', { 'story': name, 'lang': story.lang });
     next();
 }
 
