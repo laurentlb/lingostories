@@ -189,11 +189,6 @@ h2 {
         margin-bottom: auto;
     }
 
-    :hover {
-        color: var(--highlight-color);
-        cursor: pointer;
-    }
-
     .story-count {
         margin-left: auto;
     }
@@ -232,8 +227,6 @@ summary {
         justify-content: space-between;
         max-width: 600px;
         margin: 0 auto;
-        font-weight: bold;
-        color: var(--highlight-color);
     }
 
     .top-icon {
@@ -243,17 +236,20 @@ summary {
         vertical-align: top;
     }
 
-    .text-icon {
-        border-radius: 8px;
-        padding: 4px;
-        cursor: pointer;
-        border: 4px solid var(--highlight-color);
-        color: var(--highlight-color);
-    }
-
     #collection-count, #restart-icon {
         visibility: hidden;
     }
+}
+
+.text-icon {
+    font-weight: bold;
+    border-radius: 8px;
+    padding: 4px;
+    cursor: pointer;
+    border: 4px solid var(--highlight-color);
+    color: var(--highlight-color);
+    text-align: center;
+    width: fit-content;
 }
 
 .top summary {
@@ -317,6 +313,7 @@ summary {
 .choices {
     display: grid;
     grid-template-columns: 3em auto;
+    row-gap: 4px;
     align-items: center;
     border: 1px solid var(--border-color);
     background-color: #000;

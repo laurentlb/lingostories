@@ -12,7 +12,6 @@ export class Story {
         this.lang = null;
         this.sentenceIndex = 0;
         this.pageIndex = 0;
-        this.openTransl = null;
         this.storyName = null;
     }
 

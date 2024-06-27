@@ -13,6 +13,10 @@ const stories = [
 
 var nextAction = null;
 var actionPending = false;
+var openTransl = null;
+var lastSentence = null;
+var lastAudioIcon = null;
+var lastChoices = [];
 
 function resetStory() {
     story.resetStory();
@@ -78,12 +82,12 @@ function createTranslation(parent, pageIndex, sentenceIndex) {
     const transLang = targetLang();
     transl.textContent = story.sentence(pageIndex, sentenceIndex, transLang);
     transl.classList.add("translation");
-    if (story.openTransl) {
-        story.openTransl.remove();
-        story.openTransl = null;
+    if (openTransl) {
+        openTransl.remove();
+        openTransl = null;
     }
     transl.style.display = showTranslations ? "block" : "none";
-    story.openTransl = transl;
+    openTransl = transl;
 
     parent.appendChild(transl);
 }
@@ -138,6 +142,7 @@ function showText(pageIndex, sentenceIndex, useSpoiler) {
     icon.onclick = () => {
         listenMP3(story, pageIndex, sentenceIndex, null);
     };
+    lastAudioIcon = icon;
 
     const audio = document.createElement("span");
     audio.classList.add("audio-icon-container");
@@ -197,9 +202,9 @@ function actuallyShowText(container, pageIndex, sentenceIndex, useSpoiler) {
             next();
             return;
         }
-        if (story.openTransl && story.openTransl.parentElement === elt) {
-            story.openTransl.remove();
-            story.openTransl = null;
+        if (openTransl && openTransl.parentElement === elt) {
+            openTransl.remove();
+            openTransl = null;
             return;
         }
         else {
@@ -207,6 +212,7 @@ function actuallyShowText(container, pageIndex, sentenceIndex, useSpoiler) {
         }
     }
 
+    lastSentence = elt;
     container.appendChild(elt);
 }
 
@@ -217,6 +223,7 @@ function showChoices() {
     container.classList.add("choices");
 
     const transLang = targetLang();
+    lastChoices.length = 0;
     for (let i = 0; i < choices.length; i++) {
         const text = choices[i][story.lang];
         const elt = document.createElement("div");
@@ -239,21 +246,22 @@ function showChoices() {
             }
         }
 
-        const icon = document.createElement("img");
-        icon.src = "img/arrow-right-3-square.svg";
-        icon.classList.add("icon", "choice-icon");
-        icon.onclick = () => {
+        const textIcon = document.createElement("div");
+        textIcon.classList.add("text-icon");
+        textIcon.textContent = i + 1;
+        textIcon.onclick = () => {
+            lastChoices.length = 0;
             container.innerHTML = "";
-            icon.onclick = null;
-            container.appendChild(icon);
+            textIcon.onclick = null;
+            container.appendChild(textIcon);
             container.appendChild(elt);
 
             story.openPage(story.choices[i]["goto"]);
             next();
-        
         };
+        lastChoices.push(textIcon);
 
-        container.appendChild(icon);
+        container.appendChild(textIcon);
         container.appendChild(elt);
     }
 
@@ -271,6 +279,8 @@ function showChoices() {
         }
         document.querySelector('.story-end-text').textContent = text;
         document.querySelector('.footer').style.display = "none";
+
+        gtag('event', 'end-story', { 'story': story.storyName, 'lang': story.lang });
     } else {
         main.appendChild(container);
     }
@@ -393,6 +403,21 @@ initTTS(story);
 document.addEventListener("keydown", (event) => {
     if (event.key === " ") {
         next();
+    }
+
+    if (event.key === "t") {
+        lastSentence.click();
+    }
+
+    if (event.key === "r") {
+        lastAudioIcon.click();
+    }
+
+    if (event.key.match(/[0-9]/)) {
+        const index = parseInt(event.key) - 1;
+        if (lastChoices[index]) {
+            lastChoices[index].click();
+        }
     }
 });
 
