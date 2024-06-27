@@ -42,8 +42,12 @@ function setLanguage(l) {
     }
 }
 
-async function chooseStory(name) {
+async function chooseStory(name, updateURL) {
     showHome(false);
+    document.querySelector('#back-icon').setAttribute("href", "/?lang=" + story.lang);
+    if (updateURL) {
+        window.history.pushState({}, name, `/?lang=${story.lang}&story=${name}`);
+    }
 
     await story.loadStory(name);
     resetStory();
@@ -274,7 +278,7 @@ function createStoryList() {
 
     for (const sto of stories) {
         const elt = document.createElement("div");
-        elt.onclick = () => { chooseStory(sto.id); };
+        elt.onclick = () => { chooseStory(sto.id, true); };
         elt.classList.add("story-info");
 
         const img = document.createElement("img");
@@ -305,6 +309,8 @@ function createStoryList() {
 
 function showHome(show) {
     const display = show ? "block" : "none";
+    const opposite = show ? "none" : "block";
+
     console.log(document.querySelectorAll('.home'));
     document.querySelectorAll('.home').forEach(e => {
         e.style.display = display;
@@ -314,6 +320,11 @@ function showHome(show) {
         const display = !show ? "block" : "none";
         e.style.display = display;
     });
+
+    document.querySelector("#back-icon").style.display = opposite;
+    document.querySelector("#home-icon").style.display = display;
+
+    document.querySelector(".story-end").style.display = "none";
 
     createStoryList();
     createImageCollection();
@@ -381,7 +392,7 @@ window.onload = function(){
     }
 
     if (urlParams.has("story")) {
-        chooseStory(urlParams.get("story"));
+        chooseStory(urlParams.get("story", false));
     }
 
     createImageCollection();

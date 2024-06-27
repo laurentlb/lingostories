@@ -226,13 +226,27 @@ summary {
     display: none;
     transition: all .5s;
     z-index: 10;
-}
 
-.top-icon {
-    width: 36px;
-    height: 36px;
-    display: inline;
-    vertical-align: top;
+    .icon-bar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 600px;
+        margin: 0 auto;
+        font-weight: bold;
+        color: var(--highlight-color);
+    }
+
+    .top-icon {
+        width: 36px;
+        height: 36px;
+        display: inline;
+        vertical-align: top;
+    }
+
+    .collection-count {
+        visibility: hidden;
+    }
 }
 
 .top summary {
@@ -344,9 +358,15 @@ p {
     margin-block-start: 0em;
 }
 
-details > ul {
-    padding-left: 0;
-    list-style-type: none;
+.options {
+    display: none;
+    max-width: 600px;
+    margin: 0 auto;
+
+    ul {
+        padding-left: 0;
+        list-style-type: none;
+    }
 }
 
 details h2 {
@@ -405,4 +425,8 @@ details h2 {
 
 .story {
     padding-top: 1em;
+}
+
+#back-icon {
+    display: none;
 }
