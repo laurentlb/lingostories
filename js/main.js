@@ -56,6 +56,7 @@ function updateCollectionTopStatus() {
     const label = document.querySelector("#collection-count");
     label.style.visibility = "visible";
     updateCollectionCountLabel(label, story.storyName);
+    createImageCollection(".top-image-collection", story.storyName);
 }
 
 async function chooseStory(name) {
@@ -275,11 +276,14 @@ function showChoices() {
     }
 }
 
-function createImageCollection() {
-    const container = document.querySelector(".image-collection");
+function createImageCollection(classname, storyName) {
+    const container = document.querySelector(classname);
     container.innerHTML = "";
 
     for (const sto of stories) {
+        if (storyName && storyName !== sto.id) {
+            continue;
+        }
         const images = userData.collectedImages[sto.id] || [];
         for (const img of images) {
             const elt = document.createElement("img");
@@ -324,7 +328,7 @@ function showHome() {
     document.querySelectorAll('.home').forEach(e => {
         e.style.display = "block";
     });
-    createImageCollection();
+    createImageCollection(".image-collection", null);
 
     if (story.lang) {
         document.querySelector("#languageSelector").style.display = "none";

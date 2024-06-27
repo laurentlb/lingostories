@@ -26,7 +26,7 @@
 
         <img src="img/restart.svg" id="restart-icon" class="icon top-icon" title="Restart the story" onclick="resetStory(); next();"></a>
 
-        <div id="collection-count">1</div>
+        <div id="collection-count" class="text-icon" onclick="toggleCollection();"></div>
     </div>
     <div class="options">
     <ul>
@@ -57,6 +57,12 @@
                 <option value="pl">Polish</option>
             </select>
     </ul>
+    </div>
+    <div class="top-collection">
+        <p>Each story has images to collect. The images you collect in
+            this story will be will be added here.</p>
+
+        <div class="top-image-collection"></div>
     </div>
 </div>
 
@@ -164,6 +170,11 @@
 function toggleOptions() {
     var options = document.querySelector('.options');
     options.style.display = options.style.display === 'block' ? 'none' : 'block';
+}
+
+function toggleCollection() {
+    var collection = document.querySelector('.top-collection');
+    collection.style.display = collection.style.display === 'block' ? 'none' : 'block';
 }
 </script>
 
