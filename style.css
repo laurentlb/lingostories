@@ -148,7 +148,6 @@ h2 {
 
 .player-icon {
     height: 2rem;
-    margin: 0 auto;
 }
 
 .choice-icon {
@@ -285,6 +284,12 @@ summary {
     padding: 16px 16px;
     margin: 8px 0;
     display: none;
+
+    div {
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: space-around;
+    }
 }
 
 .certificate {
@@ -428,5 +433,9 @@ details h2 {
 }
 
 #back-icon {
+    display: none;
+}
+
+.home, .in-story {
     display: none;
 }

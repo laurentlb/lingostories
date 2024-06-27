@@ -33,8 +33,6 @@ function setLanguage(l) {
     document.querySelector('.top').style.display = "block";
     updateVoices(story.lang);
     createStoryList();
-    document.querySelector("#storySelector").style.display = "block";
-    document.querySelector("#languageSelector").style.display = "none";
 
     if (targetLang() === story.lang) {
         document.querySelector("#targetLang").value =
@@ -42,12 +40,11 @@ function setLanguage(l) {
     }
 }
 
-async function chooseStory(name, updateURL) {
-    showHome(false);
-    document.querySelector('#back-icon').setAttribute("href", "/?lang=" + story.lang);
-    if (updateURL) {
-        window.history.pushState({}, name, `/?lang=${story.lang}&story=${name}`);
-    }
+async function chooseStory(name) {
+    showStory();
+    const backUrl = "/?lang=" + story.lang;
+    document.querySelector('#back-icon').setAttribute("href", backUrl);
+    document.querySelector('#back-to-menu').setAttribute("href", backUrl);
 
     await story.loadStory(name);
     resetStory();
@@ -240,6 +237,7 @@ function showChoices() {
 
     story.sentenceIndex++;
     if (choices.length === 0) {
+        soundEffect('level-end');
         document.querySelector(".story-end").style.display = "block";
         const storyData = stories.find(s => s.id === story.storyName);
         const collectedImages = userData.nbCollectedImages(story.storyName);
@@ -251,7 +249,6 @@ function showChoices() {
         }
         document.querySelector('.story-end-text').textContent = text;
         document.querySelector('.footer').style.display = "none";
-        soundEffect('level-end');
     } else {
         main.appendChild(container);
     }
@@ -278,16 +275,18 @@ function createStoryList() {
 
     for (const sto of stories) {
         const elt = document.createElement("div");
-        elt.onclick = () => { chooseStory(sto.id, true); };
         elt.classList.add("story-info");
 
+        const imgLink = document.createElement("a");
+        imgLink.href = `/?lang=${story.lang}&story=${sto.id}`;
         const img = document.createElement("img");
         img.src = `img/arrow-right-3-square.svg`;
         img.classList.add("icon", "choice-icon");
-        elt.appendChild(img);
+        imgLink.appendChild(img);
+        elt.appendChild(imgLink);
 
-        const link = document.createElement("span");
-        link.classList.add("story-choice");
+        const link = document.createElement("a");
+        link.href = `/?lang=${story.lang}&story=${sto.id}`;
         link.textContent = sto.title;
         elt.appendChild(link);
 
@@ -307,34 +306,28 @@ function createStoryList() {
     }
 }
 
-function showHome(show) {
-    const display = show ? "block" : "none";
-    const opposite = show ? "none" : "block";
-
-    console.log(document.querySelectorAll('.home'));
+function showHome() {
     document.querySelectorAll('.home').forEach(e => {
-        e.style.display = display;
+        e.style.display = "block";
     });
-
-    document.querySelectorAll('.in-story').forEach(e => {
-        const display = !show ? "block" : "none";
-        e.style.display = display;
-    });
-
-    document.querySelector("#back-icon").style.display = opposite;
-    document.querySelector("#home-icon").style.display = display;
-
-    document.querySelector(".story-end").style.display = "none";
-
-    createStoryList();
     createImageCollection();
-    document.querySelector("#storySelector").style.display = display;
+
+    if (story.lang) {
+        document.querySelector("#languageSelector").style.display = "none";
+    } else {
+        document.querySelector("#storySelector").style.display = "none";
+    }
 }
 
-function backToMenu() {
-    resetStory();
-    showHome(true);
-    document.querySelector('.footer').style.display = "none";
+function showStory() {
+    document.querySelectorAll('.in-story').forEach(e => {
+        e.style.display = "block";
+    });
+
+    document.querySelector("#back-icon").style.display = "block";;
+    document.querySelector("#home-icon").style.display = "none";
+
+    document.querySelector(".story-end").style.display = "none";
 }
 
 function revealSpoiler(spoiler) {
@@ -389,18 +382,14 @@ window.onload = function(){
     const urlParams = new URLSearchParams(window.location.search);
     if (urlParams.has("lang")) {
         setLanguage(urlParams.get("lang"));
+        if (urlParams.has("story")) {
+            chooseStory(urlParams.get("story"));
+            return;
+        }
     }
-
-    if (urlParams.has("story")) {
-        chooseStory(urlParams.get("story", false));
-    }
-
-    createImageCollection();
+    showHome();
 };
 
 // Expose entry points to the browser
-window.chooseStory = chooseStory;
-window.setLanguage = setLanguage;
 window.next = next;
 window.resetStory = resetStory;
-window.backToMenu = backToMenu;

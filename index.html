@@ -24,6 +24,8 @@
         
         <img name="option-icon" src="img/options.svg" class="icon top-icon" title="Settings" onclick="toggleOptions()">
 
+        <img src="img/restart.svg" id="reset-icon" class="icon top-icon" title="Restart the story" onclick="resetStory(); next();"></a>
+
         <div class="collection-count">1</div>
     </div>
     <div class="options">
@@ -73,7 +75,7 @@
             <p><i>This is a prototype, the project is still at a very early stage.</i></p>
         </div>
 
-        <div class="info" id="languageSelector">
+        <div class="info home" id="languageSelector">
             <p>Select a language to study.</p>
             <ul>
                 <li><a href="?lang=en"><img class="flag" src="img/flags/gb.svg"><div>English</div></a>
@@ -83,7 +85,7 @@
             </ul>
         </div>
 
-        <div class="info" style="display: none;" id="storySelector">
+        <div class="info home" id="storySelector">
             <p>Select a story to read.</p>
             <div class="story-list"></div>
         </div>
@@ -97,8 +99,8 @@
             <h2>Congratulations!</h2>
             <p class="story-end-text"></p>
 
-            <div style="display: flex;">
-                <img class="icon player-icon" src="img/exit.svg" title="Choose another story" onclick="backToMenu();">
+            <div>
+                <a id="back-to-menu"><img class="icon player-icon" src="img/exit.svg" title="Choose another story"></a>
                 <img class="icon player-icon" src="img/restart.svg" title="Restart the story" onclick="resetStory(); next();">
             </div>
         </div>
@@ -159,7 +161,6 @@
 </div>
 
 <script>
-// toggle options
 function toggleOptions() {
     var options = document.querySelector('.options');
     options.style.display = options.style.display === 'block' ? 'none' : 'block';
