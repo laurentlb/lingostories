@@ -40,13 +40,33 @@ function setLanguage(l) {
     }
 }
 
+function updateCollectionCountLabel(label, storyName) {
+    const collected = userData.nbCollectedImages(storyName);
+    const storyData = stories.find(s => s.id == storyName);
+    label.textContent = `${collected}/${storyData.imageCount}`;
+    if (collected === storyData.imageCount) {
+        label.classList.add("story-complete");
+        label.title = `You have collected all images in this story!`;
+    } else {
+        label.title = `You have collected ${collected} out of ${storyData.imageCount} images in this story.`
+    }
+}
+
+function updateCollectionTopStatus() {
+    const label = document.querySelector("#collection-count");
+    label.style.visibility = "visible";
+    updateCollectionCountLabel(label, story.storyName);
+}
+
 async function chooseStory(name) {
     showStory();
     const backUrl = "/?lang=" + story.lang;
     document.querySelector('#back-icon').setAttribute("href", backUrl);
     document.querySelector('#back-to-menu').setAttribute("href", backUrl);
+    document.querySelector('#restart-icon').style.visibility = "visible";
 
     await story.loadStory(name);
+    updateCollectionTopStatus();
     resetStory();
     gtag('event', 'load-story', { 'story': name, 'lang': story.lang });
     next();
@@ -98,6 +118,7 @@ function showTextOrImage(pageIndex, sentenceIndex, useSpoiler) {
     main.appendChild(img);
     userData.collectImage(story.storyName, image);
     soundEffect('image-collected');
+    updateCollectionTopStatus();
     nextAction = () => {
         showText(pageIndex, sentenceIndex, useSpoiler);
     };
@@ -292,14 +313,7 @@ function createStoryList() {
 
         const countLabel = document.createElement("span");
         countLabel.classList.add("story-count");
-        const collected = userData.nbCollectedImages(sto.id);
-        countLabel.textContent = `${collected}/${sto.imageCount}`;
-        if (collected === sto.imageCount) {
-            countLabel.classList.add("story-complete");
-            countLabel.title = `You have collected all images in this story!`;
-        } else {
-            countLabel.title = `You have collected ${collected} out of ${sto.imageCount} images in this story.`
-        }
+        updateCollectionCountLabel(countLabel, sto.id);
         elt.appendChild(countLabel);
 
         container.appendChild(elt);
