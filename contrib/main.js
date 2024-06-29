@@ -79,6 +79,9 @@ function updateStoryText() {
 
 async function createStoryText(storyId, srcLang, tgtLang) {
     await storyData.loadStory(storyId);
+    if (tgtLang === "new") {
+        storyData.addLanguage(tgtLang);
+    }
     updateStoryText();
 }
 
@@ -132,14 +135,17 @@ window.onload = function() {
         targetLang.appendChild(option.cloneNode(true));
     }
 
+    // default values
     sourceLang.value = "en";
-    targetLang.value = "fr";
+    targetLang.value = "new";
 
     storyName.onchange = function() {
+        if (!storyName.value) return;
         createStoryText(storyName.value, sourceLang.value, targetLang.value);
     }
     
     sourceLang.onchange = targetLang.onchange = function() {
+        if (!storyName.value) return;
         updateStoryText();
     };
 }

@@ -115,4 +115,13 @@ export class Story {
             }
         }
     }
+
+    addLanguage(lang) {
+       for (const page of Object.values(this.sentences)) {
+           page.text[lang] = page.text["en"].map(() => "");
+           for (const choice of page.choices) {
+               choice[lang] = "";
+           }
+       }
+    }
 };
