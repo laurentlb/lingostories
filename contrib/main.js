@@ -15,6 +15,9 @@ function createPage(container, page, srcLang, tgtLang) {
         const tgtInput = document.createElement('input');
         tgtInput.type = 'text';
         tgtInput.value = page.text[tgtLang][i];
+        tgtInput.lang = tgtLang;
+        tgtInput.spellcheck = true;
+        tgtInput.inputMode = 'text';
         tgtInput.onchange = function() {
             page.text[tgtLang][i] = tgtInput.value;
         };
@@ -37,6 +40,9 @@ function createPage(container, page, srcLang, tgtLang) {
         const tgtInput = document.createElement('input');
         tgtInput.type = 'text';
         tgtInput.value = choice[tgtLang];
+        tgtInput.lang = tgtLang;
+        tgtInput.spellcheck = true;
+        tgtInput.inputMode = 'text';
         tgtInput.onchange = function() {
             choice[tgtLang] = tgtInput.value;
         };
@@ -100,7 +106,6 @@ function saveToFile() {
     const blob = new Blob([data], { type: 'text/plain' });
     const url = URL.createObjectURL(blob);
 
-    // save to disk
     const a = document.createElement('a');
     a.href = url;
     const targetLang = document.getElementById('targetLang').value;
