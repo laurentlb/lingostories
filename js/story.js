@@ -65,8 +65,9 @@ export class Story {
     }
 
     async loadStory(storyName) {
+        this.sentences = {};
         this.storyName = storyName;
-        const response = await fetch(`./stories/${storyName}.json`);
+        const response = await fetch(`/stories/${storyName}.json`);
         const story = await response.json();
 
         for (let page in story) {
@@ -79,5 +80,39 @@ export class Story {
             this.sentences[page] = new Page(text, choices, image);
         }
         console.log(this.sentences);
+    }
+
+    exportTranslations(lang) {
+        let lines = [];
+        for (const page of Object.values(this.sentences)) {
+            for (const text of page.text[lang]) {
+                lines.push(text);
+            }
+            for (const choice of page.choices) {
+                if (!choice[lang] || choice[lang] === "...") {
+                    continue;
+                }
+                lines.push(choice[lang]);
+            }
+        }
+        return lines.join("\n");
+    }
+
+    importTranslation(lang, text) {
+        const lines = text.split("\n");
+        let lineIndex = 0;
+        for (const page of Object.values(this.sentences)) {
+            for (let i = 0; i < page.text["en"].length; i++) {
+                page.text[lang][i] = lines[lineIndex];
+                lineIndex++;
+            }
+            for (const choice of page.choices) {
+                if (!choice["en"] || choice["en"] === "...") {
+                    continue;
+                }
+                choice[lang] = lines[lineIndex];
+                lineIndex++;
+            }
+        }
     }
 };

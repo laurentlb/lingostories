@@ -1,3 +1,4 @@
+import { stories } from "./stories.js";
 import { Story } from "./story.js";
 import { initTTS, listenMP3, soundEffect, updateVoices } from "./audio.js";
 import { WordShuffleGame } from "./wordShuffleGame.js";
@@ -5,11 +6,6 @@ import { UserData } from "./userdata.js";
 
 const story = new Story();
 const userData = new UserData();
-
-const stories = [
-    { id: "intro", title: "Introduction", imageCount: 1 },
-    { id: "park", title: "At the Park", imageCount: 5 },
-];
 
 var nextAction = null;
 var actionPending = false;

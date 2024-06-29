@@ -53,19 +53,11 @@ input[type="range"], input[type="checkbox"] {
     filter: invert(1) hue-rotate(160deg);
 }
 
-input[type="button"] {
-    border: 1px solid var(--border-color);
-    background: #000;
-    color: #fff;
-    cursor: pointer;
-    border-radius: 16px;
-    padding: 8px 16px;
-    transition: all .2s;
-    margin: 2px;
-}
-
 input {
     font-size: 1rem;
+    background-color: #444;
+    color: #fff;
+    border: 1px solid var(--border-color);
 }
 
 input[type="button"] {
@@ -81,6 +73,11 @@ input[type="button"] {
 input[type="button"]:hover {
     transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+hr {
+    border: none;
+    border-bottom: 1px solid var(--border-color);
 }
 
 h1 {

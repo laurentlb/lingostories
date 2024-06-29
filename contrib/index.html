@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta property="og:type" content="website"/>
+<meta property="og:site_name" content="LingoStories"/>
+<meta property="og:description" content="Free interactive stories for language learners." />
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+
+<title>LingoStories - free interactive stories for language learners</title>
+<script type="module" src="main.js"></script>
+
+<link rel="stylesheet" href="/style.css">
+
+<style>
+input[type="text"] {
+    width: 100%;
+}
+
+.sentence {
+    padding: 0.5em 0;
+}
+
+.reference {
+    color: var(--highlight-color);
+    font-size: 14px;
+}
+
+.main {
+    max-width: 800px;
+    margin: 0 auto 150px auto;
+}
+
+.actions {
+    width: 100%;
+    border-top: 1px solid var(--border-color);
+    position: fixed;
+    bottom: 0;
+    height: 140px;
+    background: inherit;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+</style>
+
+<div class="main">
+    <li>
+        <label>Story</label>
+        <select id="storyName">
+            <option value="0">Select a story</option>
+        </select>
+
+    <li>
+        <label>Language to update</label>
+        <select id="targetLang"></select>
+
+    <li>
+        <label>Reference</label>
+        <select id="sourceLang"></select>
+
+    <div id="story-text">
+    </div>
+        
+</div>
+
+<div class="actions">
+    <input type="button" value="Load" onclick="loadFromFile()">
+    <input type="button" value="Save" onclick="saveToFile()">
+</div>
