@@ -53,13 +53,6 @@ export function updateVoices(lang) {
     voiceSelect.appendChild(option);
     voicesAvailable = true;
   }
-
-  document.querySelector("#no-voices").style.display = voicesAvailable ? "none" : "block";
-  if (!voicesAvailable) {
-    document.querySelector("#mode").value = "textOnly";
-  } else {
-    document.querySelector("#mode").value = "audioAndText";
-  }
 }
 
 function listen(text, lang) {
