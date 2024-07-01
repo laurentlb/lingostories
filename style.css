@@ -355,7 +355,7 @@ a:hover {
 #languageSelector ul {
     list-style-type: none;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
     padding: 0;
     text-align: center;
     grid-gap: 0.5em;
@@ -388,7 +388,7 @@ details h2 {
 }
 
 .flag {
-    width: 64px;
+    width: 92px;
     vertical-align: middle;
     border-radius: 4px;
     margin: 8px;
