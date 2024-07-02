@@ -7,7 +7,8 @@
             "pl": "Dzień w parku.|Jest słoneczny dzień.|Anna chce iść do parku.|Park jest zawsze spokojny i piękny.|Anna zakłada buty.|Idzie do parku.|Kiedy Anna przybywa na miejsce, wokół jest mnóstwo ludzi.|Wiele osób również spaceruje.|Niektórzy siedzą na ławkach i rozmawiają.|Gdzie Anna idzie najpierw?",
             "de": "Ein Tag im Park.|Es ist ein sonniger Tag.|Anna möchte in den Park gehen.|Der Park ist immer ruhig und wunderschön.|Anna zieht ihre Schuhe an.|Sie läuft zum Park.|Als Anna ankommt, sind viele Menschen unterwegs.|Viele Menschen gehen auch zu Fuß.|Einige Leute sitzen auf Bänken und unterhalten sich.|Wohin geht Anna zuerst?",
             "sv": "En dag i parken.|Det är en solig dag.|Anna vill gå till parken.|Parken är alltid rofylld och vacker.|Anna tar på sig skorna.|Hon går till parken.|När Anna kommer fram, är där fullt av folk.|Många personer är också ute och går.|Några personer sitter på bänkar och pratar.|Vart går Anna först?",
-            "pt": "Um dia no parque.|É um dia de sol.|A Anna quer ir ao parque.|O parque é sempre calmo e belo.|A Anna calça os sapatos.|Ela caminha até ao parque.|Quando a Anna chega, há muitas pessoas.|Muitas pessoas também passeiam.|Algumas pessoas sentam-se em bancos e conversam.|Para onde vai a Anna primeiro?"
+            "pt": "Um dia no parque.|É um dia de sol.|A Anna quer ir ao parque.|O parque é sempre calmo e belo.|A Anna calça os sapatos.|Ela caminha até ao parque.|Quando a Anna chega, há muitas pessoas.|Muitas pessoas também passeiam.|Algumas pessoas sentam-se em bancos e conversam.|Para onde vai a Anna primeiro?",
+            "nl": "Een dag in het park.|Het is een zonnige dag.|Anna wil naar het park gaan.|Het park is altijd rustig en mooi.|Anna doet haar schoenen aan.|Ze loopt naar het park.|Wanneer Anna aankomt, zijn er veel mensen.|Veel mensen zijn ook aan het lopen.|Sommige mensen zitten op bankjes en praten.|Waar gaat Anna eerst naartoe?"
         },
         {
             "goto": "1",
@@ -16,7 +17,8 @@
             "pl": "Pod duże drzewo.",
             "de": "Unter einen großen Baum",
             "sv": "Under ett stort träd.",
-            "pt": "Debaixo de uma árvore."
+            "pt": "Debaixo de uma árvore.",
+            "nl": "Onder een grote boom."
         },
         {
             "goto": "2",
@@ -25,7 +27,8 @@
             "pl": "Na plac zabaw.",
             "de": "Auf den Spielplatz.",
             "sv": "Till lekplatsen.",
-            "pt": "Para o parque infantil."
+            "pt": "Para o parque infantil.",
+            "nl": "Naar de speeltuin."
         }
     ],
     "1": [
@@ -35,7 +38,8 @@
             "pl": "Anna znajduje duże, piękne drzewo.|Siada na trawie.|Podnosi książkę i czyta ją.|Uwielbia czytać.|Po chwili podszedł do niej pies.|Pies jest przyjazny i chce się bawić.|Co robi Anna?",
             "de": "Anna findet einen großen und schönen Baum.|Sie setzt sich auf das Gras.|Sie nimmt ein Buch und liest es.|Sie liest gerne.|Nach einer Weile kommt ein Hund zu ihr.|Der Hund ist freundlich und will spielen.|Was macht Anna?",
             "sv": "Anna hittar ett fint, stort träd.|Hon sätter sig ner i gräset.|Hon tar en bok och läser i den.|Hon älskar att läsa.|Efter ett tag kommer en hund fram till henne.|Hunden är snäll och vill leka.|Vad gör Anna?",
-            "pt": "A Anna encontra uma árvore grande e bonita.|Ela senta-se na relva.|Ela pega num livro e lê.|Ela ama ler.|Passado um tempo, um cão vem até ela.|O cão é amigável e quer brincar.|O que faz a Anna?"
+            "pt": "A Anna encontra uma árvore grande e bonita.|Ela senta-se na relva.|Ela pega num livro e lê.|Ela ama ler.|Passado um tempo, um cão vem até ela.|O cão é amigável e quer brincar.|O que faz a Anna?",
+            "nl": "Anna vindt een fijne, grote boom.|Ze gaat zitten op het gras.|Ze pakt een boek en leest het.|Ze houdt van lezen.|Na een tijdje komt er een hond naar haar toe.|De hond is vriendelijk en wil spelen.|Wat doet Anna?"
         },
         {
             "goto": "3",
@@ -44,7 +48,8 @@
             "pl": "Bawi się z psem.",
             "de": "Mit dem Hund spielen.",
             "sv": "Lek med hunden.",
-            "pt": "Brinca com o cão."
+            "pt": "Brinca com o cão.",
+            "nl": "Met de hond spelen."
         },
         {
             "goto": "4",
@@ -53,7 +58,8 @@
             "pl": "Czyta dalej.",
             "de": "Weiterlesen.",
             "sv": "Fortsätt läsa.",
-            "pt": "Continua a ler."
+            "pt": "Continua a ler.",
+            "nl": "Blijven lezen."
         }
     ],
     "2": [
@@ -63,7 +69,8 @@
             "pl": "Anna idzie na plac zabaw.|Wiele dzieci się bawi.|Anna siada na ławce i obserwuje dzieci.|Do Anny podchodzi mała dziewczynka.|Mała dziewczyna prosi o pomoc z butem.|Co robi Anna?",
             "de": "Anna geht zum Spielplatz.|Viele Kinder spielen.|Anna setzt sich auf eine Bank und beobachtet die Kinder.|Ein kleines Mädchen nähert sich Anna.|Das Mädchen bittet um Hilfe bei ihrem Schuh.|Was macht Anna?",
             "sv": "Anna går till lekplatsen.|Många barn leker.|Anna sitter på en bänk i närheten och tittar på barnen.|En liten flicka kommer fram till Anna.|Flickan ber om hjälp med sin sko.|Vad gör Anna?",
-            "pt": "A Anna vai para o parque infantil.|Muitas crianças brincam.|A Anna senta-se num banco próximo e observa as crianças.|Uma menina vem ter com a Anna|A menina pede ajuda com o seu sapato.|O que faz a Anna?"
+            "pt": "A Anna vai para o parque infantil.|Muitas crianças brincam.|A Anna senta-se num banco próximo e observa as crianças.|Uma menina vem ter com a Anna|A menina pede ajuda com o seu sapato.|O que faz a Anna?",
+            "nl": "Anna gaat naar de speeltuin.|Veel kinderen zijn aan het spelen.|Anna gaat vlakbij op een bankje zitten en bekijkt de kinderen.|Een klein meisje komt op Anna af.|Het meisje vraagt om hulp met haar schoen.|Wat doet Anna?"
         },
         {
             "goto": "5",
@@ -72,7 +79,8 @@
             "pl": "Pomóż małej dziewczynce.",
             "de": "Dem kleinen Mädchen helfen.",
             "sv": "Hjälp den lilla flickan.",
-            "pt": "Ajuda a menina."
+            "pt": "Ajuda a menina.",
+            "nl": "Het kleine meisje helpen."
         },
         {
             "goto": "6",
@@ -81,7 +89,8 @@
             "pl": "Powiedz dziewczynie, żeby zapytała rodziców.",
             "de": "Sag dem Mädchen, dass sie ihre Eltern fragen soll.",
             "sv": "Säg åt flickan att fråga sina föräldrar.",
-            "pt": "Diz à menina para pedir aos pais."
+            "pt": "Diz à menina para pedir aos pais.",
+            "nl": "Het meisje vertellen om het aan haar ouders te vragen."
         }
     ],
     "3": [
@@ -92,7 +101,8 @@
             "pl": "Anna bawi się z psem.|Anna rzuca psu piłkę.|Pies dobrze się bawi.|Później właściciel psa przychodzi podziękować Annie.|Co dalej zrobi Anna?",
             "de": "Anna spielt mit dem Hund.|Anna wirft dem Hund einen Ball zu.|Der Hund hat Spaß.|Später kommt der Besitzer des Hundes und bedankt sich bei Anna.|Was macht Anna als Nächstes?",
             "sv": "Anna leker med hunden.|Anna kastar en boll till hunden.|Hunden har roligt.|Senare kommer hundens ägare och tackar Anna.|Vad gör Anna härnäst?",
-            "pt": "A Anna brinca com o cão.|A Anna atira uma bola ao cão.|O cão está a divertir-se.|Mais tarde, o dono do cão chega e agradece à Anna.|O que faz a Anna a seguir?"
+            "pt": "A Anna brinca com o cão.|A Anna atira uma bola ao cão.|O cão está a divertir-se.|Mais tarde, o dono do cão chega e agradece à Anna.|O que faz a Anna a seguir?",
+            "nl": "Anna speelt met de hond.|Anna gooit een bal naar de hond.|De hond heeft het naar zijn zin.|Later komt de eigenaar van de hond en bedankt Anna.|Wat doet Anna nu?"
         },
         {
             "goto": "7",
@@ -101,7 +111,8 @@
             "pl": "Przeczytaj książkę.",
             "de": "Ein Buch lesen.",
             "sv": "Läs en bok.",
-            "pt": "Lê um livro."
+            "pt": "Lê um livro.",
+            "nl": "Een boek lezen."
         },
         {
             "goto": "8",
@@ -110,7 +121,8 @@
             "pl": "Idź na spacer.",
             "de": "Spazieren gehen.",
             "sv": "Ta en promenad.",
-            "pt": "Vai passear."
+            "pt": "Vai passear.",
+            "nl": "Een wandeling maken."
         }
     ],
     "4": [
@@ -120,7 +132,8 @@
             "pl": "Anna ignoruje psa i czyta dalej.|Pies w końcu odchodzi.|Anna cieszy się książką i je kanapkę.|Co dalej zrobi Anna?",
             "de": "Anna ignoriert den Hund und liest weiter.|Der Hund geht schließlich weg.|Anna genießt ihr Buch und isst ein Sandwich.|Was macht Anna als Nächstes?",
             "sv": "Anna struntar i hunden och fortsätter läsa.|Till slut lämnar hunden platsen.|Anna njuter av sin bok och äter sin smörgås.|Vad gör Anna härnäst?",
-            "pt": "A Anna ignora o cão e continua a ler.|O cão finalmente vai embora.|A Anna aproveita o seu livro e come a sua sanduíche.|O que faz a Anna a seguir?"
+            "pt": "A Anna ignora o cão e continua a ler.|O cão finalmente vai embora.|A Anna aproveita o seu livro e come a sua sanduíche.|O que faz a Anna a seguir?",
+            "nl": "Anna negeert de hond en gaat door met lezen.|De hond gaat eindelijk weg.|Anna geniet van haar boek en eet haar sandwich.|Wat doet Anna nu?"
         },
         {
             "goto": "9",
@@ -129,7 +142,8 @@
             "pl": "Zdrzemnij się.",
             "de": "Ein Nickerchen machen.",
             "sv": "Ta en tupplur.",
-            "pt": "Dorme uma sesta."
+            "pt": "Dorme uma sesta.",
+            "nl": "Een dutje doen."
         },
         {
             "goto": "8",
@@ -138,7 +152,8 @@
             "pl": "Idź na spacer.",
             "de": "Spazieren gehen.",
             "sv": "Ta en promenad.",
-            "pt": "Vai passear."
+            "pt": "Vai passear.",
+            "nl": "Een wandeling maken."
         }
     ],
     "5": [
@@ -148,7 +163,8 @@
             "pl": "Anna pomaga dziewczynce założyć but.|Dziewczyna uśmiecha się i dziękuje Annie.|Rodzice dziewczynki podchodzą i również dziękują Annie.|Rodzice dają Annie ciasteczka.",
             "de": "Anna hilft dem kleinen Mädchen mit ihrem Schuh.|Das Mädchen lächelt und bedankt sich bei Anna.|Die Eltern des Mädchens kommen herbei und bedanken sich ebenfalls bei Anna.|Die Eltern schenken Anna Kekse.",
             "sv": "Anna hjälper den lilla flickan med hennes sko.|Flickan ler och tackar Anna.|Flickans föräldrar kommer också fram och tackar Anna.|Föräldrarna bjuder Anna på kakor.",
-            "pt": "A Anna ajuda a menina com o seu sapato.|A menina sorri e agradece à Anna.|Os pais da menina chegam e agradecem à Anna também.|Os pais oferecem bolachas à Anna."
+            "pt": "A Anna ajuda a menina com o seu sapato.|A menina sorri e agradece à Anna.|Os pais da menina chegam e agradecem à Anna também.|Os pais oferecem bolachas à Anna.",
+            "nl": "Anna helpt het kleine meisje met haar schoen.|Het meisje glimlacht en bedankt Anna.|De ouders van het meisje komen eraan en bedanken Anna ook.|De ouders bieden Anna wat koekjes aan."
         },
         {
             "goto": "10",
@@ -165,7 +181,8 @@
             "pl": "Anna mówi dziewczynce, by zapytała rodziców.|Dziewczynka biegnie z powrotem do rodziców.|Anna pozostaje na ławce.|Po chwili postanowiła zrobić coś innego.",
             "de": "Anna sagt dem Mädchen, dass sie ihre Eltern fragen soll.|Das Mädchen rennt zu ihren Eltern.|Anna bleibt auf der Bank sitzen.|Nach einer Weile beschließt sie, etwas anderes zu machen.",
             "sv": "Anna säger till flickan att hon ska fråga sina föräldrar.|Flickan springer tillbaka till sina föräldrar.|Anna stannar kvar på bänken.|Efter ett tag bestämmer hon sig för att göra något annat.",
-            "pt": "A Anna diz à menina para pedir ajuda aos seus pais.|A menina corre de volta para os seus pais.|A Anna fica no banco.|Passado um tempo, ela decide fazer outra coisa."
+            "pt": "A Anna diz à menina para pedir ajuda aos seus pais.|A menina corre de volta para os seus pais.|A Anna fica no banco.|Passado um tempo, ela decide fazer outra coisa.",
+            "nl": "Anna vertelt het meisje om het aan haar ouders te vragen.|Het meisje rent terug naar haar ouders.|Anna blijft op het bankje zitten.|Na een tijdje besluit ze om iets anders te doen."
         },
         {
             "goto": "1",
@@ -174,7 +191,8 @@
             "pl": "Idź pod drzewo.",
             "de": "Unter einen Baum gehen.",
             "sv": "Sitt under ett stort träd.",
-            "pt": "Sentar debaixo de uma árvore grande."
+            "pt": "Sentar debaixo de uma árvore grande.",
+            "nl": "Onder een grote boom zitten."
         },
         {
             "goto": "8",
@@ -183,7 +201,8 @@
             "pl": "Idź na spacer.",
             "de": "Spazieren gehen.",
             "sv": "Ta en promenad.",
-            "pt": "Ir passear."
+            "pt": "Ir passear.",
+            "nl": "Een wandeling maken."
         }
     ],
     "7": [
@@ -193,7 +212,8 @@
             "pl": "Anna siada, by poczytać książkę.|Czyta przez chwilę.|Czuje się bardzo zrelaksowana.|Park jest bardzo spokojny.",
             "de": "Anna setzt sich hin, um ihr Buch zu lesen.|Sie liest eine Weile.|Sie fühlt sich sehr entspannt.|Der Park ist sehr ruhig.",
             "sv": "Anna sätter sig ner för att läsa sin bok.|Hon läser en stund.|Hon känner sig mycket avslappnad.|Parken är mycket fridfull.",
-            "pt": "A Anna senta-se para ler o seu livro.|Ela lê por um bocado.|Ela sente-se muito relaxada.|O parque é muito tranquilo."
+            "pt": "A Anna senta-se para ler o seu livro.|Ela lê por um bocado.|Ela sente-se muito relaxada.|O parque é muito tranquilo.",
+            "nl": "Anna gaat zitten om haar boek te lezen.|Ze leest een tijdje.|Ze voelt zich erg ontspannen.|Het park is erg rustig."
         },
         {
             "goto": "9",
@@ -202,7 +222,8 @@
             "pl": "Zdrzemnij się.",
             "de": "Ein Nickerchen machen.",
             "sv": "Ta en tupplur.",
-            "pt": "Fazer uma sesta."
+            "pt": "Fazer uma sesta.",
+            "nl": "Een dutje doen."
         },
         {
             "goto": "8",
@@ -211,7 +232,8 @@
             "pl": "Idź na spacer.",
             "de": "Spazieren gehen.",
             "sv": "Ta en promenad.",
-            "pt": "Ir passear."
+            "pt": "Ir passear.",
+            "nl": "Een wandeling maken."
         }
     ],
     "8": [
@@ -221,7 +243,8 @@
             "pl": "Anna postanawia wybrać się na spacer w parku.|Anna patrzy na piękne kwiaty.|Słucha śpiewu ptaków.|Jest szczęśliwa.|Potem widzi swojego przyjaciela Toma.|Tom również spaceruje po parku.",
             "de": "Anna beschließt, einen Spaziergang im Park zu machen.|Anna schaut sich die schönen Blumen an.|Sie lauscht dem Gesang der Vögel.|Sie ist glücklich.|Dann sieht sie ihren Freund Tom.|Tom geht ebenfalls im Park spazieren.",
             "sv": "Anna bestämmer sig för att ta en promenad i parken.|Anna tittar på några vackra blommor.|Hon lyssnar på fågelsången.|Hon känner sig lycklig.|Sedan ser hon sin vän Tom.|Tom promenerar också i parken.",
-            "pt": "A Anna decide ir passear no parque.|A Anna olha para umas flores bonitas.|Ela escuta os pássaros a cantar.|Ela sente-se feliz.|Depois, ela vê o seu amigo Tom.|O Tom também está a passear no parque."
+            "pt": "A Anna decide ir passear no parque.|A Anna olha para umas flores bonitas.|Ela escuta os pássaros a cantar.|Ela sente-se feliz.|Depois, ela vê o seu amigo Tom.|O Tom também está a passear no parque.",
+            "nl": "Anna besluit om te gaan wandelen in het park.|Anna kijkt naar wat mooie bloemen.|Ze luistert naar de zingende vogels.|Ze voelt zich vrolijk.|Dan ziet ze haar vriend Tom.|Tom loopt ook in het park."
         },
         {
             "goto": "15",
@@ -239,7 +262,8 @@
             "pl": "Anna ucina sobie drzemkę pod drzewem.|Marzy o lataniu jak ptak.|Budzi się zrelaksowana i szczęśliwa.",
             "de": "Anna macht ein Nickerchen unter dem Baum.|Sie träumt, dass sie wie ein Vogel fliegt.|Sie wacht entspannt und glücklich auf.",
             "sv": "Anna tar en tupplur under granen.|Hon drömmer om att hon flyger som en fågel.|Hon vaknar upp och känner sig avslappnad och glad.",
-            "pt": "A Anna faz uma sesta debaixo da árvore.|Ela sonha que voa como um pássaro.|Ela acorda a sentir-se relaxada e feliz."
+            "pt": "A Anna faz uma sesta debaixo da árvore.|Ela sonha que voa como um pássaro.|Ela acorda a sentir-se relaxada e feliz.",
+            "nl": "Anna doet een dutje onder de boom.|Ze droomt dat ze vliegt als een vogel.|Ze wordt ontspannen en vrolijk wakker."
         },
         {
             "goto": "8",
@@ -248,7 +272,8 @@
             "pl": "Idź na spacer.",
             "de": "Spazieren gehen.",
             "sv": "Ta en promenad.",
-            "pt": "Ir passear."
+            "pt": "Ir passear.",
+            "nl": "Een wandeling maken."
         }
     ],
     "10": [
@@ -258,7 +283,8 @@
             "pl": "Ciastka są bardzo dobre.|Anna jest szczęśliwa i postanawia zrobić coś innego.",
             "de": "Die Kekse sind sehr lecker.|Anna ist glücklich und beschließt, etwas anderes zu tun.",
             "sv": "Kakorna är jättegoda.|Anna känner sig glad och bestämmer sig för att göra något annat.",
-            "pt": "As bolachas são muito saborosas.|A Anna sente-se feliz e decide fazer outra coisa."
+            "pt": "As bolachas são muito saborosas.|A Anna sente-se feliz e decide fazer outra coisa.",
+            "nl": "De koekjes zijn erg lekker.|Anna voelt zich vrolijk en besluit om iets anders te doen."
         },
         {
             "goto": "14",
@@ -267,7 +293,8 @@
             "pl": "Pobaw się z dziewczynką.",
             "de": "Mit dem Mädchen spielen.",
             "sv": "Lek med flickan.",
-            "pt": "Brincar com a menina."
+            "pt": "Brincar com a menina.",
+            "nl": "Met het meisje spelen."
         },
         {
             "goto": "8",
@@ -276,7 +303,8 @@
             "pl": "Idź na spacer.",
             "de": "Spazieren gehen.",
             "sv": "Ta en promenad.",
-            "pt": "Ir passear."
+            "pt": "Ir passear.",
+            "nl": "Een wandeling maken."
         }
     ],
     "14": [
@@ -287,7 +315,8 @@
             "pl": "Anna i dziewczynka grają w grę.|Grają w berka i świetnie się przy tym bawią.|Po chwili dziewczyna musi odejść.|Anna żegna się.",
             "de": "Anna und das Mädchen spielen ein Spiel.|Sie spielen Katz und Maus und haben viel Spaß.|Nach einer Weile muss das Mädchen gehen.|Anna verabschiedet sich.",
             "sv": "Anna och flickan leker en lek.|De leker kull och har mycket roligt.|Efter ett tag måste flickan gå.|Anna säger adjö.",
-            "pt": "A Anna e a menina brincam.|Elas jogam à apanhada e divertem-se muito.|Passado um bocado, a menina tem de ir embora.|A Anna despede-se."
+            "pt": "A Anna e a menina brincam.|Elas jogam à apanhada e divertem-se muito.|Passado um bocado, a menina tem de ir embora.|A Anna despede-se.",
+            "nl": "Anna en het meisje spelen een spelletje.|Ze spelen tikkertje en hebben veel lol.|Na een tijdje moet het meisje gaan.|Anna neemt afscheid."
         },
         {
             "goto": "8",
@@ -296,7 +325,8 @@
             "pl": "Idź na spacer.",
             "de": "Spazieren gehen.",
             "sv": "Ta en promenad.",
-            "pt": "Ir passear."
+            "pt": "Ir passear.",
+            "nl": "Een wandeling maken."
         }
     ],
     "15": [
@@ -307,7 +337,8 @@
             "pl": "Anna uśmiecha się i macha do Toma.|Tom macha do niej i podchodzi.|\"Cześć Anna, miło cię tu widzieć\", mówi Tom.",
             "de": "Anna lächelt und winkt Tom zu.|Tom antwortet ihr mit einem Handzeichen und geht auf sie zu.|\"Hallo Anna, toll, dass du hier bist\", sagt Tom.",
             "sv": "Anna ler och vinkar till Tom.|Tom vinkar tillbaka och går fram till henne.|\"Hej Anna, vad kul att se dig här\", säger Tom.",
-            "pt": "A Anna sorri e acena para o Tom.|O Tom acena de volta e vai ter com ela.|\"Olá Anna, que bom ver-te aqui\", diz o Tom."
+            "pt": "A Anna sorri e acena para o Tom.|O Tom acena de volta e vai ter com ela.|\"Olá Anna, que bom ver-te aqui\", diz o Tom.",
+            "nl": "Anna glimlacht en zwaait naar Tom.|Tom zwaait terug en loopt naar haar toe.|“Hoi Anna, het is goed om je hier te zien,” zegt Tom."
         },
         {
             "goto": "16",
@@ -316,7 +347,8 @@
             "pl": "Co za wspaniała niespodzianka!",
             "de": "Was für eine schöne Überraschung!",
             "sv": "Vilken trevlig överraskning!",
-            "pt": "Que bela surpresa!"
+            "pt": "Que bela surpresa!",
+            "nl": "Wat een fijne verrassing!"
         },
         {
             "goto": "17",
@@ -325,7 +357,8 @@
             "pl": "Często tu przychodzisz?",
             "de": "Kommst du oft hierher?",
             "sv": "Kommer du hit ofta?",
-            "pt": "Vens aqui regularmente?"
+            "pt": "Vens aqui regularmente?",
+            "nl": "Kom je hier vaak?"
         }
     ],
     "16": [
@@ -335,7 +368,8 @@
             "pl": "\"Witaj Tom, co za urocza niespodzianka!\" - powiedziała Anna.",
             "de": "\"Hallo Tom, was für eine schöne Überraschung!\", sagte Anna.",
             "sv": "\"Hej Tom, vilken trevlig överraskning!\" säger Anna.",
-            "pt": "\"Olá Tom, mas que bela surpresa!\" diz a Anna."
+            "pt": "\"Olá Tom, mas que bela surpresa!\" diz a Anna.",
+            "nl": "“Hoi Tom, wat een fijne verrassing!” zegt Anna."
         },
         {
             "goto": "31",
@@ -352,7 +386,8 @@
             "pl": "\"Cześć Tom, często tu przychodzisz?\" - pyta Anna.",
             "de": "\"Hallo Tom, bist du oft hier?\", fragt Anna.",
             "sv": "\"Hej Tom, kommer du hit ofta?\" frågar Anna.",
-            "pt": "\"Olá Tom, vens aqui regularmente?\" pergunta o Anna."
+            "pt": "\"Olá Tom, vens aqui regularmente?\" pergunta o Anna.",
+            "nl": "“Hoi Tom, kom je hier vaak?” vraagt Anna."
         },
         {
             "goto": "31",
@@ -369,7 +404,8 @@
             "pl": "\"Lubię tu przychodzić, by czytać i cieszyć się świeżym powietrzem\" - mówi Anna.|\"Brzmi nieźle\", odpowiada Tom.|\"Jaką książkę czytasz?\"",
             "de": "\"Ich komme gerne hierher, um zu lesen und die frische Luft zu genießen\", sagt Anna.|\"Das klingt nach Spaß\", antwortet Tom.|\"Welches Buch liest du?\"",
             "sv": "\"Jag tycker om att komma hit för att läsa och njuta av den friska luften\", säger Anna.|\"Det låter trevligt\", svarar Tom.|\"Vilken bok läser du?\"",
-            "pt": "\"Eu gosto de vir aqui ler e aproveitar o ar livre\", diz o Anna.|\"Isso soa bem\", diz o Tom.|\"Que livro lês?\""
+            "pt": "\"Eu gosto de vir aqui ler e aproveitar o ar livre\", diz o Anna.|\"Isso soa bem\", diz o Tom.|\"Que livro lês?\"",
+            "nl": "“Ik kom hier graag om te lezen en van de frisse lucht te genieten,” zegt Anna.|“Dat klinkt leuk,” antwoordt Tom.|“Welk boek lees je?”"
         },
         {
             "goto": "20",
@@ -378,7 +414,8 @@
             "pl": "Powieść kryminalna.",
             "de": "Ein Kriminalroman.",
             "sv": "En deckare.",
-            "pt": "Uma história de detetives."
+            "pt": "Uma história de detetives.",
+            "nl": "Een detectiveverhaal."
         },
         {
             "goto": "21",
@@ -387,7 +424,8 @@
             "pl": "Powieść przygodowa.",
             "de": "Ein Abenteuerroman.",
             "sv": "En äventyrsroman.",
-            "pt": "Uma aventura."
+            "pt": "Uma aventura.",
+            "nl": "Een avonturenroman."
         }
     ],
     "19": [
@@ -397,7 +435,8 @@
             "pl": "\"Lubię obserwować ludzi\", mówi Anna.|\"Ja też\", odpowiada Tom.|\"Fajnie jest widzieć, że wszyscy dobrze się bawią.|Lubię też obserwować zwierzęta.",
             "de": "\"Ich beobachte gerne Menschen\", sagt Anna.|\"Ich auch\", antwortet Tom.|\"Es macht Spaß zu sehen, dass alle eine gute Zeit haben.|Ich beobachte auch gerne Tiere\".",
             "sv": "\"Jag tycker om att titta på folk\", säger Anna.|\"Jag också\", svarar Tom.|\"Det är kul att se alla som roar sig.|Jag tycker också om att titta på djuren.\"",
-            "pt": "\"Eu gosto de observar as pessoas\", diz a Anna.|\"Eu também\", responde o Tom.|\"É bom ver toda a gente a divertir-se.\"|\"Eu também gosto de observar os animais.\""
+            "pt": "\"Eu gosto de observar as pessoas\", diz a Anna.|\"Eu também\", responde o Tom.|\"É bom ver toda a gente a divertir-se.\"|\"Eu também gosto de observar os animais.\"",
+            "nl": "“Ik vind het leuk om naar de mensen te kijken,” zegt Anna.|“Ik ook,” antwoordt Tom.|“Het is leuk om iedereen een goede tijd te zien hebben.|Ik kijk ook graag naar de dieren.”"
         },
         {
             "goto": "22",
@@ -406,7 +445,8 @@
             "pl": "Czy masz tutaj ulubione zwierzę?",
             "de": "Hast du ein Lieblingstier hier?",
             "sv": "Har du något favoritdjur här?",
-            "pt": "Tens algum animal preferido aqui?"
+            "pt": "Tens algum animal preferido aqui?",
+            "nl": "Heb je een favoriete dier hier?"
         },
         {
             "goto": "23",
@@ -415,7 +455,8 @@
             "pl": "Lubisz bawić się z tutejszymi psami?",
             "de": "Spielst du hier gerne mit den Hunden?",
             "sv": "Tycker du om att leka med hundarna här?",
-            "pt": "Gostas de brincar com os cães aqui?"
+            "pt": "Gostas de brincar com os cães aqui?",
+            "nl": "Speel je graag met de honden hier?"
         }
     ],
     "20": [
@@ -425,7 +466,8 @@
             "pl": "\"To powieść kryminalna\" - mówi Anna.|\"Powieści kryminalne są świetne, pełne niespodzianek\" - odpowiada Tom.",
             "de": "\"Das ist ein Krimi\", sagt Anna.|\"Kriminalromane sind toll, sie stecken voller Überraschungen\", antwortet Tom.",
             "sv": "\"Det är en deckare\", säger Anna.|\"Deckare är toppen, de är fulla av överraskningar\", svarar Tom.",
-            "pt": "\"É uma história de detetives\", diz a Anna.|\"Histórias de detetives são fantásticas, estão cheias de surpresas\", responde o Tom."
+            "pt": "\"É uma história de detetives\", diz a Anna.|\"Histórias de detetives são fantásticas, estão cheias de surpresas\", responde o Tom.",
+            "nl": "“Het is een detectiveverhaal,” zegt Anna.|“Detectiveverhalen zijn geweldig, ze zitten vol verrassingen,” antwoordt Tom."
         },
         {
             "goto": "25",
@@ -442,7 +484,8 @@
             "pl": "\"To powieść przygodowa\" - mówi Anna.|\"Powieści przygodowe są takie ekscytujące!|Zabierają cię w nowe miejsca\" - odpowiada Tom.",
             "de": "\"Das ist ein Abenteuerroman\", sagt Anna.|\"Abenteuerromane sind so spannend!|Sie bringen dich an neue Orte\", antwortet Tom.",
             "sv": "\"Det är en äventyrsroman\", säger Anna.|\"Äventyrsromaner är så spännande!|De tar dig till nya platser\", svarar Tom.",
-            "pt": "\"É uma aventura\", diz a Anna.|\"Aventuras são tão entusiasmantes!|Elas levam-te a novos lugares\", diz o Tom."
+            "pt": "\"É uma aventura\", diz a Anna.|\"Aventuras são tão entusiasmantes!|Elas levam-te a novos lugares\", diz o Tom.",
+            "nl": "“Het is een avonturenroman,” zegt Anna.|“Avonturenromans zijn zo spannend!|Ze nemen je mee naar nieuwe plekken,” antwoordt Tom."
         },
         {
             "goto": "25",
@@ -459,7 +502,8 @@
             "pl": "\"Czy masz tu jakieś ulubione zwierzę?\" - pyta Anna.|\"Naprawdę lubię wiewiórki\" - odpowiada Tom.|\"Są takie urocze!\"",
             "de": "\"Hast du hier ein Lieblingstier?\", fragt Anna.|\"Ich mag Eichhörnchen sehr\", antwortet Tom.|\"Sie sind so süß!\"",
             "sv": "\"Har du något favoritdjur här?\" frågar Anna.|\"Jag gillar verkligen ekorrarna\", svarar Tom.|\"De är så söta!\"",
-            "pt": "\"Tens algum animal preferido aqui?\", pergunta a Anna.|\"Eu adoro os esquilos\", diz o Tom.|\"Eles são tão fofos!\""
+            "pt": "\"Tens algum animal preferido aqui?\", pergunta a Anna.|\"Eu adoro os esquilos\", diz o Tom.|\"Eles são tão fofos!\"",
+            "nl": "“Heb je een favoriete dier hier?” vraagt Anna.|“Ik vind de eekhoorns erg leuk,” antwoordt Tom.|“Ze zijn zo schattig!”"
         },
         {
             "goto": "28",
@@ -468,7 +512,8 @@
             "pl": "Ja też uwielbiam wiewiórki!",
             "de": "Ich mag auch Eichhörnchen!",
             "sv": "Jag gillar också ekorrar!",
-            "pt": "Eu também gosto de esquilos!"
+            "pt": "Eu também gosto de esquilos!",
+            "nl": "Ik vind de eekhoorns ook leuk!"
         },
         {
             "goto": "28",
@@ -477,7 +522,8 @@
             "pl": "Wolę ptaki.",
             "de": "Ich bevorzuge Vögel.",
             "sv": "Jag gillar fåglarna mer.",
-            "pt": "Eu prefiro pássaros."
+            "pt": "Eu prefiro pássaros.",
+            "nl": "Ik vind de vogels leuker."
         }
     ],
     "23": [
@@ -487,7 +533,8 @@
             "pl": "\"Lubisz bawić się z tutejszymi psami?\" - pyta Anna.|\"Tak, lubię psy\" - odpowiada Tom.|\"Psy zawsze wyglądają na szczęśliwe\".",
             "de": "\"Spielst du hier gerne mit den Hunden?\", fragt Anna.|\"Ja, ich mag Hunde\", antwortet Tom.|\"Hunde sehen immer so glücklich aus\".",
             "sv": "\"Tycker du om att leka med hundarna här?\" frågar Anna.|\"Ja, jag älskar hundar\", svarar Tom.|\"Hundar ser alltid så glada ut.\"",
-            "pt": "\"Gostas de brincar com os cães aqui?\" pergunta a Anna.|\"Sim, eu amo cães\", responde o Tom.|\"Os cães parecem sempre tão felizes.\""
+            "pt": "\"Gostas de brincar com os cães aqui?\" pergunta a Anna.|\"Sim, eu amo cães\", responde o Tom.|\"Os cães parecem sempre tão felizes.\"",
+            "nl": "“Speel je graag met de honden hier?” vraagt Anna.|“Ja, ik houd van honden,” antwoordt Tom.|“Honden zien er altijd zo blij uit.”"
         },
         {
             "goto": "28",
@@ -496,7 +543,8 @@
             "pl": "Bawiłam się dziś z psem.",
             "de": "Ich habe früher am Tag mit einem Hund gespielt.",
             "sv": "Jag lekte med en hund tidigare idag.",
-            "pt": "Eu brinquei com um cão hoje."
+            "pt": "Eu brinquei com um cão hoje.",
+            "nl": "Ik heb eerder vandaag met een hond gespeeld."
         },
         {
             "goto": "28",
@@ -505,7 +553,8 @@
             "pl": "Lubię też oglądać ich grę.",
             "de": "Ich sehe ihnen auch gerne beim Spielen zu.",
             "sv": "Jag tycker om att titta på när de leker också.",
-            "pt": "Eu também gosto de os ver a brincar."
+            "pt": "Eu também gosto de os ver a brincar.",
+            "nl": "Ik vind het ook leuk om ze te zien spelen."
         }
     ],
     "25": [
@@ -515,7 +564,8 @@
             "pl": "\"Jakie inne rodzaje książek lubisz?\" - pyta Anna.|\"Czytam też science fiction\" - odpowiada Tom.|\"Książki science fiction sprawiają, że myślisz o przyszłości.",
             "de": "\"Welche anderen Arten von Büchern magst du?\", fragt Anna.|\"Ich lese auch Science-Fiction-Bücher\", antwortet Tom.|\"Science-Fiction-Bücher lassen dich über die Zukunft nachdenken\".",
             "sv": "\"Vilka andra typer av böcker tycker du om?\" frågar Anna.|\"Jag läser också science-fiction böcker\", svarar Tom.|\"Science-fiction böcker får dig att tänka på framtiden.\"",
-            "pt": "\"De que outro tipo de livros também gostas?\" pergunta a Ana.|\"Eu também leio livros de ficção-científica\", responde o Tom.|\"Livros de ficção-científica fazem-te pensar sobre o futuro.\""
+            "pt": "\"De que outro tipo de livros também gostas?\" pergunta a Ana.|\"Eu também leio livros de ficção-científica\", responde o Tom.|\"Livros de ficção-científica fazem-te pensar sobre o futuro.\"",
+            "nl": "“Van wat voor andere soorten boeken houd je?” vraagt Anna.|“Ik lees ook sciencefictionboeken,” antwoordt Tom.|“Sciencefictionboeken laten je aan de toekomst denken.”"
         },
         {
             "goto": "28",
@@ -524,7 +574,8 @@
             "pl": "Może kiedyś przeczytamy jakąś razem?",
             "de": "Vielleicht können wir ja irgendwann mal ein Buch zusammen lesen?",
             "sv": "Vi kanske kan läsa en tillsammans någon gång?",
-            "pt": "Talvez possamos ler um livro juntos algum dia?"
+            "pt": "Talvez possamos ler um livro juntos algum dia?",
+            "nl": "Misschien kunnen we er een keer samen één lezen?"
         },
         {
             "goto": "28",
@@ -533,7 +584,8 @@
             "pl": "Powinniśmy częściej rozmawiać o naszych ulubionych książkach.",
             "de": "Wir sollten öfter über unsere Lieblingsbücher sprechen.",
             "sv": "Vi borde prata om våra favoritböcker oftare.",
-            "pt": "Devíamos falar sobre os nossos livros favoritos mais vezes."
+            "pt": "Devíamos falar sobre os nossos livros favoritos mais vezes.",
+            "nl": "We zouden vaker over onze favoriete boeken moeten praten."
         }
     ],
     "28": [
@@ -543,7 +595,8 @@
             "pl": "Anna i Tom kontynuują rozmowę i śmieją się przez chwilę.|Zapada noc i czas wracać do domu.|Anna żegna się z Tomem i wraca do domu.|To był dobry dzień.",
             "de": "Anna und Tom reden und lachen noch eine Weile weiter.|Die Nacht bricht an und es ist Zeit, nach Hause zu gehen.|Anna verabschiedet sich von Tom und geht nach Hause.|Es war ein guter Tag.",
             "sv": "Anna och Tom fortsätter att prata och skratta en stund.|Det börjar bli mörkt och det är dags att åka hem.|Anna säger hej då till Tom och åker hem.|Det var en bra dag.",
-            "pt": "A Anna e o Tom continuam a falar e a rir por um tempo.|Está a ficar escuro e é hora de ir para casa.|A Anna despede-se do Tom e vai para casa.|Foi um bom dia."
+            "pt": "A Anna e o Tom continuam a falar e a rir por um tempo.|Está a ficar escuro e é hora de ir para casa.|A Anna despede-se do Tom e vai para casa.|Foi um bom dia.",
+            "nl": "Anna en Tom blijven nog een tijdje praten en lachen.|Het wordt donker en het is tijd om naar huis te gaan.|Anna neemt afscheid van Tom en gaat naar huis.|Het was een goede dag."
         }
     ],
     "31": [
@@ -553,7 +606,8 @@
             "pl": "Tom uśmiechnął się.|\"Tak, czasami przychodzę tutaj, aby się zrelaksować\" - odpowiada Tom.|\"A co z tobą?\"",
             "de": "Tom lächelt.|\"Ja, ich komme manchmal hierher, um mich zu entspannen\", antwortet Tom.|\"Und du?\"",
             "sv": "Tom ler.|\"Ja, jag kommer hit ibland för att koppla av\", svarar Tom.|\"Och du då?\"",
-            "pt": "O Tom.|\"Sim, eu venho aqui para relaxar às vezes\", responde o Tom.|\"E tu?\""
+            "pt": "O Tom.|\"Sim, eu venho aqui para relaxar às vezes\", responde o Tom.|\"E tu?\"",
+            "nl": "Tom glimlacht.|“Ja, ik kom hier soms om me te ontspannen,” antwoordt Tom.|“En jij?”"
         },
         {
             "goto": "18",
@@ -562,7 +616,8 @@
             "pl": "Uwielbiam tu czytać.",
             "de": "Ich lese hier gerne.",
             "sv": "Jag gillar att läsa här.",
-            "pt": "Eu gosto de ler aqui."
+            "pt": "Eu gosto de ler aqui.",
+            "nl": "Ik lees hier graag."
         },
         {
             "goto": "19",
@@ -571,7 +626,8 @@
             "pl": "Uwielbiam obserwować ludzi tutaj.",
             "de": "Ich beobachte gerne die Menschen hier.",
             "sv": "Jag gillar att titta på människorna här.",
-            "pt": "Eu gosto de observar as pessoas aqui."
+            "pt": "Eu gosto de observar as pessoas aqui.",
+            "nl": "Ik kijk hier graag naar de mensen."
         }
     ]
 }
