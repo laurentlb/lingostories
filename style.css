@@ -93,7 +93,7 @@ h2 {
     color: var(--highlight-color);
 }
 
-.top-icon:hover, .player-icon:hover, .bubble-icon:hover, .audio-icon:hover, .choice-icon:hover {
+.top-icon:hover, .text-icon:hover, .player-icon:hover, .bubble-icon:hover, .audio-icon:hover, .choice-icon:hover {
     transform: translateY(-4px);
     rotate: -5deg;
 }
@@ -155,11 +155,10 @@ h2 {
 
 .story-image {
     width: 80%;
-    border-radius: 16px;
     display: block;
     margin: 1em auto;
     border-radius: 16px;
-    border: 1px solid #000;
+    box-shadow: 2px 4px 10px 0px #000;
 }
 
 .small-story-image {
@@ -247,6 +246,7 @@ summary {
     color: var(--highlight-color);
     text-align: center;
     width: fit-content;
+    transition: all .2s;
 }
 
 .top summary {
@@ -343,22 +343,36 @@ a {
     color: var(--highlight-color);
 }
 
-a:hover {
-    color: #ccf;
+a:hover, summary:hover > * {
+    color: var(--main-text-color);
 }
 
-#languageSelector a {
-    font-weight: bold;
-    text-decoration: none;
+#languageSelector {
+    a {
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    a:hover img {
+        border-color: var(--highlight-color);
+    }
+
+    ul {
+        list-style-type: none;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        padding: 0;
+        text-align: center;
+        grid-gap: 0.5em;
+    }
 }
 
-#languageSelector ul {
-    list-style-type: none;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-    padding: 0;
-    text-align: center;
-    grid-gap: 0.5em;
+.flag {
+    width: 92px;
+    vertical-align: middle;
+    border-radius: 8px;
+    margin: 8px;
+    border: 2px solid transparent;
 }
 
 p {
@@ -387,15 +401,14 @@ details h2 {
     display: inline-block;
 }
 
-.flag {
-    width: 92px;
-    vertical-align: middle;
-    border-radius: 4px;
-    margin: 8px;
-}
-
 .sentence-container {
     display: flex;
+    margin: 0.75em 0;
+
+    p {
+        margin-block-start: 0em;
+        margin-block-end: 0em;
+    }
 }
 
 .sentence-container > * {
