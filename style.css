@@ -159,6 +159,21 @@ h2 {
     margin: 1em auto;
     border-radius: 16px;
     box-shadow: 2px 4px 10px 0px #000;
+    transition: all .2s;
+    animation: image-pop .5s;
+    animation-iteration-count: 3;
+}
+
+@keyframes image-pop {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
 
 .small-story-image {
@@ -360,7 +375,7 @@ a:hover, summary:hover > * {
     ul {
         list-style-type: none;
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
         padding: 0;
         text-align: center;
         grid-gap: 0.5em;
@@ -397,8 +412,18 @@ p {
     }
 }
 
-details h2 {
-    display: inline-block;
+details {
+    h2 {
+        display: inline-block;
+    }
+
+    ul {
+        padding-left: 1em;
+    }
+
+    li {
+        list-style: circle;
+    }
 }
 
 .sentence-container {
@@ -460,4 +485,10 @@ details h2 {
 
 .home, .in-story {
     display: none;
+}
+
+.date {
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: var(--highlight-color);
 }
