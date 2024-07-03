@@ -15,7 +15,8 @@ export function listenMP3(state, pageIndex, sentenceIndex, autoPlayCallback) {
     }
 
     audio.play().catch((e) => {
-        listen(state.sentence(pageIndex, sentenceIndex, state.lang), state.lang);
+        console.log("Failed to play audio", e);
+        // listen(state.sentence(pageIndex, sentenceIndex, state.lang), state.lang);
     });
 }
 

@@ -1,6 +1,6 @@
 import { stories } from "./stories.js";
 import { Story } from "./story.js";
-import { initTTS, listenMP3, soundEffect, updateVoices } from "./audio.js";
+import { listenMP3, soundEffect } from "./audio.js";
 import { WordShuffleGame } from "./wordShuffleGame.js";
 import { UserData } from "./userdata.js";
 
@@ -31,7 +31,6 @@ function targetLang() {
 function setLanguage(l) {
     story.lang = l;
     document.querySelector('.top').style.display = "block";
-    updateVoices(story.lang);
     createStoryList();
 
     if (targetLang() === story.lang) {
@@ -393,8 +392,6 @@ function next() {
     story.nextLine();
     updateButtons();
 };
-
-initTTS(story);
 
 document.addEventListener("keydown", (event) => {
     if (event.key === " ") {
