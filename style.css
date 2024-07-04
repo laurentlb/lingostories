@@ -160,20 +160,12 @@ h2 {
     border-radius: 16px;
     box-shadow: 2px 4px 10px 0px #000;
     transition: all .2s;
-    animation: image-pop .5s;
-    animation-iteration-count: 3;
 }
 
-@keyframes image-pop {
-    0% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(1.1);
-    }
-    100% {
-        transform: scale(1);
-    }
+.info-box {
+    border: 2px solid var(--highlight-color);
+    border-radius: 16px;
+    padding: 16px 16px;
 }
 
 .small-story-image {
@@ -295,7 +287,7 @@ summary {
 }
 
 .story-end {
-    border: 1px solid #8f8;
+    border: 2px solid #8f8;
     border-radius: 16px;
     padding: 16px 16px;
     margin: 8px 0;

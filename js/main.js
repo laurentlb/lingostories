@@ -39,8 +39,8 @@ function setLanguage(l) {
     }
 }
 
-function updateCollectionCountLabel(label, storyName) {
-    const collected = userData.nbCollectedImages(storyName);
+function updateCollectionCountLabel(label, lang, storyName) {
+    const collected = userData.nbCollectedImages(lang, storyName);
     const storyData = stories.find(s => s.id == storyName);
     label.textContent = `${collected}/${storyData.imageCount}`;
     if (collected === storyData.imageCount) {
@@ -54,8 +54,8 @@ function updateCollectionCountLabel(label, storyName) {
 function updateCollectionTopStatus() {
     const label = document.querySelector("#collection-count");
     label.style.visibility = "visible";
-    updateCollectionCountLabel(label, story.storyName);
-    createImageCollection(".top-image-collection", story.storyName);
+    updateCollectionCountLabel(label, story.lang, story.storyName);
+    createImageCollection(".top-image-collection", story.lang, story.storyName);
 }
 
 async function chooseStory(name) {
@@ -116,9 +116,21 @@ function showTextOrImage(pageIndex, sentenceIndex, useSpoiler) {
     img.src = `img/stories/${image}`;
     img.classList.add("story-image");
     main.appendChild(img);
-    userData.collectImage(story.storyName, image);
+    userData.collectImage(story.lang, story.storyName, image);
     soundEffect('image-collected');
     updateCollectionTopStatus();
+
+    // Show explanation for the first image
+    if (story.storyName === "intro") {
+        const info = document.createElement("div");
+        info.classList.add("info-box");
+        info.textContent =
+                `You have collected an image! Each story has a set of images to
+                collect (see the number at the top). This encourages you to read
+                the stories multiple times and make different choices.`;
+        main.appendChild(info);
+    }
+
     nextAction = () => {
         showText(pageIndex, sentenceIndex, useSpoiler);
     };
@@ -265,7 +277,7 @@ function showChoices() {
         soundEffect('level-end');
         document.querySelector(".story-end").style.display = "block";
         const storyData = stories.find(s => s.id === story.storyName);
-        const collectedImages = userData.nbCollectedImages(story.storyName);
+        const collectedImages = userData.nbCollectedImages(story.lang, story.storyName);
         let text = "You have completed this story. "
         if (collectedImages === storyData.imageCount) {
             text += `You have collected all images in this story!`;
@@ -281,15 +293,19 @@ function showChoices() {
     }
 }
 
-function createImageCollection(classname, storyName) {
+function createImageCollection(classname, lang, storyName) {
     const container = document.querySelector(classname);
     container.innerHTML = "";
+
+    if (!userData.collectedImages[lang]) {
+        return;
+    }
 
     for (const sto of stories) {
         if (storyName && storyName !== sto.id) {
             continue;
         }
-        const images = userData.collectedImages[sto.id] || [];
+        const images = userData.collectedImages[lang][sto.id] || [];
         for (const img of images) {
             const elt = document.createElement("img");
             elt.src = `img/stories/${img}`;
@@ -322,7 +338,7 @@ function createStoryList() {
 
         const countLabel = document.createElement("span");
         countLabel.classList.add("story-count");
-        updateCollectionCountLabel(countLabel, sto.id);
+        updateCollectionCountLabel(countLabel, story.lang, sto.id);
         elt.appendChild(countLabel);
 
         container.appendChild(elt);
@@ -333,9 +349,9 @@ function showHome() {
     document.querySelectorAll('.home').forEach(e => {
         e.style.display = "block";
     });
-    createImageCollection(".image-collection", null);
 
     if (story.lang) {
+        createImageCollection(".image-collection", story.lang, null);
         document.querySelector("#languageSelector").style.display = "none";
     } else {
         document.querySelector("#storySelector").style.display = "none";

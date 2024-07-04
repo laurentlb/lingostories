@@ -13,23 +13,32 @@ export class UserData {
         return data ? JSON.parse(data) : defaultValue;
     }
 
-    collectImage(story, image) {
-        const images = this.collectedImages[story] || [];
-        if (!images.includes(image)) {
-            images.push(image);
+    collectImage(lang, story, image) {
+        if (!this.collectedImages[lang]) {
+            this.collectedImages[lang] = {};
         }
-        this.collectedImages[story] = images;
+
+        if (!this.collectedImages[lang][story]) {
+            this.collectedImages[lang][story] = [];
+        }
+
+        if (!this.collectedImages[lang][story].includes(image)) {
+            this.collectedImages[lang][story].push(image);
+        }
         this.saveData("collectedImages", this.collectedImages);
     }
 
-    nbCollectedImages(story) {
+    nbCollectedImages(lang, story) {
         if (story) {
-            return this.collectedImages[story]?.length || 0;
+            if (!this.collectedImages[lang] || !this.collectedImages[lang][story]) {
+                return 0;
+            }
+            return this.collectedImages[lang][story].length;
         }
 
         let count = 0;
-        for (const story in this.collectedImages) {
-            count += this.collectedImages[story].length;
+        for (const story of this.collectedImages[lang]) {
+            count += story.length;
         }
         return count;
     }
