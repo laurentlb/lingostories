@@ -179,7 +179,7 @@ h2 {
     font-size: 0.8rem;
     color: #999;
     font-style: italic;
-    margin-block-start: 0.2em;
+    margin-block: 0.2em;
 }
 
 .story-list {
@@ -316,13 +316,13 @@ summary {
 
 .choices {
     display: grid;
-    grid-template-columns: 3em auto;
+    grid-template-columns: 2em auto;
     row-gap: 4px;
     align-items: center;
     border: 1px solid var(--border-color);
     background-color: #000;
     border-radius: 16px;
-    padding: 8px 16px;
+    padding: 8px;
     cursor: help;
     margin: 1em 0em;
 }
