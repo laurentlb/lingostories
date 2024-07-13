@@ -185,11 +185,7 @@
             "nl": "Anna helpt het kleine meisje met haar schoen.|Het meisje glimlacht en bedankt Anna.|De ouders van het meisje komen eraan en bedanken Anna ook.|De ouders bieden Anna wat koekjes aan."
         },
         {
-            "goto": "10",
-            "en": "...",
-            "fr": "...",
-            "pl": "...",
-            "de": "..."
+            "goto": "10"
         }
     ],
     "6": [
@@ -265,11 +261,7 @@
             "nl": "Anna besluit om te gaan wandelen in het park.|Anna kijkt naar wat mooie bloemen.|Ze luistert naar de zingende vogels.|Ze voelt zich vrolijk.|Dan ziet ze haar vriend Tom.|Tom loopt ook in het park."
         },
         {
-            "goto": "15",
-            "en": "...",
-            "fr": "...",
-            "pl": "...",
-            "de": "..."
+            "goto": "15"
         }
     ],
     "9": [
@@ -417,11 +409,7 @@
             "nl": "“Hoi Tom, wat een fijne verrassing!” zegt Anna."
         },
         {
-            "goto": "31",
-            "en": "...",
-            "fr": "...",
-            "pl": "...",
-            "de": "..."
+            "goto": "31"
         }
     ],
     "17": [
@@ -435,11 +423,7 @@
             "nl": "“Hoi Tom, kom je hier vaak?” vraagt Anna."
         },
         {
-            "goto": "31",
-            "en": "...",
-            "fr": "...",
-            "pl": "...",
-            "de": "..."
+            "goto": "31"
         }
     ],
     "18": [
@@ -515,11 +499,7 @@
             "nl": "“Het is een detectiveverhaal,” zegt Anna.|“Detectiveverhalen zijn geweldig, ze zitten vol verrassingen,” antwoordt Tom."
         },
         {
-            "goto": "25",
-            "en": "...",
-            "fr": "...",
-            "pl": "...",
-            "de": "..."
+            "goto": "25"
         }
     ],
     "21": [
@@ -533,11 +513,7 @@
             "nl": "“Het is een avonturenroman,” zegt Anna.|“Avonturenromans zijn zo spannend!|Ze nemen je mee naar nieuwe plekken,” antwoordt Tom."
         },
         {
-            "goto": "25",
-            "en": "...",
-            "fr": "...",
-            "pl": "...",
-            "de": "..."
+            "goto": "25"
         }
     ],
     "22": [
