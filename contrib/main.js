@@ -8,24 +8,24 @@ const storyData = new Story();
 function createPage(container, page, srcLang, tgtLang) {
     const pageDiv = document.createElement('div');
 
-    for (let i = 0; i < page.text["en"].length; i++) {
+    for (let i = 0; i < page.paragraphs.length; i++) {
         const sentenceDiv = document.createElement('div');
         sentenceDiv.classList.add('sentence');
 
         const tgtInput = document.createElement('input');
         tgtInput.type = 'text';
-        tgtInput.value = page.text[tgtLang][i];
+        tgtInput.value = page.paragraphs[i][tgtLang];
         tgtInput.lang = tgtLang;
         tgtInput.spellcheck = true;
         tgtInput.inputMode = 'text';
         tgtInput.onchange = function() {
-            page.text[tgtLang][i] = tgtInput.value;
+            page.paragraphs[i][tgtLang] = tgtInput.value;
         };
         sentenceDiv.appendChild(tgtInput);
 
         const srcLabel = document.createElement('div');
         srcLabel.classList.add('reference');
-        srcLabel.textContent = page.text[srcLang][i];
+        srcLabel.textContent = page.paragraphs[i][srcLang];
         sentenceDiv.appendChild(srcLabel);
 
         pageDiv.appendChild(sentenceDiv);
@@ -65,7 +65,7 @@ function updateStoryText() {
     const srcLang = document.getElementById('sourceLang').value;
     container.innerHTML = '';
 
-    for (const [pageNumber, page] of Object.entries(storyData.sentences)) {
+    for (const [pageNumber, page] of Object.entries(storyData.pages)) {
         const hr = document.createElement('hr');
         container.appendChild(hr);
 

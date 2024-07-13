@@ -72,10 +72,10 @@ async function chooseStory(name) {
     next();
 }
 
-function createTranslation(parent, pageIndex, sentenceIndex) {
+function createTranslation(parent, page, sentenceIndex) {
     const transl = document.createElement("p");
     const transLang = targetLang();
-    transl.textContent = story.sentence(pageIndex, sentenceIndex, transLang);
+    transl.textContent = page.sentence(sentenceIndex, transLang);
     transl.classList.add("translation");
     if (openTransl) {
         openTransl.remove();
@@ -87,7 +87,7 @@ function createTranslation(parent, pageIndex, sentenceIndex) {
     parent.appendChild(transl);
 }
 
-function shouldShowMinigame(content, pageIndex, sentenceIndex) {
+function shouldShowMinigame(content, page, sentenceIndex) {
     const nbWords = content.split(" ").length;
     if (nbWords < 4 || nbWords > 10) {
         return false;
@@ -97,17 +97,17 @@ function shouldShowMinigame(content, pageIndex, sentenceIndex) {
         return false;
     }
 
-    if (pageIndex === 0 && sentenceIndex === 0) {
+    if (page.pageIndex === "0" && sentenceIndex === 0) {
         return false;
     }
 
     return Math.random() < 0.2;
 }
 
-function showTextOrImage(pageIndex, sentenceIndex, useSpoiler) {
+function showTextOrImage(page, sentenceIndex, useSpoiler) {
     const image = story.getImage();
     if (!image) {
-        showText(pageIndex, sentenceIndex, useSpoiler);
+        showText(page, sentenceIndex, useSpoiler);
         return;
     }
 
@@ -132,22 +132,22 @@ function showTextOrImage(pageIndex, sentenceIndex, useSpoiler) {
     }
 
     nextAction = () => {
-        showText(pageIndex, sentenceIndex, useSpoiler);
+        showText(page, sentenceIndex, useSpoiler);
     };
 }
 
-function showText(pageIndex, sentenceIndex, useSpoiler) {
+function showText(page, sentenceIndex, useSpoiler) {
     const main = document.querySelector('.story');
     const container = document.createElement("div");
     container.classList.add("sentence-container");
     main.appendChild(container);
 
-    const content = story.sentence(pageIndex, sentenceIndex, story.lang);
+    const content = page.sentence(sentenceIndex, story.lang);
     const icon = document.createElement("img");
     icon.src = "img/volume-up.svg"; 
     icon.classList.add("icon", "audio-icon");
     icon.onclick = () => {
-        listenMP3(story, pageIndex, sentenceIndex, null);
+        listenMP3(story, page, sentenceIndex, null);
     };
     lastAudioIcon = icon;
 
@@ -156,7 +156,7 @@ function showText(pageIndex, sentenceIndex, useSpoiler) {
     audio.appendChild(icon);
     container.appendChild(audio);
 
-    const showMinigame = shouldShowMinigame(content, pageIndex, sentenceIndex);
+    const showMinigame = shouldShowMinigame(content, page, sentenceIndex);
 
     if (showMinigame) {
         const minigame = document.createElement("div");
@@ -165,7 +165,7 @@ function showText(pageIndex, sentenceIndex, useSpoiler) {
             actionPending = false;
             nextAction = null;
             minigame.remove();
-            actuallyShowText(container, pageIndex, sentenceIndex, false);
+            actuallyShowText(container, page, sentenceIndex, false);
             updateButtons();
         };
 
@@ -173,11 +173,11 @@ function showText(pageIndex, sentenceIndex, useSpoiler) {
         const game = new WordShuffleGame(content, minigame, endGame);
         container.appendChild(minigame);
     } else {
-        actuallyShowText(container, pageIndex, sentenceIndex, useSpoiler);
+        actuallyShowText(container, page, sentenceIndex, useSpoiler);
     }
 
     if (document.querySelector("#mode").value !== "textOnly") {
-        listenMP3(story, pageIndex, sentenceIndex, () => {
+        listenMP3(story, page, sentenceIndex, () => {
             if (!actionPending) {
                 next();
             }
@@ -185,9 +185,9 @@ function showText(pageIndex, sentenceIndex, useSpoiler) {
     }
 }
 
-function actuallyShowText(container, pageIndex, sentenceIndex, useSpoiler) {
-    const content = story.sentence(pageIndex, sentenceIndex, story.lang);
-    const title = pageIndex === 0 && sentenceIndex === 0;
+function actuallyShowText(container, page, sentenceIndex, useSpoiler) {
+    const content = page.sentence(sentenceIndex, story.lang);
+    const title = page.pageIndex === "0" && sentenceIndex === 0;
     const elt = document.createElement(title ? "h2" : "p");
     if (useSpoiler) {
         elt.classList.add("spoiler");
@@ -201,7 +201,7 @@ function actuallyShowText(container, pageIndex, sentenceIndex, useSpoiler) {
 
     const showTranslation = document.querySelector("#showTranslations").checked || story.storyName === "intro";
     if (showTranslation) {
-        createTranslation(elt, pageIndex, sentenceIndex);
+        createTranslation(elt, page, sentenceIndex);
     }
 
     elt.onclick = () => {
@@ -215,7 +215,7 @@ function actuallyShowText(container, pageIndex, sentenceIndex, useSpoiler) {
             return;
         }
         else {
-            createTranslation(elt, pageIndex, sentenceIndex);
+            createTranslation(elt, page, sentenceIndex);
         }
     }
 
@@ -272,7 +272,7 @@ function showChoices() {
         container.appendChild(elt);
     }
 
-    story.sentenceIndex++;
+    story.nextLine();
     if (choices.length === 0) {
         soundEffect('level-end');
         document.querySelector(".story-end").style.display = "block";
@@ -377,8 +377,6 @@ function revealSpoiler(spoiler) {
 function updateButtons() {
     const storyContinues = story.hasNext();
     const hasNext = storyContinues;
-    const hasInlineNext = (hasNext || nextAction) && !actionPending;
-    // document.getElementById("inlineNext").style.display = hasInlineNext ? "block" : "none";
     document.getElementById("player-next").style.visibility = hasNext ? "visible" : "hidden";
 
     setTimeout(function () {
@@ -404,7 +402,7 @@ function next() {
     }
 
     const useSpoiler = document.querySelector("#mode").value === "audioFirst";
-    showTextOrImage(story.pageIndex, story.sentenceIndex, useSpoiler);
+    showTextOrImage(story.currentPage(), story.currentPage().paragraphIndex, useSpoiler);
     story.nextLine();
     updateButtons();
 };

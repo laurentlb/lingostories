@@ -1,14 +1,23 @@
 {
     "0": [
         {
-            "img": "6|park-1.jpg",
-            "en": "A day in the Park.|It is a sunny day.|Anna wants to go to the park.|The park is always quiet and beautiful.|Anna puts on her shoes.|She walks to the park.|When Anna arrives, there are many people.|Many people are also walking.|Some people are sitting on benches and talking.|Where does Anna go first?",
-            "fr": "Une journée au parc.|C'est une journée ensoleillée.|Anna veut aller au parc.|Le parc est toujours calme et magnifique.|Anna met ses chaussures.|Elle marche jusqu'au parc.|Quand Anna arrive, il y a beaucoup de monde.|De nombreuses personnes marchent également.|Certaines personnes sont assises sur des bancs et discutent.|Où Anna va-t-elle d'abord ?",
-            "pl": "Dzień w parku.|Jest słoneczny dzień.|Anna chce iść do parku.|Park jest zawsze spokojny i piękny.|Anna zakłada buty.|Idzie do parku.|Kiedy Anna przybywa na miejsce, wokół jest mnóstwo ludzi.|Wiele osób również spaceruje.|Niektórzy siedzą na ławkach i rozmawiają.|Gdzie Anna idzie najpierw?",
-            "de": "Ein Tag im Park.|Es ist ein sonniger Tag.|Anna möchte in den Park gehen.|Der Park ist immer ruhig und wunderschön.|Anna zieht ihre Schuhe an.|Sie läuft zum Park.|Als Anna ankommt, sind viele Menschen unterwegs.|Viele Menschen gehen auch zu Fuß.|Einige Leute sitzen auf Bänken und unterhalten sich.|Wohin geht Anna zuerst?",
-            "sv": "En dag i parken.|Det är en solig dag.|Anna vill gå till parken.|Parken är alltid rofylld och vacker.|Anna tar på sig skorna.|Hon går till parken.|När Anna kommer fram, är där fullt av folk.|Många personer är också ute och går.|Några personer sitter på bänkar och pratar.|Vart går Anna först?",
-            "pt": "Um dia no parque.|É um dia de sol.|A Anna quer ir ao parque.|O parque é sempre calmo e belo.|A Anna calça os sapatos.|Ela caminha até ao parque.|Quando a Anna chega, há muitas pessoas.|Muitas pessoas também passeiam.|Algumas pessoas sentam-se em bancos e conversam.|Para onde vai a Anna primeiro?",
-            "nl": "Een dag in het park.|Het is een zonnige dag.|Anna wil naar het park gaan.|Het park is altijd rustig en mooi.|Anna doet haar schoenen aan.|Ze loopt naar het park.|Wanneer Anna aankomt, zijn er veel mensen.|Veel mensen zijn ook aan het lopen.|Sommige mensen zitten op bankjes en praten.|Waar gaat Anna eerst naartoe?"
+            "en": "A day in the Park.|It is a sunny day.|Anna wants to go to the park.|The park is always quiet and beautiful.|Anna puts on her shoes.|She walks to the park.",
+            "fr": "Une journée au parc.|C'est une journée ensoleillée.|Anna veut aller au parc.|Le parc est toujours calme et magnifique.|Anna met ses chaussures.|Elle marche jusqu'au parc.",
+            "pl": "Dzień w parku.|Jest słoneczny dzień.|Anna chce iść do parku.|Park jest zawsze spokojny i piękny.|Anna zakłada buty.|Idzie do parku.",
+            "de": "Ein Tag im Park.|Es ist ein sonniger Tag.|Anna möchte in den Park gehen.|Der Park ist immer ruhig und wunderschön.|Anna zieht ihre Schuhe an.|Sie läuft zum Park.",
+            "sv": "En dag i parken.|Det är en solig dag.|Anna vill gå till parken.|Parken är alltid rofylld och vacker.|Anna tar på sig skorna.|Hon går till parken.",
+            "pt": "Um dia no parque.|É um dia de sol.|A Anna quer ir ao parque.|O parque é sempre calmo e belo.|A Anna calça os sapatos.|Ela caminha até ao parque.",
+            "nl": "Een dag in het park.|Het is een zonnige dag.|Anna wil naar het park gaan.|Het park is altijd rustig en mooi.|Anna doet haar schoenen aan.|Ze loopt naar het park."
+        },
+        {
+            "img": "park-1.jpg",
+            "en": "When Anna arrives, there are many people.|Many people are also walking.|Some people are sitting on benches and talking.|Where does Anna go first?",
+            "fr": "Quand Anna arrive, il y a beaucoup de monde.|De nombreuses personnes marchent également.|Certaines personnes sont assises sur des bancs et discutent.|Où Anna va-t-elle d'abord ?",
+            "pl": "Kiedy Anna przybywa na miejsce, wokół jest mnóstwo ludzi.|Wiele osób również spaceruje.|Niektórzy siedzą na ławkach i rozmawiają.|Gdzie Anna idzie najpierw?",
+            "de": "Als Anna ankommt, sind viele Menschen unterwegs.|Viele Menschen gehen auch zu Fuß.|Einige Leute sitzen auf Bänken und unterhalten sich.|Wohin geht Anna zuerst?",
+            "sv": "När Anna kommer fram, är där fullt av folk.|Många personer är också ute och går.|Några personer sitter på bänkar och pratar.|Vart går Anna först?",
+            "pt": "Quando a Anna chega, há muitas pessoas.|Muitas pessoas também passeiam.|Algumas pessoas sentam-se em bancos e conversam.|Para onde vai a Anna primeiro?",
+            "nl": "Wanneer Anna aankomt, zijn er veel mensen.|Veel mensen zijn ook aan het lopen.|Sommige mensen zitten op bankjes en praten.|Waar gaat Anna eerst naartoe?"
         },
         {
             "goto": "1",
@@ -95,14 +104,23 @@
     ],
     "3": [
         {
-            "img": "2|park-3.jpg",
-            "en": "Anna plays with the dog.|Anna throws a ball to the dog.|The dog is having fun.|Later, the dog's owner comes and thanks Anna.|What does Anna do next?",
-            "fr": "Anna joue avec le chien.|Anna lance une balle au chien.|Le chien s'amuse.| Plus tard, le propriétaire du chien vient remercier Anna.|Que fait Anna ensuite ?",
-            "pl": "Anna bawi się z psem.|Anna rzuca psu piłkę.|Pies dobrze się bawi.|Później właściciel psa przychodzi podziękować Annie.|Co dalej zrobi Anna?",
-            "de": "Anna spielt mit dem Hund.|Anna wirft dem Hund einen Ball zu.|Der Hund hat Spaß.|Später kommt der Besitzer des Hundes und bedankt sich bei Anna.|Was macht Anna als Nächstes?",
-            "sv": "Anna leker med hunden.|Anna kastar en boll till hunden.|Hunden har roligt.|Senare kommer hundens ägare och tackar Anna.|Vad gör Anna härnäst?",
-            "pt": "A Anna brinca com o cão.|A Anna atira uma bola ao cão.|O cão está a divertir-se.|Mais tarde, o dono do cão chega e agradece à Anna.|O que faz a Anna a seguir?",
-            "nl": "Anna speelt met de hond.|Anna gooit een bal naar de hond.|De hond heeft het naar zijn zin.|Later komt de eigenaar van de hond en bedankt Anna.|Wat doet Anna nu?"
+            "en": "Anna plays with the dog.|Anna throws a ball to the dog.",
+            "fr": "Anna joue avec le chien.|Anna lance une balle au chien.",
+            "pl": "Anna bawi się z psem.|Anna rzuca psu piłkę.",
+            "de": "Anna spielt mit dem Hund.|Anna wirft dem Hund einen Ball zu.",
+            "sv": "Anna leker med hunden.|Anna kastar en boll till hunden.",
+            "pt": "A Anna brinca com o cão.|A Anna atira uma bola ao cão.",
+            "nl": "Anna speelt met de hond.|Anna gooit een bal naar de hond."
+        },
+        {
+            "img": "park-3.jpg",
+            "en": "The dog is having fun.|Later, the dog's owner comes and thanks Anna.|What does Anna do next?",
+            "fr": "Le chien s'amuse.| Plus tard, le propriétaire du chien vient remercier Anna.|Que fait Anna ensuite ?",
+            "pl": "Pies dobrze się bawi.|Później właściciel psa przychodzi podziękować Annie.|Co dalej zrobi Anna?",
+            "de": "Der Hund hat Spaß.|Später kommt der Besitzer des Hundes und bedankt sich bei Anna.|Was macht Anna als Nächstes?",
+            "sv": "Hunden har roligt.|Senare kommer hundens ägare och tackar Anna.|Vad gör Anna härnäst?",
+            "pt": "O cão está a divertir-se.|Mais tarde, o dono do cão chega e agradece à Anna.|O que faz a Anna a seguir?",
+            "nl": "De hond heeft het naar zijn zin.|Later komt de eigenaar van de hond en bedankt Anna.|Wat doet Anna nu?"
         },
         {
             "goto": "7",
@@ -256,14 +274,23 @@
     ],
     "9": [
         {
-            "img": "2|park-5.jpg",
-            "en": "Anna takes a nap under the tree.|She dreams that she flies like a bird.|She wakes up feeling relaxed and happy.",
-            "fr": "Anna fait une sieste sous l'arbre.|Elle rêve qu'elle vole comme un oiseau.|Elle se réveille détendue et heureuse.",
-            "pl": "Anna ucina sobie drzemkę pod drzewem.|Marzy o lataniu jak ptak.|Budzi się zrelaksowana i szczęśliwa.",
-            "de": "Anna macht ein Nickerchen unter dem Baum.|Sie träumt, dass sie wie ein Vogel fliegt.|Sie wacht entspannt und glücklich auf.",
-            "sv": "Anna tar en tupplur under granen.|Hon drömmer om att hon flyger som en fågel.|Hon vaknar upp och känner sig avslappnad och glad.",
-            "pt": "A Anna faz uma sesta debaixo da árvore.|Ela sonha que voa como um pássaro.|Ela acorda a sentir-se relaxada e feliz.",
-            "nl": "Anna doet een dutje onder de boom.|Ze droomt dat ze vliegt als een vogel.|Ze wordt ontspannen en vrolijk wakker."
+            "en": "Anna takes a nap under the tree.|She dreams that she flies like a bird.",
+            "fr": "Anna fait une sieste sous l'arbre.|Elle rêve qu'elle vole comme un oiseau.",
+            "pl": "Anna ucina sobie drzemkę pod drzewem.|Marzy o lataniu jak ptak.",
+            "de": "Anna macht ein Nickerchen unter dem Baum.|Sie träumt, dass sie wie ein Vogel fliegt.",
+            "sv": "Anna tar en tupplur under granen.|Hon drömmer om att hon flyger som en fågel.",
+            "pt": "A Anna faz uma sesta debaixo da árvore.|Ela sonha que voa como um pássaro.",
+            "nl": "Anna doet een dutje onder de boom.|Ze droomt dat ze vliegt als een vogel."
+        },
+        {
+            "img": "park-5.jpg",
+            "en": "She wakes up feeling relaxed and happy.",
+            "fr": "Elle se réveille détendue et heureuse.",
+            "pl": "Budzi się zrelaksowana i szczęśliwa.",
+            "de": "Sie wacht entspannt und glücklich auf.",
+            "sv": "Hon vaknar upp och känner sig avslappnad och glad.",
+            "pt": "Ela acorda a sentir-se relaxada e feliz.",
+            "nl": "Ze wordt ontspannen en vrolijk wakker."
         },
         {
             "goto": "8",
@@ -309,14 +336,23 @@
     ],
     "14": [
         {
-            "img": "1|park-4.jpg",
-            "en": "Anna and the girl play a game.|They play tag and have a lot of fun.|After a while, the girl has to go.|Anna says goodbye.",
-            "fr": "Anna et la fille jouent à un jeu.|Ils jouent au chat et à la souris et s'amusent beaucoup.|Au bout d'un moment, la fille doit partir.|Anna dit au revoir.",
-            "pl": "Anna i dziewczynka grają w grę.|Grają w berka i świetnie się przy tym bawią.|Po chwili dziewczyna musi odejść.|Anna żegna się.",
-            "de": "Anna und das Mädchen spielen ein Spiel.|Sie spielen Katz und Maus und haben viel Spaß.|Nach einer Weile muss das Mädchen gehen.|Anna verabschiedet sich.",
-            "sv": "Anna och flickan leker en lek.|De leker kull och har mycket roligt.|Efter ett tag måste flickan gå.|Anna säger adjö.",
-            "pt": "A Anna e a menina brincam.|Elas jogam à apanhada e divertem-se muito.|Passado um bocado, a menina tem de ir embora.|A Anna despede-se.",
-            "nl": "Anna en het meisje spelen een spelletje.|Ze spelen tikkertje en hebben veel lol.|Na een tijdje moet het meisje gaan.|Anna neemt afscheid."
+            "en": "Anna and the girl play a game.",
+            "fr": "Anna et la fille jouent à un jeu.",
+            "pl": "Anna i dziewczynka grają w grę.",
+            "de": "Anna und das Mädchen spielen ein Spiel.",
+            "sv": "Anna och flickan leker en lek.",
+            "pt": "A Anna e a menina brincam.",
+            "nl": "Anna en het meisje spelen een spelletje."
+        },
+        {
+            "img": "park-4.jpg",
+            "en": "They play tag and have a lot of fun.|After a while, the girl has to go.|Anna says goodbye.",
+            "fr": "Ils jouent au chat et à la souris et s'amusent beaucoup.|Au bout d'un moment, la fille doit partir.|Anna dit au revoir.",
+            "pl": "Grają w berka i świetnie się przy tym bawią.|Po chwili dziewczyna musi odejść.|Anna żegna się.",
+            "de": "Sie spielen Katz und Maus und haben viel Spaß.|Nach einer Weile muss das Mädchen gehen.|Anna verabschiedet sich.",
+            "sv": "De leker kull och har mycket roligt.|Efter ett tag måste flickan gå.|Anna säger adjö.",
+            "pt": "Elas jogam à apanhada e divertem-se muito.|Passado um bocado, a menina tem de ir embora.|A Anna despede-se.",
+            "nl": "Ze spelen tikkertje en hebben veel lol.|Na een tijdje moet het meisje gaan.|Anna neemt afscheid."
         },
         {
             "goto": "8",
@@ -331,14 +367,23 @@
     ],
     "15": [
         {
-            "img": "1|park-2.jpg",
-            "en": "Anna smiles and waves to Tom.|Tom waves back and walks over to her.|\"Hi Anna, it's great to see you here,\" Tom says.",
-            "fr": "Anna sourit et fait signe à Tom.|Tom lui répond par un signe de la main et s'approche d'elle.|\"Salut Anna, c'est super de te voir ici\", dit Tom.",
-            "pl": "Anna uśmiecha się i macha do Toma.|Tom macha do niej i podchodzi.|\"Cześć Anna, miło cię tu widzieć\", mówi Tom.",
-            "de": "Anna lächelt und winkt Tom zu.|Tom antwortet ihr mit einem Handzeichen und geht auf sie zu.|\"Hallo Anna, toll, dass du hier bist\", sagt Tom.",
-            "sv": "Anna ler och vinkar till Tom.|Tom vinkar tillbaka och går fram till henne.|\"Hej Anna, vad kul att se dig här\", säger Tom.",
-            "pt": "A Anna sorri e acena para o Tom.|O Tom acena de volta e vai ter com ela.|\"Olá Anna, que bom ver-te aqui\", diz o Tom.",
-            "nl": "Anna glimlacht en zwaait naar Tom.|Tom zwaait terug en loopt naar haar toe.|“Hoi Anna, het is goed om je hier te zien,” zegt Tom."
+            "en": "Anna smiles and waves to Tom.",
+            "fr": "Anna sourit et fait signe à Tom.",
+            "pl": "Anna uśmiecha się i macha do Toma.",
+            "de": "Anna lächelt und winkt Tom zu.",
+            "sv": "Anna ler och vinkar till Tom.",
+            "pt": "A Anna sorri e acena para o Tom.",
+            "nl": "Anna glimlacht en zwaait naar Tom."
+        },
+        {
+            "img": "park-2.jpg",
+            "en": "Tom waves back and walks over to her.|\"Hi Anna, it's great to see you here,\" Tom says.",
+            "fr": "Tom lui répond par un signe de la main et s'approche d'elle.|\"Salut Anna, c'est super de te voir ici\", dit Tom.",
+            "pl": "Tom macha do niej i podchodzi.|\"Cześć Anna, miło cię tu widzieć\", mówi Tom.",
+            "de": "Tom antwortet ihr mit einem Handzeichen und geht auf sie zu.|\"Hallo Anna, toll, dass du hier bist\", sagt Tom.",
+            "sv": "Tom vinkar tillbaka och går fram till henne.|\"Hej Anna, vad kul att se dig här\", säger Tom.",
+            "pt": "O Tom acena de volta e vai ter com ela.|\"Olá Anna, que bom ver-te aqui\", diz o Tom.",
+            "nl": "Tom zwaait terug en loopt naar haar toe.|“Hoi Anna, het is goed om je hier te zien,” zegt Tom."
         },
         {
             "goto": "16",

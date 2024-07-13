@@ -2,8 +2,8 @@ const audio = new Audio();
 let synth = window.speechSynthesis;
 let voices = [];
 
-export function listenMP3(state, pageIndex, sentenceIndex, autoPlayCallback) {
-    const file = `audio/${state.storyName}/${state.storyName}-${state.lang}-${pageIndex}-${sentenceIndex}.mp3`;
+export function listenMP3(state, page, sentenceIndex, autoPlayCallback) {
+    const file = `audio/${state.storyName}/${state.storyName}-${state.lang}-${page.pageIndex}-${sentenceIndex}.mp3`;
     audio.src = file;
     audio.playbackRate = document.querySelector("#rate").value;
     audio.volume = document.querySelector("#volume").value;

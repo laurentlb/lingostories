@@ -1,44 +1,73 @@
 class Page {
-    constructor(text, choices, image) {
-        this.text = text;
+    constructor(pageIndex, paragraphs, choices, image) {
+        this.pageIndex = pageIndex;
+        this.paragraphIndex = 0;
+        this.paragraphs = paragraphs;
         this.choices = choices;
-        this.image = image;
+    }
+
+    nextParagraph() {
+        this.paragraphIndex++;
+    }
+
+    endOfPage() {
+        return this.paragraphIndex >= this.paragraphs.length;
+    }
+
+    hasNext() {
+        return this.paragraphIndex <= this.paragraphs.length;
+    }
+
+    reset() {
+        this.paragraphIndex = 0;
+    }
+
+    image() {
+        return this.paragraphs[this.paragraphIndex]["img"];
+    }
+
+    sentence(lineIndex, lang) {
+        console.log(this.paragraphs, lineIndex);
+        return this.paragraphs[lineIndex][lang];
     }
 }
 
 export class Story {
     constructor() {
-        this.sentences = {};
+        this.pages = {};
         this.lang = null;
-        this.sentenceIndex = 0;
         this.pageIndex = 0;
         this.storyName = null;
     }
 
     resetStory() {
-        this.sentenceIndex = 0;
         this.pageIndex = 0;
+        this.currentPage().reset();
     }
 
     openPage(index) {
         this.pageIndex = index;
-        this.sentenceIndex = 0;
+    }
+
+    currentPage() {
+        return this.pages[this.pageIndex];
     }
 
     endOfPage() {
-        return this.sentenceIndex >= this.sentences[this.pageIndex].text[this.lang].length;
+        console.log(this.pages[this.pageIndex]);
+        return this.currentPage().endOfPage();
     }
 
     hasNext() {
-        return this.sentenceIndex <= this.sentences[this.pageIndex].text[this.lang].length;
+        return this.currentPage().hasNext();
     }
 
     get choices() {
-        return this.sentences[this.pageIndex].choices;
+        return this.pages[this.pageIndex].choices;
     }
 
     nextLine() {
-        this.sentenceIndex++;
+        this.pages[this.pageIndex].nextParagraph();
         if (this.endOfPage()) {
             const choices = this.choices;
             if (choices.length === 1) { // skip superfluous choices
@@ -51,42 +80,47 @@ export class Story {
     }
 
     getImage() {
-        const img = this.sentences[this.pageIndex].image;
-        if (!img) {
-            return null;
-        }
-        if (parseInt(img[0]) === this.sentenceIndex) {
-            return img[1];
-        }
-    }
-
-    sentence(pageIndex, sentenceIndex, lang) {
-        return this.sentences[pageIndex].text[lang][sentenceIndex];
+        console.log(this.currentPage());
+        return this.currentPage().image();
     }
 
     async loadStory(storyName) {
-        this.sentences = {};
+        this.pages = {};
         this.storyName = storyName;
         const response = await fetch(`/stories/${storyName}.json`);
         const story = await response.json();
 
         for (let page in story) {
-            const text = story[page][0];
-            for (let lang in text) {
-                text[lang] = text[lang].split("|");
+            const text = [];
+            const choices = [];
+            for (const paragraph of story[page]) {
+                if (paragraph["goto"]) {
+                    choices.push(paragraph);
+                } else if (paragraph["en"]) {
+                    const parag = [];
+                    for (const lang of Object.keys(paragraph)) {
+                        const lines = paragraph[lang].split("|");
+                        for (let i = 0; i < lines.length; i++) {
+                            if (parag.length <= i) {
+                                parag.push({});
+                            }
+                            parag[i][lang] = lines[i];
+                        }
+                    }
+                    parag[0]["img"] = paragraph["img"];
+                    text.push(...parag);
+                }
             }
-            const choices = story[page].slice(1);
-            const image = story[page][0]["img"];
-            this.sentences[page] = new Page(text, choices, image);
+            this.pages[page] = new Page(page, text, choices, null);
         }
-        console.log(this.sentences);
+        console.log(this.pages);
     }
 
     exportTranslations(lang) {
         let lines = [];
-        for (const page of Object.values(this.sentences)) {
-            for (const text of page.text[lang]) {
-                lines.push(text);
+        for (const page of Object.values(this.pages)) {
+            for (const paragraph of page.paragraphs) {
+                lines.push(paragraph[lang]);
             }
             for (const choice of page.choices) {
                 if (!choice[lang] || choice[lang] === "...") {
@@ -101,9 +135,9 @@ export class Story {
     importTranslation(lang, text) {
         const lines = text.split("\n");
         let lineIndex = 0;
-        for (const page of Object.values(this.sentences)) {
-            for (let i = 0; i < page.text["en"].length; i++) {
-                page.text[lang][i] = lines[lineIndex];
+        for (const page of Object.values(this.pages)) {
+            for (let i = 0; i < page.paragraphs.length; i++) {
+                page.paragraphs[i][lang] = lines[lineIndex];
                 lineIndex++;
             }
             for (const choice of page.choices) {
@@ -117,11 +151,15 @@ export class Story {
     }
 
     addLanguage(lang) {
-       for (const page of Object.values(this.sentences)) {
-           page.text[lang] = page.text["en"].map(() => "");
-           for (const choice of page.choices) {
-               choice[lang] = "";
-           }
-       }
+       for (const page of Object.values(this.pages)) {
+            for (const line of page.paragraphs) {
+                if (line["en"]) {
+                    line[lang] = "";
+                }
+            }
+            for (const choice of page.choices) {
+                choice[lang] = "";
+            }
+        }
     }
 };
