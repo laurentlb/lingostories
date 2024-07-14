@@ -386,15 +386,24 @@ p {
     margin-block-start: 0em;
 }
 
-.options, .top-collection {
-    display: none;
-    max-width: 600px;
-    margin: 0 auto;
+.options {
+    ul {
+        padding-left: 0;
+        list-style-type: circle;
+    }
+}
 
+.top-collection {
     ul {
         padding-left: 0;
         list-style-type: none;
     }
+}
+
+.options, .top-collection {
+    display: none;
+    max-width: 600px;
+    margin: 0 auto;
 
     .small-story-image {
         width: 18%;

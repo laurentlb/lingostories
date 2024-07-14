@@ -23,6 +23,10 @@ export class Settings {
         return document.querySelector("#voice-speed").value;
     }
 
+    enableMinigames() {
+        return document.querySelector("#enable-minigames").checked;
+    }
+
     save() {
         this.userData.saveData("settings", {
             translationLang: this.translationLang(),
@@ -30,16 +34,25 @@ export class Settings {
             volume: this.volume(),
             showTranslations: this.showTranslations(),
             voiceSpeed: this.voiceSpeed(),
+            enableMinigames: this.enableMinigames()
         });
     }
 
     load() {
-        const settings = this.userData.loadData("settings", {});
-        document.querySelector("#translation-lang").value = settings.translationLang || "en";
-        document.querySelector("#reading-mode").value = settings.readingMode || "audioAndText";
-        document.querySelector("#audio-volume").value = settings.volume || 1;
-        document.querySelector("#show-translations").checked = settings.showTranslations || false;
-        document.querySelector("#voice-speed").value = settings.voiceSpeed || 1;
+        const settings = this.userData.loadData("settings", {
+            translationLang: "en",
+            readingMode: "audioAndText",
+            volume: 1,
+            showTranslations: false,
+            voiceSpeed: 1,
+            enableMinigames: true
+        });
+        document.querySelector("#translation-lang").value = settings.translationLang;
+        document.querySelector("#reading-mode").value = settings.readingMode;
+        document.querySelector("#audio-volume").value = settings.volume;
+        document.querySelector("#show-translations").checked = settings.showTranslations;
+        document.querySelector("#voice-speed").value = settings.voiceSpeed;
+        document.querySelector("#enable-minigames").checked = settings.enableMinigames;
     }
 
     init() {
@@ -47,6 +60,7 @@ export class Settings {
 
         showTranslationLegend();
         showReadingModeLegend();
+        showMinigamesLegend();
 
         document.querySelector("#show-translations").onchange = () => {
             showTranslationLegend();
@@ -67,6 +81,11 @@ export class Settings {
         };
 
         document.querySelector("#translation-lang").onchange = () => {
+            this.save();
+        };
+
+        document.querySelector("#enable-minigames").onchange = () => {
+            showMinigamesLegend();
             this.save();
         };
     }
@@ -92,4 +111,14 @@ function showTranslationLegend() {
         'false': 'See the translation when you need it, by clicking on the text.'
     };
     legend.textContent = text[showTranslations];
+}
+
+function showMinigamesLegend() {
+    const showMinigames = document.getElementById('enable-minigames').checked;
+    const legend = document.getElementById('enable-minigames-legend');
+    const text = {
+        'true': 'Minigames use the sentences in the story.',
+        'false': 'Minigames are disabled.'
+    };
+    legend.textContent = text[showMinigames];
 }

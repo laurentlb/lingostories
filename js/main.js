@@ -85,6 +85,10 @@ function createTranslation(parent, page, sentenceIndex) {
 }
 
 function shouldShowMinigame(content, page, sentenceIndex) {
+    if (!settings.enableMinigames()) {
+        return false;
+    }
+
     const nbWords = content.split(" ").length;
     if (nbWords < 4 || nbWords > 10) {
         return false;
