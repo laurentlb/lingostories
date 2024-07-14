@@ -3,7 +3,7 @@ import { Story } from "./story.js";
 import { listenMP3, soundEffect } from "./audio.js";
 import { WordShuffleGame } from "./wordShuffleGame.js";
 import { UserData } from "./userdata.js";
-import { Settings } from "./settings.js";
+import { Settings, initSettings } from "./settings.js";
 
 const story = new Story();
 const userData = new UserData();
@@ -439,6 +439,8 @@ document.addEventListener("keydown", (event) => {
 });
 
 window.onload = function(){
+    initSettings();
+
     const urlParams = new URLSearchParams(window.location.search);
     if (urlParams.has("lang")) {
         setLanguage(urlParams.get("lang"));

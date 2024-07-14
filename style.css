@@ -175,7 +175,7 @@ h2 {
     border: 1px solid #000;
 }
 
-.translation {
+.translation, .legend {
     font-size: 0.8rem;
     color: #999;
     font-style: italic;
