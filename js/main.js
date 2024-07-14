@@ -3,11 +3,11 @@ import { Story } from "./story.js";
 import { listenMP3, soundEffect } from "./audio.js";
 import { WordShuffleGame } from "./wordShuffleGame.js";
 import { UserData } from "./userdata.js";
-import { Settings, initSettings } from "./settings.js";
+import { Settings } from "./settings.js";
 
 const story = new Story();
 const userData = new UserData();
-const settings = new Settings();
+const settings = new Settings(userData);
 
 var nextAction = null;
 var actionPending = false;
@@ -439,7 +439,7 @@ document.addEventListener("keydown", (event) => {
 });
 
 window.onload = function(){
-    initSettings();
+    settings.init();
 
     const urlParams = new URLSearchParams(window.location.search);
     if (urlParams.has("lang")) {
