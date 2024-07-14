@@ -1,7 +1,8 @@
 import { soundEffect } from "./audio.js";
 
 export class WordShuffleGame {
-    constructor(sentence, minigameContainer, callback) {
+    constructor(settings, sentence, minigameContainer, callback) {
+        this.settings = settings;
         this.minigameContainer = minigameContainer;
         this.sentence = sentence;
         this.words = sentence.match(/[^-.,!;:()?" ]+/g);
@@ -83,7 +84,7 @@ export class WordShuffleGame {
             }, 10);
             
         } else {
-            soundEffect('game-success');
+            soundEffect(this.settings, 'game-success');
             setTimeout(() => {
                 this.callback();
             }, 100);

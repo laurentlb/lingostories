@@ -27,7 +27,6 @@ class Page {
     }
 
     sentence(lineIndex, lang) {
-        console.log(this.paragraphs, lineIndex);
         return this.paragraphs[lineIndex][lang];
     }
 }
@@ -54,7 +53,6 @@ export class Story {
     }
 
     endOfPage() {
-        console.log(this.pages[this.pageIndex]);
         return this.currentPage().endOfPage();
     }
 
@@ -80,7 +78,6 @@ export class Story {
     }
 
     getImage() {
-        console.log(this.currentPage());
         return this.currentPage().image();
     }
 

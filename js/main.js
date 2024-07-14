@@ -3,9 +3,11 @@ import { Story } from "./story.js";
 import { listenMP3, soundEffect } from "./audio.js";
 import { WordShuffleGame } from "./wordShuffleGame.js";
 import { UserData } from "./userdata.js";
+import { Settings } from "./settings.js";
 
 const story = new Story();
 const userData = new UserData();
+const settings = new Settings();
 
 var nextAction = null;
 var actionPending = false;
@@ -24,17 +26,13 @@ function resetStory() {
     actionPending = false;
 }
 
-function targetLang() {
-    return document.querySelector("#targetLang").value;
-}
-
 function setLanguage(l) {
     story.lang = l;
     document.querySelector('.top').style.display = "block";
     createStoryList();
 
-    if (targetLang() === story.lang) {
-        document.querySelector("#targetLang").value =
+    if (settings.translationLang() === story.lang) {
+        document.querySelector("#translation-lang").value =
             story.lang === "en" ? "fr" : "en";
     }
 }
@@ -61,9 +59,9 @@ function updateCollectionTopStatus() {
 async function chooseStory(name) {
     showStory();
     const backUrl = "/?lang=" + story.lang;
-    document.querySelector('#back-icon').setAttribute("href", backUrl);
-    document.querySelector('#back-to-menu').setAttribute("href", backUrl);
-    document.querySelector('#restart-icon').style.visibility = "visible";
+    document.querySelector("#back-icon").setAttribute("href", backUrl);
+    document.querySelector("#back-to-menu").setAttribute("href", backUrl);
+    document.querySelector("#restart-icon").style.visibility = "visible";
 
     await story.loadStory(name);
     updateCollectionTopStatus();
@@ -74,14 +72,13 @@ async function chooseStory(name) {
 
 function createTranslation(parent, page, sentenceIndex) {
     const transl = document.createElement("p");
-    const transLang = targetLang();
+    const transLang = settings.translationLang();
     transl.textContent = page.sentence(sentenceIndex, transLang);
     transl.classList.add("translation");
     if (openTransl) {
         openTransl.remove();
         openTransl = null;
     }
-    transl.style.display = showTranslations ? "block" : "none";
     openTransl = transl;
 
     parent.appendChild(transl);
@@ -113,11 +110,14 @@ function showTextOrImage(page, sentenceIndex, useSpoiler) {
 
     const main = document.querySelector('.story');
     const img = document.createElement("img");
+    img.onload = () => {
+        window.scrollTo({top: document.body.scrollHeight, behavior: "smooth"});
+    };
     img.src = `img/stories/${image}`;
     img.classList.add("story-image");
     main.appendChild(img);
     userData.collectImage(story.lang, story.storyName, image);
-    soundEffect('image-collected');
+    soundEffect(settings, 'image-collected');
     updateCollectionTopStatus();
 
     // Show explanation for the first image
@@ -147,7 +147,7 @@ function showText(page, sentenceIndex, useSpoiler) {
     icon.src = "img/volume-up.svg"; 
     icon.classList.add("icon", "audio-icon");
     icon.onclick = () => {
-        listenMP3(story, page, sentenceIndex, null);
+        listenMP3(story, page, sentenceIndex, settings, null);
     };
     lastAudioIcon = icon;
 
@@ -170,14 +170,14 @@ function showText(page, sentenceIndex, useSpoiler) {
         };
 
         nextAction = endGame;
-        const game = new WordShuffleGame(content, minigame, endGame);
+        const game = new WordShuffleGame(settings, content, minigame, endGame);
         container.appendChild(minigame);
     } else {
         actuallyShowText(container, page, sentenceIndex, useSpoiler);
     }
 
-    if (document.querySelector("#mode").value !== "textOnly") {
-        listenMP3(story, page, sentenceIndex, () => {
+    if (settings.readingMode() !== "textOnly") {
+        listenMP3(story, page, sentenceIndex, settings, () => {
             if (!actionPending) {
                 next();
             }
@@ -199,7 +199,7 @@ function actuallyShowText(container, page, sentenceIndex, useSpoiler) {
     elt.classList.add("text");
     elt.textContent = content;
 
-    const showTranslation = document.querySelector("#showTranslations").checked || story.storyName === "intro";
+    const showTranslation = settings.showTranslations() || story.storyName === "intro";
     if (showTranslation) {
         createTranslation(elt, page, sentenceIndex);
     }
@@ -229,7 +229,7 @@ function showChoices() {
     const container = document.createElement("div");
     container.classList.add("choices");
 
-    const transLang = targetLang();
+    const transLang = settings.translationLang();
     lastChoices.length = 0;
     for (let i = 0; i < choices.length; i++) {
         const text = choices[i][story.lang];
@@ -274,7 +274,7 @@ function showChoices() {
 
     story.nextLine();
     if (choices.length === 0) {
-        soundEffect('level-end');
+        soundEffect(settings, 'level-end');
         document.querySelector(".story-end").style.display = "block";
         const storyData = stories.find(s => s.id === story.storyName);
         const collectedImages = userData.nbCollectedImages(story.lang, story.storyName);
@@ -352,9 +352,9 @@ function showHome() {
 
     if (story.lang) {
         createImageCollection(".image-collection", story.lang, null);
-        document.querySelector("#languageSelector").style.display = "none";
+        document.querySelector("#language-selector").style.display = "none";
     } else {
-        document.querySelector("#storySelector").style.display = "none";
+        document.querySelector("#story-selector").style.display = "none";
     }
 }
 
@@ -401,22 +401,32 @@ function next() {
         return;
     }
 
-    const useSpoiler = document.querySelector("#mode").value === "audioFirst";
+    const useSpoiler = settings.readingMode() === "audioFirst";
     showTextOrImage(story.currentPage(), story.currentPage().paragraphIndex, useSpoiler);
     story.nextLine();
     updateButtons();
 };
 
 document.addEventListener("keydown", (event) => {
+    if (event.ctrlKey || event.metaKey || event.altKey) {
+        return;
+    }
+
     if (event.key === " ") {
         next();
     }
 
     if (event.key === "t") {
+        if (event.ctrlKey || event.metaKey || event.altKey) {
+            return;
+        }
         lastSentence.click();
     }
 
     if (event.key === "r") {
+        if (event.ctrlKey || event.metaKey || event.altKey) {
+            return;
+        }
         lastAudioIcon.click();
     }
 

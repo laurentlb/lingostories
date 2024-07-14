@@ -43,14 +43,14 @@
             <input type="range" min="0" max="1" step="0.01" value="1" class="slider" id="volume">
         <li title="How fast the voice speaks">
             <label>Voice speed</label>
-            <input type="range" min="0.4" max="1.2" step="0.2" value="1" class="slider" id="rate">
+            <input type="range" min="0.4" max="1.2" step="0.2" value="1" class="slider" id="voice-speed">
         <!-- <li title="Voice used for the local TTS, which is used only as a backup"> <label>Voice (unused)</label>
             <select id="voice"></select> -->
         <li title="Automatically show the translation below the transcript">
             <label>Show translations</label>
-            <input type="checkbox" id="showTranslations">
+            <input type="checkbox" id="show-translations">
         <li title="Language used for the translations"> <label>Translation</label>
-            <select id="targetLang">
+            <select id="translation-lang">
                 <option value="en">English</option>
                 <option value="fr">French</option>
                 <option value="de">German</option>
@@ -78,7 +78,7 @@
             </p>
         </div>
 
-        <div class="info home" id="languageSelector">
+        <div class="info home" id="language-selector">
             <p>Select a language to practice.</p>
             <ul>
                 <li><a href="?lang=nl"><img class="flag" src="img/flags/nl.svg"><div>Dutch</div></a>
@@ -91,7 +91,7 @@
             </ul>
         </div>
 
-        <div class="info home" id="storySelector">
+        <div class="info home" id="story-selector">
             <p>Select a story to read.</p>
             <div class="story-list"></div>
         </div>

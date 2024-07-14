@@ -354,7 +354,7 @@ a:hover, summary:hover > * {
     color: var(--main-text-color);
 }
 
-#languageSelector {
+#language-selector {
     a {
         font-weight: bold;
         text-decoration: none;
