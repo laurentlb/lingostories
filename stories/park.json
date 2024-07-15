@@ -1,4 +1,14 @@
 {
+    "metadata": {
+        "speakers": {
+            "tom": {
+                "img": "man.svg"
+            },
+            "anna": {
+                "img": "woman.svg"
+            }
+        }
+    },
     "0": [
         {
             "en": "A day in the Park.|It is a sunny day.|Anna wants to go to the park.|The park is always quiet and beautiful.|Anna puts on her shoes.|She walks to the park.",
@@ -369,6 +379,7 @@
         },
         {
             "img": "park-2.jpg",
+            "speaker": "|tom",
             "en": "Tom waves back and walks over to her.|\"Hi Anna, it's great to see you here,\" Tom says.",
             "fr": "Tom lui répond par un signe de la main et s'approche d'elle.|\"Salut Anna, c'est super de te voir ici\", dit Tom.",
             "pl": "Tom macha do niej i podchodzi.|\"Cześć Anna, miło cię tu widzieć\", mówi Tom.",
@@ -400,6 +411,7 @@
     ],
     "16": [
         {
+            "speaker": "anna",
             "en": "\"Hi Tom, what a nice surprise!\" Anna says.",
             "fr": "\"Bonjour Tom, quelle belle surprise !\" dit Anna.",
             "pl": "\"Witaj Tom, co za urocza niespodzianka!\" - powiedziała Anna.",
@@ -414,6 +426,7 @@
     ],
     "17": [
         {
+            "speaker": "anna",
             "en": "\"Hi Tom, do you come here often?\" Anna asks.",
             "fr": "\"Salut Tom, tu viens souvent ici ?\" demande Anna.",
             "pl": "\"Cześć Tom, często tu przychodzisz?\" - pyta Anna.",
@@ -428,6 +441,7 @@
     ],
     "18": [
         {
+            "speaker": "anna|tom|tom",
             "en": "\"I like to come here to read and enjoy the fresh air,\" Anna says.|\"That sounds nice,\" Tom replies.|\"What book are you reading?\"",
             "fr": "\"J'aime venir ici pour lire et profiter de l'air frais\", dit Anna.|\"Ça a l'air sympa\", répond Tom.|\"Quel livre lis-tu ?\"",
             "pl": "\"Lubię tu przychodzić, by czytać i cieszyć się świeżym powietrzem\" - mówi Anna.|\"Brzmi nieźle\", odpowiada Tom.|\"Jaką książkę czytasz?\"",
@@ -459,6 +473,7 @@
     ],
     "19": [
         {
+            "speaker": "anna|tom|tom|tom",
             "en": "\"I like to watch the people,\" Anna says.|\"Me too,\" Tom replies.|\"It's fun to see everyone having a good time.|I also like watching the animals.\"",
             "fr": "\"J'aime observer les gens\", dit Anna.|\"Moi aussi\", répond Tom.|\"C'est amusant de voir que tout le monde passe un bon moment.|J'aime aussi observer les animaux.\"",
             "pl": "\"Lubię obserwować ludzi\", mówi Anna.|\"Ja też\", odpowiada Tom.|\"Fajnie jest widzieć, że wszyscy dobrze się bawią.|Lubię też obserwować zwierzęta.",
@@ -490,6 +505,7 @@
     ],
     "20": [
         {
+            "speaker": "anna|tom",
             "en": "\"It's a detective story,\" Anna says.|\"Detective stories are great, they are full of surprises,\" Tom replies.",
             "fr": "\"C'est un roman policier\", dit Anna.|\"Les romans policiers sont super, ils sont pleins de surprises\", répond Tom.",
             "pl": "\"To powieść kryminalna\" - mówi Anna.|\"Powieści kryminalne są świetne, pełne niespodzianek\" - odpowiada Tom.",
@@ -504,6 +520,7 @@
     ],
     "21": [
         {
+            "speaker": "anna|tom",
             "en": "\"It's an adventure novel,\" Anna says.|\"Adventure novels are so exciting!|They take you to new places,\" Tom replies.",
             "fr": "\"C'est un roman d'aventures\", dit Anna.|\"Les romans d'aventure sont si passionnants !|Ils t'emmènent dans de nouveaux endroits\", répond Tom.",
             "pl": "\"To powieść przygodowa\" - mówi Anna.|\"Powieści przygodowe są takie ekscytujące!|Zabierają cię w nowe miejsca\" - odpowiada Tom.",
@@ -518,6 +535,7 @@
     ],
     "22": [
         {
+            "speaker": "anna|tom|tom",
             "en": "\"Do you have a favorite animal here?\" Anna asks.|\"I really like the squirrels,\" Tom replies.|\"They're so cute!\"",
             "fr": "\"As-tu un animal préféré ici ?\" demande Anna.|\"J'aime beaucoup les écureuils\", répond Tom.|\"Ils sont si mignons !\"",
             "pl": "\"Czy masz tu jakieś ulubione zwierzę?\" - pyta Anna.|\"Naprawdę lubię wiewiórki\" - odpowiada Tom.|\"Są takie urocze!\"",
@@ -549,6 +567,7 @@
     ],
     "23": [
         {
+            "speaker": "anna|tom|tom",
             "en": "\"Do you like playing with the dogs here?\" Anna asks.|\"Yes, I love dogs,\" Tom answers.|\"Dogs always look so happy.\"",
             "fr": "\"Tu aimes jouer avec les chiens ici ?\" demande Anna.|\"Oui, j'aime les chiens\", répond Tom.|\"Les chiens ont toujours l'air si heureux\".",
             "pl": "\"Lubisz bawić się z tutejszymi psami?\" - pyta Anna.|\"Tak, lubię psy\" - odpowiada Tom.|\"Psy zawsze wyglądają na szczęśliwe\".",
@@ -580,6 +599,7 @@
     ],
     "25": [
         {
+            "speaker": "anna|tom|tom",
             "en": "\"What other kinds of books do you like?\" Anna asks.|\"I also read science fiction books,\" Tom replies.|\"Science fiction books make you think about the future.\"",
             "fr": "\"Tu aimes quels autres types de livres ?\" demande Anna.|\"Je lis aussi des livres de science-fiction\", répond Tom.|\"Les livres de science-fiction te font réfléchir à l'avenir\".",
             "pl": "\"Jakie inne rodzaje książek lubisz?\" - pyta Anna.|\"Czytam też science fiction\" - odpowiada Tom.|\"Książki science fiction sprawiają, że myślisz o przyszłości.",
@@ -622,6 +642,7 @@
     ],
     "31": [
         {
+            "speaker": "|tom|tom",
             "en": "Tom smiles.|\"Yes, I come here sometimes to relax,\" Tom replies.|\"What about you?\"",
             "fr": "Tom sourit.|\"Oui, je viens parfois ici pour me détendre\", répond Tom.|\"Et toi ?\"",
             "pl": "Tom uśmiechnął się.|\"Tak, czasami przychodzę tutaj, aby się zrelaksować\" - odpowiada Tom.|\"A co z tobą?\"",

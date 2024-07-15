@@ -19,8 +19,7 @@ body, html {
     --main-text-color: #ddd;
     --secondary-text-color: #8a8;
     --highlight-color: #aaf;
-    --panel-bg-color: ##18181e;
-    --panel-hover-bg-color: #101010;
+    --dark-bg-color: #111;
     --main-bg-color: #303030;
 }
 
@@ -88,7 +87,7 @@ h1 {
 }
 
 h2 {
-    margin-block-start: 0;
+    margin-block: 0.5em;
     font-size: 1.2em;
     color: var(--highlight-color);
 }
@@ -98,7 +97,7 @@ h2 {
     rotate: -5deg;
 }
 
-.bubble-icon:hover, .audio-icon:hover {
+.bubble-icon:hover, .audio-icon:hover, .speaker:hover {
     transform: scale(1.5);
 }
 
@@ -118,6 +117,15 @@ h2 {
 
 .text {
     cursor: help;
+}
+
+.speaker {
+    background-color: #111;
+    border-radius: 50%;
+    border: 1px solid var(--border-color);
+    margin-right: 4px;
+    transition: 0.2s all;
+    height: 64px;
 }
 
 .audio-icon-container {
@@ -320,7 +328,7 @@ summary {
     row-gap: 4px;
     align-items: center;
     border: 1px solid var(--border-color);
-    background-color: #000;
+    background-color: var(--dark-bg-color);
     border-radius: 16px;
     padding: 8px;
     cursor: help;
@@ -416,10 +424,12 @@ p {
 details {
     h2 {
         display: inline-block;
+        font-size: 1em;
     }
 
     ul {
         padding-left: 1em;
+        margin-top: 0em;
     }
 
     li {
@@ -429,11 +439,11 @@ details {
 
 .sentence-container {
     display: flex;
+    align-items: center;
     margin: 0.75em 0;
 
     p {
-        margin-block-start: 0em;
-        margin-block-end: 0em;
+        margin-block: 0em;
     }
 }
 
@@ -448,7 +458,7 @@ details {
         margin: 4px;
         border: 1px solid var(--border-color);
         border-radius: 8px;
-        background-color: var(--panel-bg-color);
+        background-color: var(--dark-bg-color);
         cursor: pointer;
         transition: all .2s;
     }
@@ -463,6 +473,7 @@ details {
         min-height: 2em;
         background-color: #0004;
         border-radius: 8px;
+        cursor: pointer;
     }
 
     .correct-sentence {

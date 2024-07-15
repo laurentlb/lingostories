@@ -146,6 +146,15 @@ function showText(page, sentenceIndex, useSpoiler) {
     container.classList.add("sentence-container");
     main.appendChild(container);
 
+    const speakerId = page.speakerId(sentenceIndex);
+    if (speakerId) {
+        const file = story.speaker(speakerId).img;
+        const speakerElt = document.createElement("img");
+        speakerElt.classList.add("speaker");
+        speakerElt.src = `img/avatars/${file}`;
+        container.appendChild(speakerElt);
+    }
+
     const content = page.sentence(sentenceIndex, story.lang);
     const icon = document.createElement("img");
     icon.src = "img/volume-up.svg"; 
@@ -355,7 +364,6 @@ function showHome() {
     });
 
     if (story.lang) {
-        createImageCollection(".image-collection", story.lang, null);
         document.querySelector("#language-selector").style.display = "none";
     } else {
         document.querySelector("#story-selector").style.display = "none";

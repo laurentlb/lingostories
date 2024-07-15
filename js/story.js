@@ -29,6 +29,10 @@ class Page {
     sentence(lineIndex, lang) {
         return this.paragraphs[lineIndex][lang];
     }
+
+    speakerId(lineIndex) {
+        return this.paragraphs[lineIndex]["speaker"];
+    }
 }
 
 export class Story {
@@ -37,6 +41,11 @@ export class Story {
         this.lang = null;
         this.pageIndex = 0;
         this.storyName = null;
+        this.history = new Set();
+    }
+
+    speaker(speakerId) {
+        return this.speakers[speakerId];
     }
 
     resetStory() {
@@ -46,6 +55,7 @@ export class Story {
 
     openPage(index) {
         this.pageIndex = index;
+        this.currentPage().reset();
     }
 
     currentPage() {
@@ -87,7 +97,13 @@ export class Story {
         const response = await fetch(`/stories/${storyName}.json`);
         const story = await response.json();
 
+        this.speakers = story["metadata"]["speakers"];
+
         for (let page in story) {
+            if (page === "metadata") {
+                continue;
+            }
+
             const text = [];
             const choices = [];
             for (const paragraph of story[page]) {
