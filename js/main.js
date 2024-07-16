@@ -146,29 +146,24 @@ function showText(page, sentenceIndex, useSpoiler) {
     container.classList.add("sentence-container");
     main.appendChild(container);
 
+    const audioElt = document.createElement("img");
     const speakerId = page.speakerId(sentenceIndex);
     if (speakerId) {
         const file = story.speaker(speakerId).img;
-        const speakerElt = document.createElement("img");
-        speakerElt.classList.add("speaker");
-        speakerElt.src = `img/avatars/${file}`;
-        container.appendChild(speakerElt);
+        audioElt.classList.add("speaker");
+        audioElt.src = `img/avatars/${file}`;
+    } else {
+        audioElt.src = "img/volume-up.svg"; 
+        audioElt.classList.add("icon", "audio-icon");
     }
 
-    const content = page.sentence(sentenceIndex, story.lang);
-    const icon = document.createElement("img");
-    icon.src = "img/volume-up.svg"; 
-    icon.classList.add("icon", "audio-icon");
-    icon.onclick = () => {
+    audioElt.onclick = () => {
         listenMP3(story, page, sentenceIndex, settings, null);
     };
-    lastAudioIcon = icon;
+    lastAudioIcon = audioElt;
+    container.appendChild(audioElt);
 
-    const audio = document.createElement("span");
-    audio.classList.add("audio-icon-container");
-    audio.appendChild(icon);
-    container.appendChild(audio);
-
+    const content = page.sentence(sentenceIndex, story.lang);
     const showMinigame = shouldShowMinigame(content, page, sentenceIndex);
 
     if (showMinigame) {

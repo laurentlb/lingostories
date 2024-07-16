@@ -123,16 +123,10 @@ h2 {
     background-color: #111;
     border-radius: 50%;
     border: 1px solid var(--border-color);
-    margin-right: 4px;
+    margin-right: 8px;
     transition: 0.2s all;
     height: 64px;
-}
-
-.audio-icon-container {
-    display: inline-block;
-    margin-right: 8px;
-    height: 1rem;
-    vertical-align: top;
+    cursor: pointer;
 }
 
 .icon {
@@ -144,6 +138,7 @@ h2 {
 
 .audio-icon {
     height: 1.2rem;
+    margin-right: 8px;
 }
 
 .bubble-icon {
