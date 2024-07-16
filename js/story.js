@@ -94,7 +94,7 @@ export class Story {
     async loadStory(storyName) {
         this.pages = {};
         this.storyName = storyName;
-        const response = await fetch(`/stories/${storyName}.json`);
+        const response = await fetch(`/stories/${storyName}.json`, {cache: "no-cache"});
         const story = await response.json();
 
         this.speakers = story["metadata"]["speakers"];
