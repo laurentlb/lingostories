@@ -22,7 +22,7 @@
         {
             "img": "park-1.jpg",
             "en": "When Anna arrives, there are many people.|Many people are also walking.|Some people are sitting on benches and talking.|Where does Anna go first?",
-            "fr": "Quand Anna arrive, il y a beaucoup de monde.|De nombreuses personnes marchent également.|Certaines personnes sont assises sur des bancs et discutent.|Où Anna va-t-elle d'abord ?",
+            "fr": "Quand Anna arrive, il y a beaucoup de monde.|Beaucoup de personnes marchent aussi.|Des personnes sont assises sur des bancs et discutent.|Où Anna va-t-elle d'abord ?",
             "pl": "Kiedy Anna przybywa na miejsce, wokół jest mnóstwo ludzi.|Wiele osób również spaceruje.|Niektórzy siedzą na ławkach i rozmawiają.|Gdzie Anna idzie najpierw?",
             "de": "Als Anna ankommt, sind viele Menschen unterwegs.|Viele Menschen gehen auch zu Fuß.|Einige Leute sitzen auf Bänken und unterhalten sich.|Wohin geht Anna zuerst?",
             "sv": "När Anna kommer fram, är där fullt av folk.|Många personer är också ute och går.|Några personer sitter på bänkar och pratar.|Vart går Anna först?",
@@ -380,13 +380,13 @@
         {
             "img": "park-2.jpg",
             "speaker": "|tom",
-            "en": "Tom waves back and walks over to her.|\"Hi Anna, it's great to see you here,\" Tom says.",
-            "fr": "Tom lui répond par un signe de la main et s'approche d'elle.|\"Salut Anna, c'est super de te voir ici\", dit Tom.",
-            "pl": "Tom macha do niej i podchodzi.|\"Cześć Anna, miło cię tu widzieć\", mówi Tom.",
-            "de": "Tom antwortet ihr mit einem Handzeichen und geht auf sie zu.|\"Hallo Anna, toll, dass du hier bist\", sagt Tom.",
-            "sv": "Tom vinkar tillbaka och går fram till henne.|\"Hej Anna, vad kul att se dig här\", säger Tom.",
-            "pt": "O Tom acena de volta e vai ter com ela.|\"Olá Anna, que bom ver-te aqui\", diz o Tom.",
-            "nl": "Tom zwaait terug en loopt naar haar toe.|“Hoi Anna, het is goed om je hier te zien,” zegt Tom."
+            "en": "Tom waves back and walks over to her.|Hi Anna, it's great to see you here!",
+            "fr": "Tom lui répond par un signe de la main et s'approche d'elle.|Salut Anna, c'est super de te voir ici!",
+            "pl": "Tom macha do niej i podchodzi.|Cześć Anna, miło cię tu widzieć!",
+            "de": "Tom antwortet ihr mit einem Handzeichen und geht auf sie zu.|Hallo Anna, toll, dass du hier bist!",
+            "sv": "Tom vinkar tillbaka och går fram till henne.|Hej Anna, vad kul att se dig här!",
+            "pt": "O Tom acena de volta e vai ter com ela.|Olá Anna, que bom ver-te aqui!",
+            "nl": "Tom zwaait terug en loopt naar haar toe.|Hoi Anna, het is goed om je hier te zien!"
         },
         {
             "goto": "16",
@@ -412,13 +412,13 @@
     "16": [
         {
             "speaker": "anna",
-            "en": "\"Hi Tom, what a nice surprise!\" Anna says.",
-            "fr": "\"Bonjour Tom, quelle belle surprise !\" dit Anna.",
-            "pl": "\"Witaj Tom, co za urocza niespodzianka!\" - powiedziała Anna.",
-            "de": "\"Hallo Tom, was für eine schöne Überraschung!\", sagte Anna.",
-            "sv": "\"Hej Tom, vilken trevlig överraskning!\" säger Anna.",
-            "pt": "\"Olá Tom, mas que bela surpresa!\" diz a Anna.",
-            "nl": "“Hoi Tom, wat een fijne verrassing!” zegt Anna."
+            "en": "Hi Tom, what a nice surprise!",
+            "fr": "Salut Tom, quelle belle surprise !",
+            "pl": "Witaj Tom, co za urocza niespodzianka!",
+            "de": "Hallo Tom, was für eine schöne Überraschung!",
+            "sv": "Hej Tom, vilken trevlig överraskning!",
+            "pt": "Olá Tom, mas que bela surpresa!",
+            "nl": "Hoi Tom, wat een fijne verrassing!"
         },
         {
             "goto": "31"
@@ -427,13 +427,13 @@
     "17": [
         {
             "speaker": "anna",
-            "en": "\"Hi Tom, do you come here often?\" Anna asks.",
-            "fr": "\"Salut Tom, tu viens souvent ici ?\" demande Anna.",
-            "pl": "\"Cześć Tom, często tu przychodzisz?\" - pyta Anna.",
-            "de": "\"Hallo Tom, bist du oft hier?\", fragt Anna.",
-            "sv": "\"Hej Tom, kommer du hit ofta?\" frågar Anna.",
-            "pt": "\"Olá Tom, vens aqui regularmente?\" pergunta o Anna.",
-            "nl": "“Hoi Tom, kom je hier vaak?” vraagt Anna."
+            "en": "Hi Tom, do you come here often?",
+            "fr": "Salut Tom, tu viens souvent ici ?",
+            "pl": "Cześć Tom, często tu przychodzisz?",
+            "de": "Hallo Tom, bist du oft hier?",
+            "sv": "Hej Tom, kommer du hit ofta?",
+            "pt": "Olá Tom, vens aqui regularmente?",
+            "nl": "“Hoi Tom, kom je hier vaak?"
         },
         {
             "goto": "31"
@@ -441,14 +441,14 @@
     ],
     "18": [
         {
-            "speaker": "anna|tom|tom",
-            "en": "\"I like to come here to read and enjoy the fresh air,\" Anna says.|\"That sounds nice,\" Tom replies.|\"What book are you reading?\"",
-            "fr": "\"J'aime venir ici pour lire et profiter de l'air frais\", dit Anna.|\"Ça a l'air sympa\", répond Tom.|\"Quel livre lis-tu ?\"",
-            "pl": "\"Lubię tu przychodzić, by czytać i cieszyć się świeżym powietrzem\" - mówi Anna.|\"Brzmi nieźle\", odpowiada Tom.|\"Jaką książkę czytasz?\"",
-            "de": "\"Ich komme gerne hierher, um zu lesen und die frische Luft zu genießen\", sagt Anna.|\"Das klingt nach Spaß\", antwortet Tom.|\"Welches Buch liest du?\"",
-            "sv": "\"Jag tycker om att komma hit för att läsa och njuta av den friska luften\", säger Anna.|\"Det låter trevligt\", svarar Tom.|\"Vilken bok läser du?\"",
-            "pt": "\"Eu gosto de vir aqui ler e aproveitar o ar livre\", diz o Anna.|\"Isso soa bem\", diz o Tom.|\"Que livro lês?\"",
-            "nl": "“Ik kom hier graag om te lezen en van de frisse lucht te genieten,” zegt Anna.|“Dat klinkt leuk,” antwoordt Tom.|“Welk boek lees je?”"
+            "speaker": "anna|tom",
+            "en": "I like to come here to read and enjoy the fresh air.|That sounds nice. What book are you reading?",
+            "fr": "J'aime venir ici pour lire et profiter de l'air frais|Ça a l'air sympa. Quel livre lis-tu ?",
+            "pl": "Lubię tu przychodzić, by czytać i cieszyć się świeżym powietrzem|Brzmi nieźle. Jaką książkę czytasz?",
+            "de": "Ich komme gerne hierher, um zu lesen und die frische Luft zu genießen.|Das klingt nach Spaß. Welches Buch liest du?",
+            "sv": "Jag tycker om att komma hit för att läsa och njuta av den friska luften.|Det låter trevligt. Vilken bok läser du?",
+            "pt": "Eu gosto de vir aqui ler e aproveitar o ar livre.|Isso soa bem. Que livro lês?",
+            "nl": "Ik kom hier graag om te lezen en van de frisse lucht te genieten.|Dat klinkt leuk. Welk boek lees je?"
         },
         {
             "goto": "20",
@@ -473,14 +473,14 @@
     ],
     "19": [
         {
-            "speaker": "anna|tom|tom|tom",
-            "en": "\"I like to watch the people,\" Anna says.|\"Me too,\" Tom replies.|\"It's fun to see everyone having a good time.|I also like watching the animals.\"",
-            "fr": "\"J'aime observer les gens\", dit Anna.|\"Moi aussi\", répond Tom.|\"C'est amusant de voir que tout le monde passe un bon moment.|J'aime aussi observer les animaux.\"",
-            "pl": "\"Lubię obserwować ludzi\", mówi Anna.|\"Ja też\", odpowiada Tom.|\"Fajnie jest widzieć, że wszyscy dobrze się bawią.|Lubię też obserwować zwierzęta.",
-            "de": "\"Ich beobachte gerne Menschen\", sagt Anna.|\"Ich auch\", antwortet Tom.|\"Es macht Spaß zu sehen, dass alle eine gute Zeit haben.|Ich beobachte auch gerne Tiere\".",
-            "sv": "\"Jag tycker om att titta på folk\", säger Anna.|\"Jag också\", svarar Tom.|\"Det är kul att se alla som roar sig.|Jag tycker också om att titta på djuren.\"",
-            "pt": "\"Eu gosto de observar as pessoas\", diz a Anna.|\"Eu também\", responde o Tom.|\"É bom ver toda a gente a divertir-se.\"|\"Eu também gosto de observar os animais.\"",
-            "nl": "“Ik vind het leuk om naar de mensen te kijken,” zegt Anna.|“Ik ook,” antwoordt Tom.|“Het is leuk om iedereen een goede tijd te zien hebben.|Ik kijk ook graag naar de dieren.”"
+            "speaker": "anna|tom|tom",
+            "en": "I like to watch the people.|Me too! It's fun to see everyone having a good time.|I also like watching the animals.",
+            "fr": "J'aime observer les gens.|Moi aussi ! C'est amusant de voir que tout le monde passe un bon moment.|J'aime aussi observer les animaux.",
+            "pl": "Lubię obserwować ludzi.|Ja też! Fajnie jest widzieć, że wszyscy dobrze się bawią.|Lubię też obserwować zwierzęta.",
+            "de": "Ich beobachte gerne Menschen|Ich auch! Es macht Spaß zu sehen, dass alle eine gute Zeit haben.|Ich beobachte auch gerne Tiere.",
+            "sv": "Jag tycker om att titta på folk.|Jag också! Det är kul att se alla som roar sig.|Jag tycker också om att titta på djuren.",
+            "pt": "Eu gosto de observar as pessoas.|Eu também! É bom ver toda a gente a divertir-se.|Eu também gosto de observar os animais.",
+            "nl": "Ik vind het leuk om naar de mensen te kijken,” zegt Anna.|Ik ook! Het is leuk om iedereen een goede tijd te zien hebben.|Ik kijk ook graag naar de dieren."
         },
         {
             "goto": "22",
@@ -506,13 +506,13 @@
     "20": [
         {
             "speaker": "anna|tom",
-            "en": "\"It's a detective story,\" Anna says.|\"Detective stories are great, they are full of surprises,\" Tom replies.",
-            "fr": "\"C'est un roman policier\", dit Anna.|\"Les romans policiers sont super, ils sont pleins de surprises\", répond Tom.",
-            "pl": "\"To powieść kryminalna\" - mówi Anna.|\"Powieści kryminalne są świetne, pełne niespodzianek\" - odpowiada Tom.",
-            "de": "\"Das ist ein Krimi\", sagt Anna.|\"Kriminalromane sind toll, sie stecken voller Überraschungen\", antwortet Tom.",
-            "sv": "\"Det är en deckare\", säger Anna.|\"Deckare är toppen, de är fulla av överraskningar\", svarar Tom.",
-            "pt": "\"É uma história de detetives\", diz a Anna.|\"Histórias de detetives são fantásticas, estão cheias de surpresas\", responde o Tom.",
-            "nl": "“Het is een detectiveverhaal,” zegt Anna.|“Detectiveverhalen zijn geweldig, ze zitten vol verrassingen,” antwoordt Tom."
+            "en": "It's a detective story.|Detective stories are great, they are full of surprises.",
+            "fr": "C'est un roman policier.|Les romans policiers sont super, ils sont pleins de surprises.",
+            "pl": "To powieść kryminalna.|Powieści kryminalne są świetne, pełne niespodzianek.",
+            "de": "Das ist ein Krimi.|Kriminalromane sind toll, sie stecken voller Überraschungen.",
+            "sv": "Det är en deckare.|Deckare är toppen, de är fulla av överraskningar.",
+            "pt": "É uma história de detetives.|Histórias de detetives são fantásticas, estão cheias de surpresas.",
+            "nl": "Het is een detectiveverhaal.|Detectiveverhalen zijn geweldig, ze zitten vol verrassingen."
         },
         {
             "goto": "25"
@@ -521,13 +521,13 @@
     "21": [
         {
             "speaker": "anna|tom",
-            "en": "\"It's an adventure novel,\" Anna says.|\"Adventure novels are so exciting!|They take you to new places,\" Tom replies.",
-            "fr": "\"C'est un roman d'aventures\", dit Anna.|\"Les romans d'aventure sont si passionnants !|Ils t'emmènent dans de nouveaux endroits\", répond Tom.",
-            "pl": "\"To powieść przygodowa\" - mówi Anna.|\"Powieści przygodowe są takie ekscytujące!|Zabierają cię w nowe miejsca\" - odpowiada Tom.",
-            "de": "\"Das ist ein Abenteuerroman\", sagt Anna.|\"Abenteuerromane sind so spannend!|Sie bringen dich an neue Orte\", antwortet Tom.",
-            "sv": "\"Det är en äventyrsroman\", säger Anna.|\"Äventyrsromaner är så spännande!|De tar dig till nya platser\", svarar Tom.",
-            "pt": "\"É uma aventura\", diz a Anna.|\"Aventuras são tão entusiasmantes!|Elas levam-te a novos lugares\", diz o Tom.",
-            "nl": "“Het is een avonturenroman,” zegt Anna.|“Avonturenromans zijn zo spannend!|Ze nemen je mee naar nieuwe plekken,” antwoordt Tom."
+            "en": "It's an adventure novel.|Adventure novels are so exciting! They take you to new places.",
+            "fr": "C'est un roman d'aventures.|Les romans d'aventure sont si passionnants ! Ils t'emmènent dans de nouveaux endroits.",
+            "pl": "To powieść przygodowa.|Powieści przygodowe są takie ekscytujące!|Zabierają cię w nowe miejsca.",
+            "de": "Das ist ein Abenteuerroman.|Abenteuerromane sind so spannend!|Sie bringen dich an neue Orte.",
+            "sv": "Det är en äventyrsroman.|Äventyrsromaner är så spännande!|De tar dig till nya platser.",
+            "pt": "É uma aventura.|Aventuras são tão entusiasmantes!|Elas levam-te a novos lugares.",
+            "nl": "Het is een avonturenroman.|Avonturenromans zijn zo spannend!|Ze nemen je mee naar nieuwe plekken."
         },
         {
             "goto": "25"
@@ -535,14 +535,14 @@
     ],
     "22": [
         {
-            "speaker": "anna|tom|tom",
-            "en": "\"Do you have a favorite animal here?\" Anna asks.|\"I really like the squirrels,\" Tom replies.|\"They're so cute!\"",
-            "fr": "\"As-tu un animal préféré ici ?\" demande Anna.|\"J'aime beaucoup les écureuils\", répond Tom.|\"Ils sont si mignons !\"",
-            "pl": "\"Czy masz tu jakieś ulubione zwierzę?\" - pyta Anna.|\"Naprawdę lubię wiewiórki\" - odpowiada Tom.|\"Są takie urocze!\"",
-            "de": "\"Hast du hier ein Lieblingstier?\", fragt Anna.|\"Ich mag Eichhörnchen sehr\", antwortet Tom.|\"Sie sind so süß!\"",
-            "sv": "\"Har du något favoritdjur här?\" frågar Anna.|\"Jag gillar verkligen ekorrarna\", svarar Tom.|\"De är så söta!\"",
-            "pt": "\"Tens algum animal preferido aqui?\", pergunta a Anna.|\"Eu adoro os esquilos\", diz o Tom.|\"Eles são tão fofos!\"",
-            "nl": "“Heb je een favoriete dier hier?” vraagt Anna.|“Ik vind de eekhoorns erg leuk,” antwoordt Tom.|“Ze zijn zo schattig!”"
+            "speaker": "anna|tom",
+            "en": "Do you have a favorite animal here?|I really like the squirrels. They're so cute!",
+            "fr": "As-tu un animal préféré ici ?|J'aime beaucoup les écureuils. Ils sont si mignons !",
+            "pl": "Czy masz tu jakieś ulubione zwierzę?|Naprawdę lubię wiewiórki. Są takie urocze!",
+            "de": "Hast du hier ein Lieblingstier?|Ich mag Eichhörnchen sehr. Sie sind so süß!",
+            "sv": "Har du något favoritdjur här?|Jag gillar verkligen ekorrarna. De är så söta!",
+            "pt": "Tens algum animal preferido aqui?|Eu adoro os esquilos. Eles são tão fofos!",
+            "nl": "Heb je een favoriete dier hier?|Ik vind de eekhoorns erg leuk. Ze zijn zo schattig!"
         },
         {
             "goto": "28",
@@ -567,14 +567,14 @@
     ],
     "23": [
         {
-            "speaker": "anna|tom|tom",
-            "en": "\"Do you like playing with the dogs here?\" Anna asks.|\"Yes, I love dogs,\" Tom answers.|\"Dogs always look so happy.\"",
-            "fr": "\"Tu aimes jouer avec les chiens ici ?\" demande Anna.|\"Oui, j'aime les chiens\", répond Tom.|\"Les chiens ont toujours l'air si heureux\".",
-            "pl": "\"Lubisz bawić się z tutejszymi psami?\" - pyta Anna.|\"Tak, lubię psy\" - odpowiada Tom.|\"Psy zawsze wyglądają na szczęśliwe\".",
-            "de": "\"Spielst du hier gerne mit den Hunden?\", fragt Anna.|\"Ja, ich mag Hunde\", antwortet Tom.|\"Hunde sehen immer so glücklich aus\".",
-            "sv": "\"Tycker du om att leka med hundarna här?\" frågar Anna.|\"Ja, jag älskar hundar\", svarar Tom.|\"Hundar ser alltid så glada ut.\"",
-            "pt": "\"Gostas de brincar com os cães aqui?\" pergunta a Anna.|\"Sim, eu amo cães\", responde o Tom.|\"Os cães parecem sempre tão felizes.\"",
-            "nl": "“Speel je graag met de honden hier?” vraagt Anna.|“Ja, ik houd van honden,” antwoordt Tom.|“Honden zien er altijd zo blij uit.”"
+            "speaker": "anna|tom",
+            "en": "Do you like playing with the dogs here?|Yes, I love dogs. Dogs always look so happy.",
+            "fr": "Tu aimes jouer avec les chiens ici ?|Oui, j'aime les chiens. Les chiens ont toujours l'air si heureux.",
+            "pl": "Lubisz bawić się z tutejszymi psami?|Tak, lubię psy. Psy zawsze wyglądają na szczęśliwe.",
+            "de": "Spielst du hier gerne mit den Hunden?|Ja, ich mag Hunde. Hunde sehen immer so glücklich aus.",
+            "sv": "Tycker du om att leka med hundarna här?|Ja, jag älskar hundar. Hundar ser alltid så glada ut.",
+            "pt": "Gostas de brincar com os cães aqui?|Sim, eu amo cães. Os cães parecem sempre tão felizes.",
+            "nl": "Speel je graag met de honden hier?|Ja, ik houd van honden. Honden zien er altijd zo blij uit."
         },
         {
             "goto": "28",
@@ -600,13 +600,13 @@
     "25": [
         {
             "speaker": "anna|tom|tom",
-            "en": "\"What other kinds of books do you like?\" Anna asks.|\"I also read science fiction books,\" Tom replies.|\"Science fiction books make you think about the future.\"",
-            "fr": "\"Tu aimes quels autres types de livres ?\" demande Anna.|\"Je lis aussi des livres de science-fiction\", répond Tom.|\"Les livres de science-fiction te font réfléchir à l'avenir\".",
-            "pl": "\"Jakie inne rodzaje książek lubisz?\" - pyta Anna.|\"Czytam też science fiction\" - odpowiada Tom.|\"Książki science fiction sprawiają, że myślisz o przyszłości.",
-            "de": "\"Welche anderen Arten von Büchern magst du?\", fragt Anna.|\"Ich lese auch Science-Fiction-Bücher\", antwortet Tom.|\"Science-Fiction-Bücher lassen dich über die Zukunft nachdenken\".",
-            "sv": "\"Vilka andra typer av böcker tycker du om?\" frågar Anna.|\"Jag läser också science-fiction böcker\", svarar Tom.|\"Science-fiction böcker får dig att tänka på framtiden.\"",
-            "pt": "\"De que outro tipo de livros também gostas?\" pergunta a Ana.|\"Eu também leio livros de ficção-científica\", responde o Tom.|\"Livros de ficção-científica fazem-te pensar sobre o futuro.\"",
-            "nl": "“Van wat voor andere soorten boeken houd je?” vraagt Anna.|“Ik lees ook sciencefictionboeken,” antwoordt Tom.|“Sciencefictionboeken laten je aan de toekomst denken.”"
+            "en": "What other kinds of books do you like?|I also read science fiction books.|Science fiction books make you think about the future.",
+            "fr": "Tu aimes quels autres types de livres ?|Je lis aussi des livres de science-fiction.|Les livres de science-fiction te font réfléchir à l'avenir.",
+            "pl": "Jakie inne rodzaje książek lubisz?|Czytam też science fiction.|Książki science fiction sprawiają, że myślisz o przyszłości.",
+            "de": "Welche anderen Arten von Büchern magst du?|Ich lese auch Science-Fiction-Bücher.|Science-Fiction-Bücher lassen dich über die Zukunft nachdenken.",
+            "sv": "Vilka andra typer av böcker tycker du om?|Jag läser också science-fiction böcker.|Science-fiction böcker får dig att tänka på framtiden.",
+            "pt": "De que outro tipo de livros também gostas?|Eu também leio livros de ficção-científica.|Livros de ficção-científica fazem-te pensar sobre o futuro.",
+            "nl": "Van wat voor andere soorten boeken houd je?|Ik lees ook sciencefictionboeken.|Sciencefictionboeken laten je aan de toekomst denken."
         },
         {
             "goto": "28",
@@ -642,14 +642,14 @@
     ],
     "31": [
         {
-            "speaker": "|tom|tom",
-            "en": "Tom smiles.|\"Yes, I come here sometimes to relax,\" Tom replies.|\"What about you?\"",
-            "fr": "Tom sourit.|\"Oui, je viens parfois ici pour me détendre\", répond Tom.|\"Et toi ?\"",
-            "pl": "Tom uśmiechnął się.|\"Tak, czasami przychodzę tutaj, aby się zrelaksować\" - odpowiada Tom.|\"A co z tobą?\"",
-            "de": "Tom lächelt.|\"Ja, ich komme manchmal hierher, um mich zu entspannen\", antwortet Tom.|\"Und du?\"",
-            "sv": "Tom ler.|\"Ja, jag kommer hit ibland för att koppla av\", svarar Tom.|\"Och du då?\"",
-            "pt": "O Tom.|\"Sim, eu venho aqui para relaxar às vezes\", responde o Tom.|\"E tu?\"",
-            "nl": "Tom glimlacht.|“Ja, ik kom hier soms om me te ontspannen,” antwoordt Tom.|“En jij?”"
+            "speaker": "|tom",
+            "en": "Tom smiles.|Yes, I come here sometimes to relax. What about you?",
+            "fr": "Tom sourit.|Oui, je viens parfois ici pour me reposer. Et toi ?",
+            "pl": "Tom się uśmiecha.|Tak, czasami tu przychodzę, aby się zrelaksować. A ty?",
+            "de": "Tom lächelt.|Ja, ich komme manchmal hierher, um mich zu entspannen. Und du?",
+            "sv": "Tom ler.|Ja, jag kommer hit ibland för att koppla av. Och du då?",
+            "pt": "O Tom.|Sim, eu venho aqui para relaxar às vezes. E tu?",
+            "nl": "Tom glimlacht.|Ja, ik kom hier soms om me te ontspannen. En jij?"
         },
         {
             "goto": "18",
