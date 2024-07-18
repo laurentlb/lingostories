@@ -1,37 +1,27 @@
 class Page {
-    constructor(pageIndex, paragraphs, choices, image) {
-        this.pageIndex = pageIndex;
+    constructor(paragraphs, choices) {
         this.paragraphIndex = 0;
         this.paragraphs = paragraphs;
         this.choices = choices;
+    }
+
+    currentLine() {
+        const p = this.paragraphs[this.paragraphIndex];
+        const clone = Object.assign({}, p);
+        clone.sentenceIndex = this.paragraphIndex;
+        return clone;
     }
 
     nextParagraph() {
         this.paragraphIndex++;
     }
 
-    endOfPage() {
-        return this.paragraphIndex >= this.paragraphs.length;
-    }
-
     hasNext() {
-        return this.paragraphIndex <= this.paragraphs.length;
+        return this.paragraphIndex < this.paragraphs.length;
     }
 
     reset() {
         this.paragraphIndex = 0;
-    }
-
-    image() {
-        return this.paragraphs[this.paragraphIndex]["img"];
-    }
-
-    sentence(lineIndex, lang) {
-        return this.paragraphs[lineIndex][lang];
-    }
-
-    speakerId(lineIndex) {
-        return this.paragraphs[lineIndex]["speaker"];
     }
 }
 
@@ -48,7 +38,7 @@ export class Story {
         return this.speakers[speakerId];
     }
 
-    resetStory() {
+    ResetState() {
         this.pageIndex = 0;
         this.currentPage().reset();
     }
@@ -62,11 +52,7 @@ export class Story {
         return this.pages[this.pageIndex];
     }
 
-    endOfPage() {
-        return this.currentPage().endOfPage();
-    }
-
-    hasNext() {
+    get canContinue() {
         return this.currentPage().hasNext();
     }
 
@@ -74,23 +60,23 @@ export class Story {
         return this.pages[this.pageIndex].choices;
     }
 
-    nextLine() {
+    Continue() {
+        const res = this.pages[this.pageIndex].currentLine();
+        res.pageIndex = this.pageIndex;
+        res.isTitle = res.pageIndex === 0 && res.sentenceIndex === 0;
+
         this.pages[this.pageIndex].nextParagraph();
-        if (this.endOfPage()) {
+        if (!this.canContinue) {
             const choices = this.choices;
             if (choices.length === 1) { // skip superfluous choices
                 if (!choices[0]["en"] || choices[0]["en"] === "...") {
                     this.openPage(choices[0]["goto"]);
                 }
             }
-            return;
         }
+        return res;
     }
-
-    getImage() {
-        return this.currentPage().image();
-    }
-
+    
     async loadStory(storyName) {
         this.pages = {};
         this.storyName = storyName;
@@ -124,7 +110,7 @@ export class Story {
                     text.push(...parag);
                 }
             }
-            this.pages[page] = new Page(page, text, choices, null);
+            this.pages[page] = new Page(text, choices, null);
         }
         console.log(this.pages);
     }

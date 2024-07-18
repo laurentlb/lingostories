@@ -9,15 +9,18 @@ const story = new Story();
 const userData = new UserData();
 const settings = new Settings(userData);
 
-var nextAction = null;
-var actionPending = false;
-var openTransl = null;
-var lastSentence = null;
-var lastAudioIcon = null;
-var lastChoices = [];
+let nextAction = null;
+let actionPending = false;
+let openTransl = null;
+let lastSentence = null;
+let lastAudioIcon = null;
+let lastChoices = [];
+
+var inkStory = null;
 
 function resetStory() {
     story.resetStory();
+    story.ResetState();
     document.querySelector('.story').innerHTML = "";
     document.querySelector('.story').style.display = "block";
     document.querySelector('.story-end').style.display = "none";
@@ -70,10 +73,10 @@ async function chooseStory(name) {
     next();
 }
 
-function createTranslation(parent, page, sentenceIndex) {
+function createTranslation(parent, line) {
     const transl = document.createElement("p");
     const transLang = settings.translationLang();
-    transl.textContent = page.sentence(sentenceIndex, transLang);
+    transl.textContent = line[transLang];
     transl.classList.add("translation");
     if (openTransl) {
         openTransl.remove();
@@ -84,7 +87,7 @@ function createTranslation(parent, page, sentenceIndex) {
     parent.appendChild(transl);
 }
 
-function shouldShowMinigame(content, page, sentenceIndex) {
+function shouldShowMinigame(content, line) {
     if (!settings.enableMinigames()) {
         return false;
     }
@@ -98,17 +101,17 @@ function shouldShowMinigame(content, page, sentenceIndex) {
         return false;
     }
 
-    if (page.pageIndex === "0" && sentenceIndex === 0) {
+    if (line.isTitle) {
         return false;
     }
 
     return Math.random() < 0.2;
 }
 
-function showTextOrImage(page, sentenceIndex, useSpoiler) {
-    const image = story.getImage();
+function showTextOrImage(line, useSpoiler) {
+    const image = line["img"];
     if (!image) {
-        showText(page, sentenceIndex, useSpoiler);
+        showText(line, useSpoiler);
         return;
     }
 
@@ -136,18 +139,18 @@ function showTextOrImage(page, sentenceIndex, useSpoiler) {
     }
 
     nextAction = () => {
-        showText(page, sentenceIndex, useSpoiler);
+        showText(line, useSpoiler);
     };
 }
 
-function showText(page, sentenceIndex, useSpoiler) {
+function showText(line, useSpoiler) {
     const main = document.querySelector('.story');
     const container = document.createElement("div");
     container.classList.add("sentence-container");
     main.appendChild(container);
 
     const audioElt = document.createElement("img");
-    const speakerId = page.speakerId(sentenceIndex);
+    const speakerId = line["speaker"];
     if (speakerId) {
         const file = story.speaker(speakerId).img;
         audioElt.classList.add("speaker");
@@ -158,13 +161,13 @@ function showText(page, sentenceIndex, useSpoiler) {
     }
 
     audioElt.onclick = () => {
-        listenMP3(story, page, sentenceIndex, settings, null);
+        listenMP3(story, line, settings, null);
     };
     lastAudioIcon = audioElt;
     container.appendChild(audioElt);
 
-    const content = page.sentence(sentenceIndex, story.lang);
-    const showMinigame = shouldShowMinigame(content, page, sentenceIndex);
+    const content = line[story.lang];
+    const showMinigame = shouldShowMinigame(content, line);
 
     if (showMinigame) {
         const minigame = document.createElement("div");
@@ -173,7 +176,7 @@ function showText(page, sentenceIndex, useSpoiler) {
             actionPending = false;
             nextAction = null;
             minigame.remove();
-            actuallyShowText(container, page, sentenceIndex, false);
+            actuallyShowText(container, line, false);
             updateButtons();
         };
 
@@ -181,11 +184,11 @@ function showText(page, sentenceIndex, useSpoiler) {
         const game = new WordShuffleGame(settings, content, minigame, endGame);
         container.appendChild(minigame);
     } else {
-        actuallyShowText(container, page, sentenceIndex, useSpoiler);
+        actuallyShowText(container, line, useSpoiler);
     }
 
     if (settings.readingMode() !== "textOnly") {
-        listenMP3(story, page, sentenceIndex, settings, () => {
+        listenMP3(story, line, settings, () => {
             if (!actionPending) {
                 next();
             }
@@ -193,9 +196,9 @@ function showText(page, sentenceIndex, useSpoiler) {
     }
 }
 
-function actuallyShowText(container, page, sentenceIndex, useSpoiler) {
-    const content = page.sentence(sentenceIndex, story.lang);
-    const title = page.pageIndex === "0" && sentenceIndex === 0;
+function actuallyShowText(container, line, useSpoiler) {
+    const content = line[story.lang];
+    const title = line.isTitle;
     const elt = document.createElement(title ? "h2" : "p");
     if (useSpoiler) {
         elt.classList.add("spoiler");
@@ -209,7 +212,7 @@ function actuallyShowText(container, page, sentenceIndex, useSpoiler) {
 
     const showTranslation = settings.showTranslations() || story.storyName === "intro";
     if (showTranslation) {
-        createTranslation(elt, page, sentenceIndex);
+        createTranslation(elt, line);
     }
 
     elt.onclick = () => {
@@ -223,13 +226,15 @@ function actuallyShowText(container, page, sentenceIndex, useSpoiler) {
             return;
         }
         else {
-            createTranslation(elt, page, sentenceIndex);
+            createTranslation(elt, line);
         }
     }
 
     lastSentence = elt;
     container.appendChild(elt);
 }
+
+let didShowChoices = false;
 
 function showChoices() {
     const choices = story.choices;
@@ -272,6 +277,7 @@ function showChoices() {
             container.appendChild(elt);
 
             story.openPage(story.choices[i]["goto"]);
+            didShowChoices = false;
             next();
         };
         lastChoices.push(textIcon);
@@ -280,7 +286,7 @@ function showChoices() {
         container.appendChild(elt);
     }
 
-    story.nextLine();
+    didShowChoices = true;
     if (choices.length === 0) {
         soundEffect(settings, 'level-end');
         document.querySelector(".story-end").style.display = "block";
@@ -382,9 +388,8 @@ function revealSpoiler(spoiler) {
 }
 
 function updateButtons() {
-    const storyContinues = story.hasNext();
-    const hasNext = storyContinues;
-    document.getElementById("player-next").style.visibility = hasNext ? "visible" : "hidden";
+    const storyContinues = !didShowChoices;
+    document.getElementById("player-next").style.visibility = storyContinues ? "visible" : "hidden";
 
     setTimeout(function () {
         window.scrollTo({top: document.body.scrollHeight, behavior: "smooth"});
@@ -400,8 +405,8 @@ function next() {
         return;
     }
 
-    if (story.endOfPage()) {
-        if (story.hasNext()) {
+    if (!story.canContinue) {
+        if (!didShowChoices) {
             showChoices();
         }
         updateButtons();
@@ -409,8 +414,8 @@ function next() {
     }
 
     const useSpoiler = settings.readingMode() === "audioFirst";
-    showTextOrImage(story.currentPage(), story.currentPage().paragraphIndex, useSpoiler);
-    story.nextLine();
+    const line = story.Continue();
+    showTextOrImage(line, useSpoiler);
     updateButtons();
 };
 
