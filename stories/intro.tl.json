@@ -1,0 +1,192 @@
+{
+    "sentences": {
+        "Introduction": {
+            "key": "0-0",
+            "en": "Introduction",
+            "fr": "Introduction",
+            "de": "Einführung",
+            "pl": "Wprowadzenie",
+            "sv": "Inledning",
+            "pt": "Introdução.",
+            "nl": "Introductie"
+        },
+        "Hello!": {
+            "key": "0-1",
+            "en": "Hello!",
+            "fr": "Bonjour !",
+            "de": "Hallo!",
+            "pl": "Cześć!",
+            "sv": "Hej!",
+            "pt": "Olá!",
+            "nl": "Hallo!"
+        },
+        "Welcome to LingoStories.": {
+            "key": "0-2",
+            "en": "Welcome to LingoStories.",
+            "fr": "Bienvenue dans LingoStories.",
+            "de": "Willkommen bei LingoStories.",
+            "pl": "Witaj w LingoStories.",
+            "sv": "Välkommen till LingoStories.",
+            "pt": "Bem-vindo(a) ao LingoStories.",
+            "nl": "Welkom bij LingoStories."
+        },
+        "How are you?": {
+            "key": "0-3",
+            "en": "How are you?",
+            "fr": "Comment ça va ?",
+            "de": "Wie geht es dir?",
+            "pl": "Jak się masz?",
+            "sv": "Hur är det med dig?",
+            "pt": "Como estás?",
+            "nl": "Hoe gaat het?"
+        },
+        "Good, thank you.": {
+            "en": "Good, thank you.",
+            "fr": "Bien, merci.",
+            "de": "Gut, danke.",
+            "pl": "Dobrze, dziękuję.",
+            "sv": "Det är bara bra, tack.",
+            "pt": "Bem, obrigado.",
+            "nl": "Goed, dank je."
+        },
+        "Not bad.": {
+            "en": "Not bad.",
+            "fr": "Pas mal.",
+            "de": "Nicht schlecht.",
+            "pl": "Nieźle.",
+            "sv": "Inte illa.",
+            "pt": "Mais ou menos.",
+            "nl": "Niet slecht."
+        },
+        "On this website, there are interactive stories.": {
+            "key": "1-0",
+            "en": "On this website, there are interactive stories.",
+            "fr": "Sur ce site, il y a des histoires interactives.",
+            "de": "Auf dieser Website gibt es interaktive Geschichten.",
+            "pl": "Na tej stronie znajdziesz interaktywne historie.",
+            "sv": "På den här webbplatsen finns det interaktiva berättelser.",
+            "pt": "Neste site, há histórias interativas.",
+            "nl": "Op deze website staan interactieve verhalen."
+        },
+        "Choose a story that is easy for you.": {
+            "key": "1-1",
+            "en": "Choose a story that is easy for you.",
+            "fr": "Choisis une histoire qui est facile pour toi.",
+            "de": "Wähle eine Geschichte aus, die für dich einfach ist.",
+            "pl": "Wybierz historię, która jest dla ciebie łatwa.",
+            "sv": "Välj en berättelse som är på en lagom lätt nivå för dig.",
+            "pt": "Escolhe uma história que é fácil para ti.",
+            "nl": "Kies een verhaal dat voor jou makkelijk is."
+        },
+        "You may not understand all the words.": {
+            "key": "1-2",
+            "en": "You may not understand all the words.",
+            "fr": "Tu ne comprendras peut-être pas tous les mots.",
+            "de": "Es kann sein, dass du nicht jedes Wort verstehst.",
+            "pl": "Możesz nie rozumieć wszystkich słów.",
+            "sv": "Du kanske inte förstår precis alla ord.",
+            "pt": "Podes não entender todas as palavras.",
+            "nl": "Je begrijpt misschien niet alle woorden."
+        },
+        "That's okay.": {
+            "key": "1-3",
+            "en": "That's okay.",
+            "fr": "Ce n'est pas grave.",
+            "de": "Das ist in Ordnung.",
+            "pl": "To nie ma znaczenia.",
+            "sv": "Det är helt okej.",
+            "pt": "Não há problema.",
+            "nl": "Dat geeft niks."
+        },
+        "Continue anyway.": {
+            "key": "1-4",
+            "en": "Continue anyway.",
+            "fr": "Continue quand même.",
+            "de": "Mach trotzdem weiter.",
+            "pl": "I tak kontynuuj.",
+            "sv": "Fortsätt i alla fall.",
+            "pt": "Continua, mesmo assim.",
+            "nl": "Ga gewoon door."
+        },
+        "Listen to each sentence.": {
+            "key": "1-5",
+            "en": "Listen to each sentence.",
+            "fr": "Écoute chaque phrase.",
+            "de": "Höre dir jeden Satz an.",
+            "pl": "Posłuchaj każdego zdania.",
+            "sv": "Lyssna på varje mening.",
+            "pt": "Ouve cada frase.",
+            "nl": "Luister naar elke zin."
+        },
+        "Read each sentence.": {
+            "key": "1-6",
+            "en": "Read each sentence.",
+            "fr": "Lis chaque phrase.",
+            "de": "Lies jeden Satz.",
+            "pl": "Przeczytaj każde zdanie.",
+            "sv": "Läs varje mening.",
+            "pt": "Lê cada frase.",
+            "nl": "Lees elke zin."
+        },
+        "Listen to each sentence several times if you want.": {
+            "key": "1-7",
+            "en": "Listen to each sentence several times if you want.",
+            "fr": "Écoute chaque phrase plusieurs fois si tu veux.",
+            "de": "Hör dir jeden Satz mehrmals an, wenn du willst.",
+            "pl": "Jeśli chcesz, wysłuchaj każdego zdania kilka razy.",
+            "sv": "Lyssna på varje mening flera gånger, om du vill.",
+            "pt": "Ouve cada frase várias vezes se quiseres",
+            "nl": "Luister meerdere keren naar elke zin als je wil."
+        },
+        "You may recognize some words.": {
+            "key": "1-8",
+            "en": "You may recognize some words.",
+            "fr": "Tu reconnaîtras peut-être quelques mots.",
+            "de": "Vielleicht erkennst du einige Wörter.",
+            "pl": "Możesz rozpoznać niektóre słowa.",
+            "sv": "Du kanske känner igen några av orden.",
+            "pt": "Podes reconhecer algumas palavras.",
+            "nl": "Misschien herken je sommige woorden."
+        },
+        "Click on a sentence to see its translation.": {
+            "key": "1-9",
+            "en": "Click on a sentence to see its translation.",
+            "fr": "Clique sur une phrase pour voir sa traduction.",
+            "de": "Klicke auf einen Satz, um seine Übersetzung zu sehen.",
+            "pl": "Kliknij na zdanie, aby zobaczyć jego tłumaczenie.",
+            "sv": "Klicka på en mening för att se dess översättning.",
+            "pt": "Clica numa frase para ver a sua tradução.",
+            "nl": "Klik op een zin om de vertaling te zien."
+        },
+        "It will help you follow the story.": {
+            "key": "1-10",
+            "en": "It will help you follow the story.",
+            "fr": "Ça t'aidera à suivre l'histoire.",
+            "de": "Das hilft dir, der Geschichte zu folgen.",
+            "pl": "Pomoże ci to śledzić historię.",
+            "sv": "Det hjälper dig att följa berättelsen.",
+            "pt": "Isso vai ajudar-te a acompanhar a história.",
+            "nl": "Dit zal je helpen om het verhaal te volgen."
+        },
+        "It will help you understand.": {
+            "key": "1-11",
+            "en": "It will help you understand.",
+            "fr": "Ça t'aidera à comprendre.",
+            "de": "Das hilft dir zu verstehen.",
+            "pl": "Pomoże ci to zrozumieć.",
+            "sv": "Det kommer att hjälpa dig att förstå.",
+            "pt": "Isso vai ajudar-te a entender.",
+            "nl": "Dit zal je helpen om het verhaal te begrijpen."
+        },
+        "You can now choose a story.": {
+            "key": "1-12",
+            "en": "You can now choose a story.",
+            "fr": "Tu peux maintenant choisir une histoire.",
+            "de": "Du kannst jetzt eine Geschichte auswählen.",
+            "pl": "Możesz teraz wybrać historię.",
+            "sv": "Du kan nu välja en berättelse.",
+            "pt": "Podes escolher uma história.",
+            "nl": "Je kan nu een verhaal kiezen."
+        },
+    }
+}
