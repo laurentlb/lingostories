@@ -3,7 +3,7 @@ let synth = window.speechSynthesis;
 let voices = [];
 
 export function listenMP3(state, line, settings, autoPlayCallback) {
-    const file = `audio/${state.storyName}/${state.storyName}-${state.lang}-${line.pageIndex}-${line.sentenceIndex}.mp3`;
+    const file = `audio/${state.storyName}/${state.storyName}-${state.lang}-${line.key}.mp3`;
     audio.src = file;
     audio.playbackRate = settings.voiceSpeed();
     audio.volume = settings.volume();
