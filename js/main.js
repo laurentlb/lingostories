@@ -100,7 +100,7 @@ function shouldShowMinigame(content, line) {
     }
 
     const nbWords = content.split(" ").length;
-    if (nbWords < 4 || nbWords > 10) {
+    if (nbWords < 4 || nbWords > 8) {
         return false;
     }
 
@@ -133,7 +133,11 @@ function showTextOrImage(line, useSpoiler) {
     userData.collectImage(story.lang, story.storyName, image);
     const textOnly = settings.readingMode() === "textOnly";
     if (!textOnly) {
-        soundEffect(settings, 'image-collected');
+        soundEffect(settings, 'image-collected', () => {
+            if (settings.readingMode() === "autoAdvance") {
+                next();
+            }
+        });
     }
     updateCollectionTopStatus();
 
@@ -187,6 +191,9 @@ function showText(line, useSpoiler) {
             minigame.remove();
             actuallyShowText(container, line, false);
             updateButtons();
+            if (settings.readingMode() === "autoAdvance") {
+                next();
+            }
         };
 
         nextAction = endGame;
