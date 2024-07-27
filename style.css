@@ -119,6 +119,66 @@ h2 {
     cursor: help;
 }
 
+.bubble {
+    position: relative;
+    border: 1px solid;
+    border-radius: 16px;
+    padding: 8px;
+    --bubble-color: #225;
+    background-color: var(--dark-bg-color);
+    border: 2px solid var(--bubble-color);
+}
+
+.bubble::after {
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 6px solid;
+}
+
+.bubble::before {
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 6px solid;
+}
+
+.bubble-right::after {
+    left: auto;
+    right: -7px;
+    top: 14px;
+    bottom: auto;
+    --color: var(--dark-bg-color);
+    border-color: var(--color) transparent transparent var(--color);
+}
+
+.bubble-right::before {
+    left: auto;
+    right: -12px;
+    top: 12px;
+    bottom: auto;
+    border-color: var(--bubble-color) transparent transparent var(--bubble-color);
+}
+
+.bubble-left::after {
+    left: -7px;
+    right: auto;
+    top: 14px;
+    bottom: auto;
+    --color: var(--dark-bg-color);
+    border-color: var(--color) var(--color) transparent transparent;
+}
+
+.bubble-left::before {
+    left: -12px;
+    right: auto;
+    top: 12px;
+    bottom: auto;
+    border-color: var(--bubble-color) var(--bubble-color) transparent transparent;
+}
+
 .speaker {
     background-color: #111;
     border-radius: 50%;

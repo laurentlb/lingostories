@@ -219,6 +219,11 @@ function actuallyShowText(container, line, useSpoiler) {
 
     elt.classList.add("text");
     elt.textContent = content;
+    const speaker = line["speaker"];
+    if (speaker) {
+        elt.classList.add("bubble", "bubble-left");
+        elt.style.setProperty('--bubble-color', '#444');
+    }
 
     const showTranslation = settings.showTranslations() || story.storyName === "intro";
     if (showTranslation) {
