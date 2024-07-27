@@ -507,14 +507,17 @@ details {
 .inventory {
     display: none;
     position: fixed;
-    bottom: 110px;
+    bottom: 106px;
     z-index: 50;
     border: 1px solid var(--border-color);
-    background: #222;
-    width: 600px;
+    background: var(--dark-bg-color);
+    max-width: 600px;
+    width: 100%;
+    margin: 6px; /* like the padding in .middle */
     justify-content: space-around;
     padding: 4px;
     align-items: center;
+    border-radius: 16px;
 
     .item {
         width: 48px;
