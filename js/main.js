@@ -162,6 +162,9 @@ function showText(line, useSpoiler) {
     if (speaker) {
         audioElt.classList.add("speaker");
         audioElt.src = `img/avatars/${speaker.avatar}`;
+        if (speaker.color) {
+            container.style.setProperty('--character-color', speaker.color);
+        }
     } else {
         audioElt.src = "img/volume-up.svg"; 
         audioElt.classList.add("icon", "audio-icon");
