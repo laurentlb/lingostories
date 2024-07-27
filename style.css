@@ -124,7 +124,7 @@ h2 {
     border: 1px solid;
     border-radius: 16px;
     padding: 8px;
-    background-color: var(--dark-bg-color);
+    background-color: var(--bubble-bg);
     border: 2px solid var(--character-color);
 }
 
@@ -151,8 +151,7 @@ h2 {
 .bubble-right::after {
     left: auto;
     right: -7px;
-    --color: var(--dark-bg-color);
-    border-color: var(--color) transparent transparent var(--color);
+    border-color: var(--bubble-bg) transparent transparent var(--bubble-bg);
 }
 
 .bubble-right::before {
@@ -164,8 +163,7 @@ h2 {
 .bubble-left::after {
     left: -7px;
     right: auto;
-    --color: var(--dark-bg-color);
-    border-color: var(--color) var(--color) transparent transparent;
+    border-color: var(--bubble-bg) var(--bubble-bg) transparent transparent;
 }
 
 .bubble-left::before {
@@ -495,6 +493,7 @@ details {
     align-items: center;
     margin: 0.75em 0;
     --character-color: #444;
+    --bubble-bg: color-mix(in srgb, var(--character-color) 25%, #000);
 
     p {
         margin-block: 0em;
