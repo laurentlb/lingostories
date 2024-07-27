@@ -1,0 +1,23 @@
+{
+    "speakers": {
+        "mum": {
+            "avatar": "woman.svg"
+        },
+        "peter": {
+            "avatar": "peter.svg"
+        },
+        "teacher": {
+            "avatar": "woman.svg"
+        },
+        "employee": {
+            "avatar": "man.svg"
+        },
+        "seller": {
+            "avatar": "man.svg"
+        },
+        "baker": {
+            "avatar": "man.svg"
+        }
+    },
+    "sentences": {}
+}
