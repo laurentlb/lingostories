@@ -519,10 +519,6 @@ details {
     .item {
         width: 48px;
         height: 48px;
-    }
-
-    .money {
-        background: url(img/items/coin.svg);
         background-size: contain;
         text-align: center;
         color: #000;
@@ -533,7 +529,7 @@ details {
         font-size: 1.4em;
     }
 
-    .money.updated {
+    .updated {
         animation: flip 0.5s;
     }
 }

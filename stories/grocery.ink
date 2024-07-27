@@ -15,7 +15,6 @@ Costs:
 {money >= cost :
   ~ money -= cost
   ~ inventory += item
-  (bought {item}, {money}🪙 remaining)
   ~ return true
 - else:
   It looks like you don't have enough money.

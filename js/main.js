@@ -405,34 +405,63 @@ function updateButtons() {
     scrollDown();
 }
 
+function itemImage(item) {
+    let name = item;
+    switch (item) {
+        case "money": name = "coin"; break;
+        case "apples": name = "apple"; break;
+        case "pears": name = "pear"; break;
+        case "tomatoes": name = "tomato"; break;
+        case "pastry": name = "croissant"; break;
+        case "bread": name = "bread"; break;
+        case "chocolate": name = "chocolate-bar"; break;
+        case "eggs": name = "egg"; break;
+        case "carrots": name = "carrot"; break;
+    }
+    return `img/items/${name}.svg`;
+}
+
 function updateItem(item, value) {
     const inventory = document.querySelector(".inventory");
     let element = inventory.querySelector(`#${item}`);
     if (!element) {
         element = document.createElement("div");
-        element.style.backgroundImage = `url(img/items/coin.svg)`;
+        element.style.backgroundImage = `url(${itemImage(item)})`;
         element.id = item;
         element.classList.add("item", "money");
         inventory.appendChild(element);
+        if (typeof value === "boolean") {
+            element.classList.add("boolean");
+        }
     }
-    element.textContent = value;
-    if (value === 0) {
+    if (typeof value === "number") {
+        element.textContent = value;
+        element.classList.remove("updated");
+        setTimeout(() => {
+            element.classList.add("updated");
+        }, 10);    
+    }
+
+    if (value) {
+        inventory.style.display = "flex";
+    } else {
         element.display = "none";
     }
-    element.classList.remove("updated");
-    setTimeout(() => {
-        element.classList.add("updated");
-    }, 10);    
 }
 
-function updateInventory(item, value) {
-    console.log("Update inventory", item, value);
-    if (item === "money") {
-        updateItem("money", value);
-    }
-    const inventory = document.querySelector(".inventory");
-    if (value > 0) {
-        inventory.style.display = "flex";
+function updateInventory(name, value) {
+    if (value.entries) {
+        // remove all boolean items
+        const inventory = document.querySelector(".inventory");
+        for (const item of inventory.querySelectorAll(".item.boolean")) {
+            item.remove();
+        }
+        for (const it of value.entries()) {
+            const name = JSON.parse(it[0]).itemName; // the API looks weird??
+            updateItem(name, true);
+        }
+    } else if (typeof value === "number") {
+        updateItem(name, value);
     }
 }
 

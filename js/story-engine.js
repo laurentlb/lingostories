@@ -14,7 +14,9 @@ export class Story {
         this.metadata = await fetch(`stories/${name}.tl.json`, {cache: "no-cache"})
             .then(response => response.json());
 
-        this.ink.ObserveVariable("money", this.updateInventory);
+        for (const item of this.metadata["items"]) {
+            this.ink.ObserveVariable(item, this.updateInventory);
+        }
     }
 
     Continue() {
