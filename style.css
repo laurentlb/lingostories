@@ -503,3 +503,46 @@ details {
     font-weight: bold;
     color: var(--highlight-color);
 }
+
+.inventory {
+    display: none;
+    position: fixed;
+    bottom: 110px;
+    z-index: 50;
+    border: 1px solid var(--border-color);
+    background: #222;
+    width: 600px;
+    justify-content: space-around;
+    padding: 4px;
+    align-items: center;
+
+    .item {
+        width: 48px;
+        height: 48px;
+    }
+
+    .money {
+        background: url(img/items/coin.svg);
+        background-size: contain;
+        text-align: center;
+        color: #000;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        font-weight: bold;
+        font-size: 1.4em;
+    }
+
+    .money.updated {
+        animation: flip 0.5s;
+    }
+}
+
+@keyframes flip {
+    0% {
+        transform: rotateY(0deg);
+    }
+    100% {
+        transform: rotateY(360deg);
+    }
+}

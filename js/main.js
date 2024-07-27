@@ -419,6 +419,10 @@ function updateItem(item, value) {
     if (value === 0) {
         element.display = "none";
     }
+    element.classList.remove("updated");
+    setTimeout(() => {
+        element.classList.add("updated");
+    }, 10);    
 }
 
 function updateInventory(item, value) {
