@@ -157,12 +157,10 @@ function showText(line, useSpoiler) {
     main.appendChild(container);
 
     const audioElt = document.createElement("img");
-    const speakerId = line["speaker"];
-    if (speakerId) {
-        // TODO: put speaker information in the metadata file
-        const file = speakerId === "tom" ? "man.svg" : "woman.svg";
+    const speaker = line["speaker"];
+    if (speaker) {
         audioElt.classList.add("speaker");
-        audioElt.src = `img/avatars/${file}`;
+        audioElt.src = `img/avatars/${speaker.avatar}`;
     } else {
         audioElt.src = "img/volume-up.svg"; 
         audioElt.classList.add("icon", "audio-icon");

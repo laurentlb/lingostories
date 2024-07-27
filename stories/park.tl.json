@@ -1,4 +1,12 @@
 {
+    "speakers": {
+        "anna": {
+            "avatar": "woman.svg"
+        },
+        "tom": {
+            "avatar": "man.svg"
+        }
+    },
     "sentences": {
         "A day in the Park.": {
             "key": "0-0",
