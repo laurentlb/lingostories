@@ -341,6 +341,10 @@ function createStoryList() {
     container.innerHTML = "";
 
     for (const sto of stories) {
+        if (sto.released === false) {
+            continue;
+        }
+
         const elt = document.createElement("div");
         elt.classList.add("story-info");
 
