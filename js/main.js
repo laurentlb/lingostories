@@ -165,6 +165,9 @@ function showText(line, useSpoiler) {
         if (speaker.color) {
             container.style.setProperty('--character-color', speaker.color);
         }
+        if (speaker.side === "right") {
+            container.style.flexDirection = "row-reverse";
+        }
     } else {
         audioElt.src = "img/volume-up.svg"; 
         audioElt.classList.add("icon", "audio-icon");
@@ -224,7 +227,8 @@ function actuallyShowText(container, line, useSpoiler) {
     elt.textContent = content;
     const speaker = line["speaker"];
     if (speaker) {
-        elt.classList.add("bubble", "bubble-left");
+        const side = speaker.side === "right" ? "right" : "left";
+        elt.classList.add("bubble", `bubble-${side}`);
         elt.style.setProperty('--bubble-color', '#444');
     }
 

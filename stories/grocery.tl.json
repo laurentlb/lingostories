@@ -2,22 +2,29 @@
     "items": ["money", "inventory"],
     "speakers": {
         "mum": {
-            "avatar": "woman.svg"
+            "avatar": "woman.svg",
+            "color": "#a26"
         },
         "peter": {
-            "avatar": "peter.svg"
+            "avatar": "peter.svg",
+            "color": "#26a",
+            "side": "right"
         },
         "teacher": {
-            "avatar": "woman.svg"
+            "avatar": "woman.svg",
+            "color": "#484"
         },
         "employee": {
-            "avatar": "man.svg"
+            "avatar": "man.svg",
+            "color": "#a62"
         },
         "seller": {
-            "avatar": "man.svg"
+            "avatar": "man.svg",
+            "color": "#288"
         },
         "baker": {
-            "avatar": "man.svg"
+            "avatar": "man.svg",
+            "color": "#a22"
         }
     },
     "sentences": {}
