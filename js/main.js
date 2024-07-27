@@ -5,7 +5,7 @@ import { UserData } from "./userdata.js";
 import { Settings } from "./settings.js";
 import { Story } from "./story-engine.js";
 
-let story = new Story();
+let story = new Story(updateInventory);
 const userData = new UserData();
 const settings = new Settings(userData);
 
@@ -22,6 +22,7 @@ function resetStory() {
     document.querySelector('.story').innerHTML = "";
     document.querySelector('.story').style.display = "block";
     document.querySelector('.story-end').style.display = "none";
+    document.querySelector('.inventory').style.display = "none";
     document.querySelector('.footer').style.display = "flex";
     nextAction = null;
     actionPending = false;
@@ -404,6 +405,33 @@ function updateButtons() {
     scrollDown();
 }
 
+function updateItem(item, value) {
+    const inventory = document.querySelector(".inventory");
+    let element = inventory.querySelector(`#${item}`);
+    if (!element) {
+        element = document.createElement("div");
+        element.style.backgroundImage = `url(img/items/coin.svg)`;
+        element.id = item;
+        element.classList.add("item", "money");
+        inventory.appendChild(element);
+    }
+    element.textContent = value;
+    if (value === 0) {
+        element.display = "none";
+    }
+}
+
+function updateInventory(item, value) {
+    console.log("Update inventory", item, value);
+    if (item === "money") {
+        updateItem("money", value);
+    }
+    const inventory = document.querySelector(".inventory");
+    if (value > 0) {
+        inventory.style.display = "flex";
+    }
+}
+
 let lastBottom = 0;
 function scrollDown() {
     window.scrollTo({top: lastBottom - 150, behavior: "smooth"});
@@ -497,3 +525,4 @@ window.onload = function(){
 // Expose entry points to the browser
 window.next = next;
 window.resetStory = resetStory;
+window.story = story; // for debug & js console

@@ -1,4 +1,5 @@
 {
+    "items": ["money", "inventory"],
     "speakers": {
         "mum": {
             "avatar": "woman.svg"

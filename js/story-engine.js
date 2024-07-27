@@ -1,8 +1,9 @@
 export class Story {
-    constructor() {
+    constructor(updateInventory) {
         this.ink = null;
         this.name = null;
         this.lang = null;
+        this.updateInventory = updateInventory;
     }
 
     async loadStory(name) {
@@ -13,6 +14,7 @@ export class Story {
         this.metadata = await fetch(`stories/${name}.tl.json`, {cache: "no-cache"})
             .then(response => response.json());
 
+        this.ink.ObserveVariable("money", this.updateInventory);
     }
 
     Continue() {

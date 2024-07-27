@@ -1,6 +1,6 @@
 LIST items = apples, pears, tomatoes, carrots, chocolate, eggs, bread, pastry
 VAR inventory = ()
-VAR money = 17
+VAR money = 0
 VAR teacher = false
 VAR treats = 0
 
@@ -45,7 +45,8 @@ You leave the bedroom and see your mum.
 @mum Granny is visiting, so it's important to get everything.
 @mum I need you to buy 3 tomatoes, 4 eggs and 5 apples.
 @mum You'll find everything in the supermarket.
-@mum Here's 17 coins, it should be enough.
+@mum Here are 17 coins, it should be enough.
+~ money += 17
 @mum Oh, and we also need bread!
 
 - (loop2)
