@@ -83,7 +83,7 @@ You walk down the street until the end.
 
 === lost ===
 
-{&After a few minutes, you find another crossroad.|You feel lost and see another crossroad.|Another crossroad? Where should I go?}
+{&After a few minutes, you find another crossroad.|You feel lost and see another crossroad.|Another crossroad? Where should you go?}
 {&@peter Is it the street on the right? I'm not sure.|}
 
 + [Go left]
@@ -239,8 +239,8 @@ You enter the bakery.
           Peter puts the tomatoes in his bag.
         }
 * [Carrots (2🪙)]
-    ~ buy(carrots, 2)
     @peter I'll take two carrots.
+    ~ buy(carrots, 2)
 + [Leave]
     @seller See you soon!
     -> main_square
@@ -279,14 +279,17 @@ You come back home. Your mom looks at your groceries.
 @mom Let's see what you bought!
 
 {inventory ? apples:
+    ~ inventory -= apples
     @mom Great, you have the apples! I'll make an apple pie.
     ~ score += 10
 - else:
     {
     - inventory ? pears:
+        ~ inventory -= pears
         @mom No apples? Well, I can make a pear pie instead.
         ~ score += 5
     - inventory ? chocolate:
+        ~ inventory -= chocolate
         @mom No apples or pears? I can use the chocolate to make a chocolate cake.
         ~ score += 5
     - else:
@@ -296,17 +299,20 @@ You come back home. Your mom looks at your groceries.
 
 {inventory ? eggs:
   ~ score = score + 5
+  ~ inventory -= eggs
   @mom Thank you for the eggs!
   - else:
   @mom It looks like you forgot the eggs.
 }
 {inventory ? tomatoes:
+  ~ inventory -= tomatoes
   ~ score += 5
   @mom Nice, you have the tomatoes!
   - else:
   @mom Where are the tomatoes?
 }
 {inventory ? bread:
+  ~ inventory -= bread
   ~ score += 5
   @mom The bread smells good.
   - else:

@@ -47,10 +47,6 @@
             "en": "You feel lost and see another crossroad.",
             "key": "youfeellos-35f0"
         },
-        "Another crossroad? Where should I go?": {
-            "en": "Another crossroad? Where should I go?",
-            "key": "anothercro-bc61"
-        },
         "@peter Is it the street on the right? I'm not sure.": {
             "en": "Is it the street on the right? I'm not sure.",
             "key": "peterisitt-70b8"
@@ -694,6 +690,38 @@
         "@seller Maybe you want pears instead?": {
             "en": "Maybe you want pears instead?",
             "key": "sellermayb-3f23"
+        },
+        "Look for your music teacher": {
+            "audio": false,
+            "en": "Look for your music teacher"
+        },
+        "Eat chocolate": {
+            "audio": false,
+            "en": "Eat chocolate"
+        },
+        "Eat the pastry": {
+            "audio": false,
+            "en": "Eat the pastry"
+        },
+        "Eggs": {
+            "audio": false,
+            "en": "Eggs"
+        },
+        "Pastry (2\ud83e\ude99)": {
+            "audio": false,
+            "en": "Pastry (2\ud83e\ude99)"
+        },
+        "Bigger pastry (4\ud83e\ude99)": {
+            "audio": false,
+            "en": "Bigger pastry (4\ud83e\ude99)"
+        },
+        "Yes": {
+            "audio": false,
+            "en": "Yes"
+        },
+        "Another crossroad? Where should you go?": {
+            "en": "Another crossroad? Where should you go?",
+            "key": "anothercro-56b9"
         }
     }
 }
