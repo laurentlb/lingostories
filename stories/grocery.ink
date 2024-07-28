@@ -4,10 +4,8 @@ VAR money = 0
 VAR teacher = false
 VAR treats = 0
 
-/*
-Costs:
-  Pears (5), Tomatoes (3), eggs(4), bread(3)
-*/
+// Costs:
+// Pears (5), Tomatoes (3), eggs(4), bread(3)
 
 -> introduction
 
@@ -105,7 +103,7 @@ You walk down the street until the end.
 
 === main_square ===
 {!You reach the main square.|There are many people on the main square.|A street musician is playing guitar on the main square.|On the main square, a group of tourists is taking photos of the old buildings.}
-{!The supermarket is right in front of you.}
+{The supermarket is right in front of you.|}
 
 + [Go to the supermarket]
     -> supermarket
@@ -134,9 +132,9 @@ You walk down the street until the end.
 
 === supermarket ===
 
-{!You enter the supermarket.}
-{!It's hard to find what you want.}
-{!An employee asks if you need help.}
+{You enter the supermarket.|}
+{It's hard to find what you want.|}
+{An employee asks if you need help.|}
 
 - (loop)
 {@employee What are you looking for?|@employee Anything else?}
@@ -164,8 +162,10 @@ You walk down the street until the end.
 * [Wine]
     @peter Can I have a bottle of wine?
     @employee How old are you?
-    ** [10 years old] @peter I am 10 years old.
-    ** [Lie] @peter I am... 11 years old!
+    ** [10 years old]
+        @peter I am 10 years old.
+    ** [Lie]
+        @peter I am... 11 years old!
     -- @employee Sorry, you're too young to buy wine.
 * [Chocolate (2🪙)]
     @peter I'll buy my favorite chocolate.
@@ -180,9 +180,9 @@ You walk down the street until the end.
 === bakery ===
 
 You enter the bakery.
-{!It smells like fresh bread}
-{!You see your favorite pastry.}
-{!The baker smiles at you.}
+{It smells like fresh bread|}
+{You see your favorite pastry.|}
+{The baker smiles at you.|}
 
 @baker Hello Peter, what would you like?
 
@@ -211,7 +211,7 @@ You enter the bakery.
 
 === market ===
 
-{!@seller Hello Peter!}
+{@seller Hello Peter!|}
 
 {@seller What would you like today?|@seller Do you want something else?}
 
@@ -250,9 +250,9 @@ You enter the bakery.
 === music_teacher ===
 
 {As you look around, you see your music teacher.|Your music teacher is still here.}
-{!She is holding a bag of apples.}
-{!She waves at you.}
-{!@teacher Hi Peter, what a surprise to see you here!}
+{She is holding a bag of apples.|}
+{She waves at you.|}
+{@teacher Hi Peter, what a surprise to see you here!|}
 
 + [Ask for apples]
     @peter Can you help me? I really need apples.
@@ -329,7 +329,7 @@ You come back home. Your mom looks at your groceries.
     @mom It's not perfect, but you did well, Peter. Thank you!
 - else:
     @mom Lots of things are missing.
-    @mom What are going to have for dinner?
+    @mom What are we going to have for dinner?
     @mom It's okay, Peter. I'm sure you'll do better next time.
 }
 

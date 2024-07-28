@@ -1,5 +1,8 @@
 {
-    "items": ["money", "inventory"],
+    "items": [
+        "money",
+        "inventory"
+    ],
     "speakers": {
         "mom": {
             "avatar": "woman.svg",
@@ -27,5 +30,501 @@
             "color": "#a22"
         }
     },
-    "sentences": {}
+    "sentences": {
+        "@mom Peter!": {
+            "en": "Peter!"
+        },
+        "@mom Peter, please come here.": {
+            "en": "Peter, please come here."
+        },
+        "After a few minutes, you find another crossroad.": {
+            "en": "After a few minutes, you find another crossroad."
+        },
+        "You feel lost and see another crossroad.": {
+            "en": "You feel lost and see another crossroad."
+        },
+        "Another crossroad? Where should I go?": {
+            "en": "Another crossroad? Where should I go?"
+        },
+        "@peter Is it the street on the right? I'm not sure.": {
+            "en": "Is it the street on the right? I'm not sure."
+        },
+        "You reach the main square.": {
+            "en": "You reach the main square."
+        },
+        "There are many people on the main square.": {
+            "en": "There are many people on the main square."
+        },
+        "A street musician is playing guitar on the main square.": {
+            "en": "A street musician is playing guitar on the main square."
+        },
+        "On the main square, a group of tourists is taking photos of the old buildings.": {
+            "en": "On the main square, a group of tourists is taking photos of the old buildings."
+        },
+        "@employee What are you looking for?": {
+            "en": "What are you looking for?"
+        },
+        "@employee Anything else?": {
+            "en": "Anything else?"
+        },
+        "@seller What would you like today?": {
+            "en": "What would you like today?"
+        },
+        "@seller Do you want something else?": {
+            "en": "Do you want something else?"
+        },
+        "As you look around, you see your music teacher.": {
+            "en": "As you look around, you see your music teacher."
+        },
+        "Your music teacher is still here.": {
+            "en": "Your music teacher is still here."
+        },
+        "It looks like you don't have enough money.": {
+            "en": "It looks like you don't have enough money."
+        },
+        "It is Saturday afternoon.": {
+            "en": "It is Saturday afternoon."
+        },
+        "You live in a village.": {
+            "en": "You live in a village."
+        },
+        "It's a little cold outside.": {
+            "en": "It's a little cold outside."
+        },
+        "So you are playing with your toys in your bedroom.": {
+            "en": "So you are playing with your toys in your bedroom."
+        },
+        "Your mom calls you.": {
+            "en": "Your mom calls you."
+        },
+        "You play for a few more minutes.": {
+            "en": "You play for a few more minutes."
+        },
+        "@peter Yes, mom.": {
+            "en": "Yes, mom."
+        },
+        "You leave the bedroom and go to your mom.": {
+            "en": "You leave the bedroom and go to your mom."
+        },
+        "@mom Can you please go shopping for dinner?": {
+            "en": "Can you please go shopping for dinner?"
+        },
+        "@mom Grandma is visiting, so it's really important to get everything.": {
+            "en": "Grandma is visiting, so it's really important to get everything."
+        },
+        "@mom You have to buy three tomatoes, four eggs and five apples.": {
+            "en": "You have to buy three tomatoes, four eggs and five apples."
+        },
+        "@mom You'll find everything at the supermarket.": {
+            "en": "You'll find everything at the supermarket."
+        },
+        "@mom Here are 17 coins, I think that should be enough.": {
+            "en": "Here are 17 coins, I think that should be enough."
+        },
+        "@mom Oh, and we need bread too!": {
+            "en": "Oh, and we need bread too!"
+        },
+        "@peter Can I stay home?": {
+            "en": "Can I stay home?"
+        },
+        "@peter I'd love to play more.": {
+            "en": "I'd love to play more."
+        },
+        "@mom No, it's important to have food for dinner. You can play later.": {
+            "en": "No, it's important to have food for dinner. You can play later."
+        },
+        "@peter How do I get to the supermarket?": {
+            "en": "How do I get to the supermarket?"
+        },
+        "@mom You'll find it at the end of the street, just turn right.": {
+            "en": "You'll find it at the end of the street, just turn right."
+        },
+        "@mom It's on the main square.": {
+            "en": "It's on the main square."
+        },
+        "@peter Can you repeat the shopping list?": {
+            "en": "Can you repeat the shopping list?"
+        },
+        "@mom Sure. We need three tomatoes, four eggs, five apples, and bread.": {
+            "en": "Sure. We need three tomatoes, four eggs, five apples, and bread."
+        },
+        "@peter Can I buy something for myself?": {
+            "en": "Can I buy something for myself?"
+        },
+        "@peter I'd like to get some chocolate or maybe a pastry.": {
+            "en": "I'd like to get some chocolate or maybe a pastry."
+        },
+        "@mom If you have enough coins, you can buy something for you.": {
+            "en": "If you have enough coins, you can buy something for you."
+        },
+        "@mom But first, please buy the food for dinner.": {
+            "en": "But first, please buy the food for dinner."
+        },
+        "@peter Alright, I'm going now.": {
+            "en": "Alright, I'm going now."
+        },
+        "You leave the house.": {
+            "en": "You leave the house."
+        },
+        "It is sunny with a bit of wind.": {
+            "en": "It is sunny with a bit of wind."
+        },
+        "It's not that cold.": {
+            "en": "It's not that cold."
+        },
+        "You see children playing in the park as you pass by.": {
+            "en": "You see children playing in the park as you pass by."
+        },
+        "You walk down the street until the end.": {
+            "en": "You walk down the street until the end."
+        },
+        "@peter Which way is it? I think I should turn left now.": {
+            "en": "Which way is it? I think I should turn left now."
+        },
+        "You take the street on the left.": {
+            "en": "You take the street on the left."
+        },
+        "You take the street on the right.": {
+            "en": "You take the street on the right."
+        },
+        "You continue straight ahead.": {
+            "en": "You continue straight ahead."
+        },
+        "You decide to go back.": {
+            "en": "You decide to go back."
+        },
+        "You are afraid of getting lost.": {
+            "en": "You are afraid of getting lost."
+        },
+        "But after a while, it starts to feel familiar.": {
+            "en": "But after a while, it starts to feel familiar."
+        },
+        "The chocolate tastes delicious.": {
+            "en": "The chocolate tastes delicious."
+        },
+        "The pastry is really good.": {
+            "en": "The pastry is really good."
+        },
+        "@peter I still have some coins to spend.": {
+            "en": "I still have some coins to spend."
+        },
+        "@peter I'd like some tomatoes.": {
+            "en": "I'd like some tomatoes."
+        },
+        "@employee Sorry, we're out of tomatoes.": {
+            "en": "Sorry, we're out of tomatoes."
+        },
+        "@employee But they should have tomatoes on the market.": {
+            "en": "But they should have tomatoes on the market."
+        },
+        "@peter Do you have apples?": {
+            "en": "Do you have apples?"
+        },
+        "@employee I don't know why everyone wants apples today.": {
+            "en": "I don't know why everyone wants apples today."
+        },
+        "@employee Unfortunately, we don't have any more.": {
+            "en": "Unfortunately, we don't have any more."
+        },
+        "@peter I need eggs.": {
+            "en": "I need eggs."
+        },
+        "@employee How many eggs do you want?": {
+            "en": "How many eggs do you want?"
+        },
+        "@peter I am looking for the bread?": {
+            "en": "I am looking for the bread?"
+        },
+        "@employee Unfortunately, we don't have bread anymore today.": {
+            "en": "Unfortunately, we don't have bread anymore today."
+        },
+        "@employee But there's a bakery nearby.": {
+            "en": "But there's a bakery nearby."
+        },
+        "@peter Can I have a bottle of wine?": {
+            "en": "Can I have a bottle of wine?"
+        },
+        "@employee How old are you?": {
+            "en": "How old are you?"
+        },
+        "@peter I am 10 years old.": {
+            "en": "I am 10 years old."
+        },
+        "@peter I am... 11 years old!": {
+            "en": "I am... 11 years old!"
+        },
+        "@employee Sorry, you're too young to buy wine.": {
+            "en": "Sorry, you're too young to buy wine."
+        },
+        "@peter I'll buy my favorite chocolate.": {
+            "en": "I'll buy my favorite chocolate."
+        },
+        "@peter That's all, thank you.": {
+            "en": "That's all, thank you."
+        },
+        "You leave the supermarket.": {
+            "en": "You leave the supermarket."
+        },
+        "You enter the bakery.": {
+            "en": "You enter the bakery."
+        },
+        "@baker Hello Peter, what would you like?": {
+            "en": "Hello Peter, what would you like?"
+        },
+        "Sorry, this is a bakery, we don't sell apples.": {
+            "en": "Sorry, this is a bakery, we don't sell apples."
+        },
+        "@peter This pastry, please.": {
+            "en": "This pastry, please."
+        },
+        "@peter I would like this bread, please.": {
+            "en": "I would like this bread, please."
+        },
+        "@baker See you soon, Peter!": {
+            "en": "See you soon, Peter!"
+        },
+        "@peter I'd like some apples.": {
+            "en": "I'd like some apples."
+        },
+        "@seller Sorry, we just sold the last apples to your music teacher.": {
+            "en": "Sorry, we just sold the last apples to your music teacher."
+        },
+        "Maybe you want you like pears instead?": {
+            "en": "Maybe you want you like pears instead?"
+        },
+        "@peter Some pears, please.": {
+            "en": "Some pears, please."
+        },
+        "@seller How many tomatoes do you want?": {
+            "en": "How many tomatoes do you want?"
+        },
+        "@peter Three tomatoes, please.": {
+            "en": "Three tomatoes, please."
+        },
+        "@peter Four tomatoes, please.": {
+            "en": "Four tomatoes, please."
+        },
+        "@peter Five tomatoes, please.": {
+            "en": "Five tomatoes, please."
+        },
+        "Peter puts the tomatoes in his bag.": {
+            "en": "Peter puts the tomatoes in his bag."
+        },
+        "@peter I'll take two carrots.": {
+            "en": "I'll take two carrots."
+        },
+        "@seller See you soon!": {
+            "en": "See you soon!"
+        },
+        "@peter Can you help me? I really need apples.": {
+            "en": "Can you help me? I really need apples."
+        },
+        "@teacher I'll trade you these apples for some pears. Do you have any?": {
+            "en": "I'll trade you these apples for some pears. Do you have any?"
+        },
+        "@peter Yes.": {
+            "en": "Yes."
+        },
+        "@teacher Great, I love pears too! Here are your apples.": {
+            "en": "Great, I love pears too! Here are your apples."
+        },
+        "@teacher See you on Monday, Peter!": {
+            "en": "See you on Monday, Peter!"
+        },
+        "@peter Bye!": {
+            "en": "Bye!"
+        },
+        "@teacher That's too bad. Maybe next time.": {
+            "en": "That's too bad. Maybe next time."
+        },
+        "You come back home. Your mom looks at your groceries.": {
+            "en": "You come back home. Your mom looks at your groceries."
+        },
+        "@mom Let's see what you bought!": {
+            "en": "Let's see what you bought!"
+        },
+        "@mom Great, you have the apples! I'll make an apple pie.": {
+            "en": "Great, you have the apples! I'll make an apple pie."
+        },
+        "@mom No apples? Well, I can make a pear pie instead.": {
+            "en": "No apples? Well, I can make a pear pie instead."
+        },
+        "@mom No apples or pears? I can use the chocolate to make a chocolate cake.": {
+            "en": "No apples or pears? I can use the chocolate to make a chocolate cake."
+        },
+        "@mom No fruit? So we won't have any dessert today.": {
+            "en": "No fruit? So we won't have any dessert today."
+        },
+        "@mom Thank you for the eggs!": {
+            "en": "Thank you for the eggs!"
+        },
+        "@mom It looks like you forgot the eggs.": {
+            "en": "It looks like you forgot the eggs."
+        },
+        "@mom Nice, you have the tomatoes!": {
+            "en": "Nice, you have the tomatoes!"
+        },
+        "@mom Where are the tomatoes?": {
+            "en": "Where are the tomatoes?"
+        },
+        "@mom The bread smells good.": {
+            "en": "The bread smells good."
+        },
+        "@mom You didn't buy bread?": {
+            "en": "You didn't buy bread?"
+        },
+        "Excellent job! You have got everything on the list!": {
+            "en": "Excellent job! You have got everything on the list!"
+        },
+        "But maybe you could have bought something for you?": {
+            "en": "But maybe you could have bought something for you?"
+        },
+        "And you still had enough coins to buy something you liked.": {
+            "en": "And you still had enough coins to buy something you liked."
+        },
+        "You mom smiles warmly.": {
+            "en": "You mom smiles warmly."
+        },
+        "@mom You did a great job, Peter. Thank you!": {
+            "en": "You did a great job, Peter. Thank you!"
+        },
+        "@mom After dinner, you can play with your toys again.": {
+            "en": "After dinner, you can play with your toys again."
+        },
+        "Good work! You got most of the items.": {
+            "en": "Good work! You got most of the items."
+        },
+        "@mom It's not perfect, but you did well, Peter. Thank you!": {
+            "en": "It's not perfect, but you did well, Peter. Thank you!"
+        },
+        "@mom Lots of things are missing.": {
+            "en": "Lots of things are missing."
+        },
+        "@mom What are we going to have for dinner?": {
+            "en": "What are we going to have for dinner?"
+        },
+        "@mom It's okay, Peter. I'm sure you'll do better next time.": {
+            "en": "It's okay, Peter. I'm sure you'll do better next time."
+        },
+        "Leave the bedroom": {
+            "audio": false,
+            "en": "Leave the bedroom"
+        },
+        "Keep playing": {
+            "audio": false,
+            "en": "Keep playing"
+        },
+        "Leave": {
+            "audio": false,
+            "en": "Leave"
+        },
+        "Go left": {
+            "audio": false,
+            "en": "Go left"
+        },
+        "Go right": {
+            "audio": false,
+            "en": "Go right"
+        },
+        "Go straight": {
+            "audio": false,
+            "en": "Go straight"
+        },
+        "Go back": {
+            "audio": false,
+            "en": "Go back"
+        },
+        "Go to the supermarket": {
+            "audio": false,
+            "en": "Go to the supermarket"
+        },
+        "Go to the bakery": {
+            "audio": false,
+            "en": "Go to the bakery"
+        },
+        "Go to the outdoor market": {
+            "audio": false,
+            "en": "Go to the outdoor market"
+        },
+        "Go back home": {
+            "audio": false,
+            "en": "Go back home"
+        },
+        "Stay": {
+            "audio": false,
+            "en": "Stay"
+        },
+        "Tomatoes": {
+            "audio": false,
+            "en": "Tomatoes"
+        },
+        "Apples": {
+            "audio": false,
+            "en": "Apples"
+        },
+        "4 eggs (4\ud83e\ude99)": {
+            "audio": false,
+            "en": "4 eggs (4\ud83e\ude99)"
+        },
+        "6 eggs (6\ud83e\ude99)": {
+            "audio": false,
+            "en": "6 eggs (6\ud83e\ude99)"
+        },
+        "12 eggs (9\ud83e\ude99)": {
+            "audio": false,
+            "en": "12 eggs (9\ud83e\ude99)"
+        },
+        "Bread": {
+            "audio": false,
+            "en": "Bread"
+        },
+        "Wine": {
+            "audio": false,
+            "en": "Wine"
+        },
+        "10 years old": {
+            "audio": false,
+            "en": "10 years old"
+        },
+        "Lie": {
+            "audio": false,
+            "en": "Lie"
+        },
+        "Chocolate (2\ud83e\ude99)": {
+            "audio": false,
+            "en": "Chocolate (2\ud83e\ude99)"
+        },
+        "Bread (3\ud83e\ude99)": {
+            "audio": false,
+            "en": "Bread (3\ud83e\ude99)"
+        },
+        "Pears (5\ud83e\ude99)": {
+            "audio": false,
+            "en": "Pears (5\ud83e\ude99)"
+        },
+        "3": {
+            "audio": false,
+            "en": "3"
+        },
+        "4": {
+            "audio": false,
+            "en": "4"
+        },
+        "5": {
+            "audio": false,
+            "en": "5"
+        },
+        "Carrots (2\ud83e\ude99)": {
+            "audio": false,
+            "en": "Carrots (2\ud83e\ude99)"
+        },
+        "Ask for apples": {
+            "audio": false,
+            "en": "Ask for apples"
+        },
+        "No": {
+            "audio": false,
+            "en": "No"
+        }
+    }
 }
