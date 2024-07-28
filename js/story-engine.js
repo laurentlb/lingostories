@@ -104,9 +104,9 @@ export class Story {
             "isTitle": false,
         };
 
-        const hasTranslation = this.metadata["sentences"][text] !== undefined;
+        const hasTranslation = this.metadata["sentences"][line] !== undefined;
         if (hasTranslation) {
-            for (const [key, value] of Object.entries(this.metadata["sentences"][text])) {
+            for (const [key, value] of Object.entries(this.metadata["sentences"][line])) {
                 result[key] = value;
             }
         } else {

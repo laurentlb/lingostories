@@ -32,379 +32,496 @@
     },
     "sentences": {
         "@mom Peter!": {
-            "en": "Peter!"
+            "en": "Peter!",
+            "key": "mompeter-bf3d"
         },
         "@mom Peter, please come here.": {
-            "en": "Peter, please come here."
+            "en": "Peter, please come here.",
+            "key": "mompeterpl-46c9"
         },
         "After a few minutes, you find another crossroad.": {
-            "en": "After a few minutes, you find another crossroad."
+            "en": "After a few minutes, you find another crossroad.",
+            "key": "afterafewm-77c5"
         },
         "You feel lost and see another crossroad.": {
-            "en": "You feel lost and see another crossroad."
+            "en": "You feel lost and see another crossroad.",
+            "key": "youfeellos-35f0"
         },
         "Another crossroad? Where should I go?": {
-            "en": "Another crossroad? Where should I go?"
+            "en": "Another crossroad? Where should I go?",
+            "key": "anothercro-bc61"
         },
         "@peter Is it the street on the right? I'm not sure.": {
-            "en": "Is it the street on the right? I'm not sure."
+            "en": "Is it the street on the right? I'm not sure.",
+            "key": "peterisitt-70b8"
         },
         "You reach the main square.": {
-            "en": "You reach the main square."
+            "en": "You reach the main square.",
+            "key": "youreachth-7151"
         },
         "There are many people on the main square.": {
-            "en": "There are many people on the main square."
+            "en": "There are many people on the main square.",
+            "key": "therearema-043e"
         },
         "A street musician is playing guitar on the main square.": {
-            "en": "A street musician is playing guitar on the main square."
+            "en": "A street musician is playing guitar on the main square.",
+            "key": "astreetmus-4ea2"
         },
         "On the main square, a group of tourists is taking photos of the old buildings.": {
-            "en": "On the main square, a group of tourists is taking photos of the old buildings."
+            "en": "On the main square, a group of tourists is taking photos of the old buildings.",
+            "key": "onthemains-719c"
         },
         "@employee What are you looking for?": {
-            "en": "What are you looking for?"
+            "en": "What are you looking for?",
+            "key": "employeewh-ad73"
         },
         "@employee Anything else?": {
-            "en": "Anything else?"
+            "en": "Anything else?",
+            "key": "employeean-8584"
         },
         "@seller What would you like today?": {
-            "en": "What would you like today?"
+            "en": "What would you like today?",
+            "key": "sellerwhat-71b2"
         },
         "@seller Do you want something else?": {
-            "en": "Do you want something else?"
+            "en": "Do you want something else?",
+            "key": "sellerdoyo-9869"
         },
         "As you look around, you see your music teacher.": {
-            "en": "As you look around, you see your music teacher."
+            "en": "As you look around, you see your music teacher.",
+            "key": "asyoulooka-8f4d"
         },
         "Your music teacher is still here.": {
-            "en": "Your music teacher is still here."
+            "en": "Your music teacher is still here.",
+            "key": "yourmusict-803c"
         },
         "It looks like you don't have enough money.": {
-            "en": "It looks like you don't have enough money."
+            "en": "It looks like you don't have enough money.",
+            "key": "itlookslik-5f80"
         },
         "It is Saturday afternoon.": {
-            "en": "It is Saturday afternoon."
+            "en": "It is Saturday afternoon.",
+            "key": "itissaturd-4cea"
         },
         "You live in a village.": {
-            "en": "You live in a village."
+            "en": "You live in a village.",
+            "key": "youliveina-cb25"
         },
         "It's a little cold outside.": {
-            "en": "It's a little cold outside."
+            "en": "It's a little cold outside.",
+            "key": "itsalittle-1aa6"
         },
         "So you are playing with your toys in your bedroom.": {
-            "en": "So you are playing with your toys in your bedroom."
+            "en": "So you are playing with your toys in your bedroom.",
+            "key": "soyouarepl-e2ad"
         },
         "Your mom calls you.": {
-            "en": "Your mom calls you."
+            "en": "Your mom calls you.",
+            "key": "yourmomcal-dbc6"
         },
         "You play for a few more minutes.": {
-            "en": "You play for a few more minutes."
+            "en": "You play for a few more minutes.",
+            "key": "youplayfor-d2e2"
         },
         "@peter Yes, mom.": {
-            "en": "Yes, mom."
+            "en": "Yes, mom.",
+            "key": "peteryesmo-e27a"
         },
         "You leave the bedroom and go to your mom.": {
-            "en": "You leave the bedroom and go to your mom."
+            "en": "You leave the bedroom and go to your mom.",
+            "key": "youleaveth-9281"
         },
         "@mom Can you please go shopping for dinner?": {
-            "en": "Can you please go shopping for dinner?"
+            "en": "Can you please go shopping for dinner?",
+            "key": "momcanyoup-b090"
         },
         "@mom Grandma is visiting, so it's really important to get everything.": {
-            "en": "Grandma is visiting, so it's really important to get everything."
+            "en": "Grandma is visiting, so it's really important to get everything.",
+            "key": "momgrandma-4ef6"
         },
         "@mom You have to buy three tomatoes, four eggs and five apples.": {
-            "en": "You have to buy three tomatoes, four eggs and five apples."
+            "en": "You have to buy three tomatoes, four eggs and five apples.",
+            "key": "momyouhave-335a"
         },
         "@mom You'll find everything at the supermarket.": {
-            "en": "You'll find everything at the supermarket."
+            "en": "You'll find everything at the supermarket.",
+            "key": "momyoullfi-3998"
         },
         "@mom Here are 17 coins, I think that should be enough.": {
-            "en": "Here are 17 coins, I think that should be enough."
+            "en": "Here are 17 coins, I think that should be enough.",
+            "key": "momhereare-ba9e"
         },
         "@mom Oh, and we need bread too!": {
-            "en": "Oh, and we need bread too!"
+            "en": "Oh, and we need bread too!",
+            "key": "momohandwe-dae8"
         },
         "@peter Can I stay home?": {
-            "en": "Can I stay home?"
+            "en": "Can I stay home?",
+            "key": "petercanis-4e1e"
         },
         "@peter I'd love to play more.": {
-            "en": "I'd love to play more."
+            "en": "I'd love to play more.",
+            "key": "peteridlov-0c2c"
         },
         "@mom No, it's important to have food for dinner. You can play later.": {
-            "en": "No, it's important to have food for dinner. You can play later."
+            "en": "No, it's important to have food for dinner. You can play later.",
+            "key": "momnoitsim-d5db"
         },
         "@peter How do I get to the supermarket?": {
-            "en": "How do I get to the supermarket?"
+            "en": "How do I get to the supermarket?",
+            "key": "peterhowdo-a868"
         },
         "@mom You'll find it at the end of the street, just turn right.": {
-            "en": "You'll find it at the end of the street, just turn right."
+            "en": "You'll find it at the end of the street, just turn right.",
+            "key": "momyoullfi-3dcc"
         },
         "@mom It's on the main square.": {
-            "en": "It's on the main square."
+            "en": "It's on the main square.",
+            "key": "momitsonth-ecb2"
         },
         "@peter Can you repeat the shopping list?": {
-            "en": "Can you repeat the shopping list?"
+            "en": "Can you repeat the shopping list?",
+            "key": "petercanyo-a272"
         },
         "@mom Sure. We need three tomatoes, four eggs, five apples, and bread.": {
-            "en": "Sure. We need three tomatoes, four eggs, five apples, and bread."
+            "en": "Sure. We need three tomatoes, four eggs, five apples, and bread.",
+            "key": "momsurewen-7b14"
         },
         "@peter Can I buy something for myself?": {
-            "en": "Can I buy something for myself?"
+            "en": "Can I buy something for myself?",
+            "key": "petercanib-4240"
         },
         "@peter I'd like to get some chocolate or maybe a pastry.": {
-            "en": "I'd like to get some chocolate or maybe a pastry."
+            "en": "I'd like to get some chocolate or maybe a pastry.",
+            "key": "peteridlik-7570"
         },
         "@mom If you have enough coins, you can buy something for you.": {
-            "en": "If you have enough coins, you can buy something for you."
+            "en": "If you have enough coins, you can buy something for you.",
+            "key": "momifyouha-37f2"
         },
         "@mom But first, please buy the food for dinner.": {
-            "en": "But first, please buy the food for dinner."
+            "en": "But first, please buy the food for dinner.",
+            "key": "mombutfirs-1550"
         },
         "@peter Alright, I'm going now.": {
-            "en": "Alright, I'm going now."
+            "en": "Alright, I'm going now.",
+            "key": "peteralrig-0c0f"
         },
         "You leave the house.": {
-            "en": "You leave the house."
+            "en": "You leave the house.",
+            "key": "youleaveth-27bd"
         },
         "It is sunny with a bit of wind.": {
-            "en": "It is sunny with a bit of wind."
+            "en": "It is sunny with a bit of wind.",
+            "key": "itissunnyw-0533"
         },
         "It's not that cold.": {
-            "en": "It's not that cold."
+            "en": "It's not that cold.",
+            "key": "itsnotthat-0fba"
         },
         "You see children playing in the park as you pass by.": {
-            "en": "You see children playing in the park as you pass by."
+            "en": "You see children playing in the park as you pass by.",
+            "key": "youseechil-9f9b"
         },
         "You walk down the street until the end.": {
-            "en": "You walk down the street until the end."
+            "en": "You walk down the street until the end.",
+            "key": "youwalkdow-37dd"
         },
         "@peter Which way is it? I think I should turn left now.": {
-            "en": "Which way is it? I think I should turn left now."
+            "en": "Which way is it? I think I should turn left now.",
+            "key": "peterwhich-5718"
         },
         "You take the street on the left.": {
-            "en": "You take the street on the left."
+            "en": "You take the street on the left.",
+            "key": "youtakethe-ef60"
         },
         "You take the street on the right.": {
-            "en": "You take the street on the right."
+            "en": "You take the street on the right.",
+            "key": "youtakethe-9e8b"
         },
         "You continue straight ahead.": {
-            "en": "You continue straight ahead."
+            "en": "You continue straight ahead.",
+            "key": "youcontinu-3290"
         },
         "You decide to go back.": {
-            "en": "You decide to go back."
+            "en": "You decide to go back.",
+            "key": "youdecidet-8d68"
         },
         "You are afraid of getting lost.": {
-            "en": "You are afraid of getting lost."
+            "en": "You are afraid of getting lost.",
+            "key": "youareafra-dca5"
         },
         "But after a while, it starts to feel familiar.": {
-            "en": "But after a while, it starts to feel familiar."
+            "en": "But after a while, it starts to feel familiar.",
+            "key": "butafteraw-0835"
         },
         "The chocolate tastes delicious.": {
-            "en": "The chocolate tastes delicious."
+            "en": "The chocolate tastes delicious.",
+            "key": "thechocola-c4bf"
         },
         "The pastry is really good.": {
-            "en": "The pastry is really good."
+            "en": "The pastry is really good.",
+            "key": "thepastryi-9cb0"
         },
         "@peter I still have some coins to spend.": {
-            "en": "I still have some coins to spend."
+            "en": "I still have some coins to spend.",
+            "key": "peteristil-627c"
         },
         "@peter I'd like some tomatoes.": {
-            "en": "I'd like some tomatoes."
+            "en": "I'd like some tomatoes.",
+            "key": "peteridlik-4f17"
         },
         "@employee Sorry, we're out of tomatoes.": {
-            "en": "Sorry, we're out of tomatoes."
+            "en": "Sorry, we're out of tomatoes.",
+            "key": "employeeso-f69c"
         },
         "@employee But they should have tomatoes on the market.": {
-            "en": "But they should have tomatoes on the market."
+            "en": "But they should have tomatoes on the market.",
+            "key": "employeebu-1d20"
         },
         "@peter Do you have apples?": {
-            "en": "Do you have apples?"
+            "en": "Do you have apples?",
+            "key": "peterdoyou-0767"
         },
         "@employee I don't know why everyone wants apples today.": {
-            "en": "I don't know why everyone wants apples today."
+            "en": "I don't know why everyone wants apples today.",
+            "key": "employeeid-861b"
         },
         "@employee Unfortunately, we don't have any more.": {
-            "en": "Unfortunately, we don't have any more."
+            "en": "Unfortunately, we don't have any more.",
+            "key": "employeeun-c980"
         },
         "@peter I need eggs.": {
-            "en": "I need eggs."
+            "en": "I need eggs.",
+            "key": "peterineed-eee4"
         },
         "@employee How many eggs do you want?": {
-            "en": "How many eggs do you want?"
-        },
-        "@peter I am looking for the bread?": {
-            "en": "I am looking for the bread?"
+            "en": "How many eggs do you want?",
+            "key": "employeeho-744d"
         },
         "@employee Unfortunately, we don't have bread anymore today.": {
-            "en": "Unfortunately, we don't have bread anymore today."
+            "en": "Unfortunately, we don't have bread anymore today.",
+            "key": "employeeun-97fa"
         },
         "@employee But there's a bakery nearby.": {
-            "en": "But there's a bakery nearby."
+            "en": "But there's a bakery nearby.",
+            "key": "employeebu-fa66"
         },
         "@peter Can I have a bottle of wine?": {
-            "en": "Can I have a bottle of wine?"
+            "en": "Can I have a bottle of wine?",
+            "key": "petercanih-8718"
         },
         "@employee How old are you?": {
-            "en": "How old are you?"
+            "en": "How old are you?",
+            "key": "employeeho-6bfb"
         },
         "@peter I am 10 years old.": {
-            "en": "I am 10 years old."
+            "en": "I am 10 years old.",
+            "key": "peteriamye-11e8"
         },
         "@peter I am... 11 years old!": {
-            "en": "I am... 11 years old!"
+            "en": "I am... 11 years old!",
+            "key": "peteriamye-219a"
         },
         "@employee Sorry, you're too young to buy wine.": {
-            "en": "Sorry, you're too young to buy wine."
+            "en": "Sorry, you're too young to buy wine.",
+            "key": "employeeso-7c6f"
         },
         "@peter I'll buy my favorite chocolate.": {
-            "en": "I'll buy my favorite chocolate."
+            "en": "I'll buy my favorite chocolate.",
+            "key": "peterillbu-a1ca"
         },
         "@peter That's all, thank you.": {
-            "en": "That's all, thank you."
+            "en": "That's all, thank you.",
+            "key": "peterthats-cd81"
         },
         "You leave the supermarket.": {
-            "en": "You leave the supermarket."
+            "en": "You leave the supermarket.",
+            "key": "youleaveth-6cf9"
         },
         "You enter the bakery.": {
-            "en": "You enter the bakery."
+            "en": "You enter the bakery.",
+            "key": "youenterth-ebfb"
         },
         "@baker Hello Peter, what would you like?": {
-            "en": "Hello Peter, what would you like?"
+            "en": "Hello Peter, what would you like?",
+            "key": "bakerhello-be6d"
         },
         "Sorry, this is a bakery, we don't sell apples.": {
-            "en": "Sorry, this is a bakery, we don't sell apples."
+            "en": "Sorry, this is a bakery, we don't sell apples.",
+            "key": "sorrythisi-857b"
         },
         "@peter This pastry, please.": {
-            "en": "This pastry, please."
+            "en": "This pastry, please.",
+            "key": "peterthisp-cd0b"
         },
         "@peter I would like this bread, please.": {
-            "en": "I would like this bread, please."
+            "en": "I would like this bread, please.",
+            "key": "peteriwoul-6b10"
         },
         "@baker See you soon, Peter!": {
-            "en": "See you soon, Peter!"
+            "en": "See you soon, Peter!",
+            "key": "bakerseeyo-8da2"
         },
         "@peter I'd like some apples.": {
-            "en": "I'd like some apples."
+            "en": "I'd like some apples.",
+            "key": "peteridlik-3a06"
         },
         "@seller Sorry, we just sold the last apples to your music teacher.": {
-            "en": "Sorry, we just sold the last apples to your music teacher."
-        },
-        "Maybe you want you like pears instead?": {
-            "en": "Maybe you want you like pears instead?"
+            "en": "Sorry, we just sold the last apples to your music teacher.",
+            "key": "sellersorr-fdfb"
         },
         "@peter Some pears, please.": {
-            "en": "Some pears, please."
+            "en": "Some pears, please.",
+            "key": "petersomep-ef2e"
         },
         "@seller How many tomatoes do you want?": {
-            "en": "How many tomatoes do you want?"
+            "en": "How many tomatoes do you want?",
+            "key": "sellerhowm-6cf2"
         },
         "@peter Three tomatoes, please.": {
-            "en": "Three tomatoes, please."
+            "en": "Three tomatoes, please.",
+            "key": "peterthree-a842"
         },
         "@peter Four tomatoes, please.": {
-            "en": "Four tomatoes, please."
+            "en": "Four tomatoes, please.",
+            "key": "peterfourt-4490"
         },
         "@peter Five tomatoes, please.": {
-            "en": "Five tomatoes, please."
+            "en": "Five tomatoes, please.",
+            "key": "peterfivet-534f"
         },
         "Peter puts the tomatoes in his bag.": {
-            "en": "Peter puts the tomatoes in his bag."
+            "en": "Peter puts the tomatoes in his bag.",
+            "key": "peterputst-84b7"
         },
         "@peter I'll take two carrots.": {
-            "en": "I'll take two carrots."
+            "en": "I'll take two carrots.",
+            "key": "peterillta-6559"
         },
         "@seller See you soon!": {
-            "en": "See you soon!"
+            "en": "See you soon!",
+            "key": "sellerseey-1baa"
         },
         "@peter Can you help me? I really need apples.": {
-            "en": "Can you help me? I really need apples."
+            "en": "Can you help me? I really need apples.",
+            "key": "petercanyo-bbd8"
         },
         "@teacher I'll trade you these apples for some pears. Do you have any?": {
-            "en": "I'll trade you these apples for some pears. Do you have any?"
+            "en": "I'll trade you these apples for some pears. Do you have any?",
+            "key": "teacherill-15f3"
         },
         "@peter Yes.": {
-            "en": "Yes."
+            "en": "Yes.",
+            "key": "peteryes-2ccb"
         },
         "@teacher Great, I love pears too! Here are your apples.": {
-            "en": "Great, I love pears too! Here are your apples."
+            "en": "Great, I love pears too! Here are your apples.",
+            "key": "teachergre-daa3"
         },
         "@teacher See you on Monday, Peter!": {
-            "en": "See you on Monday, Peter!"
+            "en": "See you on Monday, Peter!",
+            "key": "teachersee-a351"
         },
         "@peter Bye!": {
-            "en": "Bye!"
+            "en": "Bye!",
+            "key": "peterbye-d57c"
         },
         "@teacher That's too bad. Maybe next time.": {
-            "en": "That's too bad. Maybe next time."
+            "en": "That's too bad. Maybe next time.",
+            "key": "teachertha-006b"
         },
         "You come back home. Your mom looks at your groceries.": {
-            "en": "You come back home. Your mom looks at your groceries."
+            "en": "You come back home. Your mom looks at your groceries.",
+            "key": "youcomebac-8358"
         },
         "@mom Let's see what you bought!": {
-            "en": "Let's see what you bought!"
+            "en": "Let's see what you bought!",
+            "key": "momletssee-7d13"
         },
         "@mom Great, you have the apples! I'll make an apple pie.": {
-            "en": "Great, you have the apples! I'll make an apple pie."
+            "en": "Great, you have the apples! I'll make an apple pie.",
+            "key": "momgreatyo-21ee"
         },
         "@mom No apples? Well, I can make a pear pie instead.": {
-            "en": "No apples? Well, I can make a pear pie instead."
+            "en": "No apples? Well, I can make a pear pie instead.",
+            "key": "momnoapple-c542"
         },
         "@mom No apples or pears? I can use the chocolate to make a chocolate cake.": {
-            "en": "No apples or pears? I can use the chocolate to make a chocolate cake."
+            "en": "No apples or pears? I can use the chocolate to make a chocolate cake.",
+            "key": "momnoapple-0262"
         },
         "@mom No fruit? So we won't have any dessert today.": {
-            "en": "No fruit? So we won't have any dessert today."
+            "en": "No fruit? So we won't have any dessert today.",
+            "key": "momnofruit-dba7"
         },
         "@mom Thank you for the eggs!": {
-            "en": "Thank you for the eggs!"
+            "en": "Thank you for the eggs!",
+            "key": "momthankyo-76fa"
         },
         "@mom It looks like you forgot the eggs.": {
-            "en": "It looks like you forgot the eggs."
+            "en": "It looks like you forgot the eggs.",
+            "key": "momitlooks-0520"
         },
         "@mom Nice, you have the tomatoes!": {
-            "en": "Nice, you have the tomatoes!"
+            "en": "Nice, you have the tomatoes!",
+            "key": "momniceyou-3a5b"
         },
         "@mom Where are the tomatoes?": {
-            "en": "Where are the tomatoes?"
+            "en": "Where are the tomatoes?",
+            "key": "momwherear-e4d2"
         },
         "@mom The bread smells good.": {
-            "en": "The bread smells good."
+            "en": "The bread smells good.",
+            "key": "momthebrea-7391"
         },
         "@mom You didn't buy bread?": {
-            "en": "You didn't buy bread?"
+            "en": "You didn't buy bread?",
+            "key": "momyoudidn-ce2b"
         },
         "Excellent job! You have got everything on the list!": {
-            "en": "Excellent job! You have got everything on the list!"
+            "en": "Excellent job! You have got everything on the list!",
+            "key": "excellentj-c873"
         },
         "But maybe you could have bought something for you?": {
-            "en": "But maybe you could have bought something for you?"
+            "en": "But maybe you could have bought something for you?",
+            "key": "butmaybeyo-3f1e"
         },
         "And you still had enough coins to buy something you liked.": {
-            "en": "And you still had enough coins to buy something you liked."
+            "en": "And you still had enough coins to buy something you liked.",
+            "key": "andyoustil-5405"
         },
         "You mom smiles warmly.": {
-            "en": "You mom smiles warmly."
+            "en": "You mom smiles warmly.",
+            "key": "youmomsmil-1d7f"
         },
         "@mom You did a great job, Peter. Thank you!": {
-            "en": "You did a great job, Peter. Thank you!"
+            "en": "You did a great job, Peter. Thank you!",
+            "key": "momyoudida-7c3d"
         },
         "@mom After dinner, you can play with your toys again.": {
-            "en": "After dinner, you can play with your toys again."
+            "en": "After dinner, you can play with your toys again.",
+            "key": "momafterdi-4592"
         },
         "Good work! You got most of the items.": {
-            "en": "Good work! You got most of the items."
+            "en": "Good work! You got most of the items.",
+            "key": "goodworkyo-925a"
         },
         "@mom It's not perfect, but you did well, Peter. Thank you!": {
-            "en": "It's not perfect, but you did well, Peter. Thank you!"
+            "en": "It's not perfect, but you did well, Peter. Thank you!",
+            "key": "momitsnotp-15b7"
         },
         "@mom Lots of things are missing.": {
-            "en": "Lots of things are missing."
+            "en": "Lots of things are missing.",
+            "key": "momlotsoft-361d"
         },
         "@mom What are we going to have for dinner?": {
-            "en": "What are we going to have for dinner?"
+            "en": "What are we going to have for dinner?",
+            "key": "momwhatare-d550"
         },
         "@mom It's okay, Peter. I'm sure you'll do better next time.": {
-            "en": "It's okay, Peter. I'm sure you'll do better next time."
+            "en": "It's okay, Peter. I'm sure you'll do better next time.",
+            "key": "momitsokay-fe97"
         },
         "Leave the bedroom": {
             "audio": false,
@@ -525,6 +642,58 @@
         "No": {
             "audio": false,
             "en": "No"
+        },
+        "The supermarket is right in front of you.": {
+            "en": "The supermarket is right in front of you.",
+            "key": "thesuperma-bcaa"
+        },
+        "You enter the supermarket.": {
+            "en": "You enter the supermarket.",
+            "key": "youenterth-9b3a"
+        },
+        "It's hard to find what you want.": {
+            "en": "It's hard to find what you want.",
+            "key": "itshardtof-b8ae"
+        },
+        "An employee asks if you need help.": {
+            "en": "An employee asks if you need help.",
+            "key": "anemployee-0c88"
+        },
+        "It smells like fresh bread": {
+            "en": "It smells like fresh bread",
+            "key": "itsmellsli-7362"
+        },
+        "You see your favorite pastry.": {
+            "en": "You see your favorite pastry.",
+            "key": "youseeyour-91a6"
+        },
+        "The baker smiles at you.": {
+            "en": "The baker smiles at you.",
+            "key": "thebakersm-0f1a"
+        },
+        "@seller Hello Peter!": {
+            "en": "Hello Peter!",
+            "key": "sellerhell-f36b"
+        },
+        "She is holding a bag of apples.": {
+            "en": "She is holding a bag of apples.",
+            "key": "sheisholdi-1150"
+        },
+        "She waves at you.": {
+            "en": "She waves at you.",
+            "key": "shewavesat-4c4d"
+        },
+        "@teacher Hi Peter, what a surprise to see you here!": {
+            "en": "Hi Peter, what a surprise to see you here!",
+            "key": "teacherhip-d13c"
+        },
+        "@peter I am looking for the bread.": {
+            "en": "I am looking for the bread.",
+            "key": "peteriamlo-30a1"
+        },
+        "@seller Maybe you want pears instead?": {
+            "en": "Maybe you want pears instead?",
+            "key": "sellermayb-3f23"
         }
     }
 }

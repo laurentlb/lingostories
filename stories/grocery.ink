@@ -156,7 +156,7 @@ You walk down the street until the end.
     ** [12 eggs (9🪙)]
         ~ buy(eggs, 9)
 * [Bread]
-    @peter I am looking for the bread?
+    @peter I am looking for the bread.
     @employee Unfortunately, we don't have bread anymore today.
     @employee But there's a bakery nearby.
 * [Wine]
@@ -219,7 +219,7 @@ You enter the bakery.
 * [Apples]
     @peter I'd like some apples.
     @seller Sorry, we just sold the last apples to your music teacher.
-    Maybe you want you like pears instead?
+    @seller Maybe you want pears instead?
     ~ teacher = true
 * [Pears (5🪙)]
     @peter Some pears, please.
