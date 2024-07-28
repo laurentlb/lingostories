@@ -111,6 +111,23 @@ function shouldShowMinigame(content, line) {
     return Math.random() < 0.2;
 }
 
+function handleLine(line, useSpoiler) {
+    const audio = line["audio"];
+    if (!audio) {
+        showTextOrImage(line, useSpoiler);
+        return;
+    }
+
+    const textOnly = settings.readingMode() === "textOnly";
+    if (textOnly) {
+        next();
+    } else {
+        soundEffect(settings, audio, () => {
+            next();
+        });
+    }
+}
+
 function showTextOrImage(line, useSpoiler) {
     const image = line["img"];
     if (!image) {
@@ -150,6 +167,11 @@ function showTextOrImage(line, useSpoiler) {
 }
 
 function showText(line, useSpoiler) {
+    if (line[story.lang] === "") {
+        next();
+        return;
+    }
+
     const textOnly = settings.readingMode() === "textOnly";
 
     const main = document.querySelector('.story');
@@ -295,6 +317,7 @@ function showChoices(choices) {
             textIcon.onclick = null;
             container.appendChild(textIcon);
             container.appendChild(elt);
+            container.remove();
 
             story.ChooseChoiceIndex(choice.index);
             didShowChoices = false;
@@ -512,12 +535,12 @@ function next() {
         const y = contentBottomEdgeY();
         while (story.canContinue) {
             const line = story.Continue();
-            showTextOrImage(line, useSpoiler);
+            handleLine(line, useSpoiler);
         }
         showChoices(story.currentChoices);
     } else {
         const line = story.Continue();
-        showTextOrImage(line, useSpoiler);
+        handleLine(line, useSpoiler);
     }
     updateButtons();
 };
