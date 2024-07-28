@@ -119,9 +119,7 @@ function handleLine(line, useSpoiler) {
     }
 
     const textOnly = settings.readingMode() === "textOnly";
-    if (textOnly) {
-        next();
-    } else {
+    if (!textOnly) {
         soundEffect(settings, audio, () => {
             next();
         });
@@ -532,12 +530,13 @@ function next() {
     const useSpoiler = settings.readingMode() === "audioFirst";
     const textOnly = settings.readingMode() === "textOnly";
     if (textOnly) {
-        const y = contentBottomEdgeY();
         while (story.canContinue) {
             const line = story.Continue();
             handleLine(line, useSpoiler);
         }
-        showChoices(story.currentChoices);
+        if (!didShowChoices) {
+            showChoices(story.currentChoices);
+        }
     } else {
         const line = story.Continue();
         handleLine(line, useSpoiler);

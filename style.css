@@ -564,14 +564,14 @@ details {
     bottom: 106px;
     z-index: 50;
     border: 1px solid var(--border-color);
-    background: var(--dark-bg-color);
-    max-width: 600px;
+    background: #222;
+    max-width: 588px; /* 600px - 2*6px padding in middle */
     width: 100%;
-    margin: 6px; /* like the padding in .middle */
     justify-content: space-around;
     padding: 4px;
     align-items: center;
     border-radius: 16px;
+    box-shadow: 2px 4px 10px 0px #000;
 
     .item {
         width: 48px;

@@ -1,7 +1,7 @@
 {
     "items": ["money", "inventory"],
     "speakers": {
-        "mum": {
+        "mom": {
             "avatar": "woman.svg",
             "color": "#a26"
         },
@@ -15,15 +15,15 @@
             "color": "#484"
         },
         "employee": {
-            "avatar": "man.svg",
+            "avatar": "man5.svg",
             "color": "#a62"
         },
         "seller": {
-            "avatar": "man.svg",
+            "avatar": "man2.svg",
             "color": "#288"
         },
         "baker": {
-            "avatar": "man.svg",
+            "avatar": "man3.svg",
             "color": "#a22"
         }
     },
