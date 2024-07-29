@@ -22,9 +22,10 @@ VAR treats = 0
 
 
 === introduction ===
+
 It is Saturday afternoon.
-You live in a village.
-It's a little cold outside.
+You are new to the village because your family has just moved here.
+It is a bit cold outside today.
 So you are playing with your toys in your bedroom.
 Your mom calls you.
 
@@ -41,8 +42,8 @@ Your mom calls you.
 You leave the bedroom and go to your mom.
 
 @mom Can you please go shopping for dinner?
-@mom Grandma is visiting, so it's really important to get everything.
-@mom You have to buy three tomatoes, four eggs and five apples.
+@mom Grandma is visiting us tonight, so we need five apples to make her favorite apple pie.
+@mom We also need three tomatoes and four eggs for the dinner.
 @mom You'll find everything at the supermarket.
 ~ money += 17
 @mom Here are 17 coins, I think that should be enough.
@@ -55,11 +56,12 @@ You leave the bedroom and go to your mom.
 * @peter How do I get to the supermarket?
     @mom You'll find it at the end of the street, just turn right.
     @mom It's on the main square.
+    @mom Remember, we went there last week.
 * @peter Can you repeat the shopping list?
     @mom Sure. We need three tomatoes, four eggs, five apples, and bread.
 * @peter Can I buy something for myself?
     @peter I'd like to get some chocolate or maybe a pastry.
-    @mom If you have enough coins, you can buy something for you.
+    @mom If you have enough coins, you can buy something for yourself.
     @mom But first, please buy the food for dinner.
 * [Leave]
     @peter Alright, I'm going now.
@@ -96,13 +98,13 @@ You walk down the street until the end.
     You continue straight ahead.
     -> lost
 + [Go back]
-     You decide to go back.
     You are afraid of getting lost.
+    You decide to go back.
     But after a while, it starts to feel familiar.
     -> main_square
 
 === main_square ===
-{!You reach the main square.|There are many people on the main square.|A street musician is playing guitar on the main square.|On the main square, a group of tourists is taking photos of the old buildings.}
+{!You reach the main square.|A street musician is playing guitar on the main square.|There are many people on the main square.|On the main square, a group of tourists is taking photos of the old buildings.}
 {The supermarket is right in front of you.|}
 
 + [Go to the supermarket]
@@ -150,10 +152,13 @@ You walk down the street until the end.
     @peter I need eggs.
     @employee How many eggs do you want?
     ** [4 eggs (4🪙)]
+        @peter Four.
         ~ buy(eggs, 4)
     ** [6 eggs (6🪙)]
+        @peter Six.
         ~ buy(eggs, 6)
     ** [12 eggs (9🪙)]
+        @peter Twelve.
         ~ buy(eggs, 9)
 * [Bread]
     @peter I am looking for the bread.
@@ -182,9 +187,10 @@ You walk down the street until the end.
 You enter the bakery.
 {It smells like fresh bread|}
 {You see your favorite pastry.|}
-{The baker smiles at you.|}
+{You recognize the baker.|}
+{He smiles at you.|}
 
-@baker Hello Peter, what would you like?
+@baker Hello Peter, what would you like today?
 
 - (loop)
 
@@ -211,18 +217,22 @@ You enter the bakery.
 
 === market ===
 
-{@seller Hello Peter!|}
+{-> music_teacher_first|}
 
-{@seller What would you like today?|@seller Do you want something else?}
+{You approach the man who sells fruits and vegetables.|}
+
+{@seller Hello! What would you like?|@seller Do you want something else?}
 
 - (loop)
 * [Apples]
     @peter I'd like some apples.
-    @seller Sorry, we just sold the last apples to your music teacher.
-    @seller Maybe you want pears instead?
+    @seller Sorry, we just sold the last apples to that woman.
+    @peter Ms. Melody?
+    @peter Oh no, I have to find a solution!
+    @seller Maybe you can use pears instead?
     ~ teacher = true
 * [Pears (5🪙)]
-    @peter Some pears, please.
+    @peter Can I get the pears, please?
     ~ buy(pears, 5)
 + {not (inventory ? tomatoes)} [Tomatoes]
     @seller How many tomatoes do you want?
@@ -247,12 +257,32 @@ You enter the bakery.
 
 - -> loop
 
+=== music_teacher_first ===
+
+You decide to go to the market.
+When you arrive near the fruits and vegetables, you recognize someone.
+
+@teacher Hi Peter, what a surprise to see you here!
+This is your music teacher.
+@peter Hello Ms. Melody!
+@teacher What are you doing here?
+
+* @peter I'm looking for apples.
+* @peter I'm buying food for dinner.
+-
+
+@peter We'll make an apple pie for my Grandma.
+@teacher Great! I love apples too. I'm going to make apple sauce.
+@teacher See you later! I'll stay a bit on the square to listen to the music.
+
+-> market
+
 === music_teacher ===
 
-{As you look around, you see your music teacher.|Your music teacher is still here.}
+{As you look around, you find your music teacher.|Your music teacher is still here.}
 {She is holding a bag of apples.|}
-{She waves at you.|}
-{@teacher Hi Peter, what a surprise to see you here!|}
+{She is listening to the guitar.|}
+{@teacher Hey Peter, what's up?|}
 
 + [Ask for apples]
     @peter Can you help me? I really need apples.
@@ -323,13 +353,14 @@ You come back home. Your mom looks at your groceries.
 - score >= 25:
     Excellent job! You have got everything on the list!
     {treats == 0:
-      But maybe you could have bought something for you?
+      But maybe you could have bought something for yourself?
      - else:
       And you still had enough coins to buy something you liked.
     }
-    You mom smiles warmly.
+    Your mom smiles warmly.
     @mom You did a great job, Peter. Thank you!
     @mom After dinner, you can play with your toys again.
+    @mom But first, let's make the apple pie!
 - score > 15:
     Good work! You got most of the items.
     @mom It's not perfect, but you did well, Peter. Thank you!
