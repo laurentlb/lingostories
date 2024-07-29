@@ -71,6 +71,7 @@ You leave the bedroom and go to your mom.
 === travel ===
 
 You leave the house.
+$image grocery-house.jpg
 It is sunny with a bit of wind.
 It's not that cold.
 You see children playing in the park as you pass by.
@@ -105,6 +106,7 @@ You walk down the street until the end.
 
 === main_square ===
 {!You reach the main square.|A street musician is playing guitar on the main square.|There are many people on the main square.|On the main square, a group of tourists is taking photos of the old buildings.}
+{!\$image grocery-square.jpg}
 {The supermarket is right in front of you.|}
 
 + [Go to the supermarket]
@@ -260,6 +262,7 @@ You enter the bakery.
 === music_teacher_first ===
 
 You decide to go to the market.
+$image grocery-market.jpg
 When you arrive near the fruits and vegetables, you recognize someone.
 
 @teacher Hi Peter, what a surprise to see you here!
@@ -361,6 +364,7 @@ You come back home. Your mom looks at your groceries.
     @mom You did a great job, Peter. Thank you!
     @mom After dinner, you can play with your toys again.
     @mom But first, let's make the apple pie!
+    $image grocery-pie.jpg
 - score > 15:
     Good work! You got most of the items.
     @mom It's not perfect, but you did well, Peter. Thank you!
