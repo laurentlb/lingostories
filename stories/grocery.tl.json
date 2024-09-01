@@ -39,12 +39,12 @@
         "@mom Peter, please come here.": {
             "en": "Peter, please come here.",
             "key": "mompeterpl-46c9",
-            "fr": "Pierre, viens ici s'il te pla\u00eet."
+            "fr": "Pierre, viens ici s'il te plaît."
         },
         "After a few minutes, you find another crossroad.": {
             "en": "After a few minutes, you find another crossroad.",
             "key": "afterafewm-77c5",
-            "fr": "Apr\u00e8s quelques minutes, tu arrives \u00e0 un autre croisement."
+            "fr": "Après quelques minutes, tu arrives à un autre croisement."
         },
         "You feel lost and see another crossroad.": {
             "en": "You feel lost and see another crossroad.",
@@ -54,7 +54,7 @@
         "@peter Is it the street on the right? I'm not sure.": {
             "en": "Is it the street on the right? I'm not sure.",
             "key": "peterisitt-70b8",
-            "fr": "Est-ce que c'est la rue \u00e0 droite ? Je ne suis pas s\u00fbr."
+            "fr": "Est-ce que c'est la rue à droite ? Je ne suis pas sûr."
         },
         "You reach the main square.": {
             "en": "You reach the main square.",
@@ -74,7 +74,7 @@
         "On the main square, a group of tourists is taking photos of the old buildings.": {
             "en": "On the main square, a group of tourists is taking photos of the old buildings.",
             "key": "onthemains-719c",
-            "fr": "Sur la place principale, un groupe de touristes prend des photos des vieux b\u00e2timents."
+            "fr": "Sur la place principale, un groupe de touristes prend des photos des vieux bâtiments."
         },
         "@employee What are you looking for?": {
             "en": "What are you looking for?",
@@ -94,7 +94,7 @@
         "Your music teacher is still here.": {
             "en": "Your music teacher is still here.",
             "key": "yourmusict-803c",
-            "fr": "Ta prof de musique est toujours l\u00e0."
+            "fr": "Ta prof de musique est toujours là."
         },
         "It looks like you don't have enough money.": {
             "en": "It looks like you don't have enough money.",
@@ -104,7 +104,7 @@
         "It is Saturday afternoon.": {
             "en": "It is Saturday afternoon.",
             "key": "itissaturd-4cea",
-            "fr": "Nous sommes samedi apr\u00e8s-midi."
+            "fr": "Nous sommes samedi après-midi."
         },
         "So you are playing with your toys in your bedroom.": {
             "en": "So you are playing with your toys in your bedroom.",
@@ -114,7 +114,7 @@
         "Your mom calls you.": {
             "en": "Your mom calls you.",
             "key": "yourmomcal-dbc6",
-            "fr": "Ta m\u00e8re t'appelle."
+            "fr": "Ta mère t'appelle."
         },
         "You play for a few more minutes.": {
             "en": "You play for a few more minutes.",
@@ -129,22 +129,22 @@
         "You leave the bedroom and go to your mom.": {
             "en": "You leave the bedroom and go to your mom.",
             "key": "youleaveth-9281",
-            "fr": "Tu quittes la chambre et tu vas voir ta m\u00e8re."
+            "fr": "Tu quittes la chambre et tu vas voir ta mère."
         },
         "@mom Can you please go shopping for dinner?": {
             "en": "Can you please go shopping for dinner?",
             "key": "momcanyoup-b090",
-            "fr": "Peux-tu, s'il te pla\u00eet, aller faire les courses pour le d\u00eener ?"
+            "fr": "Peux-tu, s'il te plaît, aller faire les courses pour le dîner ?"
         },
         "@mom You'll find everything at the supermarket.": {
             "en": "You'll find everything at the supermarket.",
             "key": "momyoullfi-3998",
-            "fr": "Tu trouveras tout au supermarch\u00e9."
+            "fr": "Tu trouveras tout au supermarché."
         },
         "@mom Here are 17 coins, I think that should be enough.": {
             "en": "Here are 17 coins, I think that should be enough.",
             "key": "momhereare-ba9e",
-            "fr": "Voici 17 pi\u00e8ces, je pense que \u00e7a va suffire."
+            "fr": "Voici 17 pièces, je pense que ça va suffire."
         },
         "@mom Oh, and we need bread too!": {
             "en": "Oh, and we need bread too!",
@@ -154,7 +154,7 @@
         "@peter Can I stay home?": {
             "en": "Can I stay home?",
             "key": "petercanis-4e1e",
-            "fr": "Est-ce que je peux rester \u00e0 la maison ?"
+            "fr": "Est-ce que je peux rester à la maison ?"
         },
         "@peter I'd love to play more.": {
             "en": "I'd love to play more.",
@@ -164,17 +164,17 @@
         "@mom No, it's important to have food for dinner. You can play later.": {
             "en": "No, it's important to have food for dinner. You can play later.",
             "key": "momnoitsim-d5db",
-            "fr": "Non, c'est important d'avoir \u00e0 manger pour le d\u00eener, tu pourras jouer plus tard."
+            "fr": "Non, c'est important d'avoir à manger pour le dîner, tu pourras jouer plus tard."
         },
         "@peter How do I get to the supermarket?": {
             "en": "How do I get to the supermarket?",
             "key": "peterhowdo-a868",
-            "fr": "Comment aller au supermarch\u00e9 ?"
+            "fr": "Comment aller au supermarché ?"
         },
         "@mom You'll find it at the end of the street, just turn right.": {
             "en": "Go to the end of the street and turn right.",
             "key": "momyoullfi-3dcc",
-            "fr": "Va au bout de la rue et tourne \u00e0 droite."
+            "fr": "Va au bout de la rue et tourne à droite."
         },
         "@mom It's on the main square.": {
             "en": "It's on the main square.",
@@ -184,12 +184,12 @@
         "@peter Can you repeat the shopping list?": {
             "en": "Can you repeat the shopping list?",
             "key": "petercanyo-a272",
-            "fr": "Tu peux r\u00e9p\u00e9ter la liste de courses ?"
+            "fr": "Tu peux répéter la liste de courses ?"
         },
         "@mom Sure. We need three tomatoes, four eggs, five apples, and bread.": {
             "en": "Sure. We need three tomatoes, four eggs, five apples, and bread.",
             "key": "momsurewen-7b14",
-            "fr": "Bien s\u00fbr. Il nous faut trois tomates, quatre \u0153ufs, cinq pommes et du pain."
+            "fr": "Bien sûr. Il nous faut trois tomates, quatre œufs, cinq pommes et du pain."
         },
         "@peter Can I buy something for myself?": {
             "en": "Can I buy something for myself?",
@@ -199,17 +199,17 @@
         "@peter I'd like to get some chocolate or maybe a pastry.": {
             "en": "I'd like to get some chocolate or maybe a pastry.",
             "key": "peteridlik-7570",
-            "fr": "Je voudrais du chocolat ou peut-\u00eatre une p\u00e2tisserie."
+            "fr": "Je voudrais du chocolat ou peut-être une pâtisserie."
         },
         "@mom But first, please buy the food for dinner.": {
             "en": "But first, please buy the food for dinner.",
             "key": "mombutfirs-1550",
-            "fr": "Mais d'abord, ach\u00e8te la nourriture pour le d\u00eener."
+            "fr": "Mais d'abord, achète la nourriture pour le dîner."
         },
         "@peter Alright, I'm going now.": {
             "en": "Alright, I'm going now.",
             "key": "peteralrig-0c0f",
-            "fr": "Tr\u00e8s bien, j'y vais maintenant."
+            "fr": "Très bien, j'y vais maintenant."
         },
         "You leave the house.": {
             "en": "You leave the house.",
@@ -224,7 +224,7 @@
         "It's not that cold.": {
             "en": "It's not that cold.",
             "key": "itsnotthat-0fba",
-            "fr": "Il ne fait pas si froid que \u00e7a."
+            "fr": "Il ne fait pas si froid que ça."
         },
         "You see children playing in the park as you pass by.": {
             "en": "You see children playing in the park as you pass by.",
@@ -234,22 +234,22 @@
         "You walk down the street until the end.": {
             "en": "You walk down the street until the end.",
             "key": "youwalkdow-37dd",
-            "fr": "Tu marches jusqu'\u00e0 la fin de la rue."
+            "fr": "Tu marches jusqu'à la fin de la rue."
         },
         "@peter Which way is it? I think I should turn left now.": {
             "en": "Which way is it? I think I should turn left now.",
             "key": "peterwhich-5718",
-            "fr": "C'est par o\u00f9 ? Je pense qu'il faut tourner \u00e0 gauche maintenant."
+            "fr": "C'est par où ? Je pense qu'il faut tourner à gauche maintenant."
         },
         "You take the street on the left.": {
             "en": "You take the street on the left.",
             "key": "youtakethe-ef60",
-            "fr": "Tu prends la rue \u00e0 gauche."
+            "fr": "Tu prends la rue à gauche."
         },
         "You take the street on the right.": {
             "en": "You take the street on the right.",
             "key": "youtakethe-9e8b",
-            "fr": "Tu prends la rue \u00e0 droite."
+            "fr": "Tu prends la rue à droite."
         },
         "You continue straight ahead.": {
             "en": "You continue straight ahead.",
@@ -259,7 +259,7 @@
         "You decide to go back.": {
             "en": "You decide to go back.",
             "key": "youdecidet-8d68",
-            "fr": "Tu d\u00e9cides de revenir sur tes pas."
+            "fr": "Tu décides de revenir sur tes pas."
         },
         "You are afraid of getting lost.": {
             "en": "You are afraid of getting lost.",
@@ -269,22 +269,22 @@
         "But after a while, it starts to feel familiar.": {
             "en": "But after a while, it starts to feel familiar.",
             "key": "butafteraw-0835",
-            "fr": "Mais au bout d'un moment, \u00e7a commence \u00e0 te sembler familier."
+            "fr": "Mais au bout d'un moment, ça commence à te sembler familier."
         },
         "The chocolate tastes delicious.": {
             "en": "The chocolate tastes delicious.",
             "key": "thechocola-c4bf",
-            "fr": "Le chocolat est d\u00e9licieux."
+            "fr": "Le chocolat est délicieux."
         },
         "The pastry is really good.": {
             "en": "The pastry is really good.",
             "key": "thepastryi-9cb0",
-            "fr": "La p\u00e2tisserie est vraiment bonne."
+            "fr": "La pâtisserie est vraiment bonne."
         },
         "@peter I still have some coins to spend.": {
             "en": "I still have some coins to spend.",
             "key": "peteristil-627c",
-            "fr": "J'ai encore quelques pi\u00e8ces \u00e0 d\u00e9penser."
+            "fr": "J'ai encore quelques pièces à dépenser."
         },
         "@peter I'd like some tomatoes.": {
             "en": "I'd like some tomatoes.",
@@ -294,12 +294,12 @@
         "@employee Sorry, we're out of tomatoes.": {
             "en": "Sorry, we're out of tomatoes.",
             "key": "employeeso-f69c",
-            "fr": "D\u00e9sol\u00e9, nous n'avons plus de tomates."
+            "fr": "Désolé, nous n'avons plus de tomates."
         },
         "@employee But they should have tomatoes on the market.": {
             "en": "But they should have tomatoes on the market.",
             "key": "employeebu-1d20",
-            "fr": "Mais ils devraient avoir des tomates au march\u00e9."
+            "fr": "Mais ils devraient avoir des tomates au marché."
         },
         "@peter Do you have apples?": {
             "en": "Do you have apples?",
@@ -319,12 +319,12 @@
         "@peter I need eggs.": {
             "en": "I need eggs.",
             "key": "peterineed-eee4",
-            "fr": "J'ai besoin d'\u0153ufs."
+            "fr": "J'ai besoin d'œufs."
         },
         "@employee How many eggs do you want?": {
             "en": "How many eggs do you want?",
             "key": "employeeho-744d",
-            "fr": "Combien d'\u0153ufs veux-tu ?"
+            "fr": "Combien d'œufs veux-tu ?"
         },
         "@employee Unfortunately, we don't have bread anymore today.": {
             "en": "Unfortunately, we don't have bread anymore today.",
@@ -344,7 +344,7 @@
         "@employee How old are you?": {
             "en": "How old are you?",
             "key": "employeeho-6bfb",
-            "fr": "Quel \u00e2ge as-tu ?"
+            "fr": "Quel âge as-tu ?"
         },
         "@peter I am 10 years old.": {
             "en": "I am 10 years old.",
@@ -359,12 +359,12 @@
         "@employee Sorry, you're too young to buy wine.": {
             "en": "Sorry, you're too young to buy wine.",
             "key": "employeeso-7c6f",
-            "fr": "D\u00e9sol\u00e9, tu es trop jeune pour acheter du vin."
+            "fr": "Désolé, tu es trop jeune pour acheter du vin."
         },
         "@peter I'll buy my favorite chocolate.": {
             "en": "I'll buy my favorite chocolate.",
             "key": "peterillbu-a1ca",
-            "fr": "J'ach\u00e8terai mon chocolat pr\u00e9f\u00e9r\u00e9."
+            "fr": "J'achèterai mon chocolat préféré."
         },
         "@peter That's all, thank you.": {
             "en": "That's all, thank you.",
@@ -374,7 +374,7 @@
         "You leave the supermarket.": {
             "en": "You leave the supermarket.",
             "key": "youleaveth-6cf9",
-            "fr": "Tu quittes le supermarch\u00e9."
+            "fr": "Tu quittes le supermarché."
         },
         "You enter the bakery.": {
             "en": "You enter the bakery.",
@@ -384,22 +384,22 @@
         "Sorry, this is a bakery, we don't sell apples.": {
             "en": "Sorry, this is a bakery, we don't sell apples.",
             "key": "sorrythisi-857b",
-            "fr": "D\u00e9sol\u00e9, c'est une boulangerie, nous ne vendons pas de pommes."
+            "fr": "Désolé, c'est une boulangerie, nous ne vendons pas de pommes."
         },
         "@peter This pastry, please.": {
             "en": "This pastry, please.",
             "key": "peterthisp-cd0b",
-            "fr": "Cette p\u00e2tisserie, s'il vous pla\u00eet."
+            "fr": "Cette pâtisserie, s'il vous plaît."
         },
         "@peter I would like this bread, please.": {
             "en": "I would like this bread, please.",
             "key": "peteriwoul-6b10",
-            "fr": "Je voudrais ce pain, s'il vous pla\u00eet."
+            "fr": "Je voudrais ce pain, s'il vous plaît."
         },
         "@baker See you soon, Peter!": {
             "en": "See you soon, Peter!",
             "key": "bakerseeyo-8da2",
-            "fr": "A bient\u00f4t, Pierre !"
+            "fr": "A bientôt, Pierre !"
         },
         "@peter I'd like some apples.": {
             "en": "I'd like some apples.",
@@ -414,17 +414,17 @@
         "@peter Three tomatoes, please.": {
             "en": "Three tomatoes, please.",
             "key": "peterthree-a842",
-            "fr": "Trois tomates, s'il vous pla\u00eet."
+            "fr": "Trois tomates, s'il vous plaît."
         },
         "@peter Four tomatoes, please.": {
             "en": "Four tomatoes, please.",
             "key": "peterfourt-4490",
-            "fr": "Quatre tomates, s'il vous pla\u00eet."
+            "fr": "Quatre tomates, s'il vous plaît."
         },
         "@peter Five tomatoes, please.": {
             "en": "Five tomatoes, please.",
             "key": "peterfivet-534f",
-            "fr": "Cinq tomates, s'il vous pla\u00eet."
+            "fr": "Cinq tomates, s'il vous plaît."
         },
         "Peter puts the tomatoes in his bag.": {
             "en": "Peter puts the tomatoes in his bag.",
@@ -439,7 +439,7 @@
         "@seller See you soon!": {
             "en": "See you soon!",
             "key": "sellerseey-1baa",
-            "fr": "\u00c0 bient\u00f4t !"
+            "fr": "À bientôt !"
         },
         "@peter Can you help me? I really need apples.": {
             "en": "Can you help me? I really need apples.",
@@ -449,7 +449,7 @@
         "@teacher I'll trade you these apples for some pears. Do you have any?": {
             "en": "I'll trade you these apples for some pears. Do you have any?",
             "key": "teacherill-15f3",
-            "fr": "Je t'\u00e9change ces pommes contre des poires. Tu en as ?"
+            "fr": "Je t'échange ces pommes contre des poires. Tu en as ?"
         },
         "@peter Yes.": {
             "en": "Yes.",
@@ -464,7 +464,7 @@
         "@teacher See you on Monday, Peter!": {
             "en": "See you on Monday, Peter!",
             "key": "teachersee-a351",
-            "fr": "\u00c0 lundi, Pierre !"
+            "fr": "À lundi, Pierre !"
         },
         "@peter Bye!": {
             "en": "Bye!",
@@ -474,17 +474,17 @@
         "@teacher That's too bad. Maybe next time.": {
             "en": "That's too bad. Maybe next time.",
             "key": "teachertha-006b",
-            "fr": "C'est dommage, ce sera peut-\u00eatre pour une prochaine fois."
+            "fr": "C'est dommage, ce sera peut-être pour une prochaine fois."
         },
         "You come back home. Your mom looks at your groceries.": {
             "en": "You come back home. Your mom looks at your groceries.",
             "key": "youcomebac-8358",
-            "fr": "Tu rentres \u00e0 la maison, ta m\u00e8re v\u00e9rifie tes courses."
+            "fr": "Tu rentres à la maison, ta mère vérifie tes courses."
         },
         "@mom Let's see what you bought!": {
             "en": "Let's see what you bought!",
             "key": "momletssee-7d13",
-            "fr": "Voyons ce que tu as achet\u00e9 !"
+            "fr": "Voyons ce que tu as acheté !"
         },
         "@mom Great, you have the apples! I'll make an apple pie.": {
             "en": "Great, you have the apples! I'll make an apple pie.",
@@ -494,12 +494,12 @@
         "@mom No apples? Well, I can make a pear pie instead.": {
             "en": "No apples? Well, I can make a pear pie instead.",
             "key": "momnoapple-c542",
-            "fr": "Pas de pommes ? Mais je peux faire une tarte aux poires \u00e0 la place."
+            "fr": "Pas de pommes ? Mais je peux faire une tarte aux poires à la place."
         },
         "@mom No apples or pears? I can use the chocolate to make a chocolate cake.": {
             "en": "No apples or pears? I can use the chocolate to make a chocolate cake.",
             "key": "momnoapple-0262",
-            "fr": "Pas de pommes ou de poires ? Je vais utiliser le chocolat et faire un g\u00e2teau au chocolat."
+            "fr": "Pas de pommes ou de poires ? Je vais utiliser le chocolat et faire un gâteau au chocolat."
         },
         "@mom No fruit? So we won't have any dessert today.": {
             "en": "No fruit? So we won't have any dessert today.",
@@ -509,12 +509,12 @@
         "@mom Thank you for the eggs!": {
             "en": "Thank you for the eggs!",
             "key": "momthankyo-76fa",
-            "fr": "Merci pour les \u0153ufs !"
+            "fr": "Merci pour les œufs !"
         },
         "@mom It looks like you forgot the eggs.": {
             "en": "It looks like you forgot the eggs.",
             "key": "momitlooks-0520",
-            "fr": "On dirait que tu as oubli\u00e9 les \u0153ufs."
+            "fr": "On dirait que tu as oublié les œufs."
         },
         "@mom Nice, you have the tomatoes!": {
             "en": "Nice, you have the tomatoes!",
@@ -524,7 +524,7 @@
         "@mom Where are the tomatoes?": {
             "en": "Where are the tomatoes?",
             "key": "momwherear-e4d2",
-            "fr": "O\u00f9 sont les tomates ?"
+            "fr": "Où sont les tomates ?"
         },
         "@mom The bread smells good.": {
             "en": "The bread smells good.",
@@ -534,7 +534,7 @@
         "@mom You didn't buy bread?": {
             "en": "You didn't buy bread?",
             "key": "momyoudidn-ce2b",
-            "fr": "Tu n'as pas achet\u00e9 de pain ?"
+            "fr": "Tu n'as pas acheté de pain ?"
         },
         "Excellent job! You have got everything on the list!": {
             "en": "Excellent job! You have got everything on the list!",
@@ -544,7 +544,7 @@
         "And you still had enough coins to buy something you liked.": {
             "en": "And you still had enough coins to buy something you liked.",
             "key": "andyoustil-5405",
-            "fr": "Et tu avais encore assez de pi\u00e8ces pour acheter quelque chose qui te plait."
+            "fr": "Et tu avais encore assez de pièces pour acheter quelque chose qui te plait."
         },
         "@mom You did a great job, Peter. Thank you!": {
             "en": "You did a great job, Peter. Thank you!",
@@ -554,12 +554,12 @@
         "@mom After dinner, you can play with your toys again.": {
             "en": "After dinner, you can play with your toys again.",
             "key": "momafterdi-4592",
-            "fr": "Apr\u00e8s le d\u00eener, tu pourras \u00e0 nouveau jouer avec tes jouets."
+            "fr": "Après le dîner, tu pourras à nouveau jouer avec tes jouets."
         },
         "Good work! You got most of the items.": {
             "en": "Good work! You got most of the items.",
             "key": "goodworkyo-925a",
-            "fr": "Bon travail, tu as r\u00e9cup\u00e9r\u00e9 la plupart des choses."
+            "fr": "Bon travail, tu as récupéré la plupart des choses."
         },
         "@mom It's not perfect, but you did well, Peter. Thank you!": {
             "en": "It's not perfect, but you did well, Peter. Thank you!",
@@ -574,12 +574,12 @@
         "@mom What are we going to have for dinner?": {
             "en": "What are we going to have for dinner?",
             "key": "momwhatare-d550",
-            "fr": "Qu'allons-nous manger pour le d\u00eener ?"
+            "fr": "Qu'allons-nous manger pour le dîner ?"
         },
         "@mom It's okay, Peter. I'm sure you'll do better next time.": {
             "en": "It's okay, Peter. I'm sure you'll do better next time.",
             "key": "momitsokay-fe97",
-            "fr": "Ce n'est pas grave, Pierre, je suis s\u00fbr que tu feras mieux la prochaine fois."
+            "fr": "Ce n'est pas grave, Pierre, je suis sûr que tu feras mieux la prochaine fois."
         },
         "Leave the bedroom": {
             "audio": false,
@@ -589,7 +589,7 @@
         "Keep playing": {
             "audio": false,
             "en": "Keep playing",
-            "fr": "Continuer \u00e0 jouer"
+            "fr": "Continuer à jouer"
         },
         "Leave": {
             "audio": false,
@@ -599,12 +599,12 @@
         "Go left": {
             "audio": false,
             "en": "Go left",
-            "fr": "Aller \u00e0 gauche"
+            "fr": "Aller à gauche"
         },
         "Go right": {
             "audio": false,
             "en": "Go right",
-            "fr": "Aller \u00e0 droite"
+            "fr": "Aller à droite"
         },
         "Go straight": {
             "audio": false,
@@ -614,22 +614,22 @@
         "Go back": {
             "audio": false,
             "en": "Go back",
-            "fr": "Revenir en arri\u00e8re"
+            "fr": "Revenir en arrière"
         },
         "Go to the supermarket": {
             "audio": false,
             "en": "Go to the supermarket",
-            "fr": "Aller au supermarch\u00e9"
+            "fr": "Aller au supermarché"
         },
         "Go to the bakery": {
             "audio": false,
             "en": "Go to the bakery",
-            "fr": "Aller \u00e0 la boulangerie"
+            "fr": "Aller à la boulangerie"
         },
         "Go to the outdoor market": {
             "audio": false,
             "en": "Go to the outdoor market",
-            "fr": "Aller au march\u00e9"
+            "fr": "Aller au marché"
         },
         "Go back home": {
             "audio": false,
@@ -651,20 +651,20 @@
             "en": "Apples",
             "fr": "Des pommes"
         },
-        "4 eggs (4\ud83e\ude99)": {
+        "4 eggs (4🪙)": {
             "audio": false,
-            "en": "4 eggs (4\ud83e\ude99)",
-            "fr": "4 \u0153ufs (4\ud83e\ude99)"
+            "en": "4 eggs (4🪙)",
+            "fr": "4 œufs (4🪙)"
         },
-        "6 eggs (6\ud83e\ude99)": {
+        "6 eggs (6🪙)": {
             "audio": false,
-            "en": "6 eggs (6\ud83e\ude99)",
-            "fr": "6 \u0153ufs (6\ud83e\ude99)"
+            "en": "6 eggs (6🪙)",
+            "fr": "6 œufs (6🪙)"
         },
-        "12 eggs (9\ud83e\ude99)": {
+        "12 eggs (9🪙)": {
             "audio": false,
-            "en": "12 eggs (9\ud83e\ude99)",
-            "fr": "12 \u0153ufs (9\ud83e\ude99)"
+            "en": "12 eggs (9🪙)",
+            "fr": "12 œufs (9🪙)"
         },
         "Bread": {
             "audio": false,
@@ -686,20 +686,20 @@
             "en": "Lie",
             "fr": "Mentir"
         },
-        "Chocolate (2\ud83e\ude99)": {
+        "Chocolate (2🪙)": {
             "audio": false,
-            "en": "Chocolate (2\ud83e\ude99)",
-            "fr": "Du chocolat (2\ud83e\ude99)"
+            "en": "Chocolate (2🪙)",
+            "fr": "Du chocolat (2🪙)"
         },
-        "Bread (3\ud83e\ude99)": {
+        "Bread (3🪙)": {
             "audio": false,
-            "en": "Bread (3\ud83e\ude99)",
-            "fr": "Du pain (3\ud83e\ude99)"
+            "en": "Bread (3🪙)",
+            "fr": "Du pain (3🪙)"
         },
-        "Pears (5\ud83e\ude99)": {
+        "Pears (5🪙)": {
             "audio": false,
-            "en": "Pears (5\ud83e\ude99)",
-            "fr": "Des poires (5\ud83e\ude99)"
+            "en": "Pears (5🪙)",
+            "fr": "Des poires (5🪙)"
         },
         "3": {
             "audio": false,
@@ -716,10 +716,10 @@
             "en": "5",
             "fr": "5"
         },
-        "Carrots (2\ud83e\ude99)": {
+        "Carrots (2🪙)": {
             "audio": false,
-            "en": "Carrots (2\ud83e\ude99)",
-            "fr": "Des carottes (2\ud83e\ude99)"
+            "en": "Carrots (2🪙)",
+            "fr": "Des carottes (2🪙)"
         },
         "Ask for apples": {
             "audio": false,
@@ -734,12 +734,12 @@
         "The supermarket is right in front of you.": {
             "en": "The supermarket is right in front of you.",
             "key": "thesuperma-bcaa",
-            "fr": "Le supermarch\u00e9 se trouve juste devant toi."
+            "fr": "Le supermarché se trouve juste devant toi."
         },
         "You enter the supermarket.": {
             "en": "You enter the supermarket.",
             "key": "youenterth-9b3a",
-            "fr": "Tu entres dans le supermarch\u00e9."
+            "fr": "Tu entres dans le supermarché."
         },
         "It's hard to find what you want.": {
             "en": "It's hard to find what you want.",
@@ -749,17 +749,17 @@
         "An employee asks if you need help.": {
             "en": "An employee asks if you need help.",
             "key": "anemployee-0c88",
-            "fr": "Un employ\u00e9 te demande si tu as besoin d'aide."
+            "fr": "Un employé te demande si tu as besoin d'aide."
         },
         "It smells like fresh bread": {
             "en": "It smells like fresh bread",
             "key": "itsmellsli-7362",
-            "fr": "\u00c7a sent le pain frais"
+            "fr": "Ça sent le pain frais"
         },
         "You see your favorite pastry.": {
             "en": "You see your favorite pastry.",
             "key": "youseeyour-91a6",
-            "fr": "Tu vois ta p\u00e2tisserie pr\u00e9f\u00e9r\u00e9e."
+            "fr": "Tu vois ta pâtisserie préférée."
         },
         "She is holding a bag of apples.": {
             "en": "She is holding a bag of apples.",
@@ -789,22 +789,22 @@
         "Eat the pastry": {
             "audio": false,
             "en": "Eat the pastry",
-            "fr": "Mange la p\u00e2tisserie"
+            "fr": "Mange la pâtisserie"
         },
         "Eggs": {
             "audio": false,
             "en": "Eggs",
-            "fr": "Des \u0153ufs"
+            "fr": "Des œufs"
         },
-        "Pastry (2\ud83e\ude99)": {
+        "Pastry (2🪙)": {
             "audio": false,
-            "en": "Pastry (2\ud83e\ude99)",
-            "fr": "Une p\u00e2tisserie (2\ud83e\ude99)"
+            "en": "Pastry (2🪙)",
+            "fr": "Une pâtisserie (2🪙)"
         },
-        "Bigger pastry (4\ud83e\ude99)": {
+        "Bigger pastry (4🪙)": {
             "audio": false,
-            "en": "Bigger pastry (4\ud83e\ude99)",
-            "fr": "Une p\u00e2tisserie plus grande (4\ud83e\ude99)"
+            "en": "Bigger pastry (4🪙)",
+            "fr": "Une pâtisserie plus grande (4🪙)"
         },
         "Yes": {
             "audio": false,
@@ -814,7 +814,7 @@
         "Another crossroad? Where should you go?": {
             "en": "Another crossroad? Where should you go?",
             "key": "anothercro-56b9",
-            "fr": "Un autre croisement ? O\u00f9 faut-il aller ?"
+            "fr": "Un autre croisement ? Où faut-il aller ?"
         },
         "You recognize the baker.": {
             "en": "You recognize the baker.",
@@ -834,7 +834,7 @@
         "You approach the man who sells fruits and vegetables.": {
             "en": "You approach the man who sells fruits and vegetables.",
             "key": "youapproac-6e3c",
-            "fr": "Tu t'approches de l'homme qui vend des fruits et des l\u00e9gumes."
+            "fr": "Tu t'approches de l'homme qui vend des fruits et des légumes."
         },
         "@seller Hello! What would you like?": {
             "en": "Hello! What would you like?",
@@ -849,17 +849,17 @@
         "She is listening to the guitar.": {
             "en": "She is listening to the guitar.",
             "key": "sheisliste-a05a",
-            "fr": "Elle \u00e9coute de la guitare."
+            "fr": "Elle écoute de la guitare."
         },
         "@teacher Hey Peter, what's up?": {
             "en": "Hey Peter, what's up?",
             "key": "teacherhey-4ccb",
-            "fr": "H\u00e9 Pierre, quoi de neuf ?"
+            "fr": "Hé Pierre, quoi de neuf ?"
         },
         "You are new to the village because your family has just moved here.": {
             "en": "You are new to the village because your family has just moved here.",
             "key": "youarenewt-b893",
-            "fr": "Tu es nouveau dans le village car ta famille vient de d\u00e9m\u00e9nager."
+            "fr": "Tu es nouveau dans le village car ta famille vient de déménager."
         },
         "It is a bit cold outside today.": {
             "en": "It is a bit cold outside today.",
@@ -869,22 +869,22 @@
         "@mom Grandma is visiting us tonight, so we need five apples to make her favorite apple pie.": {
             "en": "Grandma is visiting us tonight, so we need five apples to make her favorite apple pie.",
             "key": "momgrandma-f748",
-            "fr": "Mamie nous rend visite ce soir, il nous faut donc cinq pommes pour faire sa tarte aux pommes pr\u00e9f\u00e9r\u00e9e."
+            "fr": "Mamie nous rend visite ce soir, il nous faut donc cinq pommes pour faire sa tarte aux pommes préférée."
         },
         "@mom We also need three tomatoes and four eggs for the dinner.": {
             "en": "We also need three tomatoes and four eggs for the dinner.",
             "key": "momwealson-7f0f",
-            "fr": "Il nous faut aussi trois tomates et quatre \u0153ufs pour le d\u00eener."
+            "fr": "Il nous faut aussi trois tomates et quatre œufs pour le dîner."
         },
         "@mom Remember, we went there last week.": {
             "en": "Remember, we went there last week.",
             "key": "momremembe-97f8",
-            "fr": "Souviens-toi, on y est all\u00e9s la semaine derni\u00e8re."
+            "fr": "Souviens-toi, on y est allés la semaine dernière."
         },
         "@mom If you have enough coins, you can buy something for yourself.": {
             "en": "If you have enough coins, you can buy something for yourself.",
             "key": "momifyouha-b893",
-            "fr": "Si tu as assez de pi\u00e8ces, tu peux t'acheter quelque chose."
+            "fr": "Si tu as assez de pièces, tu peux t'acheter quelque chose."
         },
         "@peter Four.": {
             "en": "Four.",
@@ -909,12 +909,12 @@
         "@seller Sorry, we just sold the last apples to that woman.": {
             "en": "Sorry, we just sold the last apples to that woman.",
             "key": "sellersorr-35a8",
-            "fr": "D\u00e9sol\u00e9, nous venons de vendre les derni\u00e8res pommes \u00e0 cette femme."
+            "fr": "Désolé, nous venons de vendre les dernières pommes à cette femme."
         },
         "@peter Ms. Melody?": {
             "en": "Ms. Melody?",
             "key": "petermsmel-8090",
-            "fr": "Mme M\u00e9lodie ?"
+            "fr": "Mme Mélodie ?"
         },
         "@peter Oh no, I have to find a solution!": {
             "en": "Oh no, I have to find a solution!",
@@ -924,22 +924,22 @@
         "@seller Maybe you can use pears instead?": {
             "en": "Maybe you can use pears instead?",
             "key": "sellermayb-4656",
-            "fr": "Tu peux peut-\u00eatre utiliser des poires \u00e0 la place ?"
+            "fr": "Tu peux peut-être utiliser des poires à la place ?"
         },
         "@peter Can I get the pears, please?": {
             "en": "Can I get the pears, please?",
             "key": "petercanig-f8c1",
-            "fr": "Je peux avoir les poires, s'il vous pla\u00eet ?"
+            "fr": "Je peux avoir les poires, s'il vous plaît ?"
         },
         "You decide to go to the market.": {
             "en": "You decide to go to the market.",
             "key": "youdecidet-738f",
-            "fr": "Tu d\u00e9cides d'aller au march\u00e9."
+            "fr": "Tu décides d'aller au marché."
         },
         "When you arrive near the fruits and vegetables, you recognize someone.": {
             "en": "When you arrive near the fruits and vegetables, you recognize someone.",
             "key": "whenyouarr-5260",
-            "fr": "Lorsque tu arrives pr\u00e8s des fruits et l\u00e9gumes, tu reconnais quelqu'un."
+            "fr": "Lorsque tu arrives près des fruits et légumes, tu reconnais quelqu'un."
         },
         "This is your music teacher.": {
             "en": "This is your music teacher.",
@@ -949,7 +949,7 @@
         "@peter Hello Ms. Melody!": {
             "en": "Hello Ms. Melody!",
             "key": "peterhello-cf04",
-            "fr": "Bonjour Madame M\u00e9lodie !"
+            "fr": "Bonjour Madame Mélodie !"
         },
         "@teacher What are you doing here?": {
             "en": "What are you doing here?",
@@ -964,12 +964,12 @@
         "@peter I'm buying food for dinner.": {
             "en": "I'm buying food for dinner.",
             "key": "peterimbuy-5678",
-            "fr": "J'ach\u00e8te \u00e0 manger pour le d\u00eener."
+            "fr": "J'achète à manger pour le dîner."
         },
         "@peter We'll make an apple pie for my Grandma.": {
             "en": "We'll make an apple pie for my Grandma.",
             "key": "peterwellm-8767",
-            "fr": "Nous ferons une tarte aux pommes pour ma grand-m\u00e8re."
+            "fr": "Nous ferons une tarte aux pommes pour ma grand-mère."
         },
         "@teacher Great! I love apples too. I'm going to make apple sauce.": {
             "en": "Great! I love apples too. I'm going to make apple sauce.",
@@ -979,22 +979,22 @@
         "@teacher See you later! I'll stay a bit on the square to listen to the music.": {
             "en": "See you later! I'll stay a bit on the square to listen to the music.",
             "key": "teachersee-ef56",
-            "fr": "\u00c0 bient\u00f4t, je reste un peu sur la place pour \u00e9couter la musique."
+            "fr": "À bientôt, je reste un peu sur la place pour écouter la musique."
         },
         "But maybe you could have bought something for yourself?": {
             "en": "But maybe you could have bought something for yourself?",
             "key": "butmaybeyo-596e",
-            "fr": "Mais tu aurais peut-\u00eatre pu t'acheter quelque chose ?"
+            "fr": "Mais tu aurais peut-être pu t'acheter quelque chose ?"
         },
         "Your mom smiles warmly.": {
             "en": "Your mom smiles warmly.",
             "key": "yourmomsmi-8f61",
-            "fr": "Ta m\u00e8re sourit chaleureusement."
+            "fr": "Ta mère sourit chaleureusement."
         },
         "@mom But first, let's make the apple pie!": {
             "en": "But first, let's make the apple pie!",
             "key": "mombutfirs-6474",
-            "fr": "Mais d'abord, pr\u00e9parons la tarte aux pommes !"
+            "fr": "Mais d'abord, préparons la tarte aux pommes !"
         }
     }
 }
