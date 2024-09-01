@@ -73,6 +73,9 @@ export class Story {
     }
 
     speakerInfo(speaker) {
+        if (!speaker) {
+            return null;
+        }
         return this.metadata["speakers"][speaker];
     }
 
