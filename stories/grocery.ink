@@ -32,13 +32,16 @@ Your mom calls you.
 - (loop1)
 {&@mom Peter!|@mom Peter, please come here.}
 * [Leave the bedroom] -> downstairs
-+ [Keep playing]
+* (looped) [Keep playing]
   You play for a few more minutes.
   -> loop1
+* {looped} [Keep playing]
+  You want to play more, but your mom really insists.
+  -> downstairs
 
 = downstairs
 
-@peter Yes, mom.
+@peter Yes, mom. I'm coming.
 You leave the bedroom and go to your mom.
 
 @mom Can you please go shopping for dinner?

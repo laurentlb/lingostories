@@ -121,11 +121,6 @@
             "key": "youplayfor-d2e2",
             "fr": "Tu joues encore quelques minutes."
         },
-        "@peter Yes, mom.": {
-            "en": "Yes, mom.",
-            "key": "peteryesmo-e27a",
-            "fr": "Oui, maman."
-        },
         "You leave the bedroom and go to your mom.": {
             "en": "You leave the bedroom and go to your mom.",
             "key": "youleaveth-9281",
@@ -995,6 +990,16 @@
             "en": "But first, let's make the apple pie!",
             "key": "mombutfirs-6474",
             "fr": "Mais d'abord, préparons la tarte aux pommes !"
+        },
+        "You want to play more, but your mom really insists.": {
+            "en": "You want to play more, but your mom really insists.",
+            "fr": "Tu veux jouer encore, mais ta mère insiste vraiment.",
+            "key": "youwanttop-0c60"
+        },
+        "@peter Yes, mom. I'm coming.": {
+            "en": "Yes, mom. I'm coming.",
+            "fr": "Oui, maman. J'arrive.",
+            "key": "peteryesmo-bc64"
         }
     }
 }
