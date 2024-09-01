@@ -384,15 +384,19 @@ function createStoryList() {
         elt.classList.add("story-info");
 
         const imgLink = document.createElement("a");
-        imgLink.href = `/?lang=${story.lang}&story=${sto.id}`;
+        if (!unreleased) {
+            imgLink.href = `/?lang=${story.lang}&story=${sto.id}`;
+        }
         const img = document.createElement("img");
         img.src = `img/arrow-right-3-square.svg`;
         img.classList.add("icon", "choice-icon");
         imgLink.appendChild(img);
         elt.appendChild(imgLink);
 
-        const link = document.createElement(unreleased ? "p" : "a");
-        link.href = `/?lang=${story.lang}&story=${sto.id}`;
+        const link = document.createElement(unreleased ? "span" : "a");
+        if (!unreleased) {
+            link.href = `/?lang=${story.lang}&story=${sto.id}`;
+        }
         link.textContent = sto.title + (unreleased ? " (translation missing)" : "");
         elt.appendChild(link);
 
