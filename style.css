@@ -566,7 +566,7 @@ details {
     border: 1px solid var(--border-color);
     background: #222;
     max-width: 588px; /* 600px - 2*6px padding in middle */
-    width: 100%;
+    width: calc(100% - 12px);
     justify-content: space-around;
     padding: 4px;
     align-items: center;

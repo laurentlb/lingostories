@@ -8,7 +8,8 @@
             "pl": "Wprowadzenie",
             "sv": "Inledning",
             "pt": "Introdução.",
-            "nl": "Introductie"
+            "nl": "Introductie",
+            "es": "Introducción"
         },
         "Hello!": {
             "key": "0-1",
@@ -18,7 +19,8 @@
             "pl": "Cześć!",
             "sv": "Hej!",
             "pt": "Olá!",
-            "nl": "Hallo!"
+            "nl": "Hallo!",
+            "es": "¡Hola!"
         },
         "Welcome to LingoStories.": {
             "key": "0-2",
@@ -28,7 +30,8 @@
             "pl": "Witaj w LingoStories.",
             "sv": "Välkommen till LingoStories.",
             "pt": "Bem-vindo(a) ao LingoStories.",
-            "nl": "Welkom bij LingoStories."
+            "nl": "Welkom bij LingoStories.",
+            "es": "Bienvenidos a LingoStories."
         },
         "How are you?": {
             "key": "0-3",
@@ -38,7 +41,8 @@
             "pl": "Jak się masz?",
             "sv": "Hur är det med dig?",
             "pt": "Como estás?",
-            "nl": "Hoe gaat het?"
+            "nl": "Hoe gaat het?",
+            "es": "¿Cómo estás?"
         },
         "Good, thank you.": {
             "en": "Good, thank you.",
@@ -47,7 +51,8 @@
             "pl": "Dobrze, dziękuję.",
             "sv": "Det är bara bra, tack.",
             "pt": "Bem, obrigado.",
-            "nl": "Goed, dank je."
+            "nl": "Goed, dank je.",
+            "es": "Bien, gracias."
         },
         "Not bad.": {
             "en": "Not bad.",
@@ -56,7 +61,8 @@
             "pl": "Nieźle.",
             "sv": "Inte illa.",
             "pt": "Mais ou menos.",
-            "nl": "Niet slecht."
+            "nl": "Niet slecht.",
+            "es": "Nada mal."
         },
         "On this website, there are interactive stories.": {
             "key": "1-0",
@@ -66,7 +72,8 @@
             "pl": "Na tej stronie znajdziesz interaktywne historie.",
             "sv": "På den här webbplatsen finns det interaktiva berättelser.",
             "pt": "Neste site, há histórias interativas.",
-            "nl": "Op deze website staan interactieve verhalen."
+            "nl": "Op deze website staan interactieve verhalen.",
+            "es": "En este sitio web hay historias interactivas."
         },
         "Choose a story that is easy for you.": {
             "key": "1-1",
@@ -76,7 +83,8 @@
             "pl": "Wybierz historię, która jest dla ciebie łatwa.",
             "sv": "Välj en berättelse som är på en lagom lätt nivå för dig.",
             "pt": "Escolhe uma história que é fácil para ti.",
-            "nl": "Kies een verhaal dat voor jou makkelijk is."
+            "nl": "Kies een verhaal dat voor jou makkelijk is.",
+            "es": "Elige una historia que sea fácil para ti."
         },
         "You may not understand all the words.": {
             "key": "1-2",
@@ -86,7 +94,8 @@
             "pl": "Możesz nie rozumieć wszystkich słów.",
             "sv": "Du kanske inte förstår precis alla ord.",
             "pt": "Podes não entender todas as palavras.",
-            "nl": "Je begrijpt misschien niet alle woorden."
+            "nl": "Je begrijpt misschien niet alle woorden.",
+            "es": "Es posible que no entiendas todas las palabras."
         },
         "That's okay.": {
             "key": "1-3",
@@ -96,7 +105,8 @@
             "pl": "To nie ma znaczenia.",
             "sv": "Det är helt okej.",
             "pt": "Não há problema.",
-            "nl": "Dat geeft niks."
+            "nl": "Dat geeft niks.",
+            "es": "Está bien."
         },
         "Continue anyway.": {
             "key": "1-4",
@@ -106,7 +116,8 @@
             "pl": "I tak kontynuuj.",
             "sv": "Fortsätt i alla fall.",
             "pt": "Continua, mesmo assim.",
-            "nl": "Ga gewoon door."
+            "nl": "Ga gewoon door.",
+            "es": "Continúa de todos modos."
         },
         "Listen to each sentence.": {
             "key": "1-5",
@@ -116,7 +127,8 @@
             "pl": "Posłuchaj każdego zdania.",
             "sv": "Lyssna på varje mening.",
             "pt": "Ouve cada frase.",
-            "nl": "Luister naar elke zin."
+            "nl": "Luister naar elke zin.",
+            "es": "Escucha cada oración."
         },
         "Read each sentence.": {
             "key": "1-6",
@@ -126,7 +138,8 @@
             "pl": "Przeczytaj każde zdanie.",
             "sv": "Läs varje mening.",
             "pt": "Lê cada frase.",
-            "nl": "Lees elke zin."
+            "nl": "Lees elke zin.",
+            "es": "Lee cada oración."
         },
         "Listen to each sentence several times if you want.": {
             "key": "1-7",
@@ -136,7 +149,8 @@
             "pl": "Jeśli chcesz, wysłuchaj każdego zdania kilka razy.",
             "sv": "Lyssna på varje mening flera gånger, om du vill.",
             "pt": "Ouve cada frase várias vezes se quiseres",
-            "nl": "Luister meerdere keren naar elke zin als je wil."
+            "nl": "Luister meerdere keren naar elke zin als je wil.",
+            "es": "Escucha cada oración varias veces si quieres."
         },
         "You may recognize some words.": {
             "key": "1-8",
@@ -146,7 +160,8 @@
             "pl": "Możesz rozpoznać niektóre słowa.",
             "sv": "Du kanske känner igen några av orden.",
             "pt": "Podes reconhecer algumas palavras.",
-            "nl": "Misschien herken je sommige woorden."
+            "nl": "Misschien herken je sommige woorden.",
+            "es": "Quizás reconozcas algunas palabras."
         },
         "Click on a sentence to see its translation.": {
             "key": "1-9",
@@ -156,7 +171,8 @@
             "pl": "Kliknij na zdanie, aby zobaczyć jego tłumaczenie.",
             "sv": "Klicka på en mening för att se dess översättning.",
             "pt": "Clica numa frase para ver a sua tradução.",
-            "nl": "Klik op een zin om de vertaling te zien."
+            "nl": "Klik op een zin om de vertaling te zien.",
+            "es": "Haz clic en una oración para ver su traducción."
         },
         "It will help you follow the story.": {
             "key": "1-10",
@@ -166,7 +182,8 @@
             "pl": "Pomoże ci to śledzić historię.",
             "sv": "Det hjälper dig att följa berättelsen.",
             "pt": "Isso vai ajudar-te a acompanhar a história.",
-            "nl": "Dit zal je helpen om het verhaal te volgen."
+            "nl": "Dit zal je helpen om het verhaal te volgen.",
+            "es": "Te ayudará a seguir la historia."
         },
         "It will help you understand.": {
             "key": "1-11",
@@ -176,7 +193,8 @@
             "pl": "Pomoże ci to zrozumieć.",
             "sv": "Det kommer att hjälpa dig att förstå.",
             "pt": "Isso vai ajudar-te a entender.",
-            "nl": "Dit zal je helpen om het verhaal te begrijpen."
+            "nl": "Dit zal je helpen om het verhaal te begrijpen.",
+            "es": "Te ayudará a entenderla."
         },
         "You can now choose a story.": {
             "key": "1-12",
@@ -186,7 +204,8 @@
             "pl": "Możesz teraz wybrać historię.",
             "sv": "Du kan nu välja en berättelse.",
             "pt": "Podes escolher uma história.",
-            "nl": "Je kan nu een verhaal kiezen."
-        },
+            "nl": "Je kan nu een verhaal kiezen.",
+            "es": "Ahora puedes elegir una historia."
+        }
     }
 }

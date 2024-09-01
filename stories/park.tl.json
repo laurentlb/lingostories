@@ -19,7 +19,8 @@
             "pl": "Dzień w parku.",
             "sv": "En dag i parken.",
             "pt": "Um dia no parque.",
-            "nl": "Een dag in het park."
+            "nl": "Een dag in het park.",
+            "es": "Un día en el parque."
         },
         "It is a sunny day.": {
             "key": "0-1",
@@ -29,7 +30,8 @@
             "pl": "Jest słoneczny dzień.",
             "sv": "Det är en solig dag.",
             "pt": "É um dia de sol.",
-            "nl": "Het is een zonnige dag."
+            "nl": "Het is een zonnige dag.",
+            "es": "Es un día soleado."
         },
         "Anna wants to go to the park.": {
             "key": "0-2",
@@ -39,7 +41,8 @@
             "pl": "Anna chce iść do parku.",
             "sv": "Anna vill gå till parken.",
             "pt": "A Anna quer ir ao parque.",
-            "nl": "Anna wil naar het park gaan."
+            "nl": "Anna wil naar het park gaan.",
+            "es": "Anna quiere ir al parque."
         },
         "The park is always quiet and beautiful.": {
             "key": "0-3",
@@ -49,7 +52,8 @@
             "pl": "Park jest zawsze spokojny i piękny.",
             "sv": "Parken är alltid rofylld och vacker.",
             "pt": "O parque é sempre calmo e belo.",
-            "nl": "Het park is altijd rustig en mooi."
+            "nl": "Het park is altijd rustig en mooi.",
+            "es": "El parque siempre es tranquilo y hermoso."
         },
         "Anna puts on her shoes.": {
             "key": "0-4",
@@ -59,7 +63,8 @@
             "pl": "Anna zakłada buty.",
             "sv": "Anna tar på sig skorna.",
             "pt": "A Anna calça os sapatos.",
-            "nl": "Anna doet haar schoenen aan."
+            "nl": "Anna doet haar schoenen aan.",
+            "es": "Anna se pone los zapatos."
         },
         "She walks to the park.": {
             "key": "0-5",
@@ -69,7 +74,8 @@
             "pl": "Idzie do parku.",
             "sv": "Hon går till parken.",
             "pt": "Ela caminha até ao parque.",
-            "nl": "Ze loopt naar het park."
+            "nl": "Ze loopt naar het park.",
+            "es": "Ella camina hacia el parque."
         },
         "When Anna arrives, there are many people.": {
             "key": "0-6",
@@ -79,7 +85,8 @@
             "pl": "Kiedy Anna przybywa na miejsce, wokół jest mnóstwo ludzi.",
             "sv": "När Anna kommer fram, är där fullt av folk.",
             "pt": "Quando a Anna chega, há muitas pessoas.",
-            "nl": "Wanneer Anna aankomt, zijn er veel mensen."
+            "nl": "Wanneer Anna aankomt, zijn er veel mensen.",
+            "es": "Cuando Anna llega, hay mucha gente."
         },
         "Many people are also walking.": {
             "key": "0-7",
@@ -89,7 +96,8 @@
             "pl": "Wiele osób również spaceruje.",
             "sv": "Många personer är också ute och går.",
             "pt": "Muitas pessoas também passeiam.",
-            "nl": "Veel mensen zijn ook aan het lopen."
+            "nl": "Veel mensen zijn ook aan het lopen.",
+            "es": "Muchas personas también están caminando."
         },
         "Some people are sitting on benches and talking.": {
             "key": "0-8",
@@ -99,7 +107,8 @@
             "pl": "Niektórzy siedzą na ławkach i rozmawiają.",
             "sv": "Några personer sitter på bänkar och pratar.",
             "pt": "Algumas pessoas sentam-se em bancos e conversam.",
-            "nl": "Sommige mensen zitten op bankjes en praten."
+            "nl": "Sommige mensen zitten op bankjes en praten.",
+            "es": "Algunas personas están sentadas en los bancos y hablando."
         },
         "Where does Anna go first?": {
             "key": "0-9",
@@ -109,7 +118,8 @@
             "pl": "Gdzie Anna idzie najpierw?",
             "sv": "Vart går Anna först?",
             "pt": "Para onde vai a Anna primeiro?",
-            "nl": "Waar gaat Anna eerst naartoe?"
+            "nl": "Waar gaat Anna eerst naartoe?",
+            "es": "¿A dónde va Anna primero?"
         },
         "Under a big tree.": {
             "en": "Under a big tree.",
@@ -118,7 +128,8 @@
             "pl": "Pod duże drzewo.",
             "sv": "Under ett stort träd.",
             "pt": "Debaixo de uma árvore.",
-            "nl": "Onder een grote boom."
+            "nl": "Onder een grote boom.",
+            "es": "Debajo de un gran árbol."
         },
         "To the playground.": {
             "en": "To the playground.",
@@ -127,7 +138,8 @@
             "pl": "Na plac zabaw.",
             "sv": "Till lekplatsen.",
             "pt": "Para o parque infantil.",
-            "nl": "Naar de speeltuin."
+            "nl": "Naar de speeltuin.",
+            "es": "Al patio de recreo."
         },
         "Anna finds a nice, big tree.": {
             "key": "1-0",
@@ -137,7 +149,8 @@
             "pl": "Anna znajduje duże, piękne drzewo.",
             "sv": "Anna hittar ett fint, stort träd.",
             "pt": "A Anna encontra uma árvore grande e bonita.",
-            "nl": "Anna vindt een fijne, grote boom."
+            "nl": "Anna vindt een fijne, grote boom.",
+            "es": "Anna encuentra un árbol grande y bonito."
         },
         "She sits down on the grass.": {
             "key": "1-1",
@@ -147,7 +160,8 @@
             "pl": "Siada na trawie.",
             "sv": "Hon sätter sig ner i gräset.",
             "pt": "Ela senta-se na relva.",
-            "nl": "Ze gaat zitten op het gras."
+            "nl": "Ze gaat zitten op het gras.",
+            "es": "Se sienta en el césped."
         },
         "She takes a book and reads it.": {
             "key": "1-2",
@@ -157,7 +171,8 @@
             "pl": "Podnosi książkę i czyta ją.",
             "sv": "Hon tar en bok och läser i den.",
             "pt": "Ela pega num livro e lê.",
-            "nl": "Ze pakt een boek en leest het."
+            "nl": "Ze pakt een boek en leest het.",
+            "es": "Saca un libro y lo lee."
         },
         "She loves to read.": {
             "key": "1-3",
@@ -167,7 +182,8 @@
             "pl": "Uwielbia czytać.",
             "sv": "Hon älskar att läsa.",
             "pt": "Ela ama ler.",
-            "nl": "Ze houdt van lezen."
+            "nl": "Ze houdt van lezen.",
+            "es": "Le encanta leer."
         },
         "After a while, a dog comes to her.": {
             "key": "1-4",
@@ -177,7 +193,8 @@
             "pl": "Po chwili podszedł do niej pies.",
             "sv": "Efter ett tag kommer en hund fram till henne.",
             "pt": "Passado um tempo, um cão vem até ela.",
-            "nl": "Na een tijdje komt er een hond naar haar toe."
+            "nl": "Na een tijdje komt er een hond naar haar toe.",
+            "es": "Después de un rato, un perro se le acerca."
         },
         "The dog is friendly and wants to play.": {
             "key": "1-5",
@@ -187,85 +204,8 @@
             "pl": "Pies jest przyjazny i chce się bawić.",
             "sv": "Hunden är snäll och vill leka.",
             "pt": "O cão é amigável e quer brincar.",
-            "nl": "De hond is vriendelijk en wil spelen."
-        },
-        "What does Anna do?": {
-            "key": "1-6",
-            "en": "What does Anna do?",
-            "fr": "Que fait Anna ?",
-            "de": "Was macht Anna?",
-            "pl": "Co robi Anna?",
-            "sv": "Vad gör Anna?",
-            "pt": "O que faz a Anna?",
-            "nl": "Wat doet Anna?"
-        },
-        "Play with the dog.": {
-            "en": "Play with the dog.",
-            "fr": "Jouer avec le chien.",
-            "de": "Mit dem Hund spielen.",
-            "pl": "Bawi się z psem.",
-            "sv": "Lek med hunden.",
-            "pt": "Brinca com o cão.",
-            "nl": "Met de hond spelen."
-        },
-        "Keep reading.": {
-            "en": "Keep reading.",
-            "fr": "Continuer à lire.",
-            "de": "Weiterlesen.",
-            "pl": "Czyta dalej.",
-            "sv": "Fortsätt läsa.",
-            "pt": "Continua a ler.",
-            "nl": "Blijven lezen."
-        },
-        "Anna goes to the playground.": {
-            "key": "2-0",
-            "en": "Anna goes to the playground.",
-            "fr": "Anna va au terrain de jeu.",
-            "de": "Anna geht zum Spielplatz.",
-            "pl": "Anna idzie na plac zabaw.",
-            "sv": "Anna går till lekplatsen.",
-            "pt": "A Anna vai para o parque infantil.",
-            "nl": "Anna gaat naar de speeltuin."
-        },
-        "Many children are playing.": {
-            "key": "2-1",
-            "en": "Many children are playing.",
-            "fr": "De nombreux enfants jouent.",
-            "de": "Viele Kinder spielen.",
-            "pl": "Wiele dzieci się bawi.",
-            "sv": "Många barn leker.",
-            "pt": "Muitas crianças brincam.",
-            "nl": "Veel kinderen zijn aan het spelen."
-        },
-        "Anna sits on a bench nearby and watches the children.": {
-            "key": "2-2",
-            "en": "Anna sits on a bench nearby and watches the children.",
-            "fr": "Anna s'assoit sur un banc et observe les enfants.",
-            "de": "Anna setzt sich auf eine Bank und beobachtet die Kinder.",
-            "pl": "Anna siada na ławce i obserwuje dzieci.",
-            "sv": "Anna sitter på en bänk i närheten och tittar på barnen.",
-            "pt": "A Anna senta-se num banco próximo e observa as crianças.",
-            "nl": "Anna gaat vlakbij op een bankje zitten en bekijkt de kinderen."
-        },
-        "A little girl comes up to Anna.": {
-            "key": "2-3",
-            "en": "A little girl comes up to Anna.",
-            "fr": "Une petite fille s'approche d'Anna.",
-            "de": "Ein kleines Mädchen nähert sich Anna.",
-            "pl": "Do Anny podchodzi mała dziewczynka.",
-            "sv": "En liten flicka kommer fram till Anna.",
-            "pt": "Uma menina vem ter com a Anna",
-            "nl": "Een klein meisje komt op Anna af."
-        },
-        "The girl asks for help with her shoe.": {
-            "key": "2-4",
-            "en": "The girl asks for help with her shoe.",
-            "fr": "La jeune fille demande de l'aide pour sa chaussure.",
-            "de": "Das Mädchen bittet um Hilfe bei ihrem Schuh.",
-            "pl": "Mała dziewczyna prosi o pomoc z butem.",
-            "sv": "Flickan ber om hjälp med sin sko.",
-            "pt": "A menina pede ajuda com o seu sapato.",
-            "nl": "Het meisje vraagt om hulp met haar schoen."
+            "nl": "De hond is vriendelijk en wil spelen.",
+            "es": "El perro es amigable y quiere jugar."
         },
         "What does Anna do?": {
             "key": "2-5",
@@ -275,7 +215,83 @@
             "pl": "Co robi Anna?",
             "sv": "Vad gör Anna?",
             "pt": "O que faz a Anna?",
-            "nl": "Wat doet Anna?"
+            "nl": "Wat doet Anna?",
+            "es": "¿Qué hace Anna?"
+        },
+        "Play with the dog.": {
+            "en": "Play with the dog.",
+            "fr": "Jouer avec le chien.",
+            "de": "Mit dem Hund spielen.",
+            "pl": "Bawi się z psem.",
+            "sv": "Lek med hunden.",
+            "pt": "Brinca com o cão.",
+            "nl": "Met de hond spelen.",
+            "es": "Jugar con el perro."
+        },
+        "Keep reading.": {
+            "en": "Keep reading.",
+            "fr": "Continuer à lire.",
+            "de": "Weiterlesen.",
+            "pl": "Czyta dalej.",
+            "sv": "Fortsätt läsa.",
+            "pt": "Continua a ler.",
+            "nl": "Blijven lezen.",
+            "es": "Seguir leyendo."
+        },
+        "Anna goes to the playground.": {
+            "key": "2-0",
+            "en": "Anna goes to the playground.",
+            "fr": "Anna va au terrain de jeu.",
+            "de": "Anna geht zum Spielplatz.",
+            "pl": "Anna idzie na plac zabaw.",
+            "sv": "Anna går till lekplatsen.",
+            "pt": "A Anna vai para o parque infantil.",
+            "nl": "Anna gaat naar de speeltuin.",
+            "es": "Anna va al patio de recreo."
+        },
+        "Many children are playing.": {
+            "key": "2-1",
+            "en": "Many children are playing.",
+            "fr": "De nombreux enfants jouent.",
+            "de": "Viele Kinder spielen.",
+            "pl": "Wiele dzieci się bawi.",
+            "sv": "Många barn leker.",
+            "pt": "Muitas crianças brincam.",
+            "nl": "Veel kinderen zijn aan het spelen.",
+            "es": "Muchos niños están jugando."
+        },
+        "Anna sits on a bench nearby and watches the children.": {
+            "key": "2-2",
+            "en": "Anna sits on a bench nearby and watches the children.",
+            "fr": "Anna s'assoit sur un banc et observe les enfants.",
+            "de": "Anna setzt sich auf eine Bank und beobachtet die Kinder.",
+            "pl": "Anna siada na ławce i obserwuje dzieci.",
+            "sv": "Anna sitter på en bänk i närheten och tittar på barnen.",
+            "pt": "A Anna senta-se num banco próximo e observa as crianças.",
+            "nl": "Anna gaat vlakbij op een bankje zitten en bekijkt de kinderen.",
+            "es": "Anna se sienta en un banco cercano y observa a los niños."
+        },
+        "A little girl comes up to Anna.": {
+            "key": "2-3",
+            "en": "A little girl comes up to Anna.",
+            "fr": "Une petite fille s'approche d'Anna.",
+            "de": "Ein kleines Mädchen nähert sich Anna.",
+            "pl": "Do Anny podchodzi mała dziewczynka.",
+            "sv": "En liten flicka kommer fram till Anna.",
+            "pt": "Uma menina vem ter com a Anna",
+            "nl": "Een klein meisje komt op Anna af.",
+            "es": "Una niña pequeña se acerca a Anna."
+        },
+        "The girl asks for help with her shoe.": {
+            "key": "2-4",
+            "en": "The girl asks for help with her shoe.",
+            "fr": "La jeune fille demande de l'aide pour sa chaussure.",
+            "de": "Das Mädchen bittet um Hilfe bei ihrem Schuh.",
+            "pl": "Mała dziewczyna prosi o pomoc z butem.",
+            "sv": "Flickan ber om hjälp med sin sko.",
+            "pt": "A menina pede ajuda com o seu sapato.",
+            "nl": "Het meisje vraagt om hulp met haar schoen.",
+            "es": "La niña le pide ayuda con su zapato."
         },
         "Help the little girl.": {
             "en": "Help the little girl.",
@@ -284,7 +300,8 @@
             "pl": "Pomóż małej dziewczynce.",
             "sv": "Hjälp den lilla flickan.",
             "pt": "Ajuda a menina.",
-            "nl": "Het kleine meisje helpen."
+            "nl": "Het kleine meisje helpen.",
+            "es": "Ayudar a la niña pequeña."
         },
         "Tell the girl to ask her parents.": {
             "en": "Tell the girl to ask her parents.",
@@ -293,7 +310,8 @@
             "pl": "Powiedz dziewczynie, żeby zapytała rodziców.",
             "sv": "Säg åt flickan att fråga sina föräldrar.",
             "pt": "Diz à menina para pedir aos pais.",
-            "nl": "Het meisje vertellen om het aan haar ouders te vragen."
+            "nl": "Het meisje vertellen om het aan haar ouders te vragen.",
+            "es": "Decirle a la niña que le pregunte a sus padres."
         },
         "Anna plays with the dog.": {
             "key": "3-0",
@@ -303,7 +321,8 @@
             "pl": "Anna bawi się z psem.",
             "sv": "Anna leker med hunden.",
             "pt": "A Anna brinca com o cão.",
-            "nl": "Anna speelt met de hond."
+            "nl": "Anna speelt met de hond.",
+            "es": "Anna juega con el perro."
         },
         "Anna throws a ball to the dog.": {
             "key": "3-1",
@@ -313,7 +332,8 @@
             "pl": "Anna rzuca psu piłkę.",
             "sv": "Anna kastar en boll till hunden.",
             "pt": "A Anna atira uma bola ao cão.",
-            "nl": "Anna gooit een bal naar de hond."
+            "nl": "Anna gooit een bal naar de hond.",
+            "es": "Anna le lanza una pelota al perro."
         },
         "The dog is having fun.": {
             "key": "3-2",
@@ -323,7 +343,8 @@
             "pl": "Pies dobrze się bawi.",
             "sv": "Hunden har roligt.",
             "pt": "O cão está a divertir-se.",
-            "nl": "De hond heeft het naar zijn zin."
+            "nl": "De hond heeft het naar zijn zin.",
+            "es": "El perro se está divirtiendo."
         },
         "Later, the dog's owner comes and thanks Anna.": {
             "key": "3-3",
@@ -333,65 +354,8 @@
             "pl": "Później właściciel psa przychodzi podziękować Annie.",
             "sv": "Senare kommer hundens ägare och tackar Anna.",
             "pt": "Mais tarde, o dono do cão chega e agradece à Anna.",
-            "nl": "Later komt de eigenaar van de hond en bedankt Anna."
-        },
-        "What does Anna do next?": {
-            "key": "3-4",
-            "en": "What does Anna do next?",
-            "fr": "Que fait Anna ensuite ?",
-            "de": "Was macht Anna als Nächstes?",
-            "pl": "Co dalej zrobi Anna?",
-            "sv": "Vad gör Anna härnäst?",
-            "pt": "O que faz a Anna a seguir?",
-            "nl": "Wat doet Anna nu?"
-        },
-        "Read a book.": {
-            "en": "Read a book.",
-            "fr": "Lire un livre.",
-            "de": "Ein Buch lesen.",
-            "pl": "Przeczytaj książkę.",
-            "sv": "Läs en bok.",
-            "pt": "Lê um livro.",
-            "nl": "Een boek lezen."
-        },
-        "Go for a walk.": {
-            "en": "Go for a walk.",
-            "fr": "Aller se promener.",
-            "de": "Spazieren gehen.",
-            "pl": "Idź na spacer.",
-            "sv": "Ta en promenad.",
-            "pt": "Vai passear.",
-            "nl": "Een wandeling maken."
-        },
-        "Anna ignores the dog and continues reading.": {
-            "key": "4-0",
-            "en": "Anna ignores the dog and continues reading.",
-            "fr": "Anna ignore le chien et continue à lire.",
-            "de": "Anna ignoriert den Hund und liest weiter.",
-            "pl": "Anna ignoruje psa i czyta dalej.",
-            "sv": "Anna struntar i hunden och fortsätter läsa.",
-            "pt": "A Anna ignora o cão e continua a ler.",
-            "nl": "Anna negeert de hond en gaat door met lezen."
-        },
-        "The dog finally leaves.": {
-            "key": "4-1",
-            "en": "The dog finally leaves.",
-            "fr": "Le chien finit par s'en aller.",
-            "de": "Der Hund geht schließlich weg.",
-            "pl": "Pies w końcu odchodzi.",
-            "sv": "Till slut lämnar hunden platsen.",
-            "pt": "O cão finalmente vai embora.",
-            "nl": "De hond gaat eindelijk weg."
-        },
-        "Anna enjoys her book and eats her sandwich.": {
-            "key": "4-2",
-            "en": "Anna enjoys her book and eats her sandwich.",
-            "fr": "Anna apprécie son livre et mange un sandwich.",
-            "de": "Anna genießt ihr Buch und isst ein Sandwich.",
-            "pl": "Anna cieszy się książką i je kanapkę.",
-            "sv": "Anna njuter av sin bok och äter sin smörgås.",
-            "pt": "A Anna aproveita o seu livro e come a sua sanduíche.",
-            "nl": "Anna geniet van haar boek en eet haar sandwich."
+            "nl": "Later komt de eigenaar van de hond en bedankt Anna.",
+            "es": "Más tarde, el dueño del perro llega y le agradece a Anna."
         },
         "What does Anna do next?": {
             "key": "4-3",
@@ -401,16 +365,18 @@
             "pl": "Co dalej zrobi Anna?",
             "sv": "Vad gör Anna härnäst?",
             "pt": "O que faz a Anna a seguir?",
-            "nl": "Wat doet Anna nu?"
+            "nl": "Wat doet Anna nu?",
+            "es": "¿Qué hace Anna después?"
         },
-        "Take a nap.": {
-            "en": "Take a nap.",
-            "fr": "Faire une sieste.",
-            "de": "Ein Nickerchen machen.",
-            "pl": "Zdrzemnij się.",
-            "sv": "Ta en tupplur.",
-            "pt": "Dorme uma sesta.",
-            "nl": "Een dutje doen."
+        "Read a book.": {
+            "en": "Read a book.",
+            "fr": "Lire un livre.",
+            "de": "Ein Buch lesen.",
+            "pl": "Przeczytaj książkę.",
+            "sv": "Läs en bok.",
+            "pt": "Lê um livro.",
+            "nl": "Een boek lezen.",
+            "es": "Leer un libro."
         },
         "Go for a walk.": {
             "en": "Go for a walk.",
@@ -418,8 +384,52 @@
             "de": "Spazieren gehen.",
             "pl": "Idź na spacer.",
             "sv": "Ta en promenad.",
-            "pt": "Vai passear.",
-            "nl": "Een wandeling maken."
+            "pt": "Ir passear.",
+            "nl": "Een wandeling maken.",
+            "es": "Dar un paseo."
+        },
+        "Anna ignores the dog and continues reading.": {
+            "key": "4-0",
+            "en": "Anna ignores the dog and continues reading.",
+            "fr": "Anna ignore le chien et continue à lire.",
+            "de": "Anna ignoriert den Hund und liest weiter.",
+            "pl": "Anna ignoruje psa i czyta dalej.",
+            "sv": "Anna struntar i hunden och fortsätter läsa.",
+            "pt": "A Anna ignora o cão e continua a ler.",
+            "nl": "Anna negeert de hond en gaat door met lezen.",
+            "es": "Anna ignora al perro y continúa leyendo."
+        },
+        "The dog finally leaves.": {
+            "key": "4-1",
+            "en": "The dog finally leaves.",
+            "fr": "Le chien finit par s'en aller.",
+            "de": "Der Hund geht schließlich weg.",
+            "pl": "Pies w końcu odchodzi.",
+            "sv": "Till slut lämnar hunden platsen.",
+            "pt": "O cão finalmente vai embora.",
+            "nl": "De hond gaat eindelijk weg.",
+            "es": "El perro finalmente se va."
+        },
+        "Anna enjoys her book and eats her sandwich.": {
+            "key": "4-2",
+            "en": "Anna enjoys her book and eats her sandwich.",
+            "fr": "Anna apprécie son livre et mange un sandwich.",
+            "de": "Anna genießt ihr Buch und isst ein Sandwich.",
+            "pl": "Anna cieszy się książką i je kanapkę.",
+            "sv": "Anna njuter av sin bok och äter sin smörgås.",
+            "pt": "A Anna aproveita o seu livro e come a sua sanduíche.",
+            "nl": "Anna geniet van haar boek en eet haar sandwich.",
+            "es": "Anna disfruta de su libro y come su sándwich."
+        },
+        "Take a nap.": {
+            "en": "Take a nap.",
+            "fr": "Faire une sieste.",
+            "de": "Ein Nickerchen machen.",
+            "pl": "Zdrzemnij się.",
+            "sv": "Ta en tupplur.",
+            "pt": "Fazer uma sesta.",
+            "nl": "Een dutje doen.",
+            "es": "Tomar una siesta."
         },
         "Anna helps the little girl with her shoe.": {
             "key": "5-0",
@@ -429,7 +439,8 @@
             "pl": "Anna pomaga dziewczynce założyć but.",
             "sv": "Anna hjälper den lilla flickan med hennes sko.",
             "pt": "A Anna ajuda a menina com o seu sapato.",
-            "nl": "Anna helpt het kleine meisje met haar schoen."
+            "nl": "Anna helpt het kleine meisje met haar schoen.",
+            "es": "Anna ayuda a la niña pequeña con su zapato."
         },
         "The girl smiles and thanks Anna.": {
             "key": "5-1",
@@ -439,7 +450,8 @@
             "pl": "Dziewczyna uśmiecha się i dziękuje Annie.",
             "sv": "Flickan ler och tackar Anna.",
             "pt": "A menina sorri e agradece à Anna.",
-            "nl": "Het meisje glimlacht en bedankt Anna."
+            "nl": "Het meisje glimlacht en bedankt Anna.",
+            "es": "La niña sonríe y le da las gracias a Anna."
         },
         "The girl's parents come over and thank Anna as well.": {
             "key": "5-2",
@@ -449,7 +461,8 @@
             "pl": "Rodzice dziewczynki podchodzą i również dziękują Annie.",
             "sv": "Flickans föräldrar kommer också fram och tackar Anna.",
             "pt": "Os pais da menina chegam e agradecem à Anna também.",
-            "nl": "De ouders van het meisje komen eraan en bedanken Anna ook."
+            "nl": "De ouders van het meisje komen eraan en bedanken Anna ook.",
+            "es": "Los padres de la niña se acercan y también le agradecen a Anna."
         },
         "The parents offer Anna some cookies.": {
             "key": "5-3",
@@ -459,7 +472,8 @@
             "pl": "Rodzice dają Annie ciasteczka.",
             "sv": "Föräldrarna bjuder Anna på kakor.",
             "pt": "Os pais oferecem bolachas à Anna.",
-            "nl": "De ouders bieden Anna wat koekjes aan."
+            "nl": "De ouders bieden Anna wat koekjes aan.",
+            "es": "Los padres le ofrecen a Anna algunas galletas."
         },
         "Anna tells the girl to ask her parents.": {
             "key": "6-0",
@@ -469,7 +483,8 @@
             "pl": "Anna mówi dziewczynce, by zapytała rodziców.",
             "sv": "Anna säger till flickan att hon ska fråga sina föräldrar.",
             "pt": "A Anna diz à menina para pedir ajuda aos seus pais.",
-            "nl": "Anna vertelt het meisje om het aan haar ouders te vragen."
+            "nl": "Anna vertelt het meisje om het aan haar ouders te vragen.",
+            "es": "Anna le dice a la niña que le pregunte a sus padres."
         },
         "The girl runs back to her parents.": {
             "key": "6-1",
@@ -479,7 +494,8 @@
             "pl": "Dziewczynka biegnie z powrotem do rodziców.",
             "sv": "Flickan springer tillbaka till sina föräldrar.",
             "pt": "A menina corre de volta para os seus pais.",
-            "nl": "Het meisje rent terug naar haar ouders."
+            "nl": "Het meisje rent terug naar haar ouders.",
+            "es": "La niña regresa corriendo con sus padres."
         },
         "Anna stays on the bench.": {
             "key": "6-2",
@@ -489,7 +505,8 @@
             "pl": "Anna pozostaje na ławce.",
             "sv": "Anna stannar kvar på bänken.",
             "pt": "A Anna fica no banco.",
-            "nl": "Anna blijft op het bankje zitten."
+            "nl": "Anna blijft op het bankje zitten.",
+            "es": "Anna se queda en el banco."
         },
         "After a while, she decides to do something else.": {
             "key": "6-3",
@@ -499,7 +516,8 @@
             "pl": "Po chwili postanowiła zrobić coś innego.",
             "sv": "Efter ett tag bestämmer hon sig för att göra något annat.",
             "pt": "Passado um tempo, ela decide fazer outra coisa.",
-            "nl": "Na een tijdje besluit ze om iets anders te doen."
+            "nl": "Na een tijdje besluit ze om iets anders te doen.",
+            "es": "Después de un rato, decide hacer otra cosa."
         },
         "Sit under a big tree.": {
             "en": "Sit under a big tree.",
@@ -508,16 +526,8 @@
             "pl": "Idź pod drzewo.",
             "sv": "Sitt under ett stort träd.",
             "pt": "Sentar debaixo de uma árvore grande.",
-            "nl": "Onder een grote boom zitten."
-        },
-        "Go for a walk.": {
-            "en": "Go for a walk.",
-            "fr": "Aller se promener.",
-            "de": "Spazieren gehen.",
-            "pl": "Idź na spacer.",
-            "sv": "Ta en promenad.",
-            "pt": "Ir passear.",
-            "nl": "Een wandeling maken."
+            "nl": "Onder een grote boom zitten.",
+            "es": "Sentarse debajo de un gran árbol."
         },
         "Anna sits down to read her book.": {
             "key": "7-0",
@@ -527,7 +537,8 @@
             "pl": "Anna siada, by poczytać książkę.",
             "sv": "Anna sätter sig ner för att läsa sin bok.",
             "pt": "A Anna senta-se para ler o seu livro.",
-            "nl": "Anna gaat zitten om haar boek te lezen."
+            "nl": "Anna gaat zitten om haar boek te lezen.",
+            "es": "Anna se sienta a leer su libro."
         },
         "She reads for a while.": {
             "key": "7-1",
@@ -537,7 +548,8 @@
             "pl": "Czyta przez chwilę.",
             "sv": "Hon läser en stund.",
             "pt": "Ela lê por um bocado.",
-            "nl": "Ze leest een tijdje."
+            "nl": "Ze leest een tijdje.",
+            "es": "Lee por un rato."
         },
         "She feels very relaxed.": {
             "key": "7-2",
@@ -547,7 +559,8 @@
             "pl": "Czuje się bardzo zrelaksowana.",
             "sv": "Hon känner sig mycket avslappnad.",
             "pt": "Ela sente-se muito relaxada.",
-            "nl": "Ze voelt zich erg ontspannen."
+            "nl": "Ze voelt zich erg ontspannen.",
+            "es": "Se siente muy relajada."
         },
         "The park is very peaceful.": {
             "key": "7-3",
@@ -557,25 +570,8 @@
             "pl": "Park jest bardzo spokojny.",
             "sv": "Parken är mycket fridfull.",
             "pt": "O parque é muito tranquilo.",
-            "nl": "Het park is erg rustig."
-        },
-        "Take a nap.": {
-            "en": "Take a nap.",
-            "fr": "Faire une sieste.",
-            "de": "Ein Nickerchen machen.",
-            "pl": "Zdrzemnij się.",
-            "sv": "Ta en tupplur.",
-            "pt": "Fazer uma sesta.",
-            "nl": "Een dutje doen."
-        },
-        "Go for a walk.": {
-            "en": "Go for a walk.",
-            "fr": "Aller se promener.",
-            "de": "Spazieren gehen.",
-            "pl": "Idź na spacer.",
-            "sv": "Ta en promenad.",
-            "pt": "Ir passear.",
-            "nl": "Een wandeling maken."
+            "nl": "Het park is erg rustig.",
+            "es": "El parque es muy tranquilo."
         },
         "Anna decides to go for a walk in the park.": {
             "key": "8-0",
@@ -585,7 +581,8 @@
             "pl": "Anna postanawia wybrać się na spacer w parku.",
             "sv": "Anna bestämmer sig för att ta en promenad i parken.",
             "pt": "A Anna decide ir passear no parque.",
-            "nl": "Anna besluit om te gaan wandelen in het park."
+            "nl": "Anna besluit om te gaan wandelen in het park.",
+            "es": "Anna decide dar un paseo por el parque."
         },
         "Anna looks at some beautiful flowers.": {
             "key": "8-1",
@@ -595,7 +592,8 @@
             "pl": "Anna patrzy na piękne kwiaty.",
             "sv": "Anna tittar på några vackra blommor.",
             "pt": "A Anna olha para umas flores bonitas.",
-            "nl": "Anna kijkt naar wat mooie bloemen."
+            "nl": "Anna kijkt naar wat mooie bloemen.",
+            "es": "Anna mira algunas flores hermosas."
         },
         "She listens to the birds singing.": {
             "key": "8-2",
@@ -605,7 +603,8 @@
             "pl": "Słucha śpiewu ptaków.",
             "sv": "Hon lyssnar på fågelsången.",
             "pt": "Ela escuta os pássaros a cantar.",
-            "nl": "Ze luistert naar de zingende vogels."
+            "nl": "Ze luistert naar de zingende vogels.",
+            "es": "Escucha a los pájaros cantar."
         },
         "She feels happy.": {
             "key": "8-3",
@@ -615,7 +614,8 @@
             "pl": "Jest szczęśliwa.",
             "sv": "Hon känner sig lycklig.",
             "pt": "Ela sente-se feliz.",
-            "nl": "Ze voelt zich vrolijk."
+            "nl": "Ze voelt zich vrolijk.",
+            "es": "Se siente feliz."
         },
         "Then she sees her friend Tom.": {
             "key": "8-4",
@@ -625,7 +625,8 @@
             "pl": "Potem widzi swojego przyjaciela Toma.",
             "sv": "Sedan ser hon sin vän Tom.",
             "pt": "Depois, ela vê o seu amigo Tom.",
-            "nl": "Dan ziet ze haar vriend Tom."
+            "nl": "Dan ziet ze haar vriend Tom.",
+            "es": "Luego ve a su amigo Tom."
         },
         "Tom is also walking in the park.": {
             "key": "8-5",
@@ -635,7 +636,8 @@
             "pl": "Tom również spaceruje po parku.",
             "sv": "Tom promenerar också i parken.",
             "pt": "O Tom também está a passear no parque.",
-            "nl": "Tom loopt ook in het park."
+            "nl": "Tom loopt ook in het park.",
+            "es": "Tom también está caminando por el parque."
         },
         "Anna takes a nap under the tree.": {
             "key": "9-0",
@@ -645,7 +647,8 @@
             "pl": "Anna ucina sobie drzemkę pod drzewem.",
             "sv": "Anna tar en tupplur under granen.",
             "pt": "A Anna faz uma sesta debaixo da árvore.",
-            "nl": "Anna doet een dutje onder de boom."
+            "nl": "Anna doet een dutje onder de boom.",
+            "es": "Anna toma una siesta debajo del árbol."
         },
         "She dreams that she flies like a bird.": {
             "key": "9-1",
@@ -655,7 +658,8 @@
             "pl": "Marzy o lataniu jak ptak.",
             "sv": "Hon drömmer om att hon flyger som en fågel.",
             "pt": "Ela sonha que voa como um pássaro.",
-            "nl": "Ze droomt dat ze vliegt als een vogel."
+            "nl": "Ze droomt dat ze vliegt als een vogel.",
+            "es": "Sueña que vuela como un pájaro."
         },
         "She wakes up feeling relaxed and happy.": {
             "key": "9-2",
@@ -665,16 +669,8 @@
             "pl": "Budzi się zrelaksowana i szczęśliwa.",
             "sv": "Hon vaknar upp och känner sig avslappnad och glad.",
             "pt": "Ela acorda a sentir-se relaxada e feliz.",
-            "nl": "Ze wordt ontspannen en vrolijk wakker."
-        },
-        "Go for a walk.": {
-            "en": "Go for a walk.",
-            "fr": "Aller se promener.",
-            "de": "Spazieren gehen.",
-            "pl": "Idź na spacer.",
-            "sv": "Ta en promenad.",
-            "pt": "Ir passear.",
-            "nl": "Een wandeling maken."
+            "nl": "Ze wordt ontspannen en vrolijk wakker.",
+            "es": "Se despierta sintiéndose relajada y feliz."
         },
         "The cookies are very tasty.": {
             "key": "10-0",
@@ -684,7 +680,8 @@
             "pl": "Ciastka są bardzo dobre.",
             "sv": "Kakorna är jättegoda.",
             "pt": "As bolachas são muito saborosas.",
-            "nl": "De koekjes zijn erg lekker."
+            "nl": "De koekjes zijn erg lekker.",
+            "es": "Las galletas están muy ricas."
         },
         "Anna feels happy and decides to do something else.": {
             "key": "10-1",
@@ -694,7 +691,8 @@
             "pl": "Anna jest szczęśliwa i postanawia zrobić coś innego.",
             "sv": "Anna känner sig glad och bestämmer sig för att göra något annat.",
             "pt": "A Anna sente-se feliz e decide fazer outra coisa.",
-            "nl": "Anna voelt zich vrolijk en besluit om iets anders te doen."
+            "nl": "Anna voelt zich vrolijk en besluit om iets anders te doen.",
+            "es": "Anna se siente feliz y decide hacer otra cosa."
         },
         "Play with the girl.": {
             "en": "Play with the girl.",
@@ -703,16 +701,8 @@
             "pl": "Pobaw się z dziewczynką.",
             "sv": "Lek med flickan.",
             "pt": "Brincar com a menina.",
-            "nl": "Met het meisje spelen."
-        },
-        "Go for a walk.": {
-            "en": "Go for a walk.",
-            "fr": "Aller se promener.",
-            "de": "Spazieren gehen.",
-            "pl": "Idź na spacer.",
-            "sv": "Ta en promenad.",
-            "pt": "Ir passear.",
-            "nl": "Een wandeling maken."
+            "nl": "Met het meisje spelen.",
+            "es": "Jugar con la niña."
         },
         "Anna and the girl play a game.": {
             "key": "14-0",
@@ -722,7 +712,8 @@
             "pl": "Anna i dziewczynka grają w grę.",
             "sv": "Anna och flickan leker en lek.",
             "pt": "A Anna e a menina brincam.",
-            "nl": "Anna en het meisje spelen een spelletje."
+            "nl": "Anna en het meisje spelen een spelletje.",
+            "es": "Anna y la niña juegan un juego."
         },
         "They play tag and have a lot of fun.": {
             "key": "14-1",
@@ -732,7 +723,8 @@
             "pl": "Grają w berka i świetnie się przy tym bawią.",
             "sv": "De leker kull och har mycket roligt.",
             "pt": "Elas jogam à apanhada e divertem-se muito.",
-            "nl": "Ze spelen tikkertje en hebben veel lol."
+            "nl": "Ze spelen tikkertje en hebben veel lol.",
+            "es": "Juegan a la pilla-pilla y se divierten mucho."
         },
         "After a while, the girl has to go.": {
             "key": "14-2",
@@ -742,7 +734,8 @@
             "pl": "Po chwili dziewczyna musi odejść.",
             "sv": "Efter ett tag måste flickan gå.",
             "pt": "Passado um bocado, a menina tem de ir embora.",
-            "nl": "Na een tijdje moet het meisje gaan."
+            "nl": "Na een tijdje moet het meisje gaan.",
+            "es": "Después de un rato, la niña tiene que irse."
         },
         "Anna says goodbye.": {
             "key": "14-3",
@@ -752,16 +745,8 @@
             "pl": "Anna żegna się.",
             "sv": "Anna säger adjö.",
             "pt": "A Anna despede-se.",
-            "nl": "Anna neemt afscheid."
-        },
-        "Go for a walk.": {
-            "en": "Go for a walk.",
-            "fr": "Aller se promener.",
-            "de": "Spazieren gehen.",
-            "pl": "Idź na spacer.",
-            "sv": "Ta en promenad.",
-            "pt": "Ir passear.",
-            "nl": "Een wandeling maken."
+            "nl": "Anna neemt afscheid.",
+            "es": "Anna se despide."
         },
         "Anna smiles and waves to Tom.": {
             "key": "15-0",
@@ -771,7 +756,8 @@
             "pl": "Anna uśmiecha się i macha do Toma.",
             "sv": "Anna ler och vinkar till Tom.",
             "pt": "A Anna sorri e acena para o Tom.",
-            "nl": "Anna glimlacht en zwaait naar Tom."
+            "nl": "Anna glimlacht en zwaait naar Tom.",
+            "es": "Anna sonríe y le hace una señal a Tom."
         },
         "Tom waves back and walks over to her.": {
             "key": "15-1",
@@ -781,7 +767,8 @@
             "pl": "Tom macha do niej i podchodzi.",
             "sv": "Tom vinkar tillbaka och går fram till henne.",
             "pt": "O Tom acena de volta e vai ter com ela.",
-            "nl": "Tom zwaait terug en loopt naar haar toe."
+            "nl": "Tom zwaait terug en loopt naar haar toe.",
+            "es": "Tom le hace una señal de vuelta y se acerca a ella."
         },
         "Hi Anna, it's great to see you here!": {
             "key": "15-2",
@@ -791,7 +778,8 @@
             "pl": "Cześć Anna, miło cię tu widzieć!",
             "sv": "Hej Anna, vad kul att se dig här!",
             "pt": "Olá Anna, que bom ver-te aqui!",
-            "nl": "Hoi Anna, het is goed om je hier te zien!"
+            "nl": "Hoi Anna, het is goed om je hier te zien!",
+            "es": "Hola Anna, es genial verte aquí."
         },
         "What a nice surprise!": {
             "en": "What a nice surprise!",
@@ -800,7 +788,8 @@
             "pl": "Co za wspaniała niespodzianka!",
             "sv": "Vilken trevlig överraskning!",
             "pt": "Que bela surpresa!",
-            "nl": "Wat een fijne verrassing!"
+            "nl": "Wat een fijne verrassing!",
+            "es": "¡Qué agradable sorpresa!"
         },
         "Do you come here often?": {
             "en": "Do you come here often?",
@@ -809,7 +798,8 @@
             "pl": "Często tu przychodzisz?",
             "sv": "Kommer du hit ofta?",
             "pt": "Vens aqui regularmente?",
-            "nl": "Kom je hier vaak?"
+            "nl": "Kom je hier vaak?",
+            "es": "¿Vienes aquí a menudo?"
         },
         "Hi Tom, what a nice surprise!": {
             "key": "16-0",
@@ -819,7 +809,8 @@
             "pl": "Witaj Tom, co za urocza niespodzianka!",
             "sv": "Hej Tom, vilken trevlig överraskning!",
             "pt": "Olá Tom, mas que bela surpresa!",
-            "nl": "Hoi Tom, wat een fijne verrassing!"
+            "nl": "Hoi Tom, wat een fijne verrassing!",
+            "es": "Hola Tom, ¡qué agradable sorpresa!"
         },
         "Hi Tom, do you come here often?": {
             "key": "17-0",
@@ -829,7 +820,8 @@
             "pl": "Cześć Tom, często tu przychodzisz?",
             "sv": "Hej Tom, kommer du hit ofta?",
             "pt": "Olá Tom, vens aqui regularmente?",
-            "nl": "“Hoi Tom, kom je hier vaak?"
+            "nl": "“Hoi Tom, kom je hier vaak?",
+            "es": "Hola Tom, ¿vienes aquí a menudo?"
         },
         "I like to come here to read and enjoy the fresh air.": {
             "key": "18-0",
@@ -839,7 +831,8 @@
             "pl": "Lubię tu przychodzić, by czytać i cieszyć się świeżym powietrzem",
             "sv": "Jag tycker om att komma hit för att läsa och njuta av den friska luften.",
             "pt": "Eu gosto de vir aqui ler e aproveitar o ar livre.",
-            "nl": "Ik kom hier graag om te lezen en van de frisse lucht te genieten."
+            "nl": "Ik kom hier graag om te lezen en van de frisse lucht te genieten.",
+            "es": "Me gusta venir aquí para leer y disfrutar del aire fresco."
         },
         "That sounds nice. What book are you reading?": {
             "key": "18-1",
@@ -849,7 +842,8 @@
             "pl": "Brzmi nieźle. Jaką książkę czytasz?",
             "sv": "Det låter trevligt. Vilken bok läser du?",
             "pt": "Isso soa bem. Que livro lês?",
-            "nl": "Dat klinkt leuk. Welk boek lees je?"
+            "nl": "Dat klinkt leuk. Welk boek lees je?",
+            "es": "Eso suena bien. ¿Qué libro estás leyendo?"
         },
         "A detective story.": {
             "en": "A detective story.",
@@ -858,7 +852,8 @@
             "pl": "Powieść kryminalna.",
             "sv": "En deckare.",
             "pt": "Uma história de detetives.",
-            "nl": "Een detectiveverhaal."
+            "nl": "Een detectiveverhaal.",
+            "es": "Una historia de detectives."
         },
         "An adventure novel.": {
             "en": "An adventure novel.",
@@ -867,7 +862,8 @@
             "pl": "Powieść przygodowa.",
             "sv": "En äventyrsroman.",
             "pt": "Uma aventura.",
-            "nl": "Een avonturenroman."
+            "nl": "Een avonturenroman.",
+            "es": "Una novela de aventuras."
         },
         "I like to watch the people.": {
             "key": "19-0",
@@ -877,7 +873,8 @@
             "pl": "Lubię obserwować ludzi.",
             "sv": "Jag tycker om att titta på folk.",
             "pt": "Eu gosto de observar as pessoas.",
-            "nl": "Ik vind het leuk om naar de mensen te kijken,” zegt Anna."
+            "nl": "Ik vind het leuk om naar de mensen te kijken,” zegt Anna.",
+            "es": "Me gusta observar a la gente."
         },
         "Me too! It's fun to see everyone having a good time.": {
             "key": "19-1",
@@ -887,7 +884,8 @@
             "pl": "Ja też! Fajnie jest widzieć, że wszyscy dobrze się bawią.",
             "sv": "Jag också! Det är kul att se alla som roar sig.",
             "pt": "Eu também! É bom ver toda a gente a divertir-se.",
-            "nl": "Ik ook! Het is leuk om iedereen een goede tijd te zien hebben."
+            "nl": "Ik ook! Het is leuk om iedereen een goede tijd te zien hebben.",
+            "es": "A mí también. Es divertido ver a todos divertiéndose."
         },
         "I also like watching the animals.": {
             "key": "19-2",
@@ -897,65 +895,8 @@
             "pl": "Lubię też obserwować zwierzęta.",
             "sv": "Jag tycker också om att titta på djuren.",
             "pt": "Eu também gosto de observar os animais.",
-            "nl": "Ik kijk ook graag naar de dieren."
-        },
-        "Do you have a favorite animal here?": {
-            "en": "Do you have a favorite animal here?",
-            "fr": "As-tu un animal préféré ici ?",
-            "de": "Hast du ein Lieblingstier hier?",
-            "pl": "Czy masz tutaj ulubione zwierzę?",
-            "sv": "Har du något favoritdjur här?",
-            "pt": "Tens algum animal preferido aqui?",
-            "nl": "Heb je een favoriete dier hier?"
-        },
-        "Do you like playing with the dogs here?": {
-            "en": "Do you like playing with the dogs here?",
-            "fr": "Tu aimes jouer avec les chiens ici ?",
-            "de": "Spielst du hier gerne mit den Hunden?",
-            "pl": "Lubisz bawić się z tutejszymi psami?",
-            "sv": "Tycker du om att leka med hundarna här?",
-            "pt": "Gostas de brincar com os cães aqui?",
-            "nl": "Speel je graag met de honden hier?"
-        },
-        "It's a detective story.": {
-            "key": "20-0",
-            "en": "It's a detective story.",
-            "fr": "C'est un roman policier.",
-            "de": "Das ist ein Krimi.",
-            "pl": "To powieść kryminalna.",
-            "sv": "Det är en deckare.",
-            "pt": "É uma história de detetives.",
-            "nl": "Het is een detectiveverhaal."
-        },
-        "Detective stories are great, they are full of surprises.": {
-            "key": "20-1",
-            "en": "Detective stories are great, they are full of surprises.",
-            "fr": "Les romans policiers sont super, ils sont pleins de surprises.",
-            "de": "Kriminalromane sind toll, sie stecken voller Überraschungen.",
-            "pl": "Powieści kryminalne są świetne, pełne niespodzianek.",
-            "sv": "Deckare är toppen, de är fulla av överraskningar.",
-            "pt": "Histórias de detetives são fantásticas, estão cheias de surpresas.",
-            "nl": "Detectiveverhalen zijn geweldig, ze zitten vol verrassingen."
-        },
-        "It's an adventure novel.": {
-            "key": "21-0",
-            "en": "It's an adventure novel.",
-            "fr": "C'est un roman d'aventures.",
-            "de": "Das ist ein Abenteuerroman.",
-            "pl": "To powieść przygodowa.",
-            "sv": "Det är en äventyrsroman.",
-            "pt": "É uma aventura.",
-            "nl": "Het is een avonturenroman."
-        },
-        "Adventure novels are so exciting! They take you to new places.": {
-            "key": "21-1",
-            "en": "Adventure novels are so exciting! They take you to new places.",
-            "fr": "Les romans d'aventure sont si passionnants ! Ils t'emmènent dans de nouveaux endroits.",
-            "de": "Abenteuerromane sind so spannend!",
-            "pl": "Powieści przygodowe są takie ekscytujące!",
-            "sv": "Äventyrsromaner är så spännande!",
-            "pt": "Aventuras são tão entusiasmantes!",
-            "nl": "Avonturenromans zijn zo spannend!"
+            "nl": "Ik kijk ook graag naar de dieren.",
+            "es": "También me gusta ver a los animales."
         },
         "Do you have a favorite animal here?": {
             "key": "22-0",
@@ -965,35 +906,8 @@
             "pl": "Czy masz tu jakieś ulubione zwierzę?",
             "sv": "Har du något favoritdjur här?",
             "pt": "Tens algum animal preferido aqui?",
-            "nl": "Heb je een favoriete dier hier?"
-        },
-        "I really like the squirrels. They're so cute!": {
-            "key": "22-1",
-            "en": "I really like the squirrels. They're so cute!",
-            "fr": "J'aime beaucoup les écureuils. Ils sont si mignons !",
-            "de": "Ich mag Eichhörnchen sehr. Sie sind so süß!",
-            "pl": "Naprawdę lubię wiewiórki. Są takie urocze!",
-            "sv": "Jag gillar verkligen ekorrarna. De är så söta!",
-            "pt": "Eu adoro os esquilos. Eles são tão fofos!",
-            "nl": "Ik vind de eekhoorns erg leuk. Ze zijn zo schattig!"
-        },
-        "I like the squirrels too!": {
-            "en": "I like the squirrels too!",
-            "fr": "J'aime aussi les écureuils !",
-            "de": "Ich mag auch Eichhörnchen!",
-            "pl": "Ja też uwielbiam wiewiórki!",
-            "sv": "Jag gillar också ekorrar!",
-            "pt": "Eu também gosto de esquilos!",
-            "nl": "Ik vind de eekhoorns ook leuk!"
-        },
-        "I like the birds more.": {
-            "en": "I like the birds more.",
-            "fr": "Je préfère les oiseaux.",
-            "de": "Ich bevorzuge Vögel.",
-            "pl": "Wolę ptaki.",
-            "sv": "Jag gillar fåglarna mer.",
-            "pt": "Eu prefiro pássaros.",
-            "nl": "Ik vind de vogels leuker."
+            "nl": "Heb je een favoriete dier hier?",
+            "es": "¿Tienes un animal favorito aquí?"
         },
         "Do you like playing with the dogs here?": {
             "key": "23-0",
@@ -1003,7 +917,83 @@
             "pl": "Lubisz bawić się z tutejszymi psami?",
             "sv": "Tycker du om att leka med hundarna här?",
             "pt": "Gostas de brincar com os cães aqui?",
-            "nl": "Speel je graag met de honden hier?"
+            "nl": "Speel je graag met de honden hier?",
+            "es": "¿Te gusta jugar con los perros aquí?"
+        },
+        "It's a detective story.": {
+            "key": "20-0",
+            "en": "It's a detective story.",
+            "fr": "C'est un roman policier.",
+            "de": "Das ist ein Krimi.",
+            "pl": "To powieść kryminalna.",
+            "sv": "Det är en deckare.",
+            "pt": "É uma história de detetives.",
+            "nl": "Het is een detectiveverhaal.",
+            "es": "Es una historia de detectives."
+        },
+        "Detective stories are great, they are full of surprises.": {
+            "key": "20-1",
+            "en": "Detective stories are great, they are full of surprises.",
+            "fr": "Les romans policiers sont super, ils sont pleins de surprises.",
+            "de": "Kriminalromane sind toll, sie stecken voller Überraschungen.",
+            "pl": "Powieści kryminalne są świetne, pełne niespodzianek.",
+            "sv": "Deckare är toppen, de är fulla av överraskningar.",
+            "pt": "Histórias de detetives são fantásticas, estão cheias de surpresas.",
+            "nl": "Detectiveverhalen zijn geweldig, ze zitten vol verrassingen.",
+            "es": "Las historias de detectives son geniales, están llenas de sorpresas."
+        },
+        "It's an adventure novel.": {
+            "key": "21-0",
+            "en": "It's an adventure novel.",
+            "fr": "C'est un roman d'aventures.",
+            "de": "Das ist ein Abenteuerroman.",
+            "pl": "To powieść przygodowa.",
+            "sv": "Det är en äventyrsroman.",
+            "pt": "É uma aventura.",
+            "nl": "Het is een avonturenroman.",
+            "es": "Es una novela de aventuras."
+        },
+        "Adventure novels are so exciting! They take you to new places.": {
+            "key": "21-1",
+            "en": "Adventure novels are so exciting! They take you to new places.",
+            "fr": "Les romans d'aventure sont si passionnants ! Ils t'emmènent dans de nouveaux endroits.",
+            "de": "Abenteuerromane sind so spannend!",
+            "pl": "Powieści przygodowe są takie ekscytujące!",
+            "sv": "Äventyrsromaner är så spännande!",
+            "pt": "Aventuras são tão entusiasmantes!",
+            "nl": "Avonturenromans zijn zo spannend!",
+            "es": "¡Las novelas de aventuras son tan emocionantes! Te llevan a nuevos lugares."
+        },
+        "I really like the squirrels. They're so cute!": {
+            "key": "22-1",
+            "en": "I really like the squirrels. They're so cute!",
+            "fr": "J'aime beaucoup les écureuils. Ils sont si mignons !",
+            "de": "Ich mag Eichhörnchen sehr. Sie sind so süß!",
+            "pl": "Naprawdę lubię wiewiórki. Są takie urocze!",
+            "sv": "Jag gillar verkligen ekorrarna. De är så söta!",
+            "pt": "Eu adoro os esquilos. Eles são tão fofos!",
+            "nl": "Ik vind de eekhoorns erg leuk. Ze zijn zo schattig!",
+            "es": "Me gustan mucho las ardillas. ¡Son tan lindas!"
+        },
+        "I like the squirrels too!": {
+            "en": "I like the squirrels too!",
+            "fr": "J'aime aussi les écureuils !",
+            "de": "Ich mag auch Eichhörnchen!",
+            "pl": "Ja też uwielbiam wiewiórki!",
+            "sv": "Jag gillar också ekorrar!",
+            "pt": "Eu também gosto de esquilos!",
+            "nl": "Ik vind de eekhoorns ook leuk!",
+            "es": "¡A mí también me gustan las ardillas!"
+        },
+        "I like the birds more.": {
+            "en": "I like the birds more.",
+            "fr": "Je préfère les oiseaux.",
+            "de": "Ich bevorzuge Vögel.",
+            "pl": "Wolę ptaki.",
+            "sv": "Jag gillar fåglarna mer.",
+            "pt": "Eu prefiro pássaros.",
+            "nl": "Ik vind de vogels leuker.",
+            "es": "Me gustan más los pájaros."
         },
         "Yes, I love dogs. Dogs always look so happy.": {
             "key": "23-1",
@@ -1013,7 +1003,8 @@
             "pl": "Tak, lubię psy. Psy zawsze wyglądają na szczęśliwe.",
             "sv": "Ja, jag älskar hundar. Hundar ser alltid så glada ut.",
             "pt": "Sim, eu amo cães. Os cães parecem sempre tão felizes.",
-            "nl": "Ja, ik houd van honden. Honden zien er altijd zo blij uit."
+            "nl": "Ja, ik houd van honden. Honden zien er altijd zo blij uit.",
+            "es": "Sí, me encantan los perros. Los perros siempre parecen tan felices."
         },
         "I played with a dog earlier today.": {
             "en": "I played with a dog earlier today.",
@@ -1022,7 +1013,8 @@
             "pl": "Bawiłam się dziś z psem.",
             "sv": "Jag lekte med en hund tidigare idag.",
             "pt": "Eu brinquei com um cão hoje.",
-            "nl": "Ik heb eerder vandaag met een hond gespeeld."
+            "nl": "Ik heb eerder vandaag met een hond gespeeld.",
+            "es": "Hoy jugué con un perro."
         },
         "I like watching them play too.": {
             "en": "I like watching them play too.",
@@ -1031,7 +1023,8 @@
             "pl": "Lubię też oglądać ich grę.",
             "sv": "Jag tycker om att titta på när de leker också.",
             "pt": "Eu também gosto de os ver a brincar.",
-            "nl": "Ik vind het ook leuk om ze te zien spelen."
+            "nl": "Ik vind het ook leuk om ze te zien spelen.",
+            "es": "A mí también me gusta verlos jugar."
         },
         "What other kinds of books do you like?": {
             "key": "25-0",
@@ -1041,7 +1034,8 @@
             "pl": "Jakie inne rodzaje książek lubisz?",
             "sv": "Vilka andra typer av böcker tycker du om?",
             "pt": "De que outro tipo de livros também gostas?",
-            "nl": "Van wat voor andere soorten boeken houd je?"
+            "nl": "Van wat voor andere soorten boeken houd je?",
+            "es": "¿Qué otros tipos de libros te gustan?"
         },
         "I also read science fiction books.": {
             "key": "25-1",
@@ -1051,7 +1045,8 @@
             "pl": "Czytam też science fiction.",
             "sv": "Jag läser också science-fiction böcker.",
             "pt": "Eu também leio livros de ficção-científica.",
-            "nl": "Ik lees ook sciencefictionboeken."
+            "nl": "Ik lees ook sciencefictionboeken.",
+            "es": "También leo libros de ciencia ficción."
         },
         "Science fiction books make you think about the future.": {
             "key": "25-2",
@@ -1061,7 +1056,8 @@
             "pl": "Książki science fiction sprawiają, że myślisz o przyszłości.",
             "sv": "Science-fiction böcker får dig att tänka på framtiden.",
             "pt": "Livros de ficção-científica fazem-te pensar sobre o futuro.",
-            "nl": "Sciencefictionboeken laten je aan de toekomst denken."
+            "nl": "Sciencefictionboeken laten je aan de toekomst denken.",
+            "es": "Los libros de ciencia ficción te hacen pensar en el futuro."
         },
         "Maybe we can read one together sometime?": {
             "en": "Maybe we can read one together sometime?",
@@ -1070,7 +1066,8 @@
             "pl": "Może kiedyś przeczytamy jakąś razem?",
             "sv": "Vi kanske kan läsa en tillsammans någon gång?",
             "pt": "Talvez possamos ler um livro juntos algum dia?",
-            "nl": "Misschien kunnen we er een keer samen één lezen?"
+            "nl": "Misschien kunnen we er een keer samen één lezen?",
+            "es": "Quizás podríamos leer uno juntos algún día."
         },
         "We should talk about our favorite books more often.": {
             "en": "We should talk about our favorite books more often.",
@@ -1079,7 +1076,8 @@
             "pl": "Powinniśmy częściej rozmawiać o naszych ulubionych książkach.",
             "sv": "Vi borde prata om våra favoritböcker oftare.",
             "pt": "Devíamos falar sobre os nossos livros favoritos mais vezes.",
-            "nl": "We zouden vaker over onze favoriete boeken moeten praten."
+            "nl": "We zouden vaker over onze favoriete boeken moeten praten.",
+            "es": "Deberíamos hablar más a menudo sobre nuestros libros favoritos."
         },
         "Anna and Tom continue to talk and laugh for a while.": {
             "key": "28-0",
@@ -1089,7 +1087,8 @@
             "pl": "Anna i Tom kontynuują rozmowę i śmieją się przez chwilę.",
             "sv": "Anna och Tom fortsätter att prata och skratta en stund.",
             "pt": "A Anna e o Tom continuam a falar e a rir por um tempo.",
-            "nl": "Anna en Tom blijven nog een tijdje praten en lachen."
+            "nl": "Anna en Tom blijven nog een tijdje praten en lachen.",
+            "es": "Anna y Tom continúan hablando y riendo por un rato."
         },
         "It's getting dark and it's time to go home.": {
             "key": "28-1",
@@ -1099,7 +1098,8 @@
             "pl": "Zapada noc i czas wracać do domu.",
             "sv": "Det börjar bli mörkt och det är dags att åka hem.",
             "pt": "Está a ficar escuro e é hora de ir para casa.",
-            "nl": "Het wordt donker en het is tijd om naar huis te gaan."
+            "nl": "Het wordt donker en het is tijd om naar huis te gaan.",
+            "es": "Se está haciendo de noche y es hora de ir a casa."
         },
         "Anna says goodbye to Tom and goes home.": {
             "key": "28-2",
@@ -1109,7 +1109,8 @@
             "pl": "Anna żegna się z Tomem i wraca do domu.",
             "sv": "Anna säger hej då till Tom och åker hem.",
             "pt": "A Anna despede-se do Tom e vai para casa.",
-            "nl": "Anna neemt afscheid van Tom en gaat naar huis."
+            "nl": "Anna neemt afscheid van Tom en gaat naar huis.",
+            "es": "Anna se despide de Tom y se va a casa."
         },
         "It was a good day.": {
             "key": "28-3",
@@ -1119,7 +1120,8 @@
             "pl": "To był dobry dzień.",
             "sv": "Det var en bra dag.",
             "pt": "Foi um bom dia.",
-            "nl": "Het was een goede dag."
+            "nl": "Het was een goede dag.",
+            "es": "Fue un buen día."
         },
         "Tom smiles.": {
             "key": "31-0",
@@ -1129,7 +1131,8 @@
             "pl": "Tom się uśmiecha.",
             "sv": "Tom ler.",
             "pt": "O Tom.",
-            "nl": "Tom glimlacht."
+            "nl": "Tom glimlacht.",
+            "es": "Tom sonríe."
         },
         "Yes, I come here sometimes to relax. What about you?": {
             "key": "31-1",
@@ -1139,7 +1142,8 @@
             "pl": "Tak, czasami tu przychodzę, aby się zrelaksować. A ty?",
             "sv": "Ja, jag kommer hit ibland för att koppla av. Och du då?",
             "pt": "Sim, eu venho aqui para relaxar às vezes. E tu?",
-            "nl": "Ja, ik kom hier soms om me te ontspannen. En jij?"
+            "nl": "Ja, ik kom hier soms om me te ontspannen. En jij?",
+            "es": "Sí, vengo aquí a veces para relajarme. ¿Y tú?"
         },
         "I like to read here.": {
             "en": "I like to read here.",
@@ -1148,7 +1152,8 @@
             "pl": "Uwielbiam tu czytać.",
             "sv": "Jag gillar att läsa här.",
             "pt": "Eu gosto de ler aqui.",
-            "nl": "Ik lees hier graag."
+            "nl": "Ik lees hier graag.",
+            "es": "Me gusta leer aquí."
         },
         "I like to watch the people here.": {
             "en": "I like to watch the people here.",
@@ -1157,7 +1162,8 @@
             "pl": "Uwielbiam obserwować ludzi tutaj.",
             "sv": "Jag gillar att titta på människorna här.",
             "pt": "Eu gosto de observar as pessoas aqui.",
-            "nl": "Ik kijk hier graag naar de mensen."
+            "nl": "Ik kijk hier graag naar de mensen.",
+            "es": "Me gusta observar a la gente aquí."
         }
     }
 }
