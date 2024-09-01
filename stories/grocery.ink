@@ -179,7 +179,10 @@ You walk down the street until the end.
     -- @employee Sorry, you're too young to buy wine.
 * [Chocolate (2🪙)]
     @peter I'll buy my favorite chocolate.
-    ~ buy(chocolate, 2)
+    {buy(chocolate, 2):
+        ~ treats += 1
+    }
+
 + [Leave]
     @peter That's all, thank you.
     You leave the supermarket.
