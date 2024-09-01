@@ -1,4 +1,4 @@
-import { stories } from "./stories.js";
+import { allStories } from "./stories.js";
 import { listenMP3, soundEffect } from "./audio.js";
 import { WordShuffleGame } from "./wordShuffleGame.js";
 import { UserData } from "./userdata.js";
@@ -43,7 +43,7 @@ function setLanguage(l) {
 
 function updateCollectionCountLabel(label, lang, storyName) {
     const collected = userData.nbCollectedImages(lang, storyName);
-    const storyData = stories.find(s => s.id == storyName);
+    const storyData = allStories.find(s => s.id == storyName);
     label.textContent = `${collected}/${storyData.imageCount}`;
     if (collected === storyData.imageCount) {
         label.classList.add("story-complete");
@@ -331,7 +331,7 @@ function showChoices(choices) {
     if (choices.length === 0) {
         soundEffect(settings, 'level-end');
         document.querySelector(".story-end").style.display = "block";
-        const storyData = stories.find(s => s.id === story.storyName);
+        const storyData = allStories.find(s => s.id === story.storyName);
         const collectedImages = userData.nbCollectedImages(story.lang, story.storyName);
         let text = "You have completed this story. "
         if (collectedImages === storyData.imageCount) {
@@ -356,7 +356,7 @@ function createImageCollection(classname, lang, storyName) {
         return;
     }
 
-    for (const sto of stories) {
+    for (const sto of allStories) {
         if (storyName && storyName !== sto.id) {
             continue;
         }
@@ -374,10 +374,11 @@ function createStoryList() {
     const container = document.querySelector(".story-list");
     container.innerHTML = "";
 
-    for (const sto of stories) {
+    for (const sto of allStories) {
         if (sto.released === false) {
             continue;
         }
+        const unreleased = Array.isArray(sto.released) && !sto.released.includes(story.lang);
 
         const elt = document.createElement("div");
         elt.classList.add("story-info");
@@ -390,9 +391,9 @@ function createStoryList() {
         imgLink.appendChild(img);
         elt.appendChild(imgLink);
 
-        const link = document.createElement("a");
+        const link = document.createElement(unreleased ? "p" : "a");
         link.href = `/?lang=${story.lang}&story=${sto.id}`;
-        link.textContent = sto.title;
+        link.textContent = sto.title + (unreleased ? " (translation missing)" : "");
         elt.appendChild(link);
 
         const countLabel = document.createElement("span");
