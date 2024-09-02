@@ -233,10 +233,7 @@ h2 {
 
 .story-list {
     .story-info {
-        border-radius: 16px;
-        border: 1px solid var(--border-color);
         width: 180px;
-        padding: 8px;
         position: relative;
         text-align: center;
     }
@@ -263,6 +260,16 @@ h2 {
     img {
         width: 100%;
         border-radius: 16px;
+        border: 2px solid transparent;
+    }
+
+    a {
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    a:hover img {
+        border-color: var(--highlight-color);
     }
 
     display: grid;
@@ -462,7 +469,7 @@ a:hover, summary:hover > * {
 }
 
 .flag {
-    width: 92px;
+    width: 120px;
     vertical-align: middle;
     border-radius: 8px;
     margin: 8px;

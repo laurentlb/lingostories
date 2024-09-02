@@ -402,7 +402,7 @@ function createStoryList() {
         const countLabel = document.createElement("span");
         countLabel.classList.add("story-count");
         if (unreleased) {
-            countLabel.textContent = "not available";
+            countLabel.textContent = "not yet available";
             countLabel.title = "This story has not been translated yet.";
         } else {
             updateCollectionCountLabel(countLabel, story.lang, sto.id);
