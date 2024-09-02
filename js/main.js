@@ -383,26 +383,30 @@ function createStoryList() {
         const elt = document.createElement("div");
         elt.classList.add("story-info");
 
-        const imgLink = document.createElement("a");
-        if (!unreleased) {
-            imgLink.href = `/?lang=${story.lang}&story=${sto.id}`;
-        }
-        const img = document.createElement("img");
-        img.src = `img/arrow-right-3-square.svg`;
-        img.classList.add("icon", "choice-icon");
-        imgLink.appendChild(img);
-        elt.appendChild(imgLink);
-
-        const link = document.createElement(unreleased ? "span" : "a");
+        const link = document.createElement("a");
         if (!unreleased) {
             link.href = `/?lang=${story.lang}&story=${sto.id}`;
+        } else {
+            elt.classList.add("unreleased");
         }
-        link.textContent = sto.title + (unreleased ? " (translation missing)" : "");
+
+        const img = document.createElement("img");
+        img.src = `img/stories/${sto.id}.jpg`;
+        link.appendChild(img);
+
+        const title = document.createElement("p");
+        title.textContent = sto.title;
+        link.appendChild(title);
         elt.appendChild(link);
 
         const countLabel = document.createElement("span");
         countLabel.classList.add("story-count");
-        updateCollectionCountLabel(countLabel, story.lang, sto.id);
+        if (unreleased) {
+            countLabel.textContent = "not available";
+            countLabel.title = "This story has not been translated yet.";
+        } else {
+            updateCollectionCountLabel(countLabel, story.lang, sto.id);
+        }
         elt.appendChild(countLabel);
 
         container.appendChild(elt);
