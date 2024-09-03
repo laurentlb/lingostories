@@ -311,16 +311,16 @@ summary {
         margin: 0 auto;
     }
 
-    .top-icon {
-        width: 36px;
-        height: 36px;
-        display: inline;
-        vertical-align: top;
-    }
-
     #collection-count, #restart-icon {
         visibility: hidden;
     }
+}
+
+.top-icon {
+    width: 36px;
+    height: 36px;
+    display: inline;
+    vertical-align: top;
 }
 
 .text-icon {
