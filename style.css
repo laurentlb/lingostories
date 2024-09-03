@@ -80,9 +80,13 @@ hr {
 }
 
 h2 {
-    margin-block: 0.5em;
-    font-size: 1.2em;
+    /* margin-block: 0.5em;
+    font-size: 1.2em; */
     color: var(--highlight-color);
+}
+
+h3 {
+    color: var(--secondary-text-color);
 }
 
 .top-icon:hover, .text-icon:hover, .player-icon:hover, .bubble-icon:hover, .audio-icon:hover, .choice-icon:hover {
@@ -476,8 +480,10 @@ a:hover, summary:hover > * {
     border: 2px solid transparent;
 }
 
-p {
-    margin-block-start: 0em;
+p, li {
+    margin-block: 0.8em;
+    line-height: 1.25em;
+    hyphens: auto;
 }
 
 .options {
