@@ -470,10 +470,14 @@ a:hover, summary:hover > * {
         text-align: center;
         grid-gap: 0.5em;
     }
+
+    li {
+        margin: 0;
+    }
 }
 
 .flag {
-    width: 120px;
+    width: 100px;
     vertical-align: middle;
     border-radius: 8px;
     margin: 8px;
