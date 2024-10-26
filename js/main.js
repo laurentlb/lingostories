@@ -172,18 +172,6 @@ function showText(line, useSpoiler) {
         return;
     }
 
-    const speechRecognitionBox = document.querySelector(".speech-recognition");    
-    if (settings.useMicrophone()) {
-        speechRecognitionBox.style.display = "flex";
-        speechRecognition.init(story.lang, line[story.lang], () => {
-            speechRecognitionBox.style.display = "none";
-            speechRecognitionBox.querySelector(".output").innerHTML = "";
-            next(true);
-        });
-    } else {
-        speechRecognitionBox.style.display = "none";
-    }
-
     const textOnly = settings.readingMode() === "textOnly";
 
     const main = document.querySelector('.story');
@@ -237,12 +225,31 @@ function showText(line, useSpoiler) {
         actuallyShowText(container, line, useSpoiler);
     }
 
+    const startListening = () => {
+        const speechRecognitionBox = document.querySelector(".speech-recognition");    
+        if (settings.useMicrophone()) {
+            speechRecognitionBox.style.display = "flex";
+            speechRecognition.init(story.lang, line[story.lang], () => {
+                speechRecognitionBox.style.display = "none";
+                speechRecognitionBox.querySelector(".output").innerHTML = "";
+                next(true);
+            });
+        } else {
+            speechRecognitionBox.style.display = "none";
+        }
+    };
+
     if (!textOnly) {
         listenMP3(story, line, settings, () => {
             if (!actionPending) {
                 next();
             }
         });
+        setTimeout(() => {
+            startListening();
+        }, 2000);
+    } else {
+        startListening();
     }
 }
 

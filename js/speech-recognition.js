@@ -11,12 +11,11 @@ export class SpeechRecognitionBox {
         
         this.recognition.continuous = false;
         this.recognition.interimResults = true;
-        this.recognition.maxAlternatives = 5;
+        this.recognition.maxAlternatives = 10;
         this.isListening = false;
 
         this.loopCount = 0;
         const restart = () => {
-            console.log("Restarting audio");
             this.recognition.abort();
             try {
                 if (this.hasSucceeded) {
@@ -27,7 +26,6 @@ export class SpeechRecognitionBox {
                     console.log("Stopping audio after 5 tries.");
                     return;
                 }
-                console.log("Actually restarting audio");
                 this.recognition.start();
             } catch (e) {
                 console.error("restart failed - ", e);
@@ -47,7 +45,6 @@ export class SpeechRecognitionBox {
         };
     
         this.recognition.addEventListener("end", () => {
-            console.log("Speech recognition service disconnected");
             restart();
         });
     
@@ -77,11 +74,24 @@ export class SpeechRecognitionBox {
             `#JSGF V1.0; grammar words; public <word> = ${this.words.join(' | ')};`;
         speechRecognitionList.addFromString(grammar, 1);        
         this.recognition.grammars = speechRecognitionList;
-        // this.recognition.lang = "en-US";
-        this.recognition.lang = "fr-FR"; // de-DE"; // fr-FR";
 
-        this.recognition.stop();
-        this.recognition.start();
+        const locales = {
+            "en": "en-US",
+            "fr": "fr-FR",
+            "de": "de-DE",
+            "nl": "nl-NL",
+            "pl": "pl-PL",
+            "sv": "sv-SE",
+            "pt": "pt-PT",
+        }
+        this.recognition.lang = locales[lang];
+
+        this.recognition.abort();
+        try {
+            this.recognition.start();
+        } catch (e) {
+            console.error("Failed to start speech recognition", e);
+        }
     }
 
     toggle() {
@@ -89,6 +99,7 @@ export class SpeechRecognitionBox {
             this.loopCount = 10;
             this.recognition.abort();
         } else {
+            this.loopCount = 0;
             this.hasSucceeded = false;
             this.recognition.start();
         }
@@ -101,29 +112,29 @@ export class SpeechRecognitionBox {
     updateResult(event) {
         const elements = [];
         const expected = this.words.join(" ").toLowerCase();
+        this.container.innerHTML = "";
 
-        const elt = document.createElement("div");
-        let success = false;
+        console.log("updateResult", event.results);
         for (let i = event.resultIndex; i < event.results.length; i++) {
             for (let j = 0; j < event.results[i].length; j++) {
+                const elt = document.createElement("div");
                 elt.textContent = event.results[i][j].transcript;
                 const result = event.results[i][j].transcript;
                 if (event.results[i].isFinal &&
                     this.splitWords(result).join(" ").toLowerCase() === expected) {
                     elt.classList.add("success");
-                    success = true;
                     this.success();
-                    break;
+                    this.container.append(elt);
+                    return;
                 }
-            }
-            if (success) {
-                break;
+
+                if (i == 0 && j == 0) {
+                    elements.push(elt);
+                }
             }
         }
 
-        this.container.innerHTML = "";
-        this.container.append(elt);
-        return false;
+        this.container.append(...elements);
     }
 
     success() {
