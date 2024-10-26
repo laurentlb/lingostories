@@ -27,6 +27,10 @@ export class Settings {
         return document.querySelector("#enable-minigames").checked;
     }
 
+    useMicrophone() {
+        return document.querySelector("#use-microphone").checked;
+    }
+
     save() {
         this.userData.saveData("settings", {
             translationLang: this.translationLang(),
@@ -34,7 +38,8 @@ export class Settings {
             volume: this.volume(),
             showTranslations: this.showTranslations(),
             voiceSpeed: this.voiceSpeed(),
-            enableMinigames: this.enableMinigames()
+            enableMinigames: this.enableMinigames(),
+            useMicrophone: this.useMicrophone()
         });
     }
 
@@ -45,7 +50,8 @@ export class Settings {
             volume: 1,
             showTranslations: false,
             voiceSpeed: 1,
-            enableMinigames: true
+            enableMinigames: true,
+            useMicrophone: false
         });
         document.querySelector("#translation-lang").value = settings.translationLang;
         document.querySelector("#reading-mode").value = settings.readingMode;
@@ -53,6 +59,7 @@ export class Settings {
         document.querySelector("#show-translations").checked = settings.showTranslations;
         document.querySelector("#voice-speed").value = settings.voiceSpeed;
         document.querySelector("#enable-minigames").checked = settings.enableMinigames;
+        document.querySelector("#use-microphone").checked = settings.useMicrophone;
     }
 
     init() {
@@ -88,6 +95,10 @@ export class Settings {
             showMinigamesLegend();
             this.save();
         };
+
+        document.querySelector("#use-microphone").onchange = () => {
+            this.save();
+        }
     }
 }
 

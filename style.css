@@ -221,6 +221,16 @@ h3 {
     padding: 16px 16px;
 }
 
+.speech-recognition {
+    display: flex;
+    align-items: center;
+
+    .success {
+        font-weight: bold;
+        color: var(--highlight-color);
+    }
+}
+
 .small-story-image {
     width: 31%;
     margin: 4px;

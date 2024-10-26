@@ -4,6 +4,7 @@ import { WordShuffleGame } from "./wordShuffleGame.js";
 import { UserData } from "./userdata.js";
 import { Settings } from "./settings.js";
 import { Story } from "./story-engine.js";
+import { SpeechRecognitionBox } from "./speech-recognition.js";
 
 let story = new Story(updateInventory);
 const userData = new UserData();
@@ -16,6 +17,7 @@ let lastSentence = null;
 let lastAudioIcon = null;
 let lastChoices = [];
 let didShowChoices = false;
+let speechRecognition = new SpeechRecognitionBox(settings, document.querySelector(".speech-recognition .output"));
 
 function resetStory() {
     story.ResetState();
@@ -168,6 +170,18 @@ function showText(line, useSpoiler) {
     if (line[story.lang] === "") {
         next();
         return;
+    }
+
+    const speechRecognitionBox = document.querySelector(".speech-recognition");    
+    if (settings.useMicrophone()) {
+        speechRecognitionBox.style.display = "flex";
+        speechRecognition.init(story.lang, line[story.lang], () => {
+            speechRecognitionBox.style.display = "none";
+            speechRecognitionBox.querySelector(".output").innerHTML = "";
+            next(true);
+        });
+    } else {
+        speechRecognitionBox.style.display = "none";
     }
 
     const textOnly = settings.readingMode() === "textOnly";
@@ -518,14 +532,16 @@ function contentBottomEdgeY() {
     return bottomElement ? bottomElement.offsetTop + bottomElement.offsetHeight : 0;
 }
 
-function next() {
+function next(nextSentence = false) {
     lastBottom = contentBottomEdgeY();
     if (nextAction) {
         const action = nextAction;
         nextAction = null;
         action();
         updateButtons();
-        return;
+        if (!nextSentence) {
+            return;
+        }
     }
 
     if (!story.canContinue) {
@@ -553,6 +569,10 @@ function next() {
     updateButtons();
 };
 
+function toggleListening() {
+    speechRecognition.toggle();
+}
+
 document.addEventListener("keydown", (event) => {
     if (event.ctrlKey || event.metaKey || event.altKey) {
         return;
@@ -574,6 +594,13 @@ document.addEventListener("keydown", (event) => {
             return;
         }
         lastAudioIcon.click();
+    }
+
+    if (event.key === "l") {
+        if (event.ctrlKey || event.metaKey || event.altKey) {
+            return;
+        }
+        toggleListening();
     }
 
     if (event.key.match(/[0-9]/)) {
@@ -602,3 +629,4 @@ window.onload = function(){
 window.next = next;
 window.resetStory = resetStory;
 window.story = story; // for debug & js console
+window.toggleListening = toggleListening;
