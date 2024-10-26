@@ -202,6 +202,9 @@ function showText(line, useSpoiler) {
     container.appendChild(audioElt);
 
     const content = line[story.lang];
+    if (!content) {
+        console.error("Empty content", line, story.lang);
+    }
     const showMinigame = !textOnly && shouldShowMinigame(content, line);
 
     if (showMinigame) {

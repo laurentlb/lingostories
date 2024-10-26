@@ -23,6 +23,7 @@ VAR treats = 0
 
 === introduction ===
 
+The Grocery List #title
 It is Saturday afternoon.
 You are new to the village because your family has just moved here.
 It is a bit cold outside today.
