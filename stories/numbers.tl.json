@@ -1,0 +1,53 @@
+{
+    "speakers": {
+        "you": {
+            "avatar": "man.svg",
+            "color": "#a26"
+        },
+        "peter": {
+            "avatar": "peter.svg",
+            "color": "#26a",
+            "side": "right"
+        }
+    },
+    "sentences": {
+        "Yes.": {
+            "en": "Yes."
+        },
+        "Correct! It was {guess}.": {
+            "en": "Correct! It was {guess}."
+        },
+        "@peter Choose a number.": {
+            "en": "Choose a number."
+        },
+        "@peter I will try to guess your number.": {
+            "en": "I will try to guess your number."
+        },
+        "@peter The number should greater than...": {
+            "en": "The number should greater than..."
+        },
+        "@peter Have you chosen a number?": {
+            "en": "Have you chosen a number?"
+        },
+        "Yes, we can start.": {
+            "en": "Yes, we can start."
+        },
+        "@you My number is greater.": {
+            "en": "My number is greater."
+        },
+        "@you My number is smaller.": {
+            "en": "My number is smaller."
+        },
+        "@you This is correct!": {
+            "en": "This is correct!"
+        },
+        "My number is greater {guess}.": {
+            "audio": false,
+            "en": "My number is greater {guess}."
+        },
+        "My number is less than {guess}.": {
+            "audio": false,
+            "en": "My number is less than {guess}."
+        }
+    }
+}
