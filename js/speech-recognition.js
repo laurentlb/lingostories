@@ -7,6 +7,10 @@ export class SpeechRecognitionBox {
 
         const SpeechRecognition =
             window.SpeechRecognition || window.webkitSpeechRecognition;
+        this.isAPIAvailable = !!SpeechRecognition;
+        if (!this.isAPIAvailable) {
+            return;
+        }
         this.recognition = new SpeechRecognition();
         
         this.recognition.continuous = false;
@@ -59,6 +63,10 @@ export class SpeechRecognitionBox {
     }
 
     init(lang, sentence, callback) {
+        if (!this.isAPIAvailable) {
+            return;
+        }
+
         const SpeechGrammarList =
             window.SpeechGrammarList || window.webkitSpeechGrammarList;
 
