@@ -132,76 +132,76 @@ $image park-4.jpg
 `Anna smiles and waves to Tom.`
 $image park-2.jpg
 `Tom waves back and walks over to her.`
-`tom: Hi Anna, it's great to see you here!`
+@tom Hi Anna, it's great to see you here!
 
 * [What a nice surprise!] -> p16
 * [Do you come here often?] -> p17
 
 === p16 ===
 
-`anna: Hi Tom, what a nice surprise!`
+@anna Hi Tom, what a nice surprise!
 
 -> p31
 
 === p17 ===
 
-`anna: Hi Tom, do you come here often?`
+`@anna Hi Tom, do you come here often?`
 
 -> p31
 
 === p18 ===
 
-`anna: I like to come here to read and enjoy the fresh air.`
-`tom: That sounds nice. What book are you reading?`
+`@anna I like to come here to read and enjoy the fresh air.`
+`@tom That sounds nice. What book are you reading?`
 
 * [A detective story.] -> p20
 * [An adventure novel.] -> p21
 
 === p19 ===
 
-`anna: I like to watch the people.`
-`tom: Me too! It's fun to see everyone having a good time.`
-`tom: I also like watching the animals.`
+`@anna I like to watch the people.`
+`@tom Me too! It's fun to see everyone having a good time.`
+`@tom I also like watching the animals.`
 
 * [Do you have a favorite animal here?] -> p22
 * [Do you like playing with the dogs here?] -> p23
 
 === p20 ===
 
-`anna: It's a detective story.`
-`tom: Detective stories are great, they are full of surprises.`
+`@anna It's a detective story.`
+`@tom Detective stories are great, they are full of surprises.`
 
 -> p25
 
 === p21 ===
 
-`anna: It's an adventure novel.`
-`tom: Adventure novels are so exciting! They take you to new places.`
+`@anna It's an adventure novel.`
+`@tom Adventure novels are so exciting! They take you to new places.`
 `undefined`
 
 -> p25
 
 === p22 ===
 
-`anna: Do you have a favorite animal here?`
-`tom: I really like the squirrels. They're so cute!`
+`@anna Do you have a favorite animal here?`
+`@tom I really like the squirrels. They're so cute!`
 
 * [I like the squirrels too!] -> p28
 * [I like the birds more.] -> p28
 
 === p23 ===
 
-`anna: Do you like playing with the dogs here?`
-`tom: Yes, I love dogs. Dogs always look so happy.`
+`@anna Do you like playing with the dogs here?`
+`@tom Yes, I love dogs. Dogs always look so happy.`
 
 * [I played with a dog earlier today.] -> p28
 * [I like watching them play too.] -> p28
 
 === p25 ===
 
-`anna: What other kinds of books do you like?`
-`tom: I also read science fiction books.`
-`tom: Science fiction books make you think about the future.`
+`@anna What other kinds of books do you like?`
+`@tom I also read science fiction books.`
+`@tom Science fiction books make you think about the future.`
 
 * [Maybe we can read one together sometime?] -> p28
 * [We should talk about our favorite books more often.] -> p28
@@ -217,7 +217,7 @@ $image park-2.jpg
 === p31 ===
 
 `Tom smiles.`
-`tom: Yes, I come here sometimes to relax. What about you?`
+`@tom Yes, I come here sometimes to relax. What about you?`
 
 * [I like to read here.] -> p18
 * [I like to watch the people here.] -> p19

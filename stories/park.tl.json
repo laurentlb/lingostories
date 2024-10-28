@@ -770,7 +770,7 @@
             "nl": "Tom zwaait terug en loopt naar haar toe.",
             "es": "Tom le hace una señal de vuelta y se acerca a ella."
         },
-        "Hi Anna, it's great to see you here!": {
+        "@tom Hi Anna, it's great to see you here!": {
             "key": "15-2",
             "en": "Hi Anna, it's great to see you here!",
             "fr": "Salut Anna, c'est super de te voir ici!",
@@ -801,7 +801,7 @@
             "nl": "Kom je hier vaak?",
             "es": "¿Vienes aquí a menudo?"
         },
-        "Hi Tom, what a nice surprise!": {
+        "@anna Hi Tom, what a nice surprise!": {
             "key": "16-0",
             "en": "Hi Tom, what a nice surprise!",
             "fr": "Salut Tom, quelle belle surprise !",
@@ -812,7 +812,7 @@
             "nl": "Hoi Tom, wat een fijne verrassing!",
             "es": "Hola Tom, ¡qué agradable sorpresa!"
         },
-        "Hi Tom, do you come here often?": {
+        "@anna Hi Tom, do you come here often?": {
             "key": "17-0",
             "en": "Hi Tom, do you come here often?",
             "fr": "Salut Tom, tu viens souvent ici ?",
@@ -823,7 +823,7 @@
             "nl": "“Hoi Tom, kom je hier vaak?",
             "es": "Hola Tom, ¿vienes aquí a menudo?"
         },
-        "I like to come here to read and enjoy the fresh air.": {
+        "@anna I like to come here to read and enjoy the fresh air.": {
             "key": "18-0",
             "en": "I like to come here to read and enjoy the fresh air.",
             "fr": "J'aime venir ici pour lire et profiter de l'air frais",
@@ -834,7 +834,7 @@
             "nl": "Ik kom hier graag om te lezen en van de frisse lucht te genieten.",
             "es": "Me gusta venir aquí para leer y disfrutar del aire fresco."
         },
-        "That sounds nice. What book are you reading?": {
+        "@tom That sounds nice. What book are you reading?": {
             "key": "18-1",
             "en": "That sounds nice. What book are you reading?",
             "fr": "Ça a l'air sympa. Quel livre lis-tu ?",
@@ -865,7 +865,7 @@
             "nl": "Een avonturenroman.",
             "es": "Una novela de aventuras."
         },
-        "I like to watch the people.": {
+        "@anna I like to watch the people.": {
             "key": "19-0",
             "en": "I like to watch the people.",
             "fr": "J'aime observer les gens.",
@@ -876,7 +876,7 @@
             "nl": "Ik vind het leuk om naar de mensen te kijken,” zegt Anna.",
             "es": "Me gusta observar a la gente."
         },
-        "Me too! It's fun to see everyone having a good time.": {
+        "@tom Me too! It's fun to see everyone having a good time.": {
             "key": "19-1",
             "en": "Me too! It's fun to see everyone having a good time.",
             "fr": "Moi aussi ! C'est amusant de voir que tout le monde passe un bon moment.",
@@ -887,7 +887,7 @@
             "nl": "Ik ook! Het is leuk om iedereen een goede tijd te zien hebben.",
             "es": "A mí también. Es divertido ver a todos divertiéndose."
         },
-        "I also like watching the animals.": {
+        "@tom I also like watching the animals.": {
             "key": "19-2",
             "en": "I also like watching the animals.",
             "fr": "J'aime aussi observer les animaux.",
@@ -898,7 +898,7 @@
             "nl": "Ik kijk ook graag naar de dieren.",
             "es": "También me gusta ver a los animales."
         },
-        "Do you have a favorite animal here?": {
+        "@anna Do you have a favorite animal here?": {
             "key": "22-0",
             "en": "Do you have a favorite animal here?",
             "fr": "As-tu un animal préféré ici ?",
@@ -909,7 +909,7 @@
             "nl": "Heb je een favoriete dier hier?",
             "es": "¿Tienes un animal favorito aquí?"
         },
-        "Do you like playing with the dogs here?": {
+        "@anna Do you like playing with the dogs here?": {
             "key": "23-0",
             "en": "Do you like playing with the dogs here?",
             "fr": "Tu aimes jouer avec les chiens ici ?",
@@ -920,7 +920,7 @@
             "nl": "Speel je graag met de honden hier?",
             "es": "¿Te gusta jugar con los perros aquí?"
         },
-        "It's a detective story.": {
+        "@anna It's a detective story.": {
             "key": "20-0",
             "en": "It's a detective story.",
             "fr": "C'est un roman policier.",
@@ -931,7 +931,7 @@
             "nl": "Het is een detectiveverhaal.",
             "es": "Es una historia de detectives."
         },
-        "Detective stories are great, they are full of surprises.": {
+        "@tom Detective stories are great, they are full of surprises.": {
             "key": "20-1",
             "en": "Detective stories are great, they are full of surprises.",
             "fr": "Les romans policiers sont super, ils sont pleins de surprises.",
@@ -942,7 +942,7 @@
             "nl": "Detectiveverhalen zijn geweldig, ze zitten vol verrassingen.",
             "es": "Las historias de detectives son geniales, están llenas de sorpresas."
         },
-        "It's an adventure novel.": {
+        "@anna It's an adventure novel.": {
             "key": "21-0",
             "en": "It's an adventure novel.",
             "fr": "C'est un roman d'aventures.",
@@ -953,7 +953,7 @@
             "nl": "Het is een avonturenroman.",
             "es": "Es una novela de aventuras."
         },
-        "Adventure novels are so exciting! They take you to new places.": {
+        "@tom Adventure novels are so exciting! They take you to new places.": {
             "key": "21-1",
             "en": "Adventure novels are so exciting! They take you to new places.",
             "fr": "Les romans d'aventure sont si passionnants ! Ils t'emmènent dans de nouveaux endroits.",
@@ -964,7 +964,7 @@
             "nl": "Avonturenromans zijn zo spannend!",
             "es": "¡Las novelas de aventuras son tan emocionantes! Te llevan a nuevos lugares."
         },
-        "I really like the squirrels. They're so cute!": {
+        "@tom I really like the squirrels. They're so cute!": {
             "key": "22-1",
             "en": "I really like the squirrels. They're so cute!",
             "fr": "J'aime beaucoup les écureuils. Ils sont si mignons !",
@@ -995,7 +995,7 @@
             "nl": "Ik vind de vogels leuker.",
             "es": "Me gustan más los pájaros."
         },
-        "Yes, I love dogs. Dogs always look so happy.": {
+        "@tom Yes, I love dogs. Dogs always look so happy.": {
             "key": "23-1",
             "en": "Yes, I love dogs. Dogs always look so happy.",
             "fr": "Oui, j'aime les chiens. Les chiens ont toujours l'air si heureux.",
@@ -1026,7 +1026,7 @@
             "nl": "Ik vind het ook leuk om ze te zien spelen.",
             "es": "A mí también me gusta verlos jugar."
         },
-        "What other kinds of books do you like?": {
+        "@anna What other kinds of books do you like?": {
             "key": "25-0",
             "en": "What other kinds of books do you like?",
             "fr": "Tu aimes quels autres types de livres ?",
@@ -1037,7 +1037,7 @@
             "nl": "Van wat voor andere soorten boeken houd je?",
             "es": "¿Qué otros tipos de libros te gustan?"
         },
-        "I also read science fiction books.": {
+        "@tom I also read science fiction books.": {
             "key": "25-1",
             "en": "I also read science fiction books.",
             "fr": "Je lis aussi des livres de science-fiction.",
@@ -1048,7 +1048,7 @@
             "nl": "Ik lees ook sciencefictionboeken.",
             "es": "También leo libros de ciencia ficción."
         },
-        "Science fiction books make you think about the future.": {
+        "@tom Science fiction books make you think about the future.": {
             "key": "25-2",
             "en": "Science fiction books make you think about the future.",
             "fr": "Les livres de science-fiction te font réfléchir à l'avenir.",
@@ -1134,7 +1134,7 @@
             "nl": "Tom glimlacht.",
             "es": "Tom sonríe."
         },
-        "Yes, I come here sometimes to relax. What about you?": {
+        "@tom Yes, I come here sometimes to relax. What about you?": {
             "key": "31-1",
             "en": "Yes, I come here sometimes to relax. What about you?",
             "fr": "Oui, je viens parfois ici pour me reposer. Et toi ?",
