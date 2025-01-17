@@ -399,7 +399,7 @@ function createStoryList() {
     container.innerHTML = "";
 
     for (const sto of allStories) {
-        if (sto.released === false) {
+        if (!sto.released) {
             continue;
         }
         const unreleased = Array.isArray(sto.released) && !sto.released.includes(story.lang);
