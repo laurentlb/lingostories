@@ -363,7 +363,7 @@ summary {
     padding: 8px;
     align-items: center;
     /* display: flex; */
-    justify-content: center;
+    justify-content: space-evenly;
     display: none;
 }
 

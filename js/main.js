@@ -228,31 +228,12 @@ function showText(line, useSpoiler) {
         actuallyShowText(container, line, useSpoiler);
     }
 
-    const startListening = () => {
-        const speechRecognitionBox = document.querySelector(".speech-recognition");    
-        if (settings.useMicrophone()) {
-            speechRecognitionBox.style.display = "flex";
-            speechRecognition.init(story.lang, line[story.lang], () => {
-                speechRecognitionBox.style.display = "none";
-                speechRecognitionBox.querySelector(".output").innerHTML = "";
-                next(true);
-            });
-        } else {
-            speechRecognitionBox.style.display = "none";
-        }
-    };
-
     if (!textOnly) {
         listenMP3(story, line, settings, () => {
             if (!actionPending) {
                 next();
             }
         });
-        setTimeout(() => {
-            startListening();
-        }, 2000);
-    } else {
-        startListening();
     }
 }
 
@@ -583,6 +564,17 @@ function toggleListening() {
     speechRecognition.toggle();
 }
 
+function listenMic() {
+    const speechRecognitionBox = document.querySelector(".speech-recognition");    
+    speechRecognitionBox.style.display = "flex";
+    const textToRepeat = lastSentence.textContent;
+    speechRecognition.init(story.lang, textToRepeat, () => {
+        speechRecognitionBox.style.display = "none";
+        speechRecognitionBox.querySelector(".output").innerHTML = "";
+        next(true);
+    });
+}
+
 document.addEventListener("keydown", (event) => {
     if (event.ctrlKey || event.metaKey || event.altKey) {
         return;
@@ -606,6 +598,13 @@ document.addEventListener("keydown", (event) => {
         lastAudioIcon.click();
     }
 
+    if (event.key === "m") {
+        if (event.ctrlKey || event.metaKey || event.altKey) {
+            return;
+        }
+        listenMic();
+    }
+
     if (event.key === "l") {
         if (event.ctrlKey || event.metaKey || event.altKey) {
             return;
@@ -623,6 +622,15 @@ document.addEventListener("keydown", (event) => {
 
 window.onload = function(){
     settings.init();
+    const updateMicIcon = () => {
+        const micIcon = document.querySelector("#microphone-button");
+        if (micIcon) {
+            micIcon.style.display = settings.useMicrophone() ? "block" : "none";
+        }
+    };
+
+    updateMicIcon();
+    document.querySelector("#use-microphone").addEventListener("change", updateMicIcon);
 
     const urlParams = new URLSearchParams(window.location.search);
     if (urlParams.has("lang")) {
@@ -640,3 +648,4 @@ window.next = next;
 window.resetStory = resetStory;
 window.story = story; // for debug & js console
 window.toggleListening = toggleListening;
+window.listenMic = listenMic;
