@@ -1,5 +1,6 @@
 import { allStories } from "./stories.js";
 import { listenMP3, soundEffect } from "./audio.js";
+import { Explain } from "./explain.js";
 import { WordShuffleGame } from "./wordShuffleGame.js";
 import { UserData } from "./userdata.js";
 import { Settings } from "./settings.js";
@@ -7,6 +8,7 @@ import { Story } from "./story-engine.js";
 import { SpeechRecognitionBox } from "./speech-recognition.js";
 
 let story = new Story(updateInventory);
+const explainer = new Explain();
 const userData = new UserData();
 const settings = new Settings(userData);
 
@@ -71,6 +73,7 @@ async function chooseStory(name) {
 
     story.storyName = name;
     await story.loadStory(name);
+    await explainer.init(name, story.lang);
 
     updateCollectionTopStatus();
     resetStory();
@@ -111,6 +114,10 @@ function shouldShowMinigame(content, line) {
     }
 
     return Math.random() < 0.2;
+}
+
+function addExplanation(container, line) {
+    explainer.explain(line.key, line[story.lang], container);
 }
 
 function handleLine(line, useSpoiler) {
@@ -279,6 +286,8 @@ function actuallyShowText(container, line, useSpoiler) {
 
     lastSentence = elt;
     container.appendChild(elt);
+
+    addExplanation(container, line);
 }
 
 function showChoices(choices) {
