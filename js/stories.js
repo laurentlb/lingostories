@@ -6,7 +6,7 @@ export const allStories = [
         released: true,
      },
     { id: "grocery", title: "The Grocery List", imageCount: 4,
-        released: ["en", "fr", "nl", "sv", "de"] },
+        released: ["en", "fr", "nl", "sv", "de", "pl"] },
     { id: "numbers", title: "A Game of Numbers", imageCount: 0,
         released: false },
 ];
