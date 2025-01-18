@@ -27,7 +27,6 @@ export class Explain {
 
     explain(key, sentence, container) {
         if (!this.explanations[key]) {
-            console.warn(`Key '${key}' not found in explanations.`);
             return;
         }
 
