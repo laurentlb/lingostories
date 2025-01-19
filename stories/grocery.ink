@@ -28,6 +28,7 @@ It is Saturday afternoon.
 You are new to the village because your family has just moved here.
 It is a bit cold outside today.
 So you are playing with your toys in your bedroom.
+$image grocery-bedroom.jpg
 Your mom calls you.
 
 - (loop1)
