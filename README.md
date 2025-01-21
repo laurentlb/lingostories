@@ -16,6 +16,8 @@ new vocabulary, grammar structures, and cultural nuances in context. By engaging
 with interactive stories, learners can immerse themselves in a narrative while
 practicing comprehension and decision-making in the target language.
 
+![screenshot](screenshot.jpg)
+
 ## Features
 
 - Interactive stories with multiple choices. It remembers what you did (e.g. there's an inventory).
