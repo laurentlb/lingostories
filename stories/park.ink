@@ -177,7 +177,6 @@ $image park-2.jpg
 
 `@anna It's an adventure novel.`
 `@tom Adventure novels are so exciting! They take you to new places.`
-`undefined`
 
 -> p25
 
