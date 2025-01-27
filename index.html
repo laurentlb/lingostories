@@ -23,7 +23,7 @@
         <a href="/" id="back-icon"><img src="img/back.svg" class="icon top-icon" title="Back to the story list"></a>
         <a href="/" id="home-icon"><img src="img/home.svg" class="icon top-icon" title="Back to the main page"></a>
         
-        <img src="img/options.svg" class="icon top-icon" title="Settings" id="settings-icon" onclick="toggleSettings()">
+        <img src="img/options.svg" id="settings-icon" class="icon top-icon" title="Settings" onclick="toggleSettings()">
 
         <img src="img/restart.svg" id="restart-icon" class="icon top-icon" title="Restart the story" onclick="resetStory(); next();"></a>
 
@@ -133,7 +133,7 @@
         </div>
 
         <div class="info-box speech-recognition">
-            <img class="icon player-icon" src="img/microphone.svg" title="Speech recognition" onclick="toggleListening();">
+            <img id="listening-icon" class="icon player-icon" src="img/microphone.svg" title="Speech recognition" onclick="toggleListening();">
             <div class="output"></div>
         </div>
 
