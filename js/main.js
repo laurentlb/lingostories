@@ -70,6 +70,7 @@ async function chooseStory(name) {
     document.querySelector("#back-icon").setAttribute("href", backUrl);
     document.querySelector("#back-to-menu").setAttribute("href", backUrl);
     document.querySelector("#restart-icon").style.visibility = "visible";
+    document.querySelector("#settings-icon").style.visibility = "visible";
 
     story.storyName = name;
     await story.loadStory(name);

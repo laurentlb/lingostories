@@ -307,7 +307,7 @@ summary {
 }
 
 .top {
-    background: inherit;
+    background: #222;
     border-bottom: 1px solid var(--border-color);
     padding: 4px;
     position: fixed;
@@ -327,7 +327,7 @@ summary {
         margin: 0 auto;
     }
 
-    #collection-count, #restart-icon {
+    #collection-count, #restart-icon, #settings-icon {
         visibility: hidden;
     }
 }
