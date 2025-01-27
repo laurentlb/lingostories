@@ -1,9 +1,10 @@
 import { soundEffect } from "./audio.js";
 
 export class SpeechRecognitionBox {
-    constructor(settings, container) {
+    constructor(settings, container, listeningCallback) {
         this.settings = settings;
         this.container = container;
+        this.listeningCallback = listeningCallback;
 
         const SpeechRecognition =
             window.SpeechRecognition || window.webkitSpeechRecognition;
@@ -12,11 +13,12 @@ export class SpeechRecognitionBox {
             return;
         }
         this.recognition = new SpeechRecognition();
-        
+
         this.recognition.continuous = false;
         this.recognition.interimResults = true;
         this.recognition.maxAlternatives = 10;
         this.isListening = false;
+        this.listeningCallback(this.isListening);
 
         this.loopCount = 0;
         const restart = () => {
@@ -54,10 +56,12 @@ export class SpeechRecognitionBox {
     
         this.recognition.addEventListener("audiostart", () => {
             this.isListening = true;
+            this.listeningCallback(this.isListening);
         });
 
         this.recognition.addEventListener("audioend", () => {
             this.isListening = false;
+            this.listeningCallback(this.isListening);
             console.log("Audio capturing ended");
         });
     }
@@ -71,7 +75,6 @@ export class SpeechRecognitionBox {
             window.SpeechGrammarList || window.webkitSpeechGrammarList;
 
         this.words = this.splitWords(sentence);
-        console.log("words", this.words);
         this.lang = lang;
         this.hasSucceeded = false;
         this.callback = callback;
@@ -91,6 +94,7 @@ export class SpeechRecognitionBox {
             "pl": "pl-PL",
             "sv": "sv-SE",
             "pt": "pt-PT",
+            "es": "es-ES",
         }
         this.recognition.lang = locales[lang];
 

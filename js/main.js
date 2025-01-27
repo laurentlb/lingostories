@@ -19,7 +19,16 @@ let lastSentence = null;
 let lastAudioIcon = null;
 let lastChoices = [];
 let didShowChoices = false;
-let speechRecognition = new SpeechRecognitionBox(settings, document.querySelector(".speech-recognition .output"));
+let speechRecognition = new SpeechRecognitionBox(settings, document.querySelector(".speech-recognition .output"), listeningCallback);
+
+function listeningCallback(isListening) {
+    const icon = document.querySelector("#listening-icon");
+    if (isListening) {
+        icon.classList.add("listening");
+    } else {     
+        icon.classList.remove("listening");
+    }
+}
 
 function resetStory() {
     story.ResetState();
