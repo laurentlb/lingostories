@@ -246,8 +246,8 @@ function showText(line, useSpoiler) {
 
 function actuallyShowText(container, line, useSpoiler) {
     const content = line[story.lang];
-    const title = line.isTitle;
-    const elt = document.createElement(title ? "h2" : "p");
+    const isTitle = line.isTitle;
+    const elt = document.createElement(isTitle ? "h2" : "p");
     if (useSpoiler) {
         elt.classList.add("spoiler");
         nextAction = () => {
@@ -288,6 +288,20 @@ function actuallyShowText(container, line, useSpoiler) {
     container.appendChild(elt);
 
     addExplanation(container, line);
+    if (isTitle) {
+        addContributors(container.parentElement);
+    }
+}
+
+function addContributors(container) {
+    const list = story.metadata.sentences["contributors"];
+    if (!list || !list[story.lang]) {
+        return;
+    }
+    const contributors = document.createElement("div");
+    contributors.classList.add("info");
+    contributors.textContent = "Translation: " + list[story.lang];
+    container.appendChild(contributors);
 }
 
 function showChoices(choices) {

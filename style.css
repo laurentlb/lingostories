@@ -114,6 +114,7 @@ h3 {
 
 .text {
     cursor: help;
+    margin: 0; /* remove margin, e.g. for h2 */
 }
 
 .bubble {
@@ -391,8 +392,7 @@ summary {
 .info {
     border: 1px solid var(--border-color);
     border-radius: 16px;
-    padding: 16px 16px;
-    padding-bottom: 4px;
+    padding: 8px 16px;
     margin: 8px 0;
 }
 

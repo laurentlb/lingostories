@@ -11,6 +11,17 @@
         }
     },
     "sentences": {
+        "contributors": {
+            "audio": false,
+            "en": "",
+            "fr": "Laurent Le Brun",
+            "nl": "",
+            "sv": "Anna Gryszkiewicz",
+            "pl": "Anna Gryszkiewicz",
+            "pt": "Gonçalo Fernandes",
+            "es": "",
+            "de": ""
+        },
         "A day in the Park.": {
             "key": "0-0",
             "en": "A day in the Park.",
