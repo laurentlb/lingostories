@@ -1,4 +1,4 @@
-<meta charset="utf-8" emacsmode="-*- markdown -*-"><link rel="stylesheet" href="https://casual-effects.com/markdeep/latest/slate.css?">
+<meta charset="utf-8" emacsmode="-*- markdown -*-"><link rel="stylesheet" href="https://casual-effects.com/markdeep/latest/dark.css">
 
 **LingoStories - Contributing**
 
@@ -13,17 +13,22 @@ The following skills would be particularly appreciated:
   review the texts, give feedback on our approach, or request features that
   would make LingoStories more useful to students or other teachers.
 
-* **Writing**. To provide more content on the website, we need people to help write
-  the stories. It can be an entire story, or part of it, or just a scenario.
+* **Writing**. To provide more content on the website, we need people to help
+  write the stories. Writing a full story is a significant work, but smaller
+  contributions are also welcome: write a high-level scenario, help write some
+  scenes or dialogues, or review the texts.
 
-* **Translation**. If you speak fluently other languages, you can help translate the
-  stories.
+* **Translation**. If you speak fluently other languages, you can help translate
+  the stories. Some translators have limited free time, so it's always useful to
+  have more than one translator per language (this means you can volunteer, even
+  if your language is already on the website).
 
-* **Illustration**. We currently rely on generative AI to generate images. Future
-  stories could have better illustrations if someone volunteers.
+* **Illustration**. We currently rely on generative AI to generate images. It
+  would be nice to have actual artists to take care of the illustrations.
 
-* **Game Design**. The current stories are basic, but they could be designed as
-  adventure video games, they could integrate more gameplay elements.
+* **Game Design**. The current stories are relatively basic, but they could be
+  designed more like adventure video games, and integrate more gameplay
+  elements.
 
 * **Programming**. There are always more things to do and polish.
 
@@ -35,64 +40,33 @@ If you're interested in helping, you can [join the Discord](https://discord.gg/S
 
 * The source of truth for the stories is the English version.
 * The story should be suitable and appealing for the general audience worldwide.
-* Use vocabulary that is common in everyday life.
+* Prefer vocabulary that is common in everyday life.
 * Choose a [CEFR level](https://en.wikipedia.org/wiki/Common_European_Framework_of_Reference_for_Languages#Common_reference_levels)
   and write the story accordingly.
    * See this [reference](https://www.esl-lounge.com/student/reference.php)
      sheet for vocabulary.
    * See [lingua.com](https://lingua.com/english/reading/) for text examples.
    * But don't worry too much --- it's fine to expose learners to new words and
-     new grammar rules that might not understand.
+     new grammar rules that might not know yet.
 * Avoid cultural references and country-specific biases that might not be
   relevant to people in other countries.
 * Avoid play-on-words and things that can be hard to translate.
 
 ## Tooling
 
-The recommended tool for writing stories is [Twine](https://twinery.org/2/).
-This makes it easy to visualize and test branching stories.
-
-But it's also possible to make the first drafts in
-[Google Docs](https://docs.google.com/), which is convenient for sharing, collaborating
+We first write and discuss stories using [Google
+Docs](https://docs.google.com/), which is convenient for sharing, collaborating
 and getting quick feedback.
 
-### Twine
-
-We can import in LingoStories only the Twine that are the most basic. The current limitations are:
-
-* Each passage should start with a paragraph of text (without any markup language).
-* The passage ends with a list of links, with one link per line, e.g.
-    `[[Open the door->15]]`
-
-No other feature is supported at the moment, but they might be added later. It would be nice to have basic support for variables in the future.
+Later, stories are converted to [ink](https://github.com/inkle/ink). Ink can be
+intimidating at the beginning, but don't worry, we have people to help you! You can find .ink files of our [stories on GitHub](https://github.com/laurentlb/lingostories/tree/main/stories).
 
 # Translation
 
-Go to [https://lingostories.org/contrib/](https://lingostories.org/contrib/) if
-you want to make a new translation or update any existing translation.
+Ask on Discord if you'd like to write or fix translations. We use a shared
+spreadsheet to write the translations. They are later converted to .json for the
+website.
 
-There are two ways to do the translations.
-
-## With the web interface
-
-* Select the story and the language to update (or "New Language" it doesn't exist yet).
-* This allows you to see each sentence with the translation.
-* Update the text fields.
-* Click "Save" to get a text file that contains your changes.
-
-## Offline
-
-* Select the story and a language.
-* Click "Save" to get a text file that contains all the sentences in that language.
-* You can update the text file, but make sure to keep the exact same structure
-  (keep in sentence per line, keep the lines in the correct order).
-* You can later use the "Load" button to see your changes in the web interface,
-  and verify the lines match the translations.
-
-!!! Tip
-    Once you have the text file, you may copy its content and use machine
-    translation website. However, you have to review and edit the content.
-    You can send only translations that you can personally verify and vouch for.
 
 <style class="fallback">body{visibility:hidden}</style><script>markdeepOptions={tocStyle:'short'};</script>
 <!-- Markdeep: --><script src="https://casual-effects.com/markdeep/latest/markdeep.min.js?" charset="utf-8"></script>
