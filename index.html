@@ -23,7 +23,7 @@
         <a href="/" id="back-icon"><img src="img/back.svg" class="icon top-icon" title="Back to the story list"></a>
         <a href="/" id="home-icon"><img src="img/home.svg" class="icon top-icon" title="Back to the main page"></a>
         
-        <img src="img/options.svg" class="icon top-icon" title="Settings" onclick="toggleOptions()">
+        <img src="img/options.svg" class="icon top-icon" title="Settings" id="settings-icon" onclick="toggleSettings()">
 
         <img src="img/restart.svg" id="restart-icon" class="icon top-icon" title="Restart the story" onclick="resetStory(); next();"></a>
 
@@ -265,8 +265,17 @@
 </div>
 
 <script>
-function toggleOptions() {
+function toggleSettings() {
     var options = document.querySelector('.options');
+    const isOpen = options.style.display !== 'block';
+
+    // hide other icons
+    var icons = document.querySelector('.icon-bar').children;
+    for (var i = 0; i < icons.length; i++) {
+        if (icons[i].id !== 'settings-icon') {
+            icons[i].style.visibility = isOpen ? 'hidden' : 'visible';
+        }
+    }
     options.style.display = options.style.display === 'block' ? 'none' : 'block';
 }
 
