@@ -335,7 +335,6 @@ summary {
     top: 0;
     width: 100%;
     padding: 8px;
-    display: none;
     transition: all .5s;
     z-index: 10;
 

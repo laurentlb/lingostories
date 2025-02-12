@@ -45,7 +45,6 @@ function resetStory() {
 
 function setLanguage(l) {
     story.lang = l;
-    document.querySelector('.top').style.display = "block";
     createStoryList();
 
     if (settings.translationLang() === story.lang) {
@@ -455,12 +454,6 @@ function showHome() {
     document.querySelectorAll('.home').forEach(e => {
         e.style.display = "block";
     });
-
-    if (story.lang) {
-        document.querySelector("#language-selector").style.display = "none";
-    } else {
-        document.querySelector("#story-selector").style.display = "none";
-    }
 }
 
 function showStory() {
@@ -665,15 +658,13 @@ window.onload = function(){
     updateMicIcon();
     document.querySelector("#use-microphone").addEventListener("change", updateMicIcon);
 
+    setLanguage(LANG_CODE);
     const urlParams = new URLSearchParams(window.location.search);
-    if (LANG_CODE) {
-        setLanguage(LANG_CODE); // urlParams.get("lang"));
-        if (urlParams.has("story")) {
-            chooseStory(urlParams.get("story"));
-            return;
-        }
+    if (urlParams.has("story")) {
+        chooseStory(urlParams.get("story"));
+    } else {
+        showHome();
     }
-    showHome();
 };
 
 // Expose entry points to the browser

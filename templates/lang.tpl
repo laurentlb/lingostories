@@ -90,20 +90,6 @@
             </p>
         </div>
 
-        <div class="home" id="language-selector">
-            <p>Select a language to practice.</p>
-            <ul>
-                <li><a href="?lang=nl"><img class="flag" src="/img/flags/nl.svg"><div>Dutch</div></a>
-                <li><a href="?lang=en"><img class="flag" src="/img/flags/us.svg"><div>English</div></a>
-                <li><a href="?lang=fr"><img class="flag" src="/img/flags/fr.svg"><div>French</div></a>
-                <li><a href="?lang=de"><img class="flag" src="/img/flags/de.svg"><div>German</div></a>
-                <li><a href="?lang=pl"><img class="flag" src="/img/flags/pl.svg"><div>Polish</div></a>
-                <li><a href="?lang=pt"><img class="flag" src="/img/flags/pt.svg"><div>Portuguese</div></a>
-                <li><a href="?lang=es"><img class="flag" src="/img/flags/es.svg"><div>Spanish</div></a>
-                <li><a href="?lang=sv"><img class="flag" src="/img/flags/sv.svg"><div>Swedish</div></a>
-            </ul>
-        </div>
-
         <div class="home" id="story-selector">
             <p>Select a story to read in {language}.</p>
             <div class="story-list"></div>
