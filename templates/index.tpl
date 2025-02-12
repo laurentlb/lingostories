@@ -39,33 +39,33 @@
         </div>
 
         <div class="info">
-            {% include "templates/faq.tpl" %}
+            {faq}
         </div>
     </div>
 </div>
 
 <script>
 // Redirect old URLs with `lang` query param to new paths
-(function() {
+(function() {{
     const urlParams = new URLSearchParams(window.location.search);
     const lang = urlParams.get("lang");
 
-    if (lang) {
+    if (lang) {{
         // Construct new URL without `lang` in the query params
         urlParams.delete("lang");
         const newQuery = urlParams.toString();
-        const newUrl = `/${lang}/` + (newQuery ? `?${newQuery}` : "");
+        const newUrl = `/${{lang}}/` + (newQuery ? `?${{newQuery}}` : "");
 
         window.location.replace(newUrl);
-    }
-})();
+    }}
+}})();
 </script>
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-SJPVM9P6EP"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
+  function gtag(){{dataLayer.push(arguments);}}
   gtag('js', new Date());
   gtag('config', 'G-SJPVM9P6EP');
 </script>

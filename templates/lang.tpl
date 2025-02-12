@@ -5,14 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta property="og:type" content="website"/>
 <meta property="og:site_name" content="LingoStories"/>
-<meta property="og:description" content="Free interactive stories in {{language}} for practicing the language." />
+<meta property="og:description" content="Free interactive stories in {language} for practicing the language." />
 
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 <link rel="manifest" href="/site.webmanifest">
 
-<title>LingoStories - Interactive stories in {{language}} for language learners</title>
+<title>LingoStories - Interactive stories in {language} for language learners</title>
 <script type="module" src="/js/main.js"></script>
 <script src="/js/third_party/ink.js"></script>
 
@@ -105,7 +105,7 @@
         </div>
 
         <div class="home" id="story-selector">
-            <p>Select a story to read in {{language}}.</p>
+            <p>Select a story to read in {language}.</p>
             <div class="story-list"></div>
         </div>
 
@@ -142,7 +142,7 @@
         <div class="in-story" style="height: 30vh;"></div>
         
         <div class="info home">
-            {% include "templates/faq.tpl" %}
+            {faq}
         </div>
     </div>
 
@@ -153,34 +153,34 @@
 </div>
 
 <script>
-const LANGUAGE = "{{language}}";
-const LANG_CODE = "{{lang_code}}";
+const LANGUAGE = "{language}";
+const LANG_CODE = "{lang_code}";
 
-function toggleSettings() {
+function toggleSettings() {{
     var options = document.querySelector('.options');
     const isOpen = options.style.display !== 'block';
 
     // hide other icons
     var icons = document.querySelector('.icon-bar').children;
-    for (var i = 0; i < icons.length; i++) {
-        if (icons[i].id !== 'settings-icon') {
+    for (var i = 0; i < icons.length; i++) {{
+        if (icons[i].id !== 'settings-icon') {{
             icons[i].style.visibility = isOpen ? 'hidden' : 'visible';
-        }
-    }
+        }}
+    }}
     options.style.display = options.style.display === 'block' ? 'none' : 'block';
-}
+}}
 
-function toggleCollection() {
+function toggleCollection() {{
     var collection = document.querySelector('.top-collection');
     collection.style.display = collection.style.display === 'block' ? 'none' : 'block';
-}
+}}
 </script>
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-SJPVM9P6EP"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
+  function gtag(){{dataLayer.push(arguments);}}
   gtag('js', new Date());
 
   gtag('config', 'G-SJPVM9P6EP');
