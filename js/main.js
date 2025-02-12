@@ -75,7 +75,7 @@ function updateCollectionTopStatus() {
 
 async function chooseStory(name) {
     showStory();
-    const backUrl = "/?lang=" + story.lang;
+    const backUrl = "./";
     document.querySelector("#back-icon").setAttribute("href", backUrl);
     document.querySelector("#back-to-menu").setAttribute("href", backUrl);
     document.querySelector("#restart-icon").style.visibility = "visible";
@@ -157,7 +157,7 @@ function showTextOrImage(line, useSpoiler) {
     img.onload = () => {
         scrollDown();
     };
-    img.src = `img/stories/${image}`;
+    img.src = `/img/stories/${image}`;
     img.classList.add("story-image");
     main.appendChild(img);
     userData.collectImage(story.lang, story.storyName, image);
@@ -200,7 +200,7 @@ function showText(line, useSpoiler) {
     const speaker = line["speaker"];
     if (speaker) {
         audioElt.classList.add("speaker");
-        audioElt.src = `img/avatars/${speaker.avatar}`;
+        audioElt.src = `/img/avatars/${speaker.avatar}`;
         if (speaker.color) {
             container.style.setProperty('--character-color', speaker.color);
         }
@@ -208,7 +208,7 @@ function showText(line, useSpoiler) {
             container.style.flexDirection = "row-reverse";
         }
     } else {
-        audioElt.src = "img/volume-up.svg"; 
+        audioElt.src = "/img/volume-up.svg"; 
         audioElt.classList.add("icon", "audio-icon");
     }
 
@@ -401,7 +401,7 @@ function createImageCollection(classname, lang, storyName) {
         const images = userData.collectedImages[lang][sto.id] || [];
         for (const img of images) {
             const elt = document.createElement("img");
-            elt.src = `img/stories/${img}`;
+            elt.src = `/img/stories/${img}`;
             elt.classList.add("small-story-image");
             container.appendChild(elt);
         }
@@ -423,13 +423,13 @@ function createStoryList() {
 
         const link = document.createElement("a");
         if (!unreleased) {
-            link.href = `/?lang=${story.lang}&story=${sto.id}`;
+            link.href = `?story=${sto.id}`;
         } else {
             elt.classList.add("unreleased");
         }
 
         const img = document.createElement("img");
-        img.src = `img/stories/${sto.id}.jpg`;
+        img.src = `/img/stories/${sto.id}.jpg`;
         link.appendChild(img);
 
         const title = document.createElement("p");
@@ -498,7 +498,7 @@ function itemImage(item) {
         case "eggs": name = "egg"; break;
         case "carrots": name = "carrot"; break;
     }
-    return `img/items/${name}.svg`;
+    return `/img/items/${name}.svg`;
 }
 
 function updateItem(item, value) {
@@ -666,8 +666,8 @@ window.onload = function(){
     document.querySelector("#use-microphone").addEventListener("change", updateMicIcon);
 
     const urlParams = new URLSearchParams(window.location.search);
-    if (urlParams.has("lang")) {
-        setLanguage(urlParams.get("lang"));
+    if (LANG_CODE) {
+        setLanguage(LANG_CODE); // urlParams.get("lang"));
         if (urlParams.has("story")) {
             chooseStory(urlParams.get("story"));
             return;

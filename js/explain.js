@@ -8,7 +8,7 @@ export class Explain {
         this.language = language;
         this.explanations = {};
 
-        const jsonFile = `stories/${storyName}-explain-${language}.json`;
+        const jsonFile = `/stories/${storyName}-explain-${language}.json`;
 
         fetch(jsonFile)
             .then((response) => {
@@ -31,7 +31,7 @@ export class Explain {
         }
 
         const icon = document.createElement("img");
-        icon.src = "img/question-mark.svg";
+        icon.src = "/img/question-mark.svg";
         icon.alt = "Explain";
         icon.classList.add("icon", "explain-icon");
         container.appendChild(icon);

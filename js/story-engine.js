@@ -7,11 +7,11 @@ export class Story {
     }
 
     async loadStory(name) {
-        const storyData = await fetch(`stories/${name}.ink.json`, {cache: "no-cache"})
+        const storyData = await fetch(`/stories/${name}.ink.json`, {cache: "no-cache"})
             .then(response => response.json());
         this.ink = new window.inkjs.Story(storyData);
 
-        this.metadata = await fetch(`stories/${name}.tl.json`, {cache: "no-cache"})
+        this.metadata = await fetch(`/stories/${name}.tl.json`, {cache: "no-cache"})
             .then(response => response.json());
 
         if (this.metadata["items"]) {
