@@ -35,6 +35,7 @@
                 <li><a href="/pt"><img class="flag" src="/img/flags/pt.svg"><div>Portuguese</div></a>
                 <li><a href="/es"><img class="flag" src="/img/flags/es.svg"><div>Spanish</div></a>
                 <li><a href="/sv"><img class="flag" src="/img/flags/sv.svg"><div>Swedish</div></a>
+                <li><a href="/ua"><img class="flag" src="/img/flags/ua.svg"><div>Ukrainian</div></a>
             </ul>
         </div>
 

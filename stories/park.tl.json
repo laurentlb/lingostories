@@ -20,7 +20,8 @@
             "pl": "Anna Gryszkiewicz",
             "pt": "Gonçalo Fernandes",
             "es": "",
-            "de": ""
+            "de": "",
+            "ua": "Hex"
         },
         "A day in the Park.": {
             "key": "0-0",
@@ -31,7 +32,8 @@
             "sv": "En dag i parken.",
             "pt": "Um dia no parque.",
             "nl": "Een dag in het park.",
-            "es": "Un día en el parque."
+            "es": "Un día en el parque.",
+            "ua": "День у парку."
         },
         "It is a sunny day.": {
             "key": "0-1",
@@ -42,7 +44,8 @@
             "sv": "Det är en solig dag.",
             "pt": "É um dia de sol.",
             "nl": "Het is een zonnige dag.",
-            "es": "Es un día soleado."
+            "es": "Es un día soleado.",
+            "ua": "Сонячний день."
         },
         "Anna wants to go to the park.": {
             "key": "0-2",
@@ -53,7 +56,8 @@
             "sv": "Anna vill gå till parken.",
             "pt": "A Anna quer ir ao parque.",
             "nl": "Anna wil naar het park gaan.",
-            "es": "Anna quiere ir al parque."
+            "es": "Anna quiere ir al parque.",
+            "ua": "Ганна хоче піти в парк."
         },
         "The park is always quiet and beautiful.": {
             "key": "0-3",
@@ -64,7 +68,8 @@
             "sv": "Parken är alltid rofylld och vacker.",
             "pt": "O parque é sempre calmo e belo.",
             "nl": "Het park is altijd rustig en mooi.",
-            "es": "El parque siempre es tranquilo y hermoso."
+            "es": "El parque siempre es tranquilo y hermoso.",
+            "ua": "У парку завжди тихо і гарно."
         },
         "Anna puts on her shoes.": {
             "key": "0-4",
@@ -75,7 +80,8 @@
             "sv": "Anna tar på sig skorna.",
             "pt": "A Anna calça os sapatos.",
             "nl": "Anna doet haar schoenen aan.",
-            "es": "Anna se pone los zapatos."
+            "es": "Anna se pone los zapatos.",
+            "ua": "Ганна взуває свої туфлі."
         },
         "She walks to the park.": {
             "key": "0-5",
@@ -86,7 +92,8 @@
             "sv": "Hon går till parken.",
             "pt": "Ela caminha até ao parque.",
             "nl": "Ze loopt naar het park.",
-            "es": "Ella camina hacia el parque."
+            "es": "Ella camina hacia el parque.",
+            "ua": "Вона йде до парку."
         },
         "When Anna arrives, there are many people.": {
             "key": "0-6",
@@ -97,7 +104,8 @@
             "sv": "När Anna kommer fram, är där fullt av folk.",
             "pt": "Quando a Anna chega, há muitas pessoas.",
             "nl": "Wanneer Anna aankomt, zijn er veel mensen.",
-            "es": "Cuando Anna llega, hay mucha gente."
+            "es": "Cuando Anna llega, hay mucha gente.",
+            "ua": "Коли Ганна приходить, там багато людей."
         },
         "Many people are also walking.": {
             "key": "0-7",
@@ -108,7 +116,8 @@
             "sv": "Många personer är också ute och går.",
             "pt": "Muitas pessoas também passeiam.",
             "nl": "Veel mensen zijn ook aan het lopen.",
-            "es": "Muchas personas también están caminando."
+            "es": "Muchas personas también están caminando.",
+            "ua": "Багато людей теж прогулюються."
         },
         "Some people are sitting on benches and talking.": {
             "key": "0-8",
@@ -119,7 +128,8 @@
             "sv": "Några personer sitter på bänkar och pratar.",
             "pt": "Algumas pessoas sentam-se em bancos e conversam.",
             "nl": "Sommige mensen zitten op bankjes en praten.",
-            "es": "Algunas personas están sentadas en los bancos y hablando."
+            "es": "Algunas personas están sentadas en los bancos y hablando.",
+            "ua": "Деякі люди сидять на лавках і розмовляють."
         },
         "Where does Anna go first?": {
             "key": "0-9",
@@ -130,7 +140,8 @@
             "sv": "Vart går Anna först?",
             "pt": "Para onde vai a Anna primeiro?",
             "nl": "Waar gaat Anna eerst naartoe?",
-            "es": "¿A dónde va Anna primero?"
+            "es": "¿A dónde va Anna primero?",
+            "ua": "Куди Ганна прямує найперше?"
         },
         "Under a big tree.": {
             "en": "Under a big tree.",
@@ -140,7 +151,9 @@
             "sv": "Under ett stort träd.",
             "pt": "Debaixo de uma árvore.",
             "nl": "Onder een grote boom.",
-            "es": "Debajo de un gran árbol."
+            "es": "Debajo de un gran árbol.",
+            "ua": "Під велике дерево.",
+            "key": "underabigt-b722"
         },
         "To the playground.": {
             "en": "To the playground.",
@@ -150,7 +163,9 @@
             "sv": "Till lekplatsen.",
             "pt": "Para o parque infantil.",
             "nl": "Naar de speeltuin.",
-            "es": "Al patio de recreo."
+            "es": "Al patio de recreo.",
+            "ua": "На ігровий майданчик.",
+            "key": "totheplayg-8851"
         },
         "Anna finds a nice, big tree.": {
             "key": "1-0",
@@ -161,7 +176,8 @@
             "sv": "Anna hittar ett fint, stort träd.",
             "pt": "A Anna encontra uma árvore grande e bonita.",
             "nl": "Anna vindt een fijne, grote boom.",
-            "es": "Anna encuentra un árbol grande y bonito."
+            "es": "Anna encuentra un árbol grande y bonito.",
+            "ua": "Ганна знаходить красиве, велике дерево."
         },
         "She sits down on the grass.": {
             "key": "1-1",
@@ -172,7 +188,8 @@
             "sv": "Hon sätter sig ner i gräset.",
             "pt": "Ela senta-se na relva.",
             "nl": "Ze gaat zitten op het gras.",
-            "es": "Se sienta en el césped."
+            "es": "Se sienta en el césped.",
+            "ua": "Вона сідає на траві."
         },
         "She takes a book and reads it.": {
             "key": "1-2",
@@ -183,7 +200,8 @@
             "sv": "Hon tar en bok och läser i den.",
             "pt": "Ela pega num livro e lê.",
             "nl": "Ze pakt een boek en leest het.",
-            "es": "Saca un libro y lo lee."
+            "es": "Saca un libro y lo lee.",
+            "ua": "Вона бере книгу і читає її."
         },
         "She loves to read.": {
             "key": "1-3",
@@ -194,7 +212,8 @@
             "sv": "Hon älskar att läsa.",
             "pt": "Ela ama ler.",
             "nl": "Ze houdt van lezen.",
-            "es": "Le encanta leer."
+            "es": "Le encanta leer.",
+            "ua": "Вона любить читати."
         },
         "After a while, a dog comes to her.": {
             "key": "1-4",
@@ -205,7 +224,8 @@
             "sv": "Efter ett tag kommer en hund fram till henne.",
             "pt": "Passado um tempo, um cão vem até ela.",
             "nl": "Na een tijdje komt er een hond naar haar toe.",
-            "es": "Después de un rato, un perro se le acerca."
+            "es": "Después de un rato, un perro se le acerca.",
+            "ua": "Через деякий час до неї приходить пес."
         },
         "The dog is friendly and wants to play.": {
             "key": "1-5",
@@ -216,7 +236,8 @@
             "sv": "Hunden är snäll och vill leka.",
             "pt": "O cão é amigável e quer brincar.",
             "nl": "De hond is vriendelijk en wil spelen.",
-            "es": "El perro es amigable y quiere jugar."
+            "es": "El perro es amigable y quiere jugar.",
+            "ua": "Пес привітний і хоче погратися."
         },
         "What does Anna do?": {
             "key": "2-5",
@@ -227,7 +248,8 @@
             "sv": "Vad gör Anna?",
             "pt": "O que faz a Anna?",
             "nl": "Wat doet Anna?",
-            "es": "¿Qué hace Anna?"
+            "es": "¿Qué hace Anna?",
+            "ua": "Що робить Ганна?"
         },
         "Play with the dog.": {
             "en": "Play with the dog.",
@@ -237,7 +259,9 @@
             "sv": "Lek med hunden.",
             "pt": "Brinca com o cão.",
             "nl": "Met de hond spelen.",
-            "es": "Jugar con el perro."
+            "es": "Jugar con el perro.",
+            "ua": "Грається із собакою.",
+            "key": "playwithth-9ab0"
         },
         "Keep reading.": {
             "en": "Keep reading.",
@@ -247,7 +271,9 @@
             "sv": "Fortsätt läsa.",
             "pt": "Continua a ler.",
             "nl": "Blijven lezen.",
-            "es": "Seguir leyendo."
+            "es": "Seguir leyendo.",
+            "ua": "Продовжує читати.",
+            "key": "keepreadin-c386"
         },
         "Anna goes to the playground.": {
             "key": "2-0",
@@ -258,7 +284,8 @@
             "sv": "Anna går till lekplatsen.",
             "pt": "A Anna vai para o parque infantil.",
             "nl": "Anna gaat naar de speeltuin.",
-            "es": "Anna va al patio de recreo."
+            "es": "Anna va al patio de recreo.",
+            "ua": "Ганна йде на ігровий майданчик."
         },
         "Many children are playing.": {
             "key": "2-1",
@@ -269,7 +296,8 @@
             "sv": "Många barn leker.",
             "pt": "Muitas crianças brincam.",
             "nl": "Veel kinderen zijn aan het spelen.",
-            "es": "Muchos niños están jugando."
+            "es": "Muchos niños están jugando.",
+            "ua": "Багато дітей грається"
         },
         "Anna sits on a bench nearby and watches the children.": {
             "key": "2-2",
@@ -280,7 +308,8 @@
             "sv": "Anna sitter på en bänk i närheten och tittar på barnen.",
             "pt": "A Anna senta-se num banco próximo e observa as crianças.",
             "nl": "Anna gaat vlakbij op een bankje zitten en bekijkt de kinderen.",
-            "es": "Anna se sienta en un banco cercano y observa a los niños."
+            "es": "Anna se sienta en un banco cercano y observa a los niños.",
+            "ua": "Ганна сідає на лавку неподалік і дивиться на дітей."
         },
         "A little girl comes up to Anna.": {
             "key": "2-3",
@@ -291,7 +320,8 @@
             "sv": "En liten flicka kommer fram till Anna.",
             "pt": "Uma menina vem ter com a Anna",
             "nl": "Een klein meisje komt op Anna af.",
-            "es": "Una niña pequeña se acerca a Anna."
+            "es": "Una niña pequeña se acerca a Anna.",
+            "ua": "Маленька дівчинка підходить до Ганни."
         },
         "The girl asks for help with her shoe.": {
             "key": "2-4",
@@ -302,7 +332,8 @@
             "sv": "Flickan ber om hjälp med sin sko.",
             "pt": "A menina pede ajuda com o seu sapato.",
             "nl": "Het meisje vraagt om hulp met haar schoen.",
-            "es": "La niña le pide ayuda con su zapato."
+            "es": "La niña le pide ayuda con su zapato.",
+            "ua": "Дівчинка просить допомогти з туфлею."
         },
         "Help the little girl.": {
             "en": "Help the little girl.",
@@ -312,7 +343,9 @@
             "sv": "Hjälp den lilla flickan.",
             "pt": "Ajuda a menina.",
             "nl": "Het kleine meisje helpen.",
-            "es": "Ayudar a la niña pequeña."
+            "es": "Ayudar a la niña pequeña.",
+            "ua": "Допоможи дівчинці.",
+            "key": "helpthelit-e923"
         },
         "Tell the girl to ask her parents.": {
             "en": "Tell the girl to ask her parents.",
@@ -322,7 +355,9 @@
             "sv": "Säg åt flickan att fråga sina föräldrar.",
             "pt": "Diz à menina para pedir aos pais.",
             "nl": "Het meisje vertellen om het aan haar ouders te vragen.",
-            "es": "Decirle a la niña que le pregunte a sus padres."
+            "es": "Decirle a la niña que le pregunte a sus padres.",
+            "ua": "Скажи дівчинці, щоб вона попросила батьків.",
+            "key": "tellthegir-6160"
         },
         "Anna plays with the dog.": {
             "key": "3-0",
@@ -333,7 +368,8 @@
             "sv": "Anna leker med hunden.",
             "pt": "A Anna brinca com o cão.",
             "nl": "Anna speelt met de hond.",
-            "es": "Anna juega con el perro."
+            "es": "Anna juega con el perro.",
+            "ua": "Ганна грається iз собакою."
         },
         "Anna throws a ball to the dog.": {
             "key": "3-1",
@@ -344,7 +380,8 @@
             "sv": "Anna kastar en boll till hunden.",
             "pt": "A Anna atira uma bola ao cão.",
             "nl": "Anna gooit een bal naar de hond.",
-            "es": "Anna le lanza una pelota al perro."
+            "es": "Anna le lanza una pelota al perro.",
+            "ua": "Ганна кидає собаці м'яч."
         },
         "The dog is having fun.": {
             "key": "3-2",
@@ -355,18 +392,20 @@
             "sv": "Hunden har roligt.",
             "pt": "O cão está a divertir-se.",
             "nl": "De hond heeft het naar zijn zin.",
-            "es": "El perro se está divirtiendo."
+            "es": "El perro se está divirtiendo.",
+            "ua": "Собака розважається."
         },
         "Later, the dog's owner comes and thanks Anna.": {
             "key": "3-3",
             "en": "Later, the dog's owner comes and thanks Anna.",
-            "fr": " Plus tard, le propriétaire du chien vient remercier Anna.",
+            "fr": "Plus tard, le propriétaire du chien vient remercier Anna.",
             "de": "Später kommt der Besitzer des Hundes und bedankt sich bei Anna.",
             "pl": "Później właściciel psa przychodzi podziękować Annie.",
             "sv": "Senare kommer hundens ägare och tackar Anna.",
             "pt": "Mais tarde, o dono do cão chega e agradece à Anna.",
             "nl": "Later komt de eigenaar van de hond en bedankt Anna.",
-            "es": "Más tarde, el dueño del perro llega y le agradece a Anna."
+            "es": "Más tarde, el dueño del perro llega y le agradece a Anna.",
+            "ua": "Згодом приходить власник собаки і дякує Ганні."
         },
         "What does Anna do next?": {
             "key": "4-3",
@@ -377,7 +416,8 @@
             "sv": "Vad gör Anna härnäst?",
             "pt": "O que faz a Anna a seguir?",
             "nl": "Wat doet Anna nu?",
-            "es": "¿Qué hace Anna después?"
+            "es": "¿Qué hace Anna después?",
+            "ua": "Що Ганна робить далі?"
         },
         "Read a book.": {
             "en": "Read a book.",
@@ -387,7 +427,9 @@
             "sv": "Läs en bok.",
             "pt": "Lê um livro.",
             "nl": "Een boek lezen.",
-            "es": "Leer un libro."
+            "es": "Leer un libro.",
+            "ua": "Читає книгу.",
+            "key": "readabook-c719"
         },
         "Go for a walk.": {
             "en": "Go for a walk.",
@@ -397,7 +439,9 @@
             "sv": "Ta en promenad.",
             "pt": "Ir passear.",
             "nl": "Een wandeling maken.",
-            "es": "Dar un paseo."
+            "es": "Dar un paseo.",
+            "ua": "Йде прогулятися.",
+            "key": "goforawalk-d433"
         },
         "Anna ignores the dog and continues reading.": {
             "key": "4-0",
@@ -408,7 +452,8 @@
             "sv": "Anna struntar i hunden och fortsätter läsa.",
             "pt": "A Anna ignora o cão e continua a ler.",
             "nl": "Anna negeert de hond en gaat door met lezen.",
-            "es": "Anna ignora al perro y continúa leyendo."
+            "es": "Anna ignora al perro y continúa leyendo.",
+            "ua": "Ганна ігнорує собаку і продовжує читати."
         },
         "The dog finally leaves.": {
             "key": "4-1",
@@ -419,7 +464,8 @@
             "sv": "Till slut lämnar hunden platsen.",
             "pt": "O cão finalmente vai embora.",
             "nl": "De hond gaat eindelijk weg.",
-            "es": "El perro finalmente se va."
+            "es": "El perro finalmente se va.",
+            "ua": "Собака нарешті йде."
         },
         "Anna enjoys her book and eats her sandwich.": {
             "key": "4-2",
@@ -430,7 +476,8 @@
             "sv": "Anna njuter av sin bok och äter sin smörgås.",
             "pt": "A Anna aproveita o seu livro e come a sua sanduíche.",
             "nl": "Anna geniet van haar boek en eet haar sandwich.",
-            "es": "Anna disfruta de su libro y come su sándwich."
+            "es": "Anna disfruta de su libro y come su sándwich.",
+            "ua": "Ганна насолоджується книгою та їсть канапку."
         },
         "Take a nap.": {
             "en": "Take a nap.",
@@ -440,7 +487,9 @@
             "sv": "Ta en tupplur.",
             "pt": "Fazer uma sesta.",
             "nl": "Een dutje doen.",
-            "es": "Tomar una siesta."
+            "es": "Tomar una siesta.",
+            "ua": "Подрімай.",
+            "key": "takeanap-ed02"
         },
         "Anna helps the little girl with her shoe.": {
             "key": "5-0",
@@ -451,7 +500,8 @@
             "sv": "Anna hjälper den lilla flickan med hennes sko.",
             "pt": "A Anna ajuda a menina com o seu sapato.",
             "nl": "Anna helpt het kleine meisje met haar schoen.",
-            "es": "Anna ayuda a la niña pequeña con su zapato."
+            "es": "Anna ayuda a la niña pequeña con su zapato.",
+            "ua": "Ганна допомагає дівчинці з туфлею."
         },
         "The girl smiles and thanks Anna.": {
             "key": "5-1",
@@ -462,7 +512,8 @@
             "sv": "Flickan ler och tackar Anna.",
             "pt": "A menina sorri e agradece à Anna.",
             "nl": "Het meisje glimlacht en bedankt Anna.",
-            "es": "La niña sonríe y le da las gracias a Anna."
+            "es": "La niña sonríe y le da las gracias a Anna.",
+            "ua": "Дівчинка посміхається і дякує Ганні."
         },
         "The girl's parents come over and thank Anna as well.": {
             "key": "5-2",
@@ -473,7 +524,8 @@
             "sv": "Flickans föräldrar kommer också fram och tackar Anna.",
             "pt": "Os pais da menina chegam e agradecem à Anna também.",
             "nl": "De ouders van het meisje komen eraan en bedanken Anna ook.",
-            "es": "Los padres de la niña se acercan y también le agradecen a Anna."
+            "es": "Los padres de la niña se acercan y también le agradecen a Anna.",
+            "ua": "Підходять батьки дівчинки і також дякують Ганні."
         },
         "The parents offer Anna some cookies.": {
             "key": "5-3",
@@ -484,7 +536,8 @@
             "sv": "Föräldrarna bjuder Anna på kakor.",
             "pt": "Os pais oferecem bolachas à Anna.",
             "nl": "De ouders bieden Anna wat koekjes aan.",
-            "es": "Los padres le ofrecen a Anna algunas galletas."
+            "es": "Los padres le ofrecen a Anna algunas galletas.",
+            "ua": "Батьки пропонують Ганні печиво."
         },
         "Anna tells the girl to ask her parents.": {
             "key": "6-0",
@@ -495,7 +548,8 @@
             "sv": "Anna säger till flickan att hon ska fråga sina föräldrar.",
             "pt": "A Anna diz à menina para pedir ajuda aos seus pais.",
             "nl": "Anna vertelt het meisje om het aan haar ouders te vragen.",
-            "es": "Anna le dice a la niña que le pregunte a sus padres."
+            "es": "Anna le dice a la niña que le pregunte a sus padres.",
+            "ua": "Ганна каже дівчинці, щоб вона попросила батьків."
         },
         "The girl runs back to her parents.": {
             "key": "6-1",
@@ -506,7 +560,8 @@
             "sv": "Flickan springer tillbaka till sina föräldrar.",
             "pt": "A menina corre de volta para os seus pais.",
             "nl": "Het meisje rent terug naar haar ouders.",
-            "es": "La niña regresa corriendo con sus padres."
+            "es": "La niña regresa corriendo con sus padres.",
+            "ua": "Дівчинка біжить назад до батьків."
         },
         "Anna stays on the bench.": {
             "key": "6-2",
@@ -517,7 +572,8 @@
             "sv": "Anna stannar kvar på bänken.",
             "pt": "A Anna fica no banco.",
             "nl": "Anna blijft op het bankje zitten.",
-            "es": "Anna se queda en el banco."
+            "es": "Anna se queda en el banco.",
+            "ua": "Ганна залишається на лавці."
         },
         "After a while, she decides to do something else.": {
             "key": "6-3",
@@ -528,7 +584,8 @@
             "sv": "Efter ett tag bestämmer hon sig för att göra något annat.",
             "pt": "Passado um tempo, ela decide fazer outra coisa.",
             "nl": "Na een tijdje besluit ze om iets anders te doen.",
-            "es": "Después de un rato, decide hacer otra cosa."
+            "es": "Después de un rato, decide hacer otra cosa.",
+            "ua": "Згодом вона вирішує зайнятися чимось іншим."
         },
         "Sit under a big tree.": {
             "en": "Sit under a big tree.",
@@ -538,7 +595,9 @@
             "sv": "Sitt under ett stort träd.",
             "pt": "Sentar debaixo de uma árvore grande.",
             "nl": "Onder een grote boom zitten.",
-            "es": "Sentarse debajo de un gran árbol."
+            "es": "Sentarse debajo de un gran árbol.",
+            "ua": "Сядь під великим деревом.",
+            "key": "situnderab-8719"
         },
         "Anna sits down to read her book.": {
             "key": "7-0",
@@ -549,7 +608,8 @@
             "sv": "Anna sätter sig ner för att läsa sin bok.",
             "pt": "A Anna senta-se para ler o seu livro.",
             "nl": "Anna gaat zitten om haar boek te lezen.",
-            "es": "Anna se sienta a leer su libro."
+            "es": "Anna se sienta a leer su libro.",
+            "ua": "Ганна сідає читати книгу."
         },
         "She reads for a while.": {
             "key": "7-1",
@@ -560,7 +620,8 @@
             "sv": "Hon läser en stund.",
             "pt": "Ela lê por um bocado.",
             "nl": "Ze leest een tijdje.",
-            "es": "Lee por un rato."
+            "es": "Lee por un rato.",
+            "ua": "Вона читає деякий час."
         },
         "She feels very relaxed.": {
             "key": "7-2",
@@ -571,7 +632,8 @@
             "sv": "Hon känner sig mycket avslappnad.",
             "pt": "Ela sente-se muito relaxada.",
             "nl": "Ze voelt zich erg ontspannen.",
-            "es": "Se siente muy relajada."
+            "es": "Se siente muy relajada.",
+            "ua": "Вона почувається дуже розслабленою."
         },
         "The park is very peaceful.": {
             "key": "7-3",
@@ -582,7 +644,8 @@
             "sv": "Parken är mycket fridfull.",
             "pt": "O parque é muito tranquilo.",
             "nl": "Het park is erg rustig.",
-            "es": "El parque es muy tranquilo."
+            "es": "El parque es muy tranquilo.",
+            "ua": "У парку дуже спокійно."
         },
         "Anna decides to go for a walk in the park.": {
             "key": "8-0",
@@ -593,7 +656,8 @@
             "sv": "Anna bestämmer sig för att ta en promenad i parken.",
             "pt": "A Anna decide ir passear no parque.",
             "nl": "Anna besluit om te gaan wandelen in het park.",
-            "es": "Anna decide dar un paseo por el parque."
+            "es": "Anna decide dar un paseo por el parque.",
+            "ua": "Ганна вирішує прогулятися парком."
         },
         "Anna looks at some beautiful flowers.": {
             "key": "8-1",
@@ -604,7 +668,8 @@
             "sv": "Anna tittar på några vackra blommor.",
             "pt": "A Anna olha para umas flores bonitas.",
             "nl": "Anna kijkt naar wat mooie bloemen.",
-            "es": "Anna mira algunas flores hermosas."
+            "es": "Anna mira algunas flores hermosas.",
+            "ua": "Ганна дивиться на красиві квіти."
         },
         "She listens to the birds singing.": {
             "key": "8-2",
@@ -615,7 +680,8 @@
             "sv": "Hon lyssnar på fågelsången.",
             "pt": "Ela escuta os pássaros a cantar.",
             "nl": "Ze luistert naar de zingende vogels.",
-            "es": "Escucha a los pájaros cantar."
+            "es": "Escucha a los pájaros cantar.",
+            "ua": "Вона слухає спів птахів."
         },
         "She feels happy.": {
             "key": "8-3",
@@ -626,7 +692,8 @@
             "sv": "Hon känner sig lycklig.",
             "pt": "Ela sente-se feliz.",
             "nl": "Ze voelt zich vrolijk.",
-            "es": "Se siente feliz."
+            "es": "Se siente feliz.",
+            "ua": "Вона почувається щасливою."
         },
         "Then she sees her friend Tom.": {
             "key": "8-4",
@@ -637,7 +704,8 @@
             "sv": "Sedan ser hon sin vän Tom.",
             "pt": "Depois, ela vê o seu amigo Tom.",
             "nl": "Dan ziet ze haar vriend Tom.",
-            "es": "Luego ve a su amigo Tom."
+            "es": "Luego ve a su amigo Tom.",
+            "ua": "Потім вона бачить свого друга Тома."
         },
         "Tom is also walking in the park.": {
             "key": "8-5",
@@ -648,7 +716,8 @@
             "sv": "Tom promenerar också i parken.",
             "pt": "O Tom também está a passear no parque.",
             "nl": "Tom loopt ook in het park.",
-            "es": "Tom también está caminando por el parque."
+            "es": "Tom también está caminando por el parque.",
+            "ua": "Том також гуляє в парку."
         },
         "Anna takes a nap under the tree.": {
             "key": "9-0",
@@ -659,7 +728,8 @@
             "sv": "Anna tar en tupplur under granen.",
             "pt": "A Anna faz uma sesta debaixo da árvore.",
             "nl": "Anna doet een dutje onder de boom.",
-            "es": "Anna toma una siesta debajo del árbol."
+            "es": "Anna toma una siesta debajo del árbol.",
+            "ua": "Ганна дрімає під деревом."
         },
         "She dreams that she flies like a bird.": {
             "key": "9-1",
@@ -670,7 +740,8 @@
             "sv": "Hon drömmer om att hon flyger som en fågel.",
             "pt": "Ela sonha que voa como um pássaro.",
             "nl": "Ze droomt dat ze vliegt als een vogel.",
-            "es": "Sueña que vuela como un pájaro."
+            "es": "Sueña que vuela como un pájaro.",
+            "ua": "Їй сниться, що вона літає, як птах."
         },
         "She wakes up feeling relaxed and happy.": {
             "key": "9-2",
@@ -681,7 +752,8 @@
             "sv": "Hon vaknar upp och känner sig avslappnad och glad.",
             "pt": "Ela acorda a sentir-se relaxada e feliz.",
             "nl": "Ze wordt ontspannen en vrolijk wakker.",
-            "es": "Se despierta sintiéndose relajada y feliz."
+            "es": "Se despierta sintiéndose relajada y feliz.",
+            "ua": "Вона прокидається розслабленою та щасливою."
         },
         "The cookies are very tasty.": {
             "key": "10-0",
@@ -692,7 +764,8 @@
             "sv": "Kakorna är jättegoda.",
             "pt": "As bolachas são muito saborosas.",
             "nl": "De koekjes zijn erg lekker.",
-            "es": "Las galletas están muy ricas."
+            "es": "Las galletas están muy ricas.",
+            "ua": "Печиво дуже смачне."
         },
         "Anna feels happy and decides to do something else.": {
             "key": "10-1",
@@ -703,7 +776,8 @@
             "sv": "Anna känner sig glad och bestämmer sig för att göra något annat.",
             "pt": "A Anna sente-se feliz e decide fazer outra coisa.",
             "nl": "Anna voelt zich vrolijk en besluit om iets anders te doen.",
-            "es": "Anna se siente feliz y decide hacer otra cosa."
+            "es": "Anna se siente feliz y decide hacer otra cosa.",
+            "ua": "Ганна почувається щасливою і вирішує зайнятися чимось іншим."
         },
         "Play with the girl.": {
             "en": "Play with the girl.",
@@ -713,7 +787,9 @@
             "sv": "Lek med flickan.",
             "pt": "Brincar com a menina.",
             "nl": "Met het meisje spelen.",
-            "es": "Jugar con la niña."
+            "es": "Jugar con la niña.",
+            "ua": "Пограйся з дівчинкою.",
+            "key": "playwithth-efff"
         },
         "Anna and the girl play a game.": {
             "key": "14-0",
@@ -724,7 +800,8 @@
             "sv": "Anna och flickan leker en lek.",
             "pt": "A Anna e a menina brincam.",
             "nl": "Anna en het meisje spelen een spelletje.",
-            "es": "Anna y la niña juegan un juego."
+            "es": "Anna y la niña juegan un juego.",
+            "ua": "Ганна та дівчинка грають у гру."
         },
         "They play tag and have a lot of fun.": {
             "key": "14-1",
@@ -735,7 +812,8 @@
             "sv": "De leker kull och har mycket roligt.",
             "pt": "Elas jogam à apanhada e divertem-se muito.",
             "nl": "Ze spelen tikkertje en hebben veel lol.",
-            "es": "Juegan a la pilla-pilla y se divierten mucho."
+            "es": "Juegan a la pilla-pilla y se divierten mucho.",
+            "ua": "Вони грають в квача і дуже веселяться."
         },
         "After a while, the girl has to go.": {
             "key": "14-2",
@@ -746,7 +824,8 @@
             "sv": "Efter ett tag måste flickan gå.",
             "pt": "Passado um bocado, a menina tem de ir embora.",
             "nl": "Na een tijdje moet het meisje gaan.",
-            "es": "Después de un rato, la niña tiene que irse."
+            "es": "Después de un rato, la niña tiene que irse.",
+            "ua": "Через деякий час дівчинці треба йти."
         },
         "Anna says goodbye.": {
             "key": "14-3",
@@ -757,7 +836,8 @@
             "sv": "Anna säger adjö.",
             "pt": "A Anna despede-se.",
             "nl": "Anna neemt afscheid.",
-            "es": "Anna se despide."
+            "es": "Anna se despide.",
+            "ua": "Ганна прощається."
         },
         "Anna smiles and waves to Tom.": {
             "key": "15-0",
@@ -768,7 +848,8 @@
             "sv": "Anna ler och vinkar till Tom.",
             "pt": "A Anna sorri e acena para o Tom.",
             "nl": "Anna glimlacht en zwaait naar Tom.",
-            "es": "Anna sonríe y le hace una señal a Tom."
+            "es": "Anna sonríe y le hace una señal a Tom.",
+            "ua": "Ганна посміхається і махає Тому."
         },
         "Tom waves back and walks over to her.": {
             "key": "15-1",
@@ -779,7 +860,8 @@
             "sv": "Tom vinkar tillbaka och går fram till henne.",
             "pt": "O Tom acena de volta e vai ter com ela.",
             "nl": "Tom zwaait terug en loopt naar haar toe.",
-            "es": "Tom le hace una señal de vuelta y se acerca a ella."
+            "es": "Tom le hace una señal de vuelta y se acerca a ella.",
+            "ua": "Том махає у відповідь і підходить до неї."
         },
         "@tom Hi Anna, it's great to see you here!": {
             "key": "15-2",
@@ -790,7 +872,8 @@
             "sv": "Hej Anna, vad kul att se dig här!",
             "pt": "Olá Anna, que bom ver-te aqui!",
             "nl": "Hoi Anna, het is goed om je hier te zien!",
-            "es": "Hola Anna, es genial verte aquí."
+            "es": "Hola Anna, es genial verte aquí.",
+            "ua": "Привіт, Ганно, радий тебе тут бачити!"
         },
         "What a nice surprise!": {
             "en": "What a nice surprise!",
@@ -800,7 +883,9 @@
             "sv": "Vilken trevlig överraskning!",
             "pt": "Que bela surpresa!",
             "nl": "Wat een fijne verrassing!",
-            "es": "¡Qué agradable sorpresa!"
+            "es": "¡Qué agradable sorpresa!",
+            "ua": "Яка приємна несподіванка!",
+            "key": "whatanices-eef4"
         },
         "Do you come here often?": {
             "en": "Do you come here often?",
@@ -810,7 +895,9 @@
             "sv": "Kommer du hit ofta?",
             "pt": "Vens aqui regularmente?",
             "nl": "Kom je hier vaak?",
-            "es": "¿Vienes aquí a menudo?"
+            "es": "¿Vienes aquí a menudo?",
+            "ua": "Ти часто сюди приходиш?",
+            "key": "doyoucomeh-ec66"
         },
         "@anna Hi Tom, what a nice surprise!": {
             "key": "16-0",
@@ -821,7 +908,8 @@
             "sv": "Hej Tom, vilken trevlig överraskning!",
             "pt": "Olá Tom, mas que bela surpresa!",
             "nl": "Hoi Tom, wat een fijne verrassing!",
-            "es": "Hola Tom, ¡qué agradable sorpresa!"
+            "es": "Hola Tom, ¡qué agradable sorpresa!",
+            "ua": "Привіт, Томе, який приємний сюрприз!"
         },
         "@anna Hi Tom, do you come here often?": {
             "key": "17-0",
@@ -832,7 +920,8 @@
             "sv": "Hej Tom, kommer du hit ofta?",
             "pt": "Olá Tom, vens aqui regularmente?",
             "nl": "“Hoi Tom, kom je hier vaak?",
-            "es": "Hola Tom, ¿vienes aquí a menudo?"
+            "es": "Hola Tom, ¿vienes aquí a menudo?",
+            "ua": "Привіт, Томе, ти часто сюди приходиш?"
         },
         "@anna I like to come here to read and enjoy the fresh air.": {
             "key": "18-0",
@@ -843,7 +932,8 @@
             "sv": "Jag tycker om att komma hit för att läsa och njuta av den friska luften.",
             "pt": "Eu gosto de vir aqui ler e aproveitar o ar livre.",
             "nl": "Ik kom hier graag om te lezen en van de frisse lucht te genieten.",
-            "es": "Me gusta venir aquí para leer y disfrutar del aire fresco."
+            "es": "Me gusta venir aquí para leer y disfrutar del aire fresco.",
+            "ua": "Я люблю приходити сюди щоб почитати і насолодитися свіжим повітрям."
         },
         "@tom That sounds nice. What book are you reading?": {
             "key": "18-1",
@@ -854,7 +944,8 @@
             "sv": "Det låter trevligt. Vilken bok läser du?",
             "pt": "Isso soa bem. Que livro lês?",
             "nl": "Dat klinkt leuk. Welk boek lees je?",
-            "es": "Eso suena bien. ¿Qué libro estás leyendo?"
+            "es": "Eso suena bien. ¿Qué libro estás leyendo?",
+            "ua": "Звучить непогано. Яку книгу ти читаєш?"
         },
         "A detective story.": {
             "en": "A detective story.",
@@ -864,7 +955,9 @@
             "sv": "En deckare.",
             "pt": "Uma história de detetives.",
             "nl": "Een detectiveverhaal.",
-            "es": "Una historia de detectives."
+            "es": "Una historia de detectives.",
+            "ua": "Детектив.",
+            "key": "adetective-52c1"
         },
         "An adventure novel.": {
             "en": "An adventure novel.",
@@ -874,7 +967,9 @@
             "sv": "En äventyrsroman.",
             "pt": "Uma aventura.",
             "nl": "Een avonturenroman.",
-            "es": "Una novela de aventuras."
+            "es": "Una novela de aventuras.",
+            "ua": "Пригодницький роман.",
+            "key": "anadventur-fde0"
         },
         "@anna I like to watch the people.": {
             "key": "19-0",
@@ -885,7 +980,8 @@
             "sv": "Jag tycker om att titta på folk.",
             "pt": "Eu gosto de observar as pessoas.",
             "nl": "Ik vind het leuk om naar de mensen te kijken,” zegt Anna.",
-            "es": "Me gusta observar a la gente."
+            "es": "Me gusta observar a la gente.",
+            "ua": "Я люблю спостерігати за людьми."
         },
         "@tom Me too! It's fun to see everyone having a good time.": {
             "key": "19-1",
@@ -896,7 +992,8 @@
             "sv": "Jag också! Det är kul att se alla som roar sig.",
             "pt": "Eu também! É bom ver toda a gente a divertir-se.",
             "nl": "Ik ook! Het is leuk om iedereen een goede tijd te zien hebben.",
-            "es": "A mí también. Es divertido ver a todos divertiéndose."
+            "es": "A mí también. Es divertido ver a todos divertiéndose.",
+            "ua": "Я теж! Так приємно бачити, що всі гарно проводять час."
         },
         "@tom I also like watching the animals.": {
             "key": "19-2",
@@ -907,7 +1004,8 @@
             "sv": "Jag tycker också om att titta på djuren.",
             "pt": "Eu também gosto de observar os animais.",
             "nl": "Ik kijk ook graag naar de dieren.",
-            "es": "También me gusta ver a los animales."
+            "es": "También me gusta ver a los animales.",
+            "ua": "Я також люблю спостерігати за тваринами."
         },
         "@anna Do you have a favorite animal here?": {
             "key": "22-0",
@@ -918,7 +1016,8 @@
             "sv": "Har du något favoritdjur här?",
             "pt": "Tens algum animal preferido aqui?",
             "nl": "Heb je een favoriete dier hier?",
-            "es": "¿Tienes un animal favorito aquí?"
+            "es": "¿Tienes un animal favorito aquí?",
+            "ua": "Ти маєш тут улюблену тварину?"
         },
         "@anna Do you like playing with the dogs here?": {
             "key": "23-0",
@@ -929,7 +1028,8 @@
             "sv": "Tycker du om att leka med hundarna här?",
             "pt": "Gostas de brincar com os cães aqui?",
             "nl": "Speel je graag met de honden hier?",
-            "es": "¿Te gusta jugar con los perros aquí?"
+            "es": "¿Te gusta jugar con los perros aquí?",
+            "ua": "Ти любиш гратися тут із собаками?"
         },
         "@anna It's a detective story.": {
             "key": "20-0",
@@ -940,7 +1040,8 @@
             "sv": "Det är en deckare.",
             "pt": "É uma história de detetives.",
             "nl": "Het is een detectiveverhaal.",
-            "es": "Es una historia de detectives."
+            "es": "Es una historia de detectives.",
+            "ua": "Це детектив."
         },
         "@tom Detective stories are great, they are full of surprises.": {
             "key": "20-1",
@@ -951,7 +1052,8 @@
             "sv": "Deckare är toppen, de är fulla av överraskningar.",
             "pt": "Histórias de detetives são fantásticas, estão cheias de surpresas.",
             "nl": "Detectiveverhalen zijn geweldig, ze zitten vol verrassingen.",
-            "es": "Las historias de detectives son geniales, están llenas de sorpresas."
+            "es": "Las historias de detectives son geniales, están llenas de sorpresas.",
+            "ua": "Детективні історії - це чудово, вони повні несподіванок."
         },
         "@anna It's an adventure novel.": {
             "key": "21-0",
@@ -962,7 +1064,8 @@
             "sv": "Det är en äventyrsroman.",
             "pt": "É uma aventura.",
             "nl": "Het is een avonturenroman.",
-            "es": "Es una novela de aventuras."
+            "es": "Es una novela de aventuras.",
+            "ua": "Це пригодницький роман."
         },
         "@tom Adventure novels are so exciting! They take you to new places.": {
             "key": "21-1",
@@ -973,7 +1076,8 @@
             "sv": "Äventyrsromaner är så spännande!",
             "pt": "Aventuras são tão entusiasmantes!",
             "nl": "Avonturenromans zijn zo spannend!",
-            "es": "¡Las novelas de aventuras son tan emocionantes! Te llevan a nuevos lugares."
+            "es": "¡Las novelas de aventuras son tan emocionantes! Te llevan a nuevos lugares.",
+            "ua": "Пригодницькі романи такі захопливі! Вони переносять нас у нові місця."
         },
         "@tom I really like the squirrels. They're so cute!": {
             "key": "22-1",
@@ -984,7 +1088,8 @@
             "sv": "Jag gillar verkligen ekorrarna. De är så söta!",
             "pt": "Eu adoro os esquilos. Eles são tão fofos!",
             "nl": "Ik vind de eekhoorns erg leuk. Ze zijn zo schattig!",
-            "es": "Me gustan mucho las ardillas. ¡Son tan lindas!"
+            "es": "Me gustan mucho las ardillas. ¡Son tan lindas!",
+            "ua": "Мені дуже подобаються білки. Вони такі милі!"
         },
         "I like the squirrels too!": {
             "en": "I like the squirrels too!",
@@ -994,7 +1099,9 @@
             "sv": "Jag gillar också ekorrar!",
             "pt": "Eu também gosto de esquilos!",
             "nl": "Ik vind de eekhoorns ook leuk!",
-            "es": "¡A mí también me gustan las ardillas!"
+            "es": "¡A mí también me gustan las ardillas!",
+            "ua": "Мені теж подобаються білки!",
+            "key": "ilikethesq-e46f"
         },
         "I like the birds more.": {
             "en": "I like the birds more.",
@@ -1004,7 +1111,9 @@
             "sv": "Jag gillar fåglarna mer.",
             "pt": "Eu prefiro pássaros.",
             "nl": "Ik vind de vogels leuker.",
-            "es": "Me gustan más los pájaros."
+            "es": "Me gustan más los pájaros.",
+            "ua": "Мені більше подобаються птахи.",
+            "key": "ilikethebi-3e6a"
         },
         "@tom Yes, I love dogs. Dogs always look so happy.": {
             "key": "23-1",
@@ -1015,7 +1124,8 @@
             "sv": "Ja, jag älskar hundar. Hundar ser alltid så glada ut.",
             "pt": "Sim, eu amo cães. Os cães parecem sempre tão felizes.",
             "nl": "Ja, ik houd van honden. Honden zien er altijd zo blij uit.",
-            "es": "Sí, me encantan los perros. Los perros siempre parecen tan felices."
+            "es": "Sí, me encantan los perros. Los perros siempre parecen tan felices.",
+            "ua": "Так, я люблю собак. Собаки завжди виглядають такими радісними."
         },
         "I played with a dog earlier today.": {
             "en": "I played with a dog earlier today.",
@@ -1025,7 +1135,9 @@
             "sv": "Jag lekte med en hund tidigare idag.",
             "pt": "Eu brinquei com um cão hoje.",
             "nl": "Ik heb eerder vandaag met een hond gespeeld.",
-            "es": "Hoy jugué con un perro."
+            "es": "Hoy jugué con un perro.",
+            "ua": "Сьогодні я гралася із собакою.",
+            "key": "iplayedwit-ece8"
         },
         "I like watching them play too.": {
             "en": "I like watching them play too.",
@@ -1035,7 +1147,9 @@
             "sv": "Jag tycker om att titta på när de leker också.",
             "pt": "Eu também gosto de os ver a brincar.",
             "nl": "Ik vind het ook leuk om ze te zien spelen.",
-            "es": "A mí también me gusta verlos jugar."
+            "es": "A mí también me gusta verlos jugar.",
+            "ua": "Я теж люблю дивитися, як вони граються.",
+            "key": "ilikewatch-ec4d"
         },
         "@anna What other kinds of books do you like?": {
             "key": "25-0",
@@ -1046,7 +1160,8 @@
             "sv": "Vilka andra typer av böcker tycker du om?",
             "pt": "De que outro tipo de livros também gostas?",
             "nl": "Van wat voor andere soorten boeken houd je?",
-            "es": "¿Qué otros tipos de libros te gustan?"
+            "es": "¿Qué otros tipos de libros te gustan?",
+            "ua": "Які ще книги тобі подобаються?"
         },
         "@tom I also read science fiction books.": {
             "key": "25-1",
@@ -1057,7 +1172,8 @@
             "sv": "Jag läser också science-fiction böcker.",
             "pt": "Eu também leio livros de ficção-científica.",
             "nl": "Ik lees ook sciencefictionboeken.",
-            "es": "También leo libros de ciencia ficción."
+            "es": "También leo libros de ciencia ficción.",
+            "ua": "Я ще читаю науково-фантастичні книжки."
         },
         "@tom Science fiction books make you think about the future.": {
             "key": "25-2",
@@ -1068,7 +1184,8 @@
             "sv": "Science-fiction böcker får dig att tänka på framtiden.",
             "pt": "Livros de ficção-científica fazem-te pensar sobre o futuro.",
             "nl": "Sciencefictionboeken laten je aan de toekomst denken.",
-            "es": "Los libros de ciencia ficción te hacen pensar en el futuro."
+            "es": "Los libros de ciencia ficción te hacen pensar en el futuro.",
+            "ua": "Науково-фантастичні книги спонукають думати про майбутнє."
         },
         "Maybe we can read one together sometime?": {
             "en": "Maybe we can read one together sometime?",
@@ -1078,7 +1195,9 @@
             "sv": "Vi kanske kan läsa en tillsammans någon gång?",
             "pt": "Talvez possamos ler um livro juntos algum dia?",
             "nl": "Misschien kunnen we er een keer samen één lezen?",
-            "es": "Quizás podríamos leer uno juntos algún día."
+            "es": "Quizás podríamos leer uno juntos algún día.",
+            "ua": "Може, колись почитаємо якусь разом?",
+            "key": "maybewecan-0025"
         },
         "We should talk about our favorite books more often.": {
             "en": "We should talk about our favorite books more often.",
@@ -1088,7 +1207,9 @@
             "sv": "Vi borde prata om våra favoritböcker oftare.",
             "pt": "Devíamos falar sobre os nossos livros favoritos mais vezes.",
             "nl": "We zouden vaker over onze favoriete boeken moeten praten.",
-            "es": "Deberíamos hablar más a menudo sobre nuestros libros favoritos."
+            "es": "Deberíamos hablar más a menudo sobre nuestros libros favoritos.",
+            "ua": "Нам варто частіше розмовляти про улюблені книжки.",
+            "key": "weshouldta-8117"
         },
         "Anna and Tom continue to talk and laugh for a while.": {
             "key": "28-0",
@@ -1099,7 +1220,8 @@
             "sv": "Anna och Tom fortsätter att prata och skratta en stund.",
             "pt": "A Anna e o Tom continuam a falar e a rir por um tempo.",
             "nl": "Anna en Tom blijven nog een tijdje praten en lachen.",
-            "es": "Anna y Tom continúan hablando y riendo por un rato."
+            "es": "Anna y Tom continúan hablando y riendo por un rato.",
+            "ua": "Ганна і Том ще деякий час продовжують розмовляти і сміятися."
         },
         "It's getting dark and it's time to go home.": {
             "key": "28-1",
@@ -1110,7 +1232,8 @@
             "sv": "Det börjar bli mörkt och det är dags att åka hem.",
             "pt": "Está a ficar escuro e é hora de ir para casa.",
             "nl": "Het wordt donker en het is tijd om naar huis te gaan.",
-            "es": "Se está haciendo de noche y es hora de ir a casa."
+            "es": "Se está haciendo de noche y es hora de ir a casa.",
+            "ua": "Сутеніє, і час повертатися додому."
         },
         "Anna says goodbye to Tom and goes home.": {
             "key": "28-2",
@@ -1121,7 +1244,8 @@
             "sv": "Anna säger hej då till Tom och åker hem.",
             "pt": "A Anna despede-se do Tom e vai para casa.",
             "nl": "Anna neemt afscheid van Tom en gaat naar huis.",
-            "es": "Anna se despide de Tom y se va a casa."
+            "es": "Anna se despide de Tom y se va a casa.",
+            "ua": "Ганна прощається з Томом і йде додому."
         },
         "It was a good day.": {
             "key": "28-3",
@@ -1132,7 +1256,8 @@
             "sv": "Det var en bra dag.",
             "pt": "Foi um bom dia.",
             "nl": "Het was een goede dag.",
-            "es": "Fue un buen día."
+            "es": "Fue un buen día.",
+            "ua": "Це був гарний день."
         },
         "Tom smiles.": {
             "key": "31-0",
@@ -1143,7 +1268,8 @@
             "sv": "Tom ler.",
             "pt": "O Tom.",
             "nl": "Tom glimlacht.",
-            "es": "Tom sonríe."
+            "es": "Tom sonríe.",
+            "ua": "Том посміхається."
         },
         "@tom Yes, I come here sometimes to relax. What about you?": {
             "key": "31-1",
@@ -1154,7 +1280,8 @@
             "sv": "Ja, jag kommer hit ibland för att koppla av. Och du då?",
             "pt": "Sim, eu venho aqui para relaxar às vezes. E tu?",
             "nl": "Ja, ik kom hier soms om me te ontspannen. En jij?",
-            "es": "Sí, vengo aquí a veces para relajarme. ¿Y tú?"
+            "es": "Sí, vengo aquí a veces para relajarme. ¿Y tú?",
+            "ua": "Так, я іноді приходжу сюди відпочити. А ти?"
         },
         "I like to read here.": {
             "en": "I like to read here.",
@@ -1164,7 +1291,9 @@
             "sv": "Jag gillar att läsa här.",
             "pt": "Eu gosto de ler aqui.",
             "nl": "Ik lees hier graag.",
-            "es": "Me gusta leer aquí."
+            "es": "Me gusta leer aquí.",
+            "ua": "Мені тут подобається  читати.",
+            "key": "iliketorea-3a01"
         },
         "I like to watch the people here.": {
             "en": "I like to watch the people here.",
@@ -1174,7 +1303,9 @@
             "sv": "Jag gillar att titta på människorna här.",
             "pt": "Eu gosto de observar as pessoas aqui.",
             "nl": "Ik kijk hier graag naar de mensen.",
-            "es": "Me gusta observar a la gente aquí."
+            "es": "Me gusta observar a la gente aquí.",
+            "ua": "Мені тут подобається спостерігати за людьми.",
+            "key": "iliketowat-920d"
         }
     }
 }

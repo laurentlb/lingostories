@@ -12,6 +12,7 @@ languages = {
     "nl": "Dutch",
     "sv": "Swedish",
     "pt": "Portuguese",
+    "ua": "Ukrainian",
 }
 
 def load_file(file_path):
