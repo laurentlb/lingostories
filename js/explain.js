@@ -10,7 +10,7 @@ export class Explain {
 
         const jsonFile = `/stories/${storyName}-explain-${language}.json`;
 
-        fetch(jsonFile)
+        await fetch(jsonFile)
             .then((response) => {
                 if (!response.ok) {
                     throw new Error(`Failed to load ${jsonFile}`);

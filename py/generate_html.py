@@ -22,9 +22,10 @@ def load_file(file_path):
 lang_tpl = load_file(os.path.join(root_dir, "templates/lang.tpl"))
 faq_tpl = load_file(os.path.join(root_dir, "templates/faq.tpl"))
 index_tpl = load_file(os.path.join(root_dir, "templates/index.tpl"))
+settings_tpl = load_file(os.path.join(root_dir, "templates/settings.tpl"))
 
 for lang in languages:
-    html = lang_tpl.format(language=languages[lang], lang_code=lang, faq=faq_tpl)
+    html = lang_tpl.format(language=languages[lang], lang_code=lang, faq=faq_tpl, settings=settings_tpl)
     output_path = os.path.join(root_dir, f"{lang}/index.html")
     os.makedirs(os.path.dirname(output_path), exist_ok=True)
     with open(output_path, "w", encoding="utf-8") as f:

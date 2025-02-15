@@ -1,55 +1,24 @@
 import { allStories } from "./stories.js";
-import { listenMP3, soundEffect } from "./audio.js";
-import { Explain } from "./explain.js";
-import { WordShuffleGame } from "./wordShuffleGame.js";
 import { UserData } from "./userdata.js";
 import { Settings } from "./settings.js";
 import { Story } from "./story-engine.js";
 import { SpeechRecognitionBox } from "./speech-recognition.js";
+import { StoryUI } from "./story-ui.js";
 
-let story = new Story(updateInventory);
-const explainer = new Explain();
+const story = new Story(updateInventory);
 const userData = new UserData();
 const settings = new Settings(userData);
-
-let nextAction = null;
-let actionPending = false;
-let openTransl = null;
-let lastSentence = null;
-let lastAudioIcon = null;
-let lastChoices = [];
-let didShowChoices = false;
-let speechRecognition = new SpeechRecognitionBox(settings, document.querySelector(".speech-recognition .output"), listeningCallback);
+const storyUI = new StoryUI(userData, settings, story, next, updateCollectionTopStatus, updateButtons);
+const speechRecognition = new SpeechRecognitionBox(settings, document.querySelector(".speech-recognition .output"), listeningCallback);
 
 function listeningCallback(isListening) {
     const icon = document.querySelector("#listening-icon");
+    if (!icon) return;
+
     if (isListening) {
         icon.classList.add("listening");
     } else {     
         icon.classList.remove("listening");
-    }
-}
-
-function resetStory() {
-    story.ResetState();
-    document.querySelector('.story').innerHTML = "";
-    document.querySelector('.story').style.display = "block";
-    document.querySelector('.story-end').style.display = "none";
-    document.querySelector('.inventory').style.display = "none";
-    document.querySelector('.footer').style.display = "flex";
-    nextAction = null;
-    actionPending = false;
-    didShowChoices = false;
-    updateButtons();
-}
-
-function setLanguage(l) {
-    story.lang = l;
-    createStoryList();
-
-    if (settings.translationLang() === story.lang) {
-        document.querySelector("#translation-lang").value =
-            story.lang === "en" ? "fr" : "en";
     }
 }
 
@@ -72,317 +41,31 @@ function updateCollectionTopStatus() {
     createImageCollection(".top-image-collection", story.lang, story.storyName);
 }
 
-async function chooseStory(name) {
-    showStory();
+async function chooseStory(name, language) {
     const backUrl = "./";
     document.querySelector("#back-icon").setAttribute("href", backUrl);
     document.querySelector("#back-to-menu").setAttribute("href", backUrl);
     document.querySelector("#restart-icon").style.visibility = "visible";
     document.querySelector("#settings-icon").style.visibility = "visible";
+    
+    if (settings.translationLang() === story.lang) {
+        document.querySelector("#translation-lang").value =
+            story.lang === "en" ? "fr" : "en";
+    }
 
     story.storyName = name;
+    story.lang = language;
     await story.loadStory(name);
-    await explainer.init(name, story.lang);
+    await storyUI.init(name, language);
 
     updateCollectionTopStatus();
     resetStory();
     gtag('event', 'load-story', { 'story': name, 'lang': story.lang });
+}
+
+function resetStory() {
+    storyUI.resetStory();
     next();
-}
-
-function createTranslation(parent, line) {
-    const transl = document.createElement("p");
-    const transLang = settings.translationLang();
-    transl.textContent = line[transLang];
-    transl.classList.add("translation");
-    if (openTransl) {
-        openTransl.remove();
-        openTransl = null;
-    }
-    openTransl = transl;
-
-    parent.appendChild(transl);
-}
-
-function shouldShowMinigame(content, line) {
-    if (!settings.enableMinigames()) {
-        return false;
-    }
-
-    const nbWords = content.split(" ").length;
-    if (nbWords < 4 || nbWords > 8) {
-        return false;
-    }
-
-    if (story.storyName === "intro") {
-        return false;
-    }
-
-    if (line.isTitle) {
-        return false;
-    }
-
-    return Math.random() < 0.2;
-}
-
-function addExplanation(container, line) {
-    explainer.explain(line.key, line[story.lang], container);
-}
-
-function handleLine(line, useSpoiler) {
-    const audio = line["audio"];
-    if (!audio) {
-        showTextOrImage(line, useSpoiler);
-        return;
-    }
-
-    const textOnly = settings.readingMode() === "textOnly";
-    if (!textOnly) {
-        soundEffect(settings, audio, () => {
-            next();
-        });
-    }
-}
-
-function showTextOrImage(line, useSpoiler) {
-    const image = line["img"];
-    if (!image) {
-        showText(line, useSpoiler);
-        return;
-    }
-
-    const main = document.querySelector('.story');
-    const img = document.createElement("img");
-    img.onload = () => {
-        scrollDown();
-    };
-    img.src = `/img/stories/${image}`;
-    img.classList.add("story-image");
-    main.appendChild(img);
-    userData.collectImage(story.lang, story.storyName, image);
-    const textOnly = settings.readingMode() === "textOnly";
-    if (!textOnly) {
-        soundEffect(settings, 'image-collected', () => {
-            if (settings.readingMode() === "autoAdvance") {
-                next();
-            }
-        });
-    }
-    updateCollectionTopStatus();
-
-    // Show explanation for the first image
-    if (story.storyName === "intro") {
-        const info = document.createElement("div");
-        info.classList.add("info-box");
-        info.textContent =
-                `You have collected an image! Each story has a set of images to
-                collect (see the number at the top). This encourages you to read
-                the stories multiple times and make different choices.`;
-        main.appendChild(info);
-    }
-}
-
-function showText(line, useSpoiler) {
-    if (line[story.lang] === "") {
-        next();
-        return;
-    }
-
-    const textOnly = settings.readingMode() === "textOnly";
-
-    const main = document.querySelector('.story');
-    const container = document.createElement("div");
-    container.classList.add("sentence-container");
-    main.appendChild(container);
-
-    const audioElt = document.createElement("img");
-    const speaker = line["speaker"];
-    if (speaker) {
-        audioElt.classList.add("speaker");
-        audioElt.src = `/img/avatars/${speaker.avatar}`;
-        if (speaker.color) {
-            container.style.setProperty('--character-color', speaker.color);
-        }
-        if (speaker.side === "right") {
-            container.style.flexDirection = "row-reverse";
-        }
-    } else {
-        audioElt.src = "/img/volume-up.svg"; 
-        audioElt.classList.add("icon", "audio-icon");
-    }
-
-    audioElt.onclick = () => {
-        listenMP3(story, line, settings, null);
-    };
-    lastAudioIcon = audioElt;
-    container.appendChild(audioElt);
-
-    const content = line[story.lang];
-    if (!content) {
-        console.error("Empty content", line, story.lang);
-    }
-    const showMinigame = !textOnly && shouldShowMinigame(content, line);
-
-    if (showMinigame) {
-        const minigame = document.createElement("div");
-        actionPending = true;
-        const endGame = () => {
-            actionPending = false;
-            nextAction = null;
-            minigame.remove();
-            actuallyShowText(container, line, false);
-            updateButtons();
-            if (settings.readingMode() === "autoAdvance") {
-                next();
-            }
-        };
-
-        nextAction = endGame;
-        const game = new WordShuffleGame(settings, content, minigame, endGame);
-        container.appendChild(minigame);
-    } else {
-        actuallyShowText(container, line, useSpoiler);
-    }
-
-    if (!textOnly) {
-        listenMP3(story, line, settings, () => {
-            if (!actionPending) {
-                next();
-            }
-        });
-    }
-}
-
-function actuallyShowText(container, line, useSpoiler) {
-    const content = line[story.lang];
-    const isTitle = line.isTitle;
-    const elt = document.createElement(isTitle ? "h2" : "p");
-    if (useSpoiler) {
-        elt.classList.add("spoiler");
-        nextAction = () => {
-            revealSpoiler(elt);
-        };
-    }
-
-    elt.classList.add("text");
-    elt.textContent = content;
-    const speaker = line["speaker"];
-    if (speaker) {
-        const side = speaker.side === "right" ? "right" : "left";
-        elt.classList.add("bubble", `bubble-${side}`);
-        elt.style.setProperty('--bubble-color', '#444');
-    }
-
-    const showTranslation = settings.showTranslations() || story.storyName === "intro";
-    if (showTranslation) {
-        createTranslation(elt, line);
-    }
-
-    elt.onclick = () => {
-        if (elt.classList.contains("spoiler")) {
-            next();
-            return;
-        }
-        if (openTransl && openTransl.parentElement === elt) {
-            openTransl.remove();
-            openTransl = null;
-            return;
-        }
-        else {
-            createTranslation(elt, line);
-        }
-    }
-
-    lastSentence = elt;
-    container.appendChild(elt);
-
-    addExplanation(container, line);
-    if (isTitle) {
-        addContributors(container.parentElement);
-    }
-}
-
-function addContributors(container) {
-    const list = story.metadata.sentences["contributors"];
-    if (!list || !list[story.lang]) {
-        return;
-    }
-    const contributors = document.createElement("div");
-    contributors.classList.add("info");
-    contributors.textContent = "Translation: " + list[story.lang];
-    container.appendChild(contributors);
-}
-
-function showChoices(choices) {
-    const main = document.querySelector('.story');
-    const container = document.createElement("div");
-    container.classList.add("choices");
-
-    const transLang = settings.translationLang();
-    lastChoices.length = 0;
-    for (let i = 0; i < choices.length; i++) {
-        const choice = choices[i];
-        const text = story.translateChoice(choice, story.lang);
-        const elt = document.createElement("div");
-        elt.classList.add("choice");
-        elt.textContent = text;
-        elt.title = story.translateChoice(choice, transLang);
-
-        const transl = document.createElement("p");
-        transl.textContent = story.translateChoice(choice, transLang);
-        transl.classList.add("translation");
-        transl.style.display = "none";
-        elt.appendChild(transl);
-
-        elt.onclick = () => {
-            if (transl.style.display === "block") {
-                transl.style.display = "none";
-            }
-            else {
-                transl.style.display = "block";
-            }
-        }
-
-        const textIcon = document.createElement("div");
-        textIcon.classList.add("text-icon");
-        textIcon.textContent = i + 1;
-        textIcon.onclick = () => {
-            lastChoices.length = 0;
-            container.innerHTML = "";
-            textIcon.onclick = null;
-            container.appendChild(textIcon);
-            container.appendChild(elt);
-            container.remove();
-
-            story.ChooseChoiceIndex(choice.index);
-            didShowChoices = false;
-            next();
-        };
-        lastChoices.push(textIcon);
-
-        container.appendChild(textIcon);
-        container.appendChild(elt);
-    }
-
-    didShowChoices = true;
-    if (choices.length === 0) {
-        soundEffect(settings, 'level-end');
-        document.querySelector(".story-end").style.display = "block";
-        const storyData = allStories.find(s => s.id === story.storyName);
-        const collectedImages = userData.nbCollectedImages(story.lang, story.storyName);
-        let text = "You have completed this story. "
-        if (collectedImages === storyData.imageCount) {
-            text += `You have collected all images in this story!`;
-        } else {
-            text += `You have collected ${collectedImages} out of ${storyData.imageCount} images in this story.`;
-        }
-        document.querySelector('.story-end-text').textContent = text;
-        document.querySelector('.footer').style.display = "none";
-
-        gtag('event', 'end-story', { 'story': story.storyName, 'lang': story.lang });
-    } else {
-        main.appendChild(container);
-    }
 }
 
 function createImageCollection(classname, lang, storyName) {
@@ -407,7 +90,7 @@ function createImageCollection(classname, lang, storyName) {
     }
 }
 
-function createStoryList() {
+function createStoryList(language) {
     const container = document.querySelector(".story-list");
     container.innerHTML = "";
 
@@ -415,16 +98,16 @@ function createStoryList() {
         if (!sto.released) {
             continue;
         }
-        const unreleased = Array.isArray(sto.released) && !sto.released.includes(story.lang);
+        const unreleased = Array.isArray(sto.released) && !sto.released.includes(language);
 
         const elt = document.createElement("div");
         elt.classList.add("story-info");
 
         const link = document.createElement("a");
-        if (!unreleased) {
-            link.href = `?story=${sto.id}`;
-        } else {
+        if (unreleased) {
             elt.classList.add("unreleased");
+        } else {
+            link.href = `?story=${sto.id}`;
         }
 
         const img = document.createElement("img");
@@ -450,10 +133,11 @@ function createStoryList() {
     }
 }
 
-function showHome() {
+function showHome(language) {
     document.querySelectorAll('.home').forEach(e => {
         e.style.display = "block";
     });
+    createStoryList(language);
 }
 
 function showStory() {
@@ -463,17 +147,11 @@ function showStory() {
 
     document.querySelector("#back-icon").style.display = "block";;
     document.querySelector("#home-icon").style.display = "none";
-
     document.querySelector(".story-end").style.display = "none";
 }
 
-function revealSpoiler(spoiler) {
-    spoiler.classList.remove("spoiler");
-    spoiler.classList.add("revealed");
-}
-
 function updateButtons() {
-    const storyContinues = !didShowChoices;
+    const storyContinues = !storyUI.didShowChoices;
     document.getElementById("player-next").style.visibility = storyContinues ? "visible" : "hidden";
     scrollDown();
 }
@@ -551,9 +229,9 @@ function contentBottomEdgeY() {
 
 function next(nextSentence = false) {
     lastBottom = contentBottomEdgeY();
-    if (nextAction) {
-        const action = nextAction;
-        nextAction = null;
+    if (storyUI.nextAction) {
+        const action = storyUI.nextAction;
+        storyUI.nextAction = null;
         action();
         updateButtons();
         if (!nextSentence) {
@@ -562,9 +240,7 @@ function next(nextSentence = false) {
     }
 
     if (!story.canContinue) {
-        if (!didShowChoices) {
-            showChoices(story.currentChoices);
-        }
+        storyUI.showChoices(story.currentChoices);
         updateButtons();
         return;
     }
@@ -574,14 +250,12 @@ function next(nextSentence = false) {
     if (textOnly) {
         while (story.canContinue) {
             const line = story.Continue();
-            handleLine(line, useSpoiler);
+            storyUI.handleLine(line, useSpoiler);
         }
-        if (!didShowChoices) {
-            showChoices(story.currentChoices);
-        }
+        storyUI.showChoices(story.currentChoices);
     } else {
         const line = story.Continue();
-        handleLine(line, useSpoiler);
+        storyUI.handleLine(line, useSpoiler);
     }
     updateButtons();
 };
@@ -593,7 +267,7 @@ function toggleListening() {
 function listenMic() {
     const speechRecognitionBox = document.querySelector(".speech-recognition");    
     speechRecognitionBox.style.display = "flex";
-    const textToRepeat = lastSentence.textContent;
+    const textToRepeat = storyUI.lastSentence.textContent;
     speechRecognition.init(story.lang, textToRepeat, () => {
         speechRecognitionBox.style.display = "none";
         speechRecognitionBox.querySelector(".output").innerHTML = "";
@@ -614,14 +288,14 @@ document.addEventListener("keydown", (event) => {
         if (event.ctrlKey || event.metaKey || event.altKey) {
             return;
         }
-        lastSentence.click();
+        storyUI.lastSentence.click();
     }
 
     if (event.key === "r") {
         if (event.ctrlKey || event.metaKey || event.altKey) {
             return;
         }
-        lastAudioIcon.click();
+        storyUI.lastAudioIcon.click();
     }
 
     if (event.key === "m") {
@@ -640,8 +314,8 @@ document.addEventListener("keydown", (event) => {
 
     if (event.key.match(/[0-9]/)) {
         const index = parseInt(event.key) - 1;
-        if (lastChoices[index]) {
-            lastChoices[index].click();
+        if (storyUI.lastChoices[index]) {
+            storyUI.lastChoices[index].click();
         }
     }
 });
@@ -658,12 +332,12 @@ window.onload = function(){
     updateMicIcon();
     document.querySelector("#use-microphone").addEventListener("change", updateMicIcon);
 
-    setLanguage(LANG_CODE);
     const urlParams = new URLSearchParams(window.location.search);
     if (urlParams.has("story")) {
-        chooseStory(urlParams.get("story"));
+        chooseStory(urlParams.get("story"), LANG_CODE);
+        showStory();
     } else {
-        showHome();
+        showHome(LANG_CODE);
     }
 };
 
