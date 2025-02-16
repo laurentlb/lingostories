@@ -833,14 +833,14 @@
             "de": "Fünf Tomaten, bitte."
         },
         "Peter puts the tomatoes in his bag.": {
-            "en": "Peter puts the tomatoes in his bag.",
+            "en": "You put the tomatoes in your bag.",
             "key": "peterputst-84b7",
-            "fr": "Pierre met les tomates dans son sac.",
-            "nl": "Pieter stopt de tomaten in zijn tas.",
-            "sv": "Peter lägger tomaterna i sin väska.",
-            "pl": "Piotr wkłada pomidory do swojej torby.",
-            "es": "Pedro mete los tomates en su bolsa.",
-            "de": "Peter packt die Tomaten in seine Tasche."
+            "fr": "Tu mets les tomates dans ton sac.",
+            "nl": "Je stopt de tomaten in je tas.",
+            "sv": "Du lägger tomaterna i din väska.",
+            "pl": "Wkładasz pomidory do twojej torby.",
+            "es": "Mete los tomates en tu bolsa.",
+            "de": "Du packst die Tomaten in deine Tasche.."
         },
         "@peter I'll take two carrots.": {
             "en": "I'll take two carrots.",
