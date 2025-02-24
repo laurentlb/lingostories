@@ -9,7 +9,7 @@
                 stories are available in multiple languages, and you can
                 customize the settings to match your learning style.</p>
 
-                <p>For more information, see <a href="guide.html">the user guide</a>.
+                <p>For more information, see <a href="/guide.html">the user guide</a>.
             </p>
             </details>
 
@@ -57,7 +57,7 @@
                 skills through repeated exposure to the language.
 
                 </p><p>For language learning tips, check out the <a
-                href="guide.html">the user guide</a>.                
+                href="/guide.html">the user guide</a>.                
             </p>
             </details>
             <details>
@@ -92,11 +92,12 @@
                     <li> <span class="date">2025-01-19</span>: Chat-GPT integration to provide explanations for sentences (only in Grocery story for longer sentences)
                     <li> <span class="date">2025-01-17</span>: Support for microphone (see settings), for you to repeat the sentences out loud
                     <li> <span class="date">2024-10-26</span>: Park: Added Dutch and Swedish translations
-                    <li> <span class="date">2024-09-03</span>: Published <a href="guide.html">a user guide</a>
+                    <li> <span class="date">2024-09-03</span>: Published <a href="/guide.html">a user guide</a>
                     <li> <span class="date">2024-09-01</span>: New story added ("The Grocery List") for French and English, using a better game engine
                     <li> <span class="date">2024-07-27</span>: Add dialogue bubbles to better recognize the characters
                     <li> <span class="date">2024-07-16</span>: Support for direct speech, with avatars and matching voice (depending on the language)
                     <li> <span class="date">2024-07-03</span>: Added/fixed translations in Swedish, Dutch, German, Portuguese, and Polish
+                    <li> <span class="date">2024-06-22</span>: Blog post: <a href="https://laurent.le-brun.eu/blog/building-lingostories-an-experimental-project-for-language-learners">Building LingoStories: An Experimental Project for Language Learners</a>                    
                     <li> <span class="date">2024-06-22</span>: Added a minigame (reorder words) + image collections
                     <li> <span class="date">2024-06-05</span>: New story "A Day in the Park"
                     <li> <span class="date">2024-03-29</span>: Added support for autoplay in the settings
