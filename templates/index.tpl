@@ -29,7 +29,7 @@
             <p>Select a language to practice.</p>
             <ul>
                 <li><a href="/nl/"><img class="flag" src="/img/flags/nl.svg"><div>Dutch</div></a>
-                <li><a href="/en/"><img class="flag" src="/img/flags/us.svg"><div>English</div></a>
+                <li><a href="/en/"><img class="flag" src="/img/flags/en.svg"><div>English</div></a>
                 <li><a href="/fr/"><img class="flag" src="/img/flags/fr.svg"><div>French</div></a>
                 <li><a href="/de/"><img class="flag" src="/img/flags/de.svg"><div>German</div></a>
                 <li><a href="/pl/"><img class="flag" src="/img/flags/pl.svg"><div>Polish</div></a>

@@ -22,7 +22,7 @@
 <div class="top">
     <div class="icon-bar">
         <a href="/" id="back-icon"><img src="/img/back.svg" class="icon top-icon" title="Back to the story list"></a>
-        <a href="/" id="home-icon"><img src="/img/home.svg" class="icon top-icon" title="Back to the main page"></a>
+        <a href="/" id="home-icon"><img src="/img/flags/{lang_code}.svg" class="top-icon" title="Stories in {language}.&#10;Switch target language?"></a>
         
         <img src="/img/options.svg" id="settings-icon" class="icon top-icon" title="Settings" onclick="toggleSettings()">
 

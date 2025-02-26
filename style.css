@@ -7,20 +7,19 @@
 body, html {
     margin: 0;
     padding: 0;
-    background: linear-gradient(122deg, var(--main-bg-color) 0%, #141414 100%);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-color: var(--main-bg-color);
     font-family: sans-serif;
     color: var(--main-text-color);
     letter-spacing: .05em;
     font-size: 18px;
 
-    --border-color: #444;
+    --border-color: #556688;
     --main-text-color: #ddd;
     --secondary-text-color: #8a8;
     --highlight-color: #aaf;
-    --dark-bg-color: #111;
-    --main-bg-color: #303030;
+    --box-bg-color: #112233;
+    --dark-bg-color: #112;
+    --main-bg-color: #0a2a3f;
 }
 
 .spoiler {
@@ -44,7 +43,7 @@ body, html {
 }
 
 select {
-    background-color: #444;
+    background-color: var(--box-bg-color);
     color: var(--main-text-color);
 }
 
@@ -54,7 +53,7 @@ input[type="range"], input[type="checkbox"] {
 
 input {
     font-size: 1rem;
-    background-color: #444;
+    background-color: var(--box-bg-color);
     color: #fff;
     border: 1px solid var(--border-color);
 }
@@ -327,7 +326,7 @@ summary {
 }
 
 .top {
-    background: #222;
+    background: var(--box-bg-color);
     border-bottom: 1px solid var(--border-color);
     padding: 4px;
     position: fixed;
@@ -410,6 +409,7 @@ summary {
 
 .info {
     border: 1px solid var(--border-color);
+    background-color: var(--box-bg-color);
     border-radius: 16px;
     padding: 8px 16px;
     margin: 8px 0;
@@ -520,7 +520,7 @@ a:hover, summary:hover > * {
 
 p, li {
     margin-block: 0.8em;
-    line-height: 1.25em;
+    line-height: 1.3em;
     hyphens: auto;
 }
 
@@ -572,7 +572,7 @@ details {
     align-items: center;
     margin: 0.75em 0;
     --character-color: #444;
-    --bubble-bg: color-mix(in srgb, var(--character-color) 25%, #000);
+    --bubble-bg: color-mix(in srgb, var(--character-color) 25%, #001);
 
     p {
         margin-block: 0em;
