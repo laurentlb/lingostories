@@ -2,11 +2,12 @@
                 <summary><h2>What is LingoStories?</h2></summary>
             <p>
                 LingoStories is a free platform that offers interactive stories
-                for language learners. The stories use simple vocabulary and
+                for language learners. Read stories in {language} and get some practice.
+                The stories use simple vocabulary and
                 grammar to help you practice your language skills in a fun and
-                engaging way. You can listen to the audio, read the text in your
-                target language, and check the translation when needed. The
-                stories are available in multiple languages, and you can
+                engaging way. You can listen to the audio, read the text in {language},
+                and check the translation when needed. The
+                stories are available in a dozen languages, and you can
                 customize the settings to match your learning style.</p>
 
                 <p>For more information, see <a href="/guide.html">the user guide</a>.
@@ -16,7 +17,7 @@
             <details>
                 <summary><h2>How do interactive stories work?</h2></summary>
             <p>
-                During the story, you'll make choices, similar to the format of
+                While reading the story in {language}, you'll make choices, similar to the format of
                 Choose Your Own Adventure books. This makes the experience more
                 engaging, encourages you to replay stories with different
                 outcomes, and adds variety to the learning process.
@@ -51,10 +52,10 @@
                 <summary><h2>How can stories help me learn a language?</h2></summary>
             <p>
                 Stories provide natural, engaging context for language learning.
-                By reading or listening to stories, you encounter new vocabulary
+                By reading or listening to stories in {language}, you encounter new vocabulary
                 and grammar in meaningful situations. Stories also make learning
                 enjoyable and help improve your comprehension and listening
-                skills through repeated exposure to the language.
+                skills.
 
                 </p><p>For language learning tips, check out the <a
                 href="/guide.html">the user guide</a>.                

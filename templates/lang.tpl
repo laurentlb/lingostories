@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta property="og:type" content="website"/>
 <meta property="og:site_name" content="LingoStories"/>
-<meta property="og:description" content="Free interactive stories in {language} for practicing the language." />
+<meta name="description" property="og:description" content="Read free interactive stories in {language} to practice languages." />
 
 <link rel="canonical" href="https://lingostories.org/{lang_code}/">
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">

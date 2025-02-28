@@ -25,7 +25,9 @@ index_tpl = load_file(os.path.join(root_dir, "templates/index.tpl"))
 settings_tpl = load_file(os.path.join(root_dir, "templates/settings.tpl"))
 
 for lang in languages:
-    html = lang_tpl.format(language=languages[lang], lang_code=lang, faq=faq_tpl, settings=settings_tpl)
+    language = languages[lang]
+    faq = faq_tpl.format(language=language)
+    html = lang_tpl.format(language=language, lang_code=lang, faq=faq, settings=settings_tpl)
     output_path = os.path.join(root_dir, f"{lang}/index.html")
     os.makedirs(os.path.dirname(output_path), exist_ok=True)
     with open(output_path, "w", encoding="utf-8") as f:
@@ -33,7 +35,8 @@ for lang in languages:
 
 # Generate main index.html (default landing page)
 output_path = os.path.join(root_dir, "index.html")
-html = index_tpl.format(faq=faq_tpl)
+faq = faq_tpl.format(language="your target language")
+html = index_tpl.format(faq=faq)
 with open(output_path, "w", encoding="utf-8") as f:
     f.write(html)
 

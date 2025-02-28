@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta property="og:type" content="website"/>
 <meta property="og:site_name" content="LingoStories"/>
-<meta property="og:description" content="Free interactive stories for language learners." />
+<meta name="description" property="og:description" content="Free interactive stories for language learners." />
 
 <link rel="canonical" href="https://lingostories.org/">
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -28,15 +28,15 @@
         <div id="language-selector">
             <p>Select a language to practice.</p>
             <ul>
-                <li><a href="/nl/"><img class="flag" src="/img/flags/nl.svg"><div>Dutch</div></a>
-                <li><a href="/en/"><img class="flag" src="/img/flags/en.svg"><div>English</div></a>
-                <li><a href="/fr/"><img class="flag" src="/img/flags/fr.svg"><div>French</div></a>
-                <li><a href="/de/"><img class="flag" src="/img/flags/de.svg"><div>German</div></a>
-                <li><a href="/pl/"><img class="flag" src="/img/flags/pl.svg"><div>Polish</div></a>
-                <li><a href="/pt/"><img class="flag" src="/img/flags/pt.svg"><div>Portuguese</div></a>
-                <li><a href="/es/"><img class="flag" src="/img/flags/es.svg"><div>Spanish</div></a>
-                <li><a href="/sv/"><img class="flag" src="/img/flags/sv.svg"><div>Swedish</div></a>
-                <li><a href="/ua/"><img class="flag" src="/img/flags/ua.svg"><div>Ukrainian</div></a>
+                <li><a href="/nl/"><img class="flag" src="/img/flags/nl.svg" alt="Dutch"><div>Dutch</div></a>
+                <li><a href="/en/"><img class="flag" src="/img/flags/en.svg" alt="English"><div>English</div></a>
+                <li><a href="/fr/"><img class="flag" src="/img/flags/fr.svg" alt="French"><div>French</div></a>
+                <li><a href="/de/"><img class="flag" src="/img/flags/de.svg" alt="German"><div>German</div></a>
+                <li><a href="/pl/"><img class="flag" src="/img/flags/pl.svg" alt="Polish"><div>Polish</div></a>
+                <li><a href="/pt/"><img class="flag" src="/img/flags/pt.svg" alt="Portuguese"><div>Portuguese</div></a>
+                <li><a href="/es/"><img class="flag" src="/img/flags/es.svg" alt="Spanish"><div>Spanish</div></a>
+                <li><a href="/sv/"><img class="flag" src="/img/flags/sv.svg" alt="Swedish"><div>Swedish</div></a>
+                <li><a href="/ua/"><img class="flag" src="/img/flags/ua.svg" alt="Ukrainian"><div>Ukrainian</div></a>
             </ul>
         </div>
 
