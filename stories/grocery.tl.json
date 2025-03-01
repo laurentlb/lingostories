@@ -40,7 +40,10 @@
             "sv": "Inköpslistan",
             "key": "thegrocery-4cf7",
             "es": "Lista de compras",
-            "de": "Die Lebensmittelliste"
+            "de": "Die Lebensmittelliste",
+            "kr": "쇼핑 리스트",
+            "ua": "Список продуктів",
+            "zh": ""
         },
         "contributors": {
             "audio": false,
@@ -50,7 +53,10 @@
             "sv": "Anna Gryszkiewicz",
             "pl": "Małgorzata Le Brun (+ some AI-translated sentences to be replaced soon)",
             "es": "Marisol Enriquez",
-            "de": "Laurent Le Brun"
+            "de": "Laurent Le Brun",
+            "kr": "Smiley Ramon Happytime / Omokgyo / Tetsudoku Motonari (Yes I have so many aliases lol)",
+            "ua": "Hex",
+            "zh": ""
         },
         "@mom Peter!": {
             "en": "Peter!",
@@ -60,7 +66,10 @@
             "sv": "Peter!",
             "pl": "Piotr !",
             "es": "Pedro!",
-            "de": "Peter!"
+            "de": "Peter!",
+            "kr": "",
+            "ua": "Петре!",
+            "zh": ""
         },
         "@mom Peter, please come here.": {
             "en": "Peter, please come here.",
@@ -70,7 +79,10 @@
             "sv": "Peter, kom hit är du snäll.",
             "pl": "Piotr, przyjdź tu proszę.",
             "es": "Pedro, por favor, ven aquí",
-            "de": "Peter, bitte komm her."
+            "de": "Peter, bitte komm her.",
+            "kr": "",
+            "ua": "Петре, йди сюди, будь ласка.",
+            "zh": ""
         },
         "After a few minutes, you find another crossroad.": {
             "en": "After a few minutes, you find another crossroad.",
@@ -80,7 +92,10 @@
             "sv": "Efter några minuter kommer du fram till ännu en vägkorsning.",
             "pl": "Po kilku minutach, dochodzisz do innego skrzyżowania.",
             "es": "Después de unos minutos, encuentras otro cruce.",
-            "de": "Nach ein paar Minuten findest du eine weitere Kreuzung."
+            "de": "Nach ein paar Minuten findest du eine weitere Kreuzung.",
+            "kr": "",
+            "ua": "За кілька хвилин ти опиняєшся на ще одному перехресті.",
+            "zh": ""
         },
         "You feel lost and see another crossroad.": {
             "en": "You feel lost and see another crossroad.",
@@ -90,7 +105,10 @@
             "sv": "Du känner dig vilsen och ser en annan vägkorsning.",
             "pl": "Czujesz się zagubiony i widzisz inne skrzyżowanie.",
             "es": "Te sientes perdido y ves otro cruce.",
-            "de": "Du fühlst dich verloren und siehst eine weitere Kreuzung."
+            "de": "Du fühlst dich verloren und siehst eine weitere Kreuzung.",
+            "kr": "",
+            "ua": "Ти загубився і бачиш ще одне перехрестя.",
+            "zh": ""
         },
         "@peter Is it the street on the right? I'm not sure.": {
             "en": "Is it the street on the right? I'm not sure.",
@@ -100,7 +118,10 @@
             "sv": "Är det gatan till höger? Jag är inte säker.",
             "pl": "Czy to jest ulica po prawej ? Nie jestem pewny.",
             "es": "Pedro, ¿es la calle de la derecha? Yo no estoy seguro.",
-            "de": "Ist das die Straße auf der rechten Seite? Ich bin mir nicht sicher."
+            "de": "Ist das die Straße auf der rechten Seite? Ich bin mir nicht sicher.",
+            "kr": "",
+            "ua": "Це та вулиця праворуч? Я не впевнений.",
+            "zh": ""
         },
         "You reach the main square.": {
             "en": "You reach the main square.",
@@ -110,7 +131,10 @@
             "sv": "Du kommer fram till stora torget.",
             "pl": "Dochodzisz do głównego placu.",
             "es": "Tu llegas a la plaza principal.",
-            "de": "Du erreichst den Hauptplatz."
+            "de": "Du erreichst den Hauptplatz.",
+            "kr": "",
+            "ua": "Ти виходиш на головну площу.",
+            "zh": ""
         },
         "There are many people on the main square.": {
             "en": "There are many people on the main square.",
@@ -120,7 +144,10 @@
             "sv": "Det är mycket folk på stora torget.",
             "pl": "Jest dużo ludzi na głównym placu.",
             "es": "Hay mucha gente en la plaza mayor.",
-            "de": "Auf dem Hauptplatz sind viele Menschen."
+            "de": "Auf dem Hauptplatz sind viele Menschen.",
+            "kr": "",
+            "ua": "На головній площі багато людей.",
+            "zh": ""
         },
         "A street musician is playing guitar on the main square.": {
             "en": "A street musician is playing guitar on the main square.",
@@ -130,7 +157,10 @@
             "sv": "En gatumusikant spelar gitarr på stora toget.",
             "pl": "Uliczny muzyk gra na gitarze na głównym placu.",
             "es": "Un músico callejero está tocando la guitarra en la plaza principal.",
-            "de": "Ein Straßenmusiker spielt auf dem Hauptplatz Gitarre."
+            "de": "Ein Straßenmusiker spielt auf dem Hauptplatz Gitarre.",
+            "kr": "",
+            "ua": "На головній площі вуличний музикант грає на гітарі.",
+            "zh": ""
         },
         "On the main square, a group of tourists is taking photos of the old buildings.": {
             "en": "On the main square, a group of tourists is taking photos of the old buildings.",
@@ -140,7 +170,10 @@
             "sv": "På stora torget, fotograferar en grupp turister de gamla byggnaderna.",
             "pl": "Na głównym placu, grupa turystów robi zdjęcia starych  budynków.",
             "es": "En la plaza principal, hay un grupo de turistas que están tomando fotos.",
-            "de": "Auf dem Hauptplatz fotografieren Touristen die alten Gebäude."
+            "de": "Auf dem Hauptplatz fotografieren Touristen die alten Gebäude.",
+            "kr": "",
+            "ua": "На головній площі група туристів фотографує старовинні будівлі.",
+            "zh": ""
         },
         "@employee What are you looking for?": {
             "en": "What are you looking for?",
@@ -150,7 +183,10 @@
             "sv": "Vad letar du efter?",
             "pl": "Czego szukasz ?",
             "es": "¿Qué es lo que está buscando?",
-            "de": "Wonach suchst du?"
+            "de": "Wonach suchst du?",
+            "kr": "",
+            "ua": "Що ти шукаєш?",
+            "zh": ""
         },
         "@employee Anything else?": {
             "en": "Anything else?",
@@ -160,7 +196,10 @@
             "sv": "Något mer?",
             "pl": "Coś jeszcze ?",
             "es": "¿Algo más?",
-            "de": "Sonst noch etwas?"
+            "de": "Sonst noch etwas?",
+            "kr": "",
+            "ua": "Щось іще?",
+            "zh": ""
         },
         "@seller Do you want something else?": {
             "en": "Do you want something else?",
@@ -170,7 +209,10 @@
             "sv": "Var det bra så?",
             "pl": "Chcesz czegoś innego ?",
             "es": "¿Quieres algo más?",
-            "de": "Willst du noch etwas anderes?"
+            "de": "Willst du noch etwas anderes?",
+            "kr": "",
+            "ua": "Хочеш ще чогось?",
+            "zh": ""
         },
         "Your music teacher is still here.": {
             "en": "Your music teacher is still here.",
@@ -180,7 +222,10 @@
             "sv": "Din musiklärare står fortfarande kvar.",
             "pl": "Twoja nauczycielka muzyki wciąż tu jest.",
             "es": "Tu profesora de música aún está aquí.",
-            "de": "Deine Musiklehrerin ist noch da."
+            "de": "Deine Musiklehrerin ist noch da.",
+            "kr": "",
+            "ua": "Твоя вчителька музики все ще тут.",
+            "zh": ""
         },
         "It looks like you don't have enough money.": {
             "en": "It looks like you don't have enough money.",
@@ -190,7 +235,10 @@
             "sv": "Det verkar som att du inte har tillräckligt med pengar.",
             "pl": "Wygląda na to, że nie masz wystarczająco dużo pieniędzy.",
             "es": "Parece que no tienes suficiente dinero.",
-            "de": "Es sieht so aus, als ob du nicht genug Geld hättest."
+            "de": "Es sieht so aus, als ob du nicht genug Geld hättest.",
+            "kr": "",
+            "ua": "Схоже, що ти не маєш достатньо грошей.",
+            "zh": ""
         },
         "It is Saturday afternoon.": {
             "en": "It is Saturday afternoon.",
@@ -200,7 +248,10 @@
             "sv": "Det är lördag eftermiddag.",
             "pl": "Jest sobota po południu.",
             "es": "Es sábado por la tarde.",
-            "de": "Es ist Samstag Nachmittag."
+            "de": "Es ist Samstag Nachmittag.",
+            "kr": "",
+            "ua": "Субота, післяобідня година.",
+            "zh": ""
         },
         "So you are playing with your toys in your bedroom.": {
             "en": "So you are playing with your toys in your bedroom.",
@@ -210,7 +261,10 @@
             "sv": "Så du leker med dina leksaker på ditt rum.",
             "pl": "Bawisz się więc zabawkami w swoim pokoju.",
             "es": "Así que estas jugando con tus juguetes en tu habitación",
-            "de": "Du spielst mit deinem Spielzeug in deinem Zimmer."
+            "de": "Du spielst mit deinem Spielzeug in deinem Zimmer.",
+            "kr": "",
+            "ua": "Ти бавишся іграшками у своїй кімнаті.",
+            "zh": ""
         },
         "Your mom calls you.": {
             "en": "Your mom calls you.",
@@ -219,8 +273,11 @@
             "nl": "Je moeder roept je.",
             "sv": "Din mamma ropar på dig.",
             "pl": "Twoja mama woła Cię.",
-            "es": "Tu mamá te llama",
-            "de": "Deine Mutter ruft dich."
+            "es": "Tu mamá te llama.",
+            "de": "Deine Mutter ruft dich.",
+            "kr": "",
+            "ua": "Твоя мама кличе тебе.",
+            "zh": ""
         },
         "You play for a few more minutes.": {
             "en": "You play for a few more minutes.",
@@ -229,8 +286,11 @@
             "nl": "Je speelt nog een paar minuten.",
             "sv": "Du leker några minuter till.",
             "pl": "Bawisz się jeszcze kilka minut.",
-            "es": "Juegas unos minutos más",
-            "de": "Du spielst noch ein paar Minuten."
+            "es": "Juegas unos minutos más.",
+            "de": "Du spielst noch ein paar Minuten.",
+            "kr": "",
+            "ua": "Ти бавишся ще кілька хвилин.",
+            "zh": ""
         },
         "You leave the bedroom and go to your mom.": {
             "en": "You leave the bedroom and go to your mom.",
@@ -240,7 +300,10 @@
             "sv": "Du lämnar rummet och går till din mamma.",
             "pl": "Opuszczasz pokój i idziesz do twojej mamy.",
             "es": "Sales de la habitación y vas a ver a tu madre.",
-            "de": "Du verlässt dein Zimmer und gehst zu deiner Mutter."
+            "de": "Du verlässt dein Zimmer und gehst zu deiner Mutter.",
+            "kr": "",
+            "ua": "Виходиш з кімнати та йдеш до мами.",
+            "zh": ""
         },
         "@mom Can you please go shopping for dinner?": {
             "en": "Can you please go shopping for dinner?",
@@ -250,7 +313,10 @@
             "sv": "Skulle du kunna vara snäll och gå och handla mat till middagen?",
             "pl": "Możesz proszę zrobić zakupy na kolację ?",
             "es": "¿Puedes ir a comprar para la cena?",
-            "de": "Kannst du bitte für das Abendessen einkaufen gehen?"
+            "de": "Kannst du bitte für das Abendessen einkaufen gehen?",
+            "kr": "",
+            "ua": "Сходи, будь ласка, в магазин по продукти на вечерю.",
+            "zh": ""
         },
         "@mom You'll find everything at the supermarket.": {
             "en": "You'll find everything at the supermarket.",
@@ -260,7 +326,10 @@
             "sv": "Du hittar allt i snabbköpet.",
             "pl": "Wszystko znajdziesz w sklepie.",
             "es": "Encontrarás de todo en el supermercado.",
-            "de": "Du wirst alles im Supermarkt finden."
+            "de": "Du wirst alles im Supermarkt finden.",
+            "kr": "",
+            "ua": "У супермаркеті знайдеш все, що потрібно.",
+            "zh": ""
         },
         "@mom Here are 17 coins, I think that should be enough.": {
             "en": "Here are 17 coins, I think that should be enough.",
@@ -270,7 +339,10 @@
             "sv": "Här får du 17 mynt, det borde räcka tror jag.",
             "pl": "Oto 17 monet, myslę, że wystarczy.",
             "es": "Aquí tienes 17 monedas, creo que será suficiente.",
-            "de": "Hier sind 17 Münzen. Ich denke, das sollte reichen."
+            "de": "Hier sind 17 Münzen. Ich denke, das sollte reichen.",
+            "kr": "",
+            "ua": "Ось 17 монет. Думаю, цього має вистачити.",
+            "zh": ""
         },
         "@mom Oh, and we need bread too!": {
             "en": "Oh, and we need bread too!",
@@ -280,7 +352,10 @@
             "sv": "Åh, vi behöver bröd också!",
             "pl": "Ah, potrzebujemy też chleba !",
             "es": "¡Ah, y también necesitamos pan!",
-            "de": "Oh, und Brot brauchen wir auch!"
+            "de": "Oh, und Brot brauchen wir auch!",
+            "kr": "",
+            "ua": "А, і ще нам потрібен хліб!",
+            "zh": ""
         },
         "@peter Can I stay home?": {
             "en": "Can I stay home?",
@@ -290,7 +365,10 @@
             "sv": "Får jag stanna hemma?",
             "pl": "Czy mogę zostać w domu ?",
             "es": "¿Puedo quedarme en casa?",
-            "de": "Kann ich zu Hause bleiben?"
+            "de": "Kann ich zu Hause bleiben?",
+            "kr": "",
+            "ua": "Можна я залишуся вдома?",
+            "zh": ""
         },
         "@peter I'd love to play more.": {
             "en": "I'd love to play more.",
@@ -300,7 +378,10 @@
             "sv": "Jag skulle vilja leka mer.",
             "pl": "Chciałbym jeszcze trochę się pobawić.",
             "es": "Me encantaría jugar más.",
-            "de": "Ich würde gerne weiterspielen."
+            "de": "Ich würde gerne weiterspielen.",
+            "kr": "",
+            "ua": "Я б хотів ще трохи побавитись.",
+            "zh": ""
         },
         "@mom No, it's important to have food for dinner. You can play later.": {
             "en": "No, it's important to have food for dinner. You can play later.",
@@ -310,7 +391,10 @@
             "sv": "Nej, det är viktigt att vi får mat till middagen. Du kan leka senare.",
             "pl": "Nie, to ważne żeby mieć coś do jedzenia na kolację, możesz pobawić się później.",
             "es": "No, es importante tener comida para la cena. Puedes jugar más tarde.",
-            "de": "Nein, es ist wichtig, dass wir etwas zu essen haben. Du kannst später spielen."
+            "de": "Nein, es ist wichtig, dass wir etwas zu essen haben. Du kannst später spielen.",
+            "kr": "",
+            "ua": "Ні, важливо мати їжу на вечерю. Можеш побавитись пізніше.",
+            "zh": ""
         },
         "@peter How do I get to the supermarket?": {
             "en": "How do I get to the supermarket?",
@@ -320,7 +404,10 @@
             "sv": "Hur kkommer jag till snabbköpet?",
             "pl": "Jak dojść do sklepu ?",
             "es": "¿Cómo llego al supermercado?",
-            "de": "Wie komme ich zum Supermarkt?"
+            "de": "Wie komme ich zum Supermarkt?",
+            "kr": "",
+            "ua": "Як мені дістатися до супермаркету?",
+            "zh": ""
         },
         "@mom You'll find it at the end of the street, just turn right.": {
             "en": "Go to the end of the street and turn right.",
@@ -330,7 +417,10 @@
             "sv": "Gå till slutet av gatan och sväng sedan höger.",
             "pl": "Idź do końca ulicy i skręć w prawo.",
             "es": "lo encontrarás al final de la calle y gira a la derecha.",
-            "de": "Geh bis zum Ende der Straße und biege rechts ab."
+            "de": "Geh bis zum Ende der Straße und biege rechts ab.",
+            "kr": "",
+            "ua": "Іди до кінця вулиці та поверни направо.",
+            "zh": ""
         },
         "@mom It's on the main square.": {
             "en": "It's on the main square.",
@@ -340,7 +430,10 @@
             "sv": "Det ligger på stora torget.",
             "pl": "Znajduje się na placu głównym.",
             "es": "Está en la plaza principal.",
-            "de": "Er liegt auf dem Hauptplatz."
+            "de": "Er liegt auf dem Hauptplatz.",
+            "kr": "",
+            "ua": "Він на головній площі.",
+            "zh": ""
         },
         "@peter Can you repeat the shopping list?": {
             "en": "Can you repeat the shopping list?",
@@ -350,7 +443,10 @@
             "sv": "Skulle du kunna repetera inköpslistan?",
             "pl": "Możesz powtórzyć listę zakupów ?",
             "es": "¿Puedes repetir la lista de la compra?",
-            "de": "Kannst du die Einkaufsliste wiederholen?"
+            "de": "Kannst du die Einkaufsliste wiederholen?",
+            "kr": "",
+            "ua": "Можеш повторити список продуктів?",
+            "zh": ""
         },
         "@mom Sure. We need three tomatoes, four eggs, five apples, and bread.": {
             "en": "Sure. We need three tomatoes, four eggs, five apples, and bread.",
@@ -360,7 +456,10 @@
             "sv": "Javisst. Vi behöver tre tomater, fyra ägg, fem äpplen och bröd.",
             "pl": "Oczywiście.Potrzebujemy pięciu pomidorów, cztery jajka, pięć jabłek i chleb.",
             "es": "Claro. Necesitamos tres tomates, cuatro huevos, cinco manzanas y pan.",
-            "de": "Klar. Wir brauchen drei Tomaten, vier Eier, fünf Äpfel und Brot."
+            "de": "Klar. Wir brauchen drei Tomaten, vier Eier, fünf Äpfel und Brot.",
+            "kr": "",
+            "ua": "Звісно. Потрібно три помідори, чотири яйця, п'ять яблук і хліб.",
+            "zh": ""
         },
         "@peter Can I buy something for myself?": {
             "en": "Can I buy something for myself?",
@@ -370,7 +469,10 @@
             "sv": "Får jag köpa något till mig själv?",
             "pl": "Mogę kupić coś dla siebie ?",
             "es": "¿Puedo comprar algo para mí?",
-            "de": "Kann ich auch etwas für mich kaufen?"
+            "de": "Kann ich auch etwas für mich kaufen?",
+            "kr": "",
+            "ua": "Чи можу я купити щось для себе?",
+            "zh": ""
         },
         "@peter I'd like to get some chocolate or maybe a pastry.": {
             "en": "I'd like to get some chocolate or maybe a pastry.",
@@ -380,7 +482,10 @@
             "sv": "Jag skulle vilja ha lite choklad eller kanske en bakelse.",
             "pl": "Chciałbym czekoladę albo może ciasto.",
             "es": "Me gustaría comprar algo de chocolate o tal vez un pastelito.",
-            "de": "Ich würde gerne etwas Schokolade oder vielleicht ein Gebäck kaufen."
+            "de": "Ich würde gerne etwas Schokolade oder vielleicht ein Gebäck kaufen.",
+            "kr": "",
+            "ua": "Я б хотів купити шоколад або, можливо, тістечко.",
+            "zh": ""
         },
         "@mom But first, please buy the food for dinner.": {
             "en": "But first, please buy the food for dinner.",
@@ -390,7 +495,10 @@
             "sv": "Men köp middagsmaten först.",
             "pl": "Ale najpierw, kup jedzenie na kolację.",
             "es": "Pero primero, por favor, compra la comida para la cena.",
-            "de": "Aber kaufe bitte zuerst das Essen für das Abendessen."
+            "de": "Aber kaufe bitte zuerst das Essen für das Abendessen.",
+            "kr": "",
+            "ua": "Але спочатку, будь ласка, купи їжу на вечерю.",
+            "zh": ""
         },
         "@peter Alright, I'm going now.": {
             "en": "Alright, I'm going now.",
@@ -400,7 +508,10 @@
             "sv": "Ok, jag går nu.",
             "pl": "Dobrze, już idę.",
             "es": "Muy bien, ya me voy.",
-            "de": "In Ordnung, ich gehe jetzt."
+            "de": "In Ordnung, ich gehe jetzt.",
+            "kr": "",
+            "ua": "Добре, я вже йду.",
+            "zh": ""
         },
         "You leave the house.": {
             "en": "You leave the house.",
@@ -410,7 +521,10 @@
             "sv": "Du lämnar huset.",
             "pl": "Wychodzisz z domu.",
             "es": "Sales de casa.",
-            "de": "Du verlässt das Haus."
+            "de": "Du verlässt das Haus.",
+            "kr": "",
+            "ua": "Ти виходиш з дому.",
+            "zh": ""
         },
         "It is sunny with a bit of wind.": {
             "en": "It is sunny with a bit of wind.",
@@ -420,7 +534,10 @@
             "sv": "Det är soligt och blåser lite.",
             "pl": "Jest słonecznie i trochę wieje.",
             "es": "está soleado con un poco de viento",
-            "de": "Es ist sonnig und ein bisschen windig."
+            "de": "Es ist sonnig und ein bisschen windig.",
+            "kr": "",
+            "ua": "Погода сонячна, трохи вітряно.",
+            "zh": ""
         },
         "It's not that cold.": {
             "en": "It's not that cold.",
@@ -430,7 +547,10 @@
             "sv": "Det är inte speciellt kallt.",
             "pl": "Nie jest aż tak zimno.",
             "es": "No hace tanto frío.",
-            "de": "Es ist nicht so kalt."
+            "de": "Es ist nicht so kalt.",
+            "kr": "",
+            "ua": "Не так вже й холодно.",
+            "zh": ""
         },
         "You see children playing in the park as you pass by.": {
             "en": "You see children playing in the park as you pass by.",
@@ -440,7 +560,10 @@
             "sv": "Du ser barn som leker i parken när du går förbi.",
             "pl": "Przechodząc widzisz dzieci bawiące się w parku.",
             "es": "Al pasar, ves niños jugando en el parque.",
-            "de": "Du siehst Kinder, die im Park spielen, während du vorbeigehst."
+            "de": "Du siehst Kinder, die im Park spielen, während du vorbeigehst.",
+            "kr": "",
+            "ua": "Проходячи повз, ти бачиш дітей, які граються в парку.",
+            "zh": ""
         },
         "You walk down the street until the end.": {
             "en": "You walk down the street until the end.",
@@ -450,7 +573,10 @@
             "sv": "Du går längs med gatan tills den tar slut.",
             "pl": "Idziesz do końca ulicy.",
             "es": "Caminas por la calle hasta el final.",
-            "de": "Du gehst die Straße bis zum Ende hinunter."
+            "de": "Du gehst die Straße bis zum Ende hinunter.",
+            "kr": "",
+            "ua": "Ти йдеш вулицею до самого її кінця.",
+            "zh": ""
         },
         "@peter Which way is it? I think I should turn left now.": {
             "en": "Which way is it? I think I should turn left now.",
@@ -460,7 +586,10 @@
             "sv": "Vilket håll var det nu? Jag tror att jag borde svänga vänster.",
             "pl": "Którędy ? Myslę, że teraz trzeba skręcić w lewo.",
             "es": "¿Por dónde se va? Creo que ahora debería girar a la izquierda.",
-            "de": "Wo geht es lang? Ich glaube, ich sollte jetzt links abbiegen."
+            "de": "Wo geht es lang? Ich glaube, ich sollte jetzt links abbiegen.",
+            "kr": "",
+            "ua": "В яку сторону? Гадаю, мені треба повернути наліво.",
+            "zh": ""
         },
         "You take the street on the left.": {
             "en": "You take the street on the left.",
@@ -470,7 +599,10 @@
             "sv": "Då går åt vänster.",
             "pl": "Skręcasz w lewo.",
             "es": "Toma la calle de la izquierda.",
-            "de": "Du nimmst die Straße auf der linken Seite."
+            "de": "Du nimmst die Straße auf der linken Seite.",
+            "kr": "",
+            "ua": "Ти повертаєш на вулицю ліворуч.",
+            "zh": ""
         },
         "You take the street on the right.": {
             "en": "You take the street on the right.",
@@ -480,7 +612,10 @@
             "sv": "Du går åt höger.",
             "pl": "Skręcasz w prawo.",
             "es": "Toma la calle de la derecha.",
-            "de": "Du nimmst die Straße nach rechts."
+            "de": "Du nimmst die Straße nach rechts.",
+            "kr": "",
+            "ua": "Ти повертаєш на вулицю праворуч.",
+            "zh": ""
         },
         "You continue straight ahead.": {
             "en": "You continue straight ahead.",
@@ -490,7 +625,10 @@
             "sv": "Du fortsätter rakt fram.",
             "pl": "Idziesz prosto.",
             "es": "Sigue recto.",
-            "de": "Du gehst geradeaus weiter."
+            "de": "Du gehst geradeaus weiter.",
+            "kr": "",
+            "ua": "Ти продовжуєш іти прямо.",
+            "zh": ""
         },
         "You decide to go back.": {
             "en": "You decide to go back.",
@@ -500,7 +638,10 @@
             "sv": "Du bestämmer dig för att vända tillbaka.",
             "pl": "Decydujesz się zawrócić.",
             "es": "Decide volver atrás.",
-            "de": "Du beschließt, den Weg zurück zu gehen."
+            "de": "Du beschließt, den Weg zurück zu gehen.",
+            "kr": "",
+            "ua": "Ти вирішуєш повернутися.",
+            "zh": ""
         },
         "You are afraid of getting lost.": {
             "en": "You are afraid of getting lost.",
@@ -510,7 +651,10 @@
             "sv": "Du är rädd för att gå vilse.",
             "pl": "Boisz się, że się zgubisz.",
             "es": "Tiene miedo de perderse.",
-            "de": "Du hast Angst, dich zu verlaufen."
+            "de": "Du hast Angst, dich zu verlaufen.",
+            "kr": "",
+            "ua": "Ти боїшся загубитися.",
+            "zh": ""
         },
         "But after a while, it starts to feel familiar.": {
             "en": "But after a while, it starts to feel familiar.",
@@ -520,7 +664,10 @@
             "sv": "Men efter ett tag börjar du känna igen dig.",
             "pl": "Ale po chwili, to zaczyna wydawać się znajome.",
             "es": "Pero después de un rato, empieza a resultarte familiar.",
-            "de": "Aber nach einer Weile kommt es dir bekannt vor."
+            "de": "Aber nach einer Weile kommt es dir bekannt vor.",
+            "kr": "",
+            "ua": "Але згодом усе починає видаватися знайомим.",
+            "zh": ""
         },
         "The chocolate tastes delicious.": {
             "en": "The chocolate tastes delicious.",
@@ -530,7 +677,10 @@
             "sv": "Chokladen smakar underbart.",
             "pl": "Czekolada jest pyszna.",
             "es": "El chocolate sabe delicioso.",
-            "de": "Die Schokolade schmeckt köstlich."
+            "de": "Die Schokolade schmeckt köstlich.",
+            "kr": "",
+            "ua": "Шоколад дуже смачний.",
+            "zh": ""
         },
         "The pastry is really good.": {
             "en": "The pastry is really good.",
@@ -540,7 +690,10 @@
             "sv": "Bakelsen är riktigt god.",
             "pl": "Ciasto jest naprawdę dobre.",
             "es": "El pastel está muy bueno.",
-            "de": "Das Gebäck ist wirklich gut."
+            "de": "Das Gebäck ist wirklich gut.",
+            "kr": "",
+            "ua": "Тістечко дуже смачне.",
+            "zh": ""
         },
         "@peter I still have some coins to spend.": {
             "en": "I still have some coins to spend.",
@@ -550,7 +703,10 @@
             "sv": "Jag har några mynt kvar att handla för.",
             "pl": "Mam jeszcze kilka monet do wydania.",
             "es": "Todavía tengo algunas monedas para gastar.",
-            "de": "Ich muss noch ein paar Münzen ausgeben."
+            "de": "Ich muss noch ein paar Münzen ausgeben.",
+            "kr": "",
+            "ua": "Я ще маю кілька монет, які можна витратити.",
+            "zh": ""
         },
         "@peter I'd like some tomatoes.": {
             "en": "I'd like some tomatoes.",
@@ -560,7 +716,10 @@
             "sv": "Jag skulle vilja ha några tomater.",
             "pl": "Chciałbym kilka pomidowrów.",
             "es": "Quisiera unos tomates.",
-            "de": "Ich hätte gerne ein paar Tomaten."
+            "de": "Ich hätte gerne ein paar Tomaten.",
+            "kr": "",
+            "ua": "Я б хотів кілька помідорів.",
+            "zh": ""
         },
         "@employee Sorry, we're out of tomatoes.": {
             "en": "Sorry, we're out of tomatoes.",
@@ -570,7 +729,10 @@
             "sv": "Jag är ledsen, men vi har slut på tomater.",
             "pl": "Przykro mi, nie mamy już pomidorów.",
             "es": "Lo siento, no tenemos tomates.",
-            "de": "Tut mir leid, wir haben keine Tomaten mehr."
+            "de": "Tut mir leid, wir haben keine Tomaten mehr.",
+            "kr": "",
+            "ua": "Вибач, помідори закінчилися.",
+            "zh": ""
         },
         "@employee But they should have tomatoes on the market.": {
             "en": "But they should have tomatoes on the market.",
@@ -580,7 +742,10 @@
             "sv": "Men de har säkert tomater på marknaden.",
             "pl": "Ale powinni mięć pomidory na rynku.",
             "es": "Pero deberían tener tomates en el mercado.",
-            "de": "Aber es sollte doch Tomaten auf dem Markt geben."
+            "de": "Aber es sollte doch Tomaten auf dem Markt geben.",
+            "kr": "",
+            "ua": "Але на ринку повинні бути помідори.",
+            "zh": ""
         },
         "@peter Do you have apples?": {
             "en": "Do you have apples?",
@@ -590,7 +755,10 @@
             "sv": "Har du några äpplen?",
             "pl": "Czy macie pomidory ?",
             "es": "¿Tienen manzanas?",
-            "de": "Haben Sie auch Äpfel?"
+            "de": "Haben Sie auch Äpfel?",
+            "kr": "",
+            "ua": "У вас є яблука?",
+            "zh": ""
         },
         "@employee I don't know why everyone wants apples today.": {
             "en": "I don't know why everyone wants apples today.",
@@ -600,7 +768,10 @@
             "sv": "Jag förstår inte varför alla vill ha äpplen idag.",
             "pl": "Niewiem dlaczego wszyscy dzisiaj chcą jabłka.",
             "es": "No sé por qué todo el mundo quiere manzanas hoy.",
-            "de": "Ich weiß nicht, warum heute alle Äpfel haben wollen."
+            "de": "Ich weiß nicht, warum heute alle Äpfel haben wollen.",
+            "kr": "",
+            "ua": "Не знаю чому сьогодні всі хочуть яблука.",
+            "zh": ""
         },
         "@employee Unfortunately, we don't have any more.": {
             "en": "Unfortunately, we don't have any more.",
@@ -610,7 +781,10 @@
             "sv": "Tyvärr, vi har inga fler.",
             "pl": "Niestety, nie mamy więcej.",
             "es": "Lamentablemente, no tenemos más.",
-            "de": "Wir haben leider keine mehr."
+            "de": "Wir haben leider keine mehr.",
+            "kr": "",
+            "ua": "На жаль, більше немає.",
+            "zh": ""
         },
         "@peter I need eggs.": {
             "en": "I need eggs.",
@@ -620,7 +794,10 @@
             "sv": "Jag skulle behöva ägg.",
             "pl": "Potrzebuję jajek.",
             "es": "Necesito huevos.",
-            "de": "Ich brauche Eier."
+            "de": "Ich brauche Eier.",
+            "kr": "",
+            "ua": "Мені потрібні яйця.",
+            "zh": ""
         },
         "@employee How many eggs do you want?": {
             "en": "How many eggs do you want?",
@@ -630,7 +807,10 @@
             "sv": "Hur många ägg behöver du?",
             "pl": "Ile chcesz jajek ?",
             "es": "¿Cuántos huevos quieres?",
-            "de": "Wie viele Eier willst du denn?"
+            "de": "Wie viele Eier willst du denn?",
+            "kr": "",
+            "ua": "Скільки яєць ти хочеш?",
+            "zh": ""
         },
         "@employee Unfortunately, we don't have bread anymore today.": {
             "en": "Unfortunately, we don't have bread anymore today.",
@@ -640,7 +820,10 @@
             "sv": "Vi har tyvärr inte mer bröd idag.",
             "pl": "Nietety, nie mamy już dzisiaj chleba.",
             "es": "Por desgracia, hoy ya no tenemos pan.",
-            "de": "Leider haben wir heute kein Brot mehr."
+            "de": "Leider haben wir heute kein Brot mehr.",
+            "kr": "",
+            "ua": "На жаль, сьогодні хліба вже немає.",
+            "zh": ""
         },
         "@employee But there's a bakery nearby.": {
             "en": "But there's a bakery nearby.",
@@ -650,7 +833,10 @@
             "sv": "Men det finns ett bageri i närheteten.",
             "pl": "Ale niedaleko jest piekarnia.",
             "es": "Pero hay una panadería cerca.",
-            "de": "Aber es gibt eine Bäckerei in der Nähe."
+            "de": "Aber es gibt eine Bäckerei in der Nähe.",
+            "kr": "",
+            "ua": "Але неподалік є пекарня.",
+            "zh": ""
         },
         "@peter Can I have a bottle of wine?": {
             "en": "Can I have a bottle of wine?",
@@ -660,7 +846,10 @@
             "sv": "Skulle jag kunna få en flaska vin?",
             "pl": "Czy mogę dostać butelkę wina ?",
             "es": "¿Me das una botella de vino?",
-            "de": "Kann ich eine Flasche Wein haben?"
+            "de": "Kann ich eine Flasche Wein haben?",
+            "kr": "",
+            "ua": "Можна мені пляшку вина?",
+            "zh": ""
         },
         "@employee How old are you?": {
             "en": "How old are you?",
@@ -670,7 +859,10 @@
             "sv": "Hur gammal är du?",
             "pl": "Ile masz lat ?",
             "es": "¿Cuántos años tienes?",
-            "de": "Wie alt bist du eigentlich?"
+            "de": "Wie alt bist du eigentlich?",
+            "kr": "",
+            "ua": "Скільки тобі років?",
+            "zh": ""
         },
         "@peter I am 10 years old.": {
             "en": "I am 10 years old.",
@@ -680,7 +872,10 @@
             "sv": "Jag är 10 år gammal.",
             "pl": "Mam 10 lat.",
             "es": "Tengo 10 años.",
-            "de": "Ich bin 10 Jahre alt."
+            "de": "Ich bin 10 Jahre alt.",
+            "kr": "",
+            "ua": "Мені 10 років.",
+            "zh": ""
         },
         "@peter I am... 11 years old!": {
             "en": "I am... 11 years old!",
@@ -690,7 +885,10 @@
             "sv": "Jag är... 11 år gammal!",
             "pl": "Mam ... 11 lat !",
             "es": "Yo tengo... ¡11 años!",
-            "de": "Ich bin... 11 Jahre alt!"
+            "de": "Ich bin... 11 Jahre alt!",
+            "kr": "",
+            "ua": "Мені... 11 років!",
+            "zh": ""
         },
         "@employee Sorry, you're too young to buy wine.": {
             "en": "Sorry, you're too young to buy wine.",
@@ -700,7 +898,10 @@
             "sv": "Jag är ledsen, men du är för ung för att köpa vin.",
             "pl": "Przykro mi, jesteś za młody żeby kupić wino.",
             "es": "Lo siento, eres demasiado joven para comprar vino.",
-            "de": "Tut mir leid, du bist zu jung, um Wein zu kaufen."
+            "de": "Tut mir leid, du bist zu jung, um Wein zu kaufen.",
+            "kr": "",
+            "ua": "Вибач, ти ще замалий, щоб купувати вино.",
+            "zh": ""
         },
         "@peter I'll buy my favorite chocolate.": {
             "en": "I'll buy my favorite chocolate.",
@@ -710,7 +911,10 @@
             "sv": "Jag tänker köpa min favoritchoklad.",
             "pl": "Kupię moją ulubioną czekoladę.",
             "es": "Compraré mi chocolate favorito.",
-            "de": "Ich werde meine Lieblingsschokolade kaufen."
+            "de": "Ich werde meine Lieblingsschokolade kaufen.",
+            "kr": "",
+            "ua": "Куплю свій улюблений шоколад.",
+            "zh": ""
         },
         "@peter That's all, thank you.": {
             "en": "That's all, thank you.",
@@ -720,7 +924,10 @@
             "sv": "Det var allt, tack så mycket.",
             "pl": "To wszystko, dziękuję.",
             "es": "Eso es todo, gracias.",
-            "de": "Das ist alles, danke."
+            "de": "Das ist alles, danke.",
+            "kr": "",
+            "ua": "Це все, дякую.",
+            "zh": ""
         },
         "You leave the supermarket.": {
             "en": "You leave the supermarket.",
@@ -730,7 +937,10 @@
             "sv": "Du lämnar snabbköpet.",
             "pl": "Wychodzisz ze sklepu.",
             "es": "Sales del supermercado.",
-            "de": "Du verlässt den Supermarkt."
+            "de": "Du verlässt den Supermarkt.",
+            "kr": "",
+            "ua": "Ти виходиш із супермаркету.",
+            "zh": ""
         },
         "You enter the bakery.": {
             "en": "You enter the bakery.",
@@ -740,7 +950,10 @@
             "sv": "Du går in i bageriet.",
             "pl": "Wchodzisz do piekarni.",
             "es": "Entras en la panadería.",
-            "de": "Du betrittst die Bäckerei."
+            "de": "Du betrittst die Bäckerei.",
+            "kr": "",
+            "ua": "Ти заходиш до пекарні.",
+            "zh": ""
         },
         "Sorry, this is a bakery, we don't sell apples.": {
             "en": "Sorry, this is a bakery, we don't sell apples.",
@@ -750,7 +963,10 @@
             "sv": "Tyvärr, vi är ett bageri och säljer inte äpplen.",
             "pl": "Przykro mi, to jest piekarnia, nie sprzedajemy jabłek.",
             "es": "Lo siento, esto es una panadería, no vendemos manzanas.",
-            "de": "Tut mir leid, dies ist eine Bäckerei, wir verkaufen keine Äpfel."
+            "de": "Tut mir leid, dies ist eine Bäckerei, wir verkaufen keine Äpfel.",
+            "kr": "",
+            "ua": "Вибач, це пекарня, ми не продаємо яблука.",
+            "zh": ""
         },
         "@peter This pastry, please.": {
             "en": "This pastry, please.",
@@ -760,7 +976,10 @@
             "sv": "Den här bakelsen, tack.",
             "pl": "To ciasto, poproszę.",
             "es": "Este pastel, por favor.",
-            "de": "Dieses Gebäck, bitte."
+            "de": "Dieses Gebäck, bitte.",
+            "kr": "",
+            "ua": "Ось це тістечко, будь ласка.",
+            "zh": ""
         },
         "@peter I would like this bread, please.": {
             "en": "I would like this bread, please.",
@@ -770,7 +989,10 @@
             "sv": "Jag skulle vilja ha det här brödet, tack.",
             "pl": "Chciałbym ten chleb, proszę.",
             "es": "Quisiera este pan, por favor.",
-            "de": "Ich hätte gerne dieses Brot, bitte."
+            "de": "Ich hätte gerne dieses Brot, bitte.",
+            "kr": "",
+            "ua": "Я б хотів ось цей хліб, будь ласка.",
+            "zh": ""
         },
         "@baker See you soon, Peter!": {
             "en": "See you soon, Peter!",
@@ -780,7 +1002,10 @@
             "sv": "Vi ses snart, Peter!",
             "pl": "Do zobaczenia, Piotr !",
             "es": "¡Hasta pronto, Pedro!",
-            "de": "Bis bald, Peter!"
+            "de": "Bis bald, Peter!",
+            "kr": "",
+            "ua": "До зустрічі, Петре!",
+            "zh": ""
         },
         "@peter I'd like some apples.": {
             "en": "I'd like some apples.",
@@ -790,7 +1015,10 @@
             "sv": "Jag skulle vilja ha några äpplen.",
             "pl": "Chciałbym jabłka.",
             "es": "Quisiera unas manzanas.",
-            "de": "Ich hätte gerne ein paar Äpfel."
+            "de": "Ich hätte gerne ein paar Äpfel.",
+            "kr": "",
+            "ua": "Я б хотів кілька яблук.",
+            "zh": ""
         },
         "@seller How many tomatoes do you want?": {
             "en": "How many tomatoes do you want?",
@@ -800,7 +1028,10 @@
             "sv": "Hur många tomater vill du ha?",
             "pl": "Ile chcesz pomidorów ?",
             "es": "¿Cuántos tomates quiere?",
-            "de": "Wie viele Tomaten willst du?"
+            "de": "Wie viele Tomaten willst du?",
+            "kr": "",
+            "ua": "Скільки помідорів ти хочеш?",
+            "zh": ""
         },
         "@peter Three tomatoes, please.": {
             "en": "Three tomatoes, please.",
@@ -810,7 +1041,10 @@
             "sv": "Tre tomater, tack.",
             "pl": "Trzy pomidory, proszę.",
             "es": "Tres tomates, por favor.",
-            "de": "Drei Tomaten, bitte."
+            "de": "Drei Tomaten, bitte.",
+            "kr": "",
+            "ua": "Три помідори, будь ласка.",
+            "zh": ""
         },
         "@peter Four tomatoes, please.": {
             "en": "Four tomatoes, please.",
@@ -820,7 +1054,10 @@
             "sv": "Fyra tomater, tack.",
             "pl": "Cztery pomidory, proszę.",
             "es": "Cuatro tomates, por favor.",
-            "de": "Vier Tomaten, bitte."
+            "de": "Vier Tomaten, bitte.",
+            "kr": "",
+            "ua": "Чотири помідори, будь ласка.",
+            "zh": ""
         },
         "@peter Five tomatoes, please.": {
             "en": "Five tomatoes, please.",
@@ -830,7 +1067,10 @@
             "sv": "Fem tomater, tack.",
             "pl": "Pięć pomidorów, proszę.",
             "es": "Cinco tomates, por favor.",
-            "de": "Fünf Tomaten, bitte."
+            "de": "Fünf Tomaten, bitte.",
+            "kr": "",
+            "ua": "П'ять помідорів, будь ласка.",
+            "zh": ""
         },
         "Peter puts the tomatoes in his bag.": {
             "en": "You put the tomatoes in your bag.",
@@ -840,7 +1080,10 @@
             "sv": "Du lägger tomaterna i din väska.",
             "pl": "Wkładasz pomidory do twojej torby.",
             "es": "Mete los tomates en tu bolsa.",
-            "de": "Du packst die Tomaten in deine Tasche."
+            "de": "Du packst die Tomaten in deine Tasche.",
+            "kr": "",
+            "ua": "Ти кладеш помідори в торбу.",
+            "zh": ""
         },
         "@peter I'll take two carrots.": {
             "en": "I'll take two carrots.",
@@ -850,7 +1093,10 @@
             "sv": "Jag tar gärna två morötter.",
             "pl": "Wezmę dwie marchewki.",
             "es": "Yo quiero dos zanahorias.",
-            "de": "Ich nehme zwei Karotten."
+            "de": "Ich nehme zwei Karotten.",
+            "kr": "",
+            "ua": "Я візьму дві морквини.",
+            "zh": ""
         },
         "@seller See you soon!": {
             "en": "See you soon!",
@@ -860,7 +1106,10 @@
             "sv": "Vi ses nart!",
             "pl": "Do zobaczenia !",
             "es": "¡Hasta pronto!",
-            "de": "Wir sehen uns bald!"
+            "de": "Wir sehen uns bald!",
+            "kr": "",
+            "ua": "До зустрічі!",
+            "zh": ""
         },
         "@peter Can you help me? I really need apples.": {
             "en": "Can you help me? I really need apples.",
@@ -870,7 +1119,10 @@
             "sv": "Skulle du kunna hjälpa mig? Jag behöver verkligen några äpplen.",
             "pl": "Może mi Pani pomóc ? Naprawdę potrzebuję jabłek ?",
             "es": "¿Puedes ayudarme?realmente necesito las manzanas.",
-            "de": "Kannst du mir helfen? Ich brauche dringend Äpfel."
+            "de": "Kannst du mir helfen? Ich brauche dringend Äpfel.",
+            "kr": "",
+            "ua": "Можете мені допомогти? Мені дуже потрібні яблука.",
+            "zh": ""
         },
         "@teacher I'll trade you these apples for some pears. Do you have any?": {
             "en": "I'll trade you these apples for some pears. Do you have any?",
@@ -880,7 +1132,10 @@
             "sv": "Jag kan byta äpplena här mot päron. Har du några?",
             "pl": "Zamienię Ci te jabłka na gruszki. Masz jakieś ?",
             "es": "Te cambio estas manzanas por unas peras. ¿Tienes alguna?",
-            "de": "Ich tausche diese Äpfel gegen ein paar Birnen. Hast du welche?"
+            "de": "Ich tausche diese Äpfel gegen ein paar Birnen. Hast du welche?",
+            "kr": "",
+            "ua": "Я обміняю ці яблука на груші. У тебе є груші?",
+            "zh": ""
         },
         "@peter Yes.": {
             "en": "Yes.",
@@ -890,7 +1145,10 @@
             "sv": "Ja.",
             "pl": "Tak.",
             "es": "Sí.",
-            "de": "Ja."
+            "de": "Ja.",
+            "kr": "",
+            "ua": "Так.",
+            "zh": ""
         },
         "@teacher Great, I love pears too! Here are your apples.": {
             "en": "Great, I love pears too! Here are your apples.",
@@ -900,7 +1158,10 @@
             "sv": "Toppen, jag älskar päron också! Här är dina äpplen.",
             "pl": "Świetnie, uwielbiam też gruszki ! Oto twoje jabłka.",
             "es": "¡Genial, a mí también me encantan las peras! Aquí tienes tus manzanas.",
-            "de": "Toll, ich liebe auch Birnen! Hier sind deine Äpfel."
+            "de": "Toll, ich liebe auch Birnen! Hier sind deine Äpfel.",
+            "kr": "",
+            "ua": "Чудово, груші я теж люблю! Ось твої яблука.",
+            "zh": ""
         },
         "@teacher See you on Monday, Peter!": {
             "en": "See you on Monday, Peter!",
@@ -910,7 +1171,10 @@
             "sv": "Vi ses på måndag, Peter!",
             "pl": "Do poniedziałku, Piotrze !",
             "es": "¡Nos vemos el lunes, Pedro!",
-            "de": "Wir sehen uns am Montag, Peter!"
+            "de": "Wir sehen uns am Montag, Peter!",
+            "kr": "",
+            "ua": "До понеділка, Петре!",
+            "zh": ""
         },
         "@peter Bye!": {
             "en": "Bye!",
@@ -920,7 +1184,10 @@
             "sv": "Hejdå!",
             "pl": "Do widzenia !",
             "es": "¡chau!",
-            "de": "Tschüss, Peter!"
+            "de": "Tschüss, Peter!",
+            "kr": "",
+            "ua": "До побачення!",
+            "zh": ""
         },
         "@teacher That's too bad. Maybe next time.": {
             "en": "That's too bad. Maybe next time.",
@@ -930,7 +1197,10 @@
             "sv": "Vad synd. Kanske en annan gång.",
             "pl": "Szkoda, może innym razem.",
             "es": "Qué lástima. Tal vez la próxima vez.",
-            "de": "Das ist schade. Vielleicht beim nächsten Mal."
+            "de": "Das ist schade. Vielleicht beim nächsten Mal.",
+            "kr": "",
+            "ua": "Шкода. Може, наступного разу.",
+            "zh": ""
         },
         "You come back home. Your mom looks at your groceries.": {
             "en": "You come back home. Your mom looks at your groceries.",
@@ -940,7 +1210,10 @@
             "sv": "Du kommer hem. Din mamma tittar på dina matvaror.",
             "pl": "Wracasz do domu, twoja mama sprawdza zakupy.",
             "es": "Vuelves a casa. Tu madre mira tus compras.",
-            "de": "Du kommst nach Hause. Deine Mutter sieht sich deine Einkäufe an."
+            "de": "Du kommst nach Hause. Deine Mutter sieht sich deine Einkäufe an.",
+            "kr": "",
+            "ua": "Ти повертаєшся додому. Мама дивиться на твої покупки.",
+            "zh": ""
         },
         "@mom Let's see what you bought!": {
             "en": "Let's see what you bought!",
@@ -950,7 +1223,10 @@
             "sv": "Få se vad du har köpt!",
             "pl": "Zobaczmy co kupiłeś !",
             "es": "¡veamos que has comprado !",
-            "de": "Zeig mal, was du gekauft hast!"
+            "de": "Zeig mal, was du gekauft hast!",
+            "kr": "",
+            "ua": "Подивимось, що ти купив!",
+            "zh": ""
         },
         "@mom Great, you have the apples! I'll make an apple pie.": {
             "en": "Great, you have the apples! I'll make an apple pie.",
@@ -960,7 +1236,10 @@
             "sv": "Toppen, du har köpt äpplen! Då kan jag göra en äppelpaj.",
             "pl": "Swietnie, masz jabłka, zrobię tartę jabłkową.",
             "es": "¡Genial, tienes las manzanas! Haré una tarta de manzana.",
-            "de": "Toll, du hast die Äpfel! Ich werde einen Apfelkuchen backen."
+            "de": "Toll, du hast die Äpfel! Ich werde einen Apfelkuchen backen.",
+            "kr": "",
+            "ua": "Чудово, маєш яблука! Я зроблю шарлотку.",
+            "zh": ""
         },
         "@mom No apples? Well, I can make a pear pie instead.": {
             "en": "No apples? Well, I can make a pear pie instead.",
@@ -970,7 +1249,10 @@
             "sv": "Inga äpplen? Nähä, då gör jag en päronpaj istället.",
             "pl": "Nie ma jabłek ? Ale mogę za to zrobić tartę gruszkową.",
             "es": "¿No tienes manzanas? Bueno, puedo hacer un pastel de pera en su lugar.",
-            "de": "Keine Äpfel? Dann mache ich stattdessen einen Birnenkuchen."
+            "de": "Keine Äpfel? Dann mache ich stattdessen einen Birnenkuchen.",
+            "kr": "",
+            "ua": "Немає яблук? Ну, тоді зроблю грушевий пиріг.",
+            "zh": ""
         },
         "@mom No apples or pears? I can use the chocolate to make a chocolate cake.": {
             "en": "No apples or pears? I can use the chocolate to make a chocolate cake.",
@@ -980,7 +1262,10 @@
             "sv": "Varken äpplen eller päron? Jag kan använda chokladen och baka en chokladkaka istället.",
             "pl": "Nie ma jabłek ani gruszek ? Użyję czekolady, żeby zrobić ciasto czekoladowe.",
             "es": "¿No hay manzanas ni peras? Puedo usar el chocolate para hacer una tarta de chocolate.",
-            "de": "Keine Äpfel oder Birnen? Ich kann die Schokolade für einen Schokoladenkuchen verwenden."
+            "de": "Keine Äpfel oder Birnen? Ich kann die Schokolade für einen Schokoladenkuchen verwenden.",
+            "kr": "",
+            "ua": "Немає ні яблук, ні груш? Можу з цього шоколаду зробити шоколадний торт.",
+            "zh": ""
         },
         "@mom No fruit? So we won't have any dessert today.": {
             "en": "No fruit? So we won't have any dessert today.",
@@ -990,7 +1275,10 @@
             "sv": "Ingen frukt? Då får vi ingen efterrrätt idag.",
             "pl": "Nie ma owoców ? Nie będziemy dzisiaj więc mieć deseru.",
             "es": "¿No hay fruta? Entonces hoy no tendremos postre.",
-            "de": "Kein Obst? Dann gibt es heute keinen Nachtisch."
+            "de": "Kein Obst? Dann gibt es heute keinen Nachtisch.",
+            "kr": "",
+            "ua": "Немає фруктів? Значить, сьогодні не буде десерту.",
+            "zh": ""
         },
         "@mom Thank you for the eggs!": {
             "en": "Thank you for the eggs!",
@@ -1000,7 +1288,10 @@
             "sv": "Tack för äggen!",
             "pl": "Dziękuję za jajka.",
             "es": "¡Gracias por los huevos!",
-            "de": "Danke für die Eier!"
+            "de": "Danke für die Eier!",
+            "kr": "",
+            "ua": "Дякую за яйця!",
+            "zh": ""
         },
         "@mom It looks like you forgot the eggs.": {
             "en": "It looks like you forgot the eggs.",
@@ -1010,7 +1301,10 @@
             "sv": "Det verkar som att du glömde bort äggen.",
             "pl": "Zdaje się, że zapomniałeś o jajkach.",
             "es": "Parece que olvidaste los huevos.",
-            "de": "Sieht aus, als hättest du die Eier vergessen."
+            "de": "Sieht aus, als hättest du die Eier vergessen.",
+            "kr": "",
+            "ua": "Схоже, ти забув яйця.",
+            "zh": ""
         },
         "@mom Nice, you have the tomatoes!": {
             "en": "Nice, you have the tomatoes!",
@@ -1020,7 +1314,10 @@
             "sv": "Strålande, du har tomaterna.",
             "pl": "Dobrze, masz pomidory !",
             "es": "¡Bien, tienes los tomates!",
-            "de": "Schön, du hast die Tomaten!"
+            "de": "Schön, du hast die Tomaten!",
+            "kr": "",
+            "ua": "Чудово, маєш помідори!",
+            "zh": ""
         },
         "@mom Where are the tomatoes?": {
             "en": "Where are the tomatoes?",
@@ -1030,7 +1327,10 @@
             "sv": "Var är tomaterna?",
             "pl": "Gdzie są pomidory ?",
             "es": "¿Dónde están los tomates?",
-            "de": "Wo sind die Tomaten?"
+            "de": "Wo sind die Tomaten?",
+            "kr": "",
+            "ua": "А де помідори?",
+            "zh": ""
         },
         "@mom The bread smells good.": {
             "en": "The bread smells good.",
@@ -1040,7 +1340,10 @@
             "sv": "Brödet luktar gott.",
             "pl": "Chleb ładnie pachnie.",
             "es": "El pan huele bien.",
-            "de": "Das Brot riecht gut."
+            "de": "Das Brot riecht gut.",
+            "kr": "",
+            "ua": "Хліб гарно пахне.",
+            "zh": ""
         },
         "@mom You didn't buy bread?": {
             "en": "You didn't buy bread?",
@@ -1050,7 +1353,10 @@
             "sv": "Köpte du inget bröd?",
             "pl": "Nie kupiłeś chleba ?",
             "es": "¿No compraste pan?",
-            "de": "Hast du kein Brot gekauft?"
+            "de": "Hast du kein Brot gekauft?",
+            "kr": "",
+            "ua": "Ти не купив хліб?",
+            "zh": ""
         },
         "Excellent job! You have got everything on the list!": {
             "en": "Excellent job! You have got everything on the list!",
@@ -1060,7 +1366,10 @@
             "sv": "Bra jobbat! Du har handlat allt på inköpslistan!",
             "pl": "Dobra robota ! Masz wszystko czego potrzeba na liście.",
             "es": "¡Excelente trabajo! ¡Tienes todo lo de la lista!",
-            "de": "Sehr gut gemacht! Du hast alles bekommen, was auf der Liste stand!"
+            "de": "Sehr gut gemacht! Du hast alles bekommen, was auf der Liste stand!",
+            "kr": "",
+            "ua": "Молодець! Маєш все, що у списку!",
+            "zh": ""
         },
         "And you still had enough coins to buy something you liked.": {
             "en": "And you still had enough coins to buy something you liked.",
@@ -1070,7 +1379,10 @@
             "sv": "Och du hade pengar över till något som du tycker om.",
             "pl": "I miałeś jeszcze dosyć monet, żeby kupić sobie coś co Ci się podoba.",
             "es": "Y aún te quedaban monedas para comprar algo que te gustara.",
-            "de": "Und du hattest immer noch genug Münzen, um dir etwas zu kaufen, das dir gefallen hat."
+            "de": "Und du hattest immer noch genug Münzen, um dir etwas zu kaufen, das dir gefallen hat.",
+            "kr": "",
+            "ua": "І ти все ще мав достатньо монет, щоб купити те, що тобі сподобалося.",
+            "zh": ""
         },
         "@mom You did a great job, Peter. Thank you!": {
             "en": "You did a great job, Peter. Thank you!",
@@ -1080,7 +1392,10 @@
             "sv": "Du har gjort ett jättebra jobb, Peter. Tack så mycket!",
             "pl": "Zroobiłeś świetną robotę Piotrze, dziękuję !",
             "es": "Has hecho un gran trabajo, Pedro. ¡Muchas gracias!",
-            "de": "Das hast du toll gemacht, Peter. Danke, Peter!"
+            "de": "Das hast du toll gemacht, Peter. Danke, Peter!",
+            "kr": "",
+            "ua": "Ти молодець, Петре. Дякую тобі!",
+            "zh": ""
         },
         "@mom After dinner, you can play with your toys again.": {
             "en": "After dinner, you can play with your toys again.",
@@ -1090,7 +1405,10 @@
             "sv": "Efter middagen kan du leka med dina leksaker igen.",
             "pl": "Po kolacji, znów bedziesz mógł bawić się twoimi zabawkami.",
             "es": "Después de cenar, puedes volver a jugar con tus juguetes.",
-            "de": "Nach dem Abendessen kannst du wieder mit deinen Spielsachen spielen."
+            "de": "Nach dem Abendessen kannst du wieder mit deinen Spielsachen spielen.",
+            "kr": "",
+            "ua": "Після вечері можеш знову бавитися своїми іграшками.",
+            "zh": ""
         },
         "Good work! You got most of the items.": {
             "en": "Good work! You got most of the items.",
@@ -1100,7 +1418,10 @@
             "sv": "Bra jobbat! Du hittade de flesta matvarorna.",
             "pl": "Dobra robota, dostałeś większość rzeczy",
             "es": "¡Buen trabajo! Tienes la mayoría de los artículos.",
-            "de": "Gut gemacht! Du hast die meisten Sachen bekommen."
+            "de": "Gut gemacht! Du hast die meisten Sachen bekommen.",
+            "kr": "",
+            "ua": "Молодець! Ти купив більшу частину продуктів.",
+            "zh": ""
         },
         "@mom It's not perfect, but you did well, Peter. Thank you!": {
             "en": "It's not perfect, but you did well, Peter. Thank you!",
@@ -1110,7 +1431,10 @@
             "sv": "Inte perfekt, men du gjorde ett bra jobb, Peter. Tack ska du ha!",
             "pl": "Nie jest doskonale, ale dobrze zrobiłeś, Piotrze. Dziękuję !",
             "es": "No es perfecto, pero lo hiciste bien, Pedro. ¡Muchas gracias!",
-            "de": "Es ist nicht perfekt, aber du hast es gut gemacht, Peter. Danke, Peter!"
+            "de": "Es ist nicht perfekt, aber du hast es gut gemacht, Peter. Danke, Peter!",
+            "kr": "",
+            "ua": "Не ідеально, але ти добре впорався, Петре. Дякую!",
+            "zh": ""
         },
         "@mom Lots of things are missing.": {
             "en": "Lots of things are missing.",
@@ -1120,7 +1444,10 @@
             "sv": "Det saknas många varor.",
             "pl": "Brakuje wielu rzeczy.",
             "es": "Faltan muchas cosas.",
-            "de": "Es fehlen noch viele Sachen."
+            "de": "Es fehlen noch viele Sachen.",
+            "kr": "",
+            "ua": "Багато чого бракує.",
+            "zh": ""
         },
         "@mom What are we going to have for dinner?": {
             "en": "What are we going to have for dinner?",
@@ -1130,7 +1457,10 @@
             "sv": "Vad ska vi nu ha till middag?",
             "pl": "Co będziemy jeść na kolację ?",
             "es": "¿Qué vamos a cenar?",
-            "de": "Was gibt's denn zum Abendessen?"
+            "de": "Was gibt's denn zum Abendessen?",
+            "kr": "",
+            "ua": "Що ми будемо їсти на вечерю?",
+            "zh": ""
         },
         "@mom It's okay, Peter. I'm sure you'll do better next time.": {
             "en": "It's okay, Peter. I'm sure you'll do better next time.",
@@ -1140,7 +1470,10 @@
             "sv": "Det är ok, Peter. Jag är säker på att det går bättre nästa gång.",
             "pl": "Nie szkodzi, Piotrze, jestem pewna, że następnym razem pójdzie Ci lepiej..",
             "es": "Está bien, Pedro. Estoy seguro de que lo harás mejor la próxima vez.",
-            "de": "Ist schon gut, Peter. Nächstes Mal machst du es sicher besser."
+            "de": "Ist schon gut, Peter. Nächstes Mal machst du es sicher besser.",
+            "kr": "",
+            "ua": "Все гаразд, Петре. Я впевнена, що наступного разу у тебе вийде краще.",
+            "zh": ""
         },
         "Leave the bedroom": {
             "audio": false,
@@ -1150,7 +1483,10 @@
             "sv": "Lämna rummet.",
             "pl": "Opuścić pokój.",
             "es": "Sal del dormitorio",
-            "de": "Das Zimmer verlassen"
+            "de": "Das Zimmer verlassen",
+            "kr": "",
+            "ua": "Вийти з кімнати",
+            "zh": ""
         },
         "Keep playing": {
             "audio": false,
@@ -1160,7 +1496,10 @@
             "sv": "Fortsätt leka.",
             "pl": "Bawić się dalej.",
             "es": "Sigue jugando",
-            "de": "Weiterspielen"
+            "de": "Weiterspielen",
+            "kr": "",
+            "ua": "Гратися далі",
+            "zh": ""
         },
         "Leave": {
             "audio": false,
@@ -1170,7 +1509,10 @@
             "sv": "Gå ut.",
             "pl": "Odejść",
             "es": "Dejar",
-            "de": "Gehen"
+            "de": "Gehen",
+            "kr": "",
+            "ua": "Вийти",
+            "zh": ""
         },
         "Go left": {
             "audio": false,
@@ -1180,7 +1522,10 @@
             "sv": "Gå till vänster.",
             "pl": "Pójść w lewo",
             "es": "Ve a la izquierda",
-            "de": "Nach links gehen"
+            "de": "Nach links gehen",
+            "kr": "",
+            "ua": "Наліво",
+            "zh": ""
         },
         "Go right": {
             "audio": false,
@@ -1190,7 +1535,10 @@
             "sv": "Gå till höger.",
             "pl": "Pójść w prawo",
             "es": "Ve a la derecha",
-            "de": "Nach rechts gehen"
+            "de": "Nach rechts gehen",
+            "kr": "",
+            "ua": "Направо",
+            "zh": ""
         },
         "Go straight": {
             "audio": false,
@@ -1200,7 +1548,10 @@
             "sv": "Fortsätt rakt fram.",
             "pl": "Pójść prosto",
             "es": "Sigue recto",
-            "de": "Geradeaus gehen"
+            "de": "Geradeaus gehen",
+            "kr": "",
+            "ua": "Йти прямо",
+            "zh": ""
         },
         "Go back": {
             "audio": false,
@@ -1210,7 +1561,10 @@
             "sv": "Vänd tillbaka.",
             "pl": "Zawrócić",
             "es": "Retroceder",
-            "de": "Zurückgehen"
+            "de": "Zurückgehen",
+            "kr": "",
+            "ua": "Повернутися назад",
+            "zh": ""
         },
         "Go to the supermarket": {
             "audio": false,
@@ -1220,7 +1574,10 @@
             "sv": "Gå till snabbköpet.",
             "pl": "Pójść do sklepu",
             "es": "Ir al supermercado",
-            "de": "Zum Supermarkt gehen"
+            "de": "Zum Supermarkt gehen",
+            "kr": "",
+            "ua": "Йти до супермаркету",
+            "zh": ""
         },
         "Go to the bakery": {
             "audio": false,
@@ -1230,7 +1587,10 @@
             "sv": "Gå till bageriet.",
             "pl": "Pójść do piekarni",
             "es": "Ir a la panadería",
-            "de": "Zum Bäcker gehen"
+            "de": "Zum Bäcker gehen",
+            "kr": "",
+            "ua": "Йти до пекарні",
+            "zh": ""
         },
         "Go to the outdoor market": {
             "audio": false,
@@ -1240,7 +1600,10 @@
             "sv": "Gå till torgmarknaden.",
             "pl": "Pójść na rynek",
             "es": "Ir al mercado al aire libre",
-            "de": "Zum Markt gehen"
+            "de": "Zum Markt gehen",
+            "kr": "",
+            "ua": "Йти на ринок",
+            "zh": ""
         },
         "Go back home": {
             "audio": false,
@@ -1250,7 +1613,10 @@
             "sv": "Gå tillbaka hem.",
             "pl": "Wrócić do siebie",
             "es": "Volver a casa",
-            "de": "Nach Hause gehen"
+            "de": "Nach Hause gehen",
+            "kr": "",
+            "ua": "Повернутися додому",
+            "zh": ""
         },
         "Stay": {
             "audio": false,
@@ -1260,7 +1626,10 @@
             "sv": "Stanna.",
             "pl": "Zostać",
             "es": "Quedarse",
-            "de": "Bleiben"
+            "de": "Bleiben",
+            "kr": "",
+            "ua": "Залишитися",
+            "zh": ""
         },
         "Tomatoes": {
             "audio": false,
@@ -1270,7 +1639,10 @@
             "sv": "Tomater.",
             "pl": "Pomidory",
             "es": "Tomates",
-            "de": "Tomaten"
+            "de": "Tomaten",
+            "kr": "",
+            "ua": "Помідори",
+            "zh": ""
         },
         "Apples": {
             "audio": false,
@@ -1280,7 +1652,10 @@
             "sv": "Äpplen.",
             "pl": "Jabłka",
             "es": "Manzanas",
-            "de": "Äpfel"
+            "de": "Äpfel",
+            "kr": "",
+            "ua": "Яблука",
+            "zh": ""
         },
         "4 eggs (4🪙)": {
             "audio": false,
@@ -1290,7 +1665,10 @@
             "sv": "4 ägg (4🪙)",
             "pl": "4 jajka (4🪙)",
             "es": "4 huevos (4🪙)",
-            "de": "4 Eier (4🪙)"
+            "de": "4 Eier (4🪙)",
+            "kr": "",
+            "ua": "4 яйця (4🪙)",
+            "zh": ""
         },
         "6 eggs (6🪙)": {
             "audio": false,
@@ -1300,7 +1678,10 @@
             "sv": "6 ägg (6🪙)",
             "pl": "6 jajek (6🪙)",
             "es": "6 huevos (6🪙)",
-            "de": "6 Eier (6🪙)"
+            "de": "6 Eier (6🪙)",
+            "kr": "",
+            "ua": "6 яєць (6🪙)",
+            "zh": ""
         },
         "12 eggs (9🪙)": {
             "audio": false,
@@ -1310,7 +1691,10 @@
             "sv": "12 ägg (9🪙)",
             "pl": "12 jajek (9🪙)",
             "es": "12 huevos (9🪙)",
-            "de": "12 Eier (9🪙)"
+            "de": "12 Eier (9🪙)",
+            "kr": "",
+            "ua": "12 яєць (9🪙)",
+            "zh": ""
         },
         "Bread": {
             "audio": false,
@@ -1320,7 +1704,10 @@
             "sv": "Bröd",
             "pl": "Chleb",
             "es": "Pan",
-            "de": "Brot"
+            "de": "Brot",
+            "kr": "",
+            "ua": "Хліб",
+            "zh": ""
         },
         "Wine": {
             "audio": false,
@@ -1330,7 +1717,10 @@
             "sv": "Vin",
             "pl": "Wino",
             "es": "Vino",
-            "de": "Wein"
+            "de": "Wein",
+            "kr": "",
+            "ua": "Вино",
+            "zh": ""
         },
         "10 years old": {
             "audio": false,
@@ -1340,7 +1730,10 @@
             "sv": "10 år gammal",
             "pl": "10 lat",
             "es": "10 años",
-            "de": "10 Jahre alt"
+            "de": "10 Jahre alt",
+            "kr": "",
+            "ua": "10 років",
+            "zh": ""
         },
         "Lie": {
             "audio": false,
@@ -1350,7 +1743,10 @@
             "sv": "Ljuga",
             "pl": "Kłamać",
             "es": "Mentira",
-            "de": "Liegen"
+            "de": "Liegen",
+            "kr": "",
+            "ua": "Збрехати",
+            "zh": ""
         },
         "Chocolate (2🪙)": {
             "audio": false,
@@ -1360,7 +1756,10 @@
             "sv": "Choklad (2🪙)",
             "pl": "Czekolada (2🪙)",
             "es": "Chocolate (2🪙)",
-            "de": "Schokolade (2🪙)"
+            "de": "Schokolade (2🪙)",
+            "kr": "",
+            "ua": "Шоколад (2🪙)",
+            "zh": ""
         },
         "Bread (3🪙)": {
             "audio": false,
@@ -1370,7 +1769,10 @@
             "sv": "Bröd (3🪙)",
             "pl": "Chleb (3🪙)",
             "es": "Pan (3🪙)",
-            "de": "Brot (3🪙)"
+            "de": "Brot (3🪙)",
+            "kr": "",
+            "ua": "Хліб (3🪙)",
+            "zh": ""
         },
         "Pears (5🪙)": {
             "audio": false,
@@ -1380,7 +1782,10 @@
             "sv": "Päron (5 🪙)",
             "pl": "Gruszki (5🪙)",
             "es": "Peras (5🪙)",
-            "de": "Birnen (5🪙)"
+            "de": "Birnen (5🪙)",
+            "kr": "",
+            "ua": "Груші (5🪙)",
+            "zh": ""
         },
         "3": {
             "audio": false,
@@ -1420,7 +1825,10 @@
             "sv": "Morötter (2🪙)",
             "pl": "Marchewki (2🪙)",
             "es": "Zanahorias (2🪙)",
-            "de": "Karotten (2🪙)"
+            "de": "Karotten (2🪙)",
+            "kr": "",
+            "ua": "Морква (2🪙)",
+            "zh": ""
         },
         "Ask for apples": {
             "audio": false,
@@ -1430,7 +1838,10 @@
             "sv": "Fråga efter äpplen",
             "pl": "Poprosić o jabłka",
             "es": "Pide manzanas",
-            "de": "Nach Äpfeln fragen"
+            "de": "Nach Äpfeln fragen",
+            "kr": "",
+            "ua": "Попросити яблук",
+            "zh": ""
         },
         "No": {
             "audio": false,
@@ -1440,7 +1851,10 @@
             "sv": "Nej",
             "pl": "Nie",
             "es": "No",
-            "de": "Nein"
+            "de": "Nein",
+            "kr": "",
+            "ua": "Ні",
+            "zh": ""
         },
         "The supermarket is right in front of you.": {
             "en": "The supermarket is right in front of you.",
@@ -1450,7 +1864,10 @@
             "sv": "Snabbköpet är precis framför dig.",
             "pl": "Sklep znajduje się tuż przed tobą.",
             "es": "El supermercado está justo delante de ti.",
-            "de": "Der Supermarkt liegt direkt vor Ihnen."
+            "de": "Der Supermarkt liegt direkt vor Ihnen.",
+            "kr": "",
+            "ua": "Супермаркет просто перед тобою.",
+            "zh": ""
         },
         "You enter the supermarket.": {
             "en": "You enter the supermarket.",
@@ -1460,7 +1877,10 @@
             "sv": "Du går in i snabbköpet.",
             "pl": "Wchodzisz do sklepu.",
             "es": "Entras en el supermercado.",
-            "de": "Du betrittst den Supermarkt."
+            "de": "Du betrittst den Supermarkt.",
+            "kr": "",
+            "ua": "Ти заходиш до супермаркету.",
+            "zh": ""
         },
         "It's hard to find what you want.": {
             "en": "It's hard to find what you want.",
@@ -1470,7 +1890,10 @@
             "sv": "Det är svårt att hitta varorna du vill ha.",
             "pl": "Jest trudno znależć, to czego szukasz.",
             "es": "Es difícil encontrar lo que quieres.",
-            "de": "Es ist schwierig, das zu finden, was du suchst."
+            "de": "Es ist schwierig, das zu finden, was du suchst.",
+            "kr": "",
+            "ua": "Важко знайти те, що ти шукаєш.",
+            "zh": ""
         },
         "An employee asks if you need help.": {
             "en": "An employee asks if you need help.",
@@ -1480,7 +1903,10 @@
             "sv": "En anställd i butiken frågar om du behöver hjälp.",
             "pl": "Jakiś pracownik pyta czy potrzebujesz pomocy.",
             "es": "Un empleado te pregunta si necesitas ayuda.",
-            "de": "Ein Angestellter fragt dich, ob du Hilfe brauchst."
+            "de": "Ein Angestellter fragt dich, ob du Hilfe brauchst.",
+            "kr": "",
+            "ua": "Працівник запитує, чи потрібна тобі допомога.",
+            "zh": ""
         },
         "It smells like fresh bread": {
             "en": "It smells like fresh bread",
@@ -1490,7 +1916,10 @@
             "sv": "Det doftar färskt bröd.",
             "pl": "Pachnie świeżym chlebem.",
             "es": "Huele a pan fresco.",
-            "de": "Es riecht nach frischem Brot"
+            "de": "Es riecht nach frischem Brot",
+            "kr": "",
+            "ua": "Пахне свіжим хлібом",
+            "zh": ""
         },
         "You see your favorite pastry.": {
             "en": "You see your favorite pastry.",
@@ -1500,7 +1929,10 @@
             "sv": "Du ser din favoritbakelse.",
             "pl": "Widzisz ulubione ciasto.",
             "es": "Ves tu bollería favorita.",
-            "de": "Du siehst dein Lieblingsgebäck."
+            "de": "Du siehst dein Lieblingsgebäck.",
+            "kr": "",
+            "ua": "Ти бачиш своє улюблене тістечко.",
+            "zh": ""
         },
         "She is holding a bag of apples.": {
             "en": "She is holding a bag of apples.",
@@ -1510,7 +1942,10 @@
             "sv": "Hon bär på en påse med äpplen.",
             "pl": "Trzyma torbę jabłek.",
             "es": "Ella sostiene una bolsa de manzanas.",
-            "de": "Sie hält eine Tüte mit Äpfeln in der Hand."
+            "de": "Sie hält eine Tüte mit Äpfeln in der Hand.",
+            "kr": "",
+            "ua": "Вона тримає торбу з яблуками.",
+            "zh": ""
         },
         "@teacher Hi Peter, what a surprise to see you here!": {
             "en": "Hi Peter, what a surprise to see you here!",
@@ -1520,7 +1955,10 @@
             "sv": "Hej Peter, vilken överraskning att stöta på dig här.",
             "pl": "Dień dobry Piotrze, co za niespodzianka zobaczyć Cię tu !",
             "es": "Hola Pedro, ¡qué sorpresa verte aquí!",
-            "de": "Hallo Peter, was für eine Überraschung, dich hier zu sehen!"
+            "de": "Hallo Peter, was für eine Überraschung, dich hier zu sehen!",
+            "kr": "",
+            "ua": "Добрий день, Петре, яка несподіванка побачити тебе тут!",
+            "zh": ""
         },
         "@peter I am looking for the bread.": {
             "en": "I am looking for the bread.",
@@ -1530,7 +1968,10 @@
             "sv": "Jag letar efter bröd.",
             "pl": "Szukam chleba.",
             "es": "Estoy buscando el pan.",
-            "de": "Ich suche das Brot."
+            "de": "Ich suche das Brot.",
+            "kr": "",
+            "ua": "Я шукаю хліб.",
+            "zh": ""
         },
         "Look for your music teacher": {
             "audio": false,
@@ -1540,7 +1981,10 @@
             "sv": "Leta efter din musiklärare.",
             "pl": "Poszukać twojej nauczycielki muzyki",
             "es": "Busca a tu profesora de música",
-            "de": "Deine Musiklehrerin suchen"
+            "de": "Deine Musiklehrerin suchen",
+            "kr": "",
+            "ua": "Шукати вчительку музики",
+            "zh": ""
         },
         "Eat chocolate": {
             "audio": false,
@@ -1550,7 +1994,10 @@
             "sv": "Ät chokladen.",
             "pl": "Zjeść czekoladę",
             "es": "Come chocolate",
-            "de": "Schokolade essen"
+            "de": "Schokolade essen",
+            "kr": "",
+            "ua": "З'їсти шоколад",
+            "zh": ""
         },
         "Eat the pastry": {
             "audio": false,
@@ -1560,7 +2007,10 @@
             "sv": "Ät bakelsen.",
             "pl": "Zjeść ciasto",
             "es": "Cómete la bollería",
-            "de": "Das Gebäck essen"
+            "de": "Das Gebäck essen",
+            "kr": "",
+            "ua": "З'їсти тістечко",
+            "zh": ""
         },
         "Eggs": {
             "audio": false,
@@ -1570,7 +2020,10 @@
             "sv": "Ägg.",
             "pl": "Jajka",
             "es": "Huevos",
-            "de": "Eier"
+            "de": "Eier",
+            "kr": "",
+            "ua": "Яйця",
+            "zh": ""
         },
         "Pastry (2🪙)": {
             "audio": false,
@@ -1580,7 +2033,10 @@
             "sv": "Bakelse (2🪙)",
             "pl": "Ciasto (2🪙)",
             "es": "Hojaldre (2🪙)",
-            "de": "Gebäck (2🪙)"
+            "de": "Gebäck (2🪙)",
+            "kr": "",
+            "ua": "Тістечкo (2🪙)",
+            "zh": ""
         },
         "Bigger pastry (4🪙)": {
             "audio": false,
@@ -1590,7 +2046,10 @@
             "sv": "Stor bakelse (4🪙)",
             "pl": "Większe ciasto (4🪙)",
             "es": "Hojaldre más grande (4🪙)",
-            "de": "Größeres Gebäck (4🪙)"
+            "de": "Größeres Gebäck (4🪙)",
+            "kr": "",
+            "ua": "Велике тістечко (4🪙)",
+            "zh": ""
         },
         "Yes": {
             "audio": false,
@@ -1600,7 +2059,10 @@
             "sv": "Ja",
             "pl": "Tak",
             "es": "Sí",
-            "de": "Ja"
+            "de": "Ja",
+            "kr": "",
+            "ua": "Так",
+            "zh": ""
         },
         "Another crossroad? Where should you go?": {
             "en": "Another crossroad? Where should you go?",
@@ -1610,7 +2072,10 @@
             "sv": "En ny vägkorsning. Åt vilket håll ska du gå?",
             "pl": "Kolejne skrzyżowanie? Gdzie powinieneś się udać?",
             "es": "¿Otra encrucijada? ¿Dónde debería ir?",
-            "de": "Noch eine Kreuzung? Wohin soll man gehen?"
+            "de": "Noch eine Kreuzung? Wohin soll man gehen?",
+            "kr": "",
+            "ua": "Ще одне перехрестя? Куди йти?",
+            "zh": ""
         },
         "You recognize the baker.": {
             "en": "You recognize the baker.",
@@ -1620,7 +2085,10 @@
             "sv": "Du känner igen bakaren.",
             "pl": "Rozpoznajesz piekarza.",
             "es": "Reconoces al panadero.",
-            "de": "Du erkennst den Bäcker."
+            "de": "Du erkennst den Bäcker.",
+            "kr": "",
+            "ua": "Ти впізнаєш пекаря.",
+            "zh": ""
         },
         "He smiles at you.": {
             "en": "He smiles at you.",
@@ -1630,7 +2098,10 @@
             "sv": "Han ler mot dig.",
             "pl": "Uśmiecha się do ciebie.",
             "es": "Te sonríe.",
-            "de": "Er lächelt dich an."
+            "de": "Er lächelt dich an.",
+            "kr": "",
+            "ua": "Він посміхається до тебе.",
+            "zh": ""
         },
         "You approach the man who sells fruits and vegetables.": {
             "en": "You approach the man who sells fruits and vegetables.",
@@ -1640,7 +2111,10 @@
             "sv": "Du går fram till mannen som säljer frukt och grönsaker.",
             "pl": "Podchodzisz do mężczyzny, który sprzedaje owoce i warzywa.",
             "es": "Te acercas al hombre que vende frutas y verduras.",
-            "de": "Du gehst auf den Mann zu, der Obst und Gemüse verkauft."
+            "de": "Du gehst auf den Mann zu, der Obst und Gemüse verkauft.",
+            "kr": "",
+            "ua": "Ти підходиш до чоловіка, який продає фрукти та овочі.",
+            "zh": ""
         },
         "@seller Hello! What would you like?": {
             "en": "Hello! What would you like?",
@@ -1650,7 +2124,10 @@
             "sv": "Hej! Vad får det lov att vara?",
             "pl": "Dzień dobry! Co podać?",
             "es": "¡Hola! ¿Qué desea?",
-            "de": "Hallo! Was möchtest du?"
+            "de": "Hallo! Was möchtest du?",
+            "kr": "",
+            "ua": "Доброго дня! Чого бажаєш?",
+            "zh": ""
         },
         "As you look around, you find your music teacher.": {
             "en": "As you look around, you find your music teacher.",
@@ -1660,7 +2137,10 @@
             "sv": "Du tittar dig omkring och får syn på din musiklärare.",
             "pl": "Gdy się rozglądasz, znajdujesz swoją nauczycielkę muzyki.",
             "es": "Al mirar a tu alrededor, encuentras a tu profesora de música.",
-            "de": "Als du dich umsiehst, findest du deine Musiklehrerin."
+            "de": "Als du dich umsiehst, findest du deine Musiklehrerin.",
+            "kr": "",
+            "ua": "Озираючись навколо, ти бачиш свою вчительку музики.",
+            "zh": ""
         },
         "She is listening to the guitar.": {
             "en": "She is listening to the guitar.",
@@ -1670,7 +2150,10 @@
             "sv": "Hon lyssnar på gittarrmusiken.",
             "pl": "Słucha gry na gitarze.",
             "es": "Está escuchando la guitarra.",
-            "de": "Sie hört sich die Gitarre an."
+            "de": "Sie hört sich die Gitarre an.",
+            "kr": "",
+            "ua": "Вона слухає гітару.",
+            "zh": ""
         },
         "@teacher Hey Peter, what's up?": {
             "en": "Hey Peter, what's up?",
@@ -1680,7 +2163,10 @@
             "sv": "Hej Peter, hur är det?",
             "pl": "Hej Piotr, co słychać?",
             "es": "Hola Pedro, ¿qué tal?",
-            "de": "Hallo Peter, wie geht's?"
+            "de": "Hallo Peter, wie geht's?",
+            "kr": "",
+            "ua": "Привіт, Петре, що нового?",
+            "zh": ""
         },
         "You are new to the village because your family has just moved here.": {
             "en": "You are new to the village because your family has just moved here.",
@@ -1690,7 +2176,10 @@
             "sv": "Du är ny i den lilla staden eftersom din familj precis har flyttat hit.",
             "pl": "Jesteś nowy w wiosce, ponieważ twoja rodzina właśnie się tu przeprowadziła.",
             "es": "Eres nuevo en el pueblo porque tu familia acaba de mudarse aquí.",
-            "de": "Du bist neu im Dorf, weil deine Familie gerade hierher gezogen ist."
+            "de": "Du bist neu im Dorf, weil deine Familie gerade hierher gezogen ist.",
+            "kr": "",
+            "ua": "Ти новенький у цьому селі, бо твоя сім'я щойно сюди переїхала.",
+            "zh": ""
         },
         "It is a bit cold outside today.": {
             "en": "It is a bit cold outside today.",
@@ -1700,7 +2189,10 @@
             "sv": "Det är lite kyligt ute idag.",
             "pl": "Dzisiaj na dworze jest trochę zimno.",
             "es": "Hoy hace un poco de frío afuera.",
-            "de": "Heute ist es draußen ein bisschen kalt."
+            "de": "Heute ist es draußen ein bisschen kalt.",
+            "kr": "",
+            "ua": "Сьогодні надворі прохолодно.",
+            "zh": ""
         },
         "@mom Grandma is visiting us tonight, so we need five apples to make her favorite apple pie.": {
             "en": "Grandma is visiting us tonight, so we need five apples to make her favorite apple pie.",
@@ -1710,7 +2202,10 @@
             "sv": "Mormor kommer på besök ikväll, och vi behöver äpplen för att baka hennes favorit äppelpaj.",
             "pl": "Babcia odwiedza nas dziś wieczorem, więc potrzebujemy pięciu jabłek, aby zrobić jej ulubioną szarlotkę.",
             "es": "La abuela nos visita esta noche, así que necesitamos cinco manzanas para hacer su tarta de manzana favorita.",
-            "de": "Oma besucht uns heute Abend, also brauchen wir fünf Äpfel, um ihren Lieblingsapfelkuchen zu backen."
+            "de": "Oma besucht uns heute Abend, also brauchen wir fünf Äpfel, um ihren Lieblingsapfelkuchen zu backen.",
+            "kr": "",
+            "ua": "Сьогодні ввечері до нас приїжджає бабуся, тож нам потрібно п'ять яблук, щоб приготувати її улюблену шарлотку.",
+            "zh": ""
         },
         "@mom We also need three tomatoes and four eggs for the dinner.": {
             "en": "We also need three tomatoes and four eggs for the dinner.",
@@ -1720,7 +2215,10 @@
             "sv": "Vi behöver också tre tomater och fyra ägg till middagen.",
             "pl": "Potrzebujemy też trzech pomidorów i czterech jajek na kolację.",
             "es": "También necesitamos tres tomates y cuatro huevos para la cena.",
-            "de": "Außerdem brauchen wir drei Tomaten und vier Eier für das Abendessen."
+            "de": "Außerdem brauchen wir drei Tomaten und vier Eier für das Abendessen.",
+            "kr": "",
+            "ua": "Для вечері нам також потрібно три помідори та чотири яйця.",
+            "zh": ""
         },
         "@mom Remember, we went there last week.": {
             "en": "Remember, we went there last week.",
@@ -1730,7 +2228,10 @@
             "sv": "Minns du att vi var där förra veckan.",
             "pl": "Pamiętaj, że byliśmy tam w zeszłym tygodniu.",
             "es": "Recuerda que fuimos la semana pasada.",
-            "de": "Erinnere dich daran, dass wir letzte Woche dort waren."
+            "de": "Erinnere dich daran, dass wir letzte Woche dort waren.",
+            "kr": "",
+            "ua": "Згадай, ми ходили туди минулого тижня.",
+            "zh": ""
         },
         "@mom If you have enough coins, you can buy something for yourself.": {
             "en": "If you have enough coins, you can buy something for yourself.",
@@ -1740,7 +2241,10 @@
             "sv": "Om det blilr mynt över, då kan du köpa något till dig själv.",
             "pl": "Jeśli masz wystarczająco dużo monet, możesz kupić coś dla siebie.",
             "es": "Si tienes suficientes monedas, puedes comprarte algo.",
-            "de": "Wenn du genug Münzen hast, kannst du dir selbst etwas kaufen."
+            "de": "Wenn du genug Münzen hast, kannst du dir selbst etwas kaufen.",
+            "kr": "",
+            "ua": "Якщо вистачить монет, можеш купити щось собі.",
+            "zh": ""
         },
         "@peter Four.": {
             "en": "Four.",
@@ -1750,7 +2254,10 @@
             "sv": "Fyra.",
             "pl": "Cztery.",
             "es": "Cuatro.",
-            "de": "Vier."
+            "de": "Vier.",
+            "kr": "",
+            "ua": "Чотири",
+            "zh": ""
         },
         "@peter Six.": {
             "en": "Six.",
@@ -1760,7 +2267,10 @@
             "sv": "Sex.",
             "pl": "Sześć.",
             "es": "Seis.",
-            "de": "Sechs."
+            "de": "Sechs.",
+            "kr": "",
+            "ua": "Шість",
+            "zh": ""
         },
         "@peter Twelve.": {
             "en": "Twelve.",
@@ -1770,7 +2280,10 @@
             "sv": "Tolv.",
             "pl": "Dwanaście.",
             "es": "Doce.",
-            "de": "Zwölf."
+            "de": "Zwölf.",
+            "kr": "",
+            "ua": "Дванадцять",
+            "zh": ""
         },
         "@baker Hello Peter, what would you like today?": {
             "en": "Hello Peter, what would you like today?",
@@ -1780,7 +2293,10 @@
             "sv": "Hej Peter, vad vill du ha idag?",
             "pl": "Cześć Piotr, na co masz dziś ochotę?",
             "es": "Hola Pedro, ¿qué te apetece hoy?",
-            "de": "Hallo Peter, was möchtest du heute?"
+            "de": "Hallo Peter, was möchtest du heute?",
+            "kr": "",
+            "ua": "Здрастуй, Петре, чого б ти хотів сьогодні?",
+            "zh": ""
         },
         "@seller Sorry, we just sold the last apples to that woman.": {
             "en": "Sorry, we just sold the last apples to that woman.",
@@ -1790,7 +2306,10 @@
             "sv": "Jag är ledsen, men vi såkde precis de sista äpplena till den där kvinnan.",
             "pl": "Przepraszam, właśnie sprzedaliśmy ostatnie jabłka tej kobiecie.",
             "es": "Lo siento, acabamos de vender las últimas manzanas a esa mujer.",
-            "de": "Tut mir leid, wir haben gerade die letzten Äpfel an diese Frau verkauft."
+            "de": "Tut mir leid, wir haben gerade die letzten Äpfel an diese Frau verkauft.",
+            "kr": "",
+            "ua": "Вибач, ми щойно продали останні яблука тій жінці.",
+            "zh": ""
         },
         "@peter Ms. Melody?": {
             "en": "Ms. Melody?",
@@ -1800,7 +2319,10 @@
             "sv": "Fröken Melodi?",
             "pl": "Pani Melodii?",
             "es": "¿La Sra. Melody?",
-            "de": "Frau Melodie?"
+            "de": "Frau Melodie?",
+            "kr": "",
+            "ua": "Пані Мелоді?",
+            "zh": ""
         },
         "@peter Oh no, I have to find a solution!": {
             "en": "Oh no, I have to find a solution!",
@@ -1810,7 +2332,10 @@
             "sv": "Åh nej, jag måste komma på en lösning!",
             "pl": "O nie, muszę znaleźć rozwiązanie!",
             "es": "¡Oh no, tengo que encontrar una solución!",
-            "de": "Oh nein, ich muss eine Lösung finden!"
+            "de": "Oh nein, ich muss eine Lösung finden!",
+            "kr": "",
+            "ua": "О ні, я маю знайти рішення!",
+            "zh": ""
         },
         "@seller Maybe you can use pears instead?": {
             "en": "Maybe you can use pears instead?",
@@ -1820,7 +2345,10 @@
             "sv": "Du kanske kan använda päron istället?",
             "pl": "Może zamiast tego gruszki?",
             "es": "¿Quizás pueda usar peras en su lugar?",
-            "de": "Vielleicht kannst du stattdessen Birnen verwenden?"
+            "de": "Vielleicht kannst du stattdessen Birnen verwenden?",
+            "kr": "",
+            "ua": "Можливо, натомість можна взяти груші?",
+            "zh": ""
         },
         "@peter Can I get the pears, please?": {
             "en": "Can I get the pears, please?",
@@ -1830,7 +2358,10 @@
             "sv": "Skulle jag kunna få några päron, tack?",
             "pl": "Czy mogę prosić o gruszki?",
             "es": "¿Me trae las peras, por favor?",
-            "de": "Kann ich bitte die Birnen haben?"
+            "de": "Kann ich bitte die Birnen haben?",
+            "kr": "",
+            "ua": "Дайте, будь ласка, груші.",
+            "zh": ""
         },
         "You decide to go to the market.": {
             "en": "You decide to go to the market.",
@@ -1840,7 +2371,10 @@
             "sv": "Du bestämmer dig för att gå till marknaden.",
             "pl": "Postanawiasz udać się na targ.",
             "es": "Decides ir al mercado.",
-            "de": "Du beschließt, auf den Markt zu gehen."
+            "de": "Du beschließt, auf den Markt zu gehen.",
+            "kr": "",
+            "ua": "Ти вирішуєш піти на ринок.",
+            "zh": ""
         },
         "When you arrive near the fruits and vegetables, you recognize someone.": {
             "en": "When you arrive near the fruits and vegetables, you recognize someone.",
@@ -1850,7 +2384,10 @@
             "sv": "När du kommer dit och närmar dig frukt och grönsaksståndet, känner du igen någon.",
             "pl": "Kiedy docierasz w pobliże owoców i warzyw, rozpoznajesz kogoś.",
             "es": "Cuando llegas cerca de las frutas y verduras, reconoces a alguien.",
-            "de": "Als du in der Nähe des Obst- und Gemüsestandes ankommst, erkennst du jemanden."
+            "de": "Als du in der Nähe des Obst- und Gemüsestandes ankommst, erkennst du jemanden.",
+            "kr": "",
+            "ua": "Коли ти підходиш до фруктів і овочів, то впізнаєш когось.",
+            "zh": ""
         },
         "This is your music teacher.": {
             "en": "This is your music teacher.",
@@ -1860,7 +2397,10 @@
             "sv": "Det är din musiklärare.",
             "pl": "To twoja nauczycielka muzyki.",
             "es": "Es tu profesora de música.",
-            "de": "Das ist deine Musiklehrerin."
+            "de": "Das ist deine Musiklehrerin.",
+            "kr": "",
+            "ua": "Це твоя вчителька музики.",
+            "zh": ""
         },
         "@peter Hello Ms. Melody!": {
             "en": "Hello Ms. Melody!",
@@ -1870,7 +2410,10 @@
             "sv": "Hej, fröken Melodi!",
             "pl": "Dzień dobry pani Melodio!",
             "es": "Hola, Sra. Melody",
-            "de": "Hallo Frau Melodie!"
+            "de": "Hallo Frau Melodie!",
+            "kr": "",
+            "ua": "Добрий день, пані Мелоді!",
+            "zh": ""
         },
         "@teacher What are you doing here?": {
             "en": "What are you doing here?",
@@ -1880,7 +2423,10 @@
             "sv": "Vad gör du här?",
             "pl": "Co tu robisz?",
             "es": "¿Qué hace usted aquí?",
-            "de": "Was machst du hier?"
+            "de": "Was machst du hier?",
+            "kr": "",
+            "ua": "Що ти тут робиш?",
+            "zh": ""
         },
         "@peter I'm looking for apples.": {
             "en": "I'm looking for apples.",
@@ -1890,7 +2436,10 @@
             "sv": "Jag letar efter äpplen.",
             "pl": "Szukam jabłek.",
             "es": "Busco manzanas.",
-            "de": "Ich bin auf der Suche nach Äpfeln."
+            "de": "Ich bin auf der Suche nach Äpfeln.",
+            "kr": "",
+            "ua": "Шукаю яблука.",
+            "zh": ""
         },
         "@peter I'm buying food for dinner.": {
             "en": "I'm buying food for dinner.",
@@ -1900,7 +2449,10 @@
             "sv": "Jag handlar mat till middagen.",
             "pl": "Kupuję jedzenie na kolację.",
             "es": "Voy a comprar comida para la cena.",
-            "de": "Ich kaufe Essen für das Abendessen."
+            "de": "Ich kaufe Essen für das Abendessen.",
+            "kr": "",
+            "ua": "Купую їжу на вечерю.",
+            "zh": ""
         },
         "@peter We'll make an apple pie for my Grandma.": {
             "en": "We'll make an apple pie for my Grandma.",
@@ -1910,7 +2462,10 @@
             "sv": "Vi ska göra en äppelpaj till min mormor.",
             "pl": "Zrobimy szarlotkę dla mojej babci.",
             "es": "Haremos una tarta de manzana para mi abuela.",
-            "de": "Wir backen einen Apfelkuchen für meine Oma."
+            "de": "Wir backen einen Apfelkuchen für meine Oma.",
+            "kr": "",
+            "ua": "Ми спечемо шарлотку для моєї бабусі.",
+            "zh": ""
         },
         "@teacher Great! I love apples too. I'm going to make apple sauce.": {
             "en": "Great! I love apples too. I'm going to make apple sauce.",
@@ -1920,7 +2475,10 @@
             "sv": "Toppen! Jag är också förtjust i äpplen. Jag ska göra äppelmos.",
             "pl": "Wspaniale! Ja też uwielbiam jabłka. Zrobię sos jabłkowy.",
             "es": "¡Qué bien! A mí también me encantan las manzanas. Voy a hacer puré de manzana.",
-            "de": "Wie schön! Ich liebe auch Äpfel. Ich werde Apfelmus machen."
+            "de": "Wie schön! Ich liebe auch Äpfel. Ich werde Apfelmus machen.",
+            "kr": "",
+            "ua": "Чудово! Я теж люблю яблука. Я зроблю яблучне пюре.",
+            "zh": ""
         },
         "@teacher See you later! I'll stay a bit on the square to listen to the music.": {
             "en": "See you later! I'll stay a bit on the square to listen to the music.",
@@ -1930,7 +2488,10 @@
             "sv": "Vi ses senare! Jag tänker stanna här på torget lite och lyssna till musiken.",
             "pl": "Do zobaczenia! Zostanę trochę na placu, żeby posłuchać muzyki.",
             "es": "¡Hasta luego! Me quedaré un rato en la plaza para escuchar la música.",
-            "de": "Wir sehen uns später! Ich bleibe noch ein bisschen auf dem Platz und höre mir die Musik an."
+            "de": "Wir sehen uns später! Ich bleibe noch ein bisschen auf dem Platz und höre mir die Musik an.",
+            "kr": "",
+            "ua": "До зустрічі! Я ще трохи побуду на площі, послухаю музику.",
+            "zh": ""
         },
         "But maybe you could have bought something for yourself?": {
             "en": "But maybe you could have bought something for yourself?",
@@ -1940,7 +2501,10 @@
             "sv": "Men du kunde ju ha köpt något till dig själv också.",
             "pl": "Ale może mogłabyś kupić coś dla siebie?",
             "es": "¿Pero podrías haber comprado algo para ti?",
-            "de": "Aber vielleicht hättest du dir selbst etwas kaufen können?"
+            "de": "Aber vielleicht hättest du dir selbst etwas kaufen können?",
+            "kr": "",
+            "ua": "Та, можливо, ти міг би купити щось для себе?",
+            "zh": ""
         },
         "Your mom smiles warmly.": {
             "en": "Your mom smiles warmly.",
@@ -1950,7 +2514,10 @@
             "sv": "Din mamma ler ett varmt leende.",
             "pl": "Mama uśmiecha się ciepło.",
             "es": "Tu madre sonríe cariñosamente.",
-            "de": "Deine Mutter lächelt warmherzig."
+            "de": "Deine Mutter lächelt warmherzig.",
+            "kr": "",
+            "ua": "Твоя мама тепло посміхається.",
+            "zh": ""
         },
         "@mom But first, let's make the apple pie!": {
             "en": "But first, let's make the apple pie!",
@@ -1960,7 +2527,10 @@
             "sv": "Men låt oss först baka äppelpaj!",
             "pl": "Ale najpierw zróbmy szarlotkę!",
             "es": "Pero primero, ¡vamos a hacer la tarta de manzana!",
-            "de": "Aber zuerst machen wir den Apfelkuchen!"
+            "de": "Aber zuerst machen wir den Apfelkuchen!",
+            "kr": "",
+            "ua": "Але спочатку приготуймо шарлотку!",
+            "zh": ""
         },
         "You want to play more, but your mom really insists.": {
             "en": "You want to play more, but your mom really insists.",
@@ -1970,7 +2540,10 @@
             "sv": "Du vill verkligen fortsätta leka, men din mamma envisas.",
             "pl": "Chcesz grać dalej, ale mama bardzo nalega.",
             "es": "Tú quieres tocar más, pero tu mamá insiste mucho.",
-            "de": "Du willst noch weiter spielen, aber deine Mutter besteht darauf."
+            "de": "Du willst noch weiter spielen, aber deine Mutter besteht darauf.",
+            "kr": "",
+            "ua": "Ти хочеш ще погратися, але твоя мама дуже наполягає.",
+            "zh": ""
         },
         "@peter Yes, mom. I'm coming.": {
             "en": "Yes, mom. I'm coming.",
@@ -1980,7 +2553,10 @@
             "sv": "Ja mamma, jag kommer.",
             "pl": "Tak, mamo. Już idę.",
             "es": "Sí, mamá. Ya voy.",
-            "de": "Ja, Mama. Ich komme ja schon."
+            "de": "Ja, Mama. Ich komme ja schon.",
+            "kr": "",
+            "ua": "Так, мамо. Я вже йду.",
+            "zh": ""
         }
     }
 }

@@ -2,7 +2,9 @@
                 <summary><h2>What is LingoStories?</h2></summary>
             <p>
                 LingoStories is a free platform that offers interactive stories
-                for language learners. Read stories in {language} and get some practice.
+                for language learners.
+                Read interactive, graded readers stories in {language} and get some practice.
+
                 The stories use simple vocabulary and
                 grammar to help you practice your language skills in a fun and
                 engaging way. You can listen to the audio, read the text in {language},
