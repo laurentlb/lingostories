@@ -6,7 +6,7 @@ export const allStories = [
         released: ["en", "fr", "nl", "sv", "de", "pl", "pt", "es", "ua"]
     },
     { id: "intro", title: "Introduction", imageCount: 1,
-        released: ["en", "fr", "nl", "sv", "de", "pl", "pt", "es"]
+        released: ["en", "fr", "nl", "sv", "de", "pl", "pt", "es", "ua"]
      },
     { id: "numbers", title: "A Game of Numbers", imageCount: 0,
         released: false },
