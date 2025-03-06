@@ -123,7 +123,9 @@ function toggleCollection() {{
 }}
 </script>
 
-<!-- Google tag (gtag.js) -->
+<script data-goatcounter="https://lingostories.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+
+<!-- Google tag - to be removed if goatcounter works well enough. -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-SJPVM9P6EP"></script>
 <script>
   window.dataLayer = window.dataLayer || [];

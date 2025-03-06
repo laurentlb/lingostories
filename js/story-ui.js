@@ -269,7 +269,13 @@ export class StoryUI {
         document.querySelector('.story-end-text').textContent = text;
         document.querySelector('.footer').style.display = "none";
 
-        gtag('event', 'end-story', { 'story': this.story.storyName, 'lang': this.story.lang });
+        if (window.goatcounter) {
+            window.goatcounter.count({
+                path:  `end/${this.story.lang}/${this.story.storyName}`,
+                title: 'End Story',
+                event: true,
+            });
+        }
     }
 
     shouldShowMinigame(content, line) {
@@ -316,11 +322,11 @@ export class StoryUI {
             });
         }
     }
-    
+
     showImage(image) {
         const img = document.createElement("img");
         img.onload = () => {
-            updateButtons(); // to scroll down
+            this.updateButtons(); // to scroll down
         };
         img.src = `/img/stories/${image}`;
         img.classList.add("story-image");
@@ -345,6 +351,14 @@ export class StoryUI {
                     collect (see the number at the top). This encourages you to read
                     the stories multiple times and make different choices.`;
             this.domStory.appendChild(info);
+        }
+
+        if (window.goatcounter) {
+            window.goatcounter.count({
+                path:  `collect/${image}`,
+                title: 'Load Story',
+                event: true,
+            });
         }
     }
 }

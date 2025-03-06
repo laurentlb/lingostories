@@ -60,7 +60,14 @@ async function chooseStory(name, language) {
 
     updateCollectionTopStatus();
     resetStory();
-    gtag('event', 'load-story', { 'story': name, 'lang': story.lang });
+    
+    if (window.goatcounter) {
+        window.goatcounter.count({
+            path:  `start/${story.lang}/${story.storyName}`,
+            title: 'Load Story',
+            event: true,
+        });
+    }
 }
 
 function resetStory() {
@@ -271,6 +278,15 @@ function listenMic() {
     speechRecognition.init(story.lang, textToRepeat, () => {
         speechRecognitionBox.style.display = "none";
         speechRecognitionBox.querySelector(".output").innerHTML = "";
+
+        if (window.goatcounter) {
+            window.goatcounter.count({
+                path:  `mic/${story.lang}/${story.storyName}`,
+                title: 'Microphone',
+                event: true,
+            });
+        }
+
         next(true);
     });
 }
