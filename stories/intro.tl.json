@@ -10,7 +10,8 @@
             "pt": "Introdução.",
             "nl": "Introductie",
             "es": "Introducción",
-            "ua": "Введення"
+            "ua": "Введення",
+            "ar": "مقدمة"
         },
         "Hello!": {
             "key": "0-1",
@@ -22,7 +23,8 @@
             "pt": "Olá!",
             "nl": "Hallo!",
             "es": "¡Hola!",
-            "ua": "Привіт!"
+            "ua": "Привіт!",
+            "ar": "مرحباً!"
         },
         "Welcome to LingoStories.": {
             "key": "0-2",
@@ -34,7 +36,8 @@
             "pt": "Bem-vindo(a) ao LingoStories.",
             "nl": "Welkom bij LingoStories.",
             "es": "Bienvenidos a LingoStories.",
-            "ua": "Ласкаво просимо на LingoStories!"
+            "ua": "Ласкаво просимо на LingoStories!",
+            "ar": "أهلاً بك في لينجوستوريز."
         },
         "How are you?": {
             "key": "0-3",
@@ -46,7 +49,8 @@
             "pt": "Como estás?",
             "nl": "Hoe gaat het?",
             "es": "¿Cómo estás?",
-            "ua": "Як справи?"
+            "ua": "Як справи?",
+            "ar": "كيف حالك؟"
         },
         "Good, thank you.": {
             "en": "Good, thank you.",
@@ -58,7 +62,8 @@
             "nl": "Goed, dank je.",
             "es": "Bien, gracias.",
             "ua": "Добре, дякую.",
-            "key": "goodthanky-cb2e"
+            "key": "goodthanky-cb2e",
+            "ar": "بخير, شكراً لك."
         },
         "Not bad.": {
             "en": "Not bad.",
@@ -70,7 +75,8 @@
             "nl": "Niet slecht.",
             "es": "Nada mal.",
             "ua": "Непогано.",
-            "key": "notbad-b22e"
+            "key": "notbad-b22e",
+            "ar": "تمام."
         },
         "On this website, there are interactive stories.": {
             "key": "1-0",
@@ -82,7 +88,8 @@
             "pt": "Neste site, há histórias interativas.",
             "nl": "Op deze website staan interactieve verhalen.",
             "es": "En este sitio web hay historias interactivas.",
-            "ua": "На цьому сайті є інтерактивні історії."
+            "ua": "На цьому сайті є інтерактивні історії.",
+            "ar": "في هذا الموقع, ستجد بعض القصص التفاعلية."
         },
         "Choose a story that is easy for you.": {
             "key": "1-1",
@@ -94,7 +101,8 @@
             "pt": "Escolhe uma história que é fácil para ti.",
             "nl": "Kies een verhaal dat voor jou makkelijk is.",
             "es": "Elige una historia que sea fácil para ti.",
-            "ua": "Обирай історію, яка тобі під силу."
+            "ua": "Обирай історію, яка тобі під силу.",
+            "ar": "اختر قصة تبدو مناسبة لك."
         },
         "You may not understand all the words.": {
             "key": "1-2",
@@ -106,7 +114,8 @@
             "pt": "Podes não entender todas as palavras.",
             "nl": "Je begrijpt misschien niet alle woorden.",
             "es": "Es posible que no entiendas todas las palabras.",
-            "ua": "Можливо, ти не зрозумієш усіх слів."
+            "ua": "Можливо, ти не зрозумієш усіх слів.",
+            "ar": "ربما لا تستطع فهم كل الكلمات."
         },
         "That's okay.": {
             "key": "1-3",
@@ -118,7 +127,8 @@
             "pt": "Não há problema.",
             "nl": "Dat geeft niks.",
             "es": "Está bien.",
-            "ua": "Нічого страшного."
+            "ua": "Нічого страшного.",
+            "ar": "لا بأس."
         },
         "Continue anyway.": {
             "key": "1-4",
@@ -130,7 +140,8 @@
             "pt": "Continua, mesmo assim.",
             "nl": "Ga gewoon door.",
             "es": "Continúa de todos modos.",
-            "ua": "Ти все одно продовжуй."
+            "ua": "Ти все одно продовжуй.",
+            "ar": "أكمل ولا تشغل بالك."
         },
         "Listen to each sentence.": {
             "key": "1-5",
@@ -142,7 +153,8 @@
             "pt": "Ouve cada frase.",
             "nl": "Luister naar elke zin.",
             "es": "Escucha cada oración.",
-            "ua": "Послухай кожне речення."
+            "ua": "Послухай кожне речення.",
+            "ar": "استمع جيداً لكل جملة."
         },
         "Read each sentence.": {
             "key": "1-6",
@@ -154,7 +166,8 @@
             "pt": "Lê cada frase.",
             "nl": "Lees elke zin.",
             "es": "Lee cada oración.",
-            "ua": "Прочитай кожне речення."
+            "ua": "Прочитай кожне речення.",
+            "ar": "اقرأ كل جملة."
         },
         "Listen to each sentence several times if you want.": {
             "key": "1-7",
@@ -166,7 +179,8 @@
             "pt": "Ouve cada frase várias vezes se quiseres",
             "nl": "Luister meerdere keren naar elke zin als je wil.",
             "es": "Escucha cada oración varias veces si quieres.",
-            "ua": "Слухай кожне речення кілька разів, якщо хочеш."
+            "ua": "Слухай кожне речення кілька разів, якщо хочеш.",
+            "ar": "اسمع كل جملة أي عدد من المرات تريده."
         },
         "You may recognize some words.": {
             "key": "1-8",
@@ -178,7 +192,8 @@
             "pt": "Podes reconhecer algumas palavras.",
             "nl": "Misschien herken je sommige woorden.",
             "es": "Quizás reconozcas algunas palabras.",
-            "ua": "Можливо, деякі слова ти впізнаєш."
+            "ua": "Можливо, деякі слова ти впізнаєш.",
+            "ar": "فلعلك تتعرف على بعض الكلمات."
         },
         "Click on a sentence to see its translation.": {
             "key": "1-9",
@@ -190,7 +205,8 @@
             "pt": "Clica numa frase para ver a sua tradução.",
             "nl": "Klik op een zin om de vertaling te zien.",
             "es": "Haz clic en una oración para ver su traducción.",
-            "ua": "Клікай на речення, щоб побачити його переклад."
+            "ua": "Клікай на речення, щоб побачити його переклад.",
+            "ar": "انقر على كل جملة لتري ترجمتها."
         },
         "It will help you follow the story.": {
             "key": "1-10",
@@ -202,7 +218,8 @@
             "pt": "Isso vai ajudar-te a acompanhar a história.",
             "nl": "Dit zal je helpen om het verhaal te volgen.",
             "es": "Te ayudará a seguir la historia.",
-            "ua": "Це допоможе тобі стежити за розвитком подій."
+            "ua": "Це допоможе тобі стежити за розвитком подій.",
+            "ar": "هذا سيساعدك على إكمال القصة."
         },
         "It will help you understand.": {
             "key": "1-11",
@@ -214,7 +231,8 @@
             "pt": "Isso vai ajudar-te a entender.",
             "nl": "Dit zal je helpen om het verhaal te begrijpen.",
             "es": "Te ayudará a entenderla.",
-            "ua": "Це допоможе тобі зрозуміти."
+            "ua": "Це допоможе тобі зрозуміти.",
+            "ar": "و بالتالي هذا سيساعدك على الفهم."
         },
         "You can now choose a story.": {
             "key": "1-12",
@@ -226,7 +244,8 @@
             "pt": "Podes escolher uma história.",
             "nl": "Je kan nu een verhaal kiezen.",
             "es": "Ahora puedes elegir una historia.",
-            "ua": "Тепер можеш обрати історію."
+            "ua": "Тепер можеш обрати історію.",
+            "ar": "الآن ما رأيك باختيار قصة؟!"
         }
     }
 }
