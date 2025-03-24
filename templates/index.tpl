@@ -28,15 +28,16 @@
         <div id="language-selector">
             <p>Select a language to practice.</p>
             <ul>
-                <li><a href="/nl/"><img class="flag" src="/img/flags/nl.svg" alt="Dutch"><div>Dutch</div></a>
-                <li><a href="/en/"><img class="flag" src="/img/flags/en.svg" alt="English"><div>English</div></a>
-                <li><a href="/fr/"><img class="flag" src="/img/flags/fr.svg" alt="French"><div>French</div></a>
-                <li><a href="/de/"><img class="flag" src="/img/flags/de.svg" alt="German"><div>German</div></a>
-                <li><a href="/pl/"><img class="flag" src="/img/flags/pl.svg" alt="Polish"><div>Polish</div></a>
-                <li><a href="/pt/"><img class="flag" src="/img/flags/pt.svg" alt="Portuguese"><div>Portuguese</div></a>
-                <li><a href="/es/"><img class="flag" src="/img/flags/es.svg" alt="Spanish"><div>Spanish</div></a>
-                <li><a href="/sv/"><img class="flag" src="/img/flags/sv.svg" alt="Swedish"><div>Swedish</div></a>
-                <li><a href="/ua/"><img class="flag" src="/img/flags/ua.svg" alt="Ukrainian"><div>Ukrainian</div></a>
+                <li><a href="/ar/"><img class="flag" src="/img/flags/ar.svg" alt=""><div>Arabic</div></a>
+                <li><a href="/nl/"><img class="flag" src="/img/flags/nl.svg" alt=""><div>Dutch</div></a>
+                <li><a href="/en/"><img class="flag" src="/img/flags/en.svg" alt=""><div>English</div></a>
+                <li><a href="/fr/"><img class="flag" src="/img/flags/fr.svg" alt=""><div>French</div></a>
+                <li><a href="/de/"><img class="flag" src="/img/flags/de.svg" alt=""><div>German</div></a>
+                <li><a href="/pl/"><img class="flag" src="/img/flags/pl.svg" alt=""><div>Polish</div></a>
+                <li><a href="/pt/"><img class="flag" src="/img/flags/pt.svg" alt=""><div>Portuguese</div></a>
+                <li><a href="/es/"><img class="flag" src="/img/flags/es.svg" alt=""><div>Spanish</div></a>
+                <li><a href="/sv/"><img class="flag" src="/img/flags/sv.svg" alt=""><div>Swedish</div></a>
+                <li><a href="/ua/"><img class="flag" src="/img/flags/ua.svg" alt=""><div>Ukrainian</div></a>
             </ul>
         </div>
 
