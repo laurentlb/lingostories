@@ -5,15 +5,16 @@ root_dir = os.path.abspath(os.path.join(script_dir, ".."))
 
 languages = {
     "ar": "Arabic",
-    "en": "English",
     "de": "German",
-    "pl": "Polish",
-    "fr": "French",
+    "en": "English",
     "es": "Spanish",
+    "fr": "French",
     "nl": "Dutch",
-    "sv": "Swedish",
+    "pl": "Polish",
     "pt": "Portuguese",
+    "sv": "Swedish",
     "ua": "Ukrainian",
+    "zh": "Mandarin",
 }
 
 def load_file(file_path):

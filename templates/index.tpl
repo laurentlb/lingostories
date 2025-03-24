@@ -33,6 +33,7 @@
                 <li><a href="/en/"><img class="flag" src="/img/flags/en.svg" alt=""><div>English</div></a>
                 <li><a href="/fr/"><img class="flag" src="/img/flags/fr.svg" alt=""><div>French</div></a>
                 <li><a href="/de/"><img class="flag" src="/img/flags/de.svg" alt=""><div>German</div></a>
+                <li><a href="/zh/"><img class="flag" src="/img/flags/zh.svg" alt=""><div>Mandarin</div></a>
                 <li><a href="/pl/"><img class="flag" src="/img/flags/pl.svg" alt=""><div>Polish</div></a>
                 <li><a href="/pt/"><img class="flag" src="/img/flags/pt.svg" alt=""><div>Portuguese</div></a>
                 <li><a href="/es/"><img class="flag" src="/img/flags/es.svg" alt=""><div>Spanish</div></a>
