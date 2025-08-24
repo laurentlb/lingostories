@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="LingoStories" />
+<meta name="description" property="og:description" content="Free interactive stories for language learners." />
+
+<link rel="canonical" href="https://lingostories.org/">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+
+<title>LingoStories - Free interactive stories for language learners</title>
+<link rel="stylesheet" href="../style.css">
+
+<style>
+    .main {
+        max-width: 100%;
+    }
+
+    .ink-workbench {
+        display: flex;
+        flex-direction: column;
+        /* height: 70vh; */
+
+        border: 1px solid #444;
+        border-radius: 8px;
+        width: 100%;
+        max-height: 100vh;
+    }
+
+    .wb-toolbar {
+        display: flex;
+        justify-content: space-between;
+        padding: .5rem;
+        background: #222;
+        color: #fff;
+    }
+
+    .wb-toolbar button {
+        background: #444;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        padding: .4rem .7rem;
+        cursor: pointer;
+    }
+
+    .wb-toolbar button.active {
+        background: #666;
+    }
+
+    .wb-panels {
+        flex: 1;
+        display: flex;
+        overflow: hidden;
+    }
+
+    .wb-panel {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        overflow: auto;
+    }
+
+    .wb-editor-panel {
+        border-right: 1px solid #444;
+    }
+
+    .wb-output {
+        flex: 1;
+        overflow-y: auto;
+        padding: 1rem;
+        background: #111;
+        color: #eee;
+    }
+
+    .wb-choice button {
+        margin-top: .25rem;
+        display: block;
+    }
+
+    /* Responsive */
+    @media (max-width: 900px) {
+        .wb-panels {
+            flex-direction: column;
+        }
+    }
+
+    @media (max-width: 700px) {
+
+        .wb-editor-panel,
+        .wb-player-panel {
+            display: none;
+        }
+
+        .ink-workbench[data-mode="editor"] .wb-editor-panel {
+            display: flex;
+        }
+
+        .ink-workbench[data-mode="player"] .wb-player-panel {
+            display: flex;
+        }
+    }
+</style>
+
+<div class="main">
+
+    <div class="ink-workbench" data-layout="auto">
+        <div class="wb-toolbar">
+            <div class="wb-left">
+                <!-- <button id="wb-toggle-editor" class="wb-tab active">Editor</button>
+                <button id="wb-toggle-player" class="wb-tab">Player</button> -->
+            </div>
+            <div class="wb-right">
+                <button id="wb-run">▶ Run</button>
+                <button id="wb-restart">⟳ Restart</button>
+            </div>
+        </div>
+
+        <div class="wb-panels">
+            <div class="wb-panel wb-editor-panel" id="wb-editor-panel">
+                <div id="wb-editor"></div>
+            </div>
+            <div class="wb-panel wb-player-panel" id="wb-player-panel">
+                <div id="wb-output" class="wb-output"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/third_party/ink.js"></script>
+    <script src="https://unpkg.com/prismjs@1.29.0/components/prism-core.js"></script>
+    <script type="module">
+        import { basicEditor } from "https://unpkg.com/prism-code-editor@2.4.1/dist/setups/index.js";
+        import { loadTheme } from "https://unpkg.com/prism-code-editor@2.4.1/dist/themes/index.js";
+        import { l as internal } from "https://unpkg.com/prism-code-editor@2.4.1/dist/prismCore-AxbjJFmh.js";
+        // Workaroud to add a new language. This is copied from https://app.unpkg.com/prism-code-editor@2.4.1/files/dist/grammars/python.js
+
+        internal.ink = Prism.languages.ink = {
+            'comment': {
+                pattern: /\/\*[\s\S]*?\*\/|\/\/.*/,
+                greedy: true
+            },
+            'string': {
+                pattern: /"[^"]*"|->\s\w+/,
+                greedy: true
+            },
+            'keyword': {
+                pattern: new RegExp('\\b(?:LIST|VAR|CONST|TEMP|FUNCTION|INCLUDE|DEFINE|EXTERNAL|GLOBAL|TUNNEL|DIVERT|DONE|END|STITCH|GATHER|CHOICE|OPTION|FALLBACK|WEAVE|SEQUENCE|CYCLE|SHUFFLE|ONCE|STOP|RETURN|~|->|<-|===|==|!=|<=|>=|<|>|\\+|-|\\*|/|%|&&|\\|\\||!|true|false|null)\\b'),
+                greedy: true
+            },
+            'variable': {
+                pattern: /[@$]\w+\b/,
+                greedy: true
+            },
+            'number': {
+                pattern: /\b\d+(?:\.\d+)?\b/,
+                greedy: true
+            },
+            'operator': {
+                pattern: /[+\-*/%=<>!&|~^]/,
+                greedy: true
+            },
+            'punctuation': {
+                pattern: /[{}[\];(),.:]/,
+                greedy: true
+            }
+        };
+
+        const elWorkbench = document.querySelector(".ink-workbench");
+        const elEditor = document.getElementById("wb-editor");
+        const elOutput = document.getElementById("wb-output");
+
+        // Sample Ink
+        const sample = `Hello world!
+      *   Say hi
+          Nice to meet you.
+      *   Say bye
+          Goodbye!
+      -> END`;
+
+        // Init Prism editor
+        const editor = basicEditor("#wb-editor", {
+            value: sample,
+            language: "ink", // Now using custom Ink grammar
+            theme: "github-dark",
+            lineNumbers: true
+        });
+        loadTheme("github-dark");
+
+        // State
+        let story = null;
+
+        function clearOutput() { elOutput.innerHTML = ""; }
+        function appendLine(txt) {
+            const div = document.createElement("div");
+            div.textContent = txt;
+            elOutput.appendChild(div);
+            elOutput.scrollTop = elOutput.scrollHeight;
+        }
+        function appendChoice(idx, txt) {
+            const btn = document.createElement("button");
+            btn.textContent = txt;
+            btn.onclick = () => { story.ChooseChoiceIndex(idx); renderNext(); };
+            const div = document.createElement("div"); div.className = "wb-choice";
+            div.appendChild(btn); elOutput.appendChild(div);
+        }
+        function renderNext() {
+            while (story.canContinue) appendLine(story.Continue().trim());
+            story.currentChoices.forEach((c, i) => appendChoice(i, c.text));
+        }
+
+        function run() {
+            try {
+                clearOutput();
+                const compiler = new inkjs.Compiler(editor.value);
+                story = compiler.Compile();
+                renderNext();
+                elWorkbench.setAttribute("data-mode", "player");
+            } catch (e) { appendLine("Compile error: " + e.message); }
+        }
+
+        function restart() { if (story) { story.ResetState(); clearOutput(); renderNext(); } }
+
+        // Wire toolbar
+        document.getElementById("wb-run").onclick = run;
+        document.getElementById("wb-restart").onclick = restart;
+        // document.getElementById("wb-toggle-editor").onclick = () => elWorkbench.setAttribute("data-mode", "editor");
+        // document.getElementById("wb-toggle-player").onclick = () => elWorkbench.setAttribute("data-mode", "player");
+
+        // Default
+        // elWorkbench.setAttribute("data-mode", "editor");
+    </script>
+
+</div>
