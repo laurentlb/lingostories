@@ -42,6 +42,7 @@ internal.ink = Prism.languages.ink = {
 const elWorkbench = document.querySelector(".ink-workbench");
 const elEditor = document.getElementById("wb-editor");
 const elOutput = document.getElementById("wb-output");
+const elChoices = document.getElementById("wb-choices");
 
 // Sample Ink code
 const sample = `Hello world!
@@ -70,24 +71,7 @@ let lastCompiledContent = '';
 
 // Helper functions for editor content management
 function getEditorContent() {
-    if (editor) {
-        if (typeof editor.value === 'string') {
-            return editor.value;
-        } else if (typeof editor.getValue === 'function') {
-            return editor.getValue();
-        }
-    }
-    
-    // Fallback: get content from editor element
-    const editorElement = document.getElementById("wb-editor");
-    if (editorElement) {
-        const textArea = editorElement.querySelector('textarea') || editorElement.querySelector('[contenteditable]');
-        if (textArea) {
-            return textArea.value || textArea.textContent || textArea.innerText || '';
-        }
-    }
-    
-    return '';
+    return editor.value;
 }
 
 function setEditorContent(content) {
@@ -100,6 +84,7 @@ function setEditorContent(content) {
 // Output functions
 function clearOutput() { 
     elOutput.innerHTML = ""; 
+    elChoices.innerHTML = "";
 }
 
 function appendLine(txt, className = '') {
@@ -109,20 +94,23 @@ function appendLine(txt, className = '') {
         div.className = className;
     }
     elOutput.appendChild(div);
-    elOutput.scrollTop = elOutput.scrollHeight;
+    setTimeout(() => {
+        elOutput.scrollTop = elOutput.scrollHeight;
+    }, 0);
 }
 
 function appendChoice(idx, txt) {
     const btn = document.createElement("button");
     btn.textContent = txt;
     btn.onclick = () => { 
-        story.ChooseChoiceIndex(idx); 
+        story.ChooseChoiceIndex(idx);
+        elChoices.innerHTML = "";
         renderNext(); 
     };
     const div = document.createElement("div"); 
     div.className = "wb-choice";
     div.appendChild(btn); 
-    elOutput.appendChild(div);
+    elChoices.appendChild(div);
 }
 
 function renderNext() {
@@ -132,13 +120,13 @@ function renderNext() {
 
 // Story functions
 function run() {
-    const content = getEditorContent();
+    const content = editor.value;
+    lastCompiledContent = content;
 
     clearOutput();
     const compiler = new inkjs.Compiler(content);
     try {
         story = compiler.Compile();
-        lastCompiledContent = content;
         renderNext();
         elWorkbench.setAttribute("data-mode", "player");
     } catch (e) {
@@ -177,8 +165,8 @@ function scheduleAutoCompile() {
     
     autoCompileTimeout = setTimeout(() => {
         if (autoCompileEnabled) {
-            if (content === lastCompiledContent) {
-                return;
+            if (editor.value !== lastCompiledContent) {
+                run();
             }
         }
     }, 500); // 500ms delay
@@ -307,19 +295,9 @@ function initializeEventHandlers() {
 
 // Set up change detection for the editor
 function setupChangeDetection() {
-    const editorElement = document.getElementById("wb-editor");
-    if (editorElement) {
-        editorElement.addEventListener('input', () => {
-            scheduleAutoCompile();
-        });
-        
-        // Also try to listen to editor-specific events if available
-        if (editor && typeof editor.onUpdate === 'function') {
-            editor.onUpdate(() => {
-                scheduleAutoCompile();
-            });
-        }
-    }
+    elEditor.addEventListener('input', () => {
+        scheduleAutoCompile();
+    });
 }
 
 // Initialize when DOM is loaded
