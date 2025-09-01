@@ -20,7 +20,7 @@
     color: #fff;
 }
 
-.wb-toolbar button {
+button {
     background: #444;
     color: #fff;
     border: none;
@@ -29,18 +29,40 @@
     cursor: pointer;
 }
 
-.wb-toolbar button.active {
+button.active {
     background: #666;
 }
 
-.wb-toolbar button#wb-auto-compile.active {
-    background: #007BFF;
-    color: #fff;
-    font-weight: bold;
+button:hover {
+    background: #0056b3;
 }
 
-.wb-toolbar button#wb-auto-compile:hover {
-    background: #0056b3;
+/* Story selector dropdown */
+.wb-toolbar select {
+    background: #444;
+    color: #fff;
+    border: 1px solid #666;
+    border-radius: 4px;
+    padding: .4rem .7rem;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: inherit;
+    min-width: 150px;
+}
+
+.wb-toolbar select:hover {
+    background: #555;
+}
+
+.wb-toolbar select:focus {
+    outline: none;
+    background: #555;
+    border-color: #007BFF;
+}
+
+.wb-toolbar select option {
+    background: #333;
+    color: #fff;
 }
 
 /* Output styling improvements */

@@ -1,5 +1,6 @@
 // Edit Page JavaScript
 import { Story } from '/js/story-engine.js';
+import { allStories } from '/js/stories.js';
 
 import { basicEditor } from "https://unpkg.com/prism-code-editor@2.4.1/dist/setups/index.js";
 import { loadTheme } from "https://unpkg.com/prism-code-editor@2.4.1/dist/themes/index.js";
@@ -57,6 +58,7 @@ const editor = basicEditor("#wb-editor", {
     theme: "github-dark",
     lineNumbers: true
 });
+window.editor = editor; // Expose for debugging
 
 loadTheme("github-dark");
 
@@ -65,6 +67,35 @@ let story = null;
 let autoCompileEnabled = true;
 let autoCompileTimeout = null;
 let lastCompiledContent = '';
+
+// Helper functions for editor content management
+function getEditorContent() {
+    if (editor) {
+        if (typeof editor.value === 'string') {
+            return editor.value;
+        } else if (typeof editor.getValue === 'function') {
+            return editor.getValue();
+        }
+    }
+    
+    // Fallback: get content from editor element
+    const editorElement = document.getElementById("wb-editor");
+    if (editorElement) {
+        const textArea = editorElement.querySelector('textarea') || editorElement.querySelector('[contenteditable]');
+        if (textArea) {
+            return textArea.value || textArea.textContent || textArea.innerText || '';
+        }
+    }
+    
+    return '';
+}
+
+function setEditorContent(content) {
+    editor.textarea.value = content;
+
+    // Manually trigger the input event to force an update
+    editor.textarea.dispatchEvent(new Event('input'));
+}
 
 // Output functions
 function clearOutput() { 
@@ -101,10 +132,7 @@ function renderNext() {
 
 // Story functions
 function run() {
-    const content = editor.value;
-    if (content === lastCompiledContent) {
-        return;
-    }
+    const content = getEditorContent();
 
     clearOutput();
     const compiler = new inkjs.Compiler(content);
@@ -130,7 +158,6 @@ function toggleAutoCompile() {
     const button = document.getElementById("wb-auto-compile");
     if (button) {
         button.textContent = autoCompileEnabled ? "🔄 Auto: ON" : "🔄 Auto: OFF";
-        button.classList.toggle("active", autoCompileEnabled);
     }
 
     if (!autoCompileEnabled) {
@@ -142,7 +169,6 @@ function toggleAutoCompile() {
 }
 
 function scheduleAutoCompile() {
-    console.log(autoCompileEnabled);
     if (!autoCompileEnabled) return;
     
     if (autoCompileTimeout) {
@@ -151,9 +177,63 @@ function scheduleAutoCompile() {
     
     autoCompileTimeout = setTimeout(() => {
         if (autoCompileEnabled) {
-            run();
+            if (content === lastCompiledContent) {
+                return;
+            }
         }
     }, 500); // 500ms delay
+}
+
+// Story loading functionality
+async function populateStoryDropdown() {
+    const select = document.getElementById("wb-story-select");
+    if (!select) return;
+    
+    // Clear existing options except the first one
+    while (select.children.length > 1) {
+        select.removeChild(select.lastChild);
+    }
+    
+    // Add stories from the stories.js file
+    allStories.forEach(story => {
+        const option = document.createElement("option");
+        option.value = story.id;
+        option.textContent = story.title;
+        select.appendChild(option);
+    });
+}
+
+async function loadStory(storyId) {
+    if (!storyId) return;
+    
+    // Find the story title for better feedback
+    const storyInfo = allStories.find(story => story.id === storyId);
+    const storyTitle = storyInfo ? storyInfo.title : storyId;
+    
+    try {
+        appendLine(`🔄 Loading "${storyTitle}"...`, "info");
+        
+        const response = await fetch(`/stories/${storyId}.ink`);
+        if (!response.ok) {
+            throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+        }
+        
+        const content = await response.text();
+        setEditorContent(content);
+        run();
+    } catch (error) {
+        console.error('Failed to load story:', error);
+        appendLine(`❌ Failed to load "${storyTitle}": ${error.message}`, "error");
+    }
+}
+
+function handleStorySelection() {
+    const select = document.getElementById("wb-story-select");
+    if (select && select.value) {
+        loadStory(select.value);
+        // Reset selection to show "Load Story..." again
+        select.selectedIndex = 0;
+    }
 }
 
 // Modal functionality
@@ -191,7 +271,6 @@ function hideSyntaxModal() {
 // Keyboard shortcuts
 function handleKeyboardShortcuts(event) {
     // Ctrl+Space to manually run/compile
-    console.log(event);
     if (event.ctrlKey && event.key === ' ') {
         event.preventDefault();
         run();
@@ -211,6 +290,12 @@ function initializeEventHandlers() {
     document.getElementById("wb-syntax-help").onclick = showSyntaxModal;
     document.getElementById("wb-auto-compile").onclick = toggleAutoCompile;
     
+    // Story selector dropdown
+    const storySelect = document.getElementById("wb-story-select");
+    if (storySelect) {
+        storySelect.onchange = handleStorySelection;
+    }
+    
     // Close modal when clicking overlay
     const syntaxOverlay = document.getElementById("syntax-overlay");
     syntaxOverlay.onclick = hideSyntaxModal;
@@ -225,9 +310,15 @@ function setupChangeDetection() {
     const editorElement = document.getElementById("wb-editor");
     if (editorElement) {
         editorElement.addEventListener('input', () => {
-            console.log("input");
             scheduleAutoCompile();
         });
+        
+        // Also try to listen to editor-specific events if available
+        if (editor && typeof editor.onUpdate === 'function') {
+            editor.onUpdate(() => {
+                scheduleAutoCompile();
+            });
+        }
     }
 }
 
@@ -235,6 +326,9 @@ function setupChangeDetection() {
 document.addEventListener('DOMContentLoaded', async function() {
     // Load syntax modal content
     await loadSyntaxModal();
+    
+    // Populate story dropdown
+    await populateStoryDropdown();
     
     initializeEventHandlers();
 
