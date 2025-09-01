@@ -16,7 +16,7 @@ internal.ink = Prism.languages.ink = {
         greedy: true
     },
     'keyword': {
-        pattern: new RegExp('\\b(?:LIST|VAR|CONST|TEMP|FUNCTION|INCLUDE|DEFINE|EXTERNAL|GLOBAL|TUNNEL|DIVERT|DONE|END|STITCH|GATHER|CHOICE|OPTION|FALLBACK|WEAVE|SEQUENCE|CYCLE|SHUFFLE|ONCE|STOP|RETURN|~|->|<-|===|==|!=|<=|>=|<|>|\\+|-|\\*|/|%|&&|\\|\\||!|true|false|null)\\b'),
+        pattern: new RegExp('\\b(?:LIST|VAR|VAR|CONST|TEMP|FUNCTION|INCLUDE|DEFINE|EXTERNAL|GLOBAL|TUNNEL|DIVERT|DONE|END|STITCH|GATHER|CHOICE|OPTION|FALLBACK|WEAVE|SEQUENCE|CYCLE|SHUFFLE|ONCE|STOP|RETURN|~|->|<-|===|==|!=|<=|>=|<|>|\\+|-|\\*|/|%|&&|\\|\\||!|true|false|null)\\b'),
         greedy: true
     },
     'variable': {
@@ -62,15 +62,21 @@ loadTheme("github-dark");
 
 // State
 let story = null;
+let autoCompileEnabled = true;
+let autoCompileTimeout = null;
+let lastCompiledContent = '';
 
 // Output functions
 function clearOutput() { 
     elOutput.innerHTML = ""; 
 }
 
-function appendLine(txt) {
+function appendLine(txt, className = '') {
     const div = document.createElement("div");
     div.textContent = txt;
+    if (className) {
+        div.className = className;
+    }
     elOutput.appendChild(div);
     elOutput.scrollTop = elOutput.scrollHeight;
 }
@@ -95,28 +101,59 @@ function renderNext() {
 
 // Story functions
 function run() {
+    const content = editor.value;
+    if (content === lastCompiledContent) {
+        return;
+    }
+
     clearOutput();
-    const compiler = new inkjs.Compiler(editor.value);
+    const compiler = new inkjs.Compiler(content);
     try {
         story = compiler.Compile();
+        lastCompiledContent = content;
         renderNext();
         elWorkbench.setAttribute("data-mode", "player");
     } catch (e) {
+        clearOutput();
         for (const msg of compiler.errors) {
-            appendLine(msg);
+            appendLine(`❌ ${msg}`, "error");
         }
         for (const msg of compiler.warnings) {
-            appendLine(msg);
+            appendLine(`⚠ ${msg}`, "warning");
         }
     }
 }
 
-function restart() { 
-    if (story) { 
-        story.ResetState(); 
-        clearOutput(); 
-        renderNext(); 
-    } 
+// Auto-compilation functions
+function toggleAutoCompile() {
+    autoCompileEnabled = !autoCompileEnabled;
+    const button = document.getElementById("wb-auto-compile");
+    if (button) {
+        button.textContent = autoCompileEnabled ? "🔄 Auto: ON" : "🔄 Auto: OFF";
+        button.classList.toggle("active", autoCompileEnabled);
+    }
+
+    if (!autoCompileEnabled) {
+        if (autoCompileTimeout) {
+            clearTimeout(autoCompileTimeout);
+            autoCompileTimeout = null;
+        }
+    }
+}
+
+function scheduleAutoCompile() {
+    console.log(autoCompileEnabled);
+    if (!autoCompileEnabled) return;
+    
+    if (autoCompileTimeout) {
+        clearTimeout(autoCompileTimeout);
+    }
+    
+    autoCompileTimeout = setTimeout(() => {
+        if (autoCompileEnabled) {
+            run();
+        }
+    }, 500); // 500ms delay
 }
 
 // Modal functionality
@@ -151,16 +188,47 @@ function hideSyntaxModal() {
     syntaxOverlay.style.display = "none";
 }
 
+// Keyboard shortcuts
+function handleKeyboardShortcuts(event) {
+    // Ctrl+Space to manually run/compile
+    console.log(event);
+    if (event.ctrlKey && event.key === ' ') {
+        event.preventDefault();
+        run();
+    }
+    
+    // Ctrl+Shift+A to toggle auto-compile
+    if (event.ctrlKey && event.shiftKey && event.key === 'A') {
+        event.preventDefault();
+        toggleAutoCompile();
+    }
+}
+
 // Event handlers
 function initializeEventHandlers() {
     // Toolbar buttons
     document.getElementById("wb-run").onclick = run;
-    document.getElementById("wb-restart").onclick = restart;
     document.getElementById("wb-syntax-help").onclick = showSyntaxModal;
+    document.getElementById("wb-auto-compile").onclick = toggleAutoCompile;
     
     // Close modal when clicking overlay
     const syntaxOverlay = document.getElementById("syntax-overlay");
     syntaxOverlay.onclick = hideSyntaxModal;
+    
+    document.addEventListener('keydown', handleKeyboardShortcuts);
+    
+    setupChangeDetection();
+}
+
+// Set up change detection for the editor
+function setupChangeDetection() {
+    const editorElement = document.getElementById("wb-editor");
+    if (editorElement) {
+        editorElement.addEventListener('input', () => {
+            console.log("input");
+            scheduleAutoCompile();
+        });
+    }
 }
 
 // Initialize when DOM is loaded
@@ -168,6 +236,7 @@ document.addEventListener('DOMContentLoaded', async function() {
     // Load syntax modal content
     await loadSyntaxModal();
     
-    // Initialize event handlers
     initializeEventHandlers();
+
+    run();
 });
