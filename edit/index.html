@@ -1,429 +1,60 @@
 <!doctype html>
 <html lang="en">
 
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta property="og:type" content="website" />
-<meta property="og:site_name" content="LingoStories" />
-<meta name="description" property="og:description" content="Free interactive stories for language learners." />
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="LingoStories" />
+    <meta name="description" property="og:description" content="Free interactive stories for language learners." />
 
-<link rel="canonical" href="https://lingostories.org/">
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="manifest" href="/site.webmanifest">
+    <link rel="canonical" href="https://lingostories.org/">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
 
-<title>LingoStories - Free interactive stories for language learners</title>
-<link rel="stylesheet" href="/style.css">
+    <title>LingoStories - Free interactive stories for language learners</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="edit.css">
+</head>
 
-<style>
-    .main {
-        max-width: 100%;
-    }
-
-    .ink-workbench {
-        display: flex;
-        flex-direction: column;
-        /* height: 70vh; */
-
-        border: 1px solid #444;
-        border-radius: 8px;
-        width: 100%;
-        max-height: 100vh;
-    }
-
-    .wb-toolbar {
-        display: flex;
-        justify-content: space-between;
-        padding: .5rem;
-        background: #222;
-        color: #fff;
-    }
-
-    .wb-toolbar button {
-        background: #444;
-        color: #fff;
-        border: none;
-        border-radius: 4px;
-        padding: .4rem .7rem;
-        cursor: pointer;
-    }
-
-    .wb-toolbar button.active {
-        background: #666;
-    }
-
-    .wb-panels {
-        flex: 1;
-        display: flex;
-        overflow: hidden;
-    }
-
-    .wb-panel {
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-        overflow: auto;
-    }
-
-    .wb-editor-panel {
-        border-right: 1px solid #444;
-    }
-
-    .wb-output {
-        flex: 1;
-        overflow-y: auto;
-        padding: 1rem;
-        background: #111;
-        color: #eee;
-    }
-
-    .wb-choice button {
-        margin-top: .25rem;
-        display: block;
-    }
-
-    /* Responsive */
-    @media (max-width: 900px) {
-        .wb-panels {
-            flex-direction: column;
-        }
-    }
-
-    @media (max-width: 700px) {
-
-        .wb-editor-panel,
-        .wb-player-panel {
-            display: none;
-        }
-
-        .ink-workbench[data-mode="editor"] .wb-editor-panel {
-            display: flex;
-        }
-
-        .ink-workbench[data-mode="player"] .wb-player-panel {
-            display: flex;
-        }
-    }
-
-    /* Syntax Help Modal Styles */
-    #syntax-modal {
-        max-width: 800px;
-        max-height: 80vh;
-        width: 90%;
-        height: auto;
-        padding: 0;
-        border-radius: 8px;
-        overflow: hidden;
-    }
-
-    .syntax-header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 20px;
-        background: #333;
-        border-bottom: 1px solid #444;
-    }
-
-    #syntax-close {
-        background: none;
-        border: none;
-        color: #fff;
-        font-size: 2rem;
-        cursor: pointer;
-        padding: 0;
-        width: 40px;
-        height: 40px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 50%;
-        transition: background-color 0.2s;
-    }
-
-    #syntax-close:hover {
-        background: #555;
-    }
-
-    .syntax-content {
-        padding: 20px;
-        max-height: 70vh;
-        overflow-y: auto;
-    }
-
-    .syntax-content h3 {
-        border-bottom: 1px solid var(--secondary-text-color);
-    }
-
-    .syntax-content code, .syntax-content pre {
-        background: #2a2a2a;
-        padding: 2px 6px;
-        border-radius: 4px;
-        font-family: 'Courier New', monospace;
-        font-size: 0.9rem;
-    }
-
-    /* Responsive adjustments for syntax modal */
-    @media (max-width: 600px) {
-        #syntax-modal {
-            width: 95%;
-            max-height: 90vh;
-        }
-        
-        .syntax-content {
-            padding: 15px;
-        }
-        
-        .syntax-header {
-            padding: 15px;
-        }
-        
-        .syntax-header h2 {
-            font-size: 1.3rem;
-        }
-    }
-</style>
-
-<div class="main">
-
-    <div class="ink-workbench" data-layout="auto">
-        <div class="wb-toolbar">
-            <div class="wb-left">
-                <!-- <button id="wb-toggle-editor" class="wb-tab active">Editor</button>
-                <button id="wb-toggle-player" class="wb-tab">Player</button> -->
+<body>
+    <div class="main">
+        <div class="ink-workbench" data-layout="auto">
+            <div class="wb-toolbar">
+                <div class="wb-left">
+                    <!-- <button id="wb-toggle-editor" class="wb-tab active">Editor</button>
+                    <button id="wb-toggle-player" class="wb-tab">Player</button> -->
+                </div>
+                <div class="wb-right">
+                    <button id="wb-syntax-help">📖 Syntax Help</button>
+                    <button id="wb-run">▶ Run</button>
+                    <button id="wb-restart">⟳ Restart</button>
+                </div>
             </div>
-            <div class="wb-right">
-                <button id="wb-syntax-help">📖 Syntax Help</button>
-                <button id="wb-run">▶ Run</button>
-                <button id="wb-restart">⟳ Restart</button>
+
+            <div class="wb-panels">
+                <div class="wb-panel wb-editor-panel" id="wb-editor-panel">
+                    <div id="wb-editor"></div>
+                </div>
+                <div class="wb-panel wb-player-panel" id="wb-player-panel">
+                    <div id="wb-output" class="wb-output"></div>
+                </div>
             </div>
         </div>
 
-        <div class="wb-panels">
-            <div class="wb-panel wb-editor-panel" id="wb-editor-panel">
-                <div id="wb-editor"></div>
-            </div>
-            <div class="wb-panel wb-player-panel" id="wb-player-panel">
-                <div id="wb-output" class="wb-output"></div>
-            </div>
-        </div>
+        <!-- Syntax Help Modal -->
+        <div id="syntax-modal" class="explain-modal" style="display: none;"></div>
+
+        <!-- Syntax Modal Overlay -->
+        <div id="syntax-overlay" class="explain-overlay" style="display: none;"></div>
     </div>
 
-    <!-- Syntax Help Modal -->
-    <div id="syntax-modal" class="explain-modal" style="display: none;">
-        <div class="syntax-header">
-            <h2>Syntax Cheat Sheet</h2>
-            <button id="syntax-close" class="explain-close-button">×</button>
-        </div>
-        <div class="syntax-content">
-            
-            <h3>Choices</h3>
-              <ul>
-                <li><code>*</code> choice that can be chosen only once
-                <li><code>+</code> sticky (can be chosen again)
-            <li><p>Merge flow after a set of choices with a gather line <code>-</code>.</p>
-            </ul>
-            <pre>* Go north
-   You see mountains.
-* Go south
-   You see the sea.
--
-You keep walking.</pre>
-
-              <h3>Knots and Stitches</h3>
-              <ul>
-                <li><strong>Knots</strong> (top-level sections)</li>
-              </ul>
-              <pre>=== forest ===</pre>
-            
-              <ul>
-                <li><strong>Stitches</strong> (subsections inside knots)</li>
-              </ul>
-              <pre>= clearing =</pre>
-
-              <h3>Diverts</h3>
-              <ul>
-                <li><strong>Jump to another knot or stitch</strong></li>
-              </ul>
-              <pre>-&gt; forest</pre>
-            
-              <ul>
-                <li><strong>End story</strong></li>
-              </ul>
-              <pre>-&gt; END</pre>
-            
-              <h3>Brackets</h3>
-              <p>Use square brackets after a choice, if the choice is not part of the story.</p>
-              <pre>+ [Behind a big tree.]
-   You decide to hide behind a big tree.
-   -&gt; hidden</pre>
-            
-              <h3>Variables</h3>
-              <ul>
-                <li><strong>Declare and assign</strong></li>
-              </ul>
-              <pre>VAR health = 10
-~ health = health - 1</pre>
-            
-              <h3>Conditionals</h3>
-              <ul>
-                <li><strong>Choice conditions</strong></li>
-              </ul>
-              <pre>* {health &gt; 0} Keep fighting
-* Resign</pre>
-
-              <h3>Comments</h3>
-
-              <pre>// This is a single line comment</pre>
-              <pre>/* This is a multiline
-line comment */</pre>
-            
-            <hr>
-            <p><strong>Need more help?</strong> Check out the <a
-            href="https://github.com/inkle/ink/blob/master/Documentation/WritingWithInk.md"
-            target="_blank" rel="noopener">full Ink documentation</a> for
-            comprehensive guides and examples. Remember that the text needs to
-            be translated, so you cannot include variables as part of the text.
-        </p>
-        </div>
-    </div>
-
-    <!-- Syntax Modal Overlay -->
-    <div id="syntax-overlay" class="explain-overlay" style="display: none;"></div>
-
+    <!-- External Scripts -->
     <script src="/js/third_party/ink.js"></script>
     <script src="https://unpkg.com/prismjs@1.29.0/components/prism-core.js"></script>
-    <script type="module">
-        import { Story } from '/js/story-engine.js';
+    <script type="module" src="edit.js"></script>
+</body>
 
-        import { basicEditor } from "https://unpkg.com/prism-code-editor@2.4.1/dist/setups/index.js";
-        import { loadTheme } from "https://unpkg.com/prism-code-editor@2.4.1/dist/themes/index.js";
-        import { l as internal } from "https://unpkg.com/prism-code-editor@2.4.1/dist/prismCore-AxbjJFmh.js";
-        // Workaroud to add a new language. This is copied from https://app.unpkg.com/prism-code-editor@2.4.1/files/dist/grammars/python.js
-
-        internal.ink = Prism.languages.ink = {
-            'comment': {
-                pattern: /\/\*[\s\S]*?\*\/|\/\/.*/,
-                greedy: true
-            },
-            'string': {
-                pattern: /"[^"]*"|->\s\w+/,
-                greedy: true
-            },
-            'keyword': {
-                pattern: new RegExp('\\b(?:LIST|VAR|CONST|TEMP|FUNCTION|INCLUDE|DEFINE|EXTERNAL|GLOBAL|TUNNEL|DIVERT|DONE|END|STITCH|GATHER|CHOICE|OPTION|FALLBACK|WEAVE|SEQUENCE|CYCLE|SHUFFLE|ONCE|STOP|RETURN|~|->|<-|===|==|!=|<=|>=|<|>|\\+|-|\\*|/|%|&&|\\|\\||!|true|false|null)\\b'),
-                greedy: true
-            },
-            'variable': {
-                pattern: /[@$]\w+\b/,
-                greedy: true
-            },
-            'number': {
-                pattern: /\b\d+(?:\.\d+)?\b/,
-                greedy: true
-            },
-            'operator': {
-                pattern: /[+\-*/%=<>!&|~^]/,
-                greedy: true
-            },
-            'punctuation': {
-                pattern: /[{}[\];(),.:]/,
-                greedy: true
-            }
-        };
-
-        const elWorkbench = document.querySelector(".ink-workbench");
-        const elEditor = document.getElementById("wb-editor");
-        const elOutput = document.getElementById("wb-output");
-
-        // Sample Ink
-        const sample = `Hello world!
-      *   Say hi
-          Nice to meet you.
-      *   Say bye
-          Goodbye!
-      -> END`;
-
-        // Init Prism editor
-        const editor = basicEditor("#wb-editor", {
-            value: sample,
-            language: "ink", // Now using custom Ink grammar
-            theme: "github-dark",
-            lineNumbers: true
-        });
-        loadTheme("github-dark");
-
-        // State
-        let story = null;
-
-        function clearOutput() { elOutput.innerHTML = ""; }
-        function appendLine(txt) {
-            const div = document.createElement("div");
-            div.textContent = txt;
-            elOutput.appendChild(div);
-            elOutput.scrollTop = elOutput.scrollHeight;
-        }
-        function appendChoice(idx, txt) {
-            const btn = document.createElement("button");
-            btn.textContent = txt;
-            btn.onclick = () => { story.ChooseChoiceIndex(idx); renderNext(); };
-            const div = document.createElement("div"); div.className = "wb-choice";
-            div.appendChild(btn); elOutput.appendChild(div);
-        }
-        function renderNext() {
-            while (story.canContinue) appendLine(story.Continue().trim());
-            story.currentChoices.forEach((c, i) => appendChoice(i, c.text));
-        }
-
-        function run() {
-            clearOutput();
-            const compiler = new inkjs.Compiler(editor.value);
-            try {
-                story = compiler.Compile();
-                renderNext();
-                elWorkbench.setAttribute("data-mode", "player");
-            } catch (e) {
-                for (const msg of compiler.errors) {
-                    appendLine(msg);
-                }
-                for (const msg of compiler.warnings) {
-                    appendLine(msg);
-                }
-            }
-        }
-
-        function restart() { if (story) { story.ResetState(); clearOutput(); renderNext(); } }
-
-        // Wire toolbar
-        document.getElementById("wb-run").onclick = run;
-        document.getElementById("wb-restart").onclick = restart;
-        // document.getElementById("wb-toggle-editor").onclick = () => elWorkbench.setAttribute("data-mode", "editor");
-        // document.getElementById("wb-toggle-player").onclick = () => elWorkbench.setAttribute("data-mode", "player");
-
-        // Syntax help modal functionality
-        const syntaxModal = document.getElementById("syntax-modal");
-        const syntaxOverlay = document.getElementById("syntax-overlay");
-        const syntaxCloseBtn = document.getElementById("syntax-close");
-        
-        document.getElementById("wb-syntax-help").onclick = () => {
-            syntaxModal.style.display = "block";
-            syntaxOverlay.style.display = "block";
-        };
-        
-        syntaxCloseBtn.onclick = () => {
-            syntaxModal.style.display = "none";
-            syntaxOverlay.style.display = "none";
-        };
-        
-        // Close modal when clicking outside
-        syntaxOverlay.onclick = () => {
-            syntaxModal.style.display = "none";
-            syntaxOverlay.style.display = "none";
-        };
-
-        // Default
-        // elWorkbench.setAttribute("data-mode", "editor");
-    </script>
-
-</div>
+</html>
