@@ -40,6 +40,14 @@ export class Explain {
             const explanation = this.explanations[key];
             this.createModal(explanation, sentence);
         });
+
+        if (window.goatcounter) {
+            window.goatcounter.count({
+                path:  `explain/${story.lang}/${this.story.storyName}`,
+                title: 'Microphone',
+                event: true,
+            });
+        }
     }
 
     markdownToHtml(markdown) {

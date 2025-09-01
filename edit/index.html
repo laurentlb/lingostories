@@ -14,7 +14,7 @@
 <link rel="manifest" href="/site.webmanifest">
 
 <title>LingoStories - Free interactive stories for language learners</title>
-<link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="/style.css">
 
 <style>
     .main {
@@ -131,9 +131,11 @@
         </div>
     </div>
 
-    <script src="../js/third_party/ink.js"></script>
+    <script src="/js/third_party/ink.js"></script>
     <script src="https://unpkg.com/prismjs@1.29.0/components/prism-core.js"></script>
     <script type="module">
+        import { Story } from '/js/story-engine.js';
+
         import { basicEditor } from "https://unpkg.com/prism-code-editor@2.4.1/dist/setups/index.js";
         import { loadTheme } from "https://unpkg.com/prism-code-editor@2.4.1/dist/themes/index.js";
         import { l as internal } from "https://unpkg.com/prism-code-editor@2.4.1/dist/prismCore-AxbjJFmh.js";
@@ -214,13 +216,20 @@
         }
 
         function run() {
+            clearOutput();
+            const compiler = new inkjs.Compiler(editor.value);
             try {
-                clearOutput();
-                const compiler = new inkjs.Compiler(editor.value);
                 story = compiler.Compile();
                 renderNext();
                 elWorkbench.setAttribute("data-mode", "player");
-            } catch (e) { appendLine("Compile error: " + e.message); }
+            } catch (e) {
+                for (const msg of compiler.errors) {
+                    appendLine(msg);
+                }
+                for (const msg of compiler.warnings) {
+                    appendLine(msg);
+                }
+            }
         }
 
         function restart() { if (story) { story.ResetState(); clearOutput(); renderNext(); } }

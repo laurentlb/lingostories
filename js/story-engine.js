@@ -21,6 +21,11 @@ export class Story {
         }
     }
 
+    loadStoryFromText(text) {
+        this.ink = new inkjs.Compiler(editor.value).Compile();
+        this.metadata = { "sentences": {}, "speakers": {} };
+    }
+
     Continue() {
         const line = this.ink.Continue();
         return this.processLine(line, this.ink.currentTags);
