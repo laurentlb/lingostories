@@ -44,7 +44,8 @@ export class BaseStoryUI {
     collectImage(lang, storyName, image) {}
     addExplanation(container, line) {}
     addContributors(container) {}
-    toggleTranslation(container) {}
+    toggleTranslation(container, line) {}
+    toggleChoiceTranslation(container, choice) {}
     createMinigame(container, line, content) {
         this.actuallyShowText(container, line, false);
     }
@@ -154,11 +155,12 @@ export class BaseStoryUI {
             elt.textContent = text;
 
             const transl = document.createElement("p");
+            transl.textContent = text;
             transl.classList.add("translation");
             transl.style.display = "none";
             elt.appendChild(transl);
 
-            elt.onclick = () => this.toggleTranslation(elt, choice);
+            elt.onclick = () => this.toggleChoiceTranslation(transl, choice);
 
             const textIcon = document.createElement("div");
             textIcon.classList.add("text-icon");
@@ -295,6 +297,16 @@ export class StoryUI extends BaseStoryUI {
         this.openTransl = transl;
 
         elt.appendChild(transl);
+    }
+
+    toggleChoiceTranslation(elt, choice) {
+        if (elt.style.display === "block") {
+            elt.style.display = "none";
+        } else {
+            const transLang = this.settings.translationLang();
+            elt.style.display = "block";
+            elt.textContent = this.story.translateChoice(choice, transLang);
+        }
     }
 
     toggleTranslation(elt, line) {
