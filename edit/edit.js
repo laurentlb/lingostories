@@ -1,5 +1,6 @@
 // Edit Page JavaScript
 import { Story } from '/js/story-engine.js';
+import { StoryUI } from '/js/story-ui.js';
 import { allStories } from '/js/stories.js';
 
 import { basicEditor } from "https://unpkg.com/prism-code-editor@2.4.1/dist/setups/index.js";
@@ -114,7 +115,10 @@ function appendChoice(idx, txt) {
 }
 
 function renderNext() {
-    while (story.canContinue) appendLine(story.Continue().trim());
+    while (story.canContinue) {
+        const line = story.Continue();
+        appendLine(line["en"]);
+    }
     story.currentChoices.forEach((c, i) => appendChoice(i, c.text));
 }
 
@@ -124,17 +128,20 @@ function run() {
     lastCompiledContent = content;
 
     clearOutput();
-    const compiler = new inkjs.Compiler(content);
+    // const compiler = new inkjs.Compiler(content);
+    story = new Story();
     try {
-        story = compiler.Compile();
+        story.loadStoryFromText(content);
+        console.log("Compiled successfully.");
+        // story = compiler.Compile();
         renderNext();
         elWorkbench.setAttribute("data-mode", "player");
     } catch (e) {
         clearOutput();
-        for (const msg of compiler.errors) {
+        for (const msg of story.compiler.errors) {
             appendLine(`❌ ${msg}`, "error");
         }
-        for (const msg of compiler.warnings) {
+        for (const msg of story.compiler.warnings) {
             appendLine(`⚠ ${msg}`, "warning");
         }
     }
