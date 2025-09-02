@@ -1,3 +1,37 @@
+        <div class="info updates-cards">
+            <h2>What's New</h2>
+
+            <ul>
+                <li>
+                    <div class="date">2025-09-02</div>
+                    <div class="news-title">New Story Editor</div>
+                    <div class="description">Use <a href="/edit">the new editor</a> to create your own stories. <a href="doc/contributing.md.html">Read more</a> about how to collaborate and get the stories published on the website. </div>
+                <li>
+                    <div class="date">2025-01-19</div>
+                    <div class="news-title">AI-Powered Explanations</div>
+                    <div class="description">Get sentence explanations powered by AI, helping you understand complex grammar. In the stories, click on the question mark next to selected sentences.</div>
+            </ul>
+
+            <details>
+                <summary><h2>Other Updates</h2></summary>
+            <ul>
+                <li> <span class="date">2025-01-17</span>Support for microphone (see settings), for you to repeat the sentences out loud
+                <li> <span class="date">2024-10-26</span>Park: Added Dutch and Swedish translations
+                <li> <span class="date">2024-09-03</span>Published <a href="/guide.html">a user guide</a>
+                <li> <span class="date">2024-09-01</span>New story added ("The Grocery List") for French and English, using a better game engine
+                <li> <span class="date">2024-07-27</span>Add dialogue bubbles to better recognize the characters
+                <li> <span class="date">2024-07-16</span>Support for direct speech, with avatars and matching voice (depending on the language)
+                <li> <span class="date">2024-07-03</span>Added/fixed translations in Swedish, Dutch, German, Portuguese, and Polish
+                <li> <span class="date">2024-06-22</span>Blog post: <a href="https://laurent.le-brun.eu/blog/building-lingostories-an-experimental-project-for-language-learners">Building LingoStories: An Experimental Project for Language Learners</a>                    
+                <li> <span class="date">2024-06-22</span>Added a minigame (reorder words) + image collections
+                <li> <span class="date">2024-06-05</span>New story "A Day in the Park"
+                <li> <span class="date">2024-03-29</span>Added support for autoplay in the settings
+                <li> <span class="date">2024-03-05</span>Published the proof of concept
+            </ul>
+            </details>
+
+            <hr>
+
             <details>
                 <summary><h2>What is LingoStories?</h2></summary>
             <p>
@@ -40,9 +74,9 @@
             <p>
                 Currently, there are only two stories:
                 <ul>
-                <li> A Day in the Park: A simple story created as a
+                <li> <span class="news-title">A Day in the Park</span>: A simple story created as a
                 proof-of-concept for the website.
-                <li> The Grocery List: A more interactive story that remembers
+                <li> <span class="news-title">The Grocery List</span>: A more interactive story that remembers
                 the choices and includes an inventory of items.
                 </ul>
                 More stories will be added over time, and we aim to create more
@@ -79,38 +113,12 @@
             </p>
             </details>
 
-            <!--
-            <details>
-                <summary><h2></h2></summary>
-            <p>
-            </p>
-            </details> -->
+            <hr>
 
-            <details>
-                <summary>
-                    <h2>Updates</h2>
-                </summary>
-
-                <ul>
-                    <li> <span class="date">2025-01-19</span>: Chat-GPT integration to provide explanations for sentences (only in Grocery story for longer sentences)
-                    <li> <span class="date">2025-01-17</span>: Support for microphone (see settings), for you to repeat the sentences out loud
-                    <li> <span class="date">2024-10-26</span>: Park: Added Dutch and Swedish translations
-                    <li> <span class="date">2024-09-03</span>: Published <a href="/guide.html">a user guide</a>
-                    <li> <span class="date">2024-09-01</span>: New story added ("The Grocery List") for French and English, using a better game engine
-                    <li> <span class="date">2024-07-27</span>: Add dialogue bubbles to better recognize the characters
-                    <li> <span class="date">2024-07-16</span>: Support for direct speech, with avatars and matching voice (depending on the language)
-                    <li> <span class="date">2024-07-03</span>: Added/fixed translations in Swedish, Dutch, German, Portuguese, and Polish
-                    <li> <span class="date">2024-06-22</span>: Blog post: <a href="https://laurent.le-brun.eu/blog/building-lingostories-an-experimental-project-for-language-learners">Building LingoStories: An Experimental Project for Language Learners</a>                    
-                    <li> <span class="date">2024-06-22</span>: Added a minigame (reorder words) + image collections
-                    <li> <span class="date">2024-06-05</span>: New story "A Day in the Park"
-                    <li> <span class="date">2024-03-29</span>: Added support for autoplay in the settings
-                    <li> <span class="date">2024-03-05</span>: Published the proof of concept
-                </ul>
-
-            </details>
-
+            <h3>Connect with LingoStories</h3>
             <p>
                 <a href="https://discord.gg/SEefvsutca"><img class="logo" title="Discord community" src="/img/discord.svg"></a>
                 <a href="https://github.com/laurentlb/lingostories"><img class="inv-logo" title="GitHub" src="/img/github.svg"></a>
                 <a href="https://www.instagram.com/lingostories"><img class="logo" title="Instagram" src="/img/instagram.svg"></a>
             </p>
+        </div>

@@ -49,7 +49,7 @@
         </div>
 
         <div class="home" id="story-selector">
-            <p>Select a story to read in {language}.</p>
+            <h3>Select a story to read in {language}.</h3>
             <div class="story-list"></div>
         </div>
 
@@ -88,7 +88,7 @@
 
         <div class="in-story" style="height: 30vh;"></div>
         
-        <div class="info home">
+        <div class="home">
             {faq}
         </div>
     </div>

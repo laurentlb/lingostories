@@ -26,7 +26,7 @@
         </div>
 
         <div id="language-selector">
-            <p>Select a language to practice.</p>
+            <h3>Select a language to practice.</h3>
             <ul>
                 <li><a href="/ar/"><img class="flag" src="/img/flags/ar.svg" alt=""><div>Arabic</div></a>
                 <li><a href="/nl/"><img class="flag" src="/img/flags/nl.svg" alt=""><div>Dutch</div></a>
@@ -42,9 +42,7 @@
             </ul>
         </div>
 
-        <div class="info">
-            {faq}
-        </div>
+        {faq}
     </div>
 </div>
 
