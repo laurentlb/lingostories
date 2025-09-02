@@ -1,11 +1,20 @@
 // Edit Page JavaScript
 import { Story } from '/js/story-engine.js';
-import { StoryUI } from '/js/story-ui.js';
+import { EditorStoryUI } from '/js/story-ui.js';
 import { allStories } from '/js/stories.js';
 
 import { basicEditor } from "https://unpkg.com/prism-code-editor@2.4.1/dist/setups/index.js";
 import { loadTheme } from "https://unpkg.com/prism-code-editor@2.4.1/dist/themes/index.js";
 import { l as internal } from "https://unpkg.com/prism-code-editor@2.4.1/dist/prismCore-AxbjJFmh.js";
+
+const settings = {
+    readingMode: () => "text-only",
+    enableMinigames: () => false,
+    showTranslations: () => false,
+    translationLang: () => "en",
+};
+const story = new Story();
+const storyUI = new EditorStoryUI(story, settings, renderNext, () => {});
 
 // Ink language grammar for Prism
 internal.ink = Prism.languages.ink = {
@@ -46,12 +55,76 @@ const elOutput = document.getElementById("wb-output");
 const elChoices = document.getElementById("wb-choices");
 
 // Sample Ink code
-const sample = `Hello world!
-      *   Say hi
-          Nice to meet you.
-      *   Say bye
-          Goodbye!
-      -> END`;
+const sample = `Story example #title
+This is an example of a story.
+Each sentence should be on a separate line.
+
+Use the star to offer choices.
+  * 1st choice.
+    This is a good choice.
+  * Another choice.
+    This is also fine.
+-
+
+After the dash, the story continues.
+@tom Some characters can talk.
+@anna We'll add more characters later.
+You can also offer choices that jump to another section.
+-> menu
+
+=== menu
+  + [Go left] -> left
+  + [Go right] -> right
+  * [Wait]
+    You waited.
+    -> menu
+// with '*', the action can be used only once; with '+', it can be used again.
+
+=== left
+You went left.
+-> menu
+
+=== right
+You went right.
+And it is the end of the tutorial.
+-> END`;
+
+const speakers = {
+    "mom": {
+        "avatar": "woman.svg",
+        "color": "#a26"
+    },
+    "peter": {
+        "avatar": "peter.svg",
+        "color": "#26a",
+        "side": "right"
+    },
+    "teacher": {
+        "avatar": "woman.svg",
+        "color": "#484"
+    },
+    "employee": {
+        "avatar": "man5.svg",
+        "color": "#a62"
+    },
+    "seller": {
+        "avatar": "man2.svg",
+        "color": "#288"
+    },
+    "baker": {
+        "avatar": "man3.svg",
+        "color": "#a22"
+    },
+    "anna": {
+        "avatar": "woman.svg",
+        "color": "#484",
+        "side": "right"
+    },
+    "tom": {
+        "avatar": "man.svg",
+        "color": "#26a"
+    },
+};
 
 // Initialize Prism editor
 const editor = basicEditor("#wb-editor", {
@@ -60,12 +133,10 @@ const editor = basicEditor("#wb-editor", {
     theme: "github-dark",
     lineNumbers: true
 });
-window.editor = editor; // Expose for debugging
 
 loadTheme("github-dark");
 
 // State
-let story = null;
 let autoCompileEnabled = true;
 let autoCompileTimeout = null;
 let lastCompiledContent = '';
@@ -86,6 +157,7 @@ function setEditorContent(content) {
 function clearOutput() { 
     elOutput.innerHTML = ""; 
     elChoices.innerHTML = "";
+    document.querySelector(".story-end").style.display = "none";
 }
 
 function appendLine(txt, className = '') {
@@ -117,9 +189,9 @@ function appendChoice(idx, txt) {
 function renderNext() {
     while (story.canContinue) {
         const line = story.Continue();
-        appendLine(line["en"]);
+        storyUI.handleLine(line, false);
     }
-    story.currentChoices.forEach((c, i) => appendChoice(i, c.text));
+    storyUI.showChoices(story.currentChoices);
 }
 
 // Story functions
@@ -128,23 +200,22 @@ function run() {
     lastCompiledContent = content;
 
     clearOutput();
-    // const compiler = new inkjs.Compiler(content);
-    story = new Story();
     try {
-        story.loadStoryFromText(content);
-        console.log("Compiled successfully.");
-        // story = compiler.Compile();
-        renderNext();
-        elWorkbench.setAttribute("data-mode", "player");
+        story.loadStoryFromText(content, speakers);
     } catch (e) {
-        clearOutput();
+        appendLine(e.message);
         for (const msg of story.compiler.errors) {
             appendLine(`❌ ${msg}`, "error");
         }
         for (const msg of story.compiler.warnings) {
             appendLine(`⚠ ${msg}`, "warning");
         }
+        return;
     }
+    storyUI.init("noname", "en");
+    storyUI.resetStory();
+    renderNext();
+    elWorkbench.setAttribute("data-mode", "player");
 }
 
 // Auto-compilation functions
@@ -226,7 +297,6 @@ function handleStorySelection() {
     const select = document.getElementById("wb-story-select");
     if (select && select.value) {
         loadStory(select.value);
-        // Reset selection to show "Load Story..." again
         select.selectedIndex = 0;
     }
 }
@@ -308,14 +378,19 @@ function setupChangeDetection() {
 }
 
 // Initialize when DOM is loaded
-document.addEventListener('DOMContentLoaded', async function() {
+window.addEventListener('DOMContentLoaded', async function() {
     // Load syntax modal content
     await loadSyntaxModal();
     
     // Populate story dropdown
     await populateStoryDropdown();
+    await editor.textarea.dispatchEvent(new Event('input')); // wait for editor to be ready
     
     initializeEventHandlers();
+
+    document.querySelectorAll('.in-story').forEach(e => {
+        e.style.display = "block";
+    });
 
     run();
 });

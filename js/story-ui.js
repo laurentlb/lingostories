@@ -13,7 +13,6 @@ export class BaseStoryUI {
 
         this.nextAction = null;
         this.actionPending = false;
-        this.openTransl = null;
         this.lastSentence = null;
         this.lastAudioIcon = null;
         this.lastChoices = [];
@@ -43,9 +42,9 @@ export class BaseStoryUI {
     playLineAudio(line, onDone) {}
     playSoundEffect(name, onDone) {}
     collectImage(lang, storyName, image) {}
-    showTranslation(elt, line) {}
     addExplanation(container, line) {}
     addContributors(container) {}
+    toggleTranslation(container) {}
     createMinigame(container, line, content) {
         this.actuallyShowText(container, line, false);
     }
@@ -128,7 +127,7 @@ export class BaseStoryUI {
             elt.classList.add("bubble", `bubble-${side}`);
         }
 
-        elt.onclick = () => this.showTranslation(elt, line);
+        elt.onclick = () => this.toggleTranslation(elt, line);
 
         this.lastSentence = elt;
         container.appendChild(elt);
@@ -159,7 +158,7 @@ export class BaseStoryUI {
             transl.style.display = "none";
             elt.appendChild(transl);
 
-            elt.onclick = () => this.showTranslation(elt, choice);
+            elt.onclick = () => this.toggleTranslation(elt, choice);
 
             const textIcon = document.createElement("div");
             textIcon.classList.add("text-icon");
@@ -238,6 +237,7 @@ export class StoryUI extends BaseStoryUI {
         this.userData = userData;
         this.updateCollectionTopStatus = updateCollectionTopStatus;
         this.explainer = new Explain();
+        this.openTransl = null;
     }
 
     async init(name, language) {
@@ -281,7 +281,29 @@ export class StoryUI extends BaseStoryUI {
         const transLang = this.settings.translationLang();
         transl.textContent = line[transLang];
         transl.classList.add("translation");
+
+        if (this.openTransl) {
+            this.openTransl.remove();
+            this.openTransl = null;
+        }
+        this.openTransl = transl;
+
         elt.appendChild(transl);
+    }
+
+    toggleTranslation(elt, line) {
+        if (elt.classList.contains("spoiler")) {
+            this.next();
+            return;
+        }
+        if (this.openTransl && this.openTransl.parentElement === elt) {
+            this.openTransl.remove();
+            this.openTransl = null;
+            return;
+        }
+        else {
+            this.showTranslation(elt, line);
+        }
     }
 
     addExplanation(container, line) {
@@ -353,7 +375,7 @@ export class EditorStoryUI extends BaseStoryUI {
     playLineAudio(line, onDone) { /* no audio in editor */ }
     playSoundEffect(name, onDone) { /* no sounds */ }
     collectImage(lang, storyName, image) { /* editor doesn’t track userdata */ }
-    showTranslation(elt, line) { /* no translations in editor */ }
+    toggleTranslation(container) { /* no translations in editor */ }
     addExplanation(container, line) { /* no explanations */ }
     addContributors(container) { /* no contributors */ }
     showEndGame() {

@@ -37,6 +37,10 @@ button:hover {
     background: #0056b3;
 }
 
+.wb-player-panel {
+    padding: 8px;
+}
+
 /* Story selector dropdown */
 .wb-toolbar select {
     background: #444;
@@ -120,7 +124,6 @@ button:hover {
     display: flex;
     flex-direction: column;
     overflow: auto;
-    background: #111;
 }
 
 .wb-editor-panel {

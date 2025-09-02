@@ -21,9 +21,9 @@ export class Story {
         }
     }
 
-    loadStoryFromText(text) {
-        this.compiler = new inkjs.Compiler(editor.value);
-        this.metadata = { "sentences": {}, "speakers": {} };
+    loadStoryFromText(text, speakers) {
+        this.compiler = new inkjs.Compiler(text);
+        this.metadata = { "sentences": {}, speakers };
         this.ink = this.compiler.Compile();
     }
 
@@ -71,7 +71,7 @@ export class Story {
 
     translateChoice(choice, lang) {
         if (!this.metadata["sentences"][choice.text]) {
-            console.log("Missing translation for", choice.text);
+            // console.log("Missing translation for", choice.text);
             const [_, text] = this.extractSpeaker(choice.text);
             return text;
         }

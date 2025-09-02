@@ -43,7 +43,7 @@ export class Explain {
 
         if (window.goatcounter) {
             window.goatcounter.count({
-                path:  `explain/${story.lang}/${this.story.storyName}`,
+                path:  `explain/${this.language}/${this.storyName}`,
                 title: 'Microphone',
                 event: true,
             });
