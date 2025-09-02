@@ -1,32 +1,53 @@
-const audio = new Audio();
 let synth = window.speechSynthesis;
 let voices = [];
 
-export function listenMP3(state, line, settings, autoPlayCallback) {
-    const file = `/audio/${state.storyName}/${state.storyName}-${state.lang}-${line.key}.mp3`;
-    audio.src = file;
-    audio.playbackRate = settings.voiceSpeed();
-    audio.volume = settings.volume();
-    
-    audio.onended = (event) => {
-        if (autoPlayCallback && settings.readingMode() === "autoAdvance") {
-            autoPlayCallback();
-        }
+class AudioPlayer {
+    constructor() {
+      this.audio = new Audio();
+      this.currentCallback = null;
+  
+      this.audio.addEventListener('ended', this.handleStop.bind(this, 'ended'));
+      this.audio.addEventListener('error', this.handleStop.bind(this, 'error'));
+      this.audio.addEventListener('pause', this.handleStop.bind(this, 'pause'));
     }
+  
+    play(url, volume, playbackRate, callback) {
+        this.triggerCallback(); // previous callback if any
 
-    audio.play().catch((e) => {
-        console.log("Failed to play audio", e);
-        // listen(state.sentence(pageIndex, sentenceIndex, state.lang), state.lang);
-    });
+        this.currentCallback = callback;
+
+        this.audio.volume = volume;
+        this.audio.playbackRate = playbackRate;
+        this.audio.src = url;
+        this.audio.play().catch((error) => {
+            console.error("Playback failed:", error);
+            this.handleStop('exception');
+        });
+    }
+  
+    handleStop(cause) {
+        // console.log("Audio stopped due to:", cause);
+        this.triggerCallback();
+    }
+  
+    triggerCallback() {
+      if (this.currentCallback) {
+        this.currentCallback();
+        this.currentCallback = null;
+      }
+    }
+}
+
+const player = new AudioPlayer();
+
+export function listenMP3(state, line, settings, callback) {
+    const file = `/audio/${state.storyName}/${state.storyName}-${state.lang}-${line.key}.mp3`;
+    player.play(file, settings.volume(), settings.voiceSpeed(), callback);
 }
 
 export function soundEffect(settings, name, callback = null) {
     const file = `/audio/${name}.mp3`;
-    audio.src = file;
-    audio.onended = callback;
-    audio.playbackRate = 1;
-    audio.volume = settings.volume();
-    audio.play();
+    player.play(file, settings.volume(), 1, callback);
 }
 
 export function updateVoices(lang) {

@@ -82,7 +82,7 @@ export class BaseStoryUI {
             audioElt.src = "/img/volume-up.svg"; 
             audioElt.classList.add("icon", "audio-icon");
         }
-        audioElt.onclick = () => this.playLineAudio(line, null);
+        audioElt.onclick = () => this.playLineAudio(line, container, null);
         this.lastAudioIcon = audioElt;
         container.appendChild(audioElt);
 
@@ -99,7 +99,7 @@ export class BaseStoryUI {
         }
 
         if (!textOnly) {
-            this.playLineAudio(line, () => {
+            this.playLineAudio(line, container, () => {
                 if (!this.actionPending) {
                     this.next();
                 }
@@ -245,8 +245,14 @@ export class StoryUI extends BaseStoryUI {
         await this.explainer.init(name, language);
     }
 
-    playLineAudio(line, onDone) {
-        listenMP3(this.story, line, this.settings, onDone);
+    playLineAudio(line, container, onDone) {
+        container.classList.add("playing-audio");
+        listenMP3(this.story, line, this.settings, (success) => {
+            container.classList.remove("playing-audio");
+            if (onDone !== null && success && settings.readingMode() === "autoAdvance") {
+                onDone();
+            }
+        });
     }
 
     playSoundEffect(name, onDone) {

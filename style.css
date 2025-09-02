@@ -102,6 +102,11 @@ h3 {
     color: #ffd;
 }
 
+.playing-audio > .text {
+    color: #ee0;
+    text-shadow: 4px 4px 8px #ff03;
+}
+
 @keyframes reveal {
     0% {
         filter: blur(5px);
@@ -309,6 +314,8 @@ h3 {
 
     a:hover img {
         border-color: var(--highlight-color);
+        scale: 1.1;
+        transition: all .2s;
     }
 
     display: grid;
@@ -499,7 +506,9 @@ a:hover, summary:hover > * {
 
     a:hover img {
         border-color: var(--highlight-color);
-    }
+        scale: 1.1;
+        transition: all .2s;
+       }
 
     ul {
         list-style-type: none;

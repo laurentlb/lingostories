@@ -39,15 +39,15 @@ export class Explain {
         icon.addEventListener("click", () => {
             const explanation = this.explanations[key];
             this.createModal(explanation, sentence);
-        });
 
-        if (window.goatcounter) {
-            window.goatcounter.count({
-                path:  `explain/${this.language}/${this.storyName}`,
-                title: 'Microphone',
-                event: true,
-            });
-        }
+            if (window.goatcounter) {
+                window.goatcounter.count({
+                    path:  `explain/${this.language}/${this.storyName}`,
+                    title: 'Explain',
+                    event: true,
+                });
+            }
+        });
     }
 
     markdownToHtml(markdown) {
