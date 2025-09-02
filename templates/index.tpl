@@ -8,9 +8,9 @@
 <meta name="description" property="og:description" content="Free interactive stories for language learners." />
 
 <link rel="canonical" href="https://lingostories.org/">
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="icon" href="/favicon.ico" sizes="any" />
+<link rel="icon" href="/icon.svg" type="image/svg+xml" />
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 <link rel="manifest" href="/site.webmanifest">
 
 <title>LingoStories - Free interactive stories for language learners</title>
@@ -19,7 +19,7 @@
 <div class="main">
     <div class="middle">
         <div class="title">
-            <h1> LingoStories </h1>
+            <h1> <img src="/img/logo.svg" class="main-logo"> LingoStories </h1>
             <p>
                 Free interactive stories for language learners.
             </p>
