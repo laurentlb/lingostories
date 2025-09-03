@@ -1,0 +1,98 @@
+<meta charset="utf-8"><link rel="stylesheet" href="../style.css"><link rel="stylesheet" href="./style.css">
+
+**LingoStories - Writing Stories**
+
+# Overview
+
+LingoStories stories are created using the Ink format.
+
+Goal: Write a short interactive story (about 1,000-1,500 words) using the Ink format.
+The story should be engaging but written with simple vocabulary and grammar (think “graded reader” style, level A2-B1).
+
+> Context: Once the text has been written with [the editor](https://lingostories.org/edit/), it is later translated to other languages, audio is generated for every language,
+> and we generate illustration images. Once everything is done, we can publish the story on https://lingostories.org/.
+
+## Writing requirements:
+
+* Stories are written in English and then translated to other languages. The reference is the English version.
+* The story should be suitable and appealing for the general audience worldwide.
+* Prefer vocabulary that is common in everyday life.
+   * Everyday settings preferred (café, travel, family, school, work).
+* Simple, clear sentences. Choose a [CEFR level](https://en.wikipedia.org/wiki/Common_European_Framework_of_Reference_for_Languages#Common_reference_levels),
+  normally A2 or B1, and write the story accordingly.
+   * See this [reference](https://www.esl-lounge.com/student/reference.php)
+     sheet for vocabulary.
+   * See [lingua.com](https://lingua.com/english/reading/) for text examples.
+   * But don't worry too much --- it's fine to expose learners to a few new words and
+     new grammar rules that might not know yet.
+* Avoid cultural references and country-specific biases that might not be
+  relevant to people in other countries. Avoid play-on-words and things that can be hard to translate.
+* A mix of descriptions and dialogues is encouraged.
+   * Characters should have a bit of background and personality.
+* Present tense is preferred.
+
+# Tips for Interactive Stories
+
+* Stories should be interactive and contain meaningful choices to make.
+   - Ensure the options presented to the reader are distinct and their potential outcomes are, at a glance, understandable.
+   - Avoid choices that feel random (e.g. do you want to go left or right?) without context.
+* Stories should be replayable.
+   - There should be an incentive for the player to play again, try different choices, and experience a different ending.
+   - At least one ending should feel satisfying.
+* Establish a Main Path: Define a central, most satisfying narrative path. This acts as the story's "spine." It's the path the majority of readers are likely to take or the one you feel is the most coherent. All other branches should ultimately relate to or deviate from this core path.
+* Define Key Plot Points: Identify the non-negotiable plot points or "gates." These are moments the reader must experience to progress, regardless of their choices. For example, a choice might change how they get to the next gate (stealth vs. combat), but they will always arrive there. This prevents the narrative from completely unraveling.
+* Use Delayed Consequences: Don't make the outcome of every choice immediate. 
+   - You can use variables so that a choice made early will impact the text later.
+   - One way to do that is when the main character gets an object and can use it later.
+   - The text or a character can make references to something that happened earlier. A simple reference can be satisfying, it doesn't need to lead to a whole new branch.
+* Use choices to provide optional content. For example, the player can decide whether they want to ask many questions to a character, or keep it short.
+
+# Using the Editor
+
+* The story editor is available at: https://lingostories.org/edit/
+* There's no saving on the website, please regularly make copies in a file.
+* You make changes in the text on the left, and you can play the story on the right panel.
+* Open the existing stories and see how they were made.
+   - The most complex story is "The Grocery List".  If you find it overwhelming, see "A Day in the Park".
+* For advanced features, see [this tutorial](https://github.com/inkle/ink/blob/master/Documentation/WritingWithInk.md).
+   - However, note that the stories have to be translated. It is not possible to use the value of a variable inside the text.
+
+## Dialogues
+
+* Prefix a sentence with `@tom: ` if Tom says something.
+   - You can invent your own character names, even if they are not displayed correctly in the preview.
+* Avoid writing "... she said". Each spoken dialogue is a separate line, not part of the narration.
+
+## Inventory
+
+Define the list of items at the beginning of the story.
+
+* Use `~ inventory += apple` to add an item to the inventory.
+* Use `{inventory ? apple}` to check if an item is in the inventory.
+* Use `~inventory -= apple` to remove an item.
+
+Sample:
+
+```
+LIST items = apple, key, pen, book
+VAR inventory = ()
+
+You see an apple.
+  * [Pick the apple.]
+    You take the apple.
+    ~ inventory += apple
+  * [Ignore it.]
+-
+
+The road is long.
+
+  * {inventory ? apple} [Eat the apple]
+    ~inventory -= apple
+  * [Rest]
+  * [Walk]
+```
+
+
+
+<style class="fallback">body{visibility:hidden}</style><script>markdeepOptions={tocStyle:'short'};</script>
+<!-- Markdeep: --><script src="https://casual-effects.com/markdeep/latest/markdeep.min.js?" charset="utf-8"></script>

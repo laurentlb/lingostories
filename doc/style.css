@@ -24,3 +24,14 @@ body {
     font-variant: small-caps;
     margin-bottom: 4px;
 }
+
+.md pre {
+    background: var(--dark-bg-color);
+}
+
+.md blockquote {
+    font-style: italic;
+    background: var(--main-bg-color);
+    padding: 1em;
+    text-align: left;
+}
