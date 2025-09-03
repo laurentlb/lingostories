@@ -702,36 +702,59 @@ details {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: #000;
-    padding: 20px;
+    background: var(--main-bg-color);
+    padding: 0px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     z-index: 1000;
     width: 90%;
     height: 90%;
+    max-width: 800px;
     overflow-y: auto;
-}
-  
-.explain-close-button {
-    margin-top: 10px;
-    padding: 5px 10px;
-    border: none;
-    background: #007BFF;
-    color: white;
-    cursor: pointer;
-    border-radius: 3px;
-}
-  
-.explain-close-button:hover {
-    background: #0056b3;
-}
+    border-radius: 16px;
 
-/* .updates-cards {
-    background-color: #1E293B;
-    border: 1px solid #334155;
-    padding: 1.5rem;
-    border-radius: 12px;
-    margin-bottom: 2rem;
-} */
+    h1 {
+        font-size: 1.2em;
+        color: var(--secondary-text-color);
+    }
+
+    h2 {
+        font-size: 1.1em;
+        margin: 0px;
+        border-bottom: 1px solid var(--highlight-color);        
+    }
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 16px;
+        background: var(--box-bg-color);
+    }
+
+    .content {
+        padding: 16px;
+    };
+
+    .close-button {
+        background: none;
+        border: none;
+        color: #fff;
+        font-size: 2rem;
+        cursor: pointer;
+        padding: 0;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        transition: background-color 0.2s;
+    }
+
+    .close-button:hover {
+        background: var(--dark-bg-color);
+    }    
+}
 
 .updates-cards {
     h2 {
@@ -772,4 +795,18 @@ details {
     .description {
         margin-top: 0.5rem;
     }
+}
+
+
+button {
+    background: var(--main-bg-color);
+    color: #fff;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    padding: .4rem .7rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0056b3;
 }

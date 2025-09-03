@@ -1,11 +1,11 @@
 <!-- Syntax Help Modal Content -->
-<div class="syntax-header">
-    <h2>Syntax Cheat Sheet</h2>
-    <button id="syntax-close" class="explain-close-button">×</button>
+<div class="header">
+    <h1>Syntax Cheat Sheet</h1>
+    <button id="syntax-close" class="close-button">×</button>
 </div>
-<div class="syntax-content">
+<div class="content">
     
-    <h3>Choices</h3>
+    <h2>Choices</h2>
     <ul>
         <li><code>*</code> choice that can be chosen only once
         <li><code>+</code> sticky (can be chosen again)
@@ -18,7 +18,7 @@
 -
 You keep walking.</pre>
 
-    <h3>Knots and Stitches</h3>
+    <h2>Knots and Stitches</h2>
     <ul>
         <li><strong>Knots</strong> (top-level sections)</li>
     </ul>
@@ -29,7 +29,7 @@ You keep walking.</pre>
     </ul>
     <pre>= clearing =</pre>
 
-    <h3>Diverts</h3>
+    <h2>Diverts</h2>
     <ul>
         <li><strong>Jump to another knot or stitch</strong></li>
     </ul>
@@ -40,27 +40,27 @@ You keep walking.</pre>
     </ul>
     <pre>-&gt; END</pre>
     
-    <h3>Brackets</h3>
+    <h2>Brackets</h2>
     <p>Use square brackets after a choice, if the choice is not part of the story.</p>
     <pre>+ [Behind a big tree.]
    You decide to hide behind a big tree.
    -&gt; hidden</pre>
     
-    <h3>Variables</h3>
+    <h2>Variables</h2>
     <ul>
         <li><strong>Declare and assign</strong></li>
     </ul>
     <pre>VAR health = 10
 ~ health = health - 1</pre>
     
-    <h3>Conditionals</h3>
+    <h2>Conditionals</h2>
     <ul>
         <li><strong>Choice conditions</strong></li>
     </ul>
     <pre>* {health &gt; 0} Keep fighting
 * Resign</pre>
 
-    <h3>Comments</h3>
+    <h2>Comments</h2>
 
     <pre>// This is a single line comment</pre>
     <pre>/* This is a multiline

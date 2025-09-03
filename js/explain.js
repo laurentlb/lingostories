@@ -63,22 +63,34 @@ export class Explain {
         const modal = document.createElement("div");
         modal.classList.add("explain-modal");
 
-        // Display the sentence at the top
-        const keyElement = document.createElement("h3");
-        keyElement.textContent = sentence;
-        modal.appendChild(keyElement);
+        // Header section
+        const headerElement = document.createElement("div");
+        headerElement.classList.add("header");
 
-        const text = document.createElement("p");
-        text.innerHTML = this.markdownToHtml(content);
-        modal.appendChild(text);
+        const keyElement = document.createElement("h1");
+        keyElement.textContent = sentence;
+        headerElement.appendChild(keyElement);
 
         const closeButton = document.createElement("button");
-        closeButton.textContent = "Close";
+        closeButton.classList.add("close-button");
+        closeButton.textContent = "×";
         closeButton.addEventListener("click", () => {
             document.body.removeChild(modal);
             document.body.removeChild(overlay);
         });
-        modal.appendChild(closeButton);
+        headerElement.appendChild(closeButton);
+
+        modal.appendChild(headerElement);
+
+        // Content section
+        const contentElement = document.createElement("div");
+        contentElement.classList.add("content");
+
+        const text = document.createElement("p");
+        text.innerHTML = this.markdownToHtml(content);
+        contentElement.appendChild(text);
+
+        modal.appendChild(contentElement);
 
         // Create overlay
         const overlay = document.createElement("div");
