@@ -129,6 +129,9 @@ export class BaseStoryUI {
         }
 
         elt.onclick = () => this.toggleTranslation(elt, line);
+        if (this.settings.showTranslations()) {
+            this.showTranslation(elt, line);
+        }
 
         this.lastSentence = elt;
         container.appendChild(elt);
@@ -284,7 +287,9 @@ export class StoryUI extends BaseStoryUI {
     }
 
     showTranslation(elt, line) {
-        if (!line || !this.settings.showTranslations()) return;
+        if (!line) {
+            return;
+        }
         const transl = document.createElement("p");
         const transLang = this.settings.translationLang();
         transl.textContent = line[transLang];
