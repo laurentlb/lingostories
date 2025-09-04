@@ -51,8 +51,7 @@ internal.ink = Prism.languages.ink = {
 // DOM elements
 const elWorkbench = document.querySelector(".ink-workbench");
 const elEditor = document.getElementById("wb-editor");
-const elOutput = document.getElementById("wb-output");
-const elChoices = document.getElementById("wb-choices");
+const elOutput = document.querySelector(".story");
 
 // Sample Ink code
 const sample = `Story example #title
@@ -139,7 +138,7 @@ loadTheme("github-dark");
 // State
 let autoCompileEnabled = true;
 let autoCompileTimeout = null;
-let lastCompiledContent = '';
+let lastCompiledContent = '';   
 
 // Helper functions for editor content management
 function getEditorContent() {
@@ -153,13 +152,6 @@ function setEditorContent(content) {
     editor.textarea.dispatchEvent(new Event('input'));
 }
 
-// Output functions
-function clearOutput() { 
-    elOutput.innerHTML = ""; 
-    elChoices.innerHTML = "";
-    document.querySelector(".story-end").style.display = "none";
-}
-
 function appendLine(txt, className = '') {
     const div = document.createElement("div");
     div.textContent = txt;
@@ -170,20 +162,6 @@ function appendLine(txt, className = '') {
     setTimeout(() => {
         elOutput.scrollTop = elOutput.scrollHeight;
     }, 0);
-}
-
-function appendChoice(idx, txt) {
-    const btn = document.createElement("button");
-    btn.textContent = txt;
-    btn.onclick = () => { 
-        story.ChooseChoiceIndex(idx);
-        elChoices.innerHTML = "";
-        renderNext(); 
-    };
-    const div = document.createElement("div"); 
-    div.className = "wb-choice";
-    div.appendChild(btn); 
-    elChoices.appendChild(div);
 }
 
 function renderNext() {
@@ -199,10 +177,12 @@ function run() {
     const content = editor.value;
     lastCompiledContent = content;
 
-    clearOutput();
+    document.querySelector(".story-end").style.display = "none";
+
     try {
         story.loadStoryFromText(content, speakers);
     } catch (e) {
+        elOutput.innerHTML = "";
         appendLine(e.message);
         for (const msg of story.compiler.errors) {
             appendLine(`❌ ${msg}`, "error");

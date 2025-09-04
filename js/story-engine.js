@@ -82,6 +82,9 @@ export class Story {
         if (!speaker) {
             return null;
         }
+        if (!this.metadata["speakers"][speaker]) {
+            return { "avatar": "unknown.svg", "color": "#26a" };
+        }
         return this.metadata["speakers"][speaker];
     }
 

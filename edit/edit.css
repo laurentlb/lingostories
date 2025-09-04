@@ -21,6 +21,7 @@
 
 .wb-player-panel {
     padding: 8px;
+    max-width: 616px; /* 600px + padding */
 }
 
 /* Story selector dropdown */
@@ -97,10 +98,6 @@
     overflow: auto;
 }
 
-.wb-editor-panel {
-    border: 1px solid var(--border-color);
-}
-
 .wb-choice button {
     margin-top: .25rem;
     display: block;
@@ -110,21 +107,6 @@
 @media (max-width: 900px) {
     .wb-panels {
         flex-direction: column;
-    }
-}
-
-@media (max-width: 700px) {
-    .wb-editor-panel,
-    .wb-player-panel {
-        display: none;
-    }
-
-    .ink-workbench[data-mode="editor"] .wb-editor-panel {
-        display: flex;
-    }
-
-    .ink-workbench[data-mode="player"] .wb-player-panel {
-        display: flex;
     }
 }
 
