@@ -141,7 +141,7 @@
             "de": "Du erreichst den Hauptplatz.",
             "kr": "",
             "ua": "Ти виходиш на головну площу.",
-            "zh": "你到了主要廣場。",
+            "zh": "你到了中央廣場。",
             "ar": "لقد وصلت للسوق."
         },
         "There are many people on the main square.": {
@@ -155,7 +155,7 @@
             "de": "Auf dem Hauptplatz sind viele Menschen.",
             "kr": "",
             "ua": "На головній площі багато людей.",
-            "zh": "有很多人在主要廣場上。",
+            "zh": "有很多人在中央廣場上。",
             "ar": "يوجد الكثير من الأشخاص في الساحة الرئيسية."
         },
         "A street musician is playing guitar on the main square.": {
@@ -169,7 +169,7 @@
             "de": "Ein Straßenmusiker spielt auf dem Hauptplatz Gitarre.",
             "kr": "",
             "ua": "На головній площі вуличний музикант грає на гітарі.",
-            "zh": "有位街頭藝人在主要廣場上彈吉他。",
+            "zh": "有位街頭藝人在中央廣場上彈吉他。",
             "ar": "عازف الجيتار يعزف في قلب الساحة الرئيسية."
         },
         "On the main square, a group of tourists is taking photos of the old buildings.": {
@@ -183,7 +183,7 @@
             "de": "Auf dem Hauptplatz fotografieren Touristen die alten Gebäude.",
             "kr": "",
             "ua": "На головній площі група туристів фотографує старовинні будівлі.",
-            "zh": "一群遊客在主要廣場上拍攝舊建築的照片。",
+            "zh": "一群遊客在中央廣場上拍攝舊建築的照片。",
             "ar": "في الساحة، مجموعة من السياح يلتقطون الصور للمباني القديمة."
         },
         "@employee What are you looking for?": {
@@ -2014,7 +2014,7 @@
             "sv": "Snabbköpet är precis framför dig.",
             "pl": "Sklep znajduje się tuż przed tobą.",
             "es": "El supermercado está justo delante de ti.",
-            "de": "Der Supermarkt liegt direkt vor Ihnen.",
+            "de": "Der Supermarkt ist direkt vor dir.",
             "kr": "",
             "ua": "Супермаркет просто перед тобою.",
             "zh": "超市就在你前面。",
@@ -2119,7 +2119,7 @@
             "ar": "أهلاً محمد، يا لها من مفاجأة سارة أن أراك اليوم!"
         },
         "@peter I am looking for the bread.": {
-            "en": "I am looking for the bread.",
+            "en": "I am looking for bread.",
             "key": "peteriamlo-30a1",
             "fr": "Je cherche le pain.",
             "nl": "Ik zoek het brood.",
@@ -2143,7 +2143,7 @@
             "de": "Deine Musiklehrerin suchen",
             "kr": "",
             "ua": "Шукати вчительку музики",
-            "zh": "找找你的音樂老師",
+            "zh": "找找音樂老師",
             "ar": "أبحث عن معلمة الموسيقي"
         },
         "Eat chocolate": {
@@ -2227,7 +2227,7 @@
             "de": "Ja",
             "kr": "",
             "ua": "Так",
-            "zh": "是",
+            "zh": "有",
             "ar": "أجل"
         },
         "Another crossroad? Where should you go?": {
@@ -2311,7 +2311,7 @@
             "de": "Als du dich umsiehst, findest du deine Musiklehrerin.",
             "kr": "",
             "ua": "Озираючись навколо, ти бачиш свою вчительку музики.",
-            "zh": "你左看右看的時候，你看到了你的音樂老師。",
+            "zh": "你左看右看的時候，你看到了音樂老師。",
             "ar": "عندما نظرت حولك، وجدت معلمة الموسيقى بفصلك."
         },
         "She is listening to the guitar.": {
@@ -2437,7 +2437,7 @@
             "de": "Vier.",
             "kr": "",
             "ua": "Чотири",
-            "zh": "四個。",
+            "zh": "四顆。",
             "ar": "أربعة."
         },
         "@peter Six.": {
@@ -2451,7 +2451,7 @@
             "de": "Sechs.",
             "kr": "",
             "ua": "Шість",
-            "zh": "六個。",
+            "zh": "六顆。",
             "ar": "ست."
         },
         "@peter Twelve.": {
@@ -2465,7 +2465,7 @@
             "de": "Zwölf.",
             "kr": "",
             "ua": "Дванадцять",
-            "zh": "十二個。",
+            "zh": "十二顆。",
             "ar": "اثنا عشر."
         },
         "@baker Hello Peter, what would you like today?": {
@@ -2535,7 +2535,7 @@
             "de": "Vielleicht kannst du stattdessen Birnen verwenden?",
             "kr": "",
             "ua": "Можливо, натомість можна взяти груші?",
-            "zh": "或許你可以改用梨子？",
+            "zh": "或許你會想要買梨子？",
             "ar": "ربما يمكننا أن نستخدم الكمثرى كبديل؟"
         },
         "@peter Can I get the pears, please?": {
