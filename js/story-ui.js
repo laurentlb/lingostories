@@ -243,6 +243,7 @@ export class StoryUI extends BaseStoryUI {
         this.updateCollectionTopStatus = updateCollectionTopStatus;
         this.explainer = new Explain();
         this.openTransl = null;
+        this.highlightedText = null;
     }
 
     async init(name, language) {
@@ -251,10 +252,15 @@ export class StoryUI extends BaseStoryUI {
     }
 
     playLineAudio(line, container, onDone) {
+        if (this.highlightedText !== null) {
+            this.highlightedText.classList.remove("playing-audio");
+        }
+        this.highlightedText = container;
         container.classList.add("playing-audio");
+
         listenMP3(this.story, line, this.settings, (success) => {
             container.classList.remove("playing-audio");
-            if (onDone !== null && success && settings.readingMode() === "autoAdvance") {
+            if (onDone !== null && success && this.settings.readingMode() === "autoAdvance") {
                 onDone();
             }
         });

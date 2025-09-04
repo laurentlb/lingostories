@@ -6,13 +6,12 @@ class AudioPlayer {
       this.audio = new Audio();
       this.currentCallback = null;
   
-      this.audio.addEventListener('ended', this.handleStop.bind(this, 'ended'));
-      this.audio.addEventListener('error', this.handleStop.bind(this, 'error'));
-      this.audio.addEventListener('pause', this.handleStop.bind(this, 'pause'));
+      this.audio.addEventListener('ended', this.triggerCallback.bind(this, 'ended', true));
+      this.audio.addEventListener('error', this.triggerCallback.bind(this, 'error'));
     }
   
     play(url, volume, playbackRate, callback) {
-        this.triggerCallback(); // previous callback if any
+        this.triggerCallback('newplay'); // call previous callback if any
 
         this.currentCallback = callback;
 
@@ -21,20 +20,17 @@ class AudioPlayer {
         this.audio.src = url;
         this.audio.play().catch((error) => {
             console.error("Playback failed:", error);
-            this.handleStop('exception');
+            this.triggerCallback('exception');
         });
     }
   
-    handleStop(cause) {
-        // console.log("Audio stopped due to:", cause);
-        this.triggerCallback();
-    }
-  
-    triggerCallback() {
-      if (this.currentCallback) {
-        this.currentCallback();
-        this.currentCallback = null;
-      }
+    triggerCallback(cause, ended) {
+        if (this.currentCallback) {
+            // console.log("Audio event:", cause, ended);
+            const cb = this.currentCallback;
+            this.currentCallback = null; // prevent multiple calls
+            cb(ended === true);
+        }
     }
 }
 

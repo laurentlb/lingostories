@@ -214,6 +214,7 @@ h3 {
 .explain-icon {
     height: 2em;
     opacity: 50%;
+    margin: 4px;
 }
 
 .story-image {
@@ -651,7 +652,7 @@ details {
     bottom: 106px;
     z-index: 50;
     border: 1px solid var(--border-color);
-    background: #222;
+    background: var(--dark-bg-color);
     max-width: 588px; /* 600px - 2*6px padding in middle */
     width: calc(100% - 12px);
     justify-content: space-around;

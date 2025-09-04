@@ -84,10 +84,9 @@ export class WordShuffleGame {
             }, 10);
             
         } else {
-            soundEffect(this.settings, 'game-success');
-            setTimeout(() => {
+            soundEffect(this.settings, 'game-success', () => {
                 this.callback();
-            }, 100);
+            });
         }
     }
 }
