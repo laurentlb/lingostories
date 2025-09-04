@@ -204,9 +204,9 @@ You enter the bakery.
 
 - (loop)
 
-* {not apples} [Apples]
+* {not (inventory ? apples)} [Apples]
     @peter Do you have apples?
-    Sorry, this is a bakery, we don't sell apples.
+    @baker Sorry, this is a bakery, we don't sell apples.
 * {not (inventory ? pastry)} [Pastry (2🪙)]
     @peter This pastry, please.
     {buy(pastry, 2):
