@@ -111,11 +111,16 @@
 }
 
 .content code, .content pre {
-    background: var(--dark-bg-color);
     padding: 8px;
     border-radius: 8px;
     font-family: 'Courier New', monospace;
     font-size: 0.9rem;
+    background: var(--box-bg-color);
+}
+
+.content h2 {
+    border: 0px;
+    margin: 1.5em 0 1em 0;
 }
 
 /* Responsive adjustments for syntax modal */

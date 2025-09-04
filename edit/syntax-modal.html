@@ -4,7 +4,18 @@
     <button id="syntax-close" class="close-button">×</button>
 </div>
 <div class="content">
-    
+
+    <p><strong>Need help?</strong>
+        
+        <ul>
+            <li> Read <a href="/doc/writing.html" target="_blank" rel="noopener">LingoStories writing guide</a>.
+            <li> Read <a href="https://github.com/inkle/ink/blob/master/Documentation/WritingWithInk.md" target="_blank" rel="noopener">full Ink documentation</a>
+                for comprehensive guides and examples. Remember that the text needs to be translated, so you cannot include variables as part of the text.
+        </ul>
+
+    <p> Below is a quick cheat sheet. </p>
+    <hr>
+
     <h2>Choices</h2>
     <ul>
         <li><code>*</code> choice that can be chosen only once
@@ -20,23 +31,23 @@ You keep walking.</pre>
 
     <h2>Knots and Stitches</h2>
     <ul>
-        <li><strong>Knots</strong> (top-level sections)</li>
+        <li>Knots (top-level sections)</li>
     </ul>
     <pre>=== forest ===</pre>
     
     <ul>
-        <li><strong>Stitches</strong> (subsections inside knots)</li>
+        <li>Stitches (subsections inside knots)</li>
     </ul>
     <pre>= clearing =</pre>
 
     <h2>Diverts</h2>
     <ul>
-        <li><strong>Jump to another knot or stitch</strong></li>
+        <li>Jump to another knot or stitch</li>
     </ul>
     <pre>-&gt; forest</pre>
     
     <ul>
-        <li><strong>End story</strong></li>
+        <li>End story</li>
     </ul>
     <pre>-&gt; END</pre>
     
@@ -46,31 +57,43 @@ You keep walking.</pre>
    You decide to hide behind a big tree.
    -&gt; hidden</pre>
     
+    <h2>Comments</h2>
+
+    <pre>// This is a single line comment
+
+/* This is a multiline
+line comment */</pre>
+    
+    <h2>Dialogues</h2>
+    <p>Prefix a sentence with <code>@name</code> if a character says something.</p>
+    <pre>@tom Hi Anna, it's great to see you here!</pre>
+
+    <h2>Text variations</h2>
+
+    <p>When the story has loops, it can feel repetitive to always see the same text. It's possible to have some variations
+        (see <a href="https://github.com/inkle/ink/blob/master/Documentation/WritingWithInk.md#8-variable-text" target="_blank" rel="noopener">documentation</a>): </p>
+    <pre>
+// Cycle through options.
+{&It was the morning.|It was the afternoon.|It was the evening.}
+// Go through the options only once.
+{!I laughed.|I smiled.|I grimaced.|I ignored him.}
+// Randomly pick one option.
+I tossed the coin. {~Heads.|Tails.}</pre>
+
+
     <h2>Variables</h2>
     <ul>
-        <li><strong>Declare and assign</strong></li>
+        <li>Declare and assign</li>
     </ul>
     <pre>VAR health = 10
 ~ health = health - 1</pre>
     
     <h2>Conditionals</h2>
     <ul>
-        <li><strong>Choice conditions</strong></li>
+        <li>Conditional choices</li>
     </ul>
     <pre>* {health &gt; 0} Keep fighting
 * Resign</pre>
 
-    <h2>Comments</h2>
-
-    <pre>// This is a single line comment</pre>
-    <pre>/* This is a multiline
-line comment */</pre>
-    
-    <hr>
-    <p><strong>Need more help?</strong> Check out the <a
-    href="https://github.com/inkle/ink/blob/master/Documentation/WritingWithInk.md"
-    target="_blank" rel="noopener">full Ink documentation</a> for
-    comprehensive guides and examples. Remember that the text needs to
-    be translated, so you cannot include variables as part of the text.
 </p>
 </div>
