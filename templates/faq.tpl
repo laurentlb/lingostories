@@ -5,7 +5,7 @@
                 <li>
                     <div class="date">2025-09-02</div>
                     <div class="news-title">New Story Editor</div>
-                    <div class="description">Use <a href="/edit">the new editor</a> to create your own stories. <a href="doc/contributing.md.html">Read more</a> about how to collaborate and get the stories published on the website. </div>
+                    <div class="description">Use <a href="/edit">the new editor</a> to create your own stories. <a href="doc/contributing.html">Read more</a> about how to collaborate and get the stories published on the website. </div>
                 <li>
                     <div class="date">2025-01-19</div>
                     <div class="news-title">AI-Powered Explanations</div>
@@ -101,7 +101,7 @@
                 <summary><h2>How can I contribute to the project?</h2></summary>
             <p>
                 We welcome contributions! Our goal is to create a <a
-                href="/doc/contributing.md.html">community of contributors</a>
+                href="/doc/contributing.html">community of contributors</a>
                 to write and translate stories in many languages. The list of
                 languages is still limited now, but you can <a
                 href="https://forms.gle/9djaTH25wUN74psm8">request a new

@@ -2,7 +2,12 @@
 
 **LingoStories - Writing Stories**
 
-# Overview
+<div class="top" style="display: block;">
+   <div class="icon-bar">
+       <a href="/" id="back-icon"><img src="../img/back.svg" class="icon top-icon" title="Back to the story list"></a>
+       <a href="/" id="home-icon"><img src="../img/home.svg" class="icon top-icon" title="Back to the main page"></a>
+   </div>
+</div>
 
 LingoStories stories are created using the Ink format.
 
@@ -12,7 +17,7 @@ The story should be engaging but written with simple vocabulary and grammar (thi
 > Context: Once the text has been written with [the editor](https://lingostories.org/edit/), it is later translated to other languages, audio is generated for every language,
 > and we generate illustration images. Once everything is done, we can publish the story on https://lingostories.org/.
 
-## Writing requirements:
+# Writing requirements
 
 * Stories are written in English and then translated to other languages. The reference is the English version.
 * The story should be suitable and appealing for the general audience worldwide.
@@ -63,6 +68,14 @@ The story should be engaging but written with simple vocabulary and grammar (thi
    - You can invent your own character names, even if they are not displayed correctly in the preview.
 * Avoid writing "... she said". Each spoken dialogue is a separate line, not part of the narration.
 
+Example:
+
+```md
+Tom waves back and walks over to her.
+@tom Hi Anna, it's great to see you here!
+@anna Hi Tom, what a nice surprise!
+```
+
 ## Inventory
 
 Define the list of items at the beginning of the story.
@@ -71,9 +84,9 @@ Define the list of items at the beginning of the story.
 * Use `{inventory ? apple}` to check if an item is in the inventory.
 * Use `~inventory -= apple` to remove an item.
 
-Sample:
+Example:
 
-```
+```md
 LIST items = apple, key, pen, book
 VAR inventory = ()
 
@@ -96,3 +109,4 @@ The road is long.
 
 <style class="fallback">body{visibility:hidden}</style><script>markdeepOptions={tocStyle:'short'};</script>
 <!-- Markdeep: --><script src="https://casual-effects.com/markdeep/latest/markdeep.min.js?" charset="utf-8"></script>
+<script data-goatcounter="https://lingostories.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>

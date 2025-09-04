@@ -4,34 +4,46 @@ body {
 
 .md {
     display: block;
-    border: 1px solid var(--border-color);
-    background-color: var(--box-bg-color);
     border-radius: 16px;
     padding: 8px 16px;
+    margin-top: 56px;
+}
+
+.md h1::before, .md h2::before {
+    content: "";
+}
+
+.md h1 {
+    color: var(--highlight-color);
+    border: 0;
 }
 
 .md h2 {
-    color: var(--highlight-color);
+    color: var(--secondary-text-color);
+    border: 0;
 }
 
 .md a:link, .md a:visited {
     color: var(--highlight-color);
 }
 
-.md .title {
-    color: var(--highlight-color);
-    text-transform: capitalize;
-    font-variant: small-caps;
-    margin-bottom: 4px;
+.md div.title {
+    margin-bottom: 0px;
+    border: 0;
 }
 
 .md pre {
-    background: var(--dark-bg-color);
+    background: var(--box-bg-color);
+    padding: 1em;
 }
 
 .md blockquote {
     font-style: italic;
-    background: var(--main-bg-color);
+    background: var(--box-bg-color);
     padding: 1em;
     text-align: left;
+}
+
+.markdeepFooter {
+    display: none;
 }
