@@ -10,4 +10,6 @@ export const allStories = [
      },
     { id: "numbers", title: "A Game of Numbers", imageCount: 0,
         released: false },
+    { id: "restaurant", title: "At the Restaurant", imageCount: 0,
+        released: false },
 ];

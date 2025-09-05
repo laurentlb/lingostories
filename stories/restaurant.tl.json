@@ -1,0 +1,303 @@
+{
+    "speakers": {
+        "you": {
+            "avatar": "man.svg",
+            "color": "#26a",
+            "side": "right"
+        },
+        "anna": {
+            "avatar": "woman.svg",
+            "color": "#484"
+        },
+        "waiter": {
+            "avatar": "man2.svg",
+            "color": "#288"
+        }
+    },
+    "sentences": {
+        "You walk down the street on a sunny afternoon.": {
+            "en": "You walk down the street on a sunny afternoon."
+        },
+        "You are a little hungry, so you decide to stop at a café nearby.": {
+            "en": "You are a little hungry, so you decide to stop at a café nearby."
+        },
+        "The sign says: *Sunny Café*.": {
+            "en": "The sign says: *Sunny Café*."
+        },
+        "Inside, you hear people talking, cups clinking, and soft music playing.": {
+            "en": "Inside, you hear people talking, cups clinking, and soft music playing."
+        },
+        "You find a small table near the big window.": {
+            "en": "You find a small table near the big window."
+        },
+        "You can see people walking by on the street.": {
+            "en": "You can see people walking by on the street."
+        },
+        "A waiter comes with a smile.": {
+            "en": "A waiter comes with a smile."
+        },
+        "You sit in the garden under a green umbrella.": {
+            "en": "You sit in the garden under a green umbrella."
+        },
+        "Birds sing, and the air sme  lls of coffee and bread.": {
+            "en": "Birds sing, and the air smells of coffee and bread."
+        },
+        "A waiter walks over.": {
+            "en": "A waiter walks over."
+        },
+        "@Waiter Hello! Welcome to Sunny Café. Here is the menu.": {
+            "en": "Hello! Welcome to Sunny Café. Here is the menu."
+        },
+        "You look at the waiter. He seems friendly.": {
+            "en": "You look at the waiter. He seems friendly."
+        },
+        "@You Hello. What do you recommend today?": {
+            "en": "Hello. What do you recommend today?"
+        },
+        "@Waiter The pizza is popular. Many people also like the fresh salad.": {
+            "en": "The pizza is popular. Many people also like the fresh salad."
+        },
+        "The menu has many choices.": {
+            "en": "The menu has many choices."
+        },
+        "@You I would like the pizza, please.": {
+            "en": "I would like the pizza, please."
+        },
+        "@Waiter Great choice! One pizza coming soon.": {
+            "en": "Great choice! One pizza coming soon."
+        },
+        "@You I would like the salad, please.": {
+            "en": "I would like the salad, please."
+        },
+        "@Waiter Healthy and fresh! I will bring it.": {
+            "en": "Healthy and fresh! I will bring it."
+        },
+        "@You I would like the fish, please.": {
+            "en": "I would like the fish, please."
+        },
+        "@Waiter Good choice! Please wait.": {
+            "en": "Good choice! Please wait."
+        },
+        "You wait for your food. Time passes.": {
+            "en": "You wait for your food. Time passes."
+        },
+        "A person you know walks into the café.": {
+            "en": "A person you know walks into the café."
+        },
+        "It is your friend, Anna.": {
+            "en": "It is your friend, Anna."
+        },
+        "@anna Oh! Hi, it’s good to see you here. Can I join you?": {
+            "en": "Oh! Hi, it’s good to see you here. Can I join you?"
+        },
+        "@You Of course, sit down!": {
+            "en": "Of course, sit down!"
+        },
+        "Anna smiles and sits across from you.": {
+            "en": "Anna smiles and sits across from you."
+        },
+        "@anna What did you order?": {
+            "en": "What did you order?"
+        },
+        "@You I ordered pizza.": {
+            "en": "I ordered pizza."
+        },
+        "@You I ordered salad.": {
+            "en": "I ordered salad."
+        },
+        "@You I ordered fish.": {
+            "en": "I ordered fish."
+        },
+        "@anna That sounds nice!": {
+            "en": "That sounds nice!"
+        },
+        "@You Today I walked in the park and now I’m here. I just wanted to relax.": {
+            "en": "Today I walked in the park and now I’m here. I just wanted to relax."
+        },
+        "@anna That sounds peaceful.": {
+            "en": "That sounds peaceful."
+        },
+        "@You Sorry, I just want to be alone today.": {
+            "en": "Sorry, I just want to be alone today."
+        },
+        "Anna nods.": {
+            "en": "Anna nods."
+        },
+        "@anna Okay, maybe next time.": {
+            "en": "Okay, maybe next time."
+        },
+        "She leaves, and you sit quietly until your food arrives.": {
+            "en": "She leaves, and you sit quietly until your food arrives."
+        },
+        "@You How was your day, Anna?": {
+            "en": "How was your day, Anna?"
+        },
+        "@anna Busy! I went shopping and studied English. I feel tired but happy.": {
+            "en": "Busy! I went shopping and studied English. I feel tired but happy."
+        },
+        "@You You work very hard. That’s impressive.": {
+            "en": "You work very hard. That’s impressive."
+        },
+        "@anna Thank you! I try my best.": {
+            "en": "Thank you! I try my best."
+        },
+        "@You Let’s talk about something fun. Do you want to go to the cinema late?": {
+            "en": "Let’s talk about something fun. Do you want to go to the cinema late?"
+        },
+        "@anna That’s a nice idea!": {
+            "en": "That’s a nice idea!"
+        },
+        "The waiter returns with a plate.": {
+            "en": "The waiter returns with a plate."
+        },
+        "The pizza smells delicious, but wait… this is *salad*, not pizza!": {
+            "en": "The pizza smells delicious, but wait… this is *salad*, not pizza!"
+        },
+        "The salad looks fresh, but wait… this is *fish*, not salad!": {
+            "en": "The salad looks fresh, but wait… this is *fish*, not salad!"
+        },
+        "The fish is ready, but wait… this is *pizza*, not fish!": {
+            "en": "The fish is ready, but wait… this is *pizza*, not fish!"
+        },
+        "@You Excuse me, this is not what I ordered!": {
+            "en": "Excuse me, this is not what I ordered!"
+        },
+        "@Waiter Oh, I am very sorry! Let me check the kitchen.": {
+            "en": "Oh, I am very sorry! Let me check the kitchen."
+        },
+        "You decide not to make a problem.": {
+            "en": "You decide not to make a problem."
+        },
+        "@You It’s okay, I will eat this.": {
+            "en": "It’s okay, I will eat this."
+        },
+        "The waiter looks relieved.": {
+            "en": "The waiter looks relieved."
+        },
+        "@Waiter Thank you for understanding.": {
+            "en": "Thank you for understanding."
+        },
+        "You eat slowly. Even if it’s not what you wanted, the food is tasty.": {
+            "en": "You eat slowly. Even if it’s not what you wanted, the food is tasty."
+        },
+        "You feel calm as the day passes.": {
+            "en": "You feel calm as the day passes."
+        },
+        "You share the food with Anna.": {
+            "en": "You share the food with Anna."
+        },
+        "@anna Thank you! It’s fun to share.": {
+            "en": "Thank you! It’s fun to share."
+        },
+        "You both laugh and enjoy the meal together.": {
+            "en": "You both laugh and enjoy the meal together."
+        },
+        "The sun goes down, and it was a good day.": {
+            "en": "The sun goes down, and it was a good day."
+        },
+        "@You Please bring the food I asked for.": {
+            "en": "Please bring the food I asked for."
+        },
+        "@Waiter Of course, please wait a moment.": {
+            "en": "Of course, please wait a moment."
+        },
+        "He goes back to the kitchen and soon returns with the correct plate.": {
+            "en": "He goes back to the kitchen and soon returns with the correct plate."
+        },
+        "The correct food is delicious! You enjoy every bite.": {
+            "en": "The correct food is delicious! You enjoy every bite."
+        },
+        "You feel satisfied and relaxed.": {
+            "en": "You feel satisfied and relaxed."
+        },
+        "You taste the food but feel disappointed.": {
+            "en": "You taste the food but feel disappointed."
+        },
+        "@You Sorry, this is still not good.": {
+            "en": "Sorry, this is still not good."
+        },
+        "The waiter looks sad, and you feel the day is not as happy as you hoped.": {
+            "en": "The waiter looks sad, and you feel the day is not as happy as you hoped."
+        },
+        "Sit inside near the window": {
+            "audio": false,
+            "en": "Sit inside near the window"
+        },
+        "Sit outside in the garden": {
+            "audio": false,
+            "en": "Sit outside in the garden"
+        },
+        "Look at the menu": {
+            "audio": false,
+            "en": "Look at the menu"
+        },
+        "Talk to the waiter first": {
+            "audio": false,
+            "en": "Talk to the waiter first"
+        },
+        "Thank him and check the menu": {
+            "audio": false,
+            "en": "Thank him and check the menu"
+        },
+        "Order pizza": {
+            "audio": false,
+            "en": "Order pizza"
+        },
+        "Order salad": {
+            "audio": false,
+            "en": "Order salad"
+        },
+        "Order fish": {
+            "audio": false,
+            "en": "Order fish"
+        },
+        "Invite Anna to sit with you": {
+            "audio": false,
+            "en": "Invite Anna to sit with you"
+        },
+        "Say you want to be alone": {
+            "audio": false,
+            "en": "Say you want to be alone"
+        },
+        "Ask Anna about her day": {
+            "audio": false,
+            "en": "Ask Anna about her day"
+        },
+        "Talk about your own day": {
+            "audio": false,
+            "en": "Talk about your own day"
+        },
+        "Tell her she works hard": {
+            "audio": false,
+            "en": "Tell her she works hard"
+        },
+        "Change the topic": {
+            "audio": false,
+            "en": "Change the topic"
+        },
+        "Accept the wrong food anyway": {
+            "audio": false,
+            "en": "Accept the wrong food anyway"
+        },
+        "Ask him to bring the right order": {
+            "audio": false,
+            "en": "Ask him to bring the right order"
+        },
+        "Eat and enjoy": {
+            "audio": false,
+            "en": "Eat and enjoy"
+        },
+        "Share the food with Anna": {
+            "audio": false,
+            "en": "Share the food with Anna"
+        },
+        "Eat and feel happy": {
+            "audio": false,
+            "en": "Eat and feel happy"
+        },
+        "Taste and complain again": {
+            "audio": false,
+            "en": "Taste and complain again"
+        }
+    }
+}

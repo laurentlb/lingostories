@@ -82,6 +82,7 @@ export class Story {
         if (!speaker) {
             return null;
         }
+        speaker = speaker.toLowerCase();
         if (!this.metadata["speakers"][speaker]) {
             return { "avatar": "unknown.svg", "color": "#26a" };
         }
