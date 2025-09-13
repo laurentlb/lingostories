@@ -2,6 +2,8 @@ import os
 import shutil
 import http.server
 import socketserver
+import sys
+import argparse
 
 script_dir = os.path.dirname(os.path.abspath(__file__))
 root_dir = os.path.abspath(os.path.join(script_dir, ".."))
@@ -27,6 +29,35 @@ def load_template(file_name):
     with open(file_path, "r", encoding="utf-8") as f:
         return f.read()
 
+def copy_directory(src, dst):
+    """
+    Recursively copies a directory from a source path to a destination path,
+    handling Python version compatibility for the 'dirs_exist_ok' argument.
+
+    For Python versions < 3.8, this function will first remove the destination
+    directory if it exists, effectively mimicking the behavior of
+    dirs_exist_ok=True. For Python 3.8+, it uses the native argument.
+    """
+    try:
+        # Check if the Python version supports dirs_exist_ok
+        if sys.version_info >= (3, 8):
+            shutil.copytree(src, dst, dirs_exist_ok=True)
+            print(f"Successfully copied '{src}' to '{dst}' using dirs_exist_ok.")
+        else:
+            # For older Python versions, first remove the destination if it exists
+            if os.path.exists(dst):
+                print(f"Warning: Destination '{dst}' already exists. Deleting it to proceed...")
+                shutil.rmtree(dst)
+            shutil.copytree(src, dst)
+            print(f"Successfully copied '{src}' to '{dst}' (old method).")
+
+    except FileExistsError:
+        # This can still happen on older Python versions if a file exists
+        # within the destination path, but not the directory itself.
+        print(f"Error: A file already exists at '{dst}'.")
+    except Exception as e:
+        print(f"An unexpected error occurred: {e}")
+
 def copy_directories():
     """Copy static files and create symlinks for additional directories."""
     static_dir = os.path.join(root_dir, "static")
@@ -38,7 +69,7 @@ def copy_directories():
 
     # Copy static files
     if os.path.exists(static_dir):
-        shutil.copytree(static_dir, dist_dir, dirs_exist_ok=True)
+        copy_directory(static_dir, dist_dir)
         print(f"Copied all contents from {static_dir} to {dist_dir}")
     else:
         print(f"Directory 'static' not found. Skipping.")
@@ -48,18 +79,19 @@ def copy_directories():
         src_dir = os.path.join(root_dir, directory)
         dest_dir = os.path.join(dist_dir, directory)
         if os.path.exists(src_dir):
-            shutil.copytree(src_dir, dest_dir, dirs_exist_ok=True)
+            copy_directory(src_dir, dest_dir)
             print(f"Copied all contents from {src_dir} to {dest_dir}")
         else:
             print(f"Directory '{directory}' not found. Skipping.")
 
-    # Create symlink for audio directory
+    # Create relative symlink for audio directory
     if os.path.exists(audio_dir):
         try:
             if os.path.islink(dist_audio_dir) or os.path.exists(dist_audio_dir):
                 os.unlink(dist_audio_dir)  # Remove existing symlink or directory
-            os.symlink(audio_dir, dist_audio_dir)
-            print(f"Created symlink for {audio_dir} at {dist_audio_dir}")
+            relative_audio_path = os.path.relpath(audio_dir, dist_dir)
+            os.symlink(relative_audio_path, dist_audio_dir)
+            print(f"Created relative symlink for {audio_dir} at {dist_audio_dir}")
         except OSError as e:
             print(f"Failed to create symlink for audio directory: {e}")
     else:
@@ -101,13 +133,25 @@ def start_server():
         try:
             httpd.serve_forever()
         except KeyboardInterrupt:
-            print("\nStopping server...")
+            print("Stopping server...")
             httpd.shutdown()
             httpd.server_close()
-            print("\nServer stopped.")
+            print("Server stopped.")
+
+def parse_arguments():
+    """Parse command-line arguments."""
+    parser = argparse.ArgumentParser(description="Generate static content and optionally start a server.")
+    parser.add_argument(
+        "--no-server",
+        action="store_true",
+        help="Disable the server. Only generate static content."
+    )
+    return parser.parse_args()
 
 def main():
     """Main entry point for the script."""
+    args = parse_arguments()
+
     # Load templates
     lang_tpl = load_template("lang.tpl")
     faq_tpl = load_template("faq.tpl")
@@ -121,8 +165,11 @@ def main():
 
     print("Static pages generated!")
 
-    # Start the server in the main thread
-    start_server()
+    # Start the server if not disabled by the CLI flag
+    if not args.no_server:
+        start_server()
+    else:
+        print("Server is disabled. Exiting.")
 
 if __name__ == "__main__":
     main()

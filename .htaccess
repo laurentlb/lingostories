@@ -1,8 +1,7 @@
-# Enable RewriteEngine
 RewriteEngine On
-
-# Allow symlinks
 Options +FollowSymLinks
 
+# Avoid infinite recursion
+RewriteCond %{REQUEST_URI} !^/dist/
 # Redirect all requests to the /dist/ directory
 RewriteRule ^(.*)$ /dist/$1 [L]
