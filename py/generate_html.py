@@ -5,6 +5,8 @@ import socketserver
 import sys
 import argparse
 import json
+from email.utils import formatdate
+import html
 
 script_dir = os.path.dirname(os.path.abspath(__file__))
 root_dir = os.path.abspath(os.path.join(script_dir, ".."))
@@ -62,8 +64,6 @@ def copy_directory(src, dst):
 def copy_directories():
     """Copy static files and create symlinks for additional directories."""
     static_dir = os.path.join(root_dir, "static")
-    audio_dir = os.path.join(root_dir, "audio")
-    dist_audio_dir = os.path.join(dist_dir, "audio")
 
     # Directories to copy
     additional_dirs = ["img", "js", "edit", "stories", "doc"]
@@ -85,18 +85,22 @@ def copy_directories():
         else:
             print(f"Directory '{directory}' not found. Skipping.")
 
-    # Create relative symlink for audio directory
-    if os.path.exists(audio_dir):
-        try:
-            if os.path.islink(dist_audio_dir) or os.path.exists(dist_audio_dir):
-                os.unlink(dist_audio_dir)  # Remove existing symlink or directory
-            relative_audio_path = os.path.relpath(audio_dir, dist_dir)
-            os.symlink(relative_audio_path, dist_audio_dir)
-            print(f"Created relative symlink for {audio_dir} at {dist_audio_dir}")
-        except OSError as e:
-            print(f"Failed to create symlink for audio directory: {e}")
-    else:
-        print(f"Directory 'audio' not found. Skipping.")
+    # Create relative symlinks for special directories
+    for symlink in ["audio", "admin"]:
+        the_dir = os.path.join(root_dir, symlink)
+        dist_link = os.path.join(dist_dir, symlink)
+        # dist_audio_dir in [dist_audio_dir]:
+        if os.path.exists(the_dir):
+            try:
+                if os.path.islink(dist_link) or os.path.exists(dist_link):
+                    os.unlink(dist_link)  # Remove existing symlink or directory
+                relative_audio_path = os.path.relpath(the_dir, dist_dir)
+                os.symlink(relative_audio_path, dist_link)
+                print(f"Created relative symlink for {the_dir} at {dist_link}")
+            except OSError as e:
+                print(f"Failed to create symlink for {symlink} directory: {e}")
+        else:
+            print(f"Directory '{symlink}' not found. Skipping.")
 
 def load_updates():
     """Load updates from the JSON file."""
@@ -142,6 +146,46 @@ def generate_main_index(index_tpl, faq_tpl):
     with open(output_path, "w", encoding="utf-8") as f:
         f.write(html)
 
+def generate_rss(updates):
+    """Generate an RSS file from the updates."""
+    rss_path = os.path.join(dist_dir, "rss.xml")
+
+    # Convert dates to RFC-822 format
+    def format_rfc822(date_str):
+        from datetime import datetime
+        dt = datetime.strptime(date_str, "%Y-%m-%d")
+        return formatdate(dt.timestamp())
+
+    rss_items = "".join(
+        f"""
+        <item>
+            <title>{update.get('title', 'Update')}</title>
+            <link>https://lingostories.org</link>
+            <description><![CDATA[{update['description']}]]></description>
+            <pubDate>{format_rfc822(update['date'])}</pubDate>
+        </item>
+        """
+        for update in updates
+    )
+
+    rss_content = f"""<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+  <channel>
+    <title>LingoStories</title>
+    <link>https://lingostories.org</link>
+    <description>Latest updates and news from LingoStories</description>
+    <language>en-us</language>
+    <pubDate>{format_rfc822(updates[0]['date'])}</pubDate>
+    <lastBuildDate>{format_rfc822(updates[0]['date'])}</lastBuildDate>
+    {rss_items}
+  </channel>
+</rss>
+"""
+    os.makedirs(dist_dir, exist_ok=True)
+    with open(rss_path, "w", encoding="utf-8") as f:
+        f.write(rss_content)
+    print(f"RSS file generated at {rss_path}")
+
 def start_server():
     """Start a simple HTTP server to serve the generated content."""
     os.chdir(dist_dir)
@@ -185,12 +229,16 @@ def main():
     index_tpl = load_template("index.tpl")
     settings_tpl = load_template("settings.tpl")
 
+    # Load updates
+    updates = load_updates()
+
     # Perform tasks
     copy_directories()
     generate_language_pages(lang_tpl, faq_tpl, settings_tpl)
     generate_main_index(index_tpl, faq_tpl)
+    generate_rss(updates)
 
-    print("Static pages generated!")
+    print("Static pages and RSS feed generated!")
 
     # Start the server if not disabled by the CLI flag
     if not args.no_server:

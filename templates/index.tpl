@@ -12,6 +12,7 @@
 <link rel="icon" href="/icon.svg" type="image/svg+xml" />
 <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 <link rel="manifest" href="/site.webmanifest">
+<link rel="alternate" type="application/rss+xml" title="LingoStories" href="/rss.xml" />
 
 <title>LingoStories - Free interactive stories for language learners</title>
 <link rel="stylesheet" href="style.css">
