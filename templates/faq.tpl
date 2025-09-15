@@ -38,7 +38,7 @@
             </details>
 
             <details>
-                <summary><h2>Is this website really free?</h2></summary>
+                <summary><h2>Is LingoStories really free?</h2></summary>
             <p>
                 Yes. LingoStories is 100% free. There are no ads, no account to create, no
                 arbitrary limitations. The texts are published under a Creative
@@ -93,9 +93,10 @@
             <hr>
 
             <h3>Connect with LingoStories</h3>
-            <p>
+            <div class="social">
                 <a href="https://discord.gg/SEefvsutca"><img class="logo" title="Discord community" src="/img/discord.svg"></a>
                 <a href="https://github.com/laurentlb/lingostories"><img class="inv-logo" title="GitHub" src="/img/github.svg"></a>
                 <a href="https://www.instagram.com/lingostories"><img class="logo" title="Instagram" src="/img/instagram.svg"></a>
-            </p>
+                <a href="/rss.xml"><img class="inv-logo" title="RSS stream" src="/img/rss.svg"></a>
+            </div>
         </div>

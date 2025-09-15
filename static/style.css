@@ -477,15 +477,6 @@ li > label {
     width: 180px;
 }
 
-.inv-logo, .logo {
-    width: 32px;
-    margin-right: 16px;
-}
-
-.inv-logo {
-    filter: invert(1);
-}
-
 .main-logo {
     height: 1.2em;
     vertical-align: middle;
@@ -818,4 +809,24 @@ blockquote {
     padding: 1em;
     line-height: 1.3em;
     hyphens: auto;
+}
+
+.social {
+    display: flex;
+    justify-content: space-evenly;
+
+    .logo, .inv-logo {
+        width: 42px;
+    }
+
+    .logo:hover, .inv-logo:hover {
+        border-color: var(--highlight-color);
+        scale: 1.3;
+        rotate: -5deg;
+        transition: all .2s;
+    }
+
+    .inv-logo {
+        filter: invert(1);
+    }
 }
