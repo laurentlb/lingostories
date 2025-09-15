@@ -1,33 +1,10 @@
-        <div class="info updates-cards">
+<div class="info updates-cards">
             <h2>What's New</h2>
-
-            <ul>
-                <li>
-                    <div class="date">2025-09-02</div>
-                    <div class="news-title">New Story Editor</div>
-                    <div class="description">Use <a href="/edit">the new editor</a> to create your own stories. <a href="doc/contributing.html">Read more</a> about how to collaborate and get the stories published on the website. </div>
-                <li>
-                    <div class="date">2025-01-19</div>
-                    <div class="news-title">AI-Powered Explanations</div>
-                    <div class="description">Get sentence explanations powered by AI, helping you understand complex grammar. In the stories, click on the question mark next to selected sentences.</div>
-            </ul>
-
+            <!-- Main updates -->
+            {updates}
             <details>
                 <summary><h2>Other Updates</h2></summary>
-            <ul>
-                <li> <span class="date">2025-01-17</span>Support for microphone (see settings), for you to repeat the sentences out loud
-                <li> <span class="date">2024-10-26</span>Park: Added Dutch and Swedish translations
-                <li> <span class="date">2024-09-03</span>Published <a href="/guide.html">a user guide</a>
-                <li> <span class="date">2024-09-01</span>New story added ("The Grocery List") for French and English, using a better game engine
-                <li> <span class="date">2024-07-27</span>Add dialogue bubbles to better recognize the characters
-                <li> <span class="date">2024-07-16</span>Support for direct speech, with avatars and matching voice (depending on the language)
-                <li> <span class="date">2024-07-03</span>Added/fixed translations in Swedish, Dutch, German, Portuguese, and Polish
-                <li> <span class="date">2024-06-22</span>Blog post: <a href="https://laurent.le-brun.eu/blog/building-lingostories-an-experimental-project-for-language-learners">Building LingoStories: An Experimental Project for Language Learners</a>                    
-                <li> <span class="date">2024-06-22</span>Added a minigame (reorder words) + image collections
-                <li> <span class="date">2024-06-05</span>New story "A Day in the Park"
-                <li> <span class="date">2024-03-29</span>Added support for autoplay in the settings
-                <li> <span class="date">2024-03-05</span>Published the proof of concept
-            </ul>
+                {other_updates}
             </details>
 
             <hr>

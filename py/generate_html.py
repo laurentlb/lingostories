@@ -4,6 +4,7 @@ import http.server
 import socketserver
 import sys
 import argparse
+import json
 
 script_dir = os.path.dirname(os.path.abspath(__file__))
 root_dir = os.path.abspath(os.path.join(script_dir, ".."))
@@ -97,8 +98,31 @@ def copy_directories():
     else:
         print(f"Directory 'audio' not found. Skipping.")
 
+def load_updates():
+    """Load updates from the JSON file."""
+    updates_path = os.path.join(root_dir, "updates.json")
+    with open(updates_path, "r", encoding="utf-8") as f:
+        return json.load(f)
+
+def format_updates(updates):
+    """Format updates into HTML."""
+    recent = updates[0:2]
+    recent_updates_html = "".join(
+        f"<li><div class='date'>{update['date']}</div><div class='news-title'>{update['title']}</div><div class='description'>{update['description']}</div></li>"
+        for update in recent
+    )
+    other = updates[2:]
+    other_updates_html = "".join(
+        f"<li><span class='date'>{update['date']}</span>{update['description']}</li>"
+        for update in other
+    )
+    return recent_updates_html, other_updates_html
+
 def generate_language_pages(lang_tpl, faq_tpl, settings_tpl):
     """Generate HTML files for each language."""
+    updates = load_updates()
+    recent_updates_html, other_updates_html = format_updates(updates)
+    faq_tpl = faq_tpl.replace("{updates}", recent_updates_html).replace("{other_updates}", other_updates_html)
     for lang, language in languages.items():
         faq = faq_tpl.format(language=language)
         html = lang_tpl.format(language=language, lang_code=lang, faq=faq, settings=settings_tpl)
@@ -109,6 +133,9 @@ def generate_language_pages(lang_tpl, faq_tpl, settings_tpl):
 
 def generate_main_index(index_tpl, faq_tpl):
     """Generate the main index.html file."""
+    updates = load_updates()
+    recent_updates_html, other_updates_html = format_updates(updates)
+    faq_tpl = faq_tpl.replace("{updates}", recent_updates_html).replace("{other_updates}", other_updates_html)
     output_path = os.path.join(dist_dir, "index.html")
     faq = faq_tpl.format(language="your target language")
     html = index_tpl.format(faq=faq)

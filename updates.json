@@ -1,0 +1,60 @@
+[
+    {
+        "date": "2025-09-02",
+        "title": "New Story Editor",
+        "description": "Use <a href='/edit'>the new editor</a> to create your own stories. <a href='doc/contributing.html'>Read more</a> about how to collaborate and get the stories published on the website."
+    },
+    {
+        "date": "2025-01-19",
+        "title": "AI-Powered Explanations",
+        "description": "Get sentence explanations powered by AI, helping you understand complex grammar. In the stories, click on the question mark next to selected sentences."
+    },
+    {
+        "date": "2025-01-17",
+        "description": "Support for microphone (see settings), for you to repeat the sentences out loud"
+    },
+    {
+        "date": "2024-10-26",
+        "description": "Park: Added Dutch and Swedish translations"
+    },
+    {
+        "date": "2024-09-03",
+        "description": "Published <a href='/guide.html'>a user guide</a>"
+    },
+    {
+        "date": "2024-09-01",
+        "description": "New story added ('The Grocery List') for French and English, using a better game engine"
+    },
+    {
+        "date": "2024-07-27",
+        "description": "Add dialogue bubbles to better recognize the characters"
+    },
+    {
+        "date": "2024-07-16",
+        "description": "Support for direct speech, with avatars and matching voice (depending on the language)"
+    },
+    {
+        "date": "2024-07-03",
+        "description": "Added/fixed translations in Swedish, Dutch, German, Portuguese, and Polish"
+    },
+    {
+        "date": "2024-06-22",
+        "description": "Blog post: <a href='https://laurent.le-brun.eu/blog/building-lingostories-an-experimental-project-for-language-learners'>Building LingoStories: An Experimental Project for Language Learners</a>"
+    },
+    {
+        "date": "2024-06-22",
+        "description": "Added a minigame (reorder words) + image collections"
+    },
+    {
+        "date": "2024-06-05",
+        "description": "New story 'A Day in the Park'"
+    },
+    {
+        "date": "2024-03-29",
+        "description": "Added support for autoplay in the settings"
+    },
+    {
+        "date": "2024-03-05",
+        "description": "Published the proof of concept"
+    }
+]
