@@ -167,10 +167,9 @@ def generate_rss(updates):
         """
         for update in updates
     )
-
-    rss_content = f"""<?xml version="1.0" encoding="UTF-8" ?>
-<rss version="2.0">
-  <channel>
+    rss_content = f"""<?xml version="1.0" encoding="utf-8" standalone="yes"?><?xml-stylesheet type="text/xsl" href="/rss.xsl"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
     <title>LingoStories</title>
     <link>https://lingostories.org</link>
     <description>Latest updates and news from LingoStories</description>
