@@ -1,0 +1,39 @@
+{
+    "items": [],
+    "speakers": {
+        "anna": {
+            "avatar": "woman.svg",
+            "color": "#a26"
+        },
+        "you": {
+            "avatar": "peter.svg",
+            "color": "#26a",
+            "side": "right"
+        },
+        "janitor": {
+            "avatar": "man2.svg",
+            "color": "#484"
+        },
+        "cook": {
+            "avatar": "man5.svg",
+            "color": "#a62"
+        },
+        "seller": {
+            "avatar": "man2.svg",
+            "color": "#288"
+        },
+        "classmate": {
+            "avatar": "man3.svg",
+            "color": "#288"
+        },
+        "librarian": {
+            "avatar": "man3.svg",
+            "color": "#a22"
+        },
+        "student": {
+            "avatar": "man5.svg",
+            "color": "#a22"
+        }
+    },
+    "sentences": {}
+}

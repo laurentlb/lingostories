@@ -12,4 +12,6 @@ export const allStories = [
         released: false },
     { id: "restaurant", title: "At the Restaurant", imageCount: 0,
         released: false },
+    { id: "lost", title: "Lost & Found", imageCount: 0,
+        released: false },
 ];
