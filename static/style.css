@@ -817,6 +817,7 @@ blockquote {
 
     .logo, .inv-logo {
         width: 42px;
+        height: 42px;
     }
 
     .logo:hover, .inv-logo:hover {

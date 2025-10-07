@@ -95,6 +95,7 @@
             <h3>Connect with LingoStories</h3>
             <div class="social">
                 <a href="https://discord.gg/SEefvsutca"><img class="logo" title="Discord community" src="/img/discord.svg"></a>
+                <a href="https://www.reddit.com/r/lingostories"><img class="logo" title="Reddit" src="/img/reddit.svg"></a>
                 <a href="https://github.com/laurentlb/lingostories"><img class="inv-logo" title="GitHub" src="/img/github.svg"></a>
                 <a href="https://www.instagram.com/lingostories"><img class="logo" title="Instagram" src="/img/instagram.svg"></a>
                 <a href="/rss.xml"><img class="inv-logo" title="RSS stream" src="/img/rss.svg"></a>
