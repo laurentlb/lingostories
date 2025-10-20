@@ -1,3 +1,13 @@
+
+            <h3>Connect with LingoStories</h3>
+            <div class="social">
+                <a href="https://discord.gg/SEefvsutca"><img class="logo" title="Discord community" src="/img/discord.svg"></a>
+                <a href="https://www.reddit.com/r/lingostories"><img class="logo" title="Reddit" src="/img/reddit.svg"></a>
+                <a href="https://github.com/laurentlb/lingostories"><img class="inv-logo" title="GitHub" src="/img/github.svg"></a>
+                <a href="https://www.instagram.com/lingostories"><img class="logo" title="Instagram" src="/img/instagram.svg"></a>
+                <a href="/rss.xml"><img class="inv-logo" title="RSS stream" src="/img/rss.svg"></a>
+            </div>
+
 <div class="info updates-cards">
             <h2>What's New</h2>
             <!-- Main updates -->
@@ -89,15 +99,39 @@
                 to laurentlb@gmail.com).
             </p>
             </details>
+            <details>
+                <summary><h2>Do you use AI or generated content?</h2></summary>
+            <p>
+                <ul>
+                <li>Stories are imagined and written by contributors.
+                <li>Translations are also made by volunteers. We have found that automated translations can't
+                    provide the expected level of quality we aim for.
+                <li>Voices are generated using text-to-speech software. Recording high quality voices can be difficult
+                    or expensive, and would make it difficult to update a story in the future. However, this can be considered
+                    if someone is willing to provide recordings or pay for a professional voice actors. Let us know how
+                    important this is to you.
+                </ul>
+                <li>Illustrations are generated using AI. We'll replace them if anyone volunteers to make graphics.
+            </p>
+            </details>
+            <details>
+                <summary><h2>When will you add more content?</h2></summary>
+            <p>
+                Content is created by volunteers on their free time. For this reason, we cannot commit to any timeline.
+                If you want to help, please share the lingostories website to your friends and on social media. You can also
+                follow us to be notified of the future stories. The more people use the website, the more volunteers we can
+                have, and the more content we can created.
+            </p>
+            </details>
+            <details>
+                <summary><h2>What about creating a video game?</h2></summary>
+            <p>
+                This is an area we are exploring. Video games can help make the content more immersive and engaging.
+                For more information, please check the blog post
+                <a href="https://laurent.le-brun.eu/blog/designing-a-video-game-for-language-learners">Designing a video game for language learners</a>.
+                Contributors are welcome!
+            </p>
+            </details>
 
-            <hr>
 
-            <h3>Connect with LingoStories</h3>
-            <div class="social">
-                <a href="https://discord.gg/SEefvsutca"><img class="logo" title="Discord community" src="/img/discord.svg"></a>
-                <a href="https://www.reddit.com/r/lingostories"><img class="logo" title="Reddit" src="/img/reddit.svg"></a>
-                <a href="https://github.com/laurentlb/lingostories"><img class="inv-logo" title="GitHub" src="/img/github.svg"></a>
-                <a href="https://www.instagram.com/lingostories"><img class="logo" title="Instagram" src="/img/instagram.svg"></a>
-                <a href="/rss.xml"><img class="inv-logo" title="RSS stream" src="/img/rss.svg"></a>
-            </div>
         </div>

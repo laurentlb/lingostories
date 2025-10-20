@@ -814,6 +814,7 @@ blockquote {
 .social {
     display: flex;
     justify-content: space-evenly;
+    margin-bottom: 1.5em;
 
     .logo, .inv-logo {
         width: 42px;
