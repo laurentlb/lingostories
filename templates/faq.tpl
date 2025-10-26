@@ -120,7 +120,7 @@
                 Content is created by volunteers on their free time. For this reason, we cannot commit to any timeline.
                 If you want to help, please share the lingostories website to your friends and on social media. You can also
                 follow us to be notified of the future stories. The more people use the website, the more volunteers we can
-                have, and the more content we can created.
+                have and the more content we can create.
             </p>
             </details>
             <details>
