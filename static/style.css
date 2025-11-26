@@ -45,6 +45,12 @@ body, html {
 select {
     background-color: var(--box-bg-color);
     color: var(--main-text-color);
+    padding: 2px;
+}
+
+h3 select {
+    padding: 4px;
+    font-size: 1em;
 }
 
 input[type="range"], input[type="checkbox"] {

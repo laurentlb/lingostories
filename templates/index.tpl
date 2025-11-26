@@ -26,8 +26,24 @@
             </p>
         </div>
 
+        <h3>I speak...
+            <select id="translation-lang">
+                <option value="ar">Arabic</option>
+                <option value="nl">Dutch</option>
+                <option value="en" selected>English</option>
+                <option value="fr">French</option>
+                <option value="de">German</option>
+                <option value="zh">Mandarin</option>
+                <option value="pl">Polish</option>
+                <option value="pt">Portuguese</option>
+                <option value="es">Spanish</option>
+                <option value="sv">Swedish</option>
+                <option value="ua">Ukrainian</option>
+            </select>
+        </h3>
+
         <div id="language-selector">
-            <h3>Select a language to practice.</h3>
+            <h3>and I want to practice...</h3>
             <ul>
                 <li><a href="/ar/"><img class="flag" src="/img/flags/ar.svg" alt=""><div>Arabic</div></a>
                 <li><a href="/nl/"><img class="flag" src="/img/flags/nl.svg" alt=""><div>Dutch</div></a>
@@ -62,6 +78,14 @@
         window.location.replace(newUrl);
     }}
 }})();
+</script>
+
+<script type="module">
+import {{ Settings }} from "./js/settings.js";
+import {{ UserData }} from "./js/userdata.js";
+const userData = new UserData();
+const settings = new Settings(userData);
+settings.init();
 </script>
 
 <script data-goatcounter="https://lingostories.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>

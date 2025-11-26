@@ -1,6 +1,8 @@
 export class Settings {
     constructor(userData) {
         this.userData = userData;
+        // The front page only has #translation-lang, but not the other settings.
+        this.pageHasFullSettings = document.querySelector(".options") !== null;
     }
 
     translationLang() {
@@ -32,6 +34,15 @@ export class Settings {
     }
 
     save() {
+        if (!this.pageHasFullSettings) {
+            // Only save the translation language on this page.
+            this.userData.saveData("settings", {
+                ...this.userData.loadData("settings", {}),
+                translationLang: this.translationLang()
+            });
+            return;
+        }
+
         this.userData.saveData("settings", {
             translationLang: this.translationLang(),
             readingMode: this.readingMode(),
@@ -54,16 +65,26 @@ export class Settings {
             useMicrophone: false
         });
         document.querySelector("#translation-lang").value = settings.translationLang;
-        document.querySelector("#reading-mode").value = settings.readingMode;
-        document.querySelector("#audio-volume").value = settings.volume;
-        document.querySelector("#show-translations").checked = settings.showTranslations;
-        document.querySelector("#voice-speed").value = settings.voiceSpeed;
-        document.querySelector("#enable-minigames").checked = settings.enableMinigames;
-        document.querySelector("#use-microphone").checked = settings.useMicrophone;
+        if (this.pageHasFullSettings) {
+            document.querySelector("#reading-mode").value = settings.readingMode;
+            document.querySelector("#audio-volume").value = settings.volume;
+            document.querySelector("#show-translations").checked = settings.showTranslations;
+            document.querySelector("#voice-speed").value = settings.voiceSpeed;
+            document.querySelector("#enable-minigames").checked = settings.enableMinigames;
+            document.querySelector("#use-microphone").checked = settings.useMicrophone;
+        }
     }
 
     init() {
         this.load();
+
+        document.querySelector("#translation-lang").onchange = () => {
+            this.save();
+        };
+
+        if (!this.pageHasFullSettings) {
+            return;
+        }
 
         showTranslationLegend();
         showReadingModeLegend();
@@ -84,10 +105,6 @@ export class Settings {
         };
 
         document.querySelector("#voice-speed").oninput = () => {
-            this.save();
-        };
-
-        document.querySelector("#translation-lang").onchange = () => {
             this.save();
         };
 
