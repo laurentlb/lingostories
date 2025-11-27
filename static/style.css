@@ -248,8 +248,12 @@ h3 {
     }
 
     .listening {
-        animation: micPulse 1s ease-in-out infinite;
+        animation: micPulse 0.5s ease-in-out infinite;
         transform-origin: center;
+    }
+
+    .disabled {
+        opacity: 0.5;
     }
 }
 
@@ -259,7 +263,7 @@ h3 {
       opacity: 1;
     }
     50% {
-      transform: scale(1.1);
+      transform: scale(1.15);
       opacity: 0.7;
     }
     100% {

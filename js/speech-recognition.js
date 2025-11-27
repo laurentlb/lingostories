@@ -126,7 +126,6 @@ export class SpeechRecognitionBox {
         const expected = this.words.join(" ").toLowerCase();
         this.container.innerHTML = "";
 
-        console.log("updateResult", event.results);
         for (let i = event.resultIndex; i < event.results.length; i++) {
             for (let j = 0; j < event.results[i].length; j++) {
                 const elt = document.createElement("div");

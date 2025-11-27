@@ -17,8 +17,10 @@ function listeningCallback(isListening) {
 
     if (isListening) {
         icon.classList.add("listening");
-    } else {     
+        icon.classList.remove("disabled");
+    } else {
         icon.classList.remove("listening");
+        icon.classList.add("disabled");
     }
 }
 
@@ -246,6 +248,8 @@ function next(nextSentence = false) {
         }
     }
 
+    hideSpeechRecognition();
+
     if (!story.canContinue) {
         storyUI.showChoices(story.currentChoices);
         updateButtons();
@@ -271,8 +275,14 @@ function toggleListening() {
     speechRecognition.toggle();
 }
 
+function hideSpeechRecognition() {
+    const speechRecognitionBox = document.querySelector(".speech-recognition");
+    speechRecognitionBox.style.display = "none";
+    speechRecognitionBox.querySelector(".output").innerHTML = "";
+}
+
 function listenMic() {
-    const speechRecognitionBox = document.querySelector(".speech-recognition");    
+    const speechRecognitionBox = document.querySelector(".speech-recognition");
     speechRecognitionBox.style.display = "flex";
     const textToRepeat = storyUI.lastSentence.textContent;
     speechRecognition.init(story.lang, textToRepeat, () => {
