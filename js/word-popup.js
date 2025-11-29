@@ -68,8 +68,14 @@ function GoogleTranslate(text, source, target) {
 function DeepL(text, source, target) {
     // Example:
     // https://www.deepl.com/translator#fr/en-us/maison
-    if (target === "ua") target = "uk"; // DeepL uses 'uk' for Ukrainian
-    if (source === "ua") source = "uk"; // DeepL uses 'uk' for Ukrainian
+
+    const convertLangCode = (lang) => {
+        if (lang === "ua") return "uk"; // DeepL uses 'uk' for Ukrainian
+        return lang;
+    }
+
+    target = convertLangCode(target);
+    source = convertLangCode(source);
 
     const url = `https://www.deepl.com/translator#${source}/${target}/${encodeURIComponent(text)}`;
     return url;
@@ -89,10 +95,63 @@ function WordReference(text, source, target) {
     return url;
 }
 
+function DictCC(text, source, target) {
+    // Example:
+    // https://enfr.dict.cc/?s=maison
+
+    // en/de => any
+    const supportedLangs = ["en", "de"];
+    if (!supportedLangs.includes(source) && !supportedLangs.includes(target)) {
+        return null;
+    }
+
+    const convertLangCode = (lang) => {
+        if (lang === "ua") return "uk"; // DeepL uses 'uk' for Ukrainian
+        return lang;
+    }
+
+    target = convertLangCode(target);
+    source = convertLangCode(source);
+
+    const url = `https://${source}${target}.dict.cc/?s=${encodeURIComponent(text)}`;
+    return url;
+}
+
+function PonsCom(text, source, target) {
+    // Example:
+    // https://en.pons.com/text-translation/french-english?q=maison
+
+    const langMap = {
+        "en": "english",
+        "fr": "french",
+        "de": "german",
+        "es": "spanish",
+        "it": "italian",
+        "nl": "dutch",
+        "pl": "polish",
+        "pt": "portuguese",
+        "ru": "russian",
+        "sv": "swedish",
+        "tr": "turkish",
+        "ua": "ukrainian",
+    };
+
+    source = langMap[source] || null;
+    target = langMap[target] || null;
+    if (source === null || target === null) {
+        return null;
+    }
+
+    const url = `https://en.pons.com/text-translation/${source}-${target}?q=${encodeURIComponent(text)}`;
+    return url;
+}
+
 function getDictionaries(text, source, target) {
     return {
-        "Google Translate": GoogleTranslate(text, source, target),
         "DeepL": DeepL(text, source, target),
+        "Dict.cc": DictCC(text, source, target),
+        "Google Translate": GoogleTranslate(text, source, target),
+        "Pons.com": PonsCom(text, source, target),
         "WordReference": WordReference(text, source, target),
     };
 }
