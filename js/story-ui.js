@@ -75,6 +75,12 @@ export class BaseStoryUI {
         container.classList.add("sentence-container");
         this.domStory.appendChild(container);
 
+        const translateElt = document.createElement("img");
+        translateElt.src = "/img/translate.svg";
+        translateElt.classList.add("icon", "translate-icon");
+        translateElt.onclick = () => this.toggleTranslation(container, line);
+        container.appendChild(translateElt);
+
         const audioElt = document.createElement("img");
         const speaker = line["speaker"];
         if (speaker) {
@@ -128,7 +134,7 @@ export class BaseStoryUI {
             elt.classList.add("bubble", `bubble-${side}`);
         }
 
-        elt.onclick = () => this.toggleTranslation(elt, line);
+        elt.onclick = () => this.toggleTranslation(container, line);
         if (this.settings.showTranslations()) {
             this.showTranslation(elt, line);
         }
@@ -321,6 +327,7 @@ export class StoryUI extends BaseStoryUI {
     }
 
     toggleTranslation(elt, line) {
+        elt = elt.querySelector(".text");
         if (elt.classList.contains("spoiler")) {
             this.next();
             return;

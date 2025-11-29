@@ -94,12 +94,12 @@ h3 {
     color: var(--secondary-text-color);
 }
 
-.top-icon:hover, .text-icon:hover, .player-icon:hover, .bubble-icon:hover, .audio-icon:hover, .choice-icon:hover, .explain-icon:hover {
+.top-icon:hover, .text-icon:hover, .player-icon:hover, .bubble-icon:hover, .translate-icon:hover, .audio-icon:hover, .choice-icon:hover, .explain-icon:hover {
     transform: translateY(-4px);
     rotate: -5deg;
 }
 
-.bubble-icon:hover, .audio-icon:hover, .speaker:hover {
+.bubble-icon:hover, .audio-icon:hover, .translate-icon:hover, .speaker:hover {
     transform: scale(1.5);
 }
 
@@ -197,7 +197,7 @@ h3 {
     cursor: pointer;
 }
 
-.audio-icon {
+.translate-icon, .audio-icon {
     height: 1.2rem;
     margin-right: 8px;
 }
