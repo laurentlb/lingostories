@@ -85,8 +85,6 @@ hr {
 }
 
 h2 {
-    /* margin-block: 0.5em;
-    font-size: 1.2em; */
     color: var(--highlight-color);
 }
 
@@ -101,11 +99,6 @@ h3 {
 
 .bubble-icon:hover, .audio-icon:hover, .translate-icon:hover, .speaker:hover {
     transform: scale(1.5);
-}
-
-.text:hover, .choice:hover {
-    text-shadow: 4px 4px 8px #ffd3;
-    color: #ffd;
 }
 
 .playing-audio > .text {
@@ -123,7 +116,6 @@ h3 {
 }
 
 .text {
-    cursor: help;
     margin: 0; /* remove margin, e.g. for h2 */
 }
 
@@ -200,6 +192,7 @@ h3 {
 .translate-icon, .audio-icon {
     height: 1.2rem;
     margin-right: 8px;
+    align-self: flex-start;
 }
 
 .bubble-icon {
@@ -404,7 +397,6 @@ summary {
     width: 100%;
     padding: 8px;
     align-items: center;
-    /* display: flex; */
     justify-content: space-evenly;
     display: none;
 }
@@ -585,18 +577,20 @@ details {
 
 .sentence-container {
     display: flex;
+    position: relative;
     align-items: center;
     margin: 0.75em 0;
     --character-color: #444;
     --bubble-bg: color-mix(in srgb, var(--character-color) 25%, #001);
+    position: relative;
 
     p {
         margin-block: 0em;
     }
-}
 
-.sentence-container > * {
-    display: inline-block;
+    .word {
+        cursor: help;
+    }
 }
 
 .word-shuffle-game {
@@ -840,5 +834,33 @@ blockquote {
 
     .inv-logo {
         filter: invert(1);
+    }
+}
+
+/* Styling for the popup itself */
+.word-popup {
+    position: absolute;
+    color: var(--main-text-color);
+    font-size: 18px;
+
+    padding: 1em;
+    background-color: var(--box-bg-color);
+    border: 1px solid var(--border-color);
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    overflow-y: auto;
+    border-radius: 16px;
+    width: max-content;
+
+    transform: translate(-50%, -100%); 
+
+    li {
+        margin-block: 4px;
+    }
+
+    ul {
+        margin: 0;
+        padding-left: 2em;
     }
 }

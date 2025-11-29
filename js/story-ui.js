@@ -2,6 +2,7 @@ import { Explain } from "./explain.js";
 import { allStories } from "./stories.js";
 import { listenMP3, soundEffect } from "./audio.js";
 import { WordShuffleGame } from "./wordShuffleGame.js";
+import { WordPopup } from "./word-popup.js";
 
 // ---------------- BaseStoryUI ----------------
 export class BaseStoryUI {
@@ -114,6 +115,46 @@ export class BaseStoryUI {
         }
     }
 
+    showWordPopup(container, word) {
+        var popup = new WordPopup();
+        popup.showWordPopup(container, container, word, this.story.lang, this.settings.translationLang());
+    }
+
+    addEachWordToDom(sentenceElement, content) {
+        const tokens = content.match(/(\p{L}+|\s+|\P{L}+)/gu) || [];
+        
+        sentenceElement.textContent = ''; 
+
+        // Create a DocumentFragment for efficient DOM manipulation
+        const fragment = document.createDocumentFragment();
+
+        tokens.forEach(token => {
+            if (/\p{L}/u.test(token)) {
+                const wordSpan = document.createElement('span');
+                wordSpan.textContent = token;
+                wordSpan.classList.add('word');
+                fragment.appendChild(wordSpan);
+            } else {
+                const nonWordTextNode = document.createTextNode(token);
+                fragment.appendChild(nonWordTextNode);
+            }
+        });
+
+        sentenceElement.appendChild(fragment);
+
+        // Attach the single event listener to the parent container for event delegation
+        const parent = this;
+        sentenceElement.addEventListener('click', function(event) {
+            const clickedElement = event.target;
+
+            if (clickedElement.classList.contains('word')) {
+                var popup = new WordPopup();
+                popup.showWordPopup(sentenceElement, clickedElement, clickedElement.textContent,
+                    parent.story.lang, parent.settings.translationLang());
+            }
+        });
+    }
+
     actuallyShowText(container, line, useSpoiler) {
         const content = line[this.story.lang];
         const isTitle = line.isTitle;
@@ -127,14 +168,13 @@ export class BaseStoryUI {
         }
 
         elt.classList.add("text");
-        elt.textContent = content;
+        this.addEachWordToDom(elt, content);
         const speaker = line["speaker"];
         if (speaker) {
             const side = speaker.side === "right" ? "right" : "left";
             elt.classList.add("bubble", `bubble-${side}`);
         }
 
-        elt.onclick = () => this.toggleTranslation(container, line);
         if (this.settings.showTranslations()) {
             this.showTranslation(elt, line);
         }
