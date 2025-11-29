@@ -16,6 +16,7 @@ export class BaseStoryUI {
         this.actionPending = false;
         this.lastSentence = null;
         this.lastAudioIcon = null;
+        this.lastTranslateIcon = null;
         this.lastChoices = [];
         this.didShowChoices = false;
     }
@@ -77,12 +78,15 @@ export class BaseStoryUI {
         this.domStory.appendChild(container);
 
         const translateElt = document.createElement("img");
+        translateElt.title = "Translate (T)";
         translateElt.src = "/img/translate.svg";
         translateElt.classList.add("icon", "translate-icon");
         translateElt.onclick = () => this.toggleTranslation(container, line);
+        this.lastTranslateIcon = translateElt;
         container.appendChild(translateElt);
 
         const audioElt = document.createElement("img");
+        audioElt.title = "Play audio (R)";
         const speaker = line["speaker"];
         if (speaker) {
             this.createSpeaker(audioElt, speaker, container);

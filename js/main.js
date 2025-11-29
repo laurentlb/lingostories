@@ -314,7 +314,7 @@ document.addEventListener("keydown", (event) => {
         if (event.ctrlKey || event.metaKey || event.altKey) {
             return;
         }
-        storyUI.lastSentence.click();
+        storyUI.lastTranslateIcon.click();
     }
 
     if (event.key === "r") {
