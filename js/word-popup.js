@@ -1,7 +1,10 @@
 import { marked } from 'https://cdn.jsdelivr.net/npm/marked/lib/marked.esm.js';
+import { LingoStoriesWordTranslator } from './word-translator.js';
 
 export class WordPopup {
-    constructor() { }
+    constructor() {
+        this.wordTranslator = new LingoStoriesWordTranslator();
+    }
 
     createWordPopupElement(container, id) {
         var existingPopup = document.getElementById(id);
@@ -17,10 +20,15 @@ export class WordPopup {
         return popup;
     }
 
-    setPopupContent(popupElement, word, source, target) {
+    async setPopupContent(popupElement, word, source, target) {
         popupElement.innerHTML = ''; // Clear existing content
 
-        popupElement.appendChild(document.createTextNode(`"${word}":`));
+        try {
+            popupElement.appendChild(document.createTextNode(`"${word}" - ${await this.wordTranslator.translate(source, word, target)}:`));
+        } catch (e) {
+            console.log(e)
+            popupElement.appendChild(document.createTextNode(`"${word}":`));
+        }
         const links = getDictionaries(word, source, target);
         const listElement = document.createElement('ul');
         for (const [name, url] of Object.entries(links)) {
