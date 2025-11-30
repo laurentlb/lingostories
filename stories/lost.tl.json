@@ -18,21 +18,21 @@
             "avatar": "man5.svg",
             "color": "#a62"
         },
-        "seller": {
-            "avatar": "man2.svg",
-            "color": "#288"
-        },
-        "classmate": {
-            "avatar": "man3.svg",
-            "color": "#288"
-        },
         "librarian": {
+            "avatar": "woman.svg",
+            "color": "#288"
+        },
+        "student1": {
+            "avatar": "man1.svg",
+            "color": "#288"
+        },
+        "student2": {
             "avatar": "man3.svg",
             "color": "#a22"
         },
-        "student": {
+        "student3": {
             "avatar": "man5.svg",
-            "color": "#a22"
+            "color": "#2a2"
         }
     },
     "sentences": {}
