@@ -66,7 +66,7 @@ def copy_directories():
     static_dir = os.path.join(root_dir, "static")
 
     # Directories to copy
-    additional_dirs = ["img", "js", "edit", "stories", "doc"]
+    additional_dirs = ["img", "js", "edit", "stories", "doc", "py"]
 
     # Copy static files
     if os.path.exists(static_dir):
