@@ -1,5 +1,10 @@
 [
     {
+        "date": "2025-11-30",
+        "title": "Dictionary lookup",
+        "description": "Clicking on a word in the story now shows its translation. Links to dictionaries are also provided for more details."
+    },
+    {
         "date": "2025-09-02",
         "title": "New Story Editor",
         "description": "Use <a href='/edit'>the new editor</a> to create your own stories. <a href='doc/contributing.html'>Read more</a> about how to collaborate and get the stories published on the website."
