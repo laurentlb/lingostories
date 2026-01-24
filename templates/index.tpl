@@ -28,61 +28,45 @@
 
         <h3>I speak...
             <select id="translation-lang">
-                <option value="ar">Arabic</option>
-                <option value="nl">Dutch</option>
-                <option value="en" selected>English</option>
-                <option value="fr">French</option>
-                <option value="de">German</option>
-                <option value="zh">Mandarin</option>
-                <option value="pl">Polish</option>
-                <option value="pt">Portuguese</option>
-                <option value="es">Spanish</option>
-                <option value="sv">Swedish</option>
-                <option value="ua">Ukrainian</option>
+                {% for lang in languages %}
+                    <option value="{{lang}}">{{languages[lang]}}</option>
+                {% endfor %}
             </select>
         </h3>
 
         <div id="language-selector">
             <h3>and I want to practice...</h3>
             <ul>
-                <li><a href="/ar/"><img class="flag" src="/img/flags/ar.svg" alt=""><div>Arabic</div></a>
-                <li><a href="/nl/"><img class="flag" src="/img/flags/nl.svg" alt=""><div>Dutch</div></a>
-                <li><a href="/en/"><img class="flag" src="/img/flags/en.svg" alt=""><div>English</div></a>
-                <li><a href="/fr/"><img class="flag" src="/img/flags/fr.svg" alt=""><div>French</div></a>
-                <li><a href="/de/"><img class="flag" src="/img/flags/de.svg" alt=""><div>German</div></a>
-                <li><a href="/zh/"><img class="flag" src="/img/flags/zh.svg" alt=""><div>Mandarin</div></a>
-                <li><a href="/pl/"><img class="flag" src="/img/flags/pl.svg" alt=""><div>Polish</div></a>
-                <li><a href="/pt/"><img class="flag" src="/img/flags/pt.svg" alt=""><div>Portuguese</div></a>
-                <li><a href="/es/"><img class="flag" src="/img/flags/es.svg" alt=""><div>Spanish</div></a>
-                <li><a href="/sv/"><img class="flag" src="/img/flags/sv.svg" alt=""><div>Swedish</div></a>
-                <li><a href="/ua/"><img class="flag" src="/img/flags/ua.svg" alt=""><div>Ukrainian</div></a>
+            {% for lang in languages %}
+                <li><a href="/{{lang}}/"><img class="flag" src="/img/flags/{{lang}}.svg" alt=""><div>{{languages[lang]}}</div></a>
+            {% endfor %}
             </ul>
         </div>
 
-        {faq}
+        {% include 'faq.tpl' %}
     </div>
 </div>
 
 <script>
 // Redirect old URLs with `lang` query param to new paths
-(function() {{
+(function() {
     const urlParams = new URLSearchParams(window.location.search);
     const lang = urlParams.get("lang");
 
-    if (lang) {{
+    if (lang) {
         // Construct new URL without `lang` in the query params
         urlParams.delete("lang");
         const newQuery = urlParams.toString();
-        const newUrl = `/${{lang}}/` + (newQuery ? `?${{newQuery}}` : "");
+        const newUrl = `/${lang}/` + (newQuery ? `?${newQuery}` : "");
 
         window.location.replace(newUrl);
-    }}
-}})();
+    }
+})();
 </script>
 
 <script type="module">
-import {{ Settings }} from "./js/settings.js";
-import {{ UserData }} from "./js/userdata.js";
+import { Settings } from "./js/settings.js";
+import { UserData } from "./js/userdata.js";
 const userData = new UserData();
 const settings = new Settings(userData);
 settings.init();
@@ -94,7 +78,7 @@ settings.init();
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-SJPVM9P6EP"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
-  function gtag(){{dataLayer.push(arguments);}}
+  function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
   gtag('config', 'G-SJPVM9P6EP');
 </script>

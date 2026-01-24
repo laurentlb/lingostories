@@ -7,10 +7,16 @@ import argparse
 import json
 from email.utils import formatdate
 import html
+from jinja2 import Environment, FileSystemLoader, select_autoescape
 
 script_dir = os.path.dirname(os.path.abspath(__file__))
 root_dir = os.path.abspath(os.path.join(script_dir, ".."))
 dist_dir = os.path.abspath(os.path.join(root_dir, "dist"))
+
+env = Environment(
+    loader=FileSystemLoader(os.path.join(root_dir, "templates")),
+    autoescape=select_autoescape(['html', 'xml'])
+)
 
 languages = {
     "ar": "Arabic",
@@ -25,12 +31,6 @@ languages = {
     "ua": "Ukrainian",
     "zh": "Mandarin",
 }
-
-def load_template(file_name):
-    """Load a template file from the templates directory."""
-    file_path = os.path.join(root_dir, "templates", file_name)
-    with open(file_path, "r", encoding="utf-8") as f:
-        return f.read()
 
 def copy_directory(src, dst):
     """
@@ -108,43 +108,38 @@ def load_updates():
     with open(updates_path, "r", encoding="utf-8") as f:
         return json.load(f)
 
-def format_updates(updates):
-    """Format updates into HTML."""
-    recent = updates[0:2]
-    recent_updates_html = "".join(
-        f"<li><div class='date'>{update['date']}</div><div class='news-title'>{update['title']}</div><div class='description'>{update['description']}</div></li>"
-        for update in recent
-    )
-    other = updates[2:]
-    other_updates_html = "".join(
-        f"<li><span class='date'>{update['date']}</span>{update['description']}</li>"
-        for update in other
-    )
-    return recent_updates_html, other_updates_html
-
-def generate_language_pages(lang_tpl, faq_tpl, settings_tpl):
+def generate_language_pages():
     """Generate HTML files for each language."""
     updates = load_updates()
-    recent_updates_html, other_updates_html = format_updates(updates)
-    faq_tpl = faq_tpl.replace("{updates}", recent_updates_html).replace("{other_updates}", other_updates_html)
-    for lang, language in languages.items():
-        faq = faq_tpl.format(language=language)
-        html = lang_tpl.format(language=language, lang_code=lang, faq=faq, settings=settings_tpl)
-        output_path = os.path.join(dist_dir, f"{lang}/index.html")
+    template = env.get_template("lang.tpl")
+    for lang_code, lang_name in languages.items():
+        output_path = os.path.join(dist_dir, lang_code, "index.html")
         os.makedirs(os.path.dirname(output_path), exist_ok=True)
+        
+        # Render returns a clean string
+        content = template.render(
+            language=lang_name,
+            lang_code=lang_code,
+            updates=updates,
+            languages=languages
+        )
+        
         with open(output_path, "w", encoding="utf-8") as f:
-            f.write(html)
+            f.write(content)
 
-def generate_main_index(index_tpl, faq_tpl):
+def generate_main_index():
     """Generate the main index.html file."""
     updates = load_updates()
-    recent_updates_html, other_updates_html = format_updates(updates)
-    faq_tpl = faq_tpl.replace("{updates}", recent_updates_html).replace("{other_updates}", other_updates_html)
     output_path = os.path.join(dist_dir, "index.html")
-    faq = faq_tpl.format(language="your target language")
-    html = index_tpl.format(faq=faq)
+    template = env.get_template("index.tpl")
+    content = template.render(
+        language="your target language",
+        languages=languages,
+        updates=updates,
+    )
+
     with open(output_path, "w", encoding="utf-8") as f:
-        f.write(html)
+        f.write(content)
 
 def generate_rss(updates):
     """Generate an RSS file from the updates."""
@@ -221,20 +216,12 @@ def parse_arguments():
 def main():
     """Main entry point for the script."""
     args = parse_arguments()
-
-    # Load templates
-    lang_tpl = load_template("lang.tpl")
-    faq_tpl = load_template("faq.tpl")
-    index_tpl = load_template("index.tpl")
-    settings_tpl = load_template("settings.tpl")
-
-    # Load updates
     updates = load_updates()
 
     # Perform tasks
     copy_directories()
-    generate_language_pages(lang_tpl, faq_tpl, settings_tpl)
-    generate_main_index(index_tpl, faq_tpl)
+    generate_language_pages()
+    generate_main_index()
     generate_rss(updates)
 
     print("Static pages and RSS feed generated!")

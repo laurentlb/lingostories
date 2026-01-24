@@ -24,17 +24,9 @@
         <li title="Language used for the translations">
             <label for="translation-lang">Translation</label>
             <select id="translation-lang">
-                <option value="ar">Arabic</option>
-                <option value="nl">Dutch</option>
-                <option value="en">English</option>
-                <option value="fr">French</option>
-                <option value="de">German</option>
-                <option value="zh">Mandarin</option>
-                <option value="pl">Polish</option>
-                <option value="pt">Portuguese</option>
-                <option value="es">Spanish</option>
-                <option value="sv">Swedish</option>
-                <option value="ua">Ukrainian</option>
+                {% for lang in languages %}
+                    <option value="{{lang}}">{{languages[lang]}}</option>
+                {% endfor %}
             </select>
         <li title="Use microphone to repeat the sentences">
             <label for="use-microphone">Use microphone (experimental)</label>

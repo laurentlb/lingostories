@@ -11,10 +11,19 @@
 <div class="info updates-cards">
             <h2>What's New</h2>
             <!-- Main updates -->
-            {updates}
+            {% for update in updates[:2] %}
+                <li>
+                    <div class='date'>{{ update.date }}</div>
+                    <div class='news-title'>{{ update.title }}</div>
+                    <div class='description'>{{ update.description }}</div>
+                </li>
+            {% endfor %}
+
             <details>
                 <summary><h2>Other Updates</h2></summary>
-                {other_updates}
+                {% for update in updates[2:] %}
+                    <li><span class='date'>{{ update.date }}</span> {{ update.description }}</li>
+                {% endfor %}
             </details>
 
             <hr>
@@ -24,11 +33,11 @@
             <p>
                 LingoStories is a free platform that offers interactive stories
                 for language learners.
-                Read interactive, graded readers stories in {language} and get some practice.
+                Read interactive, graded readers stories in {{language}} and get some practice.
 
                 The stories use simple vocabulary and
                 grammar to help you practice your language skills in a fun and
-                engaging way. You can listen to the audio, read the text in {language},
+                engaging way. You can listen to the audio, read the text in {{language}},
                 and check the translation when needed. The
                 stories are available in a dozen languages, and you can
                 customize the settings to match your learning style.</p>
@@ -40,7 +49,7 @@
             <details>
                 <summary><h2>How do interactive stories work?</h2></summary>
             <p>
-                While reading the story in {language}, you'll make choices, similar to the format of
+                While reading the story in {{language}}, you'll make choices, similar to the format of
                 Choose Your Own Adventure books. This makes the experience more
                 engaging, encourages you to replay stories with different
                 outcomes, and adds variety to the learning process.
@@ -75,7 +84,7 @@
                 <summary><h2>How can stories help me learn a language?</h2></summary>
             <p>
                 Stories provide natural, engaging context for language learning.
-                By reading or listening to stories in {language}, you encounter new vocabulary
+                By reading or listening to stories in {{language}}, you encounter new vocabulary
                 and grammar in meaningful situations. Stories also make learning
                 enjoyable and help improve your comprehension and listening
                 skills.

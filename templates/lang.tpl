@@ -5,15 +5,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta property="og:type" content="website"/>
 <meta property="og:site_name" content="LingoStories"/>
-<meta name="description" property="og:description" content="Read free interactive stories in {language} to practice languages." />
+<meta name="description" property="og:description" content="Read free interactive stories in {{language}} to practice languages." />
 
-<link rel="canonical" href="https://lingostories.org/{lang_code}/">
+<link rel="canonical" href="https://lingostories.org/{{lang_code}}/">
 <link rel="icon" href="/favicon.ico" sizes="any" />
 <link rel="icon" href="/icon.svg" type="image/svg+xml" />
 <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 <link rel="manifest" href="/site.webmanifest">
 
-<title>LingoStories - Interactive stories in {language} for language learners</title>
+<title>LingoStories - Interactive stories in {{language}} for language learners</title>
 <script type="module" src="/js/main.js"></script>
 <script src="/js/third_party/ink.js"></script>
 
@@ -22,7 +22,7 @@
 <div class="top">
     <div class="icon-bar">
         <a href="/" id="back-icon"><img src="/img/back.svg" class="icon top-icon" title="Back to the story list"></a>
-        <a href="/" id="home-icon"><img src="/img/flags/{lang_code}.svg" class="top-icon" title="Stories in {language}.&#10;Switch target language?"></a>
+        <a href="/" id="home-icon"><img src="/img/flags/{{lang_code}}.svg" class="top-icon" title="Stories in {{language}}.&#10;Switch target language?"></a>
         
         <img src="/img/options.svg" id="settings-icon" class="icon top-icon" title="Settings" onclick="toggleSettings()">
 
@@ -30,7 +30,7 @@
 
         <div id="collection-count" class="text-icon" onclick="toggleCollection();"></div>
     </div>
-    {settings}
+    {% include 'settings.tpl' %}
     <div class="top-collection">
         <p>Each story has images to collect. The images you collect in
             this story will be will be added here.</p>
@@ -49,7 +49,7 @@
         </div>
 
         <div class="home" id="story-selector">
-            <h3>Select a story to read in {language}.</h3>
+            <h3>Select a story to read in {{language}}.</h3>
             <div class="story-list"></div>
         </div>
 
@@ -89,7 +89,7 @@
         <div class="in-story" style="height: 30vh;"></div>
         
         <div class="home">
-            {faq}
+            {% include 'faq.tpl' %}
         </div>
     </div>
 
@@ -100,27 +100,27 @@
 </div>
 
 <script>
-const LANGUAGE = "{language}";
-const LANG_CODE = "{lang_code}";
+const LANGUAGE = "{{language}}";
+const LANG_CODE = "{{lang_code}}";
 
-function toggleSettings() {{
+function toggleSettings() {
     var options = document.querySelector('.options');
     const isOpen = options.style.display !== 'block';
 
     // hide other icons
     var icons = document.querySelector('.icon-bar').children;
-    for (var i = 0; i < icons.length; i++) {{
-        if (icons[i].id !== 'settings-icon') {{
+    for (var i = 0; i < icons.length; i++) {
+        if (icons[i].id !== 'settings-icon') {
             icons[i].style.visibility = isOpen ? 'hidden' : 'visible';
-        }}
-    }}
+        }
+    }
     options.style.display = options.style.display === 'block' ? 'none' : 'block';
-}}
+}
 
-function toggleCollection() {{
+function toggleCollection() {
     var collection = document.querySelector('.top-collection');
     collection.style.display = collection.style.display === 'block' ? 'none' : 'block';
-}}
+}
 </script>
 
 <script data-goatcounter="https://lingostories.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
@@ -129,7 +129,7 @@ function toggleCollection() {{
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-SJPVM9P6EP"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
-  function gtag(){{dataLayer.push(arguments);}}
+  function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
   gtag('config', 'G-SJPVM9P6EP');
