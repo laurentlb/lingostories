@@ -6,7 +6,6 @@ import sys
 import argparse
 import json
 from email.utils import formatdate
-import html
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 
 script_dir = os.path.dirname(os.path.abspath(__file__))
@@ -90,7 +89,7 @@ def copy_directories():
         the_dir = os.path.join(root_dir, symlink)
         dist_link = os.path.join(dist_dir, symlink)
         # dist_audio_dir in [dist_audio_dir]:
-        if os.path.exists(the_dir):
+        if os.path.exists(the_dir) and os.getenv('GITHUB_ACTIONS') is None:
             try:
                 if os.path.islink(dist_link) or os.path.exists(dist_link):
                     os.unlink(dist_link)  # Remove existing symlink or directory

@@ -1,0 +1,33 @@
+name: Build and Deploy
+on:
+  push:
+    branches:
+      - main  # Make sure this matches your default branch name
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    environment: ftp deployment # <--- Environment name in GitHub settings
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Install dependencies
+        run: pip install jinja2
+
+      - name: Build Site
+        run: python py/generate_html.py --no-server 
+
+      - name: Deploy to OVH
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: ./dist/ 
+          server-dir: ./
