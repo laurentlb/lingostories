@@ -23,6 +23,7 @@ languages = {
     "en": "English",
     "es": "Spanish",
     "fr": "French",
+    "it": "Italian",
     "nl": "Dutch",
     "pl": "Polish",
     "pt": "Portuguese",

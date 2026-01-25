@@ -44,7 +44,8 @@
             "kr": "쇼핑 리스트",
             "ua": "Список продуктів",
             "zh": "購物清單",
-            "ar": "قائمة البقالة"
+            "ar": "قائمة البقالة",
+            "it": "La lista della spesa"
         },
         "contributors": {
             "audio": false,
@@ -58,7 +59,8 @@
             "kr": "Smiley Ramon Happytime / Omokgyo / Tetsudoku Motonari (Yes I have so many aliases lol)",
             "ua": "Hex",
             "zh": "Tina Hsu",
-            "ar": "عبدالله أبوزيد/Abdallah AbouZaid"
+            "ar": "عبدالله أبوزيد/Abdallah AbouZaid",
+            "it": "Nabla"
         },
         "@mom Peter!": {
             "en": "Peter!",
@@ -72,7 +74,8 @@
             "kr": "",
             "ua": "Петре!",
             "zh": "彼得！",
-            "ar": "محمد!"
+            "ar": "محمد!",
+            "it": "Peter!"
         },
         "@mom Peter, please come here.": {
             "en": "Peter, please come here.",
@@ -86,7 +89,8 @@
             "kr": "",
             "ua": "Петре, йди сюди, будь ласка.",
             "zh": "彼得，過來。",
-            "ar": "يا محمد، من فضلك تعال."
+            "ar": "يا محمد، من فضلك تعال.",
+            "it": "Peter, vieni qui per favore."
         },
         "After a few minutes, you find another crossroad.": {
             "en": "After a few minutes, you find another crossroad.",
@@ -100,7 +104,8 @@
             "kr": "",
             "ua": "За кілька хвилин ти опиняєшся на ще одному перехресті.",
             "zh": "幾分鐘後，你看到另一個十字路口。",
-            "ar": "بعد عدة دقائق، قد وجدتَ مفترق طرق."
+            "ar": "بعد عدة دقائق، قد وجدتَ مفترق طرق.",
+            "it": "Dopo qualche minuto trovi un altro incrocio."
         },
         "You feel lost and see another crossroad.": {
             "en": "You feel lost and see another crossroad.",
@@ -114,7 +119,8 @@
             "kr": "",
             "ua": "Ти загубився і бачиш ще одне перехрестя.",
             "zh": "你好像迷路了，然後又看到另一個十字路口。",
-            "ar": "شعرت بالضياع، وما زاد الطين بلة أنك قد وجدت مفترق طرق."
+            "ar": "شعرت بالضياع، وما زاد الطين بلة أنك قد وجدت مفترق طرق.",
+            "it": "Ti senti smarrito e vedi un altro incrocio."
         },
         "@peter Is it the street on the right? I'm not sure.": {
             "en": "Is it the street on the right? I'm not sure.",
@@ -128,7 +134,8 @@
             "kr": "",
             "ua": "Це та вулиця праворуч? Я не впевнений.",
             "zh": "是右邊的這條街嗎？我不確定。",
-            "ar": "هل هو الشارع الأيمن؟ لستُ متأكدًا."
+            "ar": "هل هو الشارع الأيمن؟ لستُ متأكدًا.",
+            "it": "È la strada a destra? Non sono sicuro."
         },
         "You reach the main square.": {
             "en": "You reach the main square.",
@@ -142,7 +149,8 @@
             "kr": "",
             "ua": "Ти виходиш на головну площу.",
             "zh": "你到了中央廣場。",
-            "ar": "لقد وصلت للسوق."
+            "ar": "لقد وصلت للسوق.",
+            "it": "Raggiungi la piazza principale."
         },
         "There are many people on the main square.": {
             "en": "There are many people on the main square.",
@@ -156,7 +164,8 @@
             "kr": "",
             "ua": "На головній площі багато людей.",
             "zh": "有很多人在中央廣場上。",
-            "ar": "يوجد الكثير من الأشخاص في الساحة الرئيسية."
+            "ar": "يوجد الكثير من الأشخاص في الساحة الرئيسية.",
+            "it": "Ci sono molte persone nella piazza principale."
         },
         "A street musician is playing guitar on the main square.": {
             "en": "A street musician is playing guitar on the main square.",
@@ -170,7 +179,8 @@
             "kr": "",
             "ua": "На головній площі вуличний музикант грає на гітарі.",
             "zh": "有位街頭藝人在中央廣場上彈吉他。",
-            "ar": "عازف الجيتار يعزف في قلب الساحة الرئيسية."
+            "ar": "عازف الجيتار يعزف في قلب الساحة الرئيسية.",
+            "it": "Un musicista di strada sta suonando la chitarra nella piazza principale."
         },
         "On the main square, a group of tourists is taking photos of the old buildings.": {
             "en": "On the main square, a group of tourists is taking photos of the old buildings.",
@@ -184,7 +194,8 @@
             "kr": "",
             "ua": "На головній площі група туристів фотографує старовинні будівлі.",
             "zh": "一群遊客在中央廣場上拍攝舊建築的照片。",
-            "ar": "في الساحة، مجموعة من السياح يلتقطون الصور للمباني القديمة."
+            "ar": "في الساحة، مجموعة من السياح يلتقطون الصور للمباني القديمة.",
+            "it": "Nella piazza principale, un gruppo di turisti sta scattando fotografie a vecchi edifici."
         },
         "@employee What are you looking for?": {
             "en": "What are you looking for?",
@@ -198,7 +209,8 @@
             "kr": "",
             "ua": "Що ти шукаєш?",
             "zh": "你在找什麼嗎？",
-            "ar": "ما الذي تبحث عنه؟"
+            "ar": "ما الذي تبحث عنه؟",
+            "it": "Cosa stai cercando?"
         },
         "@employee Anything else?": {
             "en": "Anything else?",
@@ -212,7 +224,8 @@
             "kr": "",
             "ua": "Щось іще?",
             "zh": "還需要別的嗎？",
-            "ar": "أي شيء آخر؟"
+            "ar": "أي شيء آخر؟",
+            "it": "Qualcos'altro?"
         },
         "@seller Do you want something else?": {
             "en": "Do you want something else?",
@@ -226,7 +239,8 @@
             "kr": "",
             "ua": "Хочеш ще чогось?",
             "zh": "你還想要別的嗎？",
-            "ar": "هل تحتاج لشيء آخر؟"
+            "ar": "هل تحتاج لشيء آخر؟",
+            "it": "Vuoi qualcos'altro?"
         },
         "Your music teacher is still here.": {
             "en": "Your music teacher is still here.",
@@ -240,7 +254,8 @@
             "kr": "",
             "ua": "Твоя вчителька музики все ще тут.",
             "zh": "你的音樂老師還在這裡。",
-            "ar": "معلمة الموسيقى لا تزال هناك."
+            "ar": "معلمة الموسيقى لا تزال هناك.",
+            "it": "La tua insegnante di musica è ancora qui."
         },
         "It looks like you don't have enough money.": {
             "en": "It looks like you don't have enough money.",
@@ -254,7 +269,8 @@
             "kr": "",
             "ua": "Схоже, що ти не маєш достатньо грошей.",
             "zh": "看起來你的錢不夠。",
-            "ar": "يبدو أنك لا تملك المال الكافي."
+            "ar": "يبدو أنك لا تملك المال الكافي.",
+            "it": "Sembra che tu non abbia abbastanza soldi."
         },
         "It is Saturday afternoon.": {
             "en": "It is Saturday afternoon.",
@@ -268,7 +284,8 @@
             "kr": "",
             "ua": "Субота, післяобідня година.",
             "zh": "現在是星期六下午。",
-            "ar": "إنه السبت بعد الظهيرة."
+            "ar": "إنه السبت بعد الظهيرة.",
+            "it": "È un sabato pomeriggio."
         },
         "So you are playing with your toys in your bedroom.": {
             "en": "So you are playing with your toys in your bedroom.",
@@ -282,7 +299,8 @@
             "kr": "",
             "ua": "Ти бавишся іграшками у своїй кімнаті.",
             "zh": "你正在房間裡玩玩具。",
-            "ar": "إذًا فأنت تلعب بالعابك في غرفة النوم."
+            "ar": "إذًا فأنت تلعب بالعابك في غرفة النوم.",
+            "it": "Così stai giocando con i tuoi giocattoli nella tua stanza."
         },
         "Your mom calls you.": {
             "en": "Your mom calls you.",
@@ -296,7 +314,8 @@
             "kr": "",
             "ua": "Твоя мама кличе тебе.",
             "zh": "你媽媽在找你。",
-            "ar": "أمك تناديك."
+            "ar": "أمك تناديك.",
+            "it": "Tua mamma ti chiama."
         },
         "You play for a few more minutes.": {
             "en": "You play for a few more minutes.",
@@ -310,7 +329,8 @@
             "kr": "",
             "ua": "Ти бавишся ще кілька хвилин.",
             "zh": "你多玩了幾分鐘。",
-            "ar": "لقد لعبت لبعض الدقائق."
+            "ar": "لقد لعبت لبعض الدقائق.",
+            "it": "Giochi per qualche altro minuto."
         },
         "You leave the bedroom and go to your mom.": {
             "en": "You leave the bedroom and go to your mom.",
@@ -324,7 +344,8 @@
             "kr": "",
             "ua": "Виходиш з кімнати та йдеш до мами.",
             "zh": "你離開房間，然後去找媽媽。",
-            "ar": "لقد تركت غرفة النوم وذهبت لأمك."
+            "ar": "لقد تركت غرفة النوم وذهبت لأمك.",
+            "it": "Lasci la camera e vai da tua mamma."
         },
         "@mom Can you please go shopping for dinner?": {
             "en": "Can you please go shopping for dinner?",
@@ -338,7 +359,8 @@
             "kr": "",
             "ua": "Сходи, будь ласка, в магазин по продукти на вечерю.",
             "zh": "可以請你去買晚餐的食材嗎？",
-            "ar": "هل يمكنك أن تشتري لنا بعض البقالة؟"
+            "ar": "هل يمكنك أن تشتري لنا بعض البقالة؟",
+            "it": "Puoi andare a fare la spesa per favore?"
         },
         "@mom You'll find everything at the supermarket.": {
             "en": "You'll find everything at the supermarket.",
@@ -352,7 +374,8 @@
             "kr": "",
             "ua": "У супермаркеті знайдеш все, що потрібно.",
             "zh": "你可以在超市找到所有東西。",
-            "ar": "لقد وجدت كل شيء في محل البقالة."
+            "ar": "لقد وجدت كل شيء في محل البقالة.",
+            "it": "Troverai tutto al supermercato."
         },
         "@mom Here are 17 coins, I think that should be enough.": {
             "en": "Here are 17 coins, I think that should be enough.",
@@ -366,7 +389,8 @@
             "kr": "",
             "ua": "Ось 17 монет. Думаю, цього має вистачити.",
             "zh": "這裡有 17 塊錢，我覺得應該夠了。",
-            "ar": "إليك 17 جنيهًا، أظن أنها كافية."
+            "ar": "إليك 17 جنيهًا، أظن أنها كافية.",
+            "it": "Eccoti 17 monete, credo basteranno."
         },
         "@mom Oh, and we need bread too!": {
             "en": "Oh, and we need bread too!",
@@ -380,7 +404,8 @@
             "kr": "",
             "ua": "А, і ще нам потрібен хліб!",
             "zh": "喔，還要買麵包！",
-            "ar": "أه، كما أننا بحاجة للخبز!"
+            "ar": "أه، كما أننا بحاجة للخبز!",
+            "it": "Oh, ci serve anche il pane!"
         },
         "@peter Can I stay home?": {
             "en": "Can I stay home?",
@@ -394,7 +419,8 @@
             "kr": "",
             "ua": "Можна я залишуся вдома?",
             "zh": "我可以待在家嗎？",
-            "ar": "هل يمكنني البقاء بالمنزل؟"
+            "ar": "هل يمكنني البقاء بالمنزل؟",
+            "it": "Posso restare a casa?"
         },
         "@peter I'd love to play more.": {
             "en": "I'd love to play more.",
@@ -408,7 +434,8 @@
             "kr": "",
             "ua": "Я б хотів ще трохи побавитись.",
             "zh": "我還想再玩一下。",
-            "ar": "أريد أن ألعب أكثر."
+            "ar": "أريد أن ألعب أكثر.",
+            "it": "Mi piacerebbe giocare di più."
         },
         "@mom No, it's important to have food for dinner. You can play later.": {
             "en": "No, it's important to have food for dinner. You can play later.",
@@ -422,7 +449,8 @@
             "kr": "",
             "ua": "Ні, важливо мати їжу на вечерю. Можеш побавитись пізніше.",
             "zh": "不行，晚餐不能沒有食物，你可以等等再玩。",
-            "ar": "لا، طعام العشاء أهم، اللعب يمكن أن ينتظر قليلًا."
+            "ar": "لا، طعام العشاء أهم، اللعب يمكن أن ينتظر قليلًا.",
+            "it": "No, è importante avere cibo per la cena. Puoi giocare dopo."
         },
         "@peter How do I get to the supermarket?": {
             "en": "How do I get to the supermarket?",
@@ -436,7 +464,8 @@
             "kr": "",
             "ua": "Як мені дістатися до супермаркету?",
             "zh": "我要怎麼去超市？",
-            "ar": "كيف أذهب للبقالة؟"
+            "ar": "كيف أذهب للبقالة؟",
+            "it": "Come arrivo al supermercato?"
         },
         "@mom You'll find it at the end of the street, just turn right.": {
             "en": "Go to the end of the street and turn right.",
@@ -450,7 +479,8 @@
             "kr": "",
             "ua": "Іди до кінця вулиці та поверни направо.",
             "zh": "走到底然後右轉。",
-            "ar": "اذهب إلى نهاية الشارع، ومن ثم اذهب يمينًا."
+            "ar": "اذهب إلى نهاية الشارع، ومن ثم اذهب يمينًا.",
+            "it": "Vai alla fine delle strada e svolta a destra."
         },
         "@mom It's on the main square.": {
             "en": "It's on the main square.",
@@ -464,7 +494,8 @@
             "kr": "",
             "ua": "Він на головній площі.",
             "zh": "它就在主廣場上。",
-            "ar": "إنه بالساحة الرئيسية."
+            "ar": "إنه بالساحة الرئيسية.",
+            "it": "È nella piazza principale."
         },
         "@peter Can you repeat the shopping list?": {
             "en": "Can you repeat the shopping list?",
@@ -478,7 +509,8 @@
             "kr": "",
             "ua": "Можеш повторити список продуктів?",
             "zh": "你可以再說一次購物清單嗎？",
-            "ar": "هل يمكنك أن تردد طلبات البقالة مجددًا؟"
+            "ar": "هل يمكنك أن تردد طلبات البقالة مجددًا؟",
+            "it": "Puoi ripetere la lista della spesa?"
         },
         "@mom Sure. We need three tomatoes, four eggs, five apples, and bread.": {
             "en": "Sure. We need three tomatoes, four eggs, five apples, and bread.",
@@ -492,7 +524,8 @@
             "kr": "",
             "ua": "Звісно. Потрібно три помідори, чотири яйця, п'ять яблук і хліб.",
             "zh": "可以，我們需要三顆番茄、四顆雞蛋、五顆蘋果和麵包。",
-            "ar": "أكيد، نحتاج لثلاث حبات من الطماطم، أربع بيضات، خمس حبات من التفاح، والخبز."
+            "ar": "أكيد، نحتاج لثلاث حبات من الطماطم، أربع بيضات، خمس حبات من التفاح، والخبز.",
+            "it": "Certo. Abbiamo bisogno di tre pomodori, quattro uova, cinque mele e pane."
         },
         "@peter Can I buy something for myself?": {
             "en": "Can I buy something for myself?",
@@ -506,7 +539,8 @@
             "kr": "",
             "ua": "Чи можу я купити щось для себе?",
             "zh": "我可以買東西給自己嗎？",
-            "ar": "هل يمكنني أن أشتري شيئًا لنفسي؟"
+            "ar": "هل يمكنني أن أشتري شيئًا لنفسي؟",
+            "it": "Posso comprare qualcosa per me?"
         },
         "@peter I'd like to get some chocolate or maybe a pastry.": {
             "en": "I'd like to get some chocolate or maybe a pastry.",
@@ -520,7 +554,8 @@
             "kr": "",
             "ua": "Я б хотів купити шоколад або, можливо, тістечко.",
             "zh": "我想買巧克力或是點心。",
-            "ar": "أريد الحصول على بعض الشوكولاتة أو ربما بعض من الكعك."
+            "ar": "أريد الحصول على بعض الشوكولاتة أو ربما بعض من الكعك.",
+            "it": "Mi piacerebbe prendere le cioccolato forse un pasticcino."
         },
         "@mom But first, please buy the food for dinner.": {
             "en": "But first, please buy the food for dinner.",
@@ -534,7 +569,8 @@
             "kr": "",
             "ua": "Але спочатку, будь ласка, купи їжу на вечерю.",
             "zh": "但請先買好晚餐的食材。",
-            "ar": "لكن أولًا، اشترِ طعام العشاء."
+            "ar": "لكن أولًا، اشترِ طعام العشاء.",
+            "it": "Ma prima, compra il cibo per la cena per favore."
         },
         "@peter Alright, I'm going now.": {
             "en": "Alright, I'm going now.",
@@ -548,7 +584,8 @@
             "kr": "",
             "ua": "Добре, я вже йду.",
             "zh": "好，我要出門了。",
-            "ar": "حسنًا، سأذهب الآن."
+            "ar": "حسنًا، سأذهب الآن.",
+            "it": "Va bene, ora vado."
         },
         "You leave the house.": {
             "en": "You leave the house.",
@@ -562,7 +599,8 @@
             "kr": "",
             "ua": "Ти виходиш з дому.",
             "zh": "你離開家。",
-            "ar": "لقد غادرت المنزل."
+            "ar": "لقد غادرت المنزل.",
+            "it": "Esci di casa."
         },
         "It is sunny with a bit of wind.": {
             "en": "It is sunny with a bit of wind.",
@@ -576,7 +614,8 @@
             "kr": "",
             "ua": "Погода сонячна, трохи вітряно.",
             "zh": "天氣晴朗，伴隨微風。",
-            "ar": "يوم شمسه رائعة تمامًا كنسيمه."
+            "ar": "يوم شمسه رائعة تمامًا كنسيمه.",
+            "it": "È soleggiato con un po' di vento."
         },
         "It's not that cold.": {
             "en": "It's not that cold.",
@@ -590,7 +629,8 @@
             "kr": "",
             "ua": "Не так вже й холодно.",
             "zh": "沒有那麼冷。",
-            "ar": "ليس حارًا ولا باردًا."
+            "ar": "ليس حارًا ولا باردًا.",
+            "it": "Non è così freddo."
         },
         "You see children playing in the park as you pass by.": {
             "en": "You see children playing in the park as you pass by.",
@@ -604,7 +644,8 @@
             "kr": "",
             "ua": "Проходячи повз, ти бачиш дітей, які граються в парку.",
             "zh": "你經過公園時，看到小孩們在玩耍。",
-            "ar": "رأيت بعض الأطفال يلعبون في الحديقة بجانبك."
+            "ar": "رأيت بعض الأطفال يلعبون في الحديقة بجانبك.",
+            "it": "Vedi bambini che giocano al parco mentre passi."
         },
         "You walk down the street until the end.": {
             "en": "You walk down the street until the end.",
@@ -618,7 +659,8 @@
             "kr": "",
             "ua": "Ти йдеш вулицею до самого її кінця.",
             "zh": "你沿著街道走到底。",
-            "ar": "تمشيت في الشارع حتى النهاية."
+            "ar": "تمشيت في الشارع حتى النهاية.",
+            "it": "Cammini fino in fondo alla strada."
         },
         "@peter Which way is it? I think I should turn left now.": {
             "en": "Which way is it? I think I should turn left now.",
@@ -632,7 +674,8 @@
             "kr": "",
             "ua": "В яку сторону? Гадаю, мені треба повернути наліво.",
             "zh": "這是哪個方向？應該要左轉吧。",
-            "ar": "أي طريق قد كان؟ أظن أن علي أن أتجه يسارًا."
+            "ar": "أي طريق قد كان؟ أظن أن علي أن أتجه يسارًا.",
+            "it": "Da che parte è? Credo di dover svoltare a sinistra ora."
         },
         "You take the street on the left.": {
             "en": "You take the street on the left.",
@@ -646,7 +689,8 @@
             "kr": "",
             "ua": "Ти повертаєш на вулицю ліворуч.",
             "zh": "你往左邊的街走。",
-            "ar": "لقد أخذت الشارع الأيسر."
+            "ar": "لقد أخذت الشارع الأيسر.",
+            "it": "Scegli la strada a sinistra."
         },
         "You take the street on the right.": {
             "en": "You take the street on the right.",
@@ -660,7 +704,8 @@
             "kr": "",
             "ua": "Ти повертаєш на вулицю праворуч.",
             "zh": "你往右邊的街走。",
-            "ar": "لقد ذهبت للشارع الأيمن."
+            "ar": "لقد ذهبت للشارع الأيمن.",
+            "it": "Scegli la strada a destra."
         },
         "You continue straight ahead.": {
             "en": "You continue straight ahead.",
@@ -674,7 +719,8 @@
             "kr": "",
             "ua": "Ти продовжуєш іти прямо.",
             "zh": "你繼續往前直走。",
-            "ar": "أكملت للأمام."
+            "ar": "أكملت للأمام.",
+            "it": "Continui dritto."
         },
         "You decide to go back.": {
             "en": "You decide to go back.",
@@ -688,7 +734,8 @@
             "kr": "",
             "ua": "Ти вирішуєш повернутися.",
             "zh": "你決定走回去。",
-            "ar": "لقد قررت العودة."
+            "ar": "لقد قررت العودة.",
+            "it": "Decidi di tornare indietro."
         },
         "You are afraid of getting lost.": {
             "en": "You are afraid of getting lost.",
@@ -702,7 +749,8 @@
             "kr": "",
             "ua": "Ти боїшся загубитися.",
             "zh": "你擔心會迷路。",
-            "ar": "أنت خائف من أن تضل طريقك."
+            "ar": "أنت خائف من أن تضل طريقك.",
+            "it": "Hai paura di perderti."
         },
         "But after a while, it starts to feel familiar.": {
             "en": "But after a while, it starts to feel familiar.",
@@ -716,7 +764,8 @@
             "kr": "",
             "ua": "Але згодом усе починає видаватися знайомим.",
             "zh": "但過了一下子，感覺路變熟悉了。",
-            "ar": "لكن بعد قليل، بدأ المكان يصبح مألوفًا لك."
+            "ar": "لكن بعد قليل، بدأ المكان يصبح مألوفًا لك.",
+            "it": "Ma dopo un po' inizia ad essere familiare."
         },
         "The chocolate tastes delicious.": {
             "en": "The chocolate tastes delicious.",
@@ -730,7 +779,8 @@
             "kr": "",
             "ua": "Шоколад дуже смачний.",
             "zh": "巧克力很好吃。",
-            "ar": "طعم الشوكولاتة لذيذ."
+            "ar": "طعم الشوكولاتة لذيذ.",
+            "it": "Il cioccolato è delizioso."
         },
         "The pastry is really good.": {
             "en": "The pastry is really good.",
@@ -744,7 +794,8 @@
             "kr": "",
             "ua": "Тістечко дуже смачне.",
             "zh": "點心很好吃。",
-            "ar": "الكعك كان لذيذًا."
+            "ar": "الكعك كان لذيذًا.",
+            "it": "Il pasticcino è molto buono."
         },
         "@peter I still have some coins to spend.": {
             "en": "I still have some coins to spend.",
@@ -758,7 +809,8 @@
             "kr": "",
             "ua": "Я ще маю кілька монет, які можна витратити.",
             "zh": "我還有一些錢可以花。",
-            "ar": "ما زال معي بعض المال لأصرفه."
+            "ar": "ما زال معي بعض المال لأصرفه.",
+            "it": "Ho ancora delle monete da spendere."
         },
         "@peter I'd like some tomatoes.": {
             "en": "I'd like some tomatoes.",
@@ -772,7 +824,8 @@
             "kr": "",
             "ua": "Я б хотів кілька помідорів.",
             "zh": "我想要一些番茄。",
-            "ar": "أريد بعض الطماطم."
+            "ar": "أريد بعض الطماطم.",
+            "it": "Vorrei dei pomodori."
         },
         "@employee Sorry, we're out of tomatoes.": {
             "en": "Sorry, we're out of tomatoes.",
@@ -786,7 +839,8 @@
             "kr": "",
             "ua": "Вибач, помідори закінчилися.",
             "zh": "抱歉，我們沒有番茄了。",
-            "ar": "آسف، لقد نفذت الطماطم."
+            "ar": "آسف، لقد نفذت الطماطم.",
+            "it": "Mi dispiace, abbiamo finito i pomodori."
         },
         "@employee But they should have tomatoes on the market.": {
             "en": "But they should have tomatoes on the market.",
@@ -800,7 +854,8 @@
             "kr": "",
             "ua": "Але на ринку повинні бути помідори.",
             "zh": "但市場應該有賣番茄。",
-            "ar": "لكن يجب أن يكون عندكم من الطماطم في السوق."
+            "ar": "لكن يجب أن يكون عندكم من الطماطم في السوق.",
+            "it": "Ma dovrebbero avere pomodori al mercato."
         },
         "@peter Do you have apples?": {
             "en": "Do you have apples?",
@@ -814,7 +869,8 @@
             "kr": "",
             "ua": "У вас є яблука?",
             "zh": "你們有蘋果嗎？",
-            "ar": "هل لديك تفاح؟"
+            "ar": "هل لديك تفاح؟",
+            "it": "Avete delle mele?"
         },
         "@employee I don't know why everyone wants apples today.": {
             "en": "I don't know why everyone wants apples today.",
@@ -828,7 +884,8 @@
             "kr": "",
             "ua": "Не знаю чому сьогодні всі хочуть яблука.",
             "zh": "不知道為什麼今天大家都想買蘋果。",
-            "ar": "لا أعرف لماذا يرغب الجميع في التفاح اليوم."
+            "ar": "لا أعرف لماذا يرغب الجميع في التفاح اليوم.",
+            "it": "Non so perché tutti oggi vogliono mele."
         },
         "@employee Unfortunately, we don't have any more.": {
             "en": "Unfortunately, we don't have any more.",
@@ -842,7 +899,8 @@
             "kr": "",
             "ua": "На жаль, більше немає.",
             "zh": "抱歉，我們已經賣完了。",
-            "ar": "للأسف، نفذ."
+            "ar": "للأسف، نفذ.",
+            "it": "Sfortunatamente, non ne abbiamo più."
         },
         "@peter I need eggs.": {
             "en": "I need eggs.",
@@ -856,7 +914,8 @@
             "kr": "",
             "ua": "Мені потрібні яйця.",
             "zh": "我需要雞蛋。",
-            "ar": "أريد بيضًا."
+            "ar": "أريد بيضًا.",
+            "it": "Ho bisogno di uova."
         },
         "@employee How many eggs do you want?": {
             "en": "How many eggs do you want?",
@@ -870,7 +929,8 @@
             "kr": "",
             "ua": "Скільки яєць ти хочеш?",
             "zh": "你要幾顆雞蛋？",
-            "ar": "كم عدد البيضات التي تريدها؟"
+            "ar": "كم عدد البيضات التي تريدها؟",
+            "it": "Quante uova vuoi?"
         },
         "@employee Unfortunately, we don't have bread anymore today.": {
             "en": "Unfortunately, we don't have bread anymore today.",
@@ -884,7 +944,8 @@
             "kr": "",
             "ua": "На жаль, сьогодні хліба вже немає.",
             "zh": "很抱歉，今天麵包賣完了。",
-            "ar": "للأسف، لقد نفذ منا الخبز اليوم."
+            "ar": "للأسف، لقد نفذ منا الخبز اليوم.",
+            "it": "Sfortunatamente, non abbiamo più pane oggi."
         },
         "@employee But there's a bakery nearby.": {
             "en": "But there's a bakery nearby.",
@@ -898,7 +959,8 @@
             "kr": "",
             "ua": "Але неподалік є пекарня.",
             "zh": "但附近有一家麵包店。",
-            "ar": "لكن هناك مخبز قريب."
+            "ar": "لكن هناك مخبز قريب.",
+            "it": "Ma c'è una panetteria qui vicino."
         },
         "@peter Can I have a bottle of wine?": {
             "en": "Can I have a bottle of wine?",
@@ -912,7 +974,8 @@
             "kr": "",
             "ua": "Можна мені пляшку вина?",
             "zh": "我可以買一瓶酒嗎？",
-            "ar": "أريد سجائر من فضلك؟"
+            "ar": "أريد سجائر من فضلك؟",
+            "it": "Posso avere una bottiglia di vino?"
         },
         "@employee How old are you?": {
             "en": "How old are you?",
@@ -926,7 +989,8 @@
             "kr": "",
             "ua": "Скільки тобі років?",
             "zh": "你幾歲？",
-            "ar": "كم عمرك؟"
+            "ar": "كم عمرك؟",
+            "it": "Quanti anni hai?"
         },
         "@peter I am 10 years old.": {
             "en": "I am 10 years old.",
@@ -940,7 +1004,8 @@
             "kr": "",
             "ua": "Мені 10 років.",
             "zh": "我 10 歲。",
-            "ar": "أنا في العاشرة."
+            "ar": "أنا في العاشرة.",
+            "it": "Ho 10 anni."
         },
         "@peter I am... 11 years old!": {
             "en": "I am... 11 years old!",
@@ -954,7 +1019,8 @@
             "kr": "",
             "ua": "Мені... 11 років!",
             "zh": "我……11 歲！",
-            "ar": "أنا... في الحادية عشرة!"
+            "ar": "أنا... في الحادية عشرة!",
+            "it": "Ho... 11 anni!"
         },
         "@employee Sorry, you're too young to buy wine.": {
             "en": "Sorry, you're too young to buy wine.",
@@ -968,7 +1034,8 @@
             "kr": "",
             "ua": "Вибач, ти ще замалий, щоб купувати вино.",
             "zh": "抱歉，你太小了，不能買酒。",
-            "ar": "آسف، أنت صغير على هذه الأشياء."
+            "ar": "آسف، أنت صغير على هذه الأشياء.",
+            "it": "Mi dispiace, sei troppo piccolo per comprare vino."
         },
         "@peter I'll buy my favorite chocolate.": {
             "en": "I'll buy my favorite chocolate.",
@@ -982,7 +1049,8 @@
             "kr": "",
             "ua": "Куплю свій улюблений шоколад.",
             "zh": "我要買我最愛的巧克力。",
-            "ar": "إذًا سأشتري بعض الشوكولاتة."
+            "ar": "إذًا سأشتري بعض الشوكولاتة.",
+            "it": "Comprerò il mio cioccolato preferito."
         },
         "@peter That's all, thank you.": {
             "en": "That's all, thank you.",
@@ -996,7 +1064,8 @@
             "kr": "",
             "ua": "Це все, дякую.",
             "zh": "就這樣，謝謝。",
-            "ar": "هذا كل شيء، شكرًا لك."
+            "ar": "هذا كل شيء، شكرًا لك.",
+            "it": "È tutto, grazie."
         },
         "You leave the supermarket.": {
             "en": "You leave the supermarket.",
@@ -1010,7 +1079,8 @@
             "kr": "",
             "ua": "Ти виходиш із супермаркету.",
             "zh": "你離開超市。",
-            "ar": "لقد غادرت البقالة."
+            "ar": "لقد غادرت البقالة.",
+            "it": "Lasci il supermercato."
         },
         "You enter the bakery.": {
             "en": "You enter the bakery.",
@@ -1024,7 +1094,8 @@
             "kr": "",
             "ua": "Ти заходиш до пекарні.",
             "zh": "你走進麵包店。",
-            "ar": "لقد دخلت المخبز."
+            "ar": "لقد دخلت المخبز.",
+            "it": "Entri nella panetteria."
         },
         "Sorry, this is a bakery, we don't sell apples.": {
             "en": "Sorry, this is a bakery, we don't sell apples.",
@@ -1038,7 +1109,8 @@
             "kr": "",
             "ua": "Вибач, це пекарня, ми не продаємо яблука.",
             "zh": "抱歉，這裡是麵包店，我們沒有賣蘋果。",
-            "ar": "نحن مخبز، لذا للأسف ما عدنا نخبز التفاح."
+            "ar": "نحن مخبز، لذا للأسف ما عدنا نخبز التفاح.",
+            "it": "Mi dispiace, questa è una panetteria, non vendiamo mele."
         },
         "@peter This pastry, please.": {
             "en": "This pastry, please.",
@@ -1052,7 +1124,8 @@
             "kr": "",
             "ua": "Ось це тістечко, будь ласка.",
             "zh": "這個點心，謝謝。",
-            "ar": "هذه الكعكة من فضلك."
+            "ar": "هذه الكعكة من فضلك.",
+            "it": "Questo pasticcino, per favore."
         },
         "@peter I would like this bread, please.": {
             "en": "I would like this bread, please.",
@@ -1066,7 +1139,8 @@
             "kr": "",
             "ua": "Я б хотів ось цей хліб, будь ласка.",
             "zh": "我想要這個麵包，謝謝。",
-            "ar": "أريد من هذا الخبز من فضلك."
+            "ar": "أريد من هذا الخبز من فضلك.",
+            "it": "Vorrei questo panino, per favore."
         },
         "@baker See you soon, Peter!": {
             "en": "See you soon, Peter!",
@@ -1080,7 +1154,8 @@
             "kr": "",
             "ua": "До зустрічі, Петре!",
             "zh": "彼得再見！",
-            "ar": "حسنًا يا محمد، نلتقي مجددًا!"
+            "ar": "حسنًا يا محمد، نلتقي مجددًا!",
+            "it": "A presto, Peter!"
         },
         "@peter I'd like some apples.": {
             "en": "I'd like some apples.",
@@ -1094,7 +1169,8 @@
             "kr": "",
             "ua": "Я б хотів кілька яблук.",
             "zh": "我想要一些蘋果。",
-            "ar": "أريد بعض التفاح."
+            "ar": "أريد بعض التفاح.",
+            "it": "Vorrei delle mele."
         },
         "@seller How many tomatoes do you want?": {
             "en": "How many tomatoes do you want?",
@@ -1108,7 +1184,8 @@
             "kr": "",
             "ua": "Скільки помідорів ти хочеш?",
             "zh": "你要幾顆番茄？",
-            "ar": "كم حبة طماطم تحتاج؟"
+            "ar": "كم حبة طماطم تحتاج؟",
+            "it": "Quanti pomodori vuoi?"
         },
         "@peter Three tomatoes, please.": {
             "en": "Three tomatoes, please.",
@@ -1122,7 +1199,8 @@
             "kr": "",
             "ua": "Три помідори, будь ласка.",
             "zh": "三顆番茄，謝謝。",
-            "ar": "ثلاث، من فضلك."
+            "ar": "ثلاث، من فضلك.",
+            "it": "Tre pomodori per favore."
         },
         "@peter Four tomatoes, please.": {
             "en": "Four tomatoes, please.",
@@ -1136,7 +1214,8 @@
             "kr": "",
             "ua": "Чотири помідори, будь ласка.",
             "zh": "四顆番茄，謝謝。",
-            "ar": "أربعة، من فضلك."
+            "ar": "أربعة، من فضلك.",
+            "it": "Quattro pomodori, per favore."
         },
         "@peter Five tomatoes, please.": {
             "en": "Five tomatoes, please.",
@@ -1150,7 +1229,8 @@
             "kr": "",
             "ua": "П'ять помідорів, будь ласка.",
             "zh": "五顆番茄，謝謝。",
-            "ar": "خمس، من فضلك."
+            "ar": "خمس، من فضلك.",
+            "it": "Cinque pomodori, per favore."
         },
         "Peter puts the tomatoes in his bag.": {
             "en": "You put the tomatoes in your bag.",
@@ -1164,7 +1244,8 @@
             "kr": "",
             "ua": "Ти кладеш помідори в торбу.",
             "zh": "你把番茄放進袋子裡。",
-            "ar": "لقد وضعت الطماطم في الحقيبة."
+            "ar": "لقد وضعت الطماطم في الحقيبة.",
+            "it": "Metti i pomodori nella tua borsa."
         },
         "@peter I'll take two carrots.": {
             "en": "I'll take two carrots.",
@@ -1178,7 +1259,8 @@
             "kr": "",
             "ua": "Я візьму дві морквини.",
             "zh": "我要兩根紅蘿蔔。",
-            "ar": "أريد حبتين من الجزر."
+            "ar": "أريد حبتين من الجزر.",
+            "it": "Prenderò due carote."
         },
         "@seller See you soon!": {
             "en": "See you soon!",
@@ -1192,7 +1274,8 @@
             "kr": "",
             "ua": "До зустрічі!",
             "zh": "再見！",
-            "ar": "أراك قريبًا!"
+            "ar": "أراك قريبًا!",
+            "it": "A presto!"
         },
         "@peter Can you help me? I really need apples.": {
             "en": "Can you help me? I really need apples.",
@@ -1206,7 +1289,8 @@
             "kr": "",
             "ua": "Можете мені допомогти? Мені дуже потрібні яблука.",
             "zh": "你可以幫我嗎？我真的很需要蘋果。",
-            "ar": "هل يمكنك مساعدتي؟ أنا في أمس الحاجة لبعض التفاح."
+            "ar": "هل يمكنك مساعدتي؟ أنا في أمس الحاجة لبعض التفاح.",
+            "it": "Puoi aiutarmi? Ho davvero bisogno delle mele."
         },
         "@teacher I'll trade you these apples for some pears. Do you have any?": {
             "en": "I'll trade you these apples for some pears. Do you have any?",
@@ -1220,7 +1304,8 @@
             "kr": "",
             "ua": "Я обміняю ці яблука на груші. У тебе є груші?",
             "zh": "我可以用蘋果跟你換梨子。你有梨子嗎？",
-            "ar": "سأبادلك التفاح ببعض الكمثرى. هل لديك أي منها؟"
+            "ar": "سأبادلك التفاح ببعض الكمثرى. هل لديك أي منها؟",
+            "it": "Scambio con te queste mele per delle pere. Ne hai qualcuna?"
         },
         "@peter Yes.": {
             "en": "Yes.",
@@ -1234,7 +1319,8 @@
             "kr": "",
             "ua": "Так.",
             "zh": "有。",
-            "ar": "أجل."
+            "ar": "أجل.",
+            "it": "Sì."
         },
         "@teacher Great, I love pears too! Here are your apples.": {
             "en": "Great, I love pears too! Here are your apples.",
@@ -1248,7 +1334,8 @@
             "kr": "",
             "ua": "Чудово, груші я теж люблю! Ось твої яблука.",
             "zh": "好阿，我也喜歡梨子！蘋果給你。",
-            "ar": "ممتاز، أحب الكمثرى! إليك التفاح."
+            "ar": "ممتاز، أحب الكمثرى! إليك التفاح.",
+            "it": "Ottimo, mi piacciono anche le pere. Ecco qui le tue mele."
         },
         "@teacher See you on Monday, Peter!": {
             "en": "See you on Monday, Peter!",
@@ -1262,7 +1349,8 @@
             "kr": "",
             "ua": "До понеділка, Петре!",
             "zh": "禮拜一見！",
-            "ar": "أراك يوم الإثنين يا محمد!"
+            "ar": "أراك يوم الإثنين يا محمد!",
+            "it": "A lunedì, Peter!"
         },
         "@peter Bye!": {
             "en": "Bye!",
@@ -1276,7 +1364,8 @@
             "kr": "",
             "ua": "До побачення!",
             "zh": "再見！",
-            "ar": "وداعًا."
+            "ar": "وداعًا.",
+            "it": "Ciao!"
         },
         "@teacher That's too bad. Maybe next time.": {
             "en": "That's too bad. Maybe next time.",
@@ -1290,7 +1379,8 @@
             "kr": "",
             "ua": "Шкода. Може, наступного разу.",
             "zh": "太可惜了。下次再說。",
-            "ar": "هل سيئ بحق؟ ربما في المرة القادمة."
+            "ar": "هل سيئ بحق؟ ربما في المرة القادمة.",
+            "it": "Peccato. Sarà per la prossima volta."
         },
         "You come back home. Your mom looks at your groceries.": {
             "en": "You come back home. Your mom looks at your groceries.",
@@ -1304,7 +1394,8 @@
             "kr": "",
             "ua": "Ти повертаєшся додому. Мама дивиться на твої покупки.",
             "zh": "你回到家。媽媽在看你買了什麼。",
-            "ar": "لقد عدت للمنزل. أمك بدأت بفحص مشترياتك."
+            "ar": "لقد عدت للمنزل. أمك بدأت بفحص مشترياتك.",
+            "it": "Torni a casa. Tua mamma guarda i tuoi acquisti."
         },
         "@mom Let's see what you bought!": {
             "en": "Let's see what you bought!",
@@ -1318,7 +1409,8 @@
             "kr": "",
             "ua": "Подивимось, що ти купив!",
             "zh": "來看看你買了什麼吧！",
-            "ar": "لنرَ ماذا اشتريت!"
+            "ar": "لنرَ ماذا اشتريت!",
+            "it": "Vediamo cosa hai comprato!"
         },
         "@mom Great, you have the apples! I'll make an apple pie.": {
             "en": "Great, you have the apples! I'll make an apple pie.",
@@ -1332,7 +1424,8 @@
             "kr": "",
             "ua": "Чудово, маєш яблука! Я зроблю шарлотку.",
             "zh": "很棒，你買到蘋果了！我可以來做蘋果派。",
-            "ar": "ممتاز، لديك التفاح! إذًا سأصنع فطيرة تفاح."
+            "ar": "ممتاز، لديك التفاح! إذًا سأصنع فطيرة تفاح.",
+            "it": "Ottimo, hai le mele! Farò una torta di mele."
         },
         "@mom No apples? Well, I can make a pear pie instead.": {
             "en": "No apples? Well, I can make a pear pie instead.",
@@ -1346,7 +1439,8 @@
             "kr": "",
             "ua": "Немає яблук? Ну, тоді зроблю грушевий пиріг.",
             "zh": "沒有蘋果嗎？嗯.. 那我改做梨子派。",
-            "ar": "لا تفاح إذًا؟ حسنًا، سأصنع فطيرة كمثرى إذًا."
+            "ar": "لا تفاح إذًا؟ حسنًا، سأصنع فطيرة كمثرى إذًا.",
+            "it": "Niente mele? Allora farò una torta di pere."
         },
         "@mom No apples or pears? I can use the chocolate to make a chocolate cake.": {
             "en": "No apples or pears? I can use the chocolate to make a chocolate cake.",
@@ -1360,7 +1454,8 @@
             "kr": "",
             "ua": "Немає ні яблук, ні груш? Можу з цього шоколаду зробити шоколадний торт.",
             "zh": "沒有蘋果或梨子嗎？那我可以用巧克力做巧克力蛋糕。",
-            "ar": "لا تفاح ولا حتى كمثرى؟ يمكنني أن أستخدم الشوكولاتة لصنع كيك بالشوكولاتة."
+            "ar": "لا تفاح ولا حتى كمثرى؟ يمكنني أن أستخدم الشوكولاتة لصنع كيك بالشوكولاتة.",
+            "it": "Niente mele o pere? Posso usare il cioccolato per fare una torta al cioccolato."
         },
         "@mom No fruit? So we won't have any dessert today.": {
             "en": "No fruit? So we won't have any dessert today.",
@@ -1374,7 +1469,8 @@
             "kr": "",
             "ua": "Немає фруктів? Значить, сьогодні не буде десерту.",
             "zh": "沒有水果嗎？那我們今天就沒有甜點了。",
-            "ar": "لا فواكه؟ إذًا لن نتناول أي تحليةٍ اليوم."
+            "ar": "لا فواكه؟ إذًا لن نتناول أي تحليةٍ اليوم.",
+            "it": "Niente frutta? Allora non avremo un dolce oggi."
         },
         "@mom Thank you for the eggs!": {
             "en": "Thank you for the eggs!",
@@ -1388,7 +1484,8 @@
             "kr": "",
             "ua": "Дякую за яйця!",
             "zh": "謝謝你的雞蛋！",
-            "ar": "شكرًا على البيض!"
+            "ar": "شكرًا على البيض!",
+            "it": "Grazie per le uova!"
         },
         "@mom It looks like you forgot the eggs.": {
             "en": "It looks like you forgot the eggs.",
@@ -1402,7 +1499,8 @@
             "kr": "",
             "ua": "Схоже, ти забув яйця.",
             "zh": "看起來你忘記買雞蛋了。",
-            "ar": "يبدو أنك قد نسيت البيض."
+            "ar": "يبدو أنك قد نسيت البيض.",
+            "it": "Sembra ti sia dimenticato le uova."
         },
         "@mom Nice, you have the tomatoes!": {
             "en": "Nice, you have the tomatoes!",
@@ -1416,7 +1514,8 @@
             "kr": "",
             "ua": "Чудово, маєш помідори!",
             "zh": "很好，你有買番茄！",
-            "ar": "ممتاز، لقد حصلت على الطماطم!"
+            "ar": "ممتاز، لقد حصلت على الطماطم!",
+            "it": "Bene, hai i pomodori!"
         },
         "@mom Where are the tomatoes?": {
             "en": "Where are the tomatoes?",
@@ -1430,7 +1529,8 @@
             "kr": "",
             "ua": "А де помідори?",
             "zh": "番茄呢？",
-            "ar": "أين الطماطم؟"
+            "ar": "أين الطماطم؟",
+            "it": "Dove sono i pomodori?"
         },
         "@mom The bread smells good.": {
             "en": "The bread smells good.",
@@ -1444,7 +1544,8 @@
             "kr": "",
             "ua": "Хліб гарно пахне.",
             "zh": "這個麵包聞起來很香。",
-            "ar": "الخبز يبدو شهيًا."
+            "ar": "الخبز يبدو شهيًا.",
+            "it": "Il pane ha un buon odore."
         },
         "@mom You didn't buy bread?": {
             "en": "You didn't buy bread?",
@@ -1458,7 +1559,8 @@
             "kr": "",
             "ua": "Ти не купив хліб?",
             "zh": "你沒有買麵包嗎？",
-            "ar": "لم تشترِ الخبز؟"
+            "ar": "لم تشترِ الخبز؟",
+            "it": "Hai comprato il pane?"
         },
         "Excellent job! You have got everything on the list!": {
             "en": "Excellent job! You have got everything on the list!",
@@ -1472,7 +1574,8 @@
             "kr": "",
             "ua": "Молодець! Маєш все, що у списку!",
             "zh": "太讚了！你買到了清單上所有東西！",
-            "ar": "عمل رائع يا بني! لقد أحضرت كل ما في اللائحة. أنا فخورة بك!"
+            "ar": "عمل رائع يا بني! لقد أحضرت كل ما في اللائحة. أنا فخورة بك!",
+            "it": "Ottimo lavoro! Hai preso tutto della lista!"
         },
         "And you still had enough coins to buy something you liked.": {
             "en": "And you still had enough coins to buy something you liked.",
@@ -1486,7 +1589,8 @@
             "kr": "",
             "ua": "І ти все ще мав достатньо монет, щоб купити те, що тобі сподобалося.",
             "zh": "而且你還有多的錢買自己喜歡的東西。",
-            "ar": "كما أنك قد تبقى لك بعض المال لتشتري شيئًا لنفسك."
+            "ar": "كما أنك قد تبقى لك بعض المال لتشتري شيئًا لنفسك.",
+            "it": "E avevi ancora abbastanza monete per comprare qualcosa che ti piaceva."
         },
         "@mom You did a great job, Peter. Thank you!": {
             "en": "You did a great job, Peter. Thank you!",
@@ -1500,7 +1604,8 @@
             "kr": "",
             "ua": "Ти молодець, Петре. Дякую тобі!",
             "zh": "做得很好，彼得，謝謝你！",
-            "ar": "عمل رائع يا محمد. شكرًا لك!"
+            "ar": "عمل رائع يا محمد. شكرًا لك!",
+            "it": "Hai fatto un buon lavoro, Peter. Grazie!"
         },
         "@mom After dinner, you can play with your toys again.": {
             "en": "After dinner, you can play with your toys again.",
@@ -1514,7 +1619,8 @@
             "kr": "",
             "ua": "Після вечері можеш знову бавитися своїми іграшками.",
             "zh": "吃完晚餐後，你可以再去玩玩具。",
-            "ar": "بعد العشاء، يمكنك أن تلعب مجددًا."
+            "ar": "بعد العشاء، يمكنك أن تلعب مجددًا.",
+            "it": "Dopo cena puoi giocare ancora con i tuoi giocattoli."
         },
         "Good work! You got most of the items.": {
             "en": "Good work! You got most of the items.",
@@ -1528,7 +1634,8 @@
             "kr": "",
             "ua": "Молодець! Ти купив більшу частину продуктів.",
             "zh": "很棒！你有買到大部分的東西。",
-            "ar": "عمل رائع! لقد أكملت كل شيء تقريبًا."
+            "ar": "عمل رائع! لقد أكملت كل شيء تقريبًا.",
+            "it": "Ben fatto! Hai preso la maggior parte delle cose."
         },
         "@mom It's not perfect, but you did well, Peter. Thank you!": {
             "en": "It's not perfect, but you did well, Peter. Thank you!",
@@ -1542,7 +1649,8 @@
             "kr": "",
             "ua": "Не ідеально, але ти добре впорався, Петре. Дякую!",
             "zh": "雖然不完美，但不錯了，謝謝你彼得！",
-            "ar": "ليس جيدًا! لكنه سيفي بالغرض."
+            "ar": "ليس جيدًا! لكنه سيفي بالغرض.",
+            "it": "Non è perfetto, ma va bene, Peter. Grazie!"
         },
         "@mom Lots of things are missing.": {
             "en": "Lots of things are missing.",
@@ -1556,7 +1664,8 @@
             "kr": "",
             "ua": "Багато чого бракує.",
             "zh": "還缺了很多東西。",
-            "ar": "الكثير مما طلبته مفقود."
+            "ar": "الكثير مما طلبته مفقود.",
+            "it": "Mancano molte cose."
         },
         "@mom What are we going to have for dinner?": {
             "en": "What are we going to have for dinner?",
@@ -1570,7 +1679,8 @@
             "kr": "",
             "ua": "Що ми будемо їсти на вечерю?",
             "zh": "我們晚餐要吃什麼呢？",
-            "ar": "ماذا سنحضر إذًا للعشاء؟"
+            "ar": "ماذا سنحضر إذًا للعشاء؟",
+            "it": "Cosa faremo per cena?"
         },
         "@mom It's okay, Peter. I'm sure you'll do better next time.": {
             "en": "It's okay, Peter. I'm sure you'll do better next time.",
@@ -1584,7 +1694,8 @@
             "kr": "",
             "ua": "Все гаразд, Петре. Я впевнена, що наступного разу у тебе вийде краще.",
             "zh": "沒關係，彼得，我相信你下次會做得更好。",
-            "ar": "حسنًا يا محمد، أنا متأكدة أنك ستبلي حسنًا في المرة المقبلة."
+            "ar": "حسنًا يا محمد، أنا متأكدة أنك ستبلي حسنًا في المرة المقبلة.",
+            "it": "Fa niente, Peter. Sono sicura che farai meglio la prossima volta."
         },
         "Leave the bedroom": {
             "audio": false,
@@ -1598,7 +1709,8 @@
             "kr": "",
             "ua": "Вийти з кімнати",
             "zh": "離開房間",
-            "ar": "غادر غرفة النوم"
+            "ar": "غادر غرفة النوم",
+            "it": "Lascia la stanza"
         },
         "Keep playing": {
             "audio": false,
@@ -1612,7 +1724,8 @@
             "kr": "",
             "ua": "Гратися далі",
             "zh": "繼續玩",
-            "ar": "أكمل اللعب"
+            "ar": "أكمل اللعب",
+            "it": "Continua a giocare"
         },
         "Leave": {
             "audio": false,
@@ -1626,7 +1739,8 @@
             "kr": "",
             "ua": "Вийти",
             "zh": "離開",
-            "ar": "غادر"
+            "ar": "غادر",
+            "it": "Esci"
         },
         "Go left": {
             "audio": false,
@@ -1640,7 +1754,8 @@
             "kr": "",
             "ua": "Наліво",
             "zh": "向左走",
-            "ar": "اذهب يمينًا"
+            "ar": "اذهب يمينًا",
+            "it": "Vai a sinistra"
         },
         "Go right": {
             "audio": false,
@@ -1654,7 +1769,8 @@
             "kr": "",
             "ua": "Направо",
             "zh": "向右走",
-            "ar": "اذهب يسارًا"
+            "ar": "اذهب يسارًا",
+            "it": "Vai a destra"
         },
         "Go straight": {
             "audio": false,
@@ -1668,7 +1784,8 @@
             "kr": "",
             "ua": "Йти прямо",
             "zh": "直走",
-            "ar": "اذهب للأمام"
+            "ar": "اذهب للأمام",
+            "it": "Vai dritto"
         },
         "Go back": {
             "audio": false,
@@ -1682,7 +1799,8 @@
             "kr": "",
             "ua": "Повернутися назад",
             "zh": "返回",
-            "ar": "عد للخلف"
+            "ar": "عد للخلف",
+            "it": "Torna indietro"
         },
         "Go to the supermarket": {
             "audio": false,
@@ -1696,7 +1814,8 @@
             "kr": "",
             "ua": "Йти до супермаркету",
             "zh": "去超市",
-            "ar": "اذهب للبقالة"
+            "ar": "اذهب للبقالة",
+            "it": "Vai al supermercato"
         },
         "Go to the bakery": {
             "audio": false,
@@ -1710,7 +1829,8 @@
             "kr": "",
             "ua": "Йти до пекарні",
             "zh": "去麵包店",
-            "ar": "أذهب للخباز"
+            "ar": "أذهب للخباز",
+            "it": "Vai alla panetteria"
         },
         "Go to the outdoor market": {
             "audio": false,
@@ -1724,7 +1844,8 @@
             "kr": "",
             "ua": "Йти на ринок",
             "zh": "去戶外市場",
-            "ar": "أذهب للسوق المفتوح"
+            "ar": "أذهب للسوق المفتوح",
+            "it": "Vai al mercato"
         },
         "Go back home": {
             "audio": false,
@@ -1738,7 +1859,8 @@
             "kr": "",
             "ua": "Повернутися додому",
             "zh": "回家",
-            "ar": "أذهب للمنزل"
+            "ar": "أذهب للمنزل",
+            "it": "Torna a casa"
         },
         "Stay": {
             "audio": false,
@@ -1752,7 +1874,8 @@
             "kr": "",
             "ua": "Залишитися",
             "zh": "停留",
-            "ar": "أبق"
+            "ar": "أبق",
+            "it": "Rimani"
         },
         "Tomatoes": {
             "audio": false,
@@ -1766,7 +1889,8 @@
             "kr": "",
             "ua": "Помідори",
             "zh": "番茄",
-            "ar": "طماطم"
+            "ar": "طماطم",
+            "it": "Pomodori"
         },
         "Apples": {
             "audio": false,
@@ -1780,7 +1904,8 @@
             "kr": "",
             "ua": "Яблука",
             "zh": "蘋果",
-            "ar": "تفاح"
+            "ar": "تفاح",
+            "it": "Mele"
         },
         "4 eggs (4🪙)": {
             "audio": false,
@@ -1794,7 +1919,8 @@
             "kr": "",
             "ua": "4 яйця (4🪙)",
             "zh": "4 顆雞蛋（4🪙）",
-            "ar": "أربع بيضات(4£)"
+            "ar": "أربع بيضات(4£)",
+            "it": "4 uova (4🪙)"
         },
         "6 eggs (6🪙)": {
             "audio": false,
@@ -1808,7 +1934,8 @@
             "kr": "",
             "ua": "6 яєць (6🪙)",
             "zh": "6 顆雞蛋（6🪙）",
-            "ar": "ست بيضات(6£)"
+            "ar": "ست بيضات(6£)",
+            "it": "6 uova (6🪙)"
         },
         "12 eggs (9🪙)": {
             "audio": false,
@@ -1822,7 +1949,8 @@
             "kr": "",
             "ua": "12 яєць (9🪙)",
             "zh": "12 顆雞蛋（9🪙）",
-            "ar": "أثنتي عشرة بيضة(9£)"
+            "ar": "أثنتي عشرة بيضة(9£)",
+            "it": "12 uova (9🪙)"
         },
         "Bread": {
             "audio": false,
@@ -1836,7 +1964,8 @@
             "kr": "",
             "ua": "Хліб",
             "zh": "麵包",
-            "ar": "خبز"
+            "ar": "خبز",
+            "it": "Pane"
         },
         "Wine": {
             "audio": false,
@@ -1850,7 +1979,8 @@
             "kr": "",
             "ua": "Вино",
             "zh": "酒",
-            "ar": "سجائر"
+            "ar": "سجائر",
+            "it": "Vino"
         },
         "10 years old": {
             "audio": false,
@@ -1864,7 +1994,8 @@
             "kr": "",
             "ua": "10 років",
             "zh": "10 歲",
-            "ar": "عشرة أعوام"
+            "ar": "عشرة أعوام",
+            "it": "10 anni"
         },
         "Lie": {
             "audio": false,
@@ -1878,7 +2009,8 @@
             "kr": "",
             "ua": "Збрехати",
             "zh": "說謊",
-            "ar": "أكذب"
+            "ar": "أكذب",
+            "it": "Menti"
         },
         "Chocolate (2🪙)": {
             "audio": false,
@@ -1892,7 +2024,8 @@
             "kr": "",
             "ua": "Шоколад (2🪙)",
             "zh": "巧克力（2🪙）",
-            "ar": "شوكولاتة(2£)"
+            "ar": "شوكولاتة(2£)",
+            "it": "Cioccolato (2🪙)"
         },
         "Bread (3🪙)": {
             "audio": false,
@@ -1906,7 +2039,8 @@
             "kr": "",
             "ua": "Хліб (3🪙)",
             "zh": "麵包（3🪙）",
-            "ar": "خبز(3£)"
+            "ar": "خبز(3£)",
+            "it": "Pane (3🪙)"
         },
         "Pears (5🪙)": {
             "audio": false,
@@ -1920,7 +2054,8 @@
             "kr": "",
             "ua": "Груші (5🪙)",
             "zh": "梨子（5🪙）",
-            "ar": "كمثرى(5£)"
+            "ar": "كمثرى(5£)",
+            "it": "Pere (5🪙)"
         },
         "3": {
             "audio": false,
@@ -1934,7 +2069,8 @@
             "kr": "",
             "ua": "3",
             "zh": "3",
-            "ar": "3"
+            "ar": "3",
+            "it": "3"
         },
         "4": {
             "audio": false,
@@ -1948,7 +2084,8 @@
             "kr": "",
             "ua": "4",
             "zh": "4",
-            "ar": "4"
+            "ar": "4",
+            "it": "4"
         },
         "5": {
             "audio": false,
@@ -1962,7 +2099,8 @@
             "kr": "",
             "ua": "5",
             "zh": "5",
-            "ar": "5"
+            "ar": "5",
+            "it": "5"
         },
         "Carrots (2🪙)": {
             "audio": false,
@@ -1976,7 +2114,8 @@
             "kr": "",
             "ua": "Морква (2🪙)",
             "zh": "紅蘿蔔（2🪙）",
-            "ar": "جزر( £)"
+            "ar": "جزر( £)",
+            "it": "Carote (2🪙)"
         },
         "Ask for apples": {
             "audio": false,
@@ -1990,7 +2129,8 @@
             "kr": "",
             "ua": "Попросити яблук",
             "zh": "問有沒有蘋果",
-            "ar": "أسأل عن التفاح"
+            "ar": "أسأل عن التفاح",
+            "it": "Chiedi le mele"
         },
         "No": {
             "audio": false,
@@ -2004,7 +2144,8 @@
             "kr": "",
             "ua": "Ні",
             "zh": "沒有",
-            "ar": "لا"
+            "ar": "لا",
+            "it": "No"
         },
         "The supermarket is right in front of you.": {
             "en": "The supermarket is right in front of you.",
@@ -2018,7 +2159,8 @@
             "kr": "",
             "ua": "Супермаркет просто перед тобою.",
             "zh": "超市就在你前面。",
-            "ar": "البقالة أمامك."
+            "ar": "البقالة أمامك.",
+            "it": "Il supermercato è dritto davanti a te."
         },
         "You enter the supermarket.": {
             "en": "You enter the supermarket.",
@@ -2032,7 +2174,8 @@
             "kr": "",
             "ua": "Ти заходиш до супермаркету.",
             "zh": "你走進超市。",
-            "ar": "دخلت البقالة."
+            "ar": "دخلت البقالة.",
+            "it": "Entri nel supermercato."
         },
         "It's hard to find what you want.": {
             "en": "It's hard to find what you want.",
@@ -2046,7 +2189,8 @@
             "kr": "",
             "ua": "Важко знайти те, що ти шукаєш.",
             "zh": "很難找到你要的東西。",
-            "ar": "إنه لأمر صعب أن تجد ما تحتاج."
+            "ar": "إنه لأمر صعب أن تجد ما تحتاج.",
+            "it": "È difficile trovare quello che vuoi."
         },
         "An employee asks if you need help.": {
             "en": "An employee asks if you need help.",
@@ -2060,7 +2204,8 @@
             "kr": "",
             "ua": "Працівник запитує, чи потрібна тобі допомога.",
             "zh": "有個員工問你是否需要幫忙。",
-            "ar": "أحد الموظفين عرض عليك المساعدة."
+            "ar": "أحد الموظفين عرض عليك المساعدة.",
+            "it": "Un commesso chiede se hai bisogno di aiuto."
         },
         "It smells like fresh bread": {
             "en": "It smells like fresh bread",
@@ -2074,7 +2219,8 @@
             "kr": "",
             "ua": "Пахне свіжим хлібом",
             "zh": "聞起來像是剛出爐的麵包。",
-            "ar": "يبدو أنه خبز طازج."
+            "ar": "يبدو أنه خبز طازج.",
+            "it": "Profuma come pane fresco"
         },
         "You see your favorite pastry.": {
             "en": "You see your favorite pastry.",
@@ -2088,7 +2234,8 @@
             "kr": "",
             "ua": "Ти бачиш своє улюблене тістечко.",
             "zh": "你看到你最愛的點心。",
-            "ar": "لقد رأيت كعكك المفضل."
+            "ar": "لقد رأيت كعكك المفضل.",
+            "it": "Vedi il tuo pasticcino preferito."
         },
         "She is holding a bag of apples.": {
             "en": "She is holding a bag of apples.",
@@ -2102,7 +2249,8 @@
             "kr": "",
             "ua": "Вона тримає торбу з яблуками.",
             "zh": "她拿著一袋蘋果。",
-            "ar": "إنها تمسك بحقيبة تفاح."
+            "ar": "إنها تمسك بحقيبة تفاح.",
+            "it": "Sta tenendo un sacco di mele."
         },
         "@teacher Hi Peter, what a surprise to see you here!": {
             "en": "Hi Peter, what a surprise to see you here!",
@@ -2116,7 +2264,8 @@
             "kr": "",
             "ua": "Добрий день, Петре, яка несподіванка побачити тебе тут!",
             "zh": "彼得，沒想到會在這裡遇到你！",
-            "ar": "أهلاً محمد، يا لها من مفاجأة سارة أن أراك اليوم!"
+            "ar": "أهلاً محمد، يا لها من مفاجأة سارة أن أراك اليوم!",
+            "it": "Ciao Peter, che sorpresa incontrarti qui!"
         },
         "@peter I am looking for the bread.": {
             "en": "I am looking for bread.",
@@ -2130,7 +2279,8 @@
             "kr": "",
             "ua": "Я шукаю хліб.",
             "zh": "我在找麵包。",
-            "ar": "أبحث عن بعض الخبز."
+            "ar": "أبحث عن بعض الخبز.",
+            "it": "Sto cercando del pane."
         },
         "Look for your music teacher": {
             "audio": false,
@@ -2144,7 +2294,8 @@
             "kr": "",
             "ua": "Шукати вчительку музики",
             "zh": "找找音樂老師",
-            "ar": "أبحث عن معلمة الموسيقي"
+            "ar": "أبحث عن معلمة الموسيقي",
+            "it": "Cerca la tua insegnante di musica"
         },
         "Eat chocolate": {
             "audio": false,
@@ -2158,7 +2309,8 @@
             "kr": "",
             "ua": "З'їсти шоколад",
             "zh": "吃巧克力",
-            "ar": "كل الشوكولاتة"
+            "ar": "كل الشوكولاتة",
+            "it": "Mangia il cioccolato"
         },
         "Eat the pastry": {
             "audio": false,
@@ -2172,7 +2324,8 @@
             "kr": "",
             "ua": "З'їсти тістечко",
             "zh": "吃點心",
-            "ar": "كل الكعك"
+            "ar": "كل الكعك",
+            "it": "Mangia il pasticcino"
         },
         "Eggs": {
             "audio": false,
@@ -2186,7 +2339,8 @@
             "kr": "",
             "ua": "Яйця",
             "zh": "蛋",
-            "ar": "بيض"
+            "ar": "بيض",
+            "it": "Uova"
         },
         "Pastry (2🪙)": {
             "audio": false,
@@ -2200,7 +2354,8 @@
             "kr": "",
             "ua": "Тістечкo (2🪙)",
             "zh": "點心（2🪙）",
-            "ar": "كعك (2£)"
+            "ar": "كعك (2£)",
+            "it": "Pasticcino (2🪙)"
         },
         "Bigger pastry (4🪙)": {
             "audio": false,
@@ -2214,7 +2369,8 @@
             "kr": "",
             "ua": "Велике тістечко (4🪙)",
             "zh": "大點心（4🪙）",
-            "ar": "كعك كبير(4£)"
+            "ar": "كعك كبير(4£)",
+            "it": "Pasticcino più grande (4🪙)"
         },
         "Yes": {
             "audio": false,
@@ -2228,7 +2384,8 @@
             "kr": "",
             "ua": "Так",
             "zh": "有",
-            "ar": "أجل"
+            "ar": "أجل",
+            "it": "Sì"
         },
         "Another crossroad? Where should you go?": {
             "en": "Another crossroad? Where should you go?",
@@ -2242,7 +2399,8 @@
             "kr": "",
             "ua": "Ще одне перехрестя? Куди йти?",
             "zh": "又一個十字路口？你該往哪裡走？",
-            "ar": "مفترق طرق آخر؟ أين يجب أن تذهب؟"
+            "ar": "مفترق طرق آخر؟ أين يجب أن تذهب؟",
+            "it": "Un altro incrocio? Dove dovresti andare?"
         },
         "You recognize the baker.": {
             "en": "You recognize the baker.",
@@ -2256,7 +2414,8 @@
             "kr": "",
             "ua": "Ти впізнаєш пекаря.",
             "zh": "你認出了麵包師傅。",
-            "ar": "لقد عرفت الخباز."
+            "ar": "لقد عرفت الخباز.",
+            "it": "Riconosci il panettiere."
         },
         "He smiles at you.": {
             "en": "He smiles at you.",
@@ -2270,7 +2429,8 @@
             "kr": "",
             "ua": "Він посміхається до тебе.",
             "zh": "他對你笑。",
-            "ar": "لقد ابتسم لك."
+            "ar": "لقد ابتسم لك.",
+            "it": "Ti sorride."
         },
         "You approach the man who sells fruits and vegetables.": {
             "en": "You approach the man who sells fruits and vegetables.",
@@ -2284,7 +2444,8 @@
             "kr": "",
             "ua": "Ти підходиш до чоловіка, який продає фрукти та овочі.",
             "zh": "你走向賣蔬果的人。",
-            "ar": "لقد وصلت لبائع الخضراوات."
+            "ar": "لقد وصلت لبائع الخضراوات.",
+            "it": "Ti avvicini all'uomo che vende frutta e verdura."
         },
         "@seller Hello! What would you like?": {
             "en": "Hello! What would you like?",
@@ -2298,7 +2459,8 @@
             "kr": "",
             "ua": "Доброго дня! Чого бажаєш?",
             "zh": "嗨！你想要什麼嗎？",
-            "ar": "أهلاً! ما الذي تحتاجه؟"
+            "ar": "أهلاً! ما الذي تحتاجه؟",
+            "it": "Ciao! Cosa vorresti?"
         },
         "As you look around, you find your music teacher.": {
             "en": "As you look around, you find your music teacher.",
@@ -2312,7 +2474,8 @@
             "kr": "",
             "ua": "Озираючись навколо, ти бачиш свою вчительку музики.",
             "zh": "你左看右看的時候，你看到了音樂老師。",
-            "ar": "عندما نظرت حولك، وجدت معلمة الموسيقى بفصلك."
+            "ar": "عندما نظرت حولك، وجدت معلمة الموسيقى بفصلك.",
+            "it": "Mentre ti guardi intorno, trovi l'insegnante di musica."
         },
         "She is listening to the guitar.": {
             "en": "She is listening to the guitar.",
@@ -2326,7 +2489,8 @@
             "kr": "",
             "ua": "Вона слухає гітару.",
             "zh": "她在聽吉他表演。",
-            "ar": "إنها تستمع للجيتار."
+            "ar": "إنها تستمع للجيتار.",
+            "it": "Sta ascoltando la chitarra."
         },
         "@teacher Hey Peter, what's up?": {
             "en": "Hey Peter, what's up?",
@@ -2340,7 +2504,8 @@
             "kr": "",
             "ua": "Привіт, Петре, що нового?",
             "zh": "嘿，彼得，你好嗎？",
-            "ar": "أهلاً محمد، ما الأخبار؟"
+            "ar": "أهلاً محمد، ما الأخبار؟",
+            "it": "Ciao Peter, cosa succede?"
         },
         "You are new to the village because your family has just moved here.": {
             "en": "You are new to the village because your family has just moved here.",
@@ -2354,7 +2519,8 @@
             "kr": "",
             "ua": "Ти новенький у цьому селі, бо твоя сім'я щойно сюди переїхала.",
             "zh": "你是這個村莊的新居民，因為你的家人剛搬來這裡。",
-            "ar": "أنت جديد في هذه القرية لأن عائلتك قد انتقلت لتوها هنا."
+            "ar": "أنت جديد في هذه القرية لأن عائلتك قد انتقلت لتوها هنا.",
+            "it": ""
         },
         "It is a bit cold outside today.": {
             "en": "It is a bit cold outside today.",
@@ -2368,7 +2534,8 @@
             "kr": "",
             "ua": "Сьогодні надворі прохолодно.",
             "zh": "今天外面有點冷。",
-            "ar": "الجو بارد قليلاً اليوم."
+            "ar": "الجو بارد قليلاً اليوم.",
+            "it": "Oggi fa un po' freddo fuori."
         },
         "@mom Grandma is visiting us tonight, so we need five apples to make her favorite apple pie.": {
             "en": "Grandma is visiting us tonight, so we need five apples to make her favorite apple pie.",
@@ -2382,7 +2549,8 @@
             "kr": "",
             "ua": "Сьогодні ввечері до нас приїжджає бабуся, тож нам потрібно п'ять яблук, щоб приготувати її улюблену шарлотку.",
             "zh": "外婆今天晚上會來找我們，所以我們需要五顆蘋果來做她最愛的蘋果派。",
-            "ar": "جدتك ستزورنا اليوم، لذا فنحن بحاجة لخمس تفاحات لنصنع لها فطيرة التفاح، فهي المفضلة لديها."
+            "ar": "جدتك ستزورنا اليوم، لذا فنحن بحاجة لخمس تفاحات لنصنع لها فطيرة التفاح، فهي المفضلة لديها.",
+            "it": "La nonna ci viene a trovare stasera, così ci servono cinque mele per fare la sua torta di mele preferita."
         },
         "@mom We also need three tomatoes and four eggs for the dinner.": {
             "en": "We also need three tomatoes and four eggs for the dinner.",
@@ -2396,7 +2564,8 @@
             "kr": "",
             "ua": "Для вечері нам також потрібно три помідори та чотири яйця.",
             "zh": "我們晚餐還需要三顆番茄和四顆蛋。",
-            "ar": "كما أننا بحاجة لثلاث حبات من الطماطم وأربع بيضات للعشاء."
+            "ar": "كما أننا بحاجة لثلاث حبات من الطماطم وأربع بيضات للعشاء.",
+            "it": "Ci servono anche tre pomodori e quattro uova per cena."
         },
         "@mom Remember, we went there last week.": {
             "en": "Remember, we went there last week.",
@@ -2410,7 +2579,8 @@
             "kr": "",
             "ua": "Згадай, ми ходили туди минулого тижня.",
             "zh": "記得嗎？我們上禮拜有來過這裡。",
-            "ar": "تذكر، فقد ذهبنا هناك الأسبوع الماضي."
+            "ar": "تذكر، فقد ذهبنا هناك الأسبوع الماضي.",
+            "it": "Ricorda, ci siamo andati settimana scorsa."
         },
         "@mom If you have enough coins, you can buy something for yourself.": {
             "en": "If you have enough coins, you can buy something for yourself.",
@@ -2424,7 +2594,8 @@
             "kr": "",
             "ua": "Якщо вистачить монет, можеш купити щось собі.",
             "zh": "如果你有多的錢，你可以幫自己買東西",
-            "ar": "لو تبقى معك بعض المال، يمكنك أن تشتري شيئاً لنفسك."
+            "ar": "لو تبقى معك بعض المال، يمكنك أن تشتري شيئاً لنفسك.",
+            "it": "Se hai abbastanza monete puoi comprare qualcosa per te."
         },
         "@peter Four.": {
             "en": "Four.",
@@ -2438,7 +2609,8 @@
             "kr": "",
             "ua": "Чотири",
             "zh": "四顆。",
-            "ar": "أربعة."
+            "ar": "أربعة.",
+            "it": "Quattro."
         },
         "@peter Six.": {
             "en": "Six.",
@@ -2452,7 +2624,8 @@
             "kr": "",
             "ua": "Шість",
             "zh": "六顆。",
-            "ar": "ست."
+            "ar": "ست.",
+            "it": "Sei."
         },
         "@peter Twelve.": {
             "en": "Twelve.",
@@ -2466,7 +2639,8 @@
             "kr": "",
             "ua": "Дванадцять",
             "zh": "十二顆。",
-            "ar": "اثنا عشر."
+            "ar": "اثنا عشر.",
+            "it": "Dodici."
         },
         "@baker Hello Peter, what would you like today?": {
             "en": "Hello Peter, what would you like today?",
@@ -2480,7 +2654,8 @@
             "kr": "",
             "ua": "Здрастуй, Петре, чого б ти хотів сьогодні?",
             "zh": "嗨，彼得，你今天想要買什麼？",
-            "ar": "أهلاً محمد، ماذا تحتاج لليوم؟"
+            "ar": "أهلاً محمد، ماذا تحتاج لليوم؟",
+            "it": "Ciao Peter, cosa vorresti oggi?"
         },
         "@seller Sorry, we just sold the last apples to that woman.": {
             "en": "Sorry, we just sold the last apples to that woman.",
@@ -2494,7 +2669,8 @@
             "kr": "",
             "ua": "Вибач, ми щойно продали останні яблука тій жінці.",
             "zh": "抱歉，我們剛剛把最後的蘋果都賣給那位小姐了。",
-            "ar": "آسف، لقد بعنا آخر تفاحات لدينا لهذه المرأة."
+            "ar": "آسف، لقد بعنا آخر تفاحات لدينا لهذه المرأة.",
+            "it": "Mi dispiace, abbiamo appena venduto le ultime mele a quella signora."
         },
         "@peter Ms. Melody?": {
             "en": "Ms. Melody?",
@@ -2508,7 +2684,8 @@
             "kr": "",
             "ua": "Пані Мелоді?",
             "zh": "梅洛迪老師？",
-            "ar": "آنسة نغم؟"
+            "ar": "آنسة نغم؟",
+            "it": "Signora Melody?"
         },
         "@peter Oh no, I have to find a solution!": {
             "en": "Oh no, I have to find a solution!",
@@ -2522,7 +2699,8 @@
             "kr": "",
             "ua": "О ні, я маю знайти рішення!",
             "zh": "喔不，我要想辦法！",
-            "ar": "أوه لا، يجب أن أجد حلاً!"
+            "ar": "أوه لا، يجب أن أجد حلاً!",
+            "it": "Oh no, devo trovare una soluzione!"
         },
         "@seller Maybe you can use pears instead?": {
             "en": "Maybe you can use pears instead?",
@@ -2536,7 +2714,8 @@
             "kr": "",
             "ua": "Можливо, натомість можна взяти груші?",
             "zh": "或許你會想要買梨子？",
-            "ar": "ربما يمكننا أن نستخدم الكمثرى كبديل؟"
+            "ar": "ربما يمكننا أن نستخدم الكمثرى كبديل؟",
+            "it": "Forse puoi usare le pere?"
         },
         "@peter Can I get the pears, please?": {
             "en": "Can I get the pears, please?",
@@ -2550,7 +2729,8 @@
             "kr": "",
             "ua": "Дайте, будь ласка, груші.",
             "zh": "我可以買梨子嗎？",
-            "ar": "هل يمكنني الحصول على بعض الكمثرى من فضلك؟"
+            "ar": "هل يمكنني الحصول على بعض الكمثرى من فضلك؟",
+            "it": "Posso avere le pere, per favore?"
         },
         "You decide to go to the market.": {
             "en": "You decide to go to the market.",
@@ -2564,7 +2744,8 @@
             "kr": "",
             "ua": "Ти вирішуєш піти на ринок.",
             "zh": "你決定要去市場。",
-            "ar": "لقد قررت الذهاب للبقالة."
+            "ar": "لقد قررت الذهاب للبقالة.",
+            "it": "Decidi di andare al mercato."
         },
         "When you arrive near the fruits and vegetables, you recognize someone.": {
             "en": "When you arrive near the fruits and vegetables, you recognize someone.",
@@ -2578,7 +2759,8 @@
             "kr": "",
             "ua": "Коли ти підходиш до фруктів і овочів, то впізнаєш когось.",
             "zh": "當你走到蔬果區時，你認出某個人。",
-            "ar": "عندما وصلت بالقرب من الفواكه والخضراوات، قد تعرفت على أحدهم."
+            "ar": "عندما وصلت بالقرب من الفواكه والخضراوات، قد تعرفت على أحدهم.",
+            "it": "Quando arrivi vicino alla frutta e verdura, riconosci qualcuno."
         },
         "This is your music teacher.": {
             "en": "This is your music teacher.",
@@ -2592,7 +2774,8 @@
             "kr": "",
             "ua": "Це твоя вчителька музики.",
             "zh": "這是你的音樂老師。",
-            "ar": "هذه الآنسة نغم، معلمة الموسيقى بفصلك."
+            "ar": "هذه الآنسة نغم، معلمة الموسيقى بفصلك.",
+            "it": "È l'insegnante di musica."
         },
         "@peter Hello Ms. Melody!": {
             "en": "Hello Ms. Melody!",
@@ -2606,7 +2789,8 @@
             "kr": "",
             "ua": "Добрий день, пані Мелоді!",
             "zh": "嗨，梅洛迪老師！",
-            "ar": "أهلاً آنسة نغم!"
+            "ar": "أهلاً آنسة نغم!",
+            "it": "Buongiorno signora Melody!"
         },
         "@teacher What are you doing here?": {
             "en": "What are you doing here?",
@@ -2620,7 +2804,8 @@
             "kr": "",
             "ua": "Що ти тут робиш?",
             "zh": "你在這裡做什麼？",
-            "ar": "ما الذي تفعله هنا؟"
+            "ar": "ما الذي تفعله هنا؟",
+            "it": "Cosa fai qui?"
         },
         "@peter I'm looking for apples.": {
             "en": "I'm looking for apples.",
@@ -2634,7 +2819,8 @@
             "kr": "",
             "ua": "Шукаю яблука.",
             "zh": "我在找蘋果。",
-            "ar": "أنا أبحث عن بعض التفاح."
+            "ar": "أنا أبحث عن بعض التفاح.",
+            "it": "Sto cercando delle mele."
         },
         "@peter I'm buying food for dinner.": {
             "en": "I'm buying food for dinner.",
@@ -2648,7 +2834,8 @@
             "kr": "",
             "ua": "Купую їжу на вечерю.",
             "zh": "我在買晚餐的食材。",
-            "ar": "أنا أشتري طعام العشاء."
+            "ar": "أنا أشتري طعام العشاء.",
+            "it": "Sto comprando cibo per la cena."
         },
         "@peter We'll make an apple pie for my Grandma.": {
             "en": "We'll make an apple pie for my Grandma.",
@@ -2662,7 +2849,8 @@
             "kr": "",
             "ua": "Ми спечемо шарлотку для моєї бабусі.",
             "zh": "我們要做蘋果派給外婆吃。",
-            "ar": "سنصنع فطيرة التفاح لجدتي."
+            "ar": "سنصنع فطيرة التفاح لجدتي.",
+            "it": "Faremo una torta di mele per la nonna."
         },
         "@teacher Great! I love apples too. I'm going to make apple sauce.": {
             "en": "Great! I love apples too. I'm going to make apple sauce.",
@@ -2676,7 +2864,8 @@
             "kr": "",
             "ua": "Чудово! Я теж люблю яблука. Я зроблю яблучне пюре.",
             "zh": "很棒耶！我也喜歡蘋果，我打算做蘋果醬。",
-            "ar": "ممتاز! أنا أحب التفاح أيضاً. سأذهب مربى التفاح."
+            "ar": "ممتاز! أنا أحب التفاح أيضاً. سأذهب مربى التفاح.",
+            "it": "Ottimo! Anche a me piacciono le mele. Farò una crema di mela."
         },
         "@teacher See you later! I'll stay a bit on the square to listen to the music.": {
             "en": "See you later! I'll stay a bit on the square to listen to the music.",
@@ -2690,7 +2879,8 @@
             "kr": "",
             "ua": "До зустрічі! Я ще трохи побуду на площі, послухаю музику.",
             "zh": "等等見！我會在廣場上多待一下聽音樂。",
-            "ar": "أراك لاحقاً! أنا سأبقى هنا لأسمع بعض الموسيقى."
+            "ar": "أراك لاحقاً! أنا سأبقى هنا لأسمع بعض الموسيقى.",
+            "it": "A dopo! Rimarrò per una po' nella piazza ad ascoltare la musica."
         },
         "But maybe you could have bought something for yourself?": {
             "en": "But maybe you could have bought something for yourself?",
@@ -2704,7 +2894,8 @@
             "kr": "",
             "ua": "Та, можливо, ти міг би купити щось для себе?",
             "zh": "但或許你本來能買自己喜歡的東西？",
-            "ar": "لكن ربما يمكنك أن تشتري شيئاً لنفسك؟"
+            "ar": "لكن ربما يمكنك أن تشتري شيئاً لنفسك؟",
+            "it": "Ma forse potevi prendere qualcosa per te?"
         },
         "Your mom smiles warmly.": {
             "en": "Your mom smiles warmly.",
@@ -2718,7 +2909,8 @@
             "kr": "",
             "ua": "Твоя мама тепло посміхається.",
             "zh": "你的媽媽溫暖地微笑著。",
-            "ar": "أمك ابتسمت بحرارة."
+            "ar": "أمك ابتسمت بحرارة.",
+            "it": "Tua mamma sorride calorosamente."
         },
         "@mom But first, let's make the apple pie!": {
             "en": "But first, let's make the apple pie!",
@@ -2732,7 +2924,8 @@
             "kr": "",
             "ua": "Але спочатку приготуймо шарлотку!",
             "zh": "但首先，我們來做蘋果派吧！",
-            "ar": "لكن أولاً، لنصنع فطيرة تفاح!"
+            "ar": "لكن أولاً، لنصنع فطيرة تفاح!",
+            "it": "Ma prima, facciamo la torta di mele!"
         },
         "You want to play more, but your mom really insists.": {
             "en": "You want to play more, but your mom really insists.",
@@ -2746,7 +2939,8 @@
             "kr": "",
             "ua": "Ти хочеш ще погратися, але твоя мама дуже наполягає.",
             "zh": "你想要繼續玩，但媽媽真的很堅持。",
-            "ar": "أنت تريد أن تلعب لوقت أطول، لكن أمك مصرة بحق."
+            "ar": "أنت تريد أن تلعب لوقت أطول، لكن أمك مصرة بحق.",
+            "it": "Vuoi giocare di più, ma tua mamma insiste."
         },
         "@peter Yes, mom. I'm coming.": {
             "en": "Yes, mom. I'm coming.",
@@ -2760,7 +2954,8 @@
             "kr": "",
             "ua": "Так, мамо. Я вже йду.",
             "zh": "好我來了。",
-            "ar": "حسناً أمي، أنا قادم."
+            "ar": "حسناً أمي، أنا قادم.",
+            "it": "Sì, mamma. Sto arrivando."
         }
     }
 }

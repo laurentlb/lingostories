@@ -1,6 +1,6 @@
 export const allStories = [
     { id: "grocery", title: "The Grocery List", imageCount: 5,
-        released: ["en", "fr", "nl", "sv", "de", "pl", "es", "ua", "ar", "zh"]
+        released: ["en", "fr", "nl", "sv", "de", "pl", "es", "ua", "ar", "zh", "it"]
     },
     { id: "park", title: "A Day in the Park", imageCount: 5,
         released: ["en", "fr", "nl", "sv", "de", "pl", "pt", "es", "ua", "ar"]
