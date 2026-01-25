@@ -34,29 +34,10 @@ languages = {
 def copy_directory(src, dst):
     """
     Recursively copies a directory from a source path to a destination path,
-    handling Python version compatibility for the 'dirs_exist_ok' argument.
-
-    For Python versions < 3.8, this function will first remove the destination
-    directory if it exists, effectively mimicking the behavior of
-    dirs_exist_ok=True. For Python 3.8+, it uses the native argument.
     """
     try:
-        # Check if the Python version supports dirs_exist_ok
-        if sys.version_info >= (3, 8):
-            shutil.copytree(src, dst, dirs_exist_ok=True)
-            print(f"Successfully copied '{src}' to '{dst}' using dirs_exist_ok.")
-        else:
-            # For older Python versions, first remove the destination if it exists
-            if os.path.exists(dst):
-                print(f"Warning: Destination '{dst}' already exists. Deleting it to proceed...")
-                shutil.rmtree(dst)
-            shutil.copytree(src, dst)
-            print(f"Successfully copied '{src}' to '{dst}' (old method).")
-
-    except FileExistsError:
-        # This can still happen on older Python versions if a file exists
-        # within the destination path, but not the directory itself.
-        print(f"Error: A file already exists at '{dst}'.")
+        shutil.copytree(src, dst, dirs_exist_ok=True)
+        print(f"Successfully copied '{src}' to '{dst}' using dirs_exist_ok.")
     except Exception as e:
         print(f"An unexpected error occurred: {e}")
 
@@ -110,7 +91,7 @@ def load_updates():
 def generate_language_pages():
     """Generate HTML files for each language."""
     updates = load_updates()
-    template = env.get_template("lang.tpl")
+    template = env.get_template("lang.html")
     for lang_code, lang_name in languages.items():
         output_path = os.path.join(dist_dir, lang_code, "index.html")
         os.makedirs(os.path.dirname(output_path), exist_ok=True)
@@ -130,7 +111,7 @@ def generate_main_index():
     """Generate the main index.html file."""
     updates = load_updates()
     output_path = os.path.join(dist_dir, "index.html")
-    template = env.get_template("index.tpl")
+    template = env.get_template("index.html")
     content = template.render(
         language="your target language",
         languages=languages,
