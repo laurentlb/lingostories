@@ -1,5 +1,10 @@
 [
     {
+        "date": "2026-01-25",
+        "title": "Italian language support",
+        "description": "We have just added content in Italian. Last year we also added Mandarin, Arabic, Polish, and Ukrainian. Special thanks to all the contributors!"
+    },
+    {
         "date": "2025-11-30",
         "title": "Dictionary lookup",
         "description": "Clicking on a word in the story now shows its translation. Links to dictionaries are also provided for more details."

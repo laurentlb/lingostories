@@ -14,7 +14,7 @@ dist_dir = os.path.abspath(os.path.join(root_dir, "dist"))
 
 env = Environment(
     loader=FileSystemLoader(os.path.join(root_dir, "templates")),
-    autoescape=select_autoescape(['html', 'xml'])
+    # autoescape=select_autoescape(['html', 'xml'])
 )
 
 languages = {
