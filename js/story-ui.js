@@ -150,6 +150,11 @@ export class BaseStoryUI {
         const parent = this;
         sentenceElement.addEventListener('click', function(event) {
             const clickedElement = event.target;
+            if (parent.nextAction) { // happens in case of spoiler
+                parent.nextAction();
+                parent.nextAction = null;
+                return;
+            }
 
             if (clickedElement.classList.contains('word')) {
                 var popup = new WordPopup();

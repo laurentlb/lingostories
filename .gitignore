@@ -4,3 +4,4 @@ py/secrets.py
 audio/grocery
 audio/intro
 audio/park
+.venv
