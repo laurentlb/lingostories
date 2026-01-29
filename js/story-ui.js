@@ -352,9 +352,14 @@ export class StoryUI extends BaseStoryUI {
             return;
         }
         const transl = document.createElement("p");
-        const transLang = this.settings.translationLang();
-        transl.textContent = line[transLang];
         transl.classList.add("translation");
+        const transLang = this.settings.translationLang();
+
+        if (transLang === this.story.lang) {
+            transl.textContent = "(select a different translation language in the settings to see translations)";
+        } else {
+            transl.textContent = line[transLang];
+        }
 
         if (this.openTransl) {
             this.openTransl.remove();
