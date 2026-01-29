@@ -16,7 +16,7 @@ class AudioPlayer {
         this.currentCallback = callback;
 
         this.audio.volume = volume;
-        this.audio.playbackRate = playbackRate;
+        this.audio.defaultPlaybackRate  = playbackRate;
         this.audio.src = url;
         this.audio.play().catch((error) => {
             console.error("Playback failed:", error);

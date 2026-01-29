@@ -70,6 +70,7 @@ export class Settings {
             document.querySelector("#audio-volume").value = settings.volume;
             document.querySelector("#show-translations").checked = settings.showTranslations;
             document.querySelector("#voice-speed").value = settings.voiceSpeed;
+            document.querySelector("#voice-speed-value").textContent = settings.voiceSpeed + "x";
             document.querySelector("#enable-minigames").checked = settings.enableMinigames;
             document.querySelector("#use-microphone").checked = settings.useMicrophone;
         }
@@ -105,6 +106,7 @@ export class Settings {
         };
 
         document.querySelector("#voice-speed").oninput = () => {
+            document.querySelector("#voice-speed-value").textContent = document.querySelector("#voice-speed").value + "x";
             this.save();
         };
 
