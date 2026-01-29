@@ -842,10 +842,12 @@ blockquote {
     position: absolute;
     color: var(--main-text-color);
     font-size: 18px;
+    font-weight: normal; /* reset, in case we're inside h2 */
 
     padding: 1em;
-    background-color: var(--box-bg-color);
-    border: 1px solid var(--border-color);
+    background-color: #0008;
+    backdrop-filter: blur(8px);
+    border: 2px solid var(--border-color);
 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     z-index: 1000;
@@ -855,12 +857,22 @@ blockquote {
 
     transform: translate(-50%, -100%); 
 
+    .source-word {
+        font-weight: bold;
+    }
+
+    .translated-word {
+        font-style: italic;
+        margin: 0 0 8px 0;
+    }
+
     li {
         margin-block: 4px;
     }
 
     ul {
         margin: 0;
-        padding-left: 2em;
+        list-style-type: circle;
+        padding-left: 1.5em;
     }
 }

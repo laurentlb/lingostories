@@ -24,23 +24,51 @@ export class WordPopup {
         popupElement.innerHTML = ''; // Clear existing content
 
         try {
-            popupElement.appendChild(document.createTextNode(`"${word}" - ${await this.wordTranslator.translate(source, word, target)}:`));
+            const divSource = document.createElement('div');
+            divSource.textContent = word;
+            divSource.classList.add('source-word');
+            popupElement.appendChild(divSource);
+
+            const divTranslation = document.createElement('div');
+            divTranslation.classList.add('translated-word');
+            divTranslation.textContent = '...';
+
+            this.wordTranslator.translate(source, word, target).then((translation) => {
+                divTranslation.textContent = translation;
+            }).catch((error) => {
+                console.error("Translation error:", error);
+                divTranslation.textContent = "(translation error)";
+            });
+
+            popupElement.appendChild(divTranslation);
         } catch (e) {
             console.log(e)
             popupElement.appendChild(document.createTextNode(`"${word}":`));
         }
-        const links = getDictionaries(word, source, target);
-        const listElement = document.createElement('ul');
-        for (const [name, url] of Object.entries(links)) {
-            if (url === null) continue;
-            const linkElement = document.createElement('a');
-            linkElement.target = '_blank';
-            linkElement.href = url;
-            linkElement.textContent = name;
-            const listItem = document.createElement('li');
-            listItem.appendChild(linkElement);
-            listElement.appendChild(listItem);
-        }
+
+        const expandButton = document.createElement('button');
+        expandButton.textContent = 'More...';
+        expandButton.classList.add('expand-button');
+        popupElement.appendChild(expandButton);
+        const listElement = document.createElement('ul');        
+
+        expandButton.onclick = () => {
+            expandButton.style.display = 'none';
+            listElement.innerHTML = ''; // clear in case of double click
+            const links = getDictionaries(word, source, target);
+            for (const [name, url] of Object.entries(links)) {
+                if (url === null) continue;
+                const linkElement = document.createElement('a');
+                linkElement.target = '_blank';
+                linkElement.href = url;
+                linkElement.textContent = name;
+                const listItem = document.createElement('li');
+                listItem.appendChild(linkElement);
+                listElement.appendChild(listItem);
+            }
+            popupElement.appendChild(listElement);
+        };
+
         popupElement.appendChild(listElement);
     }
 
