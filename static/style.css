@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap');
+
 *,
 *::before,
 *::after {
@@ -8,9 +10,8 @@ body, html {
     margin: 0;
     padding: 0;
     background-color: var(--main-bg-color);
-    font-family: sans-serif;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
     color: var(--main-text-color);
-    letter-spacing: .05em;
     font-size: 18px;
 
     --border-color: #556688;
@@ -102,7 +103,7 @@ h3 {
 }
 
 .playing-audio > .text {
-    color: #ee0;
+    color: #ee8;
     text-shadow: 4px 4px 8px #ff03;
 }
 
@@ -192,7 +193,6 @@ h3 {
 .translate-icon, .audio-icon {
     height: 1.2rem;
     margin-right: 8px;
-    align-self: flex-start;
 }
 
 .bubble-icon {
@@ -583,6 +583,7 @@ details {
     --character-color: #444;
     --bubble-bg: color-mix(in srgb, var(--character-color) 25%, #001);
     position: relative;
+    font-size: 1.2rem;
 
     p {
         margin-block: 0em;
