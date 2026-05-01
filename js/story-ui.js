@@ -193,9 +193,6 @@ export class BaseStoryUI {
         container.appendChild(elt);
 
         this.addExplanation(container, line);
-        if (isTitle) {
-            this.addContributors(container.parentElement);
-        }
     }
 
     showChoices(choices) {
