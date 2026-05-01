@@ -4,6 +4,28 @@ import { LingoStoriesWordTranslator } from './word-translator.js';
 export class WordPopup {
     constructor() {
         this.wordTranslator = new LingoStoriesWordTranslator();
+        this._outsideClickHandler = this._handleOutsideClick.bind(this);
+    }
+
+    _detachOutsideClick() {
+        document.removeEventListener("click", this._outsideClickHandler, true);
+    }
+
+    _handleOutsideClick(event) {
+        const popupElement = document.getElementById("word-popup");
+        if (!popupElement) {
+            this._detachOutsideClick();
+            return;
+        }
+
+        const clickedElement = event.target;
+        const isClickInsidePopup = popupElement.contains(clickedElement);
+        const isClickOnWord = clickedElement.classList.contains("word");
+
+        if (!isClickInsidePopup && !isClickOnWord) {
+            popupElement.style.display = "none";
+            this._detachOutsideClick();
+        }
     }
 
     createWordPopupElement(container, id) {
@@ -73,23 +95,24 @@ export class WordPopup {
     }
 
     showWordPopup(container, wordElement, word, source, target) {
-        const popupElement = this.createWordPopupElement(container, 'word-popup');
+        this._detachOutsideClick();
+
+        const popupElement = this.createWordPopupElement(container, "word-popup");
 
         // 1. Get positions relative to the viewport
         const wordRect = wordElement.getBoundingClientRect();
         const containerRect = container.getBoundingClientRect();
 
-        const popupX = (wordRect.left + (wordRect.width / 2)) - containerRect.left; 
-        const popupY = wordRect.top - containerRect.top; 
+        const popupX = (wordRect.left + (wordRect.width / 2)) - containerRect.left;
+        const popupY = wordRect.top - containerRect.top;
         this.setPopupContent(popupElement, word, source, target);
 
         popupElement.style.left = `${popupX}px`;
         popupElement.style.top = `${popupY}px`;
-        
-        popupElement.style.display = 'block';
 
-        // 4. Attach the outside-click handler
-        document.addEventListener('click', handleOutsideClick, true); // Use capture phase for reliability
+        popupElement.style.display = "block";
+
+        document.addEventListener("click", this._outsideClickHandler, true);
     }
 }
 
@@ -190,21 +213,4 @@ function getDictionaries(text, source, target) {
         "Pons.com": PonsCom(text, source, target),
         "WordReference": WordReference(text, source, target),
     };
-}
-
-function handleOutsideClick(event) {
-    const popupElement = document.getElementById('word-popup'); // Assuming a fixed ID for the popup
-    const clickedElement = event.target;
-
-    // Check if the click was inside the popup (or on the word that triggered it)
-    const isClickInsidePopup = popupElement.contains(clickedElement);
-    const isClickOnWord = clickedElement.classList.contains('word'); // Assuming class 'word'
-
-    if (!isClickInsidePopup && !isClickOnWord) {
-        // The click was outside the popup AND not on a word element
-        popupElement.style.display = 'none';
-
-        // Clean up the listener immediately after closing the popup
-        document.removeEventListener('click', handleOutsideClick, true);
-    }
 }
