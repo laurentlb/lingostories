@@ -57,10 +57,103 @@ async function nativeShareMessage() {
     }
 }
 
-window.addEventListener("lingo-story-complete", (ev) => {
-    if (ev.detail && ev.detail.storyId) {
-        setPendingShare(ev.detail);
+let pendingChallengeMode = null;
+
+function suggestedChallenge(current) {
+    if (current === "audioFirst") {
+        return {
+            mode: "textOnly",
+            message: "Try the same story again in Reading mode (text only)?",
+        };
     }
+    if (current === "textOnly") {
+        return {
+            mode: "audioAndText",
+            message: "Try Listening & Reading mode next time (audio and transcript together)?",
+        };
+    }
+    if (current === "autoAdvance") {
+        return {
+            mode: "audioFirst",
+            message: "Try Listening mode next: hear each line before the transcript appears.",
+        };
+    }
+    return {
+        mode: "audioFirst",
+        message: "Try Listening mode next: hear each line before the transcript appears.",
+    };
+}
+
+function hideChallengeOffer() {
+    const box = document.getElementById("challenge-offer");
+    if (box) {
+        box.style.display = "none";
+    }
+    pendingChallengeMode = null;
+}
+
+function showChallengeOffer(detail) {
+    const box = document.getElementById("challenge-offer");
+    if (!box || !detail.readingMode) {
+        return;
+    }
+    const pick = suggestedChallenge(detail.readingMode);
+    if (!pick || pick.mode === detail.readingMode) {
+        hideChallengeOffer();
+        return;
+    }
+    pendingChallengeMode = pick.mode;
+    const p = box.querySelector(".challenge-offer-text");
+    if (p) {
+        p.textContent = pick.message;
+        p.style.display = "block";
+    }
+    const actions = box.querySelector(".challenge-offer-actions");
+    if (actions) {
+        actions.style.display = "flex";
+    }
+    const st = box.querySelector(".challenge-offer-status");
+    if (st) {
+        st.textContent = "";
+    }
+    box.style.display = "block";
+}
+
+function applyChallengeAccept() {
+    if (!pendingChallengeMode) {
+        return;
+    }
+    const select = document.querySelector("#reading-mode");
+    if (!select) {
+        return;
+    }
+    select.value = pendingChallengeMode;
+    select.dispatchEvent(new Event("change", { bubbles: true }));
+    settings.save();
+    const box = document.getElementById("challenge-offer");
+    const status = box?.querySelector(".challenge-offer-status");
+    const actions = box?.querySelector(".challenge-offer-actions");
+    const msg = box?.querySelector(".challenge-offer-text");
+    if (actions) {
+        actions.style.display = "none";
+    }
+    if (msg) {
+        msg.style.display = "none";
+    }
+    if (status) {
+        status.textContent =
+            "Story mode updated. Tap Restart above to replay with the new mode.";
+    }
+    pendingChallengeMode = null;
+}
+
+window.addEventListener("lingo-story-complete", (ev) => {
+    const d = ev.detail;
+    if (!d || !d.storyId) {
+        return;
+    }
+    setPendingShare(d);
+    showChallengeOffer(d);
 });
 const storyUI = new StoryUI(userData, settings, story, next, updateCollectionTopStatus, updateButtons);
 const speechRecognition = new SpeechRecognitionBox(settings, document.querySelector(".speech-recognition .output"), listeningCallback);
@@ -461,6 +554,12 @@ function handleMainUiClick(event) {
             break;
         case "story-share-native":
             nativeShareMessage();
+            break;
+        case "challenge-accept":
+            applyChallengeAccept();
+            break;
+        case "challenge-dismiss":
+            hideChallengeOffer();
             break;
         default:
             break;

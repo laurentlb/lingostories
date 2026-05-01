@@ -513,6 +513,33 @@ summary {
         color: var(--secondary-text-color);
         margin: 4px 0 0;
     }
+
+    .challenge-offer {
+        width: 100%;
+        margin-top: 12px;
+        padding-top: 12px;
+        border-top: 1px solid var(--border-color);
+        text-align: center;
+    }
+
+    .challenge-offer-text {
+        margin: 0 0 8px;
+        font-size: 0.95rem;
+    }
+
+    .challenge-offer-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        justify-content: center;
+        margin-bottom: 4px;
+    }
+
+    .challenge-offer-status {
+        font-size: 0.85rem;
+        color: var(--secondary-text-color);
+        margin: 4px 0 0;
+    }
 }
 
 .certificate {
