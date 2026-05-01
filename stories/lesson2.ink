@@ -1,5 +1,10 @@
 // Image: The Smith family together, with simple labels: father, mother, son, daughter, baby.
 
+Helen is older than Emma.
+Emma is younger than Helen.
+Emma is also younger than John.
+Emma is the youngest child.
+
 
 === names_and_ages ===
 

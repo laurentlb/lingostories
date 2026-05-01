@@ -5,3 +5,4 @@ audio/grocery
 audio/intro
 audio/park
 .venv
+py/__pycache__
