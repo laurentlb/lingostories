@@ -1,3 +1,4 @@
+import { refreshBadgesHome } from "./badges.js";
 import { allStories } from "./stories.js";
 import { UserData } from "./userdata.js";
 import { Settings } from "./settings.js";
@@ -181,6 +182,7 @@ function showHome(language) {
         e.style.display = "block";
     });
     createStoryList(language);
+    refreshBadgesHome(userData, language);
 }
 
 function showStory() {

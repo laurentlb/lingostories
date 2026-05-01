@@ -1,4 +1,5 @@
 import { Explain } from "./explain.js";
+import { recordStoryCompletion, refreshBadgesHome } from "./badges.js";
 import { allStories } from "./stories.js";
 import { listenMP3, soundEffect } from "./audio.js";
 import { WordShuffleGame } from "./wordShuffleGame.js";
@@ -458,14 +459,21 @@ export class StoryUI extends BaseStoryUI {
             });
         }
 
+        const completionDetail = {
+            storyId: this.story.storyName,
+            lang: this.story.lang,
+            title: storyData.title,
+            readingMode: this.settings.readingMode(),
+            imageCount: storyData.imageCount,
+            collectedImages,
+        };
+        recordStoryCompletion(this.userData, completionDetail);
+        refreshBadgesHome(this.userData, this.story.lang);
+
         window.dispatchEvent(
             new CustomEvent("story-complete", {
                 bubbles: true,
-                detail: {
-                    storyId: this.story.storyName,
-                    lang: this.story.lang,
-                    title: storyData.title,
-                },
+                detail: completionDetail,
             })
         );
     }

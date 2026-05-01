@@ -279,6 +279,22 @@ h3 {
     margin-block: 0.2em;
 }
 
+.badges-strip {
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 12px;
+    align-items: center;
+}
+
+.badge-pill {
+    font-size: 0.75rem;
+    padding: 4px 10px;
+    border-radius: 999px;
+    border: 1px solid var(--highlight-color);
+    color: var(--highlight-color);
+    background: var(--box-bg-color);
+}
+
 .story-list {
     .story-info {
         width: 180px;
