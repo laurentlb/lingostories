@@ -15,14 +15,14 @@
                 <li>
                     <div class='date'>{{ update.date }}</div>
                     <div class='news-title'>{{ update.title }}</div>
-                    <div class='description'>{{ update.description }}</div>
+                    <div class='description'>{{ update.description | safe }}</div>
                 </li>
             {% endfor %}
 
             <details>
                 <summary><h2>Other Updates</h2></summary>
                 {% for update in updates[2:] %}
-                    <li><span class='date'>{{ update.date }}</span> {{ update.description }}</li>
+                    <li><span class='date'>{{ update.date }}</span> {{ update.description | safe }}</li>
                 {% endfor %}
             </details>
 
