@@ -346,7 +346,57 @@ document.addEventListener("keydown", (event) => {
     }
 });
 
-window.onload = function(){
+function toggleSettings() {
+    const options = document.querySelector(".options");
+    if (!options) return;
+    const isOpen = options.style.display !== "block";
+    const icons = document.querySelector(".icon-bar")?.children;
+    if (icons) {
+        for (let i = 0; i < icons.length; i++) {
+            if (icons[i].id !== "settings-icon") {
+                icons[i].style.visibility = isOpen ? "hidden" : "visible";
+            }
+        }
+    }
+    options.style.display = options.style.display === "block" ? "none" : "block";
+}
+
+function toggleCollection() {
+    const collection = document.querySelector(".top-collection");
+    if (!collection) return;
+    collection.style.display = collection.style.display === "block" ? "none" : "block";
+}
+
+function handleMainUiClick(event) {
+    const target = event.target.closest("[data-action]");
+    if (!target) return;
+    switch (target.getAttribute("data-action")) {
+        case "toggle-settings":
+            toggleSettings();
+            break;
+        case "toggle-collection":
+            toggleCollection();
+            break;
+        case "reset-story":
+            resetStory();
+            break;
+        case "continue-story":
+            next();
+            break;
+        case "listen-mic":
+            listenMic();
+            break;
+        case "toggle-listening":
+            toggleListening();
+            break;
+        default:
+            break;
+    }
+}
+
+window.addEventListener("load", () => {
+    document.body.addEventListener("click", handleMainUiClick);
+
     settings.init();
     const updateMicIcon = () => {
         const micIcon = document.querySelector("#microphone-button");
@@ -365,11 +415,6 @@ window.onload = function(){
     } else {
         showHome(LANG_CODE);
     }
-};
+});
 
-// Expose entry points to the browser
-window.next = next;
-window.resetStory = resetStory;
-window.story = story; // for debug & js console
-window.toggleListening = toggleListening;
-window.listenMic = listenMic;
+window.story = story;

@@ -24,11 +24,11 @@
         <a href="/" id="back-icon"><img src="/img/back.svg" class="icon top-icon" title="Back to the story list"></a>
         <a href="/" id="home-icon"><img src="/img/flags/{{lang_code}}.svg" class="top-icon" title="Stories in {{language}}.&#10;Switch target language?"></a>
         
-        <img src="/img/options.svg" id="settings-icon" class="icon top-icon" title="Settings" onclick="toggleSettings()">
+        <img src="/img/options.svg" id="settings-icon" class="icon top-icon" title="Settings" data-action="toggle-settings">
 
-        <img src="/img/restart.svg" id="restart-icon" class="icon top-icon" title="Restart the story" onclick="resetStory();"></a>
+        <img src="/img/restart.svg" id="restart-icon" class="icon top-icon" title="Restart the story" data-action="reset-story">
 
-        <div id="collection-count" class="text-icon" onclick="toggleCollection();"></div>
+        <div id="collection-count" class="text-icon" data-action="toggle-collection"></div>
     </div>
     {% include 'settings.html' %}
     <div class="top-collection">
@@ -75,12 +75,12 @@
 
             <div>
                 <a id="back-to-menu"><img class="icon player-icon" src="/img/exit.svg" title="Choose another story"></a>
-                <img class="icon player-icon" src="/img/restart.svg" title="Restart the story" onclick="resetStory();">
+                <img class="icon player-icon" src="/img/restart.svg" title="Restart the story" data-action="reset-story">
             </div>
         </div>
 
         <div class="info-box speech-recognition">
-            <img id="listening-icon" class="icon player-icon" src="/img/microphone.svg" title="Speech recognition" onclick="toggleListening();">
+            <img id="listening-icon" class="icon player-icon" src="/img/microphone.svg" title="Speech recognition" data-action="toggle-listening">
             <div class="output"></div>
         </div>
 
@@ -95,8 +95,8 @@
 
 </div>
 <div class="footer">
-    <img class="icon player-icon" id="player-next" src="/img/player-play.svg" title="Continue (Space key)" onclick="next();">
-    <img class="icon player-icon" id="microphone-button" src="/img/microphone.svg" title="Repeat out loud in your Microphone (M key)" onclick="listenMic();">
+    <img class="icon player-icon" id="player-next" src="/img/player-play.svg" title="Continue (Space key)" data-action="continue-story">
+    <img class="icon player-icon" id="microphone-button" src="/img/microphone.svg" title="Repeat out loud in your Microphone (M key)" data-action="listen-mic">
 </div>
 
 <template id="explain-dialog-template">
@@ -114,25 +114,6 @@
 <script>
 const LANGUAGE = "{{language}}";
 const LANG_CODE = "{{lang_code}}";
-
-function toggleSettings() {
-    var options = document.querySelector('.options');
-    const isOpen = options.style.display !== 'block';
-
-    // hide other icons
-    var icons = document.querySelector('.icon-bar').children;
-    for (var i = 0; i < icons.length; i++) {
-        if (icons[i].id !== 'settings-icon') {
-            icons[i].style.visibility = isOpen ? 'hidden' : 'visible';
-        }
-    }
-    options.style.display = options.style.display === 'block' ? 'none' : 'block';
-}
-
-function toggleCollection() {
-    var collection = document.querySelector('.top-collection');
-    collection.style.display = collection.style.display === 'block' ? 'none' : 'block';
-}
 </script>
 
 <script data-goatcounter="https://lingostories.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
