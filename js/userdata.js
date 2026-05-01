@@ -42,4 +42,20 @@ export class UserData {
         }
         return count;
     }
+
+    saveResume(storyId, lang) {
+        this.saveData("resume", { storyId, lang, updatedAt: Date.now() });
+    }
+
+    loadResume() {
+        const r = this.loadData("resume", null);
+        if (!r || typeof r.storyId !== "string" || typeof r.lang !== "string") {
+            return null;
+        }
+        return r;
+    }
+
+    clearResume() {
+        this.storage.removeItem("resume");
+    }
 }

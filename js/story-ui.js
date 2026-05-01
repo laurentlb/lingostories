@@ -459,6 +459,8 @@ export class StoryUI extends BaseStoryUI {
             });
         }
 
+        this.userData.clearResume();
+
         const completionDetail = {
             storyId: this.story.storyName,
             lang: this.story.lang,

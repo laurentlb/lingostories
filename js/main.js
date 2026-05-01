@@ -217,6 +217,8 @@ async function chooseStory(name, language) {
             event: true,
         });
     }
+
+    userData.saveResume(name, language);
 }
 
 function resetStory() {
@@ -301,12 +303,56 @@ function createStoryList(language) {
     }
 }
 
+function renderResumeBanner(language) {
+    const selector = document.querySelector("#story-selector");
+    if (!selector) {
+        return;
+    }
+    let el = document.getElementById("resume-banner");
+    if (!el) {
+        el = document.createElement("div");
+        el.id = "resume-banner";
+        el.className = "home resume-banner";
+        const list = selector.querySelector(".story-list");
+        if (list) {
+            selector.insertBefore(el, list);
+        } else {
+            selector.appendChild(el);
+        }
+    }
+    const r = userData.loadResume();
+    if (!r || r.lang !== language) {
+        el.style.display = "none";
+        el.textContent = "";
+        return;
+    }
+    const storyMeta = allStories.find((s) => s.id === r.storyId);
+    if (!storyMeta || !storyMeta.released) {
+        el.style.display = "none";
+        el.textContent = "";
+        return;
+    }
+    if (Array.isArray(storyMeta.released) && !storyMeta.released.includes(language)) {
+        el.style.display = "none";
+        el.textContent = "";
+        return;
+    }
+    el.style.display = "block";
+    el.textContent = "";
+    const a = document.createElement("a");
+    a.className = "resume-banner-link";
+    a.href = `?story=${encodeURIComponent(r.storyId)}`;
+    a.textContent = `Continue where you left off: ${storyMeta.title}`;
+    el.appendChild(a);
+}
+
 function showHome(language) {
     document.querySelectorAll('.home').forEach(e => {
         e.style.display = "block";
     });
     createStoryList(language);
     refreshBadgesHome(userData);
+    renderResumeBanner(language);
 }
 
 function showStory() {

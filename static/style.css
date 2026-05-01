@@ -279,6 +279,25 @@ h3 {
     margin-block: 0.2em;
 }
 
+.resume-banner {
+    margin-bottom: 12px;
+    padding: 10px 12px;
+    border-radius: 12px;
+    border: 1px solid var(--highlight-color);
+    background: var(--box-bg-color);
+    text-align: center;
+}
+
+.resume-banner-link {
+    font-weight: bold;
+    color: var(--highlight-color);
+    text-decoration: none;
+}
+
+.resume-banner-link:hover {
+    text-decoration: underline;
+}
+
 .badges-strip {
     flex-wrap: wrap;
     gap: 6px;
