@@ -91,7 +91,7 @@ export class Explain {
 
         document.body.appendChild(root);
 
-        this._dialogUi = { dialog, titleEl, bodyEl };
+        this._dialogUi = { dialog, titleEl, bodyEl, closeButton };
         return this._dialogUi;
     }
 
@@ -101,12 +101,14 @@ export class Explain {
             return;
         }
 
-        const { dialog, titleEl, bodyEl } = ui;
+        const { dialog, titleEl, bodyEl, closeButton } = ui;
         titleEl.textContent = sentence;
         bodyEl.innerHTML = this.markdownToHtml(content);
 
         if (!dialog.open) {
             dialog.showModal();
         }
+
+        closeButton.focus();
     }
 }
