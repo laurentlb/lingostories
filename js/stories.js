@@ -18,6 +18,11 @@ export const allStories = [
             "ar",
             "zh",
             "it"
+        ],
+        "tags": [
+            "Branching",
+            "Inventory",
+            "Illustrations"
         ]
     },
     {
@@ -36,6 +41,10 @@ export const allStories = [
             "ua",
             "ar",
             "it"
+        ],
+        "tags": [
+            "Branching",
+            "Illustrations"
         ]
     },
     {
@@ -53,24 +62,37 @@ export const allStories = [
             "es",
             "ua",
             "ar"
+        ],
+        "tags": [
+            "Short",
+            "Tutorial"
         ]
     },
     {
         "id": "numbers",
         "title": "A Game of Numbers",
         "imageCount": 0,
-        "released": false
+        "released": false,
+        "tags": [
+            "Minigame-focused"
+        ]
     },
     {
         "id": "restaurant",
         "title": "At the Restaurant",
         "imageCount": 0,
-        "released": false
+        "released": false,
+        "tags": [
+            "Dialogue"
+        ]
     },
     {
         "id": "lost",
         "title": "Lost & Found",
         "imageCount": 0,
-        "released": false
+        "released": false,
+        "tags": [
+            "Branching"
+        ]
     }
 ];

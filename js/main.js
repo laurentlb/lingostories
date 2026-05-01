@@ -182,6 +182,18 @@ function createStoryList(language) {
         link.appendChild(title);
         elt.appendChild(link);
 
+        if (Array.isArray(sto.tags) && sto.tags.length) {
+            const tagRow = document.createElement("div");
+            tagRow.classList.add("story-tags");
+            for (const tag of sto.tags) {
+                const tagEl = document.createElement("span");
+                tagEl.classList.add("story-tag");
+                tagEl.textContent = tag;
+                tagRow.appendChild(tagEl);
+            }
+            elt.appendChild(tagRow);
+        }
+
         const countLabel = document.createElement("span");
         countLabel.classList.add("story-count");
         if (unreleased) {

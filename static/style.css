@@ -306,6 +306,24 @@ h3 {
         opacity: 40%;
     }
 
+    .story-tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 4px;
+        justify-content: center;
+        margin: 4px 0 2px;
+        min-height: 1.2em;
+    }
+
+    .story-tag {
+        font-size: 0.65rem;
+        padding: 2px 6px;
+        border-radius: 6px;
+        background: var(--dark-bg-color);
+        color: var(--secondary-text-color);
+        border: 1px solid var(--border-color);
+    }
+
     .story-count {
         position: absolute;
         top: 0;

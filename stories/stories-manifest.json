@@ -3,36 +3,42 @@
         "id": "grocery",
         "title": "The Grocery List",
         "imageCount": 5,
-        "released": ["en", "fr", "nl", "sv", "de", "pl", "es", "ua", "ar", "zh", "it"]
+        "released": ["en", "fr", "nl", "sv", "de", "pl", "es", "ua", "ar", "zh", "it"],
+        "tags": ["Branching", "Inventory", "Illustrations"]
     },
     {
         "id": "park",
         "title": "A Day in the Park",
         "imageCount": 5,
-        "released": ["en", "fr", "nl", "sv", "de", "pl", "pt", "es", "ua", "ar", "it"]
+        "released": ["en", "fr", "nl", "sv", "de", "pl", "pt", "es", "ua", "ar", "it"],
+        "tags": ["Branching", "Illustrations"]
     },
     {
         "id": "intro",
         "title": "Introduction",
         "imageCount": 1,
-        "released": ["en", "fr", "nl", "sv", "de", "pl", "pt", "es", "ua", "ar"]
+        "released": ["en", "fr", "nl", "sv", "de", "pl", "pt", "es", "ua", "ar"],
+        "tags": ["Short", "Tutorial"]
     },
     {
         "id": "numbers",
         "title": "A Game of Numbers",
         "imageCount": 0,
-        "released": false
+        "released": false,
+        "tags": ["Minigame-focused"]
     },
     {
         "id": "restaurant",
         "title": "At the Restaurant",
         "imageCount": 0,
-        "released": false
+        "released": false,
+        "tags": ["Dialogue"]
     },
     {
         "id": "lost",
         "title": "Lost & Found",
         "imageCount": 0,
-        "released": false
+        "released": false,
+        "tags": ["Branching"]
     }
 ]
