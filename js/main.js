@@ -5,9 +5,43 @@ import { Story } from "./story-engine.js";
 import { SpeechRecognitionBox } from "./speech-recognition.js";
 import { StoryUI } from "./story-ui.js";
 
+const SHARE_ORIGIN = "https://lingostories.org";
+
 const story = new Story(updateInventory);
 const userData = new UserData();
 const settings = new Settings(userData);
+
+let pendingShareText = "";
+
+function setPendingShare(detail) {
+    const url = `${SHARE_ORIGIN}/${encodeURIComponent(detail.lang)}/?story=${encodeURIComponent(detail.storyId)}`;
+    pendingShareText =
+        `I finished the story "${detail.title}" on LingoStories!\n${url}`;
+    const status = document.querySelector(".story-share-status");
+    if (status) {
+        status.textContent = "";
+    }
+}
+
+async function copyShareMessage() {
+    const status = document.querySelector(".story-share-status");
+    try {
+        await navigator.clipboard.writeText(pendingShareText);
+        if (status) {
+            status.textContent = "Copied! Paste it anywhere you like.";
+        }
+    } catch {
+        if (status) {
+            status.textContent = "Copy the message: " + pendingShareText;
+        }
+    }
+}
+
+window.addEventListener("story-complete", (ev) => {
+    if (ev.detail && ev.detail.storyId) {
+        setPendingShare(ev.detail);
+    }
+});
 const storyUI = new StoryUI(userData, settings, story, next, updateCollectionTopStatus, updateButtons);
 const speechRecognition = new SpeechRecognitionBox(settings, document.querySelector(".speech-recognition .output"), listeningCallback);
 
@@ -388,6 +422,9 @@ function handleMainUiClick(event) {
             break;
         case "toggle-listening":
             toggleListening();
+            break;
+        case "story-share-copy":
+            copyShareMessage();
             break;
         default:
             break;

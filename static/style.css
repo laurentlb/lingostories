@@ -437,6 +437,31 @@ summary {
         display: flex;
         justify-content: space-around;
     }
+
+    .story-share-actions {
+        display: block;
+        text-align: center;
+        margin-bottom: 4px;
+    }
+
+    .story-share-btn {
+        cursor: pointer;
+        border-radius: 8px;
+        background: var(--box-bg-color);
+        color: var(--highlight-color);
+        font-size: 1em;
+    }
+
+    .story-share-btn:hover {
+        background: var(--dark-bg-color);
+    }
+
+    .story-share-status {
+        min-height: 1.25em;
+        font-size: 0.85rem;
+        color: var(--secondary-text-color);
+        margin: 4px 0 0;
+    }
 }
 
 .certificate {
