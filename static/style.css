@@ -6,7 +6,7 @@
     box-sizing: border-box;
 }
 
-body, html {
+body, html, dialog {
     margin: 0;
     padding: 0;
     background-color: var(--main-bg-color);
@@ -684,6 +684,7 @@ details {
     }
 }
 
+/* Used by edit/syntax UI; story explain modal uses <dialog>::backdrop instead. */
 .explain-overlay {
     position: fixed;
     top: 0;
@@ -693,7 +694,16 @@ details {
     background: rgba(0, 0, 0, 0.5);
     z-index: 999;
 }
-  
+
+dialog.explain-modal {
+    border: none;
+    padding: 0;
+}
+
+dialog.explain-modal::backdrop {
+    background: rgba(0, 0, 0, 0.5);
+}
+
 .explain-modal {
     position: fixed;
     top: 50%;

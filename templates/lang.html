@@ -99,6 +99,18 @@
     <img class="icon player-icon" id="microphone-button" src="/img/microphone.svg" title="Repeat out loud in your Microphone (M key)" onclick="listenMic();">
 </div>
 
+<template id="explain-dialog-template">
+    <dialog class="explain-modal" aria-labelledby="explain-modal-title">
+        <div class="header">
+            <h1 class="explain-modal-title" id="explain-modal-title"></h1>
+            <button type="button" class="close-button" aria-label="Close">×</button>
+        </div>
+        <div class="content">
+            <p class="explain-modal-body"></p>
+        </div>
+    </dialog>
+</template>
+
 <script>
 const LANGUAGE = "{{language}}";
 const LANG_CODE = "{{lang_code}}";
