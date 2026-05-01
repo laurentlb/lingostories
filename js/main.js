@@ -111,6 +111,32 @@ function openStoryHelpDialog() {
     ui.closeBtn.focus();
 }
 
+function showImageOverlay(imagePath) {
+    const overlay = document.createElement("div");
+    overlay.style.position = "fixed";
+    overlay.style.top = "0";
+    overlay.style.left = "0";
+    overlay.style.width = "100%";
+    overlay.style.height = "100%";
+    overlay.style.backgroundColor = "rgba(0, 0, 0, 0.8)";
+    overlay.style.display = "flex";
+    overlay.style.alignItems = "center";
+    overlay.style.justifyContent = "center";
+    overlay.style.zIndex = "1000";
+    overlay.style.cursor = "pointer";
+
+    const img = document.createElement("img");
+    img.src = `/img/stories/${imagePath}`;
+    img.style.maxWidth = "90%";
+    img.style.maxHeight = "90%";
+    img.style.objectFit = "contain";
+    img.style.pointerEvents = "none";
+
+    overlay.appendChild(img);
+    overlay.addEventListener("click", () => overlay.remove());
+    document.body.appendChild(overlay);
+}
+
 function syncStoryPageIntro() {
     const wrap = document.querySelector(".story-page-intro");
     if (!wrap) {
@@ -209,6 +235,8 @@ function createImageCollection(classname, lang, storyName) {
             const elt = document.createElement("img");
             elt.src = `/img/stories/${img}`;
             elt.classList.add("small-story-image");
+            elt.style.cursor = "pointer";
+            elt.addEventListener("click", () => showImageOverlay(img));
             container.appendChild(elt);
         }
     }
