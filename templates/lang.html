@@ -54,17 +54,14 @@
             <div class="story-list"></div>
         </div>
 
-        <div class="in-story info" style="margin-top: 1em;">
-            <details>
-                <summary><h2>Help</h2></summary>
-                <p>
-                    <i>Check the settings in the top bar to customize your experience,
-                    and <a href="/guide.html" target="_blank">read the user guide</a> for more information.</i>
-                </p>
-                <p>
-                    <i>Click on any sentence to see its translation. Click the button at the bottom to continue.</i>
-                </p>
-            </details>
+        <div class="in-story story-page-intro">
+            <div class="story-credits-row">
+                <p id="story-credits-line" class="story-credits-line"></p>
+                <button type="button" id="story-help-btn" class="story-help-btn" data-action="story-help-open" aria-haspopup="dialog">Help</button>
+            </div>
+            <div id="story-cover-wrap" class="story-cover-wrap">
+                <img id="story-cover-img" class="story-cover-img" src="" alt="" loading="eager" width="280" height="280" />
+            </div>
         </div>
 
         <div class="in-story story"></div>
@@ -117,6 +114,24 @@
     <img class="icon player-icon" id="player-next" src="/img/player-play.svg" title="Continue (Space key)" data-action="continue-story">
     <img class="icon player-icon" id="microphone-button" src="/img/microphone.svg" title="Repeat out loud in your Microphone (M key)" data-action="listen-mic">
 </div>
+
+<template id="story-help-dialog-template">
+    <dialog class="explain-modal story-help-dialog" aria-labelledby="story-help-dialog-title">
+        <div class="header">
+            <h2 class="explain-modal-title" id="story-help-dialog-title">Help</h2>
+            <button type="button" class="close-button" aria-label="Close">×</button>
+        </div>
+        <div class="content story-help-dialog-body">
+            <p>
+                <i>Check the settings in the top bar to customize your experience,
+                and <a href="/guide.html" target="_blank">read the user guide</a> for more information.</i>
+            </p>
+            <p>
+                <i>Click on any sentence to see its translation. Click the button at the bottom to continue.</i>
+            </p>
+        </div>
+    </dialog>
+</template>
 
 <template id="explain-dialog-template">
     <dialog class="explain-modal" aria-labelledby="explain-modal-title">

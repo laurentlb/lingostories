@@ -190,6 +190,84 @@ function updateCollectionTopStatus() {
     createImageCollection(".top-image-collection", story.lang, story.storyName);
 }
 
+let storyHelpDialogInstance = null;
+
+function ensureStoryHelpDialog() {
+    if (storyHelpDialogInstance) {
+        return storyHelpDialogInstance;
+    }
+    const tmpl = document.getElementById("story-help-dialog-template");
+    if (!tmpl) {
+        return null;
+    }
+    const root = tmpl.content.cloneNode(true);
+    const dialog = root.querySelector("dialog");
+    const closeBtn = root.querySelector(".close-button");
+    closeBtn.addEventListener("click", () => dialog.close());
+    dialog.addEventListener("click", (event) => {
+        if (event.target === dialog) {
+            dialog.close();
+        }
+    });
+    document.body.appendChild(root);
+    storyHelpDialogInstance = { dialog, closeBtn };
+    return storyHelpDialogInstance;
+}
+
+function openStoryHelpDialog() {
+    const ui = ensureStoryHelpDialog();
+    if (!ui) {
+        return;
+    }
+    ui.dialog.showModal();
+    ui.closeBtn.focus();
+}
+
+function syncStoryPageIntro() {
+    const wrap = document.querySelector(".story-page-intro");
+    if (!wrap) {
+        return;
+    }
+    const credits = document.getElementById("story-credits-line");
+    const list = story.metadata?.sentences?.contributors;
+    const lang = story.lang;
+    if (credits) {
+        if (list && list[lang]) {
+            credits.textContent = "Translation: " + list[lang];
+        } else {
+            credits.textContent = "";
+        }
+    }
+    const coverImg = document.getElementById("story-cover-img");
+    const coverWrap = document.getElementById("story-cover-wrap");
+    if (coverImg && coverWrap && story.storyName) {
+        const showCover = () => {
+            coverWrap.style.display = "block";
+        };
+        const hideCover = () => {
+            coverWrap.style.display = "none";
+        };
+        coverImg.onload = showCover;
+        coverImg.onerror = hideCover;
+        coverImg.src = `/img/stories/${story.storyName}.jpg`;
+        const sd = allStories.find((s) => s.id === story.storyName);
+        coverImg.alt = sd ? `Cover: ${sd.title}` : "Story cover";
+        if (coverImg.complete && coverImg.naturalHeight > 0) {
+            showCover();
+        } else {
+            hideCover();
+        }
+    }
+    wrap.style.display = "block";
+}
+
+function hideStoryPageIntro() {
+    const wrap = document.querySelector(".story-page-intro");
+    if (wrap) {
+        wrap.style.display = "none";
+    }
+}
+
 async function chooseStory(name, language) {
     const backUrl = "./";
     document.querySelector("#back-icon").setAttribute("href", backUrl);
@@ -206,6 +284,8 @@ async function chooseStory(name, language) {
     story.lang = language;
     await story.loadStory(name);
     await storyUI.init(name, language);
+
+    syncStoryPageIntro();
 
     updateCollectionTopStatus();
     resetStory();
@@ -347,6 +427,7 @@ function renderResumeBanner(language) {
 }
 
 function showHome(language) {
+    hideStoryPageIntro();
     document.querySelectorAll('.home').forEach(e => {
         e.style.display = "block";
     });
@@ -606,6 +687,9 @@ function handleMainUiClick(event) {
             break;
         case "challenge-dismiss":
             hideChallengeOffer();
+            break;
+        case "story-help-open":
+            openStoryHelpDialog();
             break;
         default:
             break;

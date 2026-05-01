@@ -753,7 +753,65 @@ details {
 }
 
 .story {
-    padding-top: 1em;
+    padding-top: 0.35em;
+}
+
+.story-page-intro {
+    margin-top: 0.35em;
+}
+
+.story-credits-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 10px;
+}
+
+.story-credits-line {
+    flex: 1;
+    margin: 0;
+    font-size: 0.85rem;
+    color: var(--secondary-text-color);
+    font-style: italic;
+    min-height: 1.2em;
+}
+
+.story-help-btn {
+    flex-shrink: 0;
+    cursor: pointer;
+    font-size: 0.85rem;
+    padding: 6px 12px;
+    border-radius: 8px;
+    border: 1px solid var(--highlight-color);
+    background: var(--box-bg-color);
+    color: var(--highlight-color);
+}
+
+.story-help-btn:hover {
+    background: var(--dark-bg-color);
+}
+
+.story-cover-wrap {
+    text-align: center;
+    margin-bottom: 4px;
+}
+
+.story-cover-img {
+    max-width: 100%;
+    width: min(280px, 100%);
+    height: auto;
+    aspect-ratio: 1;
+    border-radius: 16px;
+    border: 2px solid var(--border-color);
+    object-fit: cover;
+}
+
+dialog.story-help-dialog.explain-modal {
+    height: auto;
+    max-height: min(85vh, 520px);
+    width: 92%;
+    max-width: 420px;
 }
 
 #back-icon {
