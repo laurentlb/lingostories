@@ -154,7 +154,7 @@ function showStory() {
         e.style.display = "block";
     });
 
-    document.querySelector("#back-icon").style.display = "block";;
+    document.querySelector("#back-icon").style.display = "block";
     document.querySelector("#home-icon").style.display = "none";
     document.querySelector(".story-end").style.display = "none";
 }
@@ -205,7 +205,7 @@ function updateItem(item, value) {
     if (value) {
         inventory.style.display = "flex";
     } else {
-        element.display = "none";
+        element.style.display = "none";
     }
 }
 
