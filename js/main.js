@@ -11,6 +11,8 @@ const SHARE_ORIGIN = "https://lingostories.org";
 const story = new Story(updateInventory);
 const userData = new UserData();
 const settings = new Settings(userData);
+const PLAYER_NEXT_PLAY_ICON = "/img/player-play.svg";
+const PLAYER_NEXT_PAUSE_ICON = "/img/player-pause.svg";
 
 let pendingShareText = "";
 
@@ -304,9 +306,29 @@ function showStory() {
     document.querySelector(".story-end").style.display = "none";
 }
 
+function updatePlayerNextIcon() {
+    const playerNext = document.getElementById("player-next");
+    if (!playerNext) {
+        return;
+    }
+    const isPauseState = settings.readingMode() === "autoAdvance" && storyUI.isAudioPlaying();
+    playerNext.src = isPauseState ? PLAYER_NEXT_PAUSE_ICON : PLAYER_NEXT_PLAY_ICON;
+    playerNext.title = isPauseState ? "Pause audio (Space key)" : "Continue (Space key)";
+}
+
+function continueOrPauseStory() {
+    if (settings.readingMode() === "autoAdvance" && storyUI.isAudioPlaying()) {
+        storyUI.stopAudioPlayback();
+        updateButtons();
+        return;
+    }
+    next();
+}
+
 function updateButtons() {
     const storyContinues = !storyUI.didShowChoices;
     document.getElementById("player-next").style.visibility = storyContinues ? "visible" : "hidden";
+    updatePlayerNextIcon();
     scrollDown();
 }
 
@@ -453,7 +475,7 @@ document.addEventListener("keydown", (event) => {
     }
 
     if (event.key === " ") {
-        next();
+        continueOrPauseStory();
     }
 
     if (event.key === "t") {
@@ -527,7 +549,7 @@ function handleMainUiClick(event) {
             resetStory();
             break;
         case "continue-story":
-            next();
+            continueOrPauseStory();
             break;
         case "listen-mic":
             listenMic();

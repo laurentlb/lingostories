@@ -23,6 +23,12 @@ class AudioPlayer {
             this.triggerCallback('exception');
         });
     }
+
+    stop() {
+        this.audio.pause();
+        this.audio.currentTime = 0;
+        this.triggerCallback('stopped', false);
+    }
   
     triggerCallback(cause, ended) {
         if (this.currentCallback) {
@@ -44,6 +50,10 @@ export function listenMP3(state, line, settings, callback) {
 export function soundEffect(settings, name, callback = null) {
     const file = `/audio/${name}.mp3`;
     player.play(file, settings.volume(), 1, callback);
+}
+
+export function stopMP3() {
+    player.stop();
 }
 
 export function updateVoices(lang) {

@@ -1,7 +1,7 @@
 import { Explain } from "./explain.js";
 import { recordStoryCompletion, refreshBadgesHome } from "./badges.js";
 import { allStories } from "./stories.js";
-import { listenMP3, soundEffect } from "./audio.js";
+import { listenMP3, soundEffect, stopMP3 } from "./audio.js";
 import { WordShuffleGame } from "./wordShuffleGame.js";
 import { WordPopup } from "./word-popup.js";
 
@@ -42,7 +42,7 @@ export class BaseStoryUI {
     }
 
     // ---- hooks to override ----
-    playLineAudio(line, onDone) {}
+    playLineAudio(line, container, onDone) {}
     playSoundEffect(name, onDone) {}
     collectImage(lang, storyName, image) {}
     addExplanation(container, line) {}
@@ -297,6 +297,7 @@ export class StoryUI extends BaseStoryUI {
         this.explainer = new Explain();
         this.openTransl = null;
         this.highlightedText = null;
+        this.currentAudioContainer = null;
     }
 
     async init(name, language) {
@@ -304,15 +305,42 @@ export class StoryUI extends BaseStoryUI {
         await this.explainer.init(name, language);
     }
 
+    clearPlayingAudioState() {
+        if (this.currentAudioContainer) {
+            this.currentAudioContainer.classList.remove("playing-audio");
+        }
+        this.currentAudioContainer = null;
+        this.highlightedText = null;
+    }
+
+    isAudioPlaying() {
+        return this.currentAudioContainer !== null;
+    }
+
+    stopAudioPlayback() {
+        if (!this.currentAudioContainer) {
+            return;
+        }
+        stopMP3();
+        this.clearPlayingAudioState();
+    }
+
     playLineAudio(line, container, onDone) {
+        this.clearPlayingAudioState();
+
         if (this.highlightedText !== null) {
             this.highlightedText.classList.remove("playing-audio");
         }
         this.highlightedText = container;
         container.classList.add("playing-audio");
+        this.currentAudioContainer = container;
 
         listenMP3(this.story, line, this.settings, (success) => {
-            container.classList.remove("playing-audio");
+            if (this.currentAudioContainer === container) {
+                this.clearPlayingAudioState();
+            } else {
+                container.classList.remove("playing-audio");
+            }
             if (onDone !== null && success && this.settings.readingMode() === "autoAdvance") {
                 onDone();
             }
@@ -478,7 +506,7 @@ export class StoryUI extends BaseStoryUI {
 
 // ---------------- EditorStoryUI ----------------
 export class EditorStoryUI extends BaseStoryUI {
-    playLineAudio(line, onDone) { /* no audio in editor */ }
+    playLineAudio(line, container, onDone) { /* no audio in editor */ }
     playSoundEffect(name, onDone) { /* no sounds */ }
     collectImage(lang, storyName, image) { /* editor doesn’t track userdata */ }
     toggleTranslation(container) { /* no translations in editor */ }
