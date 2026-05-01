@@ -328,16 +328,21 @@ function itemImage(item) {
 
 function updateItem(item, value) {
     const inventory = document.querySelector(".inventory");
-    let element = inventory.querySelector(`#${item}`);
+
+    if (value) {
+        inventory.style.display = "flex";
+    }
+
+    let element = inventory.querySelector(`#item-${item}`);
     if (!element) {
         element = document.createElement("div");
         element.style.backgroundImage = `url(${itemImage(item)})`;
-        element.id = item;
-        element.classList.add("item", "money");
-        inventory.appendChild(element);
+        element.id = `item-${item}`;
+        element.classList.add("item");
         if (typeof value === "boolean") {
             element.classList.add("boolean");
         }
+        inventory.appendChild(element);
     }
     if (typeof value === "number") {
         element.textContent = value;
@@ -347,11 +352,7 @@ function updateItem(item, value) {
         }, 10);    
     }
 
-    if (value) {
-        inventory.style.display = "flex";
-    } else {
-        element.style.display = "none";
-    }
+    element.style.display = value ? "block" : "none";
 }
 
 function updateInventory(name, value) {
