@@ -457,6 +457,17 @@ export class StoryUI extends BaseStoryUI {
                 event: true,
             });
         }
+
+        window.dispatchEvent(
+            new CustomEvent("lingo-story-complete", {
+                bubbles: true,
+                detail: {
+                    storyId: this.story.storyName,
+                    lang: this.story.lang,
+                    title: storyData.title,
+                },
+            })
+        );
     }
 }
 

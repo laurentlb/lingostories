@@ -5,9 +5,62 @@ import { Story } from "./story-engine.js";
 import { SpeechRecognitionBox } from "./speech-recognition.js";
 import { StoryUI } from "./story-ui.js";
 
+const SHARE_ORIGIN = "https://lingostories.org";
+
 const story = new Story(updateInventory);
 const userData = new UserData();
 const settings = new Settings(userData);
+
+let pendingShareText = "";
+
+function buildPublicStoryUrl(lang, storyId) {
+    return `${SHARE_ORIGIN}/${encodeURIComponent(lang)}/?story=${encodeURIComponent(storyId)}`;
+}
+
+function setPendingShare(detail) {
+    const url = buildPublicStoryUrl(detail.lang, detail.storyId);
+    pendingShareText =
+        `I finished "${detail.title}" on LingoStories — free interactive stories for language learners!\n${url}`;
+    const status = document.querySelector(".story-share-status");
+    if (status) {
+        status.textContent = "";
+    }
+    const nativeBtn = document.querySelector(".story-share-native");
+    if (nativeBtn) {
+        nativeBtn.hidden = typeof navigator.share !== "function";
+    }
+}
+
+async function copyShareMessage() {
+    const status = document.querySelector(".story-share-status");
+    try {
+        await navigator.clipboard.writeText(pendingShareText);
+        if (status) {
+            status.textContent = "Copied — paste it anywhere you like.";
+        }
+    } catch {
+        if (status) {
+            status.textContent = "Copy blocked by the browser; select the message manually if needed.";
+        }
+    }
+}
+
+async function nativeShareMessage() {
+    const status = document.querySelector(".story-share-status");
+    try {
+        await navigator.share({ text: pendingShareText });
+    } catch (e) {
+        if (e.name !== "AbortError" && status) {
+            status.textContent = "Sharing was cancelled or failed.";
+        }
+    }
+}
+
+window.addEventListener("lingo-story-complete", (ev) => {
+    if (ev.detail && ev.detail.storyId) {
+        setPendingShare(ev.detail);
+    }
+});
 const storyUI = new StoryUI(userData, settings, story, next, updateCollectionTopStatus, updateButtons);
 const speechRecognition = new SpeechRecognitionBox(settings, document.querySelector(".speech-recognition .output"), listeningCallback);
 
@@ -388,6 +441,12 @@ function handleMainUiClick(event) {
             break;
         case "toggle-listening":
             toggleListening();
+            break;
+        case "story-share-copy":
+            copyShareMessage();
+            break;
+        case "story-share-native":
+            nativeShareMessage();
             break;
         default:
             break;

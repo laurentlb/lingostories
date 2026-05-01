@@ -437,6 +437,48 @@ summary {
         display: flex;
         justify-content: space-around;
     }
+
+    .story-share {
+        width: 100%;
+        margin-top: 12px;
+        padding-top: 12px;
+        border-top: 1px solid var(--border-color);
+        text-align: center;
+    }
+
+    .story-share-label {
+        margin: 0 0 8px;
+        font-size: 0.95rem;
+    }
+
+    .story-share-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        justify-content: center;
+        margin-bottom: 4px;
+    }
+
+    .story-share-btn {
+        cursor: pointer;
+        border-radius: 8px;
+        padding: 8px 14px;
+        border: 1px solid var(--highlight-color);
+        background: var(--box-bg-color);
+        color: var(--highlight-color);
+        font-size: 0.9rem;
+    }
+
+    .story-share-btn:hover {
+        background: var(--dark-bg-color);
+    }
+
+    .story-share-status {
+        min-height: 1.25em;
+        font-size: 0.85rem;
+        color: var(--secondary-text-color);
+        margin: 4px 0 0;
+    }
 }
 
 .certificate {
