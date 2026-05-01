@@ -1,7 +1,9 @@
 import { marked } from 'https://cdn.jsdelivr.net/npm/marked/lib/marked.esm.js';
 
 export class Explain {
-    constructor() { }
+    constructor() {
+        this._dialogUi = null;
+    }
 
     async init(storyName, language) {
         this.storyName = storyName;
@@ -59,48 +61,52 @@ export class Explain {
         }
     }
 
+    /**
+     * Lazily clones #explain-dialog-template once and wires close behavior.
+     */
+    _ensureDialog() {
+        if (this._dialogUi) {
+            return this._dialogUi;
+        }
+
+        const tmpl = document.getElementById("explain-dialog-template");
+        if (!tmpl) {
+            console.error("Missing #explain-dialog-template in the page.");
+            return null;
+        }
+
+        const root = tmpl.content.cloneNode(true);
+        const dialog = root.querySelector("dialog");
+        const titleEl = root.querySelector(".explain-modal-title");
+        const bodyEl = root.querySelector(".explain-modal-body");
+        const closeButton = root.querySelector(".close-button");
+
+        closeButton.addEventListener("click", () => dialog.close());
+
+        dialog.addEventListener("click", (event) => {
+            if (event.target === dialog) {
+                dialog.close();
+            }
+        });
+
+        document.body.appendChild(root);
+
+        this._dialogUi = { dialog, titleEl, bodyEl };
+        return this._dialogUi;
+    }
+
     createModal(content, sentence) {
-        const modal = document.createElement("div");
-        modal.classList.add("explain-modal");
+        const ui = this._ensureDialog();
+        if (!ui) {
+            return;
+        }
 
-        // Header section
-        const headerElement = document.createElement("div");
-        headerElement.classList.add("header");
+        const { dialog, titleEl, bodyEl } = ui;
+        titleEl.textContent = sentence;
+        bodyEl.innerHTML = this.markdownToHtml(content);
 
-        const keyElement = document.createElement("h1");
-        keyElement.textContent = sentence;
-        headerElement.appendChild(keyElement);
-
-        const closeButton = document.createElement("button");
-        closeButton.classList.add("close-button");
-        closeButton.textContent = "×";
-        closeButton.addEventListener("click", () => {
-            document.body.removeChild(modal);
-            document.body.removeChild(overlay);
-        });
-        headerElement.appendChild(closeButton);
-
-        modal.appendChild(headerElement);
-
-        // Content section
-        const contentElement = document.createElement("div");
-        contentElement.classList.add("content");
-
-        const text = document.createElement("p");
-        text.innerHTML = this.markdownToHtml(content);
-        contentElement.appendChild(text);
-
-        modal.appendChild(contentElement);
-
-        // Create overlay
-        const overlay = document.createElement("div");
-        overlay.classList.add("explain-overlay");
-        overlay.addEventListener("click", () => {
-            document.body.removeChild(modal);
-            document.body.removeChild(overlay);
-        });
-
-        document.body.appendChild(overlay);
-        document.body.appendChild(modal);
+        if (!dialog.open) {
+            dialog.showModal();
+        }
     }
 }
