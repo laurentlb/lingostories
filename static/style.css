@@ -682,7 +682,7 @@ details {
 .story-credits-row {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
     gap: 12px;
     margin-bottom: 10px;
 }
@@ -727,9 +727,6 @@ details {
 }
 
 dialog.story-help-dialog.explain-modal {
-    height: auto;
-    max-height: min(85vh, 520px);
-    width: 92%;
     max-width: 420px;
 }
 
@@ -813,7 +810,7 @@ dialog.explain-modal::backdrop {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     z-index: 1000;
     width: 90%;
-    height: 90%;
+    max-height: 90%;
     max-width: 800px;
     overflow-y: auto;
     border-radius: 16px;
@@ -824,9 +821,7 @@ dialog.explain-modal::backdrop {
     }
 
     h2 {
-        font-size: 1.1em;
         margin: 0px;
-        border-bottom: 1px solid var(--highlight-color);        
     }
 
     .header {
