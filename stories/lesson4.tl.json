@@ -1,0 +1,248 @@
+{
+    "sentences": {
+        "London is a city.": {
+            "key": "lesson4-0002",
+            "en": "London is a city.",
+            "fr": "Londres est une ville."
+        },
+        "Paris is a city too.": {
+            "key": "lesson4-0003",
+            "en": "Paris is a city too.",
+            "fr": "Paris est aussi une ville."
+        },
+        "New York is a city.": {
+            "key": "lesson4-0004",
+            "en": "New York is a city.",
+            "fr": "New York est une ville."
+        },
+        "Tokyo is also a city.": {
+            "key": "lesson4-0005",
+            "en": "Tokyo is also a city.",
+            "fr": "Tokyo est aussi une ville."
+        },
+        "London is in England.": {
+            "key": "lesson4-0006",
+            "en": "London is in England.",
+            "fr": "Londres est en Angleterre."
+        },
+        "Paris is in France.": {
+            "key": "lesson4-0007",
+            "en": "Paris is in France.",
+            "fr": "Paris est en France."
+        },
+        "New York is in the United States.": {
+            "key": "lesson4-0008",
+            "en": "New York is in the United States.",
+            "fr": "New York est aux États-Unis."
+        },
+        "Tokyo is in Japan.": {
+            "key": "lesson4-0009",
+            "en": "Tokyo is in Japan.",
+            "fr": "Tokyo est au Japon."
+        },
+        "England, France, the United States, and Japan are countries.": {
+            "key": "lesson4-0010",
+            "en": "England, France, the United States, and Japan are countries.",
+            "fr": "L'Angleterre, la France, les États-Unis et le Japon sont des pays."
+        },
+        "Which city is in England?": {
+            "key": "lesson4-0011",
+            "en": "Which city is in England?",
+            "fr": "Quelle ville est en Angleterre ?"
+        },
+        "London.": {
+            "key": "lesson4-0012",
+            "en": "London.",
+            "fr": "Londres."
+        },
+        "Paris.": {
+            "key": "lesson4-0013",
+            "en": "Paris.",
+            "fr": "Paris."
+        },
+        "Tokyo.": {
+            "key": "lesson4-0014",
+            "en": "Tokyo.",
+            "fr": "Tokyo."
+        },
+        "Which city is in France?": {
+            "key": "lesson4-0015",
+            "en": "Which city is in France?",
+            "fr": "Quelle ville est en France ?"
+        },
+        "New York.": {
+            "key": "lesson4-0016",
+            "en": "New York.",
+            "fr": "New York."
+        },
+        "Paris is a big city.": {
+            "key": "lesson4-0017",
+            "en": "Paris is a big city.",
+            "fr": "Paris est une grande ville."
+        },
+        "Tokyo is bigger than Paris.": {
+            "key": "lesson4-0018",
+            "en": "Tokyo is bigger than Paris.",
+            "fr": "Tokyo est plus grande que Paris."
+        },
+        "Tokyo is the biggest of the four cities.": {
+            "key": "lesson4-0019",
+            "en": "Tokyo is the biggest of the four cities.",
+            "fr": "Tokyo est la plus grande des quatre villes."
+        },
+        "There are many houses in a big city.": {
+            "key": "lesson4-0020",
+            "en": "There are many houses in a big city.",
+            "fr": "Il y a beaucoup de maisons dans une grande ville."
+        },
+        "There are many people in London.": {
+            "key": "lesson4-0021",
+            "en": "There are many people in London.",
+            "fr": "Il y a beaucoup de gens à Londres."
+        },
+        "There are even more people in Tokyo.": {
+            "key": "lesson4-0022",
+            "en": "There are even more people in Tokyo.",
+            "fr": "Il y a encore plus de gens à Tokyo."
+        },
+        "A town is smaller than a city.": {
+            "key": "lesson4-0023",
+            "en": "A town is smaller than a city.",
+            "fr": "Une petite ville est plus petite qu'une ville."
+        },
+        "There are fewer people in a town.": {
+            "key": "lesson4-0024",
+            "en": "There are fewer people in a town.",
+            "fr": "Il y a moins de gens dans une petite ville."
+        },
+        "Is Tokyo bigger than Paris?": {
+            "key": "lesson4-0025",
+            "en": "Is Tokyo bigger than Paris?",
+            "fr": "Tokyo est-elle plus grande que Paris ?"
+        },
+        "Yes, it is.": {
+            "key": "lesson4-0026",
+            "en": "Yes, it is.",
+            "fr": "Oui."
+        },
+        "No, Paris is bigger.": {
+            "key": "lesson4-0027",
+            "en": "No, Paris is bigger.",
+            "fr": "Non, Paris est plus grande."
+        },
+        "Are there many people in a big city?": {
+            "key": "lesson4-0028",
+            "en": "Are there many people in a big city?",
+            "fr": "Y a-t-il beaucoup de gens dans une grande ville ?"
+        },
+        "Yes, there are.": {
+            "key": "lesson4-0029",
+            "en": "Yes, there are.",
+            "fr": "Oui."
+        },
+        "No, there are not.": {
+            "key": "lesson4-0030",
+            "en": "No, there are not.",
+            "fr": "Non."
+        },
+        "There are many people in a big city.": {
+            "key": "lesson4-0031",
+            "en": "There are many people in a big city.",
+            "fr": "Il y a beaucoup de gens dans une grande ville."
+        },
+        "The people in England are the English.": {
+            "key": "lesson4-0032",
+            "en": "The people in England are the English.",
+            "fr": "Les habitants de l'Angleterre sont les Anglais."
+        },
+        "The people in France are the French.": {
+            "key": "lesson4-0033",
+            "en": "The people in France are the French.",
+            "fr": "Les habitants de la France sont les Français."
+        },
+        "The people in the United States are Americans.": {
+            "key": "lesson4-0034",
+            "en": "The people in the United States are Americans.",
+            "fr": "Les habitants des États-Unis sont des Américains."
+        },
+        "The people in Japan are Japanese.": {
+            "key": "lesson4-0035",
+            "en": "The people in Japan are Japanese.",
+            "fr": "Les habitants du Japon sont des Japonais."
+        },
+        "Who are the English?": {
+            "key": "lesson4-0036",
+            "en": "Who are the English?",
+            "fr": "Qui sont les Anglais ?"
+        },
+        "The people in England.": {
+            "key": "lesson4-0037",
+            "en": "The people in England.",
+            "fr": "Les habitants de l'Angleterre."
+        },
+        "The people in France.": {
+            "key": "lesson4-0038",
+            "en": "The people in France.",
+            "fr": "Les habitants de la France."
+        },
+        "The people in Japan.": {
+            "key": "lesson4-0039",
+            "en": "The people in Japan.",
+            "fr": "Les habitants du Japon."
+        },
+        "The English are the people in England.": {
+            "key": "lesson4-0040",
+            "en": "The English are the people in England.",
+            "fr": "Les Anglais sont les habitants de l'Angleterre."
+        },
+        "Dialogue.": {
+            "key": "lesson4-0041",
+            "en": "Dialogue.",
+            "fr": "Dialogue."
+        },
+        "@mrs_smith Where do we live?": {
+            "key": "lesson4-0042",
+            "en": "@mrs_smith Where do we live?",
+            "fr": "@mrs_smith Où habitons-nous ?"
+        },
+        "@helen We live in London.": {
+            "key": "lesson4-0043",
+            "en": "@helen We live in London.",
+            "fr": "@helen Nous habitons à Londres."
+        },
+        "@mr_smith And what country is London in?": {
+            "key": "lesson4-0044",
+            "en": "@mr_smith And what country is London in?",
+            "fr": "@mr_smith Et dans quel pays se trouve Londres ?"
+        },
+        "@john London is in England.": {
+            "key": "lesson4-0045",
+            "en": "@john London is in England.",
+            "fr": "@john Londres est en Angleterre."
+        }
+    },
+    "title": {
+        "key": "title-lesson4",
+        "en": "City And Country",
+        "fr": "Ville et pays"
+    },
+    "speakers": {
+        "mrs_smith": {
+            "avatar": "woman.svg",
+            "color": "#a26"
+        },
+        "helen": {
+            "avatar": "woman.svg",
+            "color": "#288"
+        },
+        "mr_smith": {
+            "avatar": "man2.svg",
+            "color": "#484"
+        },
+        "john": {
+            "avatar": "man.svg",
+            "color": "#26a",
+            "side": "right"
+        }
+    }
+}

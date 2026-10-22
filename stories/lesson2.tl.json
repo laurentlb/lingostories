@@ -1,0 +1,308 @@
+{
+    "sentences": {
+        "This is the Smith family.": {
+            "key": "lesson2-0002",
+            "en": "This is the Smith family.",
+            "fr": "Voici la famille Smith."
+        },
+        "There are five people in the family.": {
+            "key": "lesson2-0003",
+            "en": "There are five people in the family.",
+            "fr": "Il y a cinq personnes dans la famille."
+        },
+        "Mr. and Mrs. Smith are the parents.": {
+            "key": "lesson2-0004",
+            "en": "Mr. and Mrs. Smith are the parents.",
+            "fr": "M. et Mme Smith sont les parents."
+        },
+        "John, Helen, and Emma are the children.": {
+            "key": "lesson2-0005",
+            "en": "John, Helen, and Emma are the children.",
+            "fr": "John, Helen et Emma sont les enfants."
+        },
+        "John is twelve years old.": {
+            "key": "lesson2-0006",
+            "en": "John is twelve years old.",
+            "fr": "John a douze ans."
+        },
+        "Helen is ten years old.": {
+            "key": "lesson2-0007",
+            "en": "Helen is ten years old.",
+            "fr": "Helen a dix ans."
+        },
+        "Emma is six months old.": {
+            "key": "lesson2-0008",
+            "en": "Emma is six months old.",
+            "fr": "Emma a six mois."
+        },
+        "John is the oldest child.": {
+            "key": "lesson2-0009",
+            "en": "John is the oldest child.",
+            "fr": "John est l'aîné des enfants."
+        },
+        "Helen is younger than John.": {
+            "key": "lesson2-0010",
+            "en": "Helen is younger than John.",
+            "fr": "Helen est plus jeune que John."
+        },
+        "Emma is the youngest child.": {
+            "key": "lesson2-0011",
+            "en": "Emma is the youngest child.",
+            "fr": "Emma est la plus jeune des enfants."
+        },
+        "Emma is also the baby.": {
+            "key": "lesson2-0012",
+            "en": "Emma is also the baby.",
+            "fr": "Emma est aussi le bébé."
+        },
+        "How old is John?": {
+            "key": "lesson2-0013",
+            "en": "How old is John?",
+            "fr": "Quel âge a John ?"
+        },
+        "He is twelve.": {
+            "key": "lesson2-0014",
+            "en": "He is twelve.",
+            "fr": "Il a douze ans."
+        },
+        "He is ten.": {
+            "key": "lesson2-0015",
+            "en": "He is ten.",
+            "fr": "Il a dix ans."
+        },
+        "He is six months old.": {
+            "key": "lesson2-0016",
+            "en": "He is six months old.",
+            "fr": "Il a six mois."
+        },
+        "How old is Helen?": {
+            "key": "lesson2-0017",
+            "en": "How old is Helen?",
+            "fr": "Quel âge a Helen ?"
+        },
+        "She is ten.": {
+            "key": "lesson2-0018",
+            "en": "She is ten.",
+            "fr": "Elle a dix ans."
+        },
+        "She is twelve.": {
+            "key": "lesson2-0019",
+            "en": "She is twelve.",
+            "fr": "Elle a douze ans."
+        },
+        "She is six months old.": {
+            "key": "lesson2-0020",
+            "en": "She is six months old.",
+            "fr": "Elle a six mois."
+        },
+        "How old is Emma?": {
+            "key": "lesson2-0021",
+            "en": "How old is Emma?",
+            "fr": "Quel âge a Emma ?"
+        },
+        "She is six years old.": {
+            "key": "lesson2-0022",
+            "en": "She is six years old.",
+            "fr": "Elle a six ans."
+        },
+        "She is ten years old.": {
+            "key": "lesson2-0023",
+            "en": "She is ten years old.",
+            "fr": "Elle a dix ans."
+        },
+        "John is two years older than Helen.": {
+            "key": "lesson2-0024",
+            "en": "John is two years older than Helen.",
+            "fr": "John a deux ans de plus que Helen."
+        },
+        "Helen is two years younger than John.": {
+            "key": "lesson2-0025",
+            "en": "Helen is two years younger than John.",
+            "fr": "Helen a deux ans de moins que John."
+        },
+        "Is Helen older than John?": {
+            "key": "lesson2-0026",
+            "en": "Is Helen older than John?",
+            "fr": "Helen est-elle plus âgée que John ?"
+        },
+        "No, she is younger.": {
+            "key": "lesson2-0027",
+            "en": "No, she is younger.",
+            "fr": "Non, elle est plus jeune."
+        },
+        "Yes, she is older.": {
+            "key": "lesson2-0028",
+            "en": "Yes, she is older.",
+            "fr": "Oui, elle est plus âgée."
+        },
+        "Is Emma younger than Helen?": {
+            "key": "lesson2-0029",
+            "en": "Is Emma younger than Helen?",
+            "fr": "Emma est-elle plus jeune que Helen ?"
+        },
+        "Yes, she is.": {
+            "key": "lesson2-0030",
+            "en": "Yes, she is.",
+            "fr": "Oui, elle l'est."
+        },
+        "No, she is older.": {
+            "key": "lesson2-0031",
+            "en": "No, she is older.",
+            "fr": "Non, elle est plus âgée."
+        },
+        "Emma is younger than Helen.": {
+            "key": "lesson2-0032",
+            "en": "Emma is younger than Helen.",
+            "fr": "Emma est plus jeune que Helen."
+        },
+        "Emma is the youngest of the three children.": {
+            "key": "lesson2-0033",
+            "en": "Emma is the youngest of the three children.",
+            "fr": "Emma est la plus jeune des trois enfants."
+        },
+        "Mr. Smith is thirty-six years old.": {
+            "key": "lesson2-0034",
+            "en": "Mr. Smith is thirty-six years old.",
+            "fr": "M. Smith a trente-six ans."
+        },
+        "Mrs. Smith is thirty-two years old.": {
+            "key": "lesson2-0035",
+            "en": "Mrs. Smith is thirty-two years old.",
+            "fr": "Mme Smith a trente-deux ans."
+        },
+        "Mr. Smith's father is sixty-three years old.": {
+            "key": "lesson2-0036",
+            "en": "Mr. Smith's father is sixty-three years old.",
+            "fr": "Le père de M. Smith a soixante-trois ans."
+        },
+        "He is John's grandfather.": {
+            "key": "lesson2-0037",
+            "en": "He is John's grandfather.",
+            "fr": "C'est le grand-père de John."
+        },
+        "The grandfather is older than everyone in the family.": {
+            "key": "lesson2-0038",
+            "en": "The grandfather is older than everyone in the family.",
+            "fr": "Le grand-père est plus âgé que tout le monde dans la famille."
+        },
+        "Who is the oldest person in the family?": {
+            "key": "lesson2-0039",
+            "en": "Who is the oldest person in the family?",
+            "fr": "Qui est la personne la plus âgée de la famille ?"
+        },
+        "John's grandfather.": {
+            "key": "lesson2-0040",
+            "en": "John's grandfather.",
+            "fr": "Le grand-père de John."
+        },
+        "Mrs. Smith.": {
+            "key": "lesson2-0041",
+            "en": "Mrs. Smith.",
+            "fr": "Mme Smith."
+        },
+        "John.": {
+            "key": "lesson2-0042",
+            "en": "John.",
+            "fr": "John."
+        },
+        "John's grandfather is the oldest person in the family.": {
+            "key": "lesson2-0043",
+            "en": "John's grandfather is the oldest person in the family.",
+            "fr": "Le grand-père de John est la personne la plus âgée de la famille."
+        },
+        "Do Mr. and Mrs. Smith have three children?": {
+            "key": "lesson2-0044",
+            "en": "Do Mr. and Mrs. Smith have three children?",
+            "fr": "M. et Mme Smith ont-ils trois enfants ?"
+        },
+        "Yes, they do.": {
+            "key": "lesson2-0045",
+            "en": "Yes, they do.",
+            "fr": "Oui, ils en ont trois."
+        },
+        "No, they have two.": {
+            "key": "lesson2-0046",
+            "en": "No, they have two.",
+            "fr": "Non, ils en ont deux."
+        },
+        "They have three children.": {
+            "key": "lesson2-0047",
+            "en": "They have three children.",
+            "fr": "Ils ont trois enfants."
+        },
+        "Do they have one son and two daughters?": {
+            "key": "lesson2-0048",
+            "en": "Do they have one son and two daughters?",
+            "fr": "Ont-ils un fils et deux filles ?"
+        },
+        "No, they have two sons.": {
+            "key": "lesson2-0049",
+            "en": "No, they have two sons.",
+            "fr": "Non, ils ont deux fils."
+        },
+        "They have one son and two daughters.": {
+            "key": "lesson2-0050",
+            "en": "They have one son and two daughters.",
+            "fr": "Ils ont un fils et deux filles."
+        },
+        "Dialogue.": {
+            "key": "lesson2-0051",
+            "en": "Dialogue.",
+            "fr": "Dialogue."
+        },
+        "@mrs_smith John, how old are you?": {
+            "key": "lesson2-0052",
+            "en": "@mrs_smith John, how old are you?",
+            "fr": "@mrs_smith John, quel âge as-tu ?"
+        },
+        "@john I am twelve years old.": {
+            "key": "lesson2-0053",
+            "en": "@john I am twelve years old.",
+            "fr": "@john J'ai douze ans."
+        },
+        "@mrs_smith And how old is Helen?": {
+            "key": "lesson2-0054",
+            "en": "@mrs_smith And how old is Helen?",
+            "fr": "@mrs_smith Et quel âge a Helen ?"
+        },
+        "@john She is ten years old.": {
+            "key": "lesson2-0055",
+            "en": "@john She is ten years old.",
+            "fr": "@john Elle a dix ans."
+        },
+        "@mr_smith Who is the youngest child?": {
+            "key": "lesson2-0056",
+            "en": "@mr_smith Who is the youngest child?",
+            "fr": "@mr_smith Qui est l'enfant le plus jeune ?"
+        },
+        "@helen Emma is the youngest child. She is only six months old.": {
+            "key": "lesson2-0057",
+            "en": "@helen Emma is the youngest child. She is only six months old.",
+            "fr": "@helen Emma est l'enfant la plus jeune. Elle n'a que six mois."
+        }
+    },
+    "title": {
+        "key": "title-lesson2",
+        "en": "Ages",
+        "fr": "Les âges"
+    },
+    "speakers": {
+        "mrs_smith": {
+            "avatar": "woman.svg",
+            "color": "#a26"
+        },
+        "john": {
+            "avatar": "man.svg",
+            "color": "#26a",
+            "side": "right"
+        },
+        "mr_smith": {
+            "avatar": "man2.svg",
+            "color": "#484"
+        },
+        "helen": {
+            "avatar": "woman.svg",
+            "color": "#288"
+        }
+    }
+}

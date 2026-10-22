@@ -1,0 +1,279 @@
+{
+    "sentences": {
+        "A person has a body.": {
+            "key": "lesson5-0002",
+            "en": "A person has a body.",
+            "fr": "Une personne a un corps."
+        },
+        "The body has two arms and two legs.": {
+            "key": "lesson5-0003",
+            "en": "The body has two arms and two legs.",
+            "fr": "Le corps a deux bras et deux jambes."
+        },
+        "Each arm has a hand.": {
+            "key": "lesson5-0004",
+            "en": "Each arm has a hand.",
+            "fr": "Chaque bras a une main."
+        },
+        "Each leg has a foot.": {
+            "key": "lesson5-0005",
+            "en": "Each leg has a foot.",
+            "fr": "Chaque jambe a un pied."
+        },
+        "How many arms does a person have?": {
+            "key": "lesson5-0006",
+            "en": "How many arms does a person have?",
+            "fr": "Combien de bras une personne a-t-elle ?"
+        },
+        "Two.": {
+            "key": "lesson5-0007",
+            "en": "Two.",
+            "fr": "Deux."
+        },
+        "One.": {
+            "key": "lesson5-0008",
+            "en": "One.",
+            "fr": "Un."
+        },
+        "A person has two arms.": {
+            "key": "lesson5-0009",
+            "en": "A person has two arms.",
+            "fr": "Une personne a deux bras."
+        },
+        "How many legs does a person have?": {
+            "key": "lesson5-0010",
+            "en": "How many legs does a person have?",
+            "fr": "Combien de jambes une personne a-t-elle ?"
+        },
+        "Three.": {
+            "key": "lesson5-0011",
+            "en": "Three.",
+            "fr": "Trois."
+        },
+        "A person has two legs.": {
+            "key": "lesson5-0012",
+            "en": "A person has two legs.",
+            "fr": "Une personne a deux jambes."
+        },
+        "Each hand has five fingers.": {
+            "key": "lesson5-0013",
+            "en": "Each hand has five fingers.",
+            "fr": "Chaque main a cinq doigts."
+        },
+        "Each foot has five toes.": {
+            "key": "lesson5-0014",
+            "en": "Each foot has five toes.",
+            "fr": "Chaque pied a cinq orteils."
+        },
+        "How many fingers does one hand have?": {
+            "key": "lesson5-0015",
+            "en": "How many fingers does one hand have?",
+            "fr": "Combien de doigts une main a-t-elle ?"
+        },
+        "Five.": {
+            "key": "lesson5-0016",
+            "en": "Five.",
+            "fr": "Cinq."
+        },
+        "Ten.": {
+            "key": "lesson5-0017",
+            "en": "Ten.",
+            "fr": "Dix."
+        },
+        "One hand has five fingers.": {
+            "key": "lesson5-0018",
+            "en": "One hand has five fingers.",
+            "fr": "Une main a cinq doigts."
+        },
+        "How many fingers do two hands have?": {
+            "key": "lesson5-0019",
+            "en": "How many fingers do two hands have?",
+            "fr": "Combien de doigts ont deux mains ?"
+        },
+        "Eight.": {
+            "key": "lesson5-0020",
+            "en": "Eight.",
+            "fr": "Huit."
+        },
+        "Two hands have ten fingers.": {
+            "key": "lesson5-0021",
+            "en": "Two hands have ten fingers.",
+            "fr": "Deux mains ont dix doigts."
+        },
+        "How many toes do two feet have?": {
+            "key": "lesson5-0022",
+            "en": "How many toes do two feet have?",
+            "fr": "Combien d'orteils ont deux pieds ?"
+        },
+        "Two feet have ten toes.": {
+            "key": "lesson5-0023",
+            "en": "Two feet have ten toes.",
+            "fr": "Deux pieds ont dix orteils."
+        },
+        "The body also has a head.": {
+            "key": "lesson5-0024",
+            "en": "The body also has a head.",
+            "fr": "Le corps a aussi une tête."
+        },
+        "The head is at the top of the body.": {
+            "key": "lesson5-0025",
+            "en": "The head is at the top of the body.",
+            "fr": "La tête est en haut du corps."
+        },
+        "The face is at the front of the head.": {
+            "key": "lesson5-0026",
+            "en": "The face is at the front of the head.",
+            "fr": "Le visage est à l'avant de la tête."
+        },
+        "A face has two eyes, two ears, one nose, and one mouth.": {
+            "key": "lesson5-0027",
+            "en": "A face has two eyes, two ears, one nose, and one mouth.",
+            "fr": "Un visage a deux yeux, deux oreilles, un nez et une bouche."
+        },
+        "There is hair on the top of the head.": {
+            "key": "lesson5-0028",
+            "en": "There is hair on the top of the head.",
+            "fr": "Il y a des cheveux au-dessus de la tête."
+        },
+        "Where are the eyes?": {
+            "key": "lesson5-0029",
+            "en": "Where are the eyes?",
+            "fr": "Où sont les yeux ?"
+        },
+        "In the face.": {
+            "key": "lesson5-0030",
+            "en": "In the face.",
+            "fr": "Dans le visage."
+        },
+        "On the hands.": {
+            "key": "lesson5-0031",
+            "en": "On the hands.",
+            "fr": "Sur les mains."
+        },
+        "The eyes are in the face.": {
+            "key": "lesson5-0032",
+            "en": "The eyes are in the face.",
+            "fr": "Les yeux sont dans le visage."
+        },
+        "Where are the ears?": {
+            "key": "lesson5-0033",
+            "en": "Where are the ears?",
+            "fr": "Où sont les oreilles ?"
+        },
+        "On the head.": {
+            "key": "lesson5-0034",
+            "en": "On the head.",
+            "fr": "Sur la tête."
+        },
+        "On the legs.": {
+            "key": "lesson5-0035",
+            "en": "On the legs.",
+            "fr": "Sur les jambes."
+        },
+        "The ears are on the head.": {
+            "key": "lesson5-0036",
+            "en": "The ears are on the head.",
+            "fr": "Les oreilles sont sur la tête."
+        },
+        "The neck connects the head to the body.": {
+            "key": "lesson5-0037",
+            "en": "The neck connects the head to the body.",
+            "fr": "Le cou relie la tête au corps."
+        },
+        "The stomach is at the front of the body.": {
+            "key": "lesson5-0038",
+            "en": "The stomach is at the front of the body.",
+            "fr": "Le ventre est à l'avant du corps."
+        },
+        "The back is behind the body.": {
+            "key": "lesson5-0039",
+            "en": "The back is behind the body.",
+            "fr": "Le dos est à l'arrière du corps."
+        },
+        "Is Emma a boy or a girl?": {
+            "key": "lesson5-0040",
+            "en": "Is Emma a boy or a girl?",
+            "fr": "Emma est-elle un garçon ou une fille ?"
+        },
+        "She is a girl.": {
+            "key": "lesson5-0041",
+            "en": "She is a girl.",
+            "fr": "C'est une fille."
+        },
+        "He is a boy.": {
+            "key": "lesson5-0042",
+            "en": "He is a boy.",
+            "fr": "C'est un garçon."
+        },
+        "Emma is a girl.": {
+            "key": "lesson5-0043",
+            "en": "Emma is a girl.",
+            "fr": "Emma est une fille."
+        },
+        "Who has the longest hair in the family?": {
+            "key": "lesson5-0044",
+            "en": "Who has the longest hair in the family?",
+            "fr": "Qui a les cheveux les plus longs dans la famille ?"
+        },
+        "Mrs. Smith.": {
+            "key": "lesson5-0045",
+            "en": "Mrs. Smith.",
+            "fr": "Mme Smith."
+        },
+        "John.": {
+            "key": "lesson5-0046",
+            "en": "John.",
+            "fr": "John."
+        },
+        "Mrs. Smith has the longest hair in the family.": {
+            "key": "lesson5-0047",
+            "en": "Mrs. Smith has the longest hair in the family.",
+            "fr": "Mme Smith a les cheveux les plus longs dans la famille."
+        },
+        "Dialogue.": {
+            "key": "lesson5-0048",
+            "en": "Dialogue.",
+            "fr": "Dialogue."
+        },
+        "@helen John, how many fingers do you have?": {
+            "key": "lesson5-0049",
+            "en": "@helen John, how many fingers do you have?",
+            "fr": "@helen John, combien de doigts as-tu ?"
+        },
+        "@john Ten. Five on each hand.": {
+            "key": "lesson5-0050",
+            "en": "@john Ten. Five on each hand.",
+            "fr": "@john Dix. Cinq sur chaque main."
+        },
+        "@mrs_smith Emma, where is your nose?": {
+            "key": "lesson5-0051",
+            "en": "@mrs_smith Emma, where is your nose?",
+            "fr": "@mrs_smith Emma, où est ton nez ?"
+        },
+        "@helen Here it is.": {
+            "key": "lesson5-0052",
+            "en": "@helen Here it is.",
+            "fr": "@helen Le voici."
+        }
+    },
+    "title": {
+        "key": "title-lesson5",
+        "en": "The Body",
+        "fr": "Le corps"
+    },
+    "speakers": {
+        "helen": {
+            "avatar": "woman.svg",
+            "color": "#288"
+        },
+        "john": {
+            "avatar": "man.svg",
+            "color": "#26a",
+            "side": "right"
+        },
+        "mrs_smith": {
+            "avatar": "woman.svg",
+            "color": "#a26"
+        }
+    }
+}
