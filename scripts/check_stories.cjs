@@ -95,6 +95,9 @@ function checkStory(name) {
         for (const lang of langs) {
             if (!entry || !entry[lang]) {
                 (missing[lang] ||= []).push(`${kind}: ${text}`);
+            } else if (entry[lang].startsWith("@")) {
+                ok = false;
+                console.log(`  speaker prefix in ${lang} text (not displayed correctly): ${text}`);
             }
         }
         if (entry && !entry.key) {

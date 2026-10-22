@@ -170,6 +170,15 @@ def update_story(ink_path, json_path, translations):
         entry["en"] = sentence
         if sentence in sentence_translations:
             entry["fr"] = sentence_translations[sentence]
+
+        # The speaker prefix is only part of the key; the displayed text in
+        # each language doesn't include it.
+        sid = speaker_id(sentence)
+        if sid:
+            prefix = re.compile(r"^@" + re.escape(sid) + r"\s+", re.IGNORECASE)
+            for lang, value in entry.items():
+                if lang != "key" and isinstance(value, str):
+                    entry[lang] = prefix.sub("", value)
         new_sentences[sentence] = entry
 
     data["sentences"] = new_sentences
