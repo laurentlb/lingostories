@@ -83,6 +83,28 @@ Define the list of items at the beginning of the story.
 * Use `{inventory ? apple}` to check if an item is in the inventory.
 * Use `~inventory -= apple` to remove an item.
 
+## Images and puzzle pieces
+
+Each story hides a picture split into puzzle pieces. Readers find pieces in two ways:
+
+* `$image park-1.jpg` shows an illustration.
+* `$collect park-1.jpg` shows an image that also gives a puzzle piece. Put collectibles on different branches, so that readers replay the story to find them all.
+
+## Questions
+
+Tag the right answer with `#ok` and the wrong ones with `#fail`, inside the brackets. A wrong answer can be retried. An answer right on the first try gives a puzzle piece.
+
+```md
+How many children are there?
+* [Two #fail]
+* [Three #ok]
+* [Four #fail]
+-
+There are three children.
+```
+
+After changing images or questions, update `pieceCount` in `js/stories.js`. `node scripts/check_stories.cjs <story>` checks it.
+
 Example:
 
 ```md
