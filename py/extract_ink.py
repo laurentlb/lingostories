@@ -98,9 +98,10 @@ def extract_strings(ink_script):
         if not text:
             continue
 
-        if raw_line.strip().endswith("#title"):
+        # Titles are looked up in "sentences" like any other line; the first one
+        # is also the story title.
+        if raw_line.strip().endswith("#title") and title is None:
             title = text
-            continue
 
         if text not in seen:
             sentences.append(text)
