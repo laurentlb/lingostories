@@ -64,6 +64,10 @@ function listeningCallback(isListening) {
 function updateCollectionCountLabel(label, lang, storyName) {
     const collected = userData.nbCollectedImages(lang, storyName);
     const storyData = allStories.find(s => s.id == storyName);
+    if (!storyData) {
+        label.textContent = "";
+        return;
+    }
     label.textContent = `${collected}/${storyData.imageCount}`;
     if (collected === storyData.imageCount) {
         label.classList.add("story-complete");
@@ -473,44 +477,40 @@ document.addEventListener("keydown", (event) => {
     if (event.ctrlKey || event.metaKey || event.altKey) {
         return;
     }
-
-    if (event.key === " ") {
-        continueOrPauseStory();
+    // Shortcuts only apply while reading a story, and must not interfere with
+    // form controls (settings) or open dialogs.
+    if (!story.ink || document.querySelector("dialog[open]")) {
+        return;
+    }
+    if (event.target.closest("input, select, textarea")) {
+        return;
     }
 
-    if (event.key === "t") {
-        if (event.ctrlKey || event.metaKey || event.altKey) {
-            return;
-        }
-        storyUI.lastTranslateIcon.click();
-    }
-
-    if (event.key === "r") {
-        if (event.ctrlKey || event.metaKey || event.altKey) {
-            return;
-        }
-        storyUI.lastAudioIcon.click();
-    }
-
-    if (event.key === "m") {
-        if (event.ctrlKey || event.metaKey || event.altKey) {
-            return;
-        }
-        listenMic();
-    }
-
-    if (event.key === "l") {
-        if (event.ctrlKey || event.metaKey || event.altKey) {
-            return;
-        }
-        toggleListening();
-    }
-
-    if (event.key.match(/[0-9]/)) {
-        const index = parseInt(event.key) - 1;
-        if (storyUI.lastChoices[index]) {
-            storyUI.lastChoices[index].click();
-        }
+    switch (event.key) {
+        case " ":
+            event.preventDefault(); // don't scroll the page
+            // A focused button (e.g. Help) would also be activated on keyup.
+            event.target.closest("button")?.blur();
+            continueOrPauseStory();
+            break;
+        case "t":
+            storyUI.lastTranslateIcon?.click();
+            break;
+        case "r":
+            storyUI.lastAudioIcon?.click();
+            break;
+        case "m":
+            if (settings.useMicrophone() && storyUI.lastSentence) {
+                listenMic();
+            }
+            break;
+        case "l":
+            toggleListening();
+            break;
+        default:
+            if (/^[1-9]$/.test(event.key)) {
+                storyUI.lastChoices[parseInt(event.key) - 1]?.click();
+            }
     }
 });
 
@@ -583,7 +583,7 @@ window.addEventListener("load", () => {
     document.querySelector("#use-microphone").addEventListener("change", updateMicIcon);
 
     const urlParams = new URLSearchParams(window.location.search);
-    if (urlParams.has("story")) {
+    if (allStories.some((s) => s.id === urlParams.get("story"))) {
         chooseStory(urlParams.get("story"), LANG_CODE);
         showStory();
     } else {
