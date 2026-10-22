@@ -158,13 +158,14 @@ You walk down the street until the end.
 + {not (inventory ? eggs)} [Eggs]
     @peter I need eggs.
     @employee How many eggs do you want?
-    ** [4 eggs (4🪙)]
+    // Sticky: if buying fails, the player can come back and try again.
+    ++ [4 eggs (4🪙)]
         @peter Four.
         ~ buy(eggs, 4)
-    ** [6 eggs (6🪙)]
+    ++ [6 eggs (6🪙)]
         @peter Six.
         ~ buy(eggs, 6)
-    ** [12 eggs (9🪙)]
+    ++ [12 eggs (9🪙)]
         @peter Twelve.
         ~ buy(eggs, 9)
 * [Bread]
