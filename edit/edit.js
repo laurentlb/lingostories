@@ -8,7 +8,7 @@ import { loadTheme } from "https://unpkg.com/prism-code-editor@2.4.1/dist/themes
 import { l as internal } from "https://unpkg.com/prism-code-editor@2.4.1/dist/prismCore-AxbjJFmh.js";
 
 const settings = {
-    readingMode: () => "text-only",
+    readingMode: () => "textOnly",
     enableMinigames: () => false,
     showTranslations: () => false,
     translationLang: () => "en",

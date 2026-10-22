@@ -37,8 +37,8 @@ export class UserData {
         }
 
         let count = 0;
-        for (const story of this.collectedImages[lang]) {
-            count += story.length;
+        for (const images of Object.values(this.collectedImages[lang] || {})) {
+            count += images.length;
         }
         return count;
     }

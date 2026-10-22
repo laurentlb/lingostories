@@ -58,6 +58,7 @@ export class WordShuffleGame {
     }
 
     deselectWord() {
+        if (this.selectedWords.length === 0) return;
         const last = this.selectedWords.pop();
         this.sentenceContainer.removeChild(this.sentenceContainer.lastChild);
         const wordElement = this.wordContainer.querySelector(`span[data-index="${last}"]`);

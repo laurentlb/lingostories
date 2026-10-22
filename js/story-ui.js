@@ -367,7 +367,7 @@ export class StoryUI extends BaseStoryUI {
         if (window.goatcounter) {
             window.goatcounter.count({
                 path:  `collect/${image}`,
-                title: 'Load Story',
+                title: 'Collect Image',
                 event: true,
             });
         }

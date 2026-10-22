@@ -1,7 +1,7 @@
 export class Story {
     constructor(updateInventory) {
         this.ink = null;
-        this.name = null;
+        this.storyName = null;
         this.lang = null;
         this.updateInventory = updateInventory;
     }
@@ -83,7 +83,7 @@ export class Story {
             return null;
         }
         speaker = speaker.toLowerCase();
-        if (!this.metadata["speakers"][speaker]) {
+        if (!this.metadata["speakers"]?.[speaker]) {
             return { "avatar": "unknown.svg", "color": "#26a" };
         }
         return this.metadata["speakers"][speaker];

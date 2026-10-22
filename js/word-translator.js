@@ -9,9 +9,13 @@ export class LingoStoriesWordTranslator extends BaseWordTranslator {
     }
 
     async translate(sourceLang, word, targetLang) {
-        const response = await fetch(`https://lingostories.org/py/translate_api.py?src=${this.convertLangCode(sourceLang)}&tgt=${this.convertLangCode(targetLang)}&word=${word}`)
+        const params = new URLSearchParams({
+            src: this.convertLangCode(sourceLang),
+            tgt: this.convertLangCode(targetLang),
+            word,
+        });
+        const response = await fetch(`https://lingostories.org/py/translate_api.py?${params}`)
             .then((response) => {
-                console.log(response)
                 if (!response.ok) {
                     throw new Error(`Failed to translate word ${word}`);
                 }

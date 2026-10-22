@@ -80,21 +80,28 @@ export class SpeechRecognitionBox {
         this.callback = callback;
         this.loopCount = 0;
 
-        const speechRecognitionList = new SpeechGrammarList();
-        const grammar =
-            `#JSGF V1.0; grammar words; public <word> = ${this.words.join(' | ')};`;
-        speechRecognitionList.addFromString(grammar, 1);        
-        this.recognition.grammars = speechRecognitionList;
+        // Grammars are not supported by every browser (and ignored by most).
+        if (SpeechGrammarList) {
+            const speechRecognitionList = new SpeechGrammarList();
+            const grammar =
+                `#JSGF V1.0; grammar words; public <word> = ${this.words.join(' | ')};`;
+            speechRecognitionList.addFromString(grammar, 1);
+            this.recognition.grammars = speechRecognitionList;
+        }
 
         const locales = {
-            "en": "en-US",
-            "fr": "fr-FR",
+            "ar": "ar-SA",
             "de": "de-DE",
+            "en": "en-US",
+            "es": "es-ES",
+            "fr": "fr-FR",
+            "it": "it-IT",
             "nl": "nl-NL",
             "pl": "pl-PL",
-            "sv": "sv-SE",
             "pt": "pt-PT",
-            "es": "es-ES",
+            "sv": "sv-SE",
+            "ua": "uk-UA",
+            "zh": "zh-CN",
         }
         this.recognition.lang = locales[lang];
 
@@ -107,6 +114,9 @@ export class SpeechRecognitionBox {
     }
 
     toggle() {
+        if (!this.isAPIAvailable || !this.words) {
+            return;
+        }
         if (this.isListening) {
             this.loopCount = 10;
             this.recognition.abort();
