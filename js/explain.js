@@ -1,4 +1,5 @@
-import { marked } from 'https://cdn.jsdelivr.net/npm/marked/lib/marked.esm.js';
+// Loaded lazily, so that a CDN failure only affects the explanation dialog.
+const MARKED_URL = 'https://cdn.jsdelivr.net/npm/marked@15.0.12/lib/marked.esm.js';
 
 export class Explain {
     constructor() {
@@ -52,12 +53,15 @@ export class Explain {
         });
     }
 
-    markdownToHtml(markdown) {
-        if (typeof marked !== 'undefined') {
+    async markdownToHtml(markdown) {
+        try {
+            const { marked } = await import(MARKED_URL);
             return marked(markdown);
-        } else {
-            console.error("marked library not found.");
-            return markdown;
+        } catch (error) {
+            console.error("Failed to load the marked library:", error);
+            const p = document.createElement("p");
+            p.textContent = markdown;
+            return p.innerHTML;
         }
     }
 
@@ -95,7 +99,7 @@ export class Explain {
         return this._dialogUi;
     }
 
-    createModal(content, sentence) {
+    async createModal(content, sentence) {
         const ui = this._ensureDialog();
         if (!ui) {
             return;
@@ -103,7 +107,7 @@ export class Explain {
 
         const { dialog, titleEl, bodyEl, closeButton } = ui;
         titleEl.textContent = sentence;
-        bodyEl.innerHTML = this.markdownToHtml(content);
+        bodyEl.innerHTML = await this.markdownToHtml(content);
 
         if (!dialog.open) {
             dialog.showModal();

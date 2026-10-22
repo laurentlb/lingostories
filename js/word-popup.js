@@ -1,4 +1,3 @@
-import { marked } from 'https://cdn.jsdelivr.net/npm/marked/lib/marked.esm.js';
 import { LingoStoriesWordTranslator } from './word-translator.js';
 
 export class WordPopup {
