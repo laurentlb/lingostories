@@ -6,6 +6,7 @@ import sys
 import argparse
 import json
 from email.utils import formatdate
+from xml.sax.saxutils import escape
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 
 script_dir = os.path.dirname(os.path.abspath(__file__))
@@ -135,7 +136,7 @@ def generate_rss(updates):
     rss_items = "".join(
         f"""
         <item>
-            <title>{update.get('title', 'Update')}</title>
+            <title>{escape(update.get('title', 'Update'))}</title>
             <link>https://lingostories.org</link>
             <description><![CDATA[{update['description']}]]></description>
             <pubDate>{format_rfc822(update['date'])}</pubDate>
