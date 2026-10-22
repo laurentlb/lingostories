@@ -33,6 +33,10 @@ export class Settings {
         return document.querySelector("#use-microphone").checked;
     }
 
+    soundEffects() {
+        return document.querySelector("#sound-effects")?.checked ?? true;
+    }
+
     save() {
         if (!this.pageHasFullSettings) {
             // Only save the translation language on this page.
@@ -50,7 +54,8 @@ export class Settings {
             showTranslations: this.showTranslations(),
             voiceSpeed: this.voiceSpeed(),
             enableMinigames: this.enableMinigames(),
-            useMicrophone: this.useMicrophone()
+            useMicrophone: this.useMicrophone(),
+            soundEffects: this.soundEffects()
         });
     }
 
@@ -62,7 +67,8 @@ export class Settings {
             showTranslations: false,
             voiceSpeed: 1,
             enableMinigames: true,
-            useMicrophone: false
+            useMicrophone: false,
+            soundEffects: true
         });
         document.querySelector("#translation-lang").value = settings.translationLang;
         if (this.pageHasFullSettings) {
@@ -73,6 +79,8 @@ export class Settings {
             document.querySelector("#voice-speed-value").textContent = settings.voiceSpeed + "x";
             document.querySelector("#enable-minigames").checked = settings.enableMinigames;
             document.querySelector("#use-microphone").checked = settings.useMicrophone;
+            // Older saved settings don't have this field.
+            document.querySelector("#sound-effects").checked = settings.soundEffects ?? true;
         }
     }
 
@@ -118,6 +126,10 @@ export class Settings {
         document.querySelector("#use-microphone").onchange = () => {
             this.save();
         }
+
+        document.querySelector("#sound-effects").onchange = () => {
+            this.save();
+        };
     }
 }
 
