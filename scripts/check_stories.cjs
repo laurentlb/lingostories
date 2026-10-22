@@ -65,7 +65,7 @@ function checkStory(name) {
             while (s.canContinue) {
                 const line = normalizeLine(s.Continue());
                 if (line === "") continue;
-                if (line.startsWith("$image")) {
+                if (line.startsWith("$image") || line.startsWith("$collect")) {
                     images.add(line.split(" ")[1]);
                     continue;
                 }

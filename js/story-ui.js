@@ -255,7 +255,7 @@ export class BaseStoryUI {
         if (!audio) {
             const image = line["img"];
             if (image) {
-                this.showImage(image);
+                this.showImage(image, line["collect"]);
             } else {
                 this.showText(line, useSpoiler);
             }
@@ -268,22 +268,29 @@ export class BaseStoryUI {
         }
     }
 
-    showImage(image) {
+    showImage(image, collect) {
         const img = document.createElement("img");
         img.onload = () => this.updateButtons();
         img.src = `/img/stories/${image}`;
         img.classList.add("story-image");
         this.domStory.appendChild(img);
 
-        this.collectImage(this.story.lang, this.story.storyName, image);
+        this.collectImage(this.story.lang, this.story.storyName, image, collect);
 
         const textOnly = this.settings.readingMode() === "textOnly";
-        if (!textOnly) {
-            this.playSoundEffect('image-collected', () => {
-                if (this.settings.readingMode() === "autoAdvance") {
-                    this.next();
-                }
-            });
+        if (textOnly) {
+            return;
+        }
+        const autoAdvance = () => {
+            if (this.settings.readingMode() === "autoAdvance") {
+                this.next();
+            }
+        };
+        if (collect) {
+            this.playSoundEffect('image-collected', autoAdvance);
+        } else {
+            // Leave a moment to look at the illustration.
+            setTimeout(autoAdvance, 1500);
         }
     }
 }
@@ -351,9 +358,12 @@ export class StoryUI extends BaseStoryUI {
         soundEffect(this.settings, name, onDone);
     }
 
-    collectImage(lang, storyName, image) {
+    collectImage(lang, storyName, image, collect) {
         this.userData.collectImage(lang, storyName, image);
         this.updateCollectionTopStatus();
+        if (!collect) {
+            return;
+        }
         if (this.story.storyName === "intro") {
             const info = document.createElement("div");
             info.classList.add("info-box");

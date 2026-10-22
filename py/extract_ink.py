@@ -4,7 +4,7 @@ import re
 from pathlib import Path
 
 
-SKIP_PREFIXES = ("//", "===", "->", "VAR ", "~", "$image", "$audio")
+SKIP_PREFIXES = ("//", "===", "->", "VAR ", "~", "$image", "$collect", "$audio")
 
 
 DEFAULT_SPEAKERS_BY_STORY = {

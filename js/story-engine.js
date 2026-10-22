@@ -93,10 +93,12 @@ export class Story {
     processLine(line, tags) {
         line = line.trim();
 
-        if (line.startsWith("$image")) {
+        // $image: an illustration. $collect: an image that is also a puzzle piece.
+        if (line.startsWith("$image") || line.startsWith("$collect")) {
             const img = line.split(" ")[1];
             return {
                 "img": img,
+                "collect": line.startsWith("$collect"),
             };
         }
 

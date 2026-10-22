@@ -4,7 +4,7 @@
 `The park is always quiet and beautiful.`
 `Anna puts on her shoes.`
 `She walks to the park.`
-$image park-1.jpg
+$collect park-1.jpg
 `When Anna arrives, there are many people.`
 `Many people are also walking.`
 `Some people are sitting on benches and talking.`
@@ -42,7 +42,7 @@ $image park-1.jpg
 
 `Anna plays with the dog.`
 `Anna throws a ball to the dog.`
-$image park-3.jpg
+$collect park-3.jpg
 `The dog is having fun.`
 `Later, the dog's owner comes and thanks Anna.`
 `What does Anna do next?`
@@ -104,7 +104,7 @@ $image park-3.jpg
 
 `Anna takes a nap under the tree.`
 `She dreams that she flies like a bird.`
-$image park-5.jpg
+$collect park-5.jpg
 `She wakes up feeling relaxed and happy.`
 
 * [Go for a walk.] -> p8
@@ -120,7 +120,7 @@ $image park-5.jpg
 === p14 ===
 
 `Anna and the girl play a game.`
-$image park-4.jpg
+$collect park-4.jpg
 `They play tag and have a lot of fun.`
 `After a while, the girl has to go.`
 `Anna says goodbye.`
@@ -130,7 +130,7 @@ $image park-4.jpg
 === p15 ===
 
 `Anna smiles and waves to Tom.`
-$image park-2.jpg
+$collect park-2.jpg
 `Tom waves back and walks over to her.`
 @tom Hi Anna, it's great to see you here!
 

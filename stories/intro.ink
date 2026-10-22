@@ -19,6 +19,6 @@
 `Click on a sentence to see its translation.`
 `It will help you follow the story.`
 `It will help you understand.`
-$image intro-1.jpg
+$collect intro-1.jpg
 `You can now choose a story.`
 -> END

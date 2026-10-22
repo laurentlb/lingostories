@@ -74,7 +74,7 @@ Anna claps her hands.
 @anna Nice! One clue found.
 @anna You are getting good at this.
 ~ found_pages += 1
-$image lost-classroom-page.jpg
+$collect lost-classroom-page.jpg
 
 You put the page in your pocket and head out.
 -> HALLWAY
@@ -127,7 +127,7 @@ Anna gasps softly.
 @anna The janitor! He is everywhere.
 ~ found_pages += 1
 ~ janitor_clue = true
-$image lost-library-page.jpg
+$collect lost-library-page.jpg
 
 The librarian smiles a little.
 @librarian He moves all around the school. He is always taping things to the notice boards.
@@ -232,7 +232,7 @@ It is a juice-stained page from your notebook.
 
 @anna Gross but useful. Evidence found!
 ~ found_pages += 1
-$image lost-cafeteria-page.jpg
+$collect lost-cafeteria-page.jpg
 
 + [Keep searching around the tables.] -> CAF_PRANK
 + [Go to the kitchen.] -> CAF_COOK
@@ -549,7 +549,7 @@ Anna leans close, eyes sparkling.
     Anna grins and raises the notebook high.
     @anna Case closed! Detective agency officially open!
     You both burst out laughing, earning a curious look from passing students.
-    $image lost-good-ending.jpg
+    $collect lost-good-ending.jpg
 }
 -> EPILOGUE
 
