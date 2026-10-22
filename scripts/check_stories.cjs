@@ -7,7 +7,8 @@
 // - plays many random paths through the story,
 // - reports lines/choices without a translation in each language,
 // - reports translation entries that are never displayed,
-// - reports the endings reached and images that are missing from img/stories.
+// - reports the endings reached and images that are missing from img/stories,
+// - checks questions (#ok/#fail choices) and pieceCount in js/stories.js.
 
 const fs = require("fs");
 const path = require("path");
@@ -21,6 +22,13 @@ const langs = (args.find((a) => a.startsWith("--langs=")) || "--langs=en,fr,de")
     .slice("--langs=".length).split(",");
 const runs = parseInt((args.find((a) => a.startsWith("--runs=")) || "--runs=500").slice("--runs=".length));
 const stories = args.filter((a) => !a.startsWith("--"));
+
+// pieceCount of each story, as declared in js/stories.js.
+const declaredPieceCounts = {};
+const storiesJs = fs.readFileSync(path.join(root, "js", "stories.js"), "utf-8");
+for (const m of storiesJs.matchAll(/id: "([\w-]+)"[^}]*?pieceCount: (\d+)/g)) {
+    declaredPieceCounts[m[1]] = parseInt(m[2]);
+}
 
 // Mirrors Story.processLine in js/story-engine.js.
 function normalizeLine(line) {
@@ -54,6 +62,9 @@ function checkStory(name) {
 
     const seen = new Map(); // text -> "line" | "choice"
     const images = new Set();
+    const collectibles = new Set();
+    const questions = new Set();
+    const badQuestions = new Set();
     const endings = new Map();
     let maxSteps = 0;
 
@@ -67,6 +78,7 @@ function checkStory(name) {
                 if (line === "") continue;
                 if (line.startsWith("$image") || line.startsWith("$collect")) {
                     images.add(line.split(" ")[1]);
+                    if (line.startsWith("$collect")) collectibles.add(line.split(" ")[1]);
                     continue;
                 }
                 if (line.startsWith("$audio")) continue;
@@ -77,6 +89,13 @@ function checkStory(name) {
             if (s.currentChoices.length === 0) break;
             for (const c of s.currentChoices) {
                 if (!seen.has(c.text)) seen.set(c.text, "choice");
+            }
+            // A question: choices tagged #ok / #fail. Each one is a puzzle piece,
+            // identified by the line before the choices.
+            const tags = s.currentChoices.map((c) => c.tags || []);
+            if (tags.some((t) => t.includes("ok") || t.includes("fail"))) {
+                questions.add(last);
+                if (tags.filter((t) => t.includes("ok")).length !== 1) badQuestions.add(last);
             }
             const choice = s.currentChoices[Math.floor(Math.random() * s.currentChoices.length)];
             s.ChooseChoiceIndex(choice.index);
@@ -125,7 +144,19 @@ function checkStory(name) {
         console.log(`  missing cover: img/stories/${name}.jpg`);
     }
 
-    console.log(`  ${seen.size} distinct lines, longest path ${maxSteps} lines, ${images.size} images`);
+    for (const q of badQuestions) {
+        ok = false;
+        console.log(`  question without exactly one #ok answer: ${q}`);
+    }
+    const pieces = collectibles.size + questions.size;
+    const declared = declaredPieceCounts[name];
+    if (declared !== pieces) {
+        ok = false;
+        console.log(`  pieceCount in js/stories.js is ${declared}, but the story has ${pieces} pieces`
+            + ` (${collectibles.size} $collect images, ${questions.size} questions)`);
+    }
+
+    console.log(`  ${seen.size} distinct lines, longest path ${maxSteps} lines, ${images.size} images, ${pieces} puzzle pieces`);
     console.log("  endings:");
     for (const [k, v] of [...endings].sort((a, b) => b[1] - a[1])) {
         console.log(`    ${v}x ${k}`);
