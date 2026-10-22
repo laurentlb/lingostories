@@ -35,1575 +35,1906 @@
             "color": "#2a2"
         },
         "teacher": {
-            "avatar": "woman.svg",
+            "avatar": "man4.svg",
             "color": "#484"
         }
     },
     "sentences": {
+        "Lost & Found": {
+            "key": "lost-0001",
+            "en": "Lost & Found",
+            "fr": "Objets perdus",
+            "de": "Fundsachen"
+        },
         "You arrive at school, balancing your backpack on your shoulder.": {
             "key": "lost-0002",
             "en": "You arrive at school, balancing your backpack on your shoulder.",
-            "fr": "Tu arrives à l'école, ton sac à dos en équilibre sur l'épaule."
+            "fr": "Tu arrives à l'école, ton sac à dos en équilibre sur l'épaule.",
+            "de": "Du kommst in der Schule an, den Rucksack auf der Schulter."
         },
         "The morning bell will ring soon.": {
             "key": "lost-0003",
             "en": "The morning bell will ring soon.",
-            "fr": "La sonnerie du matin va bientôt retentir."
+            "fr": "La sonnerie du matin va bientôt retentir.",
+            "de": "Gleich klingelt es zur ersten Stunde."
         },
         "You reach into your bag.": {
             "key": "lost-0004",
             "en": "You reach into your bag.",
-            "fr": "Tu plonges la main dans ton sac."
+            "fr": "Tu plonges la main dans ton sac.",
+            "de": "Du greifst in deine Tasche."
         },
         "Then you stop.": {
             "key": "lost-0005",
             "en": "Then you stop.",
-            "fr": "Puis tu t'arrêtes."
+            "fr": "Puis tu t'arrêtes.",
+            "de": "Dann hältst du inne."
         },
         "Your red notebook with a banana sticker on the cover is gone!": {
             "key": "lost-0006",
             "en": "Your red notebook with a banana sticker on the cover is gone!",
-            "fr": "Ton cahier rouge avec un autocollant de banane sur la couverture a disparu !"
+            "fr": "Ton cahier rouge avec un autocollant de banane sur la couverture a disparu !",
+            "de": "Dein rotes Heft mit dem Bananenaufkleber auf dem Umschlag ist weg!"
         },
         "This is not just any notebook.": {
             "key": "lost-0007",
             "en": "This is not just any notebook.",
-            "fr": "Ce n'est pas n'importe quel cahier."
+            "fr": "Ce n'est pas n'importe quel cahier.",
+            "de": "Das ist nicht irgendein Heft."
         },
         "It has your homework, your class notes, and even a few doodles.": {
             "key": "lost-0008",
             "en": "It has your homework, your class notes, and even a few doodles.",
-            "fr": "Il contient tes devoirs, tes notes de cours et même quelques gribouillages."
+            "fr": "Il contient tes devoirs, tes notes de cours et même quelques gribouillages.",
+            "de": "Darin sind deine Hausaufgaben, deine Notizen aus dem Unterricht und sogar ein paar Kritzeleien."
         },
         "The teacher asked everyone to bring homework today.": {
             "key": "lost-0009",
             "en": "The teacher asked everyone to bring homework today.",
-            "fr": "Le professeur a demandé à tout le monde d'apporter ses devoirs aujourd'hui."
+            "fr": "Le professeur a demandé à tout le monde d'apporter ses devoirs aujourd'hui.",
+            "de": "Der Lehrer hat alle gebeten, heute die Hausaufgaben mitzubringen."
         },
         "Your homework is in that notebook.": {
             "key": "lost-0010",
             "en": "Your homework is in that notebook.",
-            "fr": "Tes devoirs sont dans ce cahier."
+            "fr": "Tes devoirs sont dans ce cahier.",
+            "de": "Deine Hausaufgaben sind in diesem Heft."
         },
         "Anna, your best friend, sees your wide eyes.": {
             "key": "lost-0011",
             "en": "Anna, your best friend, sees your wide eyes.",
-            "fr": "Anna, ta meilleure amie, voit tes yeux écarquillés."
+            "fr": "Anna, ta meilleure amie, voit tes yeux écarquillés.",
+            "de": "Anna, deine beste Freundin, sieht deine großen Augen."
         },
         "@anna Whoa! What happened? You look like you saw a ghost.": {
             "key": "lost-0012",
-            "en": "@anna Whoa! What happened? You look like you saw a ghost.",
-            "fr": "@anna Ouah ! Qu'est-ce qui s'est passé ? On dirait que tu as vu un fantôme."
+            "en": "Whoa! What happened? You look like you saw a ghost.",
+            "fr": "Ouah ! Qu'est-ce qui s'est passé ? On dirait que tu as vu un fantôme.",
+            "de": "Wow! Was ist passiert? Du siehst aus, als hättest du ein Gespenst gesehen."
         },
         "@you My notebook. It is gone. All my homework is in there!": {
             "key": "lost-0013",
-            "en": "@you My notebook. It is gone. All my homework is in there!",
-            "fr": "@you Mon cahier. Il a disparu. Tous mes devoirs sont dedans !"
+            "en": "My notebook. It is gone. All my homework is in there!",
+            "fr": "Mon cahier. Il a disparu. Tous mes devoirs sont dedans !",
+            "de": "Mein Heft. Es ist weg. Alle meine Hausaufgaben sind darin!"
         },
         "Anna gasps, then raises one eyebrow.": {
             "key": "lost-0014",
             "en": "Anna gasps, then raises one eyebrow.",
-            "fr": "Anna halète, puis lève un sourcil."
+            "fr": "Anna sursaute, puis lève un sourcil.",
+            "de": "Anna schnappt nach Luft und zieht dann eine Augenbraue hoch."
         },
-        "@anna Do not panic, detective. Every mystery begins with something missing.": {
-            "key": "lost-0015",
-            "en": "@anna Do not panic, detective. Every mystery begins with something missing.",
-            "fr": "@anna Ne panique pas, détective. Chaque mystère commence par quelque chose qui manque."
+        "@anna Stay calm, detective. Every mystery begins with something missing.": {
+            "key": "lost-0297",
+            "en": "Stay calm, detective. Every mystery begins with something missing.",
+            "fr": "Du calme, détective. Chaque mystère commence par quelque chose qui disparaît.",
+            "de": "Ruhig bleiben, Detektiv. Jedes Rätsel beginnt damit, dass etwas fehlt."
         },
         "She puts her hand on her chin and walks in a small circle.": {
             "key": "lost-0016",
             "en": "She puts her hand on her chin and walks in a small circle.",
-            "fr": "Elle pose sa main sur son menton et tourne en petit cercle."
+            "fr": "Elle pose sa main sur son menton et tourne en petit cercle.",
+            "de": "Sie legt die Hand ans Kinn und läuft in einem kleinen Kreis."
         },
         "@anna Step one: look at the scene.": {
             "key": "lost-0017",
-            "en": "@anna Step one: look at the scene.",
-            "fr": "@anna Étape un : observer la scène."
+            "en": "Step one: look at the scene.",
+            "fr": "Étape un : observer la scène.",
+            "de": "Schritt eins: den Tatort ansehen."
         },
         "@anna Step two: ask questions.": {
             "key": "lost-0018",
-            "en": "@anna Step two: ask questions.",
-            "fr": "@anna Étape deux : poser des questions."
+            "en": "Step two: ask questions.",
+            "fr": "Étape deux : poser des questions.",
+            "de": "Schritt zwei: Fragen stellen."
         },
         "@anna Step three: follow the clues.": {
             "key": "lost-0019",
-            "en": "@anna Step three: follow the clues.",
-            "fr": "@anna Étape trois : suivre les indices."
+            "en": "Step three: follow the clues.",
+            "fr": "Étape trois : suivre les indices.",
+            "de": "Schritt drei: den Hinweisen folgen."
         },
         "Even though you are nervous, you smile. Anna always makes things funny.": {
             "key": "lost-0020",
             "en": "Even though you are nervous, you smile. Anna always makes things funny.",
-            "fr": "Même si tu es nerveux, tu souris. Anna arrive toujours à rendre les choses drôles."
+            "fr": "Même si tu es nerveux, tu souris. Anna arrive toujours à rendre les choses drôles.",
+            "de": "Obwohl du nervös bist, lächelst du. Anna macht alles immer lustig."
         },
-        "@anna Let us solve this together. Where should we start?": {
-            "key": "lost-0021",
-            "en": "@anna Let us solve this together. Where should we start?",
-            "fr": "@anna Résolvons ça ensemble. Par où devrait-on commencer ?"
+        "@anna We can solve this together. Where should we start?": {
+            "key": "lost-0298",
+            "en": "We can solve this together. Where should we start?",
+            "fr": "On peut résoudre ça ensemble. Par où on commence ?",
+            "de": "Wir können das zusammen lösen. Wo sollen wir anfangen?"
         },
         "Go to the library.": {
             "key": "lost-0022",
             "en": "Go to the library.",
-            "fr": "Aller à la bibliothèque."
+            "fr": "Aller à la bibliothèque.",
+            "de": "In die Bibliothek gehen."
         },
         "Go to the hallway.": {
             "key": "lost-0023",
             "en": "Go to the hallway.",
-            "fr": "Aller dans le couloir."
+            "fr": "Aller dans le couloir.",
+            "de": "In den Flur gehen."
         },
         "Search around the classroom.": {
             "key": "lost-0024",
             "en": "Search around the classroom.",
-            "fr": "Chercher dans la salle de classe."
+            "fr": "Chercher dans la salle de classe.",
+            "de": "Im Klassenzimmer suchen."
         },
         "You look around the classroom before leaving.": {
             "key": "lost-0025",
             "en": "You look around the classroom before leaving.",
-            "fr": "Tu regardes autour de toi dans la salle de classe avant de partir."
+            "fr": "Avant de partir, tu regardes autour de toi dans la salle de classe.",
+            "de": "Bevor du gehst, siehst du dich im Klassenzimmer um."
         },
-        "The teacher hasn’t arrived yet.": {
-            "key": "lost-0026",
-            "en": "The teacher hasn’t arrived yet.",
-            "fr": "Le professeur n'est pas encore arrivé."
+        "The teacher has not arrived yet.": {
+            "key": "lost-0303",
+            "en": "The teacher has not arrived yet.",
+            "fr": "Le professeur n'est pas encore arrivé.",
+            "de": "Der Lehrer ist noch nicht da."
         },
         "The students are talking, throwing paper airplanes, and sneaking snacks.": {
             "key": "lost-0027",
             "en": "The students are talking, throwing paper airplanes, and sneaking snacks.",
-            "fr": "Les élèves parlent, lancent des avions en papier et grignotent en cachette."
+            "fr": "Les élèves parlent, lancent des avions en papier et grignotent en cachette.",
+            "de": "Die Schüler reden, werfen Papierflieger und naschen heimlich."
         },
         "@anna Good idea, detective. Always start where it happened.": {
             "key": "lost-0028",
-            "en": "@anna Good idea, detective. Always start where it happened.",
-            "fr": "@anna Bonne idée, détective. Il faut toujours commencer là où c'est arrivé."
+            "en": "Good idea, detective. Always start where it happened.",
+            "fr": "Bonne idée, détective. Il faut toujours commencer là où c'est arrivé.",
+            "de": "Gute Idee, Detektiv. Man fängt immer da an, wo es passiert ist."
         },
-        "Peek inside the teacher’s desk.": {
-            "key": "lost-0029",
-            "en": "Peek inside the teacher’s desk.",
-            "fr": "Jeter un coup d'oeil dans le bureau du professeur."
+        "Peek inside the teacher's desk.": {
+            "key": "lost-0308",
+            "en": "Peek inside the teacher's desk.",
+            "fr": "Jeter un œil dans le bureau du professeur.",
+            "de": "Einen Blick in das Lehrerpult werfen."
         },
         "Check the classroom lost-and-found box.": {
             "key": "lost-0030",
             "en": "Check the classroom lost-and-found box.",
-            "fr": "Vérifier la boîte des objets perdus de la classe."
+            "fr": "Vérifier la boîte des objets perdus de la classe.",
+            "de": "In der Fundkiste der Klasse nachsehen."
         },
         "Ask a classmate nearby.": {
             "key": "lost-0031",
             "en": "Ask a classmate nearby.",
-            "fr": "Demander à un camarade à côté."
+            "fr": "Demander à un camarade à côté.",
+            "de": "Einen Mitschüler in der Nähe fragen."
         },
-        "You pull gently on the teacher’s desk drawer.": {
-            "key": "lost-0032",
-            "en": "You pull gently on the teacher’s desk drawer.",
-            "fr": "Tu tires doucement sur le tiroir du bureau du professeur."
+        "You pull gently on the teacher's desk drawer.": {
+            "key": "lost-0315",
+            "en": "You pull gently on the teacher's desk drawer.",
+            "fr": "Tu tires doucement sur le tiroir du bureau du professeur.",
+            "de": "Du ziehst vorsichtig an der Schublade des Lehrerpults."
         },
         "It squeaks open.": {
             "key": "lost-0033",
             "en": "It squeaks open.",
-            "fr": "Il s'ouvre en grinçant."
+            "fr": "Il s'ouvre en grinçant.",
+            "de": "Sie geht quietschend auf."
         },
-        "Papers, chalk, and… a notebook!": {
-            "key": "lost-0034",
-            "en": "Papers, chalk, and… a notebook!",
-            "fr": "Des papiers, de la craie et... un cahier !"
+        "Papers, chalk, and... a notebook!": {
+            "key": "lost-0319",
+            "en": "Papers, chalk, and... a notebook!",
+            "fr": "Des papiers, de la craie et... un cahier !",
+            "de": "Papiere, Kreide und... ein Heft!"
         },
-        "Your heart jumps, until you see it’s orange, not red.": {
-            "key": "lost-0035",
-            "en": "Your heart jumps, until you see it’s orange, not red.",
-            "fr": "Ton coeur bondit, jusqu'à ce que tu voies qu'il est orange, pas rouge."
+        "Your heart jumps, until you see it is orange, not red.": {
+            "key": "lost-0320",
+            "en": "Your heart jumps, until you see it is orange, not red.",
+            "fr": "Ton cœur fait un bond, jusqu'à ce que tu voies qu'il est orange, pas rouge.",
+            "de": "Dein Herz macht einen Sprung, bis du siehst, dass es orange ist und nicht rot."
         },
         "Anna laughs.": {
             "key": "lost-0036",
             "en": "Anna laughs.",
-            "fr": "Anna rit."
+            "fr": "Anna rit.",
+            "de": "Anna lacht."
         },
         "@anna Detective note: wrong color.": {
             "key": "lost-0037",
-            "en": "@anna Detective note: wrong color.",
-            "fr": "@anna Note de détective : mauvaise couleur."
+            "en": "Detective note: wrong color.",
+            "fr": "Note de détective : mauvaise couleur.",
+            "de": "Notiz für Detektive: falsche Farbe."
         },
         "@anna Close, but not the one.": {
             "key": "lost-0038",
-            "en": "@anna Close, but not the one.",
-            "fr": "@anna Presque, mais ce n'est pas le bon."
+            "en": "Close, but not the one.",
+            "fr": "Presque, mais ce n'est pas le bon.",
+            "de": "Knapp daneben, aber nicht das richtige."
         },
         "You sigh and slide the orange notebook back. At least you tried.": {
             "key": "lost-0039",
             "en": "You sigh and slide the orange notebook back. At least you tried.",
-            "fr": "Tu soupires et remets le cahier orange à sa place. Au moins, tu as essayé."
+            "fr": "Tu soupires et remets le cahier orange à sa place. Au moins, tu as essayé.",
+            "de": "Du seufzt und legst das orange Heft zurück. Immerhin hast du es versucht."
         },
-        "At the back of the room, there’s a dusty lost-and-found box.": {
-            "key": "lost-0040",
-            "en": "At the back of the room, there’s a dusty lost-and-found box.",
-            "fr": "Au fond de la salle, il y a une boîte d'objets trouvés poussiéreuse."
+        "At the back of the room, there is a dusty lost-and-found box.": {
+            "key": "lost-0321",
+            "en": "At the back of the room, there is a dusty lost-and-found box.",
+            "fr": "Au fond de la salle, il y a une boîte des objets perdus pleine de poussière.",
+            "de": "Hinten im Raum steht eine staubige Fundkiste."
         },
         "You dig through scarves, socks, a broken calculator, and an old lunchbox that smells strange.": {
             "key": "lost-0041",
             "en": "You dig through scarves, socks, a broken calculator, and an old lunchbox that smells strange.",
-            "fr": "Tu fouilles parmi des écharpes, des chaussettes, une calculatrice cassée et une vieille boîte à repas qui sent bizarre."
+            "fr": "Tu fouilles parmi des écharpes, des chaussettes, une calculatrice cassée et une vieille boîte à repas qui sent bizarre.",
+            "de": "Du wühlst dich durch Schals, Socken, einen kaputten Taschenrechner und eine alte Brotdose, die komisch riecht."
         },
         "At the bottom, you find a crumpled page with your handwriting on it!": {
             "key": "lost-0042",
             "en": "At the bottom, you find a crumpled page with your handwriting on it!",
-            "fr": "Au fond, tu trouves une page froissée avec ton écriture dessus !"
+            "fr": "Au fond, tu trouves une page froissée avec ton écriture dessus !",
+            "de": "Ganz unten findest du eine zerknitterte Seite mit deiner Handschrift!"
         },
         "Anna claps her hands.": {
             "key": "lost-0043",
             "en": "Anna claps her hands.",
-            "fr": "Anna tape dans ses mains."
+            "fr": "Anna tape dans ses mains.",
+            "de": "Anna klatscht in die Hände."
         },
         "@anna Nice! One clue found.": {
             "key": "lost-0044",
-            "en": "@anna Nice! One clue found.",
-            "fr": "@anna Super ! Un indice trouvé."
+            "en": "Nice! One clue found.",
+            "fr": "Super ! Un indice trouvé.",
+            "de": "Super! Ein Hinweis gefunden."
         },
         "@anna You are getting good at this.": {
             "key": "lost-0045",
-            "en": "@anna You are getting good at this.",
-            "fr": "@anna Tu deviens doué pour ça."
+            "en": "You are getting good at this.",
+            "fr": "Tu deviens doué pour ça.",
+            "de": "Du wirst richtig gut darin."
         },
-        "You tuck the page into your pocket and head out.": {
-            "key": "lost-0046",
-            "en": "You tuck the page into your pocket and head out.",
-            "fr": "Tu glisses la page dans ta poche et tu t'en vas."
+        "You put the page in your pocket and head out.": {
+            "key": "lost-0322",
+            "en": "You put the page in your pocket and head out.",
+            "fr": "Tu mets la page dans ta poche et tu sors.",
+            "de": "Du steckst die Seite in die Tasche und gehst hinaus."
         },
         "You lean toward a classmate drawing in his notebook.": {
             "key": "lost-0047",
             "en": "You lean toward a classmate drawing in his notebook.",
-            "fr": "Tu te penches vers un camarade qui dessine dans son cahier."
+            "fr": "Tu te penches vers un camarade qui dessine dans son cahier.",
+            "de": "Du beugst dich zu einem Mitschüler, der in sein Heft zeichnet."
         },
         "@you Hey, have you seen a red notebook with a banana sticker?": {
             "key": "lost-0048",
-            "en": "@you Hey, have you seen a red notebook with a banana sticker?",
-            "fr": "@you Salut, tu as vu un cahier rouge avec un autocollant de banane ?"
+            "en": "Hey, have you seen a red notebook with a banana sticker?",
+            "fr": "Salut, tu as vu un cahier rouge avec un autocollant de banane ?",
+            "de": "Hey, hast du ein rotes Heft mit einem Bananenaufkleber gesehen?"
         },
         "@student2 Sure. Here it is.": {
             "key": "lost-0049",
-            "en": "@student2 Sure. Here it is.",
-            "fr": "@student2 Bien sûr. Le voilà."
+            "en": "Sure. Here it is.",
+            "fr": "Bien sûr. Le voilà.",
+            "de": "Klar. Hier ist es."
         },
         "Excited, you grab it and open it.": {
             "key": "lost-0050",
             "en": "Excited, you grab it and open it.",
-            "fr": "Excité, tu l'attrapes et l'ouvres."
+            "fr": "Tout excité, tu l'attrapes et tu l'ouvres.",
+            "de": "Aufgeregt greifst du danach und schlägst es auf."
         },
         "But that notebook is full of silly banana drawings, some with sunglasses, others with mustaches.": {
             "key": "lost-0051",
             "en": "But that notebook is full of silly banana drawings, some with sunglasses, others with mustaches.",
-            "fr": "Mais ce cahier est rempli de dessins ridicules de bananes, certaines avec des lunettes de soleil, d'autres avec des moustaches."
+            "fr": "Mais ce cahier est rempli de dessins ridicules de bananes, certaines avec des lunettes de soleil, d'autres avec des moustaches.",
+            "de": "Aber das Heft ist voller alberner Bananenzeichnungen, manche mit Sonnenbrille, andere mit Schnurrbart."
         },
         "Anna nearly falls over laughing.": {
             "key": "lost-0052",
             "en": "Anna nearly falls over laughing.",
-            "fr": "Anna manque de tomber tellement elle rit."
+            "fr": "Anna rit tellement qu'elle manque de tomber.",
+            "de": "Anna fällt vor Lachen fast um."
         },
         "@anna It is the Banana Gang! Case closed!": {
             "key": "lost-0053",
-            "en": "@anna It is the Banana Gang! Case closed!",
-            "fr": "@anna C'est le gang des bananes ! Affaire classée !"
+            "en": "It is the Banana Gang! Case closed!",
+            "fr": "C'est le gang des bananes ! Affaire classée !",
+            "de": "Das ist die Bananenbande! Fall gelöst!"
         },
         "@student2 Gotcha! That is my art project.": {
             "key": "lost-0054",
-            "en": "@student2 Gotcha! That is my art project.",
-            "fr": "@student2 Je t'ai eu ! C'est mon projet d'art."
+            "en": "Gotcha! That is my art project.",
+            "fr": "Je t'ai eu ! C'est mon projet d'arts plastiques.",
+            "de": "Reingelegt! Das ist mein Kunstprojekt."
         },
         "He laughs as you roll your eyes.": {
             "key": "lost-0055",
             "en": "He laughs as you roll your eyes.",
-            "fr": "Il rit pendant que tu lèves les yeux au ciel."
+            "fr": "Il rit pendant que tu lèves les yeux au ciel.",
+            "de": "Er lacht, während du die Augen verdrehst."
         },
         "A prank, but at least it makes you smile.": {
             "key": "lost-0056",
             "en": "A prank, but at least it makes you smile.",
-            "fr": "C'était une blague, mais au moins, ça te fait sourire."
+            "fr": "C'est une blague, mais au moins, ça te fait sourire.",
+            "de": "Ein Streich, aber wenigstens bringt er dich zum Lächeln."
         },
         "You push open the library doors.": {
             "key": "lost-0057",
             "en": "You push open the library doors.",
-            "fr": "Tu pousses les portes de la bibliothèque."
+            "fr": "Tu pousses les portes de la bibliothèque.",
+            "de": "Du drückst die Türen der Bibliothek auf."
         },
         "The room smells of paper and dust.": {
             "key": "lost-0058",
             "en": "The room smells of paper and dust.",
-            "fr": "La pièce sent le papier et la poussière."
+            "fr": "La pièce sent le papier et la poussière.",
+            "de": "Der Raum riecht nach Papier und Staub."
         },
         "The librarian looks at you over her glasses and puts a finger on her lips.": {
             "key": "lost-0059",
             "en": "The librarian looks at you over her glasses and puts a finger on her lips.",
-            "fr": "La bibliothécaire te regarde par-dessus ses lunettes et porte un doigt à ses lèvres."
+            "fr": "La bibliothécaire te regarde par-dessus ses lunettes et pose un doigt sur ses lèvres.",
+            "de": "Die Bibliothekarin sieht dich über ihre Brille hinweg an und legt einen Finger auf die Lippen."
         },
         "@librarian Shh! This is a quiet place.": {
             "key": "lost-0060",
-            "en": "@librarian Shh! This is a quiet place.",
-            "fr": "@librarian Chut ! Ici, c'est un endroit calme."
-        },
-        "Anna whispers:": {
-            "key": "lost-0061",
-            "en": "Anna whispers:",
-            "fr": "Anna chuchote :"
-        },
-        "@anna Detectives must work in silence... unless they find something big.": {
-            "key": "lost-0062",
-            "en": "@anna Detectives must work in silence... unless they find something big.",
-            "fr": "@anna Les détectives doivent travailler en silence... sauf s'ils trouvent quelque chose d'important."
-        },
-        "She tiptoes forward, clearly enjoying herself.": {
-            "key": "lost-0063",
-            "en": "She tiptoes forward, clearly enjoying herself.",
-            "fr": "Elle s'avance sur la pointe des pieds, visiblement amusée."
-        },
-        "Ask the librarian.": {
-            "key": "lost-0064",
-            "en": "Ask the librarian.",
-            "fr": "Parler à la bibliothécaire."
-        },
-        "Search between the shelves.": {
-            "key": "lost-0065",
-            "en": "Search between the shelves.",
-            "fr": "Chercher entre les étagères."
-        },
-        "Check the reading tables.": {
-            "key": "lost-0066",
-            "en": "Check the reading tables.",
-            "fr": "Vérifier les tables de lecture."
-        },
-        "Talk to the classmate in the corner.": {
-            "key": "lost-0067",
-            "en": "Talk to the classmate in the corner.",
-            "fr": "Parler au camarade de classe dans le coin."
-        },
-        "You walk to the desk and explain about your missing notebook.": {
-            "key": "lost-0068",
-            "en": "You walk to the desk and explain about your missing notebook.",
-            "fr": "Tu t'approches du bureau et expliques que ton cahier a disparu."
-        },
-        "The librarian adjusts her glasses and leans closer.": {
-            "key": "lost-0069",
-            "en": "The librarian adjusts her glasses and leans closer.",
-            "fr": "La bibliothécaire ajuste ses lunettes et se penche vers toi."
-        },
-        "@librarian Hmm... I saw a red notebook with a banana sticker.": {
-            "key": "lost-0070",
-            "en": "@librarian Hmm... I saw a red notebook with a banana sticker.",
-            "fr": "@librarian Hmm... J'ai vu un cahier rouge avec un autocollant banane."
-        },
-        "@librarian Pages were falling out everywhere.": {
-            "key": "lost-0071",
-            "en": "@librarian Pages were falling out everywhere.",
-            "fr": "@librarian Des pages tombaient partout."
-        },
-        "She opens a drawer and gives you a loose sheet.": {
-            "key": "lost-0072",
-            "en": "She opens a drawer and gives you a loose sheet.",
-            "fr": "Elle ouvre un tiroir et te donne une feuille détachée."
-        },
-        "@librarian This fell on the floor when the janitor walked by.": {
-            "key": "lost-0073",
-            "en": "@librarian This fell on the floor when the janitor walked by.",
-            "fr": "@librarian Ceci est tombé par terre quand le concierge est passé."
-        },
-        "Anna gasps softly.": {
-            "key": "lost-0074",
-            "en": "Anna gasps softly.",
-            "fr": "Anna laisse échapper un petit soupir de surprise."
-        },
-        "@anna The janitor again! He is always around.": {
-            "key": "lost-0075",
-            "en": "@anna The janitor again! He is always around.",
-            "fr": "@anna Encore le concierge ! Il est toujours dans les parages."
-        },
-        "The librarian smiles a little.": {
-            "key": "lost-0076",
-            "en": "The librarian smiles a little.",
-            "fr": "La bibliothécaire sourit légèrement."
-        },
-        "@librarian He moves all around the school. He is always taping things to the notice boards.": {
-            "key": "lost-0077",
-            "en": "@librarian He moves all around the school. He is always taping things to the notice boards.",
-            "fr": "@librarian Il se déplace partout dans l'école. Il colle toujours des choses sur les panneaux d'affichage."
-        },
-        "You put the page away and nod.": {
-            "key": "lost-0078",
-            "en": "You put the page away and nod.",
-            "fr": "Tu ranges la page et hoches la tête."
-        },
-        "Leave for the cafeteria.": {
-            "key": "lost-0079",
-            "en": "Leave for the cafeteria.",
-            "fr": "Partir pour la cafétéria."
-        },
-        "The shelves are tall, filled with books packed tightly together.": {
-            "key": "lost-0080",
-            "en": "The shelves are tall, filled with books packed tightly together.",
-            "fr": "Les étagères sont hautes, remplies de livres serrés les uns contre les autres."
-        },
-        "As you search among the books, a heavy dictionary drops to the floor.": {
-            "key": "lost-0081",
-            "en": "As you search among the books, a heavy dictionary drops to the floor.",
-            "fr": "Pendant que tu cherches parmi les livres, un gros dictionnaire tombe par terre."
-        },
-        "Inside, something flutters out.": {
-            "key": "lost-0082",
-            "en": "Inside, something flutters out.",
-            "fr": "À l'intérieur, quelque chose s'envole."
-        },
-        "It’s a page with your handwriting.": {
-            "key": "lost-0083",
-            "en": "It’s a page with your handwriting.",
-            "fr": "C'est une page avec ton écriture."
-        },
-        "Anna picks it up like treasure.": {
-            "key": "lost-0084",
-            "en": "Anna picks it up like treasure.",
-            "fr": "Anna la ramasse comme un trésor."
-        },
-        "@anna Detective success! The Dictionary of Secrets now has your homework!": {
-            "key": "lost-0085",
-            "en": "@anna Detective success! The Dictionary of Secrets now has your homework!",
-            "fr": "@anna Succès de détective ! Le Dictionnaire des Secrets contient maintenant tes devoirs !"
-        },
-        "You tuck it away.": {
-            "key": "lost-0086",
-            "en": "You tuck it away.",
-            "fr": "Tu la ranges soigneusement."
-        },
-        "Keep searching around the shelves.": {
-            "key": "lost-0087",
-            "en": "Keep searching around the shelves.",
-            "fr": "Continuer à chercher autour des étagères."
-        },
-        "Show it to the librarian.": {
-            "key": "lost-0088",
-            "en": "Show it to the librarian.",
-            "fr": "La montrer à la bibliothécaire."
-        },
-        "You walk deeper between the shelves.": {
-            "key": "lost-0089",
-            "en": "You walk deeper between the shelves.",
-            "fr": "Tu t'enfonces davantage entre les étagères."
-        },
-        "It feels very quiet.": {
-            "key": "lost-0090",
-            "en": "It feels very quiet.",
-            "fr": "L'endroit semble très silencieux."
-        },
-        "On one shelf, an open sketchbook shows drawings of… banana stickers.": {
-            "key": "lost-0091",
-            "en": "On one shelf, an open sketchbook shows drawings of… banana stickers.",
-            "fr": "Sur une étagère, un carnet de croquis ouvert montre des dessins de… stickers banane."
-        },
-        "Anna leans in and whispers.": {
-            "key": "lost-0092",
-            "en": "Anna leans in and whispers.",
-            "fr": "Anna se penche et chuchote."
-        },
-        "@anna Our suspect leaves clues everywhere.": {
-            "key": "lost-0093",
-            "en": "@anna Our suspect leaves clues everywhere.",
-            "fr": "@anna Notre suspect laisse des indices partout."
-        },
-        "@anna The janitor is like a Banana Sticker Thief.": {
-            "key": "lost-0094",
-            "en": "@anna The janitor is like a Banana Sticker Thief.",
-            "fr": "@anna Le concierge est comme un voleur d'autocollants banane."
-        },
-        "You grin and shake your head.": {
-            "key": "lost-0095",
-            "en": "You grin and shake your head.",
-            "fr": "Tu souris et secoues la tête."
-        },
-        "The reading tables are covered with notebooks, pens, and half-finished homework.": {
-            "key": "lost-0096",
-            "en": "The reading tables are covered with notebooks, pens, and half-finished homework.",
-            "fr": "Les tables de lecture sont couvertes de cahiers, de stylos et de devoirs à moitié terminés."
-        },
-        "You look under a chair and find a crumpled page taped with a banana sticker.": {
-            "key": "lost-0097",
-            "en": "You look under a chair and find a crumpled page taped with a banana sticker.",
-            "fr": "Tu regardes sous une chaise et trouves une page froissée collée avec un autocollant banane."
-        },
-        "Anna groans.": {
-            "key": "lost-0098",
-            "en": "Anna groans.",
-            "fr": "Anna gémit."
-        },
-        "@anna He is turning the school into a big scrapbook!": {
-            "key": "lost-0099",
-            "en": "@anna He is turning the school into a big scrapbook!",
-            "fr": "@anna Il transforme l'école en immense album de scrapbooking !"
-        },
-        "You fold the page and look toward the exit.": {
-            "key": "lost-0100",
-            "en": "You fold the page and look toward the exit.",
-            "fr": "Tu plies la page et regardes vers la sortie."
-        },
-        "In the far corner, a classmate pretends to read but keeps watching everyone else.": {
-            "key": "lost-0101",
-            "en": "In the far corner, a classmate pretends to read but keeps watching everyone else.",
-            "fr": "Dans le coin du fond, un camarade fait semblant de lire mais continue d'observer tout le monde."
-        },
-        "@you Hey, did you see a red notebook with a banana sticker?": {
-            "key": "lost-0102",
-            "en": "@you Hey, did you see a red notebook with a banana sticker?",
-            "fr": "@you Salut, tu as vu un cahier rouge avec un autocollant de banane ?"
-        },
-        "@student3 Maybe. I see a lot of things.": {
-            "key": "lost-0103",
-            "en": "@student3 Maybe. I see a lot of things.",
-            "fr": "@student3 Peut-être. Je vois beaucoup de choses."
-        },
-        "Anna crosses her arms.": {
-            "key": "lost-0104",
-            "en": "Anna crosses her arms.",
-            "fr": "Anna croise les bras."
-        },
-        "@anna Come on. Just tell us.": {
-            "key": "lost-0105",
-            "en": "@anna Come on. Just tell us.",
-            "fr": "@anna Allez. Dis-le-nous, c'est tout."
-        },
-        "The classmate shrugs.": {
-            "key": "lost-0106",
-            "en": "The classmate shrugs.",
-            "fr": "Le camarade hausse les épaules."
-        },
-        "@student3 Fine. I saw the janitor carrying something like that.": {
-            "key": "lost-0107",
-            "en": "@student3 Fine. I saw the janitor carrying something like that.",
-            "fr": "@student3 D'accord. J'ai vu le concierge porter quelque chose comme ça."
-        },
-        "@student3 He was going to the cafeteria.": {
-            "key": "lost-0108",
-            "en": "@student3 He was going to the cafeteria.",
-            "fr": "@student3 Il allait vers la cafétéria."
-        },
-        "Anna raises her eyebrows.": {
-            "key": "lost-0109",
-            "en": "Anna raises her eyebrows.",
-            "fr": "Anna hausse les sourcils."
-        },
-        "@anna The Banana Sticker Thief again.": {
-            "key": "lost-0110",
-            "en": "@anna The Banana Sticker Thief again.",
-            "fr": "@anna Encore le voleur d'autocollants banane."
-        },
-        "You thank them and leave.": {
-            "key": "lost-0111",
-            "en": "You thank them and leave.",
-            "fr": "Tu le remercies et t'en vas."
-        },
-        "The cafeteria is full of noise.": {
-            "key": "lost-0112",
-            "en": "The cafeteria is full of noise.",
-            "fr": "La cantine est pleine de bruit."
-        },
-        "Trays clatter, students laugh, and the smell of soup mixes with warm bread.": {
-            "key": "lost-0113",
-            "en": "Trays clatter, students laugh, and the smell of soup mixes with warm bread.",
-            "fr": "Les plateaux s'entrechoquent, les élèves rient, et l'odeur de la soupe se mêle au pain chaud."
-        },
-        "Anna takes a deep breath.": {
-            "key": "lost-0114",
-            "en": "Anna takes a deep breath.",
-            "fr": "Anna prend une grande inspiration."
-        },
-        "@anna Detective rule number one: never work on an empty stomach.": {
-            "key": "lost-0115",
-            "en": "@anna Detective rule number one: never work on an empty stomach.",
-            "fr": "@anna Règle numéro un du détective : ne jamais travailler le ventre vide."
-        },
-        "@anna But fine, let us focus!": {
-            "key": "lost-0116",
-            "en": "@anna But fine, let us focus!",
-            "fr": "@anna Bon, d'accord, concentrons-nous !"
-        },
-        "You look around.": {
-            "key": "lost-0117",
-            "en": "You look around.",
-            "fr": "Tu regardes autour de toi."
-        },
-        "There are many people and many places where a notebook could be hiding.": {
-            "key": "lost-0118",
-            "en": "There are many people and many places where a notebook could be hiding.",
-            "fr": "Il y a beaucoup de monde et beaucoup d'endroits où un carnet pourrait être caché."
-        },
-        "Search between the tables.": {
-            "key": "lost-0119",
-            "en": "Search between the tables.",
-            "fr": "Chercher entre les tables."
-        },
-        "Peek into the kitchen.": {
-            "key": "lost-0120",
-            "en": "Peek into the kitchen.",
-            "fr": "Jeter un coup d'œil dans la cuisine."
-        },
-        "Check the notice board on the wall.": {
-            "key": "lost-0121",
-            "en": "Check the notice board on the wall.",
-            "fr": "Regarder le panneau d'affichage sur le mur."
-        },
-        "Talk to the group of gossiping students.": {
-            "key": "lost-0122",
-            "en": "Talk to the group of gossiping students.",
-            "fr": "Parler au groupe d'élèves qui bavardent."
-        },
-        "You move between the tables, careful not to trip over bags.": {
-            "key": "lost-0123",
-            "en": "You move between the tables, careful not to trip over bags.",
-            "fr": "Tu te faufiles entre les tables, en faisant attention à ne pas trébucher sur les sacs."
-        },
-        "Suddenly... orange juice spills across the floor!": {
-            "key": "lost-0124",
-            "en": "Suddenly... orange juice spills across the floor!",
-            "fr": "Soudain... du jus d'orange se renverse sur le sol !"
-        },
-        "A student bumps into you, tray shaking.": {
-            "key": "lost-0125",
-            "en": "A student bumps into you, tray shaking.",
-            "fr": "Un élève te bouscule, son plateau tremble."
-        },
-        "@student1 Oh no! Sorry!": {
-            "key": "lost-0126",
-            "en": "@student1 Oh no! Sorry!",
-            "fr": "@student1 Oh non ! Désolé !"
-        },
-        "Anna laughs as she helps you up.": {
-            "key": "lost-0127",
-            "en": "Anna laughs as she helps you up.",
-            "fr": "Anna rit en t'aidant à te relever."
-        },
-        "@anna Detective down! But wait, what is that on your shoe?": {
-            "key": "lost-0128",
-            "en": "@anna Detective down! But wait, what is that on your shoe?",
-            "fr": "@anna Détective à terre ! Mais attends, qu'est-ce que c'est sur ta chaussure ?"
-        },
-        "You peel it off.": {
-            "key": "lost-0129",
-            "en": "You peel it off.",
-            "fr": "Tu l'enlèves."
-        },
-        "It’s a juice-stained page from your notebook.": {
-            "key": "lost-0130",
-            "en": "It’s a juice-stained page from your notebook.",
-            "fr": "C'est une page de ton carnet tachée de jus."
-        },
-        "@anna Gross but useful. Evidence found!": {
-            "key": "lost-0131",
-            "en": "@anna Gross but useful. Evidence found!",
-            "fr": "@anna Dégoûtant, mais utile. Preuve trouvée !"
-        },
-        "Keep searching around the tables.": {
-            "key": "lost-0132",
-            "en": "Keep searching around the tables.",
-            "fr": "Continuer à chercher autour des tables."
-        },
-        "Go to the kitchen.": {
-            "key": "lost-0133",
-            "en": "Go to the kitchen.",
-            "fr": "Aller à la cuisine."
-        },
-        "As you dry your hands, another student waves you over.": {
-            "key": "lost-0134",
-            "en": "As you dry your hands, another student waves you over.",
-            "fr": "Pendant que tu te sèches les mains, un autre élève te fait signe d'approcher."
-        },
-        "@student1 Looking for a red notebook? I have it.": {
-            "key": "lost-0135",
-            "en": "@student1 Looking for a red notebook? I have it.",
-            "fr": "@student1 Tu cherches un carnet rouge ? Je l'ai."
-        },
-        "He hands you a notebook.": {
-            "key": "lost-0136",
-            "en": "He hands you a notebook.",
-            "fr": "Il te tend un carnet."
-        },
-        "You open it quickly, but it’s full of banana superheroes.": {
-            "key": "lost-0137",
-            "en": "You open it quickly, but it’s full of banana superheroes.",
-            "fr": "Tu l'ouvres vite, mais il est rempli de super-héros bananes."
-        },
-        "Anna laughs out loud.": {
-            "key": "lost-0138",
-            "en": "Anna laughs out loud.",
-            "fr": "Anna éclate de rire."
-        },
-        "@anna First banana cartoons, now banana heroes?": {
-            "key": "lost-0139",
-            "en": "@anna First banana cartoons, now banana heroes?",
-            "fr": "@anna D'abord des dessins de bananes, maintenant des héros bananes ?"
-        },
-        "@anna This school really loves bananas!": {
-            "key": "lost-0140",
-            "en": "@anna This school really loves bananas!",
-            "fr": "@anna Cette école adore vraiment les bananes !"
-        },
-        "You sigh and hand it back.": {
-            "key": "lost-0141",
-            "en": "You sigh and hand it back.",
-            "fr": "Tu soupires et tu le rends."
-        },
-        "@STUDENT1 Couldn’t resist a joke.": {
-            "key": "lost-0142",
-            "en": "@STUDENT1 Couldn’t resist a joke.",
-            "fr": "@STUDENT1 Je n'ai pas pu résister à une blague."
-        },
-        "Anna looks around the busy room.": {
-            "key": "lost-0143",
-            "en": "Anna looks around the busy room.",
-            "fr": "Anna regarde autour de la pièce animée."
-        },
-        "@anna Okay, detective. We found a page, we got tricked, and I am still hungry. What now?": {
-            "key": "lost-0144",
-            "en": "@anna Okay, detective. We found a page, we got tricked, and I am still hungry. What now?",
-            "fr": "@anna Bon, détective. On a trouvé une page, on s'est fait avoir, et j'ai toujours faim. On fait quoi maintenant ?"
-        },
-        "Talk to the gossiping students.": {
-            "key": "lost-0145",
-            "en": "Talk to the gossiping students.",
-            "fr": "Parler aux élèves qui bavardent."
-        },
-        "Leave for the hallway.": {
-            "key": "lost-0146",
-            "en": "Leave for the hallway.",
-            "fr": "Partir vers le couloir."
-        },
-        "You peek through the swinging doors into the kitchen.": {
-            "key": "lost-0147",
-            "en": "You peek through the swinging doors into the kitchen.",
-            "fr": "Tu jettes un coup d'œil dans la cuisine à travers les portes battantes."
-        },
-        "A cook stirs a big pot of soup, steam covering his glasses.": {
-            "key": "lost-0148",
-            "en": "A cook stirs a big pot of soup, steam covering his glasses.",
-            "fr": "Un cuisinier remue une grande marmite de soupe, la vapeur couvrant ses lunettes."
-        },
-        "@cook Students again? This is a kitchen, not a playground!": {
-            "key": "lost-0149",
-            "en": "@cook Students again? This is a kitchen, not a playground!",
-            "fr": "@cook Encore des élèves ? C'est une cuisine, pas une aire de jeux !"
-        },
-        "@you Sorry! We are looking for a red notebook.": {
-            "key": "lost-0150",
-            "en": "@you Sorry! We are looking for a red notebook.",
-            "fr": "@you Désolé ! Nous cherchons un carnet rouge."
-        },
-        "@you Sorry, we will leave!": {
-            "key": "lost-0151",
-            "en": "@you Sorry, we will leave!",
-            "fr": "@you Désolé, nous allons partir !"
-        },
-        "The cook sighs.": {
-            "key": "lost-0152",
-            "en": "The cook sighs.",
-            "fr": "Le cuisinier soupire."
-        },
-        "@cook Red cover, banana sticker?": {
-            "key": "lost-0153",
-            "en": "@cook Red cover, banana sticker?",
-            "fr": "@cook Couverture rouge, autocollant de banane ?"
-        },
-        "@cook Yes, the janitor dropped it here earlier. Pages everywhere!": {
-            "key": "lost-0154",
-            "en": "@cook Yes, the janitor dropped it here earlier. Pages everywhere!",
-            "fr": "@cook Oui, le concierge l'a laissé tomber ici tout à l'heure. Des pages partout !"
-        },
-        "He points to the corner, where a page lies under a box.": {
-            "key": "lost-0155",
-            "en": "He points to the corner, where a page lies under a box.",
-            "fr": "Il montre le coin, où une page se trouve sous une boîte."
-        },
-        "You grab it quickly.": {
-            "key": "lost-0156",
-            "en": "You grab it quickly.",
-            "fr": "Tu l'attrapes vite."
-        },
-        "Anna waves it like a trophy.": {
-            "key": "lost-0157",
-            "en": "Anna waves it like a trophy.",
-            "fr": "Anna l'agite comme un trophée."
-        },
-        "@anna Case progress! We are getting close.": {
-            "key": "lost-0158",
-            "en": "@anna Case progress! We are getting close.",
-            "fr": "@anna L'enquête avance ! On s'approche."
-        },
-        "The cook shakes his ladle.": {
-            "key": "lost-0159",
-            "en": "The cook shakes his ladle.",
-            "fr": "Le cuisinier secoue sa louche."
-        },
-        "@cook Tell that janitor to keep his things out of my kitchen, or next time it goes in the soup!": {
-            "key": "lost-0160",
-            "en": "@cook Tell that janitor to keep his things out of my kitchen, or next time it goes in the soup!",
-            "fr": "@cook Dis à ce concierge de garder ses affaires hors de ma cuisine, sinon la prochaine fois, ça finit dans la soupe !"
-        },
-        "You smile awkwardly and step back.": {
-            "key": "lost-0161",
-            "en": "You smile awkwardly and step back.",
-            "fr": "Tu souris avec gêne et recules."
-        },
-        "Near the wall, three students whisper together.": {
-            "key": "lost-0162",
-            "en": "Near the wall, three students whisper together.",
-            "fr": "Près du mur, trois élèves chuchotent ensemble."
-        },
-        "@student1 I heard the janitor collects stickers. He even puts them on notebooks!": {
-            "key": "lost-0163",
-            "en": "@student1 I heard the janitor collects stickers. He even puts them on notebooks!",
-            "fr": "@student1 J'ai entendu dire que le concierge collectionne les autocollants. Il en met même sur les carnets !"
-        },
-        "@student2 Yes, I saw him with a red one. He went toward the hallway.": {
-            "key": "lost-0164",
-            "en": "@student2 Yes, I saw him with a red one. He went toward the hallway.",
-            "fr": "@student2 Oui, je l'ai vu avec un rouge. Il est parti vers le couloir."
-        },
-        "@student3 Weird guy. He is always talking to himself.": {
-            "key": "lost-0165",
-            "en": "@student3 Weird guy. He is always talking to himself.",
-            "fr": "@student3 Quel type bizarre. Il parle toujours tout seul."
-        },
-        "Anna leans close and whispers:": {
-            "key": "lost-0166",
-            "en": "Anna leans close and whispers:",
-            "fr": "Anna se penche vers toi et chuchote :"
-        },
-        "@anna Then it is clear. The janitor is our Banana Sticker Thief.": {
-            "key": "lost-0167",
-            "en": "@anna Then it is clear. The janitor is our Banana Sticker Thief.",
-            "fr": "@anna Alors c'est clair. Le concierge est notre Voleur à l'Autocollant Banane."
-        },
-        "You stop at the cafeteria notice board.": {
-            "key": "lost-0168",
-            "en": "You stop at the cafeteria notice board.",
-            "fr": "Tu t'arrêtes devant le panneau d'affichage de la cantine."
-        },
-        "Posters cover the wall—sports tryouts, art club, and a “Lost Sock” sign.": {
-            "key": "lost-0169",
-            "en": "Posters cover the wall—sports tryouts, art club, and a “Lost Sock” sign.",
-            "fr": "Des affiches couvrent le mur : sélections sportives, club d'art et une pancarte « Chaussette perdue »."
-        },
-        "Anna squints.": {
-            "key": "lost-0170",
-            "en": "Anna squints.",
-            "fr": "Anna plisse les yeux."
-        },
-        "@anna Wait, what is that behind the paper?": {
-            "key": "lost-0171",
-            "en": "@anna Wait, what is that behind the paper?",
-            "fr": "@anna Attends, qu'est-ce qu'il y a derrière le papier ?"
-        },
-        "You lift a flyer and find another notebook page, taped with a banana sticker.": {
-            "key": "lost-0172",
-            "en": "You lift a flyer and find another notebook page, taped with a banana sticker.",
-            "fr": "Tu soulèves un prospectus et trouves une autre page du carnet, scotchée avec un autocollant de banane."
-        },
-        "@anna He is leaving a trail even I can follow!": {
-            "key": "lost-0173",
-            "en": "@anna He is leaving a trail even I can follow!",
-            "fr": "@anna Il laisse une piste que même moi je peux suivre !"
-        },
-        "The hallway is full of sound—lockers closing, shoes squeaking, voices echoing.": {
-            "key": "lost-0174",
-            "en": "The hallway is full of sound—lockers closing, shoes squeaking, voices echoing.",
-            "fr": "Le couloir est plein de bruit : casiers qui claquent, chaussures qui couinent, voix qui résonnent."
-        },
-        "Students hurry past in both directions.": {
-            "key": "lost-0175",
-            "en": "Students hurry past in both directions.",
-            "fr": "Des élèves passent en vitesse dans les deux sens."
-        },
-        "Anna nudges you.": {
-            "key": "lost-0176",
-            "en": "Anna nudges you.",
-            "fr": "Anna te donne un petit coup de coude."
-        },
-        "@anna Okay, detective. The janitor’s room is at the end of the hall.": {
-            "key": "lost-0177",
-            "en": "@anna Okay, detective. The janitor’s room is at the end of the hall.",
-            "fr": "@anna Bon, détective. La loge du concierge est au bout du couloir."
-        },
-        "@anna But remember, hallways hide secrets too.": {
-            "key": "lost-0178",
-            "en": "@anna But remember, hallways hide secrets too.",
-            "fr": "@anna Mais n'oublie pas, les couloirs cachent aussi des secrets."
-        },
-        "Speak with a teacher passing by.": {
-            "key": "lost-0179",
-            "en": "Speak with a teacher passing by.",
-            "fr": "Parler à un professeur qui passe."
-        },
-        "Check the notice board again.": {
-            "key": "lost-0180",
-            "en": "Check the notice board again.",
-            "fr": "Regarder encore le panneau d'affichage."
-        },
-        "Go to the janitor’s room.": {
-            "key": "lost-0181",
-            "en": "Go to the janitor’s room.",
-            "fr": "Aller à la loge du concierge."
-        },
-        "You listen to two older students by the lockers.": {
-            "key": "lost-0182",
-            "en": "You listen to two older students by the lockers.",
-            "fr": "Tu écoutes deux élèves plus âgés près des casiers."
-        },
-        "@student1 That janitor is strange. He collects banana stickers like treasure.": {
-            "key": "lost-0183",
-            "en": "@student1 That janitor is strange. He collects banana stickers like treasure.",
-            "fr": "@student1 Ce concierge est bizarre. Il collectionne les autocollants de banane comme un trésor."
-        },
-        "@student2 Yes, and I saw him with a red notebook. I do not think it was his.": {
-            "key": "lost-0184",
-            "en": "@student2 Yes, and I saw him with a red notebook. I do not think it was his.",
-            "fr": "@student2 Oui, et je l'ai vu avec un carnet rouge. Je ne pense pas que c'était le sien."
-        },
-        "They both laugh softly.": {
-            "key": "lost-0185",
-            "en": "They both laugh softly.",
-            "fr": "Ils rient tous les deux doucement."
+            "en": "Shh! This is a quiet place.",
+            "fr": "Chut ! Ici, on reste calme.",
+            "de": "Pst! Hier ist es ruhig."
         },
         "Anna whispers.": {
             "key": "lost-0186",
             "en": "Anna whispers.",
-            "fr": "Anna chuchote."
+            "fr": "Anna chuchote.",
+            "de": "Anna flüstert."
+        },
+        "@anna Detectives must work in silence... unless they find something big.": {
+            "key": "lost-0062",
+            "en": "Detectives must work in silence... unless they find something big.",
+            "fr": "Les détectives doivent travailler en silence... sauf s'ils trouvent quelque chose d'important.",
+            "de": "Detektive müssen leise arbeiten... außer sie finden etwas Großes."
+        },
+        "She tiptoes forward, clearly enjoying herself.": {
+            "key": "lost-0063",
+            "en": "She tiptoes forward, clearly enjoying herself.",
+            "fr": "Elle s'avance sur la pointe des pieds, visiblement amusée.",
+            "de": "Sie schleicht auf Zehenspitzen voran und hat sichtlich Spaß."
+        },
+        "Ask the librarian.": {
+            "key": "lost-0064",
+            "en": "Ask the librarian.",
+            "fr": "Parler à la bibliothécaire.",
+            "de": "Die Bibliothekarin fragen."
+        },
+        "Search between the shelves.": {
+            "key": "lost-0065",
+            "en": "Search between the shelves.",
+            "fr": "Chercher entre les étagères.",
+            "de": "Zwischen den Regalen suchen."
+        },
+        "Check the reading tables.": {
+            "key": "lost-0066",
+            "en": "Check the reading tables.",
+            "fr": "Vérifier les tables de lecture.",
+            "de": "Die Lesetische absuchen."
+        },
+        "Talk to the classmate in the corner.": {
+            "key": "lost-0067",
+            "en": "Talk to the classmate in the corner.",
+            "fr": "Parler au camarade dans le coin.",
+            "de": "Mit dem Mitschüler in der Ecke sprechen."
+        },
+        "You walk to the desk and explain about your missing notebook.": {
+            "key": "lost-0068",
+            "en": "You walk to the desk and explain about your missing notebook.",
+            "fr": "Tu t'approches du bureau et expliques que ton cahier a disparu.",
+            "de": "Du gehst zum Schalter und erzählst von deinem verschwundenen Heft."
+        },
+        "The librarian adjusts her glasses and leans closer.": {
+            "key": "lost-0069",
+            "en": "The librarian adjusts her glasses and leans closer.",
+            "fr": "La bibliothécaire ajuste ses lunettes et se penche vers toi.",
+            "de": "Die Bibliothekarin rückt ihre Brille zurecht und beugt sich vor."
+        },
+        "@librarian Hmm... I saw a red notebook with a banana sticker.": {
+            "key": "lost-0070",
+            "en": "Hmm... I saw a red notebook with a banana sticker.",
+            "fr": "Hmm... J'ai vu un cahier rouge avec un autocollant de banane.",
+            "de": "Hmm... Ich habe ein rotes Heft mit einem Bananenaufkleber gesehen."
+        },
+        "@librarian Pages were falling out everywhere.": {
+            "key": "lost-0071",
+            "en": "Pages were falling out everywhere.",
+            "fr": "Des pages tombaient partout.",
+            "de": "Überall sind Seiten herausgefallen."
+        },
+        "She opens a drawer and gives you a loose sheet.": {
+            "key": "lost-0072",
+            "en": "She opens a drawer and gives you a loose sheet.",
+            "fr": "Elle ouvre un tiroir et te donne une feuille volante.",
+            "de": "Sie öffnet eine Schublade und gibt dir ein loses Blatt."
+        },
+        "@librarian This fell on the floor when the janitor walked by.": {
+            "key": "lost-0073",
+            "en": "This fell on the floor when the janitor walked by.",
+            "fr": "Ceci est tombé par terre quand le concierge est passé.",
+            "de": "Das ist auf den Boden gefallen, als der Hausmeister vorbeiging."
+        },
+        "Anna gasps softly.": {
+            "key": "lost-0074",
+            "en": "Anna gasps softly.",
+            "fr": "Anna retient un petit cri de surprise.",
+            "de": "Anna schnappt leise nach Luft."
+        },
+        "@anna The janitor! He is everywhere.": {
+            "key": "lost-0323",
+            "en": "The janitor! He is everywhere.",
+            "fr": "Le concierge ! Il est partout.",
+            "de": "Der Hausmeister! Er ist überall."
+        },
+        "The librarian smiles a little.": {
+            "key": "lost-0076",
+            "en": "The librarian smiles a little.",
+            "fr": "La bibliothécaire sourit légèrement.",
+            "de": "Die Bibliothekarin lächelt ein wenig."
+        },
+        "@librarian He moves all around the school. He is always taping things to the notice boards.": {
+            "key": "lost-0077",
+            "en": "He moves all around the school. He is always taping things to the notice boards.",
+            "fr": "Il se déplace partout dans l'école. Il colle toujours des choses sur les panneaux d'affichage.",
+            "de": "Er ist überall in der Schule unterwegs. Er klebt ständig etwas an die Schwarzen Bretter."
+        },
+        "You put the page away and nod.": {
+            "key": "lost-0078",
+            "en": "You put the page away and nod.",
+            "fr": "Tu ranges la page et hoches la tête.",
+            "de": "Du steckst die Seite ein und nickst."
+        },
+        "The shelves are tall, filled with books packed tightly together.": {
+            "key": "lost-0080",
+            "en": "The shelves are tall, filled with books packed tightly together.",
+            "fr": "Les étagères sont hautes, remplies de livres serrés les uns contre les autres.",
+            "de": "Die Regale sind hoch und dicht mit Büchern gefüllt."
+        },
+        "As you search among the books, a heavy dictionary drops to the floor.": {
+            "key": "lost-0081",
+            "en": "As you search among the books, a heavy dictionary drops to the floor.",
+            "fr": "Pendant que tu cherches parmi les livres, un gros dictionnaire tombe par terre.",
+            "de": "Während du zwischen den Büchern suchst, fällt ein schweres Wörterbuch auf den Boden."
+        },
+        "Inside, something flutters out.": {
+            "key": "lost-0082",
+            "en": "Inside, something flutters out.",
+            "fr": "Quelque chose s'en échappe en voletant.",
+            "de": "Etwas flattert heraus."
+        },
+        "It is a page with your handwriting.": {
+            "key": "lost-0324",
+            "en": "It is a page with your handwriting.",
+            "fr": "C'est une page avec ton écriture.",
+            "de": "Es ist eine Seite mit deiner Handschrift."
+        },
+        "Anna picks it up like treasure.": {
+            "key": "lost-0084",
+            "en": "Anna picks it up like treasure.",
+            "fr": "Anna la ramasse comme un trésor.",
+            "de": "Anna hebt sie auf wie einen Schatz."
+        },
+        "@anna Detective success! Even the dictionary was hiding your homework!": {
+            "key": "lost-0325",
+            "en": "Detective success! Even the dictionary was hiding your homework!",
+            "fr": "Victoire des détectives ! Même le dictionnaire cachait tes devoirs !",
+            "de": "Detektiverfolg! Sogar das Wörterbuch hat deine Hausaufgaben versteckt!"
+        },
+        "You put it away.": {
+            "key": "lost-0326",
+            "en": "You put it away.",
+            "fr": "Tu la ranges.",
+            "de": "Du steckst sie ein."
+        },
+        "Keep searching around the shelves.": {
+            "key": "lost-0087",
+            "en": "Keep searching around the shelves.",
+            "fr": "Continuer à chercher autour des étagères.",
+            "de": "Weiter zwischen den Regalen suchen."
+        },
+        "Show it to the librarian.": {
+            "key": "lost-0088",
+            "en": "Show it to the librarian.",
+            "fr": "La montrer à la bibliothécaire.",
+            "de": "Sie der Bibliothekarin zeigen."
+        },
+        "You walk deeper between the shelves.": {
+            "key": "lost-0089",
+            "en": "You walk deeper between the shelves.",
+            "fr": "Tu t'enfonces entre les étagères.",
+            "de": "Du gehst tiefer zwischen die Regale."
+        },
+        "It feels very quiet.": {
+            "key": "lost-0090",
+            "en": "It feels very quiet.",
+            "fr": "Tout est très silencieux.",
+            "de": "Es ist sehr still."
+        },
+        "On one shelf, there is a big book called \"The World of Fruit Stickers\".": {
+            "key": "lost-0327",
+            "en": "On one shelf, there is a big book called \"The World of Fruit Stickers\".",
+            "fr": "Sur une étagère, il y a un gros livre intitulé « Le monde des autocollants de fruits ».",
+            "de": "In einem Regal steht ein dickes Buch mit dem Titel „Die Welt der Obstaufkleber“."
+        },
+        "A note inside says: \"Please return to the janitor.\"": {
+            "key": "lost-0328",
+            "en": "A note inside says: \"Please return to the janitor.\"",
+            "fr": "Un mot à l'intérieur dit : « À rendre au concierge, merci. »",
+            "de": "Darin liegt ein Zettel: „Bitte an den Hausmeister zurückgeben.“"
+        },
+        "Anna leans in and whispers.": {
+            "key": "lost-0092",
+            "en": "Anna leans in and whispers.",
+            "fr": "Anna se penche et chuchote.",
+            "de": "Anna beugt sich vor und flüstert."
+        },
+        "@anna The janitor collects stickers? And your notebook has a banana sticker...": {
+            "key": "lost-0329",
+            "en": "The janitor collects stickers? And your notebook has a banana sticker...",
+            "fr": "Le concierge collectionne les autocollants ? Et ton cahier a un autocollant de banane...",
+            "de": "Der Hausmeister sammelt Aufkleber? Und dein Heft hat einen Bananenaufkleber..."
+        },
+        "@anna Our suspect is the Banana Sticker Thief!": {
+            "key": "lost-0330",
+            "en": "Our suspect is the Banana Sticker Thief!",
+            "fr": "Notre suspect est le Voleur d'autocollants !",
+            "de": "Unser Verdächtiger ist der Bananenaufkleber-Dieb!"
+        },
+        "You grin and shake your head.": {
+            "key": "lost-0095",
+            "en": "You grin and shake your head.",
+            "fr": "Tu souris et secoues la tête.",
+            "de": "Du grinst und schüttelst den Kopf."
+        },
+        "Leave the library.": {
+            "key": "lost-0331",
+            "en": "Leave the library.",
+            "fr": "Quitter la bibliothèque.",
+            "de": "Die Bibliothek verlassen."
+        },
+        "The reading tables are covered with notebooks, pens, and half-finished homework.": {
+            "key": "lost-0096",
+            "en": "The reading tables are covered with notebooks, pens, and half-finished homework.",
+            "fr": "Les tables de lecture sont couvertes de cahiers, de stylos et de devoirs à moitié terminés.",
+            "de": "Auf den Lesetischen liegen Hefte, Stifte und halb fertige Hausaufgaben."
+        },
+        "You look under a chair and find a crumpled page from your notebook.": {
+            "key": "lost-0332",
+            "en": "You look under a chair and find a crumpled page from your notebook.",
+            "fr": "Tu regardes sous une chaise et trouves une page froissée de ton cahier.",
+            "de": "Du schaust unter einen Stuhl und findest eine zerknitterte Seite aus deinem Heft."
+        },
+        "Anna groans.": {
+            "key": "lost-0098",
+            "en": "Anna groans.",
+            "fr": "Anna soupire.",
+            "de": "Anna stöhnt."
+        },
+        "@anna Your pages are all over the school!": {
+            "key": "lost-0333",
+            "en": "Your pages are all over the school!",
+            "fr": "Tes pages sont partout dans l'école !",
+            "de": "Deine Seiten sind in der ganzen Schule verteilt!"
+        },
+        "You fold the page and look toward the exit.": {
+            "key": "lost-0100",
+            "en": "You fold the page and look toward the exit.",
+            "fr": "Tu plies la page et regardes vers la sortie.",
+            "de": "Du faltest die Seite und blickst zum Ausgang."
+        },
+        "In the far corner, a classmate pretends to read but keeps watching everyone else.": {
+            "key": "lost-0101",
+            "en": "In the far corner, a classmate pretends to read but keeps watching everyone else.",
+            "fr": "Dans le coin du fond, un camarade fait semblant de lire mais observe tout le monde.",
+            "de": "In der hinteren Ecke tut ein Mitschüler so, als würde er lesen, beobachtet aber alle anderen."
+        },
+        "@you Hey, did you see a red notebook with a banana sticker?": {
+            "key": "lost-0102",
+            "en": "Hey, did you see a red notebook with a banana sticker?",
+            "fr": "Salut, tu as vu un cahier rouge avec un autocollant de banane ?",
+            "de": "Hey, hast du ein rotes Heft mit einem Bananenaufkleber gesehen?"
+        },
+        "@student3 Maybe. I see a lot of things.": {
+            "key": "lost-0103",
+            "en": "Maybe. I see a lot of things.",
+            "fr": "Peut-être. Je vois beaucoup de choses.",
+            "de": "Vielleicht. Ich sehe vieles."
+        },
+        "Anna crosses her arms.": {
+            "key": "lost-0104",
+            "en": "Anna crosses her arms.",
+            "fr": "Anna croise les bras.",
+            "de": "Anna verschränkt die Arme."
+        },
+        "@anna Come on. Just tell us.": {
+            "key": "lost-0105",
+            "en": "Come on. Just tell us.",
+            "fr": "Allez, dis-nous.",
+            "de": "Komm schon. Sag es uns einfach."
+        },
+        "The classmate shrugs.": {
+            "key": "lost-0106",
+            "en": "The classmate shrugs.",
+            "fr": "Le camarade hausse les épaules.",
+            "de": "Der Mitschüler zuckt mit den Schultern."
+        },
+        "@student3 Fine. I saw the janitor carrying something like that.": {
+            "key": "lost-0107",
+            "en": "Fine. I saw the janitor carrying something like that.",
+            "fr": "D'accord. J'ai vu le concierge porter quelque chose comme ça.",
+            "de": "Na gut. Ich habe gesehen, wie der Hausmeister so etwas getragen hat."
+        },
+        "@student3 He was going to the cafeteria.": {
+            "key": "lost-0108",
+            "en": "He was going to the cafeteria.",
+            "fr": "Il allait vers la cantine.",
+            "de": "Er ist in Richtung Mensa gegangen."
+        },
+        "Anna raises her eyebrows.": {
+            "key": "lost-0109",
+            "en": "Anna raises her eyebrows.",
+            "fr": "Anna hausse les sourcils.",
+            "de": "Anna zieht die Augenbrauen hoch."
+        },
+        "@anna The janitor! Interesting...": {
+            "key": "lost-0334",
+            "en": "The janitor! Interesting...",
+            "fr": "Le concierge ! Intéressant...",
+            "de": "Der Hausmeister! Interessant..."
+        },
+        "You thank them and leave.": {
+            "key": "lost-0111",
+            "en": "You thank them and leave.",
+            "fr": "Tu le remercies et tu t'en vas.",
+            "de": "Du bedankst dich und gehst."
+        },
+        "Leave for the cafeteria.": {
+            "key": "lost-0079",
+            "en": "Leave for the cafeteria.",
+            "fr": "Aller à la cantine.",
+            "de": "Zur Mensa gehen."
+        },
+        "Go back to the hallway.": {
+            "key": "lost-0335",
+            "en": "Go back to the hallway.",
+            "fr": "Retourner dans le couloir.",
+            "de": "Zurück in den Flur gehen."
+        },
+        "The cafeteria is full of noise.": {
+            "key": "lost-0112",
+            "en": "The cafeteria is full of noise.",
+            "fr": "La cantine est pleine de bruit.",
+            "de": "In der Mensa ist es laut."
+        },
+        "Trays clatter, students laugh, and the smell of soup mixes with warm bread.": {
+            "key": "lost-0113",
+            "en": "Trays clatter, students laugh, and the smell of soup mixes with warm bread.",
+            "fr": "Les plateaux s'entrechoquent, les élèves rient, et l'odeur de la soupe se mêle à celle du pain chaud.",
+            "de": "Tabletts klappern, Schüler lachen, und der Geruch von Suppe mischt sich mit dem von warmem Brot."
+        },
+        "Anna takes a deep breath.": {
+            "key": "lost-0114",
+            "en": "Anna takes a deep breath.",
+            "fr": "Anna prend une grande inspiration.",
+            "de": "Anna atmet tief ein."
+        },
+        "@anna Detective rule number one: never work on an empty stomach.": {
+            "key": "lost-0115",
+            "en": "Detective rule number one: never work on an empty stomach.",
+            "fr": "Règle numéro un du détective : ne jamais travailler le ventre vide.",
+            "de": "Detektivregel Nummer eins: Nie mit leerem Magen arbeiten."
+        },
+        "@anna But fine, we can eat later!": {
+            "key": "lost-0336",
+            "en": "But fine, we can eat later!",
+            "fr": "Mais bon, on mangera plus tard !",
+            "de": "Aber gut, wir können später essen!"
+        },
+        "You look around.": {
+            "key": "lost-0117",
+            "en": "You look around.",
+            "fr": "Tu regardes autour de toi.",
+            "de": "Du siehst dich um."
+        },
+        "There are many people and many places where a notebook could be hiding.": {
+            "key": "lost-0118",
+            "en": "There are many people and many places where a notebook could be hiding.",
+            "fr": "Il y a beaucoup de monde et beaucoup d'endroits où un cahier pourrait se cacher.",
+            "de": "Hier sind viele Leute und viele Orte, an denen sich ein Heft verstecken könnte."
+        },
+        "Search between the tables.": {
+            "key": "lost-0119",
+            "en": "Search between the tables.",
+            "fr": "Chercher entre les tables.",
+            "de": "Zwischen den Tischen suchen."
+        },
+        "Peek into the kitchen.": {
+            "key": "lost-0120",
+            "en": "Peek into the kitchen.",
+            "fr": "Jeter un œil dans la cuisine.",
+            "de": "Einen Blick in die Küche werfen."
+        },
+        "Check the notice board on the wall.": {
+            "key": "lost-0121",
+            "en": "Check the notice board on the wall.",
+            "fr": "Regarder le panneau d'affichage sur le mur.",
+            "de": "Das Schwarze Brett an der Wand ansehen."
+        },
+        "Talk to the group of gossiping students.": {
+            "key": "lost-0122",
+            "en": "Talk to the group of gossiping students.",
+            "fr": "Parler au groupe d'élèves qui bavardent.",
+            "de": "Mit der Gruppe tratschender Schüler sprechen."
+        },
+        "You move between the tables, careful not to trip over bags.": {
+            "key": "lost-0123",
+            "en": "You move between the tables, careful not to trip over bags.",
+            "fr": "Tu te faufiles entre les tables, en faisant attention à ne pas trébucher sur les sacs.",
+            "de": "Du gehst zwischen den Tischen hindurch und passt auf, nicht über Taschen zu stolpern."
+        },
+        "Suddenly... orange juice spills across the floor!": {
+            "key": "lost-0124",
+            "en": "Suddenly... orange juice spills across the floor!",
+            "fr": "Soudain... du jus d'orange se renverse sur le sol !",
+            "de": "Plötzlich... ergießt sich Orangensaft über den Boden!"
+        },
+        "A student bumps into you, tray shaking.": {
+            "key": "lost-0125",
+            "en": "A student bumps into you, tray shaking.",
+            "fr": "Un élève te bouscule, son plateau tremble.",
+            "de": "Ein Schüler stößt mit dir zusammen, sein Tablett wackelt."
+        },
+        "@student1 Oh no! Sorry!": {
+            "key": "lost-0126",
+            "en": "Oh no! Sorry!",
+            "fr": "Oh non ! Désolé !",
+            "de": "Oh nein! Entschuldigung!"
+        },
+        "Anna laughs as she helps you up.": {
+            "key": "lost-0127",
+            "en": "Anna laughs as she helps you up.",
+            "fr": "Anna rit en t'aidant à te relever.",
+            "de": "Anna lacht und hilft dir auf."
+        },
+        "@anna Detective down! But wait, what is that on your shoe?": {
+            "key": "lost-0128",
+            "en": "Detective down! But wait, what is that on your shoe?",
+            "fr": "Détective à terre ! Mais attends, qu'est-ce que c'est sur ta chaussure ?",
+            "de": "Detektiv am Boden! Aber warte, was klebt da an deinem Schuh?"
+        },
+        "You peel it off.": {
+            "key": "lost-0129",
+            "en": "You peel it off.",
+            "fr": "Tu le décolles.",
+            "de": "Du ziehst es ab."
+        },
+        "It is a juice-stained page from your notebook.": {
+            "key": "lost-0337",
+            "en": "It is a juice-stained page from your notebook.",
+            "fr": "C'est une page de ton cahier tachée de jus.",
+            "de": "Es ist eine Seite aus deinem Heft, voller Saftflecken."
+        },
+        "@anna Gross but useful. Evidence found!": {
+            "key": "lost-0131",
+            "en": "Gross but useful. Evidence found!",
+            "fr": "Dégoûtant, mais utile. Preuve trouvée !",
+            "de": "Eklig, aber nützlich. Beweis gefunden!"
+        },
+        "Keep searching around the tables.": {
+            "key": "lost-0132",
+            "en": "Keep searching around the tables.",
+            "fr": "Continuer à chercher autour des tables.",
+            "de": "Weiter zwischen den Tischen suchen."
+        },
+        "Go to the kitchen.": {
+            "key": "lost-0133",
+            "en": "Go to the kitchen.",
+            "fr": "Aller à la cuisine.",
+            "de": "In die Küche gehen."
+        },
+        "As you clean your shoe, another student waves you over.": {
+            "key": "lost-0338",
+            "en": "As you clean your shoe, another student waves you over.",
+            "fr": "Pendant que tu nettoies ta chaussure, un autre élève te fait signe.",
+            "de": "Während du deinen Schuh sauber machst, winkt dich ein anderer Schüler zu sich."
+        },
+        "@student2 Looking for a red notebook? I have it.": {
+            "key": "lost-0339",
+            "en": "Looking for a red notebook? I have it.",
+            "fr": "Tu cherches un cahier rouge ? Je l'ai.",
+            "de": "Suchst du ein rotes Heft? Ich habe es."
+        },
+        "He hands you a notebook.": {
+            "key": "lost-0136",
+            "en": "He hands you a notebook.",
+            "fr": "Il te tend un cahier.",
+            "de": "Er reicht dir ein Heft."
+        },
+        "You open it quickly, but it is full of banana superheroes.": {
+            "key": "lost-0340",
+            "en": "You open it quickly, but it is full of banana superheroes.",
+            "fr": "Tu l'ouvres vite, mais il est rempli de bananes super-héros.",
+            "de": "Du schlägst es schnell auf, aber es ist voller Bananen-Superhelden."
+        },
+        "Anna laughs out loud.": {
+            "key": "lost-0138",
+            "en": "Anna laughs out loud.",
+            "fr": "Anna éclate de rire.",
+            "de": "Anna lacht laut los."
+        },
+        "@anna Banana superheroes?": {
+            "key": "lost-0341",
+            "en": "Banana superheroes?",
+            "fr": "Des bananes super-héros ?",
+            "de": "Bananen-Superhelden?"
+        },
+        "@anna This school really loves bananas!": {
+            "key": "lost-0140",
+            "en": "This school really loves bananas!",
+            "fr": "Cette école adore vraiment les bananes !",
+            "de": "Diese Schule liebt wirklich Bananen!"
+        },
+        "You sigh and hand it back.": {
+            "key": "lost-0141",
+            "en": "You sigh and hand it back.",
+            "fr": "Tu soupires et tu le rends.",
+            "de": "Du seufzt und gibst es zurück."
+        },
+        "@student2 Sorry, I could not resist a joke.": {
+            "key": "lost-0342",
+            "en": "Sorry, I could not resist a joke.",
+            "fr": "Désolé, c'était trop tentant.",
+            "de": "Sorry, ich konnte nicht widerstehen."
+        },
+        "Anna looks around the busy room.": {
+            "key": "lost-0143",
+            "en": "Anna looks around the busy room.",
+            "fr": "Anna regarde autour d'elle dans la salle animée.",
+            "de": "Anna sieht sich in dem vollen Raum um."
+        },
+        "@anna Okay, detective. We found a page, we got tricked, and I am still hungry. What now?": {
+            "key": "lost-0144",
+            "en": "Okay, detective. We found a page, we got tricked, and I am still hungry. What now?",
+            "fr": "Bon, détective. On a trouvé une page, on s'est fait avoir, et j'ai toujours faim. On fait quoi maintenant ?",
+            "de": "Okay, Detektiv. Wir haben eine Seite gefunden, wir wurden reingelegt, und ich habe immer noch Hunger. Was jetzt?"
+        },
+        "Talk to the gossiping students.": {
+            "key": "lost-0145",
+            "en": "Talk to the gossiping students.",
+            "fr": "Parler aux élèves qui bavardent.",
+            "de": "Mit den tratschenden Schülern sprechen."
+        },
+        "Leave for the hallway.": {
+            "key": "lost-0146",
+            "en": "Leave for the hallway.",
+            "fr": "Aller dans le couloir.",
+            "de": "In den Flur gehen."
+        },
+        "You peek through the swinging doors into the kitchen.": {
+            "key": "lost-0147",
+            "en": "You peek through the swinging doors into the kitchen.",
+            "fr": "Tu jettes un œil dans la cuisine par les portes battantes.",
+            "de": "Du schaust durch die Schwingtür in die Küche."
+        },
+        "A cook stirs a big pot of soup, steam covering his glasses.": {
+            "key": "lost-0148",
+            "en": "A cook stirs a big pot of soup, steam covering his glasses.",
+            "fr": "Un cuisinier remue une grande marmite de soupe, ses lunettes couvertes de buée.",
+            "de": "Ein Koch rührt in einem großen Suppentopf, seine Brille ist vom Dampf beschlagen."
+        },
+        "@cook Students again? This is a kitchen, not a playground!": {
+            "key": "lost-0149",
+            "en": "Students again? This is a kitchen, not a playground!",
+            "fr": "Encore des élèves ? C'est une cuisine, pas une cour de récré !",
+            "de": "Schon wieder Schüler? Das ist eine Küche, kein Spielplatz!"
+        },
+        "@you Sorry! We are looking for a red notebook.": {
+            "key": "lost-0150",
+            "en": "Sorry! We are looking for a red notebook.",
+            "fr": "Désolé ! On cherche un cahier rouge.",
+            "de": "Entschuldigung! Wir suchen ein rotes Heft."
+        },
+        "@you Sorry, we will leave!": {
+            "key": "lost-0151",
+            "en": "Sorry, we will leave!",
+            "fr": "Désolé, on s'en va !",
+            "de": "Entschuldigung, wir gehen schon!"
+        },
+        "The cook sighs.": {
+            "key": "lost-0152",
+            "en": "The cook sighs.",
+            "fr": "Le cuisinier soupire.",
+            "de": "Der Koch seufzt."
+        },
+        "@cook Red cover, banana sticker?": {
+            "key": "lost-0153",
+            "en": "Red cover, banana sticker?",
+            "fr": "Couverture rouge, autocollant de banane ?",
+            "de": "Roter Umschlag, Bananenaufkleber?"
+        },
+        "@cook Yes, the janitor dropped it here earlier. Pages everywhere!": {
+            "key": "lost-0154",
+            "en": "Yes, the janitor dropped it here earlier. Pages everywhere!",
+            "fr": "Oui, le concierge l'a fait tomber ici tout à l'heure. Des pages partout !",
+            "de": "Ja, der Hausmeister hat es vorhin hier fallen lassen. Überall Seiten!"
+        },
+        "He points to the corner, where a page lies under a box.": {
+            "key": "lost-0155",
+            "en": "He points to the corner, where a page lies under a box.",
+            "fr": "Il montre le coin, où une page traîne sous une boîte.",
+            "de": "Er zeigt in die Ecke, wo eine Seite unter einer Kiste liegt."
+        },
+        "You grab it quickly.": {
+            "key": "lost-0156",
+            "en": "You grab it quickly.",
+            "fr": "Tu l'attrapes vite.",
+            "de": "Du schnappst sie dir schnell."
+        },
+        "Anna waves it like a trophy.": {
+            "key": "lost-0157",
+            "en": "Anna waves it like a trophy.",
+            "fr": "Anna l'agite comme un trophée.",
+            "de": "Anna schwenkt sie wie eine Trophäe."
+        },
+        "@anna Case progress! We are getting close.": {
+            "key": "lost-0158",
+            "en": "Case progress! We are getting close.",
+            "fr": "L'enquête avance ! On se rapproche.",
+            "de": "Der Fall kommt voran! Wir sind nah dran."
+        },
+        "The cook shakes his ladle.": {
+            "key": "lost-0159",
+            "en": "The cook shakes his ladle.",
+            "fr": "Le cuisinier agite sa louche.",
+            "de": "Der Koch schüttelt seine Kelle."
+        },
+        "@cook Tell that janitor to keep his things out of my kitchen, or next time it goes in the soup!": {
+            "key": "lost-0160",
+            "en": "Tell that janitor to keep his things out of my kitchen, or next time it goes in the soup!",
+            "fr": "Dites à ce concierge de garder ses affaires hors de ma cuisine, sinon la prochaine fois, ça finit dans la soupe !",
+            "de": "Sagt dem Hausmeister, er soll seine Sachen aus meiner Küche fernhalten, sonst landen sie nächstes Mal in der Suppe!"
+        },
+        "You smile awkwardly and step back.": {
+            "key": "lost-0161",
+            "en": "You smile awkwardly and step back.",
+            "fr": "Tu souris d'un air gêné et tu recules.",
+            "de": "Du lächelst verlegen und trittst zurück."
+        },
+        "Near the wall, three students whisper together.": {
+            "key": "lost-0162",
+            "en": "Near the wall, three students whisper together.",
+            "fr": "Près du mur, trois élèves chuchotent entre eux.",
+            "de": "An der Wand tuscheln drei Schüler miteinander."
+        },
+        "@student1 I heard the janitor collects stickers. He even puts them on notebooks!": {
+            "key": "lost-0163",
+            "en": "I heard the janitor collects stickers. He even puts them on notebooks!",
+            "fr": "Il paraît que le concierge collectionne les autocollants. Il en met même sur les cahiers !",
+            "de": "Ich habe gehört, dass der Hausmeister Aufkleber sammelt. Er klebt sie sogar auf Hefte!"
+        },
+        "@student2 Yes, I saw him with a red one. He went toward the hallway.": {
+            "key": "lost-0164",
+            "en": "Yes, I saw him with a red one. He went toward the hallway.",
+            "fr": "Oui, je l'ai vu avec un cahier rouge. Il est parti vers le couloir.",
+            "de": "Ja, ich habe ihn mit einem roten gesehen. Er ist in Richtung Flur gegangen."
+        },
+        "@student3 Weird guy. He is always reading to himself.": {
+            "key": "lost-0343",
+            "en": "Weird guy. He is always reading to himself.",
+            "fr": "Il est bizarre. Il lit toujours à voix basse, tout seul.",
+            "de": "Komischer Typ. Er liest immer leise vor sich hin."
+        },
+        "Anna leans close and whispers.": {
+            "key": "lost-0344",
+            "en": "Anna leans close and whispers.",
+            "fr": "Anna se penche vers toi et chuchote.",
+            "de": "Anna beugt sich zu dir und flüstert."
+        },
+        "@anna Then it is clear. The janitor is our Banana Sticker Thief.": {
+            "key": "lost-0167",
+            "en": "Then it is clear. The janitor is our Banana Sticker Thief.",
+            "fr": "Alors c'est clair. Le concierge est notre Voleur d'autocollants.",
+            "de": "Dann ist es klar. Der Hausmeister ist unser Bananenaufkleber-Dieb."
+        },
+        "You stop at the cafeteria notice board.": {
+            "key": "lost-0168",
+            "en": "You stop at the cafeteria notice board.",
+            "fr": "Tu t'arrêtes devant le panneau d'affichage de la cantine.",
+            "de": "Du bleibst am Schwarzen Brett der Mensa stehen."
+        },
+        "Posters cover the wall: sports tryouts, art club, and a \"Lost Sock\" sign.": {
+            "key": "lost-0345",
+            "en": "Posters cover the wall: sports tryouts, art club, and a \"Lost Sock\" sign.",
+            "fr": "Des affiches couvrent le mur : sélections sportives, club d'arts plastiques et un avis « Chaussette perdue ».",
+            "de": "Plakate bedecken die Wand: Sportauswahl, Kunst-AG und ein Zettel „Socke verloren“."
+        },
+        "Anna squints.": {
+            "key": "lost-0170",
+            "en": "Anna squints.",
+            "fr": "Anna plisse les yeux.",
+            "de": "Anna kneift die Augen zusammen."
+        },
+        "@anna Wait, what is that behind the paper?": {
+            "key": "lost-0171",
+            "en": "Wait, what is that behind the paper?",
+            "fr": "Attends, qu'est-ce qu'il y a derrière ce papier ?",
+            "de": "Warte, was ist das hinter dem Papier?"
+        },
+        "You lift a flyer and find another notebook page.": {
+            "key": "lost-0346",
+            "en": "You lift a flyer and find another notebook page.",
+            "fr": "Tu soulèves un prospectus et trouves une autre page de cahier.",
+            "de": "Du hebst einen Zettel hoch und findest noch eine Heftseite."
+        },
+        "There is a note on it: \"Found in the cafeteria. The janitor.\"": {
+            "key": "lost-0347",
+            "en": "There is a note on it: \"Found in the cafeteria. The janitor.\"",
+            "fr": "Un mot est écrit dessus : « Trouvé à la cantine. Le concierge. »",
+            "de": "Darauf steht: „In der Mensa gefunden. Der Hausmeister.“"
+        },
+        "@anna The janitor puts everything he finds on the notice boards!": {
+            "key": "lost-0348",
+            "en": "The janitor puts everything he finds on the notice boards!",
+            "fr": "Le concierge affiche tout ce qu'il trouve sur les panneaux !",
+            "de": "Der Hausmeister hängt alles, was er findet, ans Schwarze Brett!"
+        },
+        "The hallway is full of sound: lockers closing, shoes squeaking, voices echoing.": {
+            "key": "lost-0349",
+            "en": "The hallway is full of sound: lockers closing, shoes squeaking, voices echoing.",
+            "fr": "Le couloir est plein de bruit : des casiers qui claquent, des chaussures qui crissent, des voix qui résonnent.",
+            "de": "Im Flur ist es laut: Spinde schlagen zu, Schuhe quietschen, Stimmen hallen."
+        },
+        "Students hurry past in both directions.": {
+            "key": "lost-0175",
+            "en": "Students hurry past in both directions.",
+            "fr": "Des élèves passent en vitesse dans les deux sens.",
+            "de": "Schüler eilen in beide Richtungen vorbei."
+        },
+        "Anna nudges you.": {
+            "key": "lost-0176",
+            "en": "Anna nudges you.",
+            "fr": "Anna te donne un petit coup de coude.",
+            "de": "Anna stupst dich an."
+        },
+        "@anna Remember, detective, hallways hide secrets too.": {
+            "key": "lost-0350",
+            "en": "Remember, detective, hallways hide secrets too.",
+            "fr": "N'oublie pas, détective : les couloirs aussi cachent des secrets.",
+            "de": "Vergiss nicht, Detektiv: Auch Flure haben Geheimnisse."
+        },
+        "You are back in the hallway.": {
+            "key": "lost-0351",
+            "en": "You are back in the hallway.",
+            "fr": "Te revoilà dans le couloir.",
+            "de": "Du bist wieder im Flur."
+        },
+        "@anna The janitor's room is at the end of the hall.": {
+            "key": "lost-0352",
+            "en": "The janitor's room is at the end of the hall.",
+            "fr": "Le local du concierge est au bout du couloir.",
+            "de": "Der Raum des Hausmeisters ist am Ende des Flurs."
+        },
+        "@anna Where do we go now?": {
+            "key": "lost-0353",
+            "en": "Where do we go now?",
+            "fr": "On va où, maintenant ?",
+            "de": "Wohin gehen wir jetzt?"
+        },
+        "Speak with a teacher passing by.": {
+            "key": "lost-0179",
+            "en": "Speak with a teacher passing by.",
+            "fr": "Parler à un professeur qui passe.",
+            "de": "Mit einem vorbeigehenden Lehrer sprechen."
+        },
+        "Check the notice board.": {
+            "key": "lost-0354",
+            "en": "Check the notice board.",
+            "fr": "Regarder le panneau d'affichage.",
+            "de": "Das Schwarze Brett ansehen."
+        },
+        "Go to the cafeteria.": {
+            "key": "lost-0355",
+            "en": "Go to the cafeteria.",
+            "fr": "Aller à la cantine.",
+            "de": "In die Mensa gehen."
+        },
+        "Go to the janitor's room.": {
+            "key": "lost-0356",
+            "en": "Go to the janitor's room.",
+            "fr": "Aller au local du concierge.",
+            "de": "Zum Raum des Hausmeisters gehen."
+        },
+        "You listen to two older students by the lockers.": {
+            "key": "lost-0182",
+            "en": "You listen to two older students by the lockers.",
+            "fr": "Tu écoutes deux élèves plus âgés près des casiers.",
+            "de": "Du hörst zwei älteren Schülern an den Spinden zu."
+        },
+        "@student1 That janitor is strange. He collects banana stickers like treasure.": {
+            "key": "lost-0183",
+            "en": "That janitor is strange. He collects banana stickers like treasure.",
+            "fr": "Ce concierge est bizarre. Il collectionne les autocollants de banane comme un trésor.",
+            "de": "Der Hausmeister ist seltsam. Er sammelt Bananenaufkleber wie einen Schatz."
+        },
+        "@student2 Yes, and I saw him with a red notebook. I do not think it was his.": {
+            "key": "lost-0184",
+            "en": "Yes, and I saw him with a red notebook. I do not think it was his.",
+            "fr": "Oui, et je l'ai vu avec un cahier rouge. Je ne crois pas que c'était le sien.",
+            "de": "Ja, und ich habe ihn mit einem roten Heft gesehen. Ich glaube nicht, dass es seins war."
+        },
+        "They both laugh softly.": {
+            "key": "lost-0185",
+            "en": "They both laugh softly.",
+            "fr": "Ils rient tous les deux doucement.",
+            "de": "Beide lachen leise."
         },
         "@anna More clues. The Banana Sticker Thief strikes again.": {
             "key": "lost-0187",
-            "en": "@anna More clues. The Banana Sticker Thief strikes again.",
-            "fr": "@anna Encore des indices. Le Voleur à l'Autocollant Banane a encore frappé."
+            "en": "More clues. The Banana Sticker Thief strikes again.",
+            "fr": "Encore des indices. Le Voleur d'autocollants a encore frappé.",
+            "de": "Noch mehr Hinweise. Der Bananenaufkleber-Dieb schlägt wieder zu."
         },
         "You grin and move on.": {
             "key": "lost-0188",
             "en": "You grin and move on.",
-            "fr": "Tu souris et continues."
+            "fr": "Tu souris et tu continues.",
+            "de": "Du grinst und gehst weiter."
         },
         "As you walk down the hall, a teacher carrying papers stops you.": {
             "key": "lost-0189",
             "en": "As you walk down the hall, a teacher carrying papers stops you.",
-            "fr": "Alors que tu avances dans le couloir, un professeur portant des papiers t'arrête."
+            "fr": "Alors que tu avances dans le couloir, un professeur chargé de papiers t'arrête.",
+            "de": "Als du den Flur entlanggehst, hält dich ein Lehrer mit einem Stapel Papiere an."
         },
-        "@teacher Why are you not in class? The bell has not rung yet, but you look busy.": {
-            "key": "lost-0190",
-            "en": "@teacher Why are you not in class? The bell has not rung yet, but you look busy.",
-            "fr": "@teacher Pourquoi n'êtes-vous pas en classe ? La cloche n'a pas encore sonné, mais vous avez l'air occupés."
+        "@teacher Where are you two going in such a hurry?": {
+            "key": "lost-0357",
+            "en": "Where are you two going in such a hurry?",
+            "fr": "Où allez-vous si vite, tous les deux ?",
+            "de": "Wohin so eilig, ihr zwei?"
         },
         "@you We are on a detective mission.": {
             "key": "lost-0191",
-            "en": "@you We are on a detective mission.",
-            "fr": "@you Nous sommes en mission de détective."
+            "en": "We are on a detective mission.",
+            "fr": "On est en mission de détective.",
+            "de": "Wir sind auf Detektivmission."
         },
         "Anna jumps in.": {
             "key": "lost-0192",
             "en": "Anna jumps in.",
-            "fr": "Anna intervient."
+            "fr": "Anna intervient.",
+            "de": "Anna mischt sich ein."
         },
         "@anna A very important one. A missing notebook and a sticker mystery!": {
             "key": "lost-0193",
-            "en": "@anna A very important one. A missing notebook and a sticker mystery!",
-            "fr": "@anna Une mission très importante. Un carnet disparu et un mystère d'autocollant !"
+            "en": "A very important one. A missing notebook and a sticker mystery!",
+            "fr": "Une mission très importante. Un cahier disparu et un mystère d'autocollant !",
+            "de": "Eine sehr wichtige. Ein verschwundenes Heft und ein Aufkleber-Rätsel!"
         },
         "The teacher raises an eyebrow.": {
             "key": "lost-0194",
             "en": "The teacher raises an eyebrow.",
-            "fr": "Le professeur lève un sourcil."
+            "fr": "Le professeur lève un sourcil.",
+            "de": "Der Lehrer zieht eine Augenbraue hoch."
         },
-        "@teacher Well, I did find a strange page outside the staffroom. Maybe it is yours.": {
-            "key": "lost-0195",
-            "en": "@teacher Well, I did find a strange page outside the staffroom. Maybe it is yours.",
-            "fr": "@teacher Eh bien, j'ai trouvé une page bizarre devant la salle des profs. Peut-être qu'elle est à vous."
+        "@teacher Well, the janitor gave me this page this morning. Maybe it is yours.": {
+            "key": "lost-0358",
+            "en": "Well, the janitor gave me this page this morning. Maybe it is yours.",
+            "fr": "Eh bien, le concierge m'a donné cette page ce matin. Elle est peut-être à vous.",
+            "de": "Nun, der Hausmeister hat mir heute Morgen diese Seite gegeben. Vielleicht gehört sie euch."
         },
         "He hands you a notebook page.": {
             "key": "lost-0196",
             "en": "He hands you a notebook page.",
-            "fr": "Il te tend une page du carnet."
+            "fr": "Il te tend une page de cahier.",
+            "de": "Er reicht dir eine Heftseite."
         },
         "Anna bows like she is in a play.": {
             "key": "lost-0197",
             "en": "Anna bows like she is in a play.",
-            "fr": "Anna s'incline comme si elle jouait dans une pièce."
+            "fr": "Anna fait une révérence, comme au théâtre.",
+            "de": "Anna verbeugt sich wie auf einer Bühne."
         },
         "@anna Thank you! Justice will be done!": {
             "key": "lost-0198",
-            "en": "@anna Thank you! Justice will be done!",
-            "fr": "@anna Merci ! Justice sera rendue !"
+            "en": "Thank you! Justice will be done!",
+            "fr": "Merci ! Justice sera rendue !",
+            "de": "Danke! Der Gerechtigkeit wird Genüge getan!"
         },
         "The teacher sighs and walks away.": {
             "key": "lost-0199",
             "en": "The teacher sighs and walks away.",
-            "fr": "Le professeur soupire et s'éloigne."
+            "fr": "Le professeur soupire et s'éloigne.",
+            "de": "Der Lehrer seufzt und geht weiter."
         },
-        "You stop by another notice board.": {
-            "key": "lost-0200",
-            "en": "You stop by another notice board.",
-            "fr": "Tu t'arrêtes devant un autre panneau d'affichage."
+        "You stop by the hallway notice board.": {
+            "key": "lost-0359",
+            "en": "You stop by the hallway notice board.",
+            "fr": "Tu t'arrêtes devant le panneau d'affichage du couloir.",
+            "de": "Du bleibst am Schwarzen Brett im Flur stehen."
         },
         "Posters for the school play and chess club move slightly in the breeze.": {
             "key": "lost-0201",
             "en": "Posters for the school play and chess club move slightly in the breeze.",
-            "fr": "Les affiches de la pièce de théâtre de l'école et du club d'échecs bougent légèrement dans le courant d'air."
+            "fr": "Les affiches pour la pièce de théâtre de l'école et le club d'échecs bougent légèrement dans le courant d'air.",
+            "de": "Plakate für das Schultheater und den Schachclub bewegen sich leicht im Luftzug."
         },
-        "Anna points at something shiny under a flyer.": {
-            "key": "lost-0202",
-            "en": "Anna points at something shiny under a flyer.",
-            "fr": "Anna pointe quelque chose de brillant sous un prospectus."
+        "Anna points at a page under a flyer.": {
+            "key": "lost-0360",
+            "en": "Anna points at a page under a flyer.",
+            "fr": "Anna montre une page sous un prospectus.",
+            "de": "Anna zeigt auf eine Seite unter einem Zettel."
         },
-        "@anna Another sticker!": {
-            "key": "lost-0203",
-            "en": "@anna Another sticker!",
-            "fr": "@anna Encore un autocollant !"
+        "@anna Look! Is that yours?": {
+            "key": "lost-0361",
+            "en": "Look! Is that yours?",
+            "fr": "Regarde ! C'est à toi ?",
+            "de": "Schau! Ist das deine?"
         },
-        "You lift the paper and find a notebook page taped beneath it.": {
-            "key": "lost-0204",
-            "en": "You lift the paper and find a notebook page taped beneath it.",
-            "fr": "Tu soulèves le papier et trouves une page du carnet scotchée dessous."
+        "You lift the flyer. It is a page from your notebook.": {
+            "key": "lost-0362",
+            "en": "You lift the flyer. It is a page from your notebook.",
+            "fr": "Tu soulèves le prospectus. C'est une page de ton cahier.",
+            "de": "Du hebst den Zettel hoch. Es ist eine Seite aus deinem Heft."
         },
-        "@anna He is turning the school into his own art wall.": {
-            "key": "lost-0205",
-            "en": "@anna He is turning the school into his own art wall.",
-            "fr": "@anna Il est en train de transformer l'école en son propre mur d'art."
+        "There is a note on it: \"Found in the hallway. The janitor.\"": {
+            "key": "lost-0363",
+            "en": "There is a note on it: \"Found in the hallway. The janitor.\"",
+            "fr": "Un mot est écrit dessus : « Trouvé dans le couloir. Le concierge. »",
+            "de": "Darauf steht: „Im Flur gefunden. Der Hausmeister.“"
         },
-        "You reach the janitor’s closet. The door is half open and making a small noise.": {
-            "key": "lost-0206",
-            "en": "You reach the janitor’s closet. The door is half open and making a small noise.",
-            "fr": "Vous arrivez au local du concierge. La porte est entrouverte et fait un petit bruit."
+        "You reach the janitor's room. The door is half open.": {
+            "key": "lost-0364",
+            "en": "You reach the janitor's room. The door is half open.",
+            "fr": "Tu arrives au local du concierge. La porte est entrouverte.",
+            "de": "Du erreichst den Raum des Hausmeisters. Die Tür steht halb offen."
         },
         "The room smells like soap and old wood.": {
             "key": "lost-0207",
             "en": "The room smells like soap and old wood.",
-            "fr": "La pièce sent le savon et le vieux bois."
+            "fr": "La pièce sent le savon et le vieux bois.",
+            "de": "Der Raum riecht nach Seife und altem Holz."
+        },
+        "The wall is covered with fruit stickers.": {
+            "key": "lost-0365",
+            "en": "The wall is covered with fruit stickers.",
+            "fr": "Le mur est couvert d'autocollants de fruits.",
+            "de": "Die Wand ist voller Obstaufkleber."
         },
         "Your red notebook is on the desk.": {
             "key": "lost-0208",
             "en": "Your red notebook is on the desk.",
-            "fr": "Votre cahier rouge est sur le bureau."
+            "fr": "Ton cahier rouge est sur le bureau.",
+            "de": "Dein rotes Heft liegt auf dem Schreibtisch."
         },
         "The banana sticker on it shines under a blinking light.": {
             "key": "lost-0209",
             "en": "The banana sticker on it shines under a blinking light.",
-            "fr": "L'autocollant de banane brille sous une lumière clignotante."
+            "fr": "L'autocollant de banane brille sous une lumière qui clignote.",
+            "de": "Der Bananenaufkleber darauf glänzt unter einer flackernden Lampe."
         },
-        "Loose papers are piled up messily nearby.": {
-            "key": "lost-0210",
-            "en": "Loose papers are piled up messily nearby.",
-            "fr": "Des feuilles volantes sont empilées en désordre à côté."
-        },
-        "Some have tape and more stickers on them.": {
-            "key": "lost-0211",
-            "en": "Some have tape and more stickers on them.",
-            "fr": "Certaines ont du ruban adhésif et d'autres autocollants dessus."
+        "Loose papers are piled up nearby.": {
+            "key": "lost-0366",
+            "en": "Loose papers are piled up nearby.",
+            "fr": "Des feuilles volantes sont empilées à côté.",
+            "de": "Daneben liegt ein Stapel loser Blätter."
         },
         "The janitor notices you.": {
             "key": "lost-0212",
             "en": "The janitor notices you.",
-            "fr": "Le concierge vous remarque."
+            "fr": "Le concierge te remarque.",
+            "de": "Der Hausmeister bemerkt dich."
         },
         "@janitor What are you kids doing here? This is no place for students.": {
             "key": "lost-0213",
-            "en": "@janitor What are you kids doing here? This is no place for students.",
-            "fr": "@janitor Qu'est-ce que vous faites ici, les enfants ? Ce n'est pas un endroit pour les élèves."
+            "en": "What are you kids doing here? This is no place for students.",
+            "fr": "Qu'est-ce que vous faites ici, les enfants ? Ce n'est pas un endroit pour les élèves.",
+            "de": "Was macht ihr Kinder denn hier? Das ist kein Ort für Schüler."
         },
         "Anna points straight at the notebook.": {
             "key": "lost-0214",
             "en": "Anna points straight at the notebook.",
-            "fr": "Anna pointe directement le cahier du doigt."
+            "fr": "Anna montre directement le cahier du doigt.",
+            "de": "Anna zeigt direkt auf das Heft."
         },
         "@anna That notebook is ours! Why do you have it?": {
             "key": "lost-0215",
-            "en": "@anna That notebook is ours! Why do you have it?",
-            "fr": "@anna Ce cahier est à nous ! Pourquoi est-il chez vous ?"
+            "en": "That notebook is ours! Why do you have it?",
+            "fr": "Ce cahier est à nous ! Pourquoi est-ce que vous l'avez ?",
+            "de": "Das Heft gehört uns! Warum haben Sie es?"
         },
         "The janitor frowns, leaning back in his chair.": {
             "key": "lost-0216",
             "en": "The janitor frowns, leaning back in his chair.",
-            "fr": "Le concierge fronce les sourcils en se renversant sur sa chaise."
+            "fr": "Le concierge fronce les sourcils et se renverse sur sa chaise.",
+            "de": "Der Hausmeister runzelt die Stirn und lehnt sich in seinem Stuhl zurück."
         },
-        "@JANITOR Caught? I was keeping it safe. Nothing more.": {
-            "key": "lost-0217",
-            "en": "@JANITOR Caught? I was keeping it safe. Nothing more.",
-            "fr": "@JANITOR Pris sur le fait ? Je le gardais en sécurité. Rien de plus."
+        "@janitor Calm down. I was keeping it safe. That is all.": {
+            "key": "lost-0367",
+            "en": "Calm down. I was keeping it safe. That is all.",
+            "fr": "Du calme. Je le gardais en sécurité. C'est tout.",
+            "de": "Immer mit der Ruhe. Ich habe es nur aufbewahrt. Das ist alles."
         },
         "Accuse him directly.": {
             "key": "lost-0218",
             "en": "Accuse him directly.",
-            "fr": "L'accuser directement."
+            "fr": "L'accuser directement.",
+            "de": "Ihn direkt beschuldigen."
         },
         "Ask politely for the notebook.": {
             "key": "lost-0219",
             "en": "Ask politely for the notebook.",
-            "fr": "Demander poliment le cahier."
+            "fr": "Demander poliment le cahier.",
+            "de": "Höflich nach dem Heft fragen."
         },
         "Offer a trade.": {
             "key": "lost-0220",
             "en": "Offer a trade.",
-            "fr": "Proposer un échange."
+            "fr": "Proposer un échange.",
+            "de": "Einen Tausch anbieten."
         },
         "You cross your arms and glare.": {
             "key": "lost-0221",
             "en": "You cross your arms and glare.",
-            "fr": "Vous croisez les bras et lancez un regard noir."
+            "fr": "Tu croises les bras et lui lances un regard noir.",
+            "de": "Du verschränkst die Arme und starrst ihn böse an."
         },
-        "@you You took the notebook, did you not?": {
-            "key": "lost-0222",
-            "en": "@you You took the notebook, did you not?",
-            "fr": "@you Vous avez pris le cahier, n'est-ce pas ?"
+        "@you You took my notebook!": {
+            "key": "lost-0368",
+            "en": "You took my notebook!",
+            "fr": "Vous avez pris mon cahier !",
+            "de": "Sie haben mein Heft genommen!"
         },
         "The janitor closes the notebook and stands up.": {
             "key": "lost-0223",
             "en": "The janitor closes the notebook and stands up.",
-            "fr": "Le concierge ferme le cahier et se lève."
+            "fr": "Le concierge ferme le cahier et se lève.",
+            "de": "Der Hausmeister klappt das Heft zu und steht auf."
         },
-        "@janitor Stealing? No.": {
-            "key": "lost-0224",
-            "en": "@janitor Stealing? No.",
-            "fr": "@janitor Le voler ? Non."
+        "@janitor Took it? No.": {
+            "key": "lost-0369",
+            "en": "Took it? No.",
+            "fr": "Pris ? Non.",
+            "de": "Genommen? Nein."
         },
         "@janitor It was falling apart.": {
             "key": "lost-0225",
-            "en": "@janitor It was falling apart.",
-            "fr": "@janitor Il tombait en morceaux."
+            "en": "It was falling apart.",
+            "fr": "Il tombait en morceaux.",
+            "de": "Es ist auseinandergefallen."
         },
         "@janitor Pages were dropping everywhere.": {
             "key": "lost-0226",
-            "en": "@janitor Pages were dropping everywhere.",
-            "fr": "@janitor Des pages tombaient partout."
+            "en": "Pages were dropping everywhere.",
+            "fr": "Des pages tombaient partout.",
+            "de": "Überall sind Seiten herausgefallen."
         },
         "@janitor I was only trying to protect it.": {
             "key": "lost-0227",
-            "en": "@janitor I was only trying to protect it.",
-            "fr": "@janitor J'essayais seulement de le protéger."
+            "en": "I was only trying to protect it.",
+            "fr": "J'essayais seulement de le protéger.",
+            "de": "Ich wollte es nur schützen."
         },
         "Anna narrows her eyes.": {
             "key": "lost-0228",
             "en": "Anna narrows her eyes.",
-            "fr": "Anna plisse les yeux."
+            "fr": "Anna plisse les yeux.",
+            "de": "Anna kneift die Augen zusammen."
         },
-        "@anna Protect it with banana stickers?": {
-            "key": "lost-0229",
-            "en": "@anna Protect it with banana stickers?",
-            "fr": "@anna Le protéger avec des autocollants de banane ?"
-        },
-        "@anna You turned it into a banana book.": {
-            "key": "lost-0230",
-            "en": "@anna You turned it into a banana book.",
-            "fr": "@anna Vous l'avez transformé en cahier-banane."
+        "@anna And what about all these stickers?": {
+            "key": "lost-0370",
+            "en": "And what about all these stickers?",
+            "fr": "Et tous ces autocollants, alors ?",
+            "de": "Und was ist mit all diesen Aufklebern?"
         },
         "The janitor sighs, shoulders slumping.": {
             "key": "lost-0231",
             "en": "The janitor sighs, shoulders slumping.",
-            "fr": "Le concierge soupire, les épaules affaissées."
+            "fr": "Le concierge soupire, les épaules basses.",
+            "de": "Der Hausmeister seufzt und lässt die Schultern hängen."
         },
         "@janitor They are not just stickers. They are part of my collection.": {
             "key": "lost-0232",
-            "en": "@janitor They are not just stickers. They are part of my collection.",
-            "fr": "@janitor Ce ne sont pas juste des autocollants. Ils font partie de ma collection."
+            "en": "They are not just stickers. They are part of my collection.",
+            "fr": "Ce ne sont pas juste des autocollants. Ils font partie de ma collection.",
+            "de": "Das sind nicht einfach Aufkleber. Sie gehören zu meiner Sammlung."
         },
         "@janitor I like things simple, bright, and cheerful.": {
             "key": "lost-0233",
-            "en": "@janitor I like things simple, bright, and cheerful.",
-            "fr": "@janitor J'aime les choses simples, vives et gaies."
+            "en": "I like things simple, bright, and cheerful.",
+            "fr": "J'aime les choses simples, colorées et joyeuses.",
+            "de": "Ich mag Dinge, die einfach, bunt und fröhlich sind."
         },
         "@janitor They help me when the work is heavy.": {
             "key": "lost-0234",
-            "en": "@janitor They help me when the work is heavy.",
-            "fr": "@janitor Ils m'aident quand le travail est lourd."
+            "en": "They help me when the work is heavy.",
+            "fr": "Ils m'aident quand le travail est dur.",
+            "de": "Sie helfen mir, wenn die Arbeit schwer ist."
         },
         "Anna's frown softens a little, but she whispers:": {
             "key": "lost-0235",
             "en": "Anna's frown softens a little, but she whispers:",
-            "fr": "Le froncement de sourcils d'Anna s'adoucit un peu, mais elle chuchote :"
+            "fr": "Le visage d'Anna se détend un peu, mais elle chuchote :",
+            "de": "Annas Blick wird etwas weicher, aber sie flüstert:"
         },
         "@anna Still weird.": {
             "key": "lost-0236",
-            "en": "@anna Still weird.",
-            "fr": "@anna C'est quand même bizarre."
+            "en": "Still weird.",
+            "fr": "C'est quand même bizarre.",
+            "de": "Trotzdem komisch."
         },
         "You step forward carefully.": {
             "key": "lost-0237",
             "en": "You step forward carefully.",
-            "fr": "Vous avancez avec précaution."
+            "fr": "Tu avances prudemment.",
+            "de": "Du trittst vorsichtig vor."
         },
         "@you Please, sir. That notebook belongs to me.": {
             "key": "lost-0238",
-            "en": "@you Please, sir. That notebook belongs to me.",
-            "fr": "@you S'il vous plaît, monsieur. Ce cahier m'appartient."
+            "en": "Please, sir. That notebook belongs to me.",
+            "fr": "S'il vous plaît, monsieur. Ce cahier m'appartient.",
+            "de": "Bitte, das Heft gehört mir."
         },
         "@you Could we have it back?": {
             "key": "lost-0239",
-            "en": "@you Could we have it back?",
-            "fr": "@you Pourrions-nous le récupérer ?"
+            "en": "Could we have it back?",
+            "fr": "Est-ce qu'on pourrait le récupérer ?",
+            "de": "Könnten wir es zurückhaben?"
         },
         "The janitor hesitates, tapping the cover.": {
             "key": "lost-0240",
             "en": "The janitor hesitates, tapping the cover.",
-            "fr": "Le concierge hésite en tapotant la couverture."
+            "fr": "Le concierge hésite en tapotant la couverture.",
+            "de": "Der Hausmeister zögert und tippt auf den Umschlag."
         },
         "@janitor It has been lying around the school all day.": {
             "key": "lost-0241",
-            "en": "@janitor It has been lying around the school all day.",
-            "fr": "@janitor Il traînait dans l'école toute la journée."
+            "en": "It has been lying around the school all day.",
+            "fr": "Il traînait dans l'école depuis ce matin.",
+            "de": "Es lag den ganzen Tag in der Schule herum."
         },
         "@janitor I just wanted to keep it safe.": {
             "key": "lost-0242",
-            "en": "@janitor I just wanted to keep it safe.",
-            "fr": "@janitor Je voulais simplement le garder en sécurité."
+            "en": "I just wanted to keep it safe.",
+            "fr": "Je voulais simplement le mettre en sécurité.",
+            "de": "Ich wollte es nur sicher aufbewahren."
         },
         "He slowly slides it toward you.": {
             "key": "lost-0243",
             "en": "He slowly slides it toward you.",
-            "fr": "Il le fait lentement glisser vers vous."
+            "fr": "Il le fait lentement glisser vers toi.",
+            "de": "Langsam schiebt er es zu dir herüber."
         },
-        "@janitor But do not mock my stickers. They matter to me.": {
-            "key": "lost-0244",
-            "en": "@janitor But do not mock my stickers. They matter to me.",
-            "fr": "@janitor Mais ne vous moquez pas de mes autocollants. Ils comptent pour moi."
+        "@janitor But do not laugh at my stickers. They matter to me.": {
+            "key": "lost-0371",
+            "en": "But do not laugh at my stickers. They matter to me.",
+            "fr": "Mais ne vous moquez pas de mes autocollants. Ils comptent pour moi.",
+            "de": "Aber lacht nicht über meine Aufkleber. Sie sind mir wichtig."
         },
         "Anna nods gently.": {
             "key": "lost-0245",
             "en": "Anna nods gently.",
-            "fr": "Anna hoche doucement la tête."
+            "fr": "Anna hoche doucement la tête.",
+            "de": "Anna nickt sanft."
         },
-        "@anna We will not laugh. But you confused the whole school.": {
-            "key": "lost-0246",
-            "en": "@anna We will not laugh. But you confused the whole school.",
-            "fr": "@anna Nous ne rirons pas. Mais vous avez semé la confusion dans toute l'école."
+        "@anna We will not laugh. But we searched the whole school for it!": {
+            "key": "lost-0372",
+            "en": "We will not laugh. But we searched the whole school for it!",
+            "fr": "On ne rira pas. Mais on l'a cherché dans toute l'école !",
+            "de": "Wir lachen nicht. Aber wir haben die ganze Schule danach abgesucht!"
         },
         "The janitor sighs.": {
             "key": "lost-0247",
             "en": "The janitor sighs.",
-            "fr": "Le concierge soupire."
+            "fr": "Le concierge soupire.",
+            "de": "Der Hausmeister seufzt."
         },
         "You dig into your pocket and pull out a shiny pen.": {
             "key": "lost-0248",
             "en": "You dig into your pocket and pull out a shiny pen.",
-            "fr": "Vous fouillez dans votre poche et en sortez un stylo brillant."
+            "fr": "Tu fouilles dans ta poche et en sors un stylo brillant.",
+            "de": "Du kramst in deiner Tasche und ziehst einen glänzenden Stift heraus."
         },
         "@you What if we trade? This pen for the notebook.": {
             "key": "lost-0249",
-            "en": "@you What if we trade? This pen for the notebook.",
-            "fr": "@you Et si on faisait un échange ? Ce stylo contre le cahier."
+            "en": "What if we trade? This pen for the notebook.",
+            "fr": "Et si on faisait un échange ? Ce stylo contre le cahier.",
+            "de": "Wie wäre es mit einem Tausch? Dieser Stift gegen das Heft."
         },
         "The janitor chuckles, the lines on his face easing.": {
             "key": "lost-0250",
             "en": "The janitor chuckles, the lines on his face easing.",
-            "fr": "Le concierge glousse, les traits de son visage se détendant."
+            "fr": "Le concierge rit doucement, et son visage se détend.",
+            "de": "Der Hausmeister lacht leise, und sein Gesicht entspannt sich."
         },
         "@janitor Kids these days... always bargaining.": {
             "key": "lost-0251",
-            "en": "@janitor Kids these days... always bargaining.",
-            "fr": "@janitor Les enfants de nos jours... toujours en train de marchander."
+            "en": "Kids these days... always bargaining.",
+            "fr": "Les enfants d'aujourd'hui... toujours en train de marchander.",
+            "de": "Die Kinder heutzutage... immer am Verhandeln."
         },
         "@janitor Fine. Take the notebook. But the stickers stay with me.": {
             "key": "lost-0252",
-            "en": "@janitor Fine. Take the notebook. But the stickers stay with me.",
-            "fr": "@janitor D'accord. Prenez le cahier. Mais les autocollants restent avec moi."
+            "en": "Fine. Take the notebook. But the stickers stay with me.",
+            "fr": "D'accord. Prenez le cahier. Mais les autocollants restent ici.",
+            "de": "Na gut. Nehmt das Heft. Aber die Aufkleber bleiben bei mir."
         },
         "Anna smirks.": {
             "key": "lost-0253",
             "en": "Anna smirks.",
-            "fr": "Anna esquisse un sourire en coin."
+            "fr": "Anna esquisse un sourire en coin.",
+            "de": "Anna grinst schief."
         },
         "@anna Detective business expense: one pen down, one notebook recovered.": {
             "key": "lost-0254",
-            "en": "@anna Detective business expense: one pen down, one notebook recovered.",
-            "fr": "@anna Frais professionnels de détective : un stylo en moins, un cahier récupéré."
+            "en": "Detective business expense: one pen down, one notebook recovered.",
+            "fr": "Frais professionnels de détective : un stylo en moins, un cahier récupéré.",
+            "de": "Detektiv-Spesen: ein Stift weniger, ein Heft zurück."
         },
         "The janitor rubs his forehead and sits back down.": {
             "key": "lost-0255",
             "en": "The janitor rubs his forehead and sits back down.",
-            "fr": "Le concierge se frotte le front et se rassoit."
+            "fr": "Le concierge se frotte le front et se rassoit.",
+            "de": "Der Hausmeister reibt sich die Stirn und setzt sich wieder."
         },
-        "@janitor I was not trying to steal it. I only wanted to learn.": {
-            "key": "lost-0256",
-            "en": "@janitor I was not trying to steal it. I only wanted to learn.",
-            "fr": "@janitor Je n'essayais pas de le voler. Je voulais juste apprendre."
+        "@janitor I was not trying to steal it.": {
+            "key": "lost-0373",
+            "en": "I was not trying to steal it.",
+            "fr": "Je ne voulais pas le voler.",
+            "de": "Ich wollte es nicht stehlen."
         },
-        "@janitor I practice reading the sentences in the notebook.": {
-            "key": "lost-0257",
-            "en": "@janitor I practice reading the sentences in the notebook.",
-            "fr": "@janitor Je m'entraîne à lire les phrases dans le cahier."
+        "@janitor I found it this morning, and I wanted to read it a little.": {
+            "key": "lost-0374",
+            "en": "I found it this morning, and I wanted to read it a little.",
+            "fr": "Je l'ai trouvé ce matin, et je voulais le lire un peu.",
+            "de": "Ich habe es heute Morgen gefunden und wollte ein bisschen darin lesen."
         },
-        "@janitor They help me understand better.": {
-            "key": "lost-0258",
-            "en": "@janitor They help me understand better.",
-            "fr": "@janitor Elles m'aident à mieux comprendre."
+        "@janitor I practice my reading with the sentences in your notebook.": {
+            "key": "lost-0375",
+            "en": "I practice my reading with the sentences in your notebook.",
+            "fr": "Je m'entraîne à lire avec les phrases de ton cahier.",
+            "de": "Ich übe das Lesen mit den Sätzen in deinem Heft."
         },
         "@janitor My job does not give me time for classes.": {
             "key": "lost-0259",
-            "en": "@janitor My job does not give me time for classes.",
-            "fr": "@janitor Mon travail ne me laisse pas le temps d'aller en cours."
+            "en": "My job does not give me time for classes.",
+            "fr": "Mon travail ne me laisse pas le temps d'aller en cours.",
+            "de": "Meine Arbeit lässt mir keine Zeit für Kurse."
         },
         "@janitor But reading a little helps.": {
             "key": "lost-0260",
-            "en": "@janitor But reading a little helps.",
-            "fr": "@janitor Mais lire un peu m'aide."
+            "en": "But reading a little helps.",
+            "fr": "Mais lire un peu, ça m'aide.",
+            "de": "Aber ein bisschen lesen hilft."
         },
         "Anna tilts her head, suddenly softer.": {
             "key": "lost-0261",
             "en": "Anna tilts her head, suddenly softer.",
-            "fr": "Anna penche la tête, soudain plus douce."
+            "fr": "Anna penche la tête, soudain plus douce.",
+            "de": "Anna legt den Kopf schief, plötzlich ganz sanft."
         },
         "@anna So you are like a secret student too?": {
             "key": "lost-0262",
-            "en": "@anna So you are like a secret student too?",
-            "fr": "@anna Alors vous êtes un élève secret, vous aussi ?"
+            "en": "So you are like a secret student too?",
+            "fr": "Alors vous êtes un élève secret, vous aussi ?",
+            "de": "Dann sind Sie auch so etwas wie ein heimlicher Schüler?"
         },
         "The janitor nods, embarrassed.": {
             "key": "lost-0263",
             "en": "The janitor nods, embarrassed.",
-            "fr": "Le concierge hoche la tête, embarrassé."
+            "fr": "Le concierge hoche la tête, gêné.",
+            "de": "Der Hausmeister nickt verlegen."
         },
         "@janitor Maybe.": {
             "key": "lost-0264",
-            "en": "@janitor Maybe.",
-            "fr": "@janitor Peut-être."
+            "en": "Maybe.",
+            "fr": "Peut-être.",
+            "de": "Vielleicht."
         },
-        "@janitor But I should not have hidden it.": {
-            "key": "lost-0265",
-            "en": "@janitor But I should not have hidden it.",
-            "fr": "@janitor Mais je n'aurais pas dû le cacher."
+        "@janitor But I should not have kept it.": {
+            "key": "lost-0376",
+            "en": "But I should not have kept it.",
+            "fr": "Mais je n'aurais pas dû le garder.",
+            "de": "Aber ich hätte es nicht behalten sollen."
         },
         "@janitor I just did not want anyone to laugh at me.": {
             "key": "lost-0266",
-            "en": "@janitor I just did not want anyone to laugh at me.",
-            "fr": "@janitor Je ne voulais juste pas que quelqu'un se moque de moi."
+            "en": "I just did not want anyone to laugh at me.",
+            "fr": "Je ne voulais simplement pas qu'on se moque de moi.",
+            "de": "Ich wollte nur nicht, dass jemand über mich lacht."
         },
         "@janitor And I do not have every page.": {
             "key": "lost-0267",
-            "en": "@janitor And I do not have every page.",
-            "fr": "@janitor Et je n'ai pas toutes les pages."
+            "en": "And I do not have every page.",
+            "fr": "Et je n'ai pas toutes les pages.",
+            "de": "Und ich habe nicht alle Seiten."
         },
-        "@janitor Some pages fell in other places before I could pick them up.": {
-            "key": "lost-0268",
-            "en": "@janitor Some pages fell in other places before I could pick them up.",
-            "fr": "@janitor Certaines pages sont tombées ailleurs avant que je puisse les ramasser."
+        "@janitor Some pages fell out in other places before I found the notebook.": {
+            "key": "lost-0377",
+            "en": "Some pages fell out in other places before I found the notebook.",
+            "fr": "Certaines pages sont tombées ailleurs avant que je trouve le cahier.",
+            "de": "Einige Seiten sind woanders herausgefallen, bevor ich das Heft gefunden habe."
         },
         "You glance at Anna, then back at him.": {
             "key": "lost-0269",
             "en": "You glance at Anna, then back at him.",
-            "fr": "Vous jetez un coup d'oeil à Anna, puis revenez à lui."
+            "fr": "Tu jettes un coup d'œil à Anna, puis tu le regardes à nouveau.",
+            "de": "Du wirfst Anna einen Blick zu und siehst dann wieder ihn an."
         },
         "@you We are not laughing. But this notebook is important.": {
             "key": "lost-0270",
-            "en": "@you We are not laughing. But this notebook is important.",
-            "fr": "@you Nous ne rions pas. Mais ce cahier est important."
+            "en": "We are not laughing. But this notebook is important.",
+            "fr": "On ne rit pas. Mais ce cahier est important.",
+            "de": "Wir lachen nicht. Aber dieses Heft ist wichtig."
         },
         "@you I need it.": {
             "key": "lost-0271",
-            "en": "@you I need it.",
-            "fr": "@you J'en ai besoin."
+            "en": "I need it.",
+            "fr": "J'en ai besoin.",
+            "de": "Ich brauche es."
         },
         "The janitor slowly pushes the stack of loose pages toward you.": {
             "key": "lost-0272",
             "en": "The janitor slowly pushes the stack of loose pages toward you.",
-            "fr": "Le concierge pousse lentement vers vous la pile de feuilles volantes."
+            "fr": "Le concierge pousse lentement la pile de feuilles volantes vers toi.",
+            "de": "Der Hausmeister schiebt dir langsam den Stapel loser Seiten zu."
         },
         "@janitor Take them. You worked hard to gather the rest.": {
             "key": "lost-0273",
-            "en": "@janitor Take them. You worked hard to gather the rest.",
-            "fr": "@janitor Prenez-les. Vous avez travaillé dur pour récupérer le reste."
+            "en": "Take them. You worked hard to gather the rest.",
+            "fr": "Prenez-les. Vous avez travaillé dur pour retrouver le reste.",
+            "de": "Nehmt sie. Ihr habt hart gearbeitet, um den Rest zu finden."
         },
         "@janitor You deserve it.": {
             "key": "lost-0274",
-            "en": "@janitor You deserve it.",
-            "fr": "@janitor Vous l'avez mérité."
+            "en": "You deserve it.",
+            "fr": "Vous l'avez bien mérité.",
+            "de": "Das habt ihr euch verdient."
         },
         "Anna gathers the pages with a triumphant grin.": {
             "key": "lost-0275",
             "en": "Anna gathers the pages with a triumphant grin.",
-            "fr": "Anna rassemble les pages avec un sourire triomphant."
+            "fr": "Anna rassemble les pages avec un sourire triomphant.",
+            "de": "Anna sammelt die Seiten mit einem triumphierenden Grinsen ein."
         },
         "@anna Detective case nearly solved! Time to count the evidence.": {
             "key": "lost-0276",
-            "en": "@anna Detective case nearly solved! Time to count the evidence.",
-            "fr": "@anna Affaire de détective presque résolue ! Il est temps de compter les preuves."
+            "en": "Detective case nearly solved! Time to count the evidence.",
+            "fr": "Affaire presque résolue ! C'est l'heure de compter les preuves.",
+            "de": "Der Fall ist fast gelöst! Zeit, die Beweise zu zählen."
         },
         "The janitor chuckles quietly.": {
             "key": "lost-0277",
             "en": "The janitor chuckles quietly.",
-            "fr": "Le concierge rit doucement."
+            "fr": "Le concierge rit doucement.",
+            "de": "Der Hausmeister lacht leise."
         },
         "@janitor You two are sharper than I thought.": {
             "key": "lost-0278",
-            "en": "@janitor You two are sharper than I thought.",
-            "fr": "@janitor Vous êtes tous les deux plus malins que je ne le pensais."
+            "en": "You two are sharper than I thought.",
+            "fr": "Vous êtes plus malins que je ne le pensais, tous les deux.",
+            "de": "Ihr zwei seid schlauer, als ich dachte."
         },
         "Go back to class.": {
             "key": "lost-0279",
             "en": "Go back to class.",
-            "fr": "Retourner en classe."
+            "fr": "Retourner en classe.",
+            "de": "Zurück in die Klasse gehen."
         },
         "Check the schoolyard first.": {
             "key": "lost-0280",
             "en": "Check the schoolyard first.",
-            "fr": "Vérifier d'abord la cour d'école."
+            "fr": "Vérifier d'abord la cour de récréation.",
+            "de": "Zuerst den Schulhof absuchen."
         },
-        "On your way back from the janitor’s room, Anna tugs your sleeve.": {
-            "key": "lost-0281",
-            "en": "On your way back from the janitor’s room, Anna tugs your sleeve.",
-            "fr": "Sur le chemin du retour depuis le local du concierge, Anna tire sur votre manche."
+        "On your way back from the janitor's room, Anna pulls your sleeve.": {
+            "key": "lost-0378",
+            "en": "On your way back from the janitor's room, Anna pulls your sleeve.",
+            "fr": "En revenant du local du concierge, Anna te tire par la manche.",
+            "de": "Auf dem Rückweg vom Raum des Hausmeisters zupft Anna dich am Ärmel."
         },
-        "@anna Wait, detective! Before we head to class, what if the trail continues outside?": {
-            "key": "lost-0282",
-            "en": "@anna Wait, detective! Before we head to class, what if the trail continues outside?",
-            "fr": "@anna Attends, détective ! Avant de retourner en classe, et si la piste continuait dehors ?"
+        "@anna Wait, detective! Before we go to class, what if the trail continues outside?": {
+            "key": "lost-0379",
+            "en": "Wait, detective! Before we go to class, what if the trail continues outside?",
+            "fr": "Attends, détective ! Avant d'aller en classe... et si la piste continuait dehors ?",
+            "de": "Warte, Detektiv! Bevor wir in die Klasse gehen: Was, wenn die Spur draußen weitergeht?"
         },
         "@anna A true investigator checks everywhere.": {
             "key": "lost-0283",
-            "en": "@anna A true investigator checks everywhere.",
-            "fr": "@anna Un vrai enquêteur vérifie partout."
+            "en": "A true investigator checks everywhere.",
+            "fr": "Un vrai enquêteur vérifie partout.",
+            "de": "Ein echter Ermittler sucht überall."
         },
         "You hesitate, but curiosity wins.": {
             "key": "lost-0284",
             "en": "You hesitate, but curiosity wins.",
-            "fr": "Vous hésitez, mais la curiosité l'emporte."
+            "fr": "Tu hésites, mais la curiosité l'emporte.",
+            "de": "Du zögerst, aber die Neugier siegt."
         },
         "Together, you step into the schoolyard.": {
             "key": "lost-0285",
             "en": "Together, you step into the schoolyard.",
-            "fr": "Ensemble, vous entrez dans la cour d'école."
+            "fr": "Ensemble, vous sortez dans la cour de récréation.",
+            "de": "Zusammen geht ihr auf den Schulhof."
         },
         "The fresh air smells of grass and chalk dust.": {
             "key": "lost-0286",
             "en": "The fresh air smells of grass and chalk dust.",
-            "fr": "L'air frais sent l'herbe et la poussière de craie."
+            "fr": "L'air frais sent l'herbe et la poussière de craie.",
+            "de": "Die frische Luft riecht nach Gras und Kreidestaub."
         },
         "A soccer ball rolls past, followed by kids chasing it.": {
             "key": "lost-0287",
             "en": "A soccer ball rolls past, followed by kids chasing it.",
-            "fr": "Un ballon de football passe en roulant, suivi d'enfants qui lui courent après."
+            "fr": "Un ballon de foot passe en roulant, suivi d'enfants qui lui courent après.",
+            "de": "Ein Fußball rollt vorbei, gefolgt von Kindern, die ihm hinterherjagen."
         },
-        "Near the fence, you spot something fluttering.": {
-            "key": "lost-0288",
-            "en": "Near the fence, you spot something fluttering.",
-            "fr": "Près de la clôture, vous apercevez quelque chose qui flotte."
+        "Near the fence, you spot something moving in the wind.": {
+            "key": "lost-0380",
+            "en": "Near the fence, you spot something moving in the wind.",
+            "fr": "Près de la clôture, tu aperçois quelque chose qui bouge dans le vent.",
+            "de": "Am Zaun entdeckst du etwas, das sich im Wind bewegt."
         },
         "@anna Could it be... another page?": {
             "key": "lost-0289",
-            "en": "@anna Could it be... another page?",
-            "fr": "@anna Est-ce que ce serait... une autre page ?"
+            "en": "Could it be... another page?",
+            "fr": "Est-ce que ce serait... une autre page ?",
+            "de": "Könnte das... noch eine Seite sein?"
         },
-        "You rush over and peel a notebook sheet off the fence.": {
-            "key": "lost-0290",
-            "en": "You rush over and peel a notebook sheet off the fence.",
-            "fr": "Vous accourez et décollez une feuille du cahier de la clôture."
+        "You rush over and pull a notebook page off the fence.": {
+            "key": "lost-0381",
+            "en": "You rush over and pull a notebook page off the fence.",
+            "fr": "Tu te précipites et décroches une page de cahier de la clôture.",
+            "de": "Du läufst hin und ziehst eine Heftseite vom Zaun."
         },
-        "It is taped with, of course, a banana sticker.": {
-            "key": "lost-0291",
-            "en": "It is taped with, of course, a banana sticker.",
-            "fr": "Elle est fixée avec, bien sûr, un autocollant de banane."
+        "The wind carried it all the way out here!": {
+            "key": "lost-0382",
+            "en": "The wind carried it all the way out here!",
+            "fr": "Le vent l'a emportée jusqu'ici !",
+            "de": "Der Wind hat sie bis hierher getragen!"
         },
-        "@anna Banana Bandit's final clue! Case closed with style.": {
-            "key": "lost-0292",
-            "en": "@anna Banana Bandit's final clue! Case closed with style.",
-            "fr": "@anna Le dernier indice du Bandit Banane ! Affaire classée avec panache."
+        "@anna The final clue! Case closed with style.": {
+            "key": "lost-0383",
+            "en": "The final clue! Case closed with style.",
+            "fr": "Le dernier indice ! Affaire classée avec style.",
+            "de": "Der letzte Hinweis! Fall mit Stil gelöst."
         },
         "With a satisfied smile, you and Anna head back inside as the bell rings.": {
             "key": "lost-0293",
             "en": "With a satisfied smile, you and Anna head back inside as the bell rings.",
-            "fr": "Avec un sourire satisfait, Anna et vous rentrez à l'intérieur au moment où la cloche sonne."
+            "fr": "Avec un sourire satisfait, Anna et toi rentrez au moment où la sonnerie retentit.",
+            "de": "Zufrieden lächelnd gehen du und Anna wieder hinein, als es klingelt."
         },
-        "You hold the notebook in your hands at last, the bell echoing through the halls.": {
-            "key": "lost-0294",
-            "en": "You hold the notebook in your hands at last, the bell echoing through the halls.",
-            "fr": "Vous tenez enfin le cahier entre vos mains, tandis que la cloche résonne dans les couloirs."
+        "You finally have your notebook. The bell rings through the halls.": {
+            "key": "lost-0384",
+            "en": "You finally have your notebook. The bell rings through the halls.",
+            "fr": "Tu as enfin ton cahier. La sonnerie retentit dans les couloirs.",
+            "de": "Endlich hast du dein Heft. Die Schulglocke klingelt durch die Flure."
         },
         "Anna leans close, eyes sparkling.": {
             "key": "lost-0295",
             "en": "Anna leans close, eyes sparkling.",
-            "fr": "Anna se penche vers vous, les yeux brillants."
+            "fr": "Anna se penche vers toi, les yeux brillants.",
+            "de": "Anna beugt sich zu dir, ihre Augen funkeln."
         },
         "@anna Well, detective... how did we do?": {
             "key": "lost-0296",
-            "en": "@anna Well, detective... how did we do?",
-            "fr": "@anna Alors, détective... comment s'en est-on sortis ?"
+            "en": "Well, detective... how did we do?",
+            "fr": "Alors, détective... on s'en est bien sortis ?",
+            "de": "Na, Detektiv... wie haben wir uns geschlagen?"
         },
-        "You flip through the notebook. It’s nearly empty.": {
-            "key": "lost-0299",
-            "en": "You flip through the notebook. It’s nearly empty.",
-            "fr": "Vous feuilletez le cahier. Il est presque vide."
+        "You flip through the notebook. Many pages are still missing.": {
+            "key": "lost-0385",
+            "en": "You flip through the notebook. Many pages are still missing.",
+            "fr": "Tu feuillettes le cahier. Il manque encore beaucoup de pages.",
+            "de": "Du blätterst durch das Heft. Viele Seiten fehlen noch."
         },
-        "@anna We barely found anything. At least we are on time for class.": {
-            "key": "lost-0300",
-            "en": "@anna We barely found anything. At least we are on time for class.",
-            "fr": "@anna On n'a presque rien retrouvé. Au moins, on est à l'heure pour le cours."
+        "Your homework is not there.": {
+            "key": "lost-0386",
+            "en": "Your homework is not there.",
+            "fr": "Tes devoirs n'y sont pas.",
+            "de": "Deine Hausaufgaben sind nicht dabei."
         },
-        "@you Next time, we will search harder.": {
-            "key": "lost-0301",
-            "en": "@you Next time, we will search harder.",
-            "fr": "@you La prochaine fois, nous chercherons plus sérieusement."
+        "@anna Oh no! Well, at least we are on time for class.": {
+            "key": "lost-0387",
+            "en": "Oh no! Well, at least we are on time for class.",
+            "fr": "Oh non ! Bon, au moins, on est à l'heure pour le cours.",
+            "de": "Oh nein! Na ja, wenigstens kommen wir pünktlich zum Unterricht."
         },
-        "@janitor Fast detectives, but careless ones.": {
-            "key": "lost-0302",
-            "en": "@janitor Fast detectives, but careless ones.",
-            "fr": "@janitor Des détectives rapides, mais négligents."
+        "@you Next time, I will keep my notebook in my bag!": {
+            "key": "lost-0388",
+            "en": "Next time, I will keep my notebook in my bag!",
+            "fr": "La prochaine fois, je garderai mon cahier dans mon sac !",
+            "de": "Nächstes Mal lasse ich mein Heft in der Tasche!"
         },
         "You notice gaps where pages should be.": {
             "key": "lost-0304",
             "en": "You notice gaps where pages should be.",
-            "fr": "Vous remarquez des vides là où des pages devraient se trouver."
+            "fr": "Tu remarques des trous là où il devrait y avoir des pages.",
+            "de": "Du bemerkst Lücken, wo eigentlich Seiten sein sollten."
         },
-        "@anna Some pieces are missing, but at least we returned most of it.": {
-            "key": "lost-0305",
-            "en": "@anna Some pieces are missing, but at least we returned most of it.",
-            "fr": "@anna Il manque quelques morceaux, mais au moins nous en avons récupéré la plus grande partie."
+        "@anna Some pages are still missing, but your homework is there.": {
+            "key": "lost-0389",
+            "en": "Some pages are still missing, but your homework is there.",
+            "fr": "Il manque encore quelques pages, mais tes devoirs sont là.",
+            "de": "Ein paar Seiten fehlen noch, aber deine Hausaufgaben sind da."
         },
-        "@you Good effort for today. Maybe we will complete it another time.": {
-            "key": "lost-0306",
-            "en": "@you Good effort for today. Maybe we will complete it another time.",
-            "fr": "@you Bon travail pour aujourd'hui. Peut-être que nous le compléterons une autre fois."
+        "@you Good work for today. Maybe we can find the rest tomorrow.": {
+            "key": "lost-0390",
+            "en": "Good work for today. Maybe we can find the rest tomorrow.",
+            "fr": "Beau travail pour aujourd'hui. On trouvera peut-être le reste demain.",
+            "de": "Gute Arbeit für heute. Vielleicht finden wir den Rest morgen."
         },
-        "@janitor Not perfect, but good.": {
-            "key": "lost-0307",
-            "en": "@janitor Not perfect, but good.",
-            "fr": "@janitor Ce n'est pas parfait, mais c'est bien."
-        },
-        "You proudly stack the recovered pages into the notebook. It’s complete.": {
-            "key": "lost-0309",
-            "en": "You proudly stack the recovered pages into the notebook. It’s complete.",
-            "fr": "Vous empilez fièrement les pages récupérées dans le cahier. Il est complet."
-        },
-        "The janitor shakes his head in disbelief.": {
-            "key": "lost-0310",
-            "en": "The janitor shakes his head in disbelief.",
-            "fr": "Le concierge secoue la tête, incrédule."
-        },
-        "@janitor You two are sharper than I thought. Real detectives.": {
-            "key": "lost-0311",
-            "en": "@janitor You two are sharper than I thought. Real detectives.",
-            "fr": "@janitor Vous êtes tous les deux plus malins que je ne le pensais. De vrais détectives."
+        "You put all the pages back into the notebook. It is complete!": {
+            "key": "lost-0391",
+            "en": "You put all the pages back into the notebook. It is complete!",
+            "fr": "Tu remets toutes les pages dans le cahier. Il est complet !",
+            "de": "Du legst alle Seiten zurück ins Heft. Es ist vollständig!"
         },
         "Anna grins and raises the notebook high.": {
             "key": "lost-0312",
             "en": "Anna grins and raises the notebook high.",
-            "fr": "Anna sourit largement et lève bien haut le cahier."
+            "fr": "Anna sourit jusqu'aux oreilles et brandit le cahier.",
+            "de": "Anna grinst und hält das Heft hoch."
         },
-        "@anna Case closed! Detective agency officially opened!": {
-            "key": "lost-0313",
-            "en": "@anna Case closed! Detective agency officially opened!",
-            "fr": "@anna Affaire classée ! Agence de détectives officiellement ouverte !"
+        "@anna Case closed! Detective agency officially open!": {
+            "key": "lost-0392",
+            "en": "Case closed! Detective agency officially open!",
+            "fr": "Affaire classée ! L'agence de détectives est officiellement ouverte !",
+            "de": "Fall gelöst! Das Detektivbüro ist offiziell eröffnet!"
         },
         "You both burst out laughing, earning a curious look from passing students.": {
             "key": "lost-0314",
             "en": "You both burst out laughing, earning a curious look from passing students.",
-            "fr": "Vous éclatez tous les deux de rire, attirant le regard curieux des élèves qui passent."
+            "fr": "Vous éclatez de rire tous les deux, sous le regard curieux des élèves qui passent.",
+            "de": "Ihr beide brecht in Lachen aus, und vorbeigehende Schüler schauen euch neugierig an."
         },
-        "The bell rings louder, and you hurry to class with Anna at your side.": {
-            "key": "lost-0316",
-            "en": "The bell rings louder, and you hurry to class with Anna at your side.",
-            "fr": "La cloche sonne plus fort, et vous vous dépêchez vers la classe avec Anna à vos côtés."
+        "You hurry to class with Anna at your side.": {
+            "key": "lost-0393",
+            "en": "You hurry to class with Anna at your side.",
+            "fr": "Tu te dépêches d'aller en classe avec Anna à tes côtés.",
+            "de": "Du eilst mit Anna an deiner Seite in die Klasse."
         },
         "The case is over for now.": {
             "key": "lost-0317",
             "en": "The case is over for now.",
-            "fr": "L'affaire est terminée pour le moment."
+            "fr": "L'affaire est terminée pour le moment.",
+            "de": "Der Fall ist erst einmal abgeschlossen."
         },
-        "But you can’t help wondering what the next mystery will be.": {
-            "key": "lost-0318",
-            "en": "But you can’t help wondering what the next mystery will be.",
-            "fr": "Mais vous ne pouvez pas vous empêcher de vous demander quel sera le prochain mystère."
+        "But you cannot help wondering what the next mystery will be.": {
+            "key": "lost-0394",
+            "en": "But you cannot help wondering what the next mystery will be.",
+            "fr": "Mais tu ne peux pas t'empêcher de te demander quel sera le prochain mystère.",
+            "de": "Aber du fragst dich schon, was wohl das nächste Rätsel sein wird."
         }
     },
     "title": {
         "key": "title-lost",
         "en": "Lost & Found",
-        "fr": "Objets perdus"
+        "fr": "Objets perdus",
+        "de": "Fundsachen"
     }
 }

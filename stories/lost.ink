@@ -1,6 +1,7 @@
 Lost & Found #title
 
 VAR found_pages = 0
+VAR janitor_clue = false
 
 -> START
 
@@ -23,7 +24,7 @@ Anna, your best friend, sees your wide eyes.
 @you My notebook. It is gone. All my homework is in there!
 
 Anna gasps, then raises one eyebrow.
-@anna Do not panic, detective. Every mystery begins with something missing.
+@anna Stay calm, detective. Every mystery begins with something missing.
 
 She puts her hand on her chin and walks in a small circle.
 
@@ -33,7 +34,7 @@ She puts her hand on her chin and walks in a small circle.
 
 Even though you are nervous, you smile. Anna always makes things funny.
 
-@anna Let us solve this together. Where should we start?
+@anna We can solve this together. Where should we start?
 
 + [Go to the library.] -> LIBRARY
 + [Go to the hallway.] -> HALLWAY
@@ -41,21 +42,21 @@ Even though you are nervous, you smile. Anna always makes things funny.
 
 === CLASSROOM_SEARCH ===
 You look around the classroom before leaving.
-The teacher hasn’t arrived yet.
+The teacher has not arrived yet.
 The students are talking, throwing paper airplanes, and sneaking snacks.
 
 @anna Good idea, detective. Always start where it happened.
 
-+ [Peek inside the teacher’s desk.] -> TEACHER_DESK
++ [Peek inside the teacher's desk.] -> TEACHER_DESK
 + [Check the classroom lost-and-found box.] -> LOST_FOUND_BOX
 + [Ask a classmate nearby.] -> CLASSROOM_CLASSMATE
 
 === TEACHER_DESK ===
-You pull gently on the teacher’s desk drawer.
+You pull gently on the teacher's desk drawer.
 It squeaks open.
-Papers, chalk, and… a notebook!
+Papers, chalk, and... a notebook!
 
-Your heart jumps, until you see it’s orange, not red.
+Your heart jumps, until you see it is orange, not red.
 
 Anna laughs.
 @anna Detective note: wrong color.
@@ -65,7 +66,7 @@ You sigh and slide the orange notebook back. At least you tried.
 -> HALLWAY
 
 === LOST_FOUND_BOX ===
-At the back of the room, there’s a dusty lost-and-found box.
+At the back of the room, there is a dusty lost-and-found box.
 You dig through scarves, socks, a broken calculator, and an old lunchbox that smells strange.
 At the bottom, you find a crumpled page with your handwriting on it!
 
@@ -75,7 +76,7 @@ Anna claps her hands.
 ~ found_pages += 1
 $image lost-classroom-page.jpg
 
-You tuck the page into your pocket and head out.
+You put the page in your pocket and head out.
 -> HALLWAY
 
 === CLASSROOM_CLASSMATE ===
@@ -103,7 +104,7 @@ The room smells of paper and dust.
 The librarian looks at you over her glasses and puts a finger on her lips.
 @librarian Shh! This is a quiet place.
 
-Anna whispers:
+Anna whispers.
 @anna Detectives must work in silence... unless they find something big.
 She tiptoes forward, clearly enjoying herself.
 
@@ -123,56 +124,58 @@ She opens a drawer and gives you a loose sheet.
 @librarian This fell on the floor when the janitor walked by.
 
 Anna gasps softly.
-@anna The janitor again! He is always around.
+@anna The janitor! He is everywhere.
 ~ found_pages += 1
+~ janitor_clue = true
 $image lost-library-page.jpg
 
 The librarian smiles a little.
 @librarian He moves all around the school. He is always taping things to the notice boards.
 
 You put the page away and nod.
-
-+ [Leave for the cafeteria.] -> CAFETERIA
+-> LIBRARY_EXIT
 
 === LIB_SHELVES ===
 The shelves are tall, filled with books packed tightly together.
 As you search among the books, a heavy dictionary drops to the floor.
 
 Inside, something flutters out.
-It’s a page with your handwriting.
+It is a page with your handwriting.
 
 Anna picks it up like treasure.
-@anna Detective success! The Dictionary of Secrets now has your homework!
+@anna Detective success! Even the dictionary was hiding your homework!
 ~ found_pages += 1
 
-You tuck it away.
+You put it away.
 + [Keep searching around the shelves.] -> LIB_EXPLORE
 + [Show it to the librarian.] -> LIB_LIBRARIAN
 
 === LIB_EXPLORE ===
 You walk deeper between the shelves.
 It feels very quiet.
-On one shelf, an open sketchbook shows drawings of… banana stickers.
+On one shelf, there is a big book called "The World of Fruit Stickers".
+A note inside says: "Please return to the janitor."
 
 Anna leans in and whispers.
-@anna Our suspect leaves clues everywhere.
-@anna The janitor is like a Banana Sticker Thief.
+@anna The janitor collects stickers? And your notebook has a banana sticker...
+@anna Our suspect is the Banana Sticker Thief!
+~ janitor_clue = true
 
 You grin and shake your head.
 + [Check the reading tables.] -> LIB_TABLES
-+ [Leave for the cafeteria.] -> CAFETERIA
++ [Leave the library.] -> LIBRARY_EXIT
 
 === LIB_TABLES ===
 The reading tables are covered with notebooks, pens, and half-finished homework.
 
-You look under a chair and find a crumpled page taped with a banana sticker.
+You look under a chair and find a crumpled page from your notebook.
 
 Anna groans.
-@anna He is turning the school into a big scrapbook!
+@anna Your pages are all over the school!
 ~ found_pages += 1
 
 You fold the page and look toward the exit.
-+ [Leave for the cafeteria.] -> CAFETERIA
+-> LIBRARY_EXIT
 
 === LIB_CLASSMATE ===
 In the far corner, a classmate pretends to read but keeps watching everyone else.
@@ -188,10 +191,15 @@ The classmate shrugs.
 @student3 He was going to the cafeteria.
 
 Anna raises her eyebrows.
-@anna The Banana Sticker Thief again.
+@anna The janitor! Interesting...
+~ janitor_clue = true
 
 You thank them and leave.
-+ [Leave for the cafeteria.] -> CAFETERIA
+-> LIBRARY_EXIT
+
+=== LIBRARY_EXIT ===
++ {not CAFETERIA} [Leave for the cafeteria.] -> CAFETERIA
++ [Go back to the hallway.] -> HALLWAY
 
 === CAFETERIA ===
 The cafeteria is full of noise.
@@ -199,7 +207,7 @@ Trays clatter, students laugh, and the smell of soup mixes with warm bread.
 
 Anna takes a deep breath.
 @anna Detective rule number one: never work on an empty stomach.
-@anna But fine, let us focus!
+@anna But fine, we can eat later!
 
 You look around.
 There are many people and many places where a notebook could be hiding.
@@ -220,7 +228,7 @@ Anna laughs as she helps you up.
 @anna Detective down! But wait, what is that on your shoe?
 
 You peel it off.
-It’s a juice-stained page from your notebook.
+It is a juice-stained page from your notebook.
 
 @anna Gross but useful. Evidence found!
 ~ found_pages += 1
@@ -230,18 +238,18 @@ $image lost-cafeteria-page.jpg
 + [Go to the kitchen.] -> CAF_COOK
 
 === CAF_PRANK ===
-As you dry your hands, another student waves you over.
-@student1 Looking for a red notebook? I have it.
+As you clean your shoe, another student waves you over.
+@student2 Looking for a red notebook? I have it.
 
 He hands you a notebook.
-You open it quickly, but it’s full of banana superheroes.
+You open it quickly, but it is full of banana superheroes.
 
 Anna laughs out loud.
-@anna First banana cartoons, now banana heroes?
+@anna Banana superheroes?
 @anna This school really loves bananas!
 
 You sigh and hand it back.
-@STUDENT1 Couldn’t resist a joke.
+@student2 Sorry, I could not resist a joke.
 -> CAF_EXPLORE
 
 === CAF_EXPLORE ===
@@ -258,12 +266,14 @@ A cook stirs a big pot of soup, steam covering his glasses.
 
 @cook Students again? This is a kitchen, not a playground!
 * @you Sorry! We are looking for a red notebook.
-* @you Sorry, we will leave! -> HALLWAY
+* @you Sorry, we will leave!
+    -> HALLWAY
 -
 
 The cook sighs.
 @cook Red cover, banana sticker?
 @cook Yes, the janitor dropped it here earlier. Pages everywhere!
+~ janitor_clue = true
 
 He points to the corner, where a page lies under a box.
 You grab it quickly.
@@ -283,41 +293,51 @@ Near the wall, three students whisper together.
 
 @student1 I heard the janitor collects stickers. He even puts them on notebooks!
 @student2 Yes, I saw him with a red one. He went toward the hallway.
-@student3 Weird guy. He is always talking to himself.
+@student3 Weird guy. He is always reading to himself.
 
-Anna leans close and whispers:
+Anna leans close and whispers.
 @anna Then it is clear. The janitor is our Banana Sticker Thief.
+~ janitor_clue = true
 
 -> HALLWAY
 
 === NOTICE_BOARD ===
 You stop at the cafeteria notice board.
-Posters cover the wall—sports tryouts, art club, and a “Lost Sock” sign.
+Posters cover the wall: sports tryouts, art club, and a "Lost Sock" sign.
 
 Anna squints.
 @anna Wait, what is that behind the paper?
 
-You lift a flyer and find another notebook page, taped with a banana sticker.
+You lift a flyer and find another notebook page.
+There is a note on it: "Found in the cafeteria. The janitor."
 
-@anna He is leaving a trail even I can follow!
+@anna The janitor puts everything he finds on the notice boards!
 ~ found_pages += 1
+~ janitor_clue = true
 
 -> HALLWAY
 
 === HALLWAY ===
-The hallway is full of sound—lockers closing, shoes squeaking, voices echoing.
-Students hurry past in both directions.
+{
+- HALLWAY == 1:
+    The hallway is full of sound: lockers closing, shoes squeaking, voices echoing.
+    Students hurry past in both directions.
+    Anna nudges you.
+    @anna Remember, detective, hallways hide secrets too.
+- else:
+    You are back in the hallway.
+}
+{janitor_clue:
+    @anna The janitor's room is at the end of the hall.
+}
+@anna Where do we go now?
 
-Anna nudges you.
-@anna Okay, detective. The janitor’s room is at the end of the hall.
-@anna But remember, hallways hide secrets too.
-
-You look around.
-
-+ [Talk to the gossiping students.] -> GOSSIP
-+ [Speak with a teacher passing by.] -> HALLWAY_TEACHER
-+ [Check the notice board again.] -> NOTICE_BOARD2
-+ [Go to the janitor’s room.] -> JANITOR_ROOM
+* [Talk to the gossiping students.] -> GOSSIP
+* [Speak with a teacher passing by.] -> HALLWAY_TEACHER
+* [Check the notice board.] -> NOTICE_BOARD2
++ {not LIBRARY} [Go to the library.] -> LIBRARY
++ {not CAFETERIA} [Go to the cafeteria.] -> CAFETERIA
++ {janitor_clue} [Go to the janitor's room.] -> JANITOR_ROOM
 
 === GOSSIP ===
 You listen to two older students by the lockers.
@@ -328,53 +348,57 @@ You listen to two older students by the lockers.
 They both laugh softly.
 Anna whispers.
 @anna More clues. The Banana Sticker Thief strikes again.
+~ janitor_clue = true
 
 You grin and move on.
--> JANITOR_ROOM
+-> HALLWAY
 
 === HALLWAY_TEACHER ===
 As you walk down the hall, a teacher carrying papers stops you.
 
-@teacher Why are you not in class? The bell has not rung yet, but you look busy.
+@teacher Where are you two going in such a hurry?
 
 @you We are on a detective mission.
 Anna jumps in.
 @anna A very important one. A missing notebook and a sticker mystery!
 
 The teacher raises an eyebrow.
-@teacher Well, I did find a strange page outside the staffroom. Maybe it is yours.
+@teacher Well, the janitor gave me this page this morning. Maybe it is yours.
 
 He hands you a notebook page.
 ~ found_pages += 1
+~ janitor_clue = true
 
 Anna bows like she is in a play.
 @anna Thank you! Justice will be done!
 
 The teacher sighs and walks away.
--> JANITOR_ROOM
+-> HALLWAY
 
 === NOTICE_BOARD2 ===
-You stop by another notice board.
+You stop by the hallway notice board.
 Posters for the school play and chess club move slightly in the breeze.
 
-Anna points at something shiny under a flyer.
-@anna Another sticker!
+Anna points at a page under a flyer.
+@anna Look! Is that yours?
 
-You lift the paper and find a notebook page taped beneath it.
+You lift the flyer. It is a page from your notebook.
+There is a note on it: "Found in the hallway. The janitor."
 
-@anna He is turning the school into his own art wall.
+@anna The janitor puts everything he finds on the notice boards!
 ~ found_pages += 1
+~ janitor_clue = true
 
--> JANITOR_ROOM
+-> HALLWAY
 
 === JANITOR_ROOM ===
-You reach the janitor’s closet. The door is half open and making a small noise.
+You reach the janitor's room. The door is half open.
 The room smells like soap and old wood.
+The wall is covered with fruit stickers.
 
 Your red notebook is on the desk.
 The banana sticker on it shines under a blinking light.
-Loose papers are piled up messily nearby.
-Some have tape and more stickers on them.
+Loose papers are piled up nearby.
 
 The janitor notices you.
 @janitor What are you kids doing here? This is no place for students.
@@ -383,7 +407,7 @@ Anna points straight at the notebook.
 @anna That notebook is ours! Why do you have it?
 
 The janitor frowns, leaning back in his chair.
-@JANITOR Caught? I was keeping it safe. Nothing more.
+@janitor Calm down. I was keeping it safe. That is all.
 
 + [Accuse him directly.] -> JANITOR_DIRECT
 + [Ask politely for the notebook.] -> JANITOR_POLITE
@@ -391,17 +415,16 @@ The janitor frowns, leaning back in his chair.
 
 === JANITOR_DIRECT ===
 You cross your arms and glare.
-@you You took the notebook, did you not?
+@you You took my notebook!
 
 The janitor closes the notebook and stands up.
-@janitor Stealing? No.
+@janitor Took it? No.
 @janitor It was falling apart.
 @janitor Pages were dropping everywhere.
 @janitor I was only trying to protect it.
 
 Anna narrows her eyes.
-@anna Protect it with banana stickers?
-@anna You turned it into a banana book.
+@anna And what about all these stickers?
 
 The janitor sighs, shoulders slumping.
 @janitor They are not just stickers. They are part of my collection.
@@ -410,7 +433,6 @@ The janitor sighs, shoulders slumping.
 
 Anna's frown softens a little, but she whispers:
 @anna Still weird.
-
 
 -> JANITOR_CONFESSION
 
@@ -424,10 +446,10 @@ The janitor hesitates, tapping the cover.
 @janitor I just wanted to keep it safe.
 
 He slowly slides it toward you.
-@janitor But do not mock my stickers. They matter to me.
+@janitor But do not laugh at my stickers. They matter to me.
 
 Anna nods gently.
-@anna We will not laugh. But you confused the whole school.
+@anna We will not laugh. But we searched the whole school for it!
 
 The janitor sighs.
 -> JANITOR_CONFESSION
@@ -448,9 +470,9 @@ Anna smirks.
 === JANITOR_CONFESSION ===
 The janitor rubs his forehead and sits back down.
 
-@janitor I was not trying to steal it. I only wanted to learn.
-@janitor I practice reading the sentences in the notebook.
-@janitor They help me understand better.
+@janitor I was not trying to steal it.
+@janitor I found it this morning, and I wanted to read it a little.
+@janitor I practice my reading with the sentences in your notebook.
 @janitor My job does not give me time for classes.
 @janitor But reading a little helps.
 
@@ -459,10 +481,10 @@ Anna tilts her head, suddenly softer.
 
 The janitor nods, embarrassed.
 @janitor Maybe.
-@janitor But I should not have hidden it.
+@janitor But I should not have kept it.
 @janitor I just did not want anyone to laugh at me.
 @janitor And I do not have every page.
-@janitor Some pages fell in other places before I could pick them up.
+@janitor Some pages fell out in other places before I found the notebook.
 
 You glance at Anna, then back at him.
 @you We are not laughing. But this notebook is important.
@@ -482,9 +504,9 @@ The janitor chuckles quietly.
 * {found_pages < 4} [Check the schoolyard first.] -> SCHOOLYARD_OPTION
 
 === SCHOOLYARD_OPTION ===
-On your way back from the janitor’s room, Anna tugs your sleeve.
+On your way back from the janitor's room, Anna pulls your sleeve.
 
-@anna Wait, detective! Before we head to class, what if the trail continues outside?
+@anna Wait, detective! Before we go to class, what if the trail continues outside?
 @anna A true investigator checks everywhere.
 
 You hesitate, but curiosity wins.
@@ -493,52 +515,46 @@ Together, you step into the schoolyard.
 The fresh air smells of grass and chalk dust.
 A soccer ball rolls past, followed by kids chasing it.
 
-Near the fence, you spot something fluttering.
+Near the fence, you spot something moving in the wind.
 
 @anna Could it be... another page?
 
-You rush over and peel a notebook sheet off the fence.
-It is taped with, of course, a banana sticker.
+You rush over and pull a notebook page off the fence.
+The wind carried it all the way out here!
 
-@anna Banana Bandit's final clue! Case closed with style.
+@anna The final clue! Case closed with style.
 ~ found_pages += 1
 
 With a satisfied smile, you and Anna head back inside as the bell rings.
 -> ENDINGS
 
-
 === ENDINGS ===
-You hold the notebook in your hands at last, the bell echoing through the halls.
+You finally have your notebook. The bell rings through the halls.
 
 Anna leans close, eyes sparkling.
 @anna Well, detective... how did we do?
 
 {
 - found_pages <= 1:
-    You flip through the notebook. It’s nearly empty.
-    @anna We barely found anything. At least we are on time for class.
-    @you Next time, we will search harder.
-    @janitor Fast detectives, but careless ones.
-    -> END
- - found_pages <= 3:
+    You flip through the notebook. Many pages are still missing.
+    Your homework is not there.
+    @anna Oh no! Well, at least we are on time for class.
+    @you Next time, I will keep my notebook in my bag!
+- found_pages <= 3:
     You notice gaps where pages should be.
-    @anna Some pieces are missing, but at least we returned most of it.
-    @you Good effort for today. Maybe we will complete it another time.
-    @janitor Not perfect, but good.
-    -> END
+    @anna Some pages are still missing, but your homework is there.
+    @you Good work for today. Maybe we can find the rest tomorrow.
 - else:
-    You proudly stack the recovered pages into the notebook. It’s complete.
-    The janitor shakes his head in disbelief.
-    @janitor You two are sharper than I thought. Real detectives.
+    You put all the pages back into the notebook. It is complete!
     Anna grins and raises the notebook high.
-    @anna Case closed! Detective agency officially opened!
+    @anna Case closed! Detective agency officially open!
     You both burst out laughing, earning a curious look from passing students.
     $image lost-good-ending.jpg
-    -> END
 }
+-> EPILOGUE
 
-=== END ===
-The bell rings louder, and you hurry to class with Anna at your side.
+=== EPILOGUE ===
+You hurry to class with Anna at your side.
 The case is over for now.
-But you can’t help wondering what the next mystery will be.
--> DONE
+But you cannot help wondering what the next mystery will be.
+-> END
