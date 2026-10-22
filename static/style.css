@@ -981,3 +981,129 @@ blockquote {
         padding-left: 1.5em;
     }
 }
+
+/* Puzzles */
+
+.puzzle {
+    position: relative;
+    flex-shrink: 0;
+    transition: transform .2s;
+}
+
+.puzzle.bump {
+    animation: puzzle-bump .3s;
+}
+
+@keyframes puzzle-bump {
+    50% { transform: scale(1.2); }
+}
+
+.puzzle-tile {
+    position: absolute;
+    border-radius: 2px;
+    background-color: var(--border-color);
+    transition: filter .4s, opacity .4s;
+}
+
+.puzzle-tile.missing {
+    filter: grayscale(1) blur(2px);
+    opacity: .3;
+}
+
+.puzzle-tile.revealed {
+    animation: flip .5s;
+}
+
+.puzzle.complete .puzzle-tile {
+    border-radius: 0;
+}
+
+.flying-piece {
+    position: fixed;
+    z-index: 100;
+    pointer-events: none;
+    border-radius: 2px;
+}
+
+#collection-count, .story-list .story-count {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.top-puzzle, .story-end-puzzle {
+    display: flex;
+    justify-content: center;
+    margin: 12px 0;
+}
+
+/* Questions (choices tagged #ok / #fail) */
+
+.choices .text-icon {
+    position: relative;
+}
+
+.choices .text-icon.tried {
+    border-color: var(--border-color);
+    color: var(--border-color);
+    cursor: default;
+}
+
+.choices .text-icon.tried:hover {
+    transform: none;
+    rotate: none;
+}
+
+.choice.tried {
+    opacity: .5;
+}
+
+.text-icon.wobble {
+    animation: wobble .32s;
+}
+
+@keyframes wobble {
+    25% { transform: translateX(-3px); }
+    75% { transform: translateX(3px); }
+}
+
+.choices .text-icon.correct {
+    background: #5c9;
+    border-color: #5c9;
+    color: var(--dark-bg-color);
+    animation: pop .35s cubic-bezier(.3, 1.6, .6, 1);
+}
+
+@keyframes pop {
+    50% { transform: scale(1.25); }
+}
+
+.choices.answering .choice:not(.chosen),
+.choices.answering .text-icon:not(.correct) {
+    opacity: .35;
+    transition: opacity .3s;
+}
+
+.sparkle {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #8f8;
+    pointer-events: none;
+}
+
+.quiz-hint {
+    grid-column: 1 / -1;
+    margin: 4px 0 0;
+    font-size: .85em;
+    color: var(--secondary-text-color);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .text-icon.wobble, .choices .text-icon.correct, .puzzle.bump, .puzzle-tile.revealed {
+        animation: none;
+    }
+}

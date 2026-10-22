@@ -2,6 +2,34 @@ export class UserData {
     constructor() {
         this.storage = window.localStorage;
         this.collectedImages = this.loadData("collectedImages", {});
+        // Puzzle pieces, in the order they were found: {lang: {story: [pieceId]}}.
+        this.puzzlePieces = this.loadData("puzzlePieces", null);
+        if (this.puzzlePieces === null) {
+            // Before puzzles, every collected image was a collectible:
+            // each one becomes a puzzle piece (piece id = image name).
+            this.puzzlePieces = JSON.parse(JSON.stringify(this.collectedImages));
+            this.saveData("puzzlePieces", this.puzzlePieces);
+        }
+    }
+
+    pieces(lang, story) {
+        return this.puzzlePieces[lang]?.[story] || [];
+    }
+
+    hasPiece(lang, story, pieceId) {
+        return this.pieces(lang, story).includes(pieceId);
+    }
+
+    // Returns true if the piece is new.
+    addPiece(lang, story, pieceId) {
+        if (this.hasPiece(lang, story, pieceId)) {
+            return false;
+        }
+        this.puzzlePieces[lang] ||= {};
+        this.puzzlePieces[lang][story] ||= [];
+        this.puzzlePieces[lang][story].push(pieceId);
+        this.saveData("puzzlePieces", this.puzzlePieces);
+        return true;
     }
 
     saveData(key, data) {

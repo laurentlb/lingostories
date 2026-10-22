@@ -4,6 +4,10 @@ import { allStories } from "./stories.js";
 import { listenMP3, soundEffect, stopMP3 } from "./audio.js";
 import { WordShuffleGame } from "./wordShuffleGame.js";
 import { WordPopup } from "./word-popup.js";
+import { Puzzle, flyPiece, sparkle } from "./puzzle.js";
+import { Sfx } from "./sfx.js";
+
+const reducedMotion = () => window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
 // ---------------- BaseStoryUI ----------------
 export class BaseStoryUI {
@@ -53,6 +57,13 @@ export class BaseStoryUI {
         this.actuallyShowText(container, line, false);
     }
     showEndGame() {}
+    answerWrong(quiz, icon, elt) {
+        icon.classList.add("tried");
+        elt.classList.add("tried");
+    }
+    answerRight(quiz, icon, elt, choose) {
+        choose();
+    }
     // ---------------------------
 
     createSpeaker(audioElt, speaker, container) {
@@ -73,6 +84,7 @@ export class BaseStoryUI {
         }
 
         const textOnly = this.settings.readingMode() === "textOnly";
+        this.lastLine = line;
 
         const container = document.createElement("div");
         container.classList.add("sentence-container");
@@ -202,6 +214,15 @@ export class BaseStoryUI {
         const container = document.createElement("div");
         container.classList.add("choices");
 
+        // A question: choices tagged #ok / #fail. Wrong answers can be retried.
+        const tagged = (choice, tag) => (choice.tags || []).includes(tag);
+        const isQuiz = choices.some((c) => tagged(c, "ok") || tagged(c, "fail"));
+        const quiz = isQuiz ? {
+            pieceId: "q:" + (this.lastLine?.key || this.lastLine?.en || ""),
+            tries: 0,
+            container,
+        } : null;
+
         this.lastChoices.length = 0;
         for (let i = 0; i < choices.length; i++) {
             const choice = choices[i];
@@ -221,17 +242,34 @@ export class BaseStoryUI {
             const textIcon = document.createElement("div");
             textIcon.classList.add("text-icon");
             textIcon.textContent = i + 1;
-            textIcon.onclick = () => {
+            // keep: leave the chosen answer visible (questions).
+            const choose = (keep = false) => {
                 this.lastChoices.length = 0;
                 container.innerHTML = "";
-                textIcon.onclick = null;
                 container.appendChild(textIcon);
                 container.appendChild(elt);
-                container.remove();
+                if (keep) {
+                    container.classList.add("answered");
+                } else {
+                    container.remove();
+                }
 
                 this.story.ChooseChoiceIndex(choice.index);
                 this.didShowChoices = false;
                 this.next();
+            };
+            textIcon.onclick = () => {
+                if (!quiz) {
+                    textIcon.onclick = null;
+                    choose();
+                } else if (tagged(choice, "fail")) {
+                    textIcon.onclick = null;
+                    quiz.tries++;
+                    this.answerWrong(quiz, textIcon, elt);
+                } else {
+                    for (const icon of this.lastChoices) icon.onclick = null;
+                    this.answerRight(quiz, textIcon, elt, choose);
+                }
             };
             this.lastChoices.push(textIcon);
 
@@ -302,14 +340,92 @@ export class StoryUI extends BaseStoryUI {
         this.userData = userData;
         this.updateCollectionTopStatus = updateCollectionTopStatus;
         this.explainer = new Explain();
+        this.sfx = new Sfx(settings);
         this.openTransl = null;
         this.highlightedText = null;
         this.currentAudioContainer = null;
+        this.combo = 0; // consecutive first-try answers, only used for the chime pitch
+        this.piecesAtStart = 0;
     }
 
     async init(name, language) {
         await super.init(name, language);
         await this.explainer.init(name, language);
+    }
+
+    resetStory() {
+        super.resetStory();
+        this.combo = 0;
+        this.piecesAtStart = this.userData.pieces(this.story.lang, this.story.storyName).length;
+    }
+
+    // Grants a puzzle piece (if new) and animates it from `source` to the top puzzle.
+    awardPiece(pieceId, source) {
+        if (this.userData.addPiece(this.story.lang, this.story.storyName, pieceId)) {
+            this.animatePiece(source);
+        }
+    }
+
+    // Animates the last piece found from `source` to the top puzzle.
+    animatePiece(source) {
+        const index = this.userData.pieces(this.story.lang, this.story.storyName).length - 1;
+        const puzzle = this.updateCollectionTopStatus(1);
+        flyPiece(source, puzzle, index, () => {
+            this.updateCollectionTopStatus()?.bump();
+            this.sfx.piece();
+        });
+    }
+
+    quizHint(quiz, text) {
+        let hint = quiz.container.querySelector(".quiz-hint");
+        if (!hint) {
+            hint = document.createElement("p");
+            hint.classList.add("quiz-hint");
+            hint.setAttribute("aria-live", "polite");
+            quiz.container.appendChild(hint);
+        }
+        hint.textContent = text;
+    }
+
+    answerWrong(quiz, icon, elt) {
+        super.answerWrong(quiz, icon, elt);
+        this.combo = 0;
+        this.sfx.tok();
+        icon.classList.remove("wobble");
+        void icon.offsetWidth;
+        icon.classList.add("wobble");
+        this.quizHint(quiz, "Not this one. Try another.");
+    }
+
+    answerRight(quiz, icon, elt, choose) {
+        const lang = this.story.lang;
+        const name = this.story.storyName;
+        const firstTry = quiz.tries === 0;
+        const hasPiece = this.userData.hasPiece(lang, name, quiz.pieceId);
+
+        icon.textContent = "✓";
+        icon.classList.add("correct");
+        icon.setAttribute("aria-label", "Correct");
+        elt.classList.add("chosen");
+        quiz.container.classList.add("answering");
+        sparkle(icon);
+        this.sfx.chime(firstTry ? this.combo : 0);
+        this.combo = firstTry ? this.combo + 1 : 0;
+
+        setTimeout(() => {
+            // Grant the piece before continuing: the story may end right away.
+            const newPiece = firstTry && !hasPiece && this.userData.addPiece(lang, name, quiz.pieceId);
+            choose(true);
+            if (hasPiece) {
+                return;
+            }
+            if (newPiece) {
+                this.quizHint(quiz, "Puzzle piece found!");
+                this.animatePiece(icon);
+            } else {
+                this.quizHint(quiz, "Get it right the first time on a replay to earn this piece.");
+            }
+        }, reducedMotion() ? 150 : 600);
     }
 
     clearPlayingAudioState() {
@@ -364,13 +480,15 @@ export class StoryUI extends BaseStoryUI {
         if (!collect) {
             return;
         }
+        const imageElement = this.domStory.querySelector(".story-image:last-of-type");
+        this.awardPiece(image, imageElement);
         if (this.story.storyName === "intro") {
             const info = document.createElement("div");
             info.classList.add("info-box");
             info.textContent =
-                `You have collected an image! Each story has a set of images to
-                 collect (see the number at the top). This encourages you to read
-                 the stories multiple times and make different choices.`;
+                `You found a puzzle piece! Each story hides a picture to complete
+                 (see the puzzle at the top). Read the stories again and make
+                 different choices to find all the pieces.`;
             this.domStory.appendChild(info);
         }
 
@@ -476,15 +594,27 @@ export class StoryUI extends BaseStoryUI {
         this.playSoundEffect('level-end');
         this.domStoryEnd.style.display = "block";
         const storyData = allStories.find(s => s.id === this.story.storyName);
-        const collectedImages = this.userData.nbCollectedImages(this.story.lang, this.story.storyName);
-        let text = "You have completed this story. ";
-        if (collectedImages === storyData.imageCount) {
-            text += `You have collected all images in this story!`;
-        } else {
-            text += `You have collected ${collectedImages} out of ${storyData.imageCount} images in this story.`;
+        const total = storyData.pieceCount;
+        const found = this.userData.pieces(this.story.lang, this.story.storyName).length;
+        let text = "You have completed this story.";
+        if (total > 0 && found >= total) {
+            text += " Puzzle complete! Here is the hidden picture.";
+        } else if (total > 0) {
+            text += ` You have found ${found} of ${total} puzzle pieces. Replay to find the missing ones.`;
         }
         document.querySelector('.story-end-text').textContent = text;
         document.querySelector('.footer').style.display = "none";
+
+        const puzzleArea = document.querySelector('.story-end-puzzle');
+        if (puzzleArea) {
+            puzzleArea.innerHTML = "";
+            if (total > 0) {
+                const puzzle = new Puzzle(puzzleArea, this.story.storyName, total, 200);
+                const from = Math.min(this.piecesAtStart, found);
+                puzzle.revealFrom(from, found);
+                this.sfx.arpeggio(found - from);
+            }
+        }
 
         if (window.goatcounter) {
             window.goatcounter.count({
@@ -499,8 +629,8 @@ export class StoryUI extends BaseStoryUI {
             lang: this.story.lang,
             title: storyData.title,
             readingMode: this.settings.readingMode(),
-            imageCount: storyData.imageCount,
-            collectedImages,
+            pieceCount: total,
+            foundPieces: found,
         };
         recordStoryCompletion(this.userData, completionDetail);
         refreshBadgesHome(this.userData, this.story.lang);

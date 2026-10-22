@@ -8,7 +8,7 @@ const STORY_LEVEL_BADGES = [
 
 export const BADGE_CATALOG = [
     ...STORY_LEVEL_BADGES.map(({ id, title, description }) => ({ id, title, description })),
-    { id: "collector", title: "Collector", description: "Collect every illustration in one story." },
+    { id: "collector", title: "Collector", description: "Complete the puzzle of a story." },
     { id: "listening_finisher", title: "Listening ear", description: "Finish a story in Listening mode." },
     { id: "reader", title: "Bookworm", description: "Finish a story in Reading mode (text only)." },
 ];
@@ -83,7 +83,7 @@ function getLanguageState(state, lang) {
 }
 
 export function recordStoryCompletion(userData, detail) {
-    const { storyId, lang, readingMode, imageCount, collectedImages } = detail;
+    const { storyId, lang, readingMode, pieceCount, foundPieces } = detail;
     const state = loadEngagement(userData);
     const langState = getLanguageState(state, lang);
     if (!langState.completedStoryIds.includes(storyId)) {
@@ -103,7 +103,7 @@ export function recordStoryCompletion(userData, detail) {
         }
     }
 
-    if (imageCount > 0 && collectedImages >= imageCount) {
+    if (pieceCount > 0 && foundPieces >= pieceCount) {
         award("collector");
     }
 

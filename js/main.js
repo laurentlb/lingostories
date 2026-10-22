@@ -5,6 +5,7 @@ import { Settings } from "./settings.js";
 import { Story } from "./story-engine.js";
 import { SpeechRecognitionBox } from "./speech-recognition.js";
 import { StoryUI } from "./story-ui.js";
+import { Puzzle } from "./puzzle.js";
 
 const SHARE_ORIGIN = "https://lingostories.org";
 
@@ -61,27 +62,47 @@ function listeningCallback(isListening) {
     }
 }
 
-function updateCollectionCountLabel(label, lang, storyName) {
-    const collected = userData.nbCollectedImages(lang, storyName);
-    const storyData = allStories.find(s => s.id == storyName);
-    if (!storyData) {
-        label.textContent = "";
-        return;
-    }
-    label.textContent = `${collected}/${storyData.imageCount}`;
-    if (collected === storyData.imageCount) {
-        label.classList.add("story-complete");
-        label.title = `You have collected all images in this story!`;
-    } else {
-        label.title = `You have collected ${collected} out of ${storyData.imageCount} images in this story.`
-    }
+// Number of puzzle pieces found, minus `pending` pieces that are still flying in.
+function foundPieces(lang, storyName, total, pending = 0) {
+    return Math.max(0, Math.min(userData.pieces(lang, storyName).length, total) - pending);
 }
 
-function updateCollectionTopStatus() {
+// Renders a small puzzle and the "found/total" count into `label`.
+// Returns the puzzle, or null if the story has no puzzle.
+function renderPuzzleCount(label, lang, storyName, size, pending = 0) {
+    label.innerHTML = "";
+    const storyData = allStories.find(s => s.id == storyName);
+    if (!storyData || !storyData.pieceCount) {
+        return null;
+    }
+    const total = storyData.pieceCount;
+    const found = foundPieces(lang, storyName, total, pending);
+    const puzzle = new Puzzle(label, storyName, total, size);
+    puzzle.show(found);
+    const count = document.createElement("span");
+    count.textContent = `${found}/${total}`;
+    label.appendChild(count);
+    label.classList.toggle("story-complete", found >= total);
+    label.title = found >= total
+        ? "You have completed the puzzle of this story!"
+        : `You have found ${found} of ${total} puzzle pieces in this story.`;
+    return puzzle;
+}
+
+function updateCollectionTopStatus(pending = 0) {
     const label = document.querySelector("#collection-count");
-    label.style.visibility = "visible";
-    updateCollectionCountLabel(label, story.lang, story.storyName);
+    const puzzle = renderPuzzleCount(label, story.lang, story.storyName, 26, pending);
+    label.style.visibility = puzzle ? "visible" : "hidden";
+
+    const panelPuzzle = document.querySelector(".top-puzzle");
+    panelPuzzle.innerHTML = "";
+    if (puzzle) {
+        const total = puzzle.total;
+        new Puzzle(panelPuzzle, story.storyName, total, 200)
+            .show(foundPieces(story.lang, story.storyName, total, pending));
+    }
     createImageCollection(".top-image-collection", story.lang, story.storyName);
+    return puzzle;
 }
 
 let storyHelpDialogInstance = null;
@@ -282,10 +303,10 @@ function createStoryList(language) {
         if (unreleased) {
             countLabel.textContent = "not yet available";
             countLabel.title = "This story has not been translated yet.";
-        } else {
-            updateCollectionCountLabel(countLabel, language, sto.id);
+            elt.appendChild(countLabel);
+        } else if (renderPuzzleCount(countLabel, language, sto.id, 22)) {
+            elt.appendChild(countLabel);
         }
-        elt.appendChild(countLabel);
 
         container.appendChild(elt);
     }
