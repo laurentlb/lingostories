@@ -15,17 +15,17 @@ Tokyo is in Japan.
 England, France, the United States, and Japan are countries.
 
 Which city is in England?
-* [London.] #ok
-* [Paris.] #fail
-* [Tokyo.] #fail
+* [London. #ok]
+* [Paris. #fail]
+* [Tokyo. #fail]
 -
 
 London is in England.
 
 Which city is in France?
-* [Paris.] #ok
-* [London.] #fail
-* [New York.] #fail
+* [Paris. #ok]
+* [London. #fail]
+* [New York. #fail]
 -
 
 Paris is in France.
@@ -44,15 +44,15 @@ A town is smaller than a city.
 There are fewer people in a town.
 
 Is Tokyo bigger than Paris?
-* [Yes, it is.] #ok
-* [No, Paris is bigger.] #fail
+* [Yes, it is. #ok]
+* [No, Paris is bigger. #fail]
 -
 
 Tokyo is bigger than Paris.
 
 Are there many people in a big city?
-* [Yes, there are.] #ok
-* [No, there are not.] #fail
+* [Yes, there are. #ok]
+* [No, there are not. #fail]
 -
 
 There are many people in a big city.
@@ -63,9 +63,9 @@ The people in the United States are the Americans.
 The people in Japan are the Japanese.
 
 Who are the English?
-* [The people in England.] #ok
-* [The people in France.] #fail
-* [The people in Japan.] #fail
+* [The people in England. #ok]
+* [The people in France. #fail]
+* [The people in Japan. #fail]
 -
 
 The English are the people in England.

@@ -14,24 +14,24 @@ The windows and the doors are in the walls.
 The roof is on top of the house.
 
 How many windows does the house have?
-* [Eight.] #ok
-* [Six.] #fail
-* [Four.] #fail
+* [Eight. #ok]
+* [Six. #fail]
+* [Four. #fail]
 -
 
 The house has eight windows.
 
 How many doors does the house have?
-* [One.] #fail
-* [Two.] #ok
-* [Three.] #fail
+* [One. #fail]
+* [Two. #ok]
+* [Three. #fail]
 -
 
 The house has two doors.
 
 Does the house have a roof?
-* [Yes, it does.] #ok
-* [No, it does not.] #fail
+* [Yes, it does. #ok]
+* [No, it does not. #fail]
 -
 
 The house has a roof.
@@ -45,23 +45,23 @@ Helen likes the flowers.
 There are trees near the house.
 
 Is the house big?
-* [No, it is small.] #ok
-* [Yes, it is very big.] #fail
+* [No, it is small. #ok]
+* [Yes, it is very big. #fail]
 -
 
 The house is not big.
 It is small.
 
 Do the children play in the garden?
-* [Yes, they do.] #ok
-* [No, they play in the street.] #fail
+* [Yes, they do. #ok]
+* [No, they play in the street. #fail]
 -
 
 The children play in the garden.
 
 Are there flowers in the garden?
-* [Yes, there are.] #ok
-* [No, there are not.] #fail
+* [Yes, there are. #ok]
+* [No, there are not. #fail]
 -
 
 There are flowers in the garden.

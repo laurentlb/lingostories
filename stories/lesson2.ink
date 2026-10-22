@@ -20,25 +20,25 @@ Emma is the youngest child.
 She is the baby.
 
 How old is John?
-* [He is twelve.] #ok
-* [He is ten.] #fail
-* [He is six months old.] #fail
+* [He is twelve. #ok]
+* [He is ten. #fail]
+* [He is six months old. #fail]
 -
 
 John is twelve years old.
 
 How old is Helen?
-* [She is ten.] #ok
-* [She is twelve.] #fail
-* [She is six months old.] #fail
+* [She is ten. #ok]
+* [She is twelve. #fail]
+* [She is six months old. #fail]
 -
 
 Helen is ten years old.
 
 How old is Emma?
-* [She is six months old.] #ok
-* [She is six years old.] #fail
-* [She is ten years old.] #fail
+* [She is six months old. #ok]
+* [She is six years old. #fail]
+* [She is ten years old. #fail]
 -
 
 Emma is six months old.
@@ -49,15 +49,15 @@ John is two years older than Helen.
 Helen is two years younger than John.
 
 Is Helen older than John?
-* [No, she is younger.] #ok
-* [Yes, she is older.] #fail
+* [No, she is younger. #ok]
+* [Yes, she is older. #fail]
 -
 
 Helen is younger than John.
 
 Is Emma younger than Helen?
-* [Yes, she is.] #ok
-* [No, she is older.] #fail
+* [Yes, she is. #ok]
+* [No, she is older. #fail]
 -
 
 Emma is younger than Helen.
@@ -74,23 +74,23 @@ The grandfather is older than Mr. and Mrs. Smith.
 $image lesson2-family-ages-all.jpg
 
 Who is the oldest: John, Mrs. Smith, or the grandfather?
-* [The grandfather.] #ok
-* [Mrs. Smith.] #fail
-* [John.] #fail
+* [The grandfather. #ok]
+* [Mrs. Smith. #fail]
+* [John. #fail]
 -
 
 The grandfather is the oldest.
 
 Do Mr. and Mrs. Smith have three children?
-* [Yes, they do.] #ok
-* [No, they have two.] #fail
+* [Yes, they do. #ok]
+* [No, they have two. #fail]
 -
 
 They have three children.
 
 Do they have one son and two daughters?
-* [Yes, they do.] #ok
-* [No, they have two sons.] #fail
+* [Yes, they do. #ok]
+* [No, they have two sons. #fail]
 -
 
 They have one son and two daughters.

@@ -13,9 +13,9 @@ Emma is also a girl.
 There are five people in the family: Mr. Smith, Mrs. Smith, John, Helen, and Emma.
 
 Who is the boy?
-* [Helen] #fail
-* [John] #ok
-* [Emma] #fail
+* [Helen #fail]
+* [John #ok]
+* [Emma #fail]
 -
 
 The boy is John.
@@ -25,9 +25,9 @@ Mrs. Smith is the mother.
 John, Helen, and Emma are their children.
 
 How many children are there?
-* [Two (2)] #fail
-* [Three (3)] #ok
-* [Four (4)] #fail
+* [Two (2) #fail]
+* [Three (3) #ok]
+* [Four (4) #fail]
 -
 
 There are three children.
@@ -45,9 +45,9 @@ The Smith family has one son and two daughters.
 $image lesson1-family-tree.jpg
 
 How many people are there in the family?
-* [Three (3)] #fail
-* [Four (4)] #fail
-* [Five (5)] #ok
+* [Three (3) #fail]
+* [Four (4) #fail]
+* [Five (5) #ok]
 -
 
 There are five people in the family.
@@ -56,17 +56,17 @@ Who are they?
 They are the father, the mother, the son, and the two daughters.
 
 How many girls are there in the family?
-* [One (1)] #fail
-* [Two (2)] #ok
-* [Three (3)] #fail
+* [One (1) #fail]
+* [Two (2) #ok]
+* [Three (3) #fail]
 -
 
 There are two girls, Helen and Emma.
 
 How many boys are there?
-* [One (1)] #ok
-* [Two (2)] #fail
-* [Three (3)] #fail
+* [One (1) #ok]
+* [Two (2) #fail]
+* [Three (3) #fail]
 -
 
 There is only one boy.
