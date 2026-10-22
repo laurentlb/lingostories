@@ -9,6 +9,13 @@ import { Sfx } from "./sfx.js";
 
 const reducedMotion = () => window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
+// Shown after a wrong answer. Kept neutral: trying is part of learning.
+const WRONG_HINTS = [
+    "Not this one. Try another.",
+    "Not quite. Have another look.",
+    "Try one more.",
+];
+
 // ---------------- BaseStoryUI ----------------
 export class BaseStoryUI {
     constructor(story, settings, next, updateButtons) {
@@ -309,6 +316,7 @@ export class BaseStoryUI {
     showImage(image, collect) {
         const img = document.createElement("img");
         img.onload = () => this.updateButtons();
+        img.onerror = () => img.remove(); // e.g. an illustration not drawn yet
         img.src = `/img/stories/${image}`;
         img.classList.add("story-image");
         this.domStory.appendChild(img);
@@ -371,9 +379,20 @@ export class StoryUI extends BaseStoryUI {
         const index = this.userData.pieces(this.story.lang, this.story.storyName).length - 1;
         const puzzle = this.updateCollectionTopStatus(1);
         flyPiece(source, puzzle, index, () => {
-            this.updateCollectionTopStatus()?.bump();
-            this.sfx.piece();
+            const updated = this.updateCollectionTopStatus();
+            if (updated?.isComplete()) {
+                updated.celebrate();
+                this.sfx.fanfare();
+            } else {
+                updated?.bump();
+                this.sfx.piece();
+            }
         });
+    }
+
+    puzzleComplete() {
+        const total = allStories.find(s => s.id === this.story.storyName)?.pieceCount || 0;
+        return total > 0 && this.userData.pieces(this.story.lang, this.story.storyName).length >= total;
     }
 
     quizHint(quiz, text) {
@@ -394,7 +413,7 @@ export class StoryUI extends BaseStoryUI {
         icon.classList.remove("wobble");
         void icon.offsetWidth;
         icon.classList.add("wobble");
-        this.quizHint(quiz, "Not this one. Try another.");
+        this.quizHint(quiz, WRONG_HINTS[(quiz.tries - 1) % WRONG_HINTS.length]);
     }
 
     answerRight(quiz, icon, elt, choose) {
@@ -420,7 +439,9 @@ export class StoryUI extends BaseStoryUI {
                 return;
             }
             if (newPiece) {
-                this.quizHint(quiz, "Puzzle piece found!");
+                this.quizHint(quiz, this.puzzleComplete()
+                    ? "Last puzzle piece found! The puzzle is complete."
+                    : "Puzzle piece found!");
                 this.animatePiece(icon);
             } else {
                 this.quizHint(quiz, "Get it right the first time on a replay to earn this piece.");
@@ -595,7 +616,7 @@ export class StoryUI extends BaseStoryUI {
         this.domStoryEnd.style.display = "block";
         const storyData = allStories.find(s => s.id === this.story.storyName);
         const total = storyData.pieceCount;
-        const found = this.userData.pieces(this.story.lang, this.story.storyName).length;
+        const found = Math.min(this.userData.pieces(this.story.lang, this.story.storyName).length, total);
         let text = "You have completed this story.";
         if (total > 0 && found >= total) {
             text += " Puzzle complete! Here is the hidden picture.";
@@ -611,8 +632,12 @@ export class StoryUI extends BaseStoryUI {
             if (total > 0) {
                 const puzzle = new Puzzle(puzzleArea, this.story.storyName, total, 200);
                 const from = Math.min(this.piecesAtStart, found);
-                puzzle.revealFrom(from, found);
-                this.sfx.arpeggio(found - from);
+                puzzle.revealFrom(from, found, (i) => this.sfx.note(i), () => {
+                    if (puzzle.isComplete()) {
+                        puzzle.celebrate();
+                        this.sfx.fanfare();
+                    }
+                });
             }
         }
 

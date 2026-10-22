@@ -318,6 +318,7 @@ h3 {
 
     .story-complete {
         color: var(--highlight-color);
+        border-color: #5c9;
         font-weight: bold;
     }
 
@@ -487,7 +488,7 @@ summary {
 }
 
 .certificate {
-    animation: beat .5s infinite alternate;
+    animation: beat .5s 6 alternate;
 }
 
 @keyframes beat{
@@ -1018,6 +1019,32 @@ blockquote {
     border-radius: 0;
 }
 
+.puzzle.celebrate {
+    animation: puzzle-glow 1.4s ease-out;
+}
+
+@keyframes puzzle-glow {
+    0% { box-shadow: 0 0 0 0 #8f8a; transform: scale(1); }
+    20% { box-shadow: 0 0 12px 4px #8f8a; transform: scale(1.06); }
+    100% { box-shadow: 0 0 0 0 #8f80; transform: scale(1); }
+}
+
+/* A light sweeping across the picture. */
+.puzzle.celebrate::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background: linear-gradient(105deg, transparent 35%, #fff8 50%, transparent 65%) no-repeat;
+    background-size: 300% 100%;
+    animation: puzzle-shine 1s .1s ease-in-out both;
+}
+
+@keyframes puzzle-shine {
+    from { background-position: 100% 0; }
+    to { background-position: 0 0; }
+}
+
 .flying-piece {
     position: fixed;
     z-index: 100;
@@ -1103,7 +1130,8 @@ blockquote {
 }
 
 @media (prefers-reduced-motion: reduce) {
-    .text-icon.wobble, .choices .text-icon.correct, .puzzle.bump, .puzzle-tile.revealed {
+    .text-icon.wobble, .choices .text-icon.correct, .puzzle.bump, .puzzle-tile.revealed,
+    .puzzle.celebrate, .puzzle.celebrate::after, .certificate {
         animation: none;
     }
 }

@@ -304,7 +304,7 @@ function createStoryList(language) {
             countLabel.textContent = "not yet available";
             countLabel.title = "This story has not been translated yet.";
             elt.appendChild(countLabel);
-        } else if (renderPuzzleCount(countLabel, language, sto.id, 22)) {
+        } else if (renderPuzzleCount(countLabel, language, sto.id, 28)) {
             elt.appendChild(countLabel);
         }
 

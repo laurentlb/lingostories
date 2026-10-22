@@ -71,25 +71,43 @@ export class Puzzle {
         this.root.classList.toggle("complete", this.total > 0 && found >= this.total);
     }
 
+    isComplete() {
+        return this.root.classList.contains("complete");
+    }
+
     // End of story: reveal pieces [from, to) one after the other.
-    revealFrom(from, to, onPiece) {
+    // `onDone` is called after the last piece.
+    revealFrom(from, to, onPiece, onDone) {
         this.show(from);
         const delay = reducedMotion() ? 0 : 180;
         for (let i = from; i < to; i++) {
             setTimeout(() => {
                 this.tiles[i].classList.remove("missing");
                 if (!reducedMotion()) this.tiles[i].classList.add("revealed");
-                if (onPiece) onPiece(i);
-                if (i === to - 1) this.show(to);
+                if (onPiece) onPiece(i - from);
+                if (i === to - 1) {
+                    this.show(to);
+                    if (onDone) setTimeout(onDone, delay * 2);
+                }
             }, delay * (i - from + 1));
         }
     }
 
-    bump() {
+    restartAnimation(name) {
         if (reducedMotion()) return;
-        this.root.classList.remove("bump");
+        this.root.classList.remove(name);
         void this.root.offsetWidth;
-        this.root.classList.add("bump");
+        this.root.classList.add(name);
+    }
+
+    bump() {
+        this.restartAnimation("bump");
+    }
+
+    // The puzzle has just been completed: a glow, a shine and sparkles.
+    celebrate() {
+        this.restartAnimation("celebrate");
+        sparkle(this.root, 12, this.size * 0.6 + 10);
     }
 }
 
@@ -110,25 +128,31 @@ export function flyPiece(source, puzzle, index, onArrive) {
     document.body.appendChild(piece);
     const dx = to.left - (from.left + from.width / 2 - to.width / 2);
     const dy = to.top - (from.top + from.height / 2 - to.height / 2);
+    let arrived = false;
+    const arrive = () => {
+        if (arrived) return;
+        arrived = true;
+        piece.remove();
+        onArrive();
+    };
+    // Animations don't run in background tabs: land the piece anyway.
+    setTimeout(arrive, 1000);
     piece.animate([
         { transform: "translate(0, 0) scale(2) rotate(-10deg)", opacity: 0.6 },
         { transform: `translate(${dx * 0.5}px, ${dy * 0.5 - 40}px) scale(1.6) rotate(5deg)`, opacity: 1, offset: 0.5 },
         { transform: `translate(${dx}px, ${dy}px) scale(1) rotate(0)`, opacity: 1 },
-    ], { duration: 700, easing: "cubic-bezier(.4, 0, .2, 1)" }).onfinish = () => {
-        piece.remove();
-        onArrive();
-    };
+    ], { duration: 700, easing: "cubic-bezier(.4, 0, .2, 1)" }).onfinish = arrive;
 }
 
-// A few sparkles bursting from the center of `element`.
-export function sparkle(element) {
+// A few sparkles bursting from the center of `element`, `radius` pixels away.
+export function sparkle(element, count = 7, radius = 20) {
     if (reducedMotion()) return;
-    for (let i = 0; i < 7; i++) {
+    for (let i = 0; i < count; i++) {
         const s = document.createElement("span");
         s.classList.add("sparkle");
         element.appendChild(s);
-        const angle = (i / 7) * Math.PI * 2;
-        const dist = 20 + Math.random() * 10;
+        const angle = (i / count) * Math.PI * 2;
+        const dist = radius + Math.random() * 10;
         s.animate([
             { transform: "translate(-50%, -50%) scale(1)", opacity: 1 },
             { transform: `translate(calc(-50% + ${Math.cos(angle) * dist}px), calc(-50% + ${Math.sin(angle) * dist}px)) scale(.3)`, opacity: 0 },

@@ -53,10 +53,15 @@ export class Sfx {
         this.tone(1318.5, { duration: 0.12, volume: 0.04 });
     }
 
-    // Pieces revealed one after the other at the end of a story.
-    arpeggio(count, interval = 0.09) {
-        for (let i = 0; i < count; i++) {
-            this.tone(CHIME_NOTES[i % CHIME_NOTES.length], { delay: i * interval, duration: 0.3, volume: 0.05 });
-        }
+    // The i-th piece revealed at the end of a story: notes climb the scale.
+    note(i) {
+        this.tone(CHIME_NOTES[i % CHIME_NOTES.length], { duration: 0.3, volume: 0.05 });
+    }
+
+    // A puzzle is complete: a rolled major chord.
+    fanfare() {
+        [523.25, 659.25, 783.99, 1046.5].forEach((freq, i) => {
+            this.tone(freq, { delay: i * 0.08, duration: 0.8, volume: 0.05 });
+        });
     }
 }
