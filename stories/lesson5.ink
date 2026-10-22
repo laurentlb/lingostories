@@ -1,5 +1,3 @@
-=== the_body ===
-
 The Body #title
 
 $image lesson5-body.jpg
@@ -8,6 +6,7 @@ A person has a body.
 The body has two arms and two legs.
 Each arm has a hand.
 Each leg has a foot.
+A person has two hands and two feet.
 
 How many arms does a person have?
 * [Two.] #ok
@@ -51,10 +50,12 @@ $image lesson5-head.jpg
 
 The body also has a head.
 The head is at the top of the body.
+The neck is between the head and the body.
 The face is at the front of the head.
 
-A face has two eyes, two ears, one nose, and one mouth.
-There is hair on the top of the head.
+A face has two eyes, one nose, and one mouth.
+The ears are on the sides of the head.
+There is hair on top of the head.
 
 Where are the eyes?
 * [In the face.] #ok
@@ -70,11 +71,33 @@ Where are the ears?
 
 The ears are on the head.
 
-The neck connects the head to the body.
 The stomach is at the front of the body.
-The back is behind the body.
+The back is on the other side of the body.
 
 $image lesson5-family-body.jpg
+
+Mrs. Smith has long hair.
+Helen has long hair too.
+John has short hair.
+Mrs. Smith's hair is longer than Helen's hair.
+
+Who has short hair?
+* [John.] #ok
+* [Helen.] #fail
+-
+
+John has short hair.
+
+Who has the longest hair in the family?
+* [Mrs. Smith.] #ok
+* [Helen.] #fail
+* [John.] #fail
+-
+
+Mrs. Smith has the longest hair in the family.
+
+Emma is a baby.
+Her hands and feet are very small.
 
 Is Emma a boy or a girl?
 * [She is a girl.] #ok
@@ -83,16 +106,10 @@ Is Emma a boy or a girl?
 
 Emma is a girl.
 
-Who has the longest hair in the family?
-* [Mrs. Smith.] #ok
-* [John.] #fail
--
-
-Mrs. Smith has the longest hair in the family.
-
-Dialogue.
+Dialogue #title
 
 @helen John, how many fingers do you have?
 @john Ten. Five on each hand.
-@mrs_smith Emma, where is your nose?
-@helen Here it is.
+@helen Mom, where is Emma's nose?
+@mrs_smith Here it is. It is very small!
+-> END

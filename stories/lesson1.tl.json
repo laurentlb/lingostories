@@ -1,348 +1,409 @@
 {
     "sentences": {
+        "The Smith Family": {
+            "key": "lesson1-0001",
+            "en": "The Smith Family",
+            "fr": "La famille Smith",
+            "de": "Die Familie Smith"
+        },
         "This is the Smith family.": {
             "key": "lesson1-0002",
             "en": "This is the Smith family.",
-            "fr": "Voici la famille Smith."
+            "fr": "Voici la famille Smith.",
+            "de": "Das ist die Familie Smith."
         },
         "Mr. Smith is a man.": {
             "key": "lesson1-0003",
             "en": "Mr. Smith is a man.",
-            "fr": "M. Smith est un homme."
+            "fr": "M. Smith est un homme.",
+            "de": "Herr Smith ist ein Mann."
         },
         "Mrs. Smith is a woman.": {
             "key": "lesson1-0004",
             "en": "Mrs. Smith is a woman.",
-            "fr": "Mme Smith est une femme."
+            "fr": "Mme Smith est une femme.",
+            "de": "Frau Smith ist eine Frau."
         },
         "John is a boy.": {
             "key": "lesson1-0005",
             "en": "John is a boy.",
-            "fr": "John est un garçon."
+            "fr": "John est un garçon.",
+            "de": "John ist ein Junge."
         },
         "Helen is a girl.": {
             "key": "lesson1-0006",
             "en": "Helen is a girl.",
-            "fr": "Helen est une fille."
+            "fr": "Helen est une fille.",
+            "de": "Helen ist ein Mädchen."
         },
         "The baby's name is Emma.": {
             "key": "lesson1-0007",
             "en": "The baby's name is Emma.",
-            "fr": "Le bébé s'appelle Emma."
+            "fr": "Le bébé s'appelle Emma.",
+            "de": "Das Baby heißt Emma."
         },
         "Emma is also a girl.": {
             "key": "lesson1-0008",
             "en": "Emma is also a girl.",
-            "fr": "Emma est aussi une fille."
+            "fr": "Emma est aussi une fille.",
+            "de": "Emma ist auch ein Mädchen."
         },
         "There are five people in the family: Mr. Smith, Mrs. Smith, John, Helen, and Emma.": {
             "key": "lesson1-0009",
             "en": "There are five people in the family: Mr. Smith, Mrs. Smith, John, Helen, and Emma.",
-            "fr": "Il y a cinq personnes dans la famille : M. Smith, Mme Smith, John, Helen et Emma."
+            "fr": "Il y a cinq personnes dans la famille : M. Smith, Mme Smith, John, Helen et Emma.",
+            "de": "In der Familie sind fünf Personen: Herr Smith, Frau Smith, John, Helen und Emma."
         },
         "Who is the boy?": {
             "key": "lesson1-0010",
             "en": "Who is the boy?",
-            "fr": "Qui est le garçon ?"
+            "fr": "Qui est le garçon ?",
+            "de": "Wer ist der Junge?"
         },
         "Helen": {
             "key": "lesson1-0011",
             "en": "Helen",
-            "fr": "Helen"
+            "fr": "Helen",
+            "de": "Helen"
         },
         "John": {
             "key": "lesson1-0012",
             "en": "John",
-            "fr": "John"
+            "fr": "John",
+            "de": "John"
         },
         "Emma": {
             "key": "lesson1-0013",
             "en": "Emma",
-            "fr": "Emma"
+            "fr": "Emma",
+            "de": "Emma"
         },
         "The boy is John.": {
             "key": "lesson1-0014",
             "en": "The boy is John.",
-            "fr": "Le garçon, c'est John."
+            "fr": "Le garçon, c'est John.",
+            "de": "Der Junge ist John."
         },
         "Mr. Smith is the father.": {
             "key": "lesson1-0015",
             "en": "Mr. Smith is the father.",
-            "fr": "M. Smith est le père."
+            "fr": "M. Smith est le père.",
+            "de": "Herr Smith ist der Vater."
         },
         "Mrs. Smith is the mother.": {
             "key": "lesson1-0016",
             "en": "Mrs. Smith is the mother.",
-            "fr": "Mme Smith est la mère."
+            "fr": "Mme Smith est la mère.",
+            "de": "Frau Smith ist die Mutter."
         },
         "John, Helen, and Emma are their children.": {
             "key": "lesson1-0017",
             "en": "John, Helen, and Emma are their children.",
-            "fr": "John, Helen et Emma sont leurs enfants."
+            "fr": "John, Helen et Emma sont leurs enfants.",
+            "de": "John, Helen und Emma sind ihre Kinder."
         },
         "How many children are there?": {
             "key": "lesson1-0018",
             "en": "How many children are there?",
-            "fr": "Combien y a-t-il d'enfants ?"
+            "fr": "Combien y a-t-il d'enfants ?",
+            "de": "Wie viele Kinder gibt es?"
         },
         "Two (2)": {
             "key": "lesson1-0019",
             "en": "Two (2)",
-            "fr": "Deux (2)"
+            "fr": "Deux (2)",
+            "de": "Zwei (2)"
         },
         "Three (3)": {
             "key": "lesson1-0020",
             "en": "Three (3)",
-            "fr": "Trois (3)"
+            "fr": "Trois (3)",
+            "de": "Drei (3)"
         },
         "Four (4)": {
             "key": "lesson1-0021",
             "en": "Four (4)",
-            "fr": "Quatre (4)"
+            "fr": "Quatre (4)",
+            "de": "Vier (4)"
         },
         "There are three children.": {
             "key": "lesson1-0022",
             "en": "There are three children.",
-            "fr": "Il y a trois enfants."
+            "fr": "Il y a trois enfants.",
+            "de": "Es gibt drei Kinder."
         },
-        "Mr. Smith is John’s father.": {
-            "key": "lesson1-0023",
-            "en": "Mr. Smith is John’s father.",
-            "fr": "M. Smith est le père de John."
+        "Mr. Smith is John's father.": {
+            "key": "lesson1-0068",
+            "en": "Mr. Smith is John's father.",
+            "fr": "M. Smith est le père de John.",
+            "de": "Herr Smith ist Johns Vater."
         },
-        "He is also Helen’s and Emma’s father.": {
-            "key": "lesson1-0024",
-            "en": "He is also Helen’s and Emma’s father.",
-            "fr": "Il est aussi le père de Helen et d'Emma."
+        "He is also Helen and Emma's father.": {
+            "key": "lesson1-0069",
+            "en": "He is also Helen and Emma's father.",
+            "fr": "C'est aussi le père de Helen et d'Emma.",
+            "de": "Er ist auch der Vater von Helen und Emma."
         },
         "Mrs. Smith is their mother.": {
             "key": "lesson1-0025",
             "en": "Mrs. Smith is their mother.",
-            "fr": "Mme Smith est leur mère."
+            "fr": "Mme Smith est leur mère.",
+            "de": "Frau Smith ist ihre Mutter."
         },
-        "Together Mr. and Mrs. Smith are the parents.": {
-            "key": "lesson1-0026",
-            "en": "Together Mr. and Mrs. Smith are the parents.",
-            "fr": "Ensemble, M. et Mme Smith sont les parents."
+        "Together, Mr. and Mrs. Smith are the parents.": {
+            "key": "lesson1-0070",
+            "en": "Together, Mr. and Mrs. Smith are the parents.",
+            "fr": "Ensemble, M. et Mme Smith sont les parents.",
+            "de": "Zusammen sind Herr und Frau Smith die Eltern."
         },
         "John is the son.": {
             "key": "lesson1-0027",
             "en": "John is the son.",
-            "fr": "John est le fils."
+            "fr": "John est le fils.",
+            "de": "John ist der Sohn."
         },
         "Helen is a daughter.": {
             "key": "lesson1-0028",
             "en": "Helen is a daughter.",
-            "fr": "Helen est une fille."
+            "fr": "Helen est une fille.",
+            "de": "Helen ist eine Tochter."
         },
         "Emma is also a daughter.": {
             "key": "lesson1-0029",
             "en": "Emma is also a daughter.",
-            "fr": "Emma est aussi une fille."
+            "fr": "Emma est aussi une fille.",
+            "de": "Emma ist auch eine Tochter."
         },
         "The Smith family has one son and two daughters.": {
             "key": "lesson1-0030",
             "en": "The Smith family has one son and two daughters.",
-            "fr": "La famille Smith a un fils et deux filles."
+            "fr": "La famille Smith a un fils et deux filles.",
+            "de": "Die Familie Smith hat einen Sohn und zwei Töchter."
         },
         "How many people are there in the family?": {
             "key": "lesson1-0031",
             "en": "How many people are there in the family?",
-            "fr": "Combien y a-t-il de personnes dans la famille ?"
+            "fr": "Combien y a-t-il de personnes dans la famille ?",
+            "de": "Wie viele Personen sind in der Familie?"
         },
         "Five (5)": {
             "key": "lesson1-0032",
             "en": "Five (5)",
-            "fr": "Cinq (5)"
+            "fr": "Cinq (5)",
+            "de": "Fünf (5)"
         },
         "There are five people in the family.": {
             "key": "lesson1-0033",
             "en": "There are five people in the family.",
-            "fr": "Il y a cinq personnes dans la famille."
+            "fr": "Il y a cinq personnes dans la famille.",
+            "de": "In der Familie sind fünf Personen."
         },
         "Who are they?": {
             "key": "lesson1-0034",
             "en": "Who are they?",
-            "fr": "Qui sont-ils ?"
+            "fr": "Qui sont-ils ?",
+            "de": "Wer sind sie?"
         },
-        "They are the father, the mother, the son, and two daughters.": {
-            "key": "lesson1-0035",
-            "en": "They are the father, the mother, the son, and two daughters.",
-            "fr": "Ce sont le père, la mère, le fils et deux filles."
+        "They are the father, the mother, the son, and the two daughters.": {
+            "key": "lesson1-0071",
+            "en": "They are the father, the mother, the son, and the two daughters.",
+            "fr": "Ce sont le père, la mère, le fils et les deux filles.",
+            "de": "Das sind der Vater, die Mutter, der Sohn und die zwei Töchter."
         },
-        "How many children are there in the family?": {
-            "key": "lesson1-0036",
-            "en": "How many children are there in the family?",
-            "fr": "Combien y a-t-il d'enfants dans la famille ?"
-        },
-        "There are three children: John, Helen, and Emma.": {
-            "key": "lesson1-0037",
-            "en": "There are three children: John, Helen, and Emma.",
-            "fr": "Il y a trois enfants : John, Helen et Emma."
-        },
-        "How many girls are in the family?": {
-            "key": "lesson1-0038",
-            "en": "How many girls are in the family?",
-            "fr": "Combien y a-t-il de filles dans la famille ?"
+        "How many girls are there in the family?": {
+            "key": "lesson1-0072",
+            "en": "How many girls are there in the family?",
+            "fr": "Combien y a-t-il de filles dans la famille ?",
+            "de": "Wie viele Mädchen sind in der Familie?"
         },
         "One (1)": {
             "key": "lesson1-0039",
             "en": "One (1)",
-            "fr": "Un (1)"
+            "fr": "Un (1)",
+            "de": "Eins (1)"
         },
         "There are two girls, Helen and Emma.": {
             "key": "lesson1-0040",
             "en": "There are two girls, Helen and Emma.",
-            "fr": "Il y a deux filles, Helen et Emma."
+            "fr": "Il y a deux filles, Helen et Emma.",
+            "de": "Es gibt zwei Mädchen, Helen und Emma."
         },
         "How many boys are there?": {
             "key": "lesson1-0041",
             "en": "How many boys are there?",
-            "fr": "Combien y a-t-il de garçons ?"
+            "fr": "Combien y a-t-il de garçons ?",
+            "de": "Wie viele Jungen gibt es?"
         },
         "There is only one boy.": {
             "key": "lesson1-0042",
             "en": "There is only one boy.",
-            "fr": "Il n'y a qu'un seul garçon."
+            "fr": "Il n'y a qu'un seul garçon.",
+            "de": "Es gibt nur einen Jungen."
         },
         "His name is John.": {
             "key": "lesson1-0043",
             "en": "His name is John.",
-            "fr": "Il s'appelle John."
+            "fr": "Il s'appelle John.",
+            "de": "Er heißt John."
         },
         "John is the son of Mr. and Mrs. Smith.": {
             "key": "lesson1-0044",
             "en": "John is the son of Mr. and Mrs. Smith.",
-            "fr": "John est le fils de M. et Mme Smith."
-        },
-        "He is their boy.": {
-            "key": "lesson1-0045",
-            "en": "He is their boy.",
-            "fr": "C'est leur garçon."
+            "fr": "John est le fils de M. et Mme Smith.",
+            "de": "John ist der Sohn von Herrn und Frau Smith."
         },
         "Helen is their daughter.": {
             "key": "lesson1-0046",
             "en": "Helen is their daughter.",
-            "fr": "Helen est leur fille."
+            "fr": "Helen est leur fille.",
+            "de": "Helen ist ihre Tochter."
         },
-        "She is older than Emma.": {
-            "key": "lesson1-0047",
-            "en": "She is older than Emma.",
-            "fr": "Elle est plus âgée qu'Emma."
+        "Emma is also their daughter.": {
+            "key": "lesson1-0073",
+            "en": "Emma is also their daughter.",
+            "fr": "Emma est aussi leur fille.",
+            "de": "Emma ist auch ihre Tochter."
         },
-        "Emma is their baby.": {
-            "key": "lesson1-0048",
-            "en": "Emma is their baby.",
-            "fr": "Emma est leur bébé."
+        "Emma is a baby.": {
+            "key": "lesson1-0074",
+            "en": "Emma is a baby.",
+            "fr": "Emma est un bébé.",
+            "de": "Emma ist ein Baby."
         },
         "She is very small.": {
             "key": "lesson1-0049",
             "en": "She is very small.",
-            "fr": "Elle est toute petite."
+            "fr": "Elle est toute petite.",
+            "de": "Sie ist sehr klein."
         },
         "Mr. Smith is the husband of Mrs. Smith.": {
             "key": "lesson1-0050",
             "en": "Mr. Smith is the husband of Mrs. Smith.",
-            "fr": "M. Smith est le mari de Mme Smith."
+            "fr": "M. Smith est le mari de Mme Smith.",
+            "de": "Herr Smith ist der Ehemann von Frau Smith."
         },
         "Mrs. Smith is the wife of Mr. Smith.": {
             "key": "lesson1-0051",
             "en": "Mrs. Smith is the wife of Mr. Smith.",
-            "fr": "Mme Smith est la femme de M. Smith."
+            "fr": "Mme Smith est la femme de M. Smith.",
+            "de": "Frau Smith ist die Ehefrau von Herrn Smith."
         },
         "They are married.": {
             "key": "lesson1-0052",
             "en": "They are married.",
-            "fr": "Ils sont mariés."
+            "fr": "Ils sont mariés.",
+            "de": "Sie sind verheiratet."
         },
-        "John is Helen’s brother.": {
-            "key": "lesson1-0053",
-            "en": "John is Helen’s brother.",
-            "fr": "John est le frère de Helen."
+        "John is Helen's brother.": {
+            "key": "lesson1-0075",
+            "en": "John is Helen's brother.",
+            "fr": "John est le frère de Helen.",
+            "de": "John ist Helens Bruder."
         },
-        "Helen is John’s sister.": {
-            "key": "lesson1-0054",
-            "en": "Helen is John’s sister.",
-            "fr": "Helen est la soeur de John."
+        "Helen is John's sister.": {
+            "key": "lesson1-0076",
+            "en": "Helen is John's sister.",
+            "fr": "Helen est la sœur de John.",
+            "de": "Helen ist Johns Schwester."
         },
         "Emma is also their sister.": {
             "key": "lesson1-0055",
             "en": "Emma is also their sister.",
-            "fr": "Emma est aussi leur soeur."
+            "fr": "Emma est aussi leur sœur.",
+            "de": "Emma ist auch ihre Schwester."
         },
-        "John and Helen are siblings.": {
-            "key": "lesson1-0056",
-            "en": "John and Helen are siblings.",
-            "fr": "John et Helen sont frère et soeur."
+        "John has two sisters.": {
+            "key": "lesson1-0077",
+            "en": "John has two sisters.",
+            "fr": "John a deux sœurs.",
+            "de": "John hat zwei Schwestern."
         },
-        "Helen and Emma are sisters.": {
-            "key": "lesson1-0057",
-            "en": "Helen and Emma are sisters.",
-            "fr": "Helen et Emma sont soeurs."
+        "Helen has one brother and one sister.": {
+            "key": "lesson1-0078",
+            "en": "Helen has one brother and one sister.",
+            "fr": "Helen a un frère et une sœur.",
+            "de": "Helen hat einen Bruder und eine Schwester."
         },
-        "Mr. Smith and Mrs. Smith are the parents.": {
-            "key": "lesson1-0058",
-            "en": "Mr. Smith and Mrs. Smith are the parents.",
-            "fr": "M. Smith et Mme Smith sont les parents."
+        "John, Helen, and Emma are siblings.": {
+            "key": "lesson1-0079",
+            "en": "John, Helen, and Emma are siblings.",
+            "fr": "John, Helen et Emma sont frère et sœurs.",
+            "de": "John, Helen und Emma sind Geschwister."
+        },
+        "Mr. and Mrs. Smith are the parents.": {
+            "key": "lesson1-0080",
+            "en": "Mr. and Mrs. Smith are the parents.",
+            "fr": "M. et Mme Smith sont les parents.",
+            "de": "Herr und Frau Smith sind die Eltern."
         },
         "John, Helen, and Emma are the children.": {
             "key": "lesson1-0059",
             "en": "John, Helen, and Emma are the children.",
-            "fr": "John, Helen et Emma sont les enfants."
+            "fr": "John, Helen et Emma sont les enfants.",
+            "de": "John, Helen und Emma sind die Kinder."
         },
-        "Together they are the Smith family.": {
-            "key": "lesson1-0060",
-            "en": "Together they are the Smith family.",
-            "fr": "Ensemble, ils forment la famille Smith."
+        "Together, they are the Smith family.": {
+            "key": "lesson1-0081",
+            "en": "Together, they are the Smith family.",
+            "fr": "Ensemble, ils forment la famille Smith.",
+            "de": "Zusammen sind sie die Familie Smith."
         },
-        "Dialogue.": {
-            "key": "lesson1-0061",
-            "en": "Dialogue.",
-            "fr": "Dialogue."
+        "Dialogue": {
+            "key": "lesson1-0082",
+            "en": "Dialogue",
+            "fr": "Dialogue",
+            "de": "Dialog"
         },
         "@man Hello, what is your name?": {
             "key": "lesson1-0062",
-            "en": "@man Hello, what is your name?",
-            "fr": "@man Bonjour, comment t'appelles-tu ?"
+            "en": "Hello, what is your name?",
+            "fr": "Bonjour, comment t'appelles-tu ?",
+            "de": "Hallo, wie heißt du?"
         },
         "@john My name is John.": {
             "key": "lesson1-0063",
-            "en": "@john My name is John.",
-            "fr": "@john Je m'appelle John."
+            "en": "My name is John.",
+            "fr": "Je m'appelle John.",
+            "de": "Ich heiße John."
         },
         "@man Do you have siblings?": {
             "key": "lesson1-0064",
-            "en": "@man Do you have siblings?",
-            "fr": "@man As-tu des frères et soeurs ?"
+            "en": "Do you have siblings?",
+            "fr": "As-tu des frères et sœurs ?",
+            "de": "Hast du Geschwister?"
         },
         "@john Yes, I have two sisters.": {
             "key": "lesson1-0065",
-            "en": "@john Yes, I have two sisters.",
-            "fr": "@john Oui, j'ai deux soeurs."
+            "en": "Yes, I have two sisters.",
+            "fr": "Oui, j'ai deux sœurs.",
+            "de": "Ja, ich habe zwei Schwestern."
         },
         "@man Do you have brothers?": {
             "key": "lesson1-0066",
-            "en": "@man Do you have brothers?",
-            "fr": "@man As-tu des frères ?"
+            "en": "Do you have brothers?",
+            "fr": "As-tu des frères ?",
+            "de": "Hast du Brüder?"
         },
         "@john No, I have no brothers.": {
             "key": "lesson1-0067",
-            "en": "@john No, I have no brothers.",
-            "fr": "@john Non, je n'ai pas de frères."
+            "en": "No, I have no brothers.",
+            "fr": "Non, je n'ai pas de frères.",
+            "de": "Nein, ich habe keine Brüder."
         }
     },
     "title": {
         "key": "title-lesson1",
         "en": "The Smith Family",
-        "fr": "La famille Smith"
+        "fr": "La famille Smith",
+        "de": "Die Familie Smith"
     },
     "speakers": {
         "man": {
-            "avatar": "man.svg",
+            "avatar": "man3.svg",
             "color": "#484"
         },
         "john": {
-            "avatar": "man.svg",
+            "avatar": "peter.svg",
             "color": "#26a",
             "side": "right"
         }

@@ -1,20 +1,17 @@
-=== the_house ===
-
 The House #title
 
 $image lesson3-house.jpg
 
 This is the Smith family's house.
-They live in this house.
-Their house is small.
-They have a garden too.
-
 Mr. and Mrs. Smith live here with John, Helen, and Emma.
+The house is not big.
+It is small.
+They have a garden too.
 
 The house has windows and doors.
 It has eight windows and two doors.
+The windows and the doors are in the walls.
 The roof is on top of the house.
-The walls hold the windows and the doors.
 
 How many windows does the house have?
 * [Eight.] #ok
@@ -37,6 +34,7 @@ Does the house have a roof?
 * [No, it does not.] #fail
 -
 
+The house has a roof.
 The roof is on top of the house.
 
 $image lesson3-garden.jpg
@@ -51,7 +49,8 @@ Is the house big?
 * [Yes, it is very big.] #fail
 -
 
-The house is small.
+The house is not big.
+It is small.
 
 Do the children play in the garden?
 * [Yes, they do.] #ok
@@ -67,8 +66,9 @@ Are there flowers in the garden?
 
 There are flowers in the garden.
 
-Dialogue.
+Dialogue #title
 
 @helen Our house is small, but it is nice.
-@john Yes, I like the garden.
+@john Yes, and I like the garden.
 @mrs_smith The flowers are very nice too.
+-> END

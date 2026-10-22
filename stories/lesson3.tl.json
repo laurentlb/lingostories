@@ -1,224 +1,271 @@
 {
     "sentences": {
+        "The House": {
+            "key": "lesson3-0001",
+            "en": "The House",
+            "fr": "La maison",
+            "de": "Das Haus"
+        },
         "This is the Smith family's house.": {
             "key": "lesson3-0002",
             "en": "This is the Smith family's house.",
-            "fr": "Voici la maison de la famille Smith."
-        },
-        "They live in this house.": {
-            "key": "lesson3-0003",
-            "en": "They live in this house.",
-            "fr": "Ils vivent dans cette maison."
-        },
-        "Their house is small.": {
-            "key": "lesson3-0004",
-            "en": "Their house is small.",
-            "fr": "Leur maison est petite."
-        },
-        "They have a garden too.": {
-            "key": "lesson3-0005",
-            "en": "They have a garden too.",
-            "fr": "Ils ont aussi un jardin."
+            "fr": "Voici la maison de la famille Smith.",
+            "de": "Das ist das Haus der Familie Smith."
         },
         "Mr. and Mrs. Smith live here with John, Helen, and Emma.": {
             "key": "lesson3-0006",
             "en": "Mr. and Mrs. Smith live here with John, Helen, and Emma.",
-            "fr": "M. et Mme Smith vivent ici avec John, Helen et Emma."
+            "fr": "M. et Mme Smith vivent ici avec John, Helen et Emma.",
+            "de": "Herr und Frau Smith wohnen hier mit John, Helen und Emma."
+        },
+        "The house is not big.": {
+            "key": "lesson3-0042",
+            "en": "The house is not big.",
+            "fr": "La maison n'est pas grande.",
+            "de": "Das Haus ist nicht groß."
+        },
+        "It is small.": {
+            "key": "lesson3-0043",
+            "en": "It is small.",
+            "fr": "Elle est petite.",
+            "de": "Es ist klein."
+        },
+        "They have a garden too.": {
+            "key": "lesson3-0005",
+            "en": "They have a garden too.",
+            "fr": "Ils ont aussi un jardin.",
+            "de": "Sie haben auch einen Garten."
         },
         "The house has windows and doors.": {
             "key": "lesson3-0007",
             "en": "The house has windows and doors.",
-            "fr": "La maison a des fenêtres et des portes."
+            "fr": "La maison a des fenêtres et des portes.",
+            "de": "Das Haus hat Fenster und Türen."
         },
         "It has eight windows and two doors.": {
             "key": "lesson3-0008",
             "en": "It has eight windows and two doors.",
-            "fr": "Elle a huit fenêtres et deux portes."
+            "fr": "Elle a huit fenêtres et deux portes.",
+            "de": "Es hat acht Fenster und zwei Türen."
+        },
+        "The windows and the doors are in the walls.": {
+            "key": "lesson3-0044",
+            "en": "The windows and the doors are in the walls.",
+            "fr": "Les fenêtres et les portes sont dans les murs.",
+            "de": "Die Fenster und die Türen sind in den Wänden."
         },
         "The roof is on top of the house.": {
             "key": "lesson3-0009",
             "en": "The roof is on top of the house.",
-            "fr": "Le toit est au-dessus de la maison."
-        },
-        "The walls hold the windows and the doors.": {
-            "key": "lesson3-0010",
-            "en": "The walls hold the windows and the doors.",
-            "fr": "Les murs soutiennent les fenêtres et les portes."
+            "fr": "Le toit est en haut de la maison.",
+            "de": "Das Dach ist oben auf dem Haus."
         },
         "How many windows does the house have?": {
             "key": "lesson3-0011",
             "en": "How many windows does the house have?",
-            "fr": "Combien de fenêtres la maison a-t-elle ?"
+            "fr": "Combien de fenêtres la maison a-t-elle ?",
+            "de": "Wie viele Fenster hat das Haus?"
         },
         "Eight.": {
             "key": "lesson3-0012",
             "en": "Eight.",
-            "fr": "Huit."
+            "fr": "Huit.",
+            "de": "Acht."
         },
         "Six.": {
             "key": "lesson3-0013",
             "en": "Six.",
-            "fr": "Six."
+            "fr": "Six.",
+            "de": "Sechs."
         },
         "Four.": {
             "key": "lesson3-0014",
             "en": "Four.",
-            "fr": "Quatre."
+            "fr": "Quatre.",
+            "de": "Vier."
         },
         "The house has eight windows.": {
             "key": "lesson3-0015",
             "en": "The house has eight windows.",
-            "fr": "La maison a huit fenêtres."
+            "fr": "La maison a huit fenêtres.",
+            "de": "Das Haus hat acht Fenster."
         },
         "How many doors does the house have?": {
             "key": "lesson3-0016",
             "en": "How many doors does the house have?",
-            "fr": "Combien de portes la maison a-t-elle ?"
+            "fr": "Combien de portes la maison a-t-elle ?",
+            "de": "Wie viele Türen hat das Haus?"
         },
         "One.": {
             "key": "lesson3-0017",
             "en": "One.",
-            "fr": "Une."
+            "fr": "Une.",
+            "de": "Eine."
         },
         "Two.": {
             "key": "lesson3-0018",
             "en": "Two.",
-            "fr": "Deux."
+            "fr": "Deux.",
+            "de": "Zwei."
         },
         "Three.": {
             "key": "lesson3-0019",
             "en": "Three.",
-            "fr": "Trois."
+            "fr": "Trois.",
+            "de": "Drei."
         },
         "The house has two doors.": {
             "key": "lesson3-0020",
             "en": "The house has two doors.",
-            "fr": "La maison a deux portes."
+            "fr": "La maison a deux portes.",
+            "de": "Das Haus hat zwei Türen."
         },
         "Does the house have a roof?": {
             "key": "lesson3-0021",
             "en": "Does the house have a roof?",
-            "fr": "La maison a-t-elle un toit ?"
+            "fr": "La maison a-t-elle un toit ?",
+            "de": "Hat das Haus ein Dach?"
         },
         "Yes, it does.": {
             "key": "lesson3-0022",
             "en": "Yes, it does.",
-            "fr": "Oui."
+            "fr": "Oui.",
+            "de": "Ja."
         },
         "No, it does not.": {
             "key": "lesson3-0023",
             "en": "No, it does not.",
-            "fr": "Non."
+            "fr": "Non.",
+            "de": "Nein."
+        },
+        "The house has a roof.": {
+            "key": "lesson3-0045",
+            "en": "The house has a roof.",
+            "fr": "La maison a un toit.",
+            "de": "Das Haus hat ein Dach."
         },
         "The children play in the garden.": {
             "key": "lesson3-0024",
             "en": "The children play in the garden.",
-            "fr": "Les enfants jouent dans le jardin."
+            "fr": "Les enfants jouent dans le jardin.",
+            "de": "Die Kinder spielen im Garten."
         },
         "There are flowers in the garden.": {
             "key": "lesson3-0025",
             "en": "There are flowers in the garden.",
-            "fr": "Il y a des fleurs dans le jardin."
+            "fr": "Il y a des fleurs dans le jardin.",
+            "de": "Im Garten sind Blumen."
         },
         "Helen likes the flowers.": {
             "key": "lesson3-0026",
             "en": "Helen likes the flowers.",
-            "fr": "Helen aime les fleurs."
+            "fr": "Helen aime les fleurs.",
+            "de": "Helen mag die Blumen."
         },
         "There are trees near the house.": {
             "key": "lesson3-0027",
             "en": "There are trees near the house.",
-            "fr": "Il y a des arbres près de la maison."
+            "fr": "Il y a des arbres près de la maison.",
+            "de": "Neben dem Haus sind Bäume."
         },
         "Is the house big?": {
             "key": "lesson3-0028",
             "en": "Is the house big?",
-            "fr": "La maison est-elle grande ?"
+            "fr": "La maison est-elle grande ?",
+            "de": "Ist das Haus groß?"
         },
         "No, it is small.": {
             "key": "lesson3-0029",
             "en": "No, it is small.",
-            "fr": "Non, elle est petite."
+            "fr": "Non, elle est petite.",
+            "de": "Nein, es ist klein."
         },
         "Yes, it is very big.": {
             "key": "lesson3-0030",
             "en": "Yes, it is very big.",
-            "fr": "Oui, elle est très grande."
-        },
-        "The house is small.": {
-            "key": "lesson3-0031",
-            "en": "The house is small.",
-            "fr": "La maison est petite."
+            "fr": "Oui, elle est très grande.",
+            "de": "Ja, es ist sehr groß."
         },
         "Do the children play in the garden?": {
             "key": "lesson3-0032",
             "en": "Do the children play in the garden?",
-            "fr": "Les enfants jouent-ils dans le jardin ?"
+            "fr": "Les enfants jouent-ils dans le jardin ?",
+            "de": "Spielen die Kinder im Garten?"
         },
         "Yes, they do.": {
             "key": "lesson3-0033",
             "en": "Yes, they do.",
-            "fr": "Oui."
+            "fr": "Oui.",
+            "de": "Ja."
         },
         "No, they play in the street.": {
             "key": "lesson3-0034",
             "en": "No, they play in the street.",
-            "fr": "Non, ils jouent dans la rue."
+            "fr": "Non, ils jouent dans la rue.",
+            "de": "Nein, sie spielen auf der Straße."
         },
         "Are there flowers in the garden?": {
             "key": "lesson3-0035",
             "en": "Are there flowers in the garden?",
-            "fr": "Y a-t-il des fleurs dans le jardin ?"
+            "fr": "Y a-t-il des fleurs dans le jardin ?",
+            "de": "Sind Blumen im Garten?"
         },
         "Yes, there are.": {
             "key": "lesson3-0036",
             "en": "Yes, there are.",
-            "fr": "Oui."
+            "fr": "Oui.",
+            "de": "Ja."
         },
         "No, there are not.": {
             "key": "lesson3-0037",
             "en": "No, there are not.",
-            "fr": "Non."
+            "fr": "Non.",
+            "de": "Nein."
         },
-        "Dialogue.": {
-            "key": "lesson3-0038",
-            "en": "Dialogue.",
-            "fr": "Dialogue."
+        "Dialogue": {
+            "key": "lesson3-0046",
+            "en": "Dialogue",
+            "fr": "Dialogue",
+            "de": "Dialog"
         },
         "@helen Our house is small, but it is nice.": {
             "key": "lesson3-0039",
-            "en": "@helen Our house is small, but it is nice.",
-            "fr": "@helen Notre maison est petite, mais elle est agréable."
+            "en": "Our house is small, but it is nice.",
+            "fr": "Notre maison est petite, mais elle est jolie.",
+            "de": "Unser Haus ist klein, aber es ist schön."
         },
-        "@john Yes, I like the garden.": {
-            "key": "lesson3-0040",
-            "en": "@john Yes, I like the garden.",
-            "fr": "@john Oui, j'aime le jardin."
+        "@john Yes, and I like the garden.": {
+            "key": "lesson3-0047",
+            "en": "Yes, and I like the garden.",
+            "fr": "Oui, et j'aime le jardin.",
+            "de": "Ja, und ich mag den Garten."
         },
         "@mrs_smith The flowers are very nice too.": {
             "key": "lesson3-0041",
-            "en": "@mrs_smith The flowers are very nice too.",
-            "fr": "@mrs_smith Les fleurs sont très belles aussi."
+            "en": "The flowers are very nice too.",
+            "fr": "Les fleurs sont très belles aussi.",
+            "de": "Die Blumen sind auch sehr schön."
         }
     },
     "title": {
         "key": "title-lesson3",
         "en": "The House",
-        "fr": "La maison"
+        "fr": "La maison",
+        "de": "Das Haus"
     },
     "speakers": {
-        "helen": {
-            "avatar": "woman.svg",
-            "color": "#288"
-        },
-        "john": {
-            "avatar": "man.svg",
-            "color": "#26a",
-            "side": "right"
-        },
         "mrs_smith": {
             "avatar": "woman.svg",
             "color": "#a26"
+        },
+        "john": {
+            "avatar": "peter.svg",
+            "color": "#26a",
+            "side": "right"
+        },
+        "helen": {
+            "avatar": "woman.svg",
+            "color": "#288"
         }
     }
 }

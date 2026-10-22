@@ -1,6 +1,4 @@
-=== city_and_country ===
-
-City And Country #title
+Cities and Countries #title
 
 $image lesson4-map.jpg
 
@@ -61,8 +59,8 @@ There are many people in a big city.
 
 The people in England are the English.
 The people in France are the French.
-The people in the United States are Americans.
-The people in Japan are Japanese.
+The people in the United States are the Americans.
+The people in Japan are the Japanese.
 
 Who are the English?
 * [The people in England.] #ok
@@ -72,9 +70,10 @@ Who are the English?
 
 The English are the people in England.
 
-Dialogue.
+Dialogue #title
 
-@mrs_smith Where do we live?
+@man Where do you live?
 @helen We live in London.
-@mr_smith And what country is London in?
+@man And what country is London in?
 @john London is in England.
+-> END

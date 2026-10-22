@@ -1,5 +1,3 @@
-=== family_ages ===
-
 Ages #title
 
 $image lesson2-family-ages.jpg
@@ -14,10 +12,12 @@ John is twelve years old.
 Helen is ten years old.
 Emma is six months old.
 
-John is the oldest child.
+John is older than Helen.
 Helen is younger than John.
+Emma is younger than Helen.
+John is the oldest child.
 Emma is the youngest child.
-Emma is also the baby.
+She is the baby.
 
 How old is John?
 * [He is twelve.] #ok
@@ -65,20 +65,21 @@ Emma is the youngest of the three children.
 
 Mr. Smith is thirty-six years old.
 Mrs. Smith is thirty-two years old.
-Mr. Smith's father is sixty-three years old.
+Mr. Smith is four years older than Mrs. Smith.
 
-He is John's grandfather.
-The grandfather is older than everyone in the family.
+Mr. Smith's father is sixty-three years old.
+He is the children's grandfather.
+The grandfather is older than Mr. and Mrs. Smith.
 
 $image lesson2-family-ages-all.jpg
 
-Who is the oldest person in the family?
-* [John's grandfather.] #ok
+Who is the oldest: John, Mrs. Smith, or the grandfather?
+* [The grandfather.] #ok
 * [Mrs. Smith.] #fail
 * [John.] #fail
 -
 
-John's grandfather is the oldest person in the family.
+The grandfather is the oldest.
 
 Do Mr. and Mrs. Smith have three children?
 * [Yes, they do.] #ok
@@ -94,11 +95,12 @@ Do they have one son and two daughters?
 
 They have one son and two daughters.
 
-Dialogue.
+Dialogue #title
 
-@mrs_smith John, how old are you?
+@man Hello, John! How old are you?
 @john I am twelve years old.
-@mrs_smith And how old is Helen?
+@man And how old is your sister Helen?
 @john She is ten years old.
-@mr_smith Who is the youngest child?
-@helen Emma is the youngest child. She is only six months old.
+@man Who is the youngest child?
+@helen Emma is the youngest. She is only six months old.
+-> END

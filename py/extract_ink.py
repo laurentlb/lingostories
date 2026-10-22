@@ -9,29 +9,27 @@ SKIP_PREFIXES = ("//", "===", "->", "VAR ", "~", "$image", "$audio")
 
 DEFAULT_SPEAKERS_BY_STORY = {
     "lesson1": {
-        "man": {"avatar": "man.svg", "color": "#484"},
-        "john": {"avatar": "man.svg", "color": "#26a", "side": "right"},
+        "man": {"avatar": "man3.svg", "color": "#484"},
+        "john": {"avatar": "peter.svg", "color": "#26a", "side": "right"},
     },
     "lesson2": {
-        "mr_smith": {"avatar": "man2.svg", "color": "#484"},
-        "mrs_smith": {"avatar": "woman.svg", "color": "#a26"},
-        "john": {"avatar": "man.svg", "color": "#26a", "side": "right"},
-        "helen": {"avatar": "woman.svg", "color": "#288"},
+        "man": {"avatar": "man3.svg", "color": "#484"},
+        "john": {"avatar": "peter.svg", "color": "#26a", "side": "right"},
+        "helen": {"avatar": "woman.svg", "color": "#288", "side": "right"},
     },
     "lesson3": {
         "mrs_smith": {"avatar": "woman.svg", "color": "#a26"},
-        "john": {"avatar": "man.svg", "color": "#26a", "side": "right"},
+        "john": {"avatar": "peter.svg", "color": "#26a", "side": "right"},
         "helen": {"avatar": "woman.svg", "color": "#288"},
     },
     "lesson4": {
-        "mr_smith": {"avatar": "man2.svg", "color": "#484"},
-        "mrs_smith": {"avatar": "woman.svg", "color": "#a26"},
-        "john": {"avatar": "man.svg", "color": "#26a", "side": "right"},
-        "helen": {"avatar": "woman.svg", "color": "#288"},
+        "man": {"avatar": "man3.svg", "color": "#484"},
+        "john": {"avatar": "peter.svg", "color": "#26a", "side": "right"},
+        "helen": {"avatar": "woman.svg", "color": "#288", "side": "right"},
     },
     "lesson5": {
         "mrs_smith": {"avatar": "woman.svg", "color": "#a26"},
-        "john": {"avatar": "man.svg", "color": "#26a", "side": "right"},
+        "john": {"avatar": "peter.svg", "color": "#26a", "side": "right"},
         "helen": {"avatar": "woman.svg", "color": "#288"},
     },
     "lost": {

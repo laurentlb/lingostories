@@ -1,5 +1,3 @@
-=== family_intro ===
-
 The Smith Family #title
 
 $image lesson1-family.jpg
@@ -34,10 +32,10 @@ How many children are there?
 
 There are three children.
 
-Mr. Smith is John’s father.
-He is also Helen’s and Emma’s father.
+Mr. Smith is John's father.
+He is also Helen and Emma's father.
 Mrs. Smith is their mother.
-Together Mr. and Mrs. Smith are the parents.
+Together, Mr. and Mrs. Smith are the parents.
 
 John is the son.
 Helen is a daughter.
@@ -47,7 +45,6 @@ The Smith family has one son and two daughters.
 $image lesson1-family-tree.jpg
 
 How many people are there in the family?
-
 * [Three (3)] #fail
 * [Four (4)] #fail
 * [Five (5)] #ok
@@ -56,19 +53,9 @@ How many people are there in the family?
 There are five people in the family.
 
 Who are they?
-They are the father, the mother, the son, and two daughters.
+They are the father, the mother, the son, and the two daughters.
 
-How many children are there in the family?
-
-* [Two (2)] #fail
-* [Three (3)] #ok
-* [Four (4)] #fail
--
-
-There are three children: John, Helen, and Emma.
-
-How many girls are in the family?
-
+How many girls are there in the family?
 * [One (1)] #fail
 * [Two (2)] #ok
 * [Three (3)] #fail
@@ -77,7 +64,6 @@ How many girls are in the family?
 There are two girls, Helen and Emma.
 
 How many boys are there?
-
 * [One (1)] #ok
 * [Two (2)] #fail
 * [Three (3)] #fail
@@ -89,10 +75,9 @@ His name is John.
 $image lesson1-children.jpg
 
 John is the son of Mr. and Mrs. Smith.
-He is their boy.
 Helen is their daughter.
-She is older than Emma.
-Emma is their baby.
+Emma is also their daughter.
+Emma is a baby.
 She is very small.
 
 Mr. Smith is the husband of Mrs. Smith.
@@ -101,19 +86,20 @@ They are married.
 
 $image lesson1-parents.jpg
 
-John is Helen’s brother.
-Helen is John’s sister.
+John is Helen's brother.
+Helen is John's sister.
 Emma is also their sister.
-John and Helen are siblings.
-Helen and Emma are sisters.
+John has two sisters.
+Helen has one brother and one sister.
+John, Helen, and Emma are siblings.
 
-Mr. Smith and Mrs. Smith are the parents.
+Mr. and Mrs. Smith are the parents.
 John, Helen, and Emma are the children.
-Together they are the Smith family.
+Together, they are the Smith family.
 
 $image lesson1-parents-and-children.jpg
 
-Dialogue.
+Dialogue #title
 
 @man Hello, what is your name?
 @john My name is John.
@@ -121,3 +107,4 @@ Dialogue.
 @john Yes, I have two sisters.
 @man Do you have brothers?
 @john No, I have no brothers.
+-> END
