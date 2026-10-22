@@ -29,7 +29,7 @@
             <label for="translation-lang">Translation</label>
             <select id="translation-lang">
                 {% for lang in languages %}
-                    <option value="{{lang}}">{{languages[lang]}}</option>
+                    <option value="{{lang}}" lang="{{lang|html_lang}}">{{endonyms[lang]}}</option>
                 {% endfor %}
             </select>
         <li title="Use microphone to repeat the sentences">

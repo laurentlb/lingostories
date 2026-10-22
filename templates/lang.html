@@ -52,7 +52,19 @@
 
         <div class="home" id="story-selector">
             <h3>Select a story to read in {{language}}.</h3>
-            <div class="story-list"></div>
+            <div class="story-list">
+                {% for s in stories %}
+                {% set available = s.released == true or lang_code in s.released %}
+                <div class="story-info{% if not available %} unreleased{% endif %}" data-story="{{s.id}}">
+                    <a{% if available %} href="?story={{s.id}}"{% endif %}>
+                        <img src="/img/stories/{{s.id}}.jpg" alt="">
+                        <p lang="{{lang_code|html_lang}}" dir="{{lang_code|text_dir}}">{{titles[s.id][lang_code]}}</p>
+                        {% if lang_code != "en" %}<p class="story-title-translation" lang="en">{{titles[s.id]["en"]}}</p>{% endif %}
+                    </a>
+                    {% if not available %}<span class="story-count" title="This story has not been translated yet."><img class="icon" src="/img/hourglass.svg" alt="Not yet available"></span>{% endif %}
+                </div>
+                {% endfor %}
+            </div>
 
             <div id="badges-section" style="display: none;">
                 <h3>Your badges</h3>
@@ -63,7 +75,7 @@
         <div class="in-story story-page-intro">
             <div class="story-credits-row">
                 <p id="story-credits-line" class="story-credits-line"></p>
-                <button type="button" id="story-help-btn" class="story-help-btn" data-action="story-help-open" aria-haspopup="dialog">Help</button>
+                <button type="button" id="story-help-btn" class="story-help-btn" data-action="story-help-open" aria-haspopup="dialog" title="Help"><img class="icon" src="/img/question-mark.svg" alt="Help"></button>
             </div>
             <div id="story-cover-wrap" class="story-cover-wrap">
                 <img id="story-cover-img" class="story-cover-img" src="" alt="" loading="eager" width="280" height="280" />
@@ -73,13 +85,12 @@
         <div class="in-story story"></div>
 
         <div class="story-end">
-            <img class="certificate" src="/img/certificate-badge.svg">
-            <h2>Congratulations!</h2>
-            <p class="story-end-text"></p>
+            <img class="certificate" src="/img/certificate-badge.svg" alt="The end">
             <div class="story-end-puzzle"></div>
+            <p class="story-end-text"></p>
 
             <div class="story-share-actions">
-                <button type="button" class="story-share-btn" data-action="story-share-copy">Share</button>
+                <button type="button" class="story-share-btn" data-action="story-share-copy" title="Share"><img class="icon" src="/img/share.svg" alt="Share"></button>
             </div>
             <p class="story-share-status" aria-live="polite"></p>
 
@@ -142,6 +153,7 @@
 <script>
 const LANGUAGE = "{{language}}";
 const LANG_CODE = "{{lang_code}}";
+const STORY_TITLES = {{titles|tojson}};
 </script>
 
 <script data-goatcounter="https://lingostories.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>

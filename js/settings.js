@@ -1,3 +1,5 @@
+import { browserLang } from "./lang.js";
+
 export class Settings {
     constructor(userData) {
         this.userData = userData;
@@ -60,8 +62,9 @@ export class Settings {
     }
 
     load() {
+        const supported = [...document.querySelector("#translation-lang").options].map((o) => o.value);
         const settings = this.userData.loadData("settings", {
-            translationLang: "en",
+            translationLang: browserLang(supported),
             readingMode: "audioAndText",
             volume: 1,
             showTranslations: false,

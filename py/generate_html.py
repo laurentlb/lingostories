@@ -5,6 +5,7 @@ import socketserver
 import sys
 import argparse
 import json
+import re
 from email.utils import formatdate
 from xml.sax.saxutils import escape
 from jinja2 import Environment, FileSystemLoader, select_autoescape
@@ -32,6 +33,32 @@ languages = {
     "ua": "Ukrainian",
     "zh": "Mandarin",
 }
+
+# Language names in the language itself, for people who don't read English.
+endonyms = {
+    "ar": "العربية",
+    "de": "Deutsch",
+    "en": "English",
+    "es": "Español",
+    "fr": "Français",
+    "it": "Italiano",
+    "nl": "Nederlands",
+    "pl": "Polski",
+    "pt": "Português",
+    "sv": "Svenska",
+    "ua": "Українська",
+    "zh": "中文",
+}
+
+def html_lang(code):
+    """Value for the HTML lang attribute ("ua" is the country code, not the language)."""
+    return "uk" if code == "ua" else code
+
+def text_dir(code):
+    return "rtl" if code == "ar" else "ltr"
+
+env.filters["html_lang"] = html_lang
+env.filters["text_dir"] = text_dir
 
 def copy_directory(src, dst):
     """
@@ -90,9 +117,30 @@ def load_updates():
     with open(updates_path, "r", encoding="utf-8") as f:
         return json.load(f)
 
+def load_stories():
+    """Read the story list from js/stories.js (id and released languages)."""
+    with open(os.path.join(root_dir, "js", "stories.js"), "r", encoding="utf-8") as f:
+        source = f.read()
+    stories = []
+    for m in re.finditer(r'id: "([\w-]+)".*?released: (\[[^\]]*\]|false|true)', source, re.DOTALL):
+        stories.append({"id": m.group(1), "released": json.loads(m.group(2))})
+    return stories
+
+def story_titles(story_id):
+    """Translations of a story title: the first line tagged #title in the Ink file."""
+    with open(os.path.join(root_dir, "stories", f"{story_id}.ink"), "r", encoding="utf-8") as f:
+        title = next((line.split("#title")[0].strip().strip("`") for line in f if "#title" in line), story_id)
+    with open(os.path.join(root_dir, "stories", f"{story_id}.tl.json"), "r", encoding="utf-8") as f:
+        sentences = json.load(f).get("sentences", {})
+    translations = sentences.get(title, {})
+    # Titles are sentences in the story, sometimes with a final period.
+    return {lang: (translations.get(lang) or title).rstrip(".。") for lang in languages}
+
 def generate_language_pages():
     """Generate HTML files for each language."""
     updates = load_updates()
+    stories = [s for s in load_stories() if s["released"]]
+    titles = {s["id"]: story_titles(s["id"]) for s in stories}
     template = env.get_template("lang.html")
     for lang_code, lang_name in languages.items():
         output_path = os.path.join(dist_dir, lang_code, "index.html")
@@ -103,7 +151,10 @@ def generate_language_pages():
             language=lang_name,
             lang_code=lang_code,
             updates=updates,
-            languages=languages
+            languages=languages,
+            endonyms=endonyms,
+            stories=stories,
+            titles=titles,
         )
         
         with open(output_path, "w", encoding="utf-8") as f:
@@ -117,6 +168,7 @@ def generate_main_index():
     content = template.render(
         language="your target language",
         languages=languages,
+        endonyms=endonyms,
         updates=updates,
     )
 

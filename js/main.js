@@ -6,6 +6,7 @@ import { Story } from "./story-engine.js";
 import { SpeechRecognitionBox } from "./speech-recognition.js";
 import { StoryUI } from "./story-ui.js";
 import { Puzzle } from "./puzzle.js";
+import { setLang } from "./lang.js";
 
 const SHARE_ORIGIN = "https://lingostories.org";
 
@@ -16,11 +17,11 @@ const PLAYER_NEXT_PLAY_ICON = "/img/player-play.svg";
 const PLAYER_NEXT_PAUSE_ICON = "/img/player-pause.svg";
 
 let pendingShareText = "";
+let pendingShareUrl = "";
 
 function setPendingShare(detail) {
-    const url = `${SHARE_ORIGIN}/${encodeURIComponent(detail.lang)}/?story=${encodeURIComponent(detail.storyId)}`;
-    pendingShareText =
-        `I finished the story "${detail.title}" on LingoStories!\n${url}`;
+    pendingShareUrl = `${SHARE_ORIGIN}/${encodeURIComponent(detail.lang)}/?story=${encodeURIComponent(detail.storyId)}`;
+    pendingShareText = `I finished the story "${detail.title}" on LingoStories!`;
     const status = document.querySelector(".story-share-status");
     if (status) {
         status.textContent = "";
@@ -28,15 +29,25 @@ function setPendingShare(detail) {
 }
 
 async function copyShareMessage() {
+    // The system share sheet is in the user's language.
+    if (navigator.share) {
+        try {
+            await navigator.share({ text: pendingShareText, url: pendingShareUrl });
+        } catch {
+            // Cancelled by the user.
+        }
+        return;
+    }
+    const message = `${pendingShareText}\n${pendingShareUrl}`;
     const status = document.querySelector(".story-share-status");
     try {
-        await navigator.clipboard.writeText(pendingShareText);
+        await navigator.clipboard.writeText(message);
         if (status) {
-            status.textContent = "Copied! Paste it anywhere you like.";
+            status.textContent = "✓";
         }
     } catch {
         if (status) {
-            status.textContent = "Copy the message: " + pendingShareText;
+            status.textContent = message;
         }
     }
 }
@@ -173,10 +184,14 @@ function syncStoryPageIntro() {
     const list = story.metadata?.sentences?.contributors;
     const lang = story.lang;
     if (credits) {
+        credits.textContent = "";
         if (list && list[lang]) {
-            credits.textContent = "Translation: " + list[lang];
-        } else {
-            credits.textContent = "";
+            const icon = document.createElement("img");
+            icon.src = "/img/translate.svg";
+            icon.alt = "Translation:";
+            icon.title = "Translation";
+            icon.classList.add("icon", "credits-icon");
+            credits.append(icon, " " + list[lang]);
         }
     }
     const coverImg = document.getElementById("story-cover-img");
@@ -191,8 +206,7 @@ function syncStoryPageIntro() {
         coverImg.onload = showCover;
         coverImg.onerror = hideCover;
         coverImg.src = `/img/stories/${story.storyName}.jpg`;
-        const sd = allStories.find((s) => s.id === story.storyName);
-        coverImg.alt = sd ? `Cover: ${sd.title}` : "Story cover";
+        coverImg.alt = storyTitle(story.storyName, story.lang);
         if (coverImg.complete && coverImg.naturalHeight > 0) {
             showCover();
         } else {
@@ -269,46 +283,34 @@ function createImageCollection(classname, lang, storyName) {
     }
 }
 
-function createStoryList(language) {
-    const container = document.querySelector(".story-list");
-    container.innerHTML = "";
+function storyTitle(id, lang) {
+    return STORY_TITLES[id]?.[lang] || allStories.find((s) => s.id === id)?.title || id;
+}
 
-    for (const sto of allStories) {
-        if (!sto.released) {
+// The story cards are in the page (see templates/lang.html). This adds what
+// depends on the user: the puzzle progress, and the title in their language.
+function createStoryList(language) {
+    const nativeLang = settings.translationLang();
+    for (const elt of document.querySelectorAll(".story-list .story-info")) {
+        const id = elt.dataset.story;
+        const translation = elt.querySelector(".story-title-translation");
+        if (translation) {
+            if (storyTitle(id, nativeLang) === storyTitle(id, language)) {
+                translation.remove();
+            } else {
+                translation.textContent = storyTitle(id, nativeLang);
+                setLang(translation, nativeLang);
+            }
+        }
+        if (elt.classList.contains("unreleased")) {
             continue;
         }
-        const unreleased = Array.isArray(sto.released) && !sto.released.includes(language);
-
-        const elt = document.createElement("div");
-        elt.classList.add("story-info");
-
-        const link = document.createElement("a");
-        if (unreleased) {
-            elt.classList.add("unreleased");
-        } else {
-            link.href = `?story=${sto.id}`;
-        }
-
-        const img = document.createElement("img");
-        img.src = `/img/stories/${sto.id}.jpg`;
-        link.appendChild(img);
-
-        const title = document.createElement("p");
-        title.textContent = sto.title;
-        link.appendChild(title);
-        elt.appendChild(link);
-
+        elt.querySelector(".story-count")?.remove();
         const countLabel = document.createElement("span");
         countLabel.classList.add("story-count");
-        if (unreleased) {
-            countLabel.textContent = "not yet available";
-            countLabel.title = "This story has not been translated yet.";
-            elt.appendChild(countLabel);
-        } else if (renderPuzzleCount(countLabel, language, sto.id, 28)) {
+        if (renderPuzzleCount(countLabel, language, id, 28)) {
             elt.appendChild(countLabel);
         }
-
-        container.appendChild(elt);
     }
 }
 

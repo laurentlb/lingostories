@@ -29,7 +29,7 @@
         <h3>I speak...
             <select id="translation-lang">
                 {% for lang in languages %}
-                    <option value="{{lang}}">{{languages[lang]}}</option>
+                    <option value="{{lang}}" lang="{{lang|html_lang}}">{{endonyms[lang]}}</option>
                 {% endfor %}
             </select>
         </h3>

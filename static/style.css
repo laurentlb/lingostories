@@ -304,6 +304,17 @@ h3 {
 
     .unreleased {
         opacity: 40%;
+
+        .story-count img {
+            height: 20px;
+            display: block;
+        }
+    }
+
+    .story-title-translation {
+        margin-top: -0.6em;
+        font-size: 0.85em;
+        color: var(--secondary-text-color);
     }
 
     .story-count {
@@ -453,6 +464,13 @@ summary {
         flex-wrap: wrap;
         display: flex;
         justify-content: space-around;
+    }
+
+    .story-end-text {
+        text-align: center;
+        font-size: 1.4em;
+        font-weight: bold;
+        color: var(--highlight-color);
     }
 
     .story-share-actions {
@@ -701,11 +719,22 @@ details {
     flex-shrink: 0;
     cursor: pointer;
     font-size: 0.85rem;
-    padding: 6px 12px;
+    padding: 4px;
     border-radius: 8px;
     border: 1px solid var(--highlight-color);
     background: var(--box-bg-color);
     color: var(--highlight-color);
+}
+
+.story-help-btn img, .story-share-btn img {
+    height: 1.4rem;
+    display: block;
+}
+
+.credits-icon {
+    height: 1rem;
+    vertical-align: middle;
+    cursor: default;
 }
 
 .story-help-btn:hover {
@@ -1125,13 +1154,28 @@ blockquote {
 .quiz-hint {
     grid-column: 1 / -1;
     margin: 4px 0 0;
-    font-size: .85em;
-    color: var(--secondary-text-color);
+    display: flex;
+    gap: 4px;
+    opacity: .6;
+
+    img {
+        height: 1.5rem;
+        filter: invert(1);
+    }
+}
+
+/* Draws attention to a control, without words. */
+.attention {
+    animation: attention 1s ease-in-out 4;
+}
+
+@keyframes attention {
+    50% { transform: scale(1.25); }
 }
 
 @media (prefers-reduced-motion: reduce) {
     .text-icon.wobble, .choices .text-icon.correct, .puzzle.bump, .puzzle-tile.revealed,
-    .puzzle.celebrate, .puzzle.celebrate::after, .certificate {
+    .puzzle.celebrate, .puzzle.celebrate::after, .certificate, .attention {
         animation: none;
     }
 }

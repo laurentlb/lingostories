@@ -6,15 +6,9 @@ import { WordShuffleGame } from "./wordShuffleGame.js";
 import { WordPopup } from "./word-popup.js";
 import { Puzzle, flyPiece, sparkle } from "./puzzle.js";
 import { Sfx } from "./sfx.js";
+import { setLang } from "./lang.js";
 
 const reducedMotion = () => window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-
-// Shown after a wrong answer. Kept neutral: trying is part of learning.
-const WRONG_HINTS = [
-    "Not this one. Try another.",
-    "Not quite. Have another look.",
-    "Try one more.",
-];
 
 // ---------------- BaseStoryUI ----------------
 export class BaseStoryUI {
@@ -197,6 +191,7 @@ export class BaseStoryUI {
         }
 
         elt.classList.add("text");
+        setLang(elt, this.story.lang);
         this.addEachWordToDom(elt, content);
         const speaker = line["speaker"];
         if (speaker) {
@@ -237,6 +232,7 @@ export class BaseStoryUI {
             const elt = document.createElement("div");
             elt.classList.add("choice");
             elt.textContent = text;
+            setLang(elt, this.story.lang);
 
             const transl = document.createElement("p");
             transl.textContent = text;
@@ -390,20 +386,19 @@ export class StoryUI extends BaseStoryUI {
         });
     }
 
-    puzzleComplete() {
-        const total = allStories.find(s => s.id === this.story.storyName)?.pieceCount || 0;
-        return total > 0 && this.userData.pieces(this.story.lang, this.story.storyName).length >= total;
-    }
-
-    quizHint(quiz, text) {
-        let hint = quiz.container.querySelector(".quiz-hint");
-        if (!hint) {
-            hint = document.createElement("p");
-            hint.classList.add("quiz-hint");
-            hint.setAttribute("aria-live", "polite");
-            quiz.container.appendChild(hint);
+    // Right answer, but not on the first try: a greyed piece and a replay
+    // arrow say that the piece can be earned on a replay.
+    showMissedPiece(quiz) {
+        const hint = document.createElement("div");
+        hint.classList.add("quiz-hint");
+        hint.title = "Get it right the first time on a replay to earn this puzzle piece.";
+        for (const name of ["puzzle-piece", "restart"]) {
+            const icon = document.createElement("img");
+            icon.src = `/img/${name}.svg`;
+            icon.alt = "";
+            hint.appendChild(icon);
         }
-        hint.textContent = text;
+        quiz.container.appendChild(hint);
     }
 
     answerWrong(quiz, icon, elt) {
@@ -413,7 +408,6 @@ export class StoryUI extends BaseStoryUI {
         icon.classList.remove("wobble");
         void icon.offsetWidth;
         icon.classList.add("wobble");
-        this.quizHint(quiz, WRONG_HINTS[(quiz.tries - 1) % WRONG_HINTS.length]);
     }
 
     answerRight(quiz, icon, elt, choose) {
@@ -439,12 +433,9 @@ export class StoryUI extends BaseStoryUI {
                 return;
             }
             if (newPiece) {
-                this.quizHint(quiz, this.puzzleComplete()
-                    ? "Last puzzle piece found! The puzzle is complete."
-                    : "Puzzle piece found!");
                 this.animatePiece(icon);
             } else {
-                this.quizHint(quiz, "Get it right the first time on a replay to earn this piece.");
+                this.showMissedPiece(quiz);
             }
         }, reducedMotion() ? 150 : 600);
     }
@@ -504,13 +495,8 @@ export class StoryUI extends BaseStoryUI {
         const imageElement = this.domStory.querySelector(".story-image:last-of-type");
         this.awardPiece(image, imageElement);
         if (this.story.storyName === "intro") {
-            const info = document.createElement("div");
-            info.classList.add("info-box");
-            info.textContent =
-                `You found a puzzle piece! Each story hides a picture to complete
-                 (see the puzzle at the top). Read the stories again and make
-                 different choices to find all the pieces.`;
-            this.domStory.appendChild(info);
+            // Draw attention to the puzzle at the top: it explains itself when opened.
+            document.querySelector("#collection-count")?.classList.add("attention");
         }
 
         if (window.goatcounter) {
@@ -528,13 +514,9 @@ export class StoryUI extends BaseStoryUI {
         }
         const transl = document.createElement("p");
         transl.classList.add("translation");
-        const transLang = this.settings.translationLang();
-
-        if (transLang === this.story.lang) {
-            transl.textContent = "(select a different translation language in the settings to see translations)";
-        } else {
-            transl.textContent = line[transLang];
-        }
+        const transLang = this.translationLang();
+        transl.textContent = line[transLang];
+        setLang(transl, transLang);
 
         if (this.openTransl) {
             this.openTransl.remove();
@@ -545,13 +527,21 @@ export class StoryUI extends BaseStoryUI {
         elt.appendChild(transl);
     }
 
+    // A translation in the story language would be useless: fall back to another one.
+    translationLang() {
+        const lang = this.settings.translationLang();
+        if (lang !== this.story.lang) return lang;
+        return this.story.lang === "en" ? "fr" : "en";
+    }
+
     toggleChoiceTranslation(elt, choice) {
         if (elt.style.display === "block") {
             elt.style.display = "none";
         } else {
-            const transLang = this.settings.translationLang();
+            const transLang = this.translationLang();
             elt.style.display = "block";
             elt.textContent = this.story.translateChoice(choice, transLang);
+            setLang(elt, transLang);
         }
     }
 
@@ -617,13 +607,12 @@ export class StoryUI extends BaseStoryUI {
         const storyData = allStories.find(s => s.id === this.story.storyName);
         const total = storyData.pieceCount;
         const found = Math.min(this.userData.pieces(this.story.lang, this.story.storyName).length, total);
-        let text = "You have completed this story.";
-        if (total > 0 && found >= total) {
-            text += " Puzzle complete! Here is the hidden picture.";
-        } else if (total > 0) {
-            text += ` You have found ${found} of ${total} puzzle pieces. Replay to find the missing ones.`;
-        }
-        document.querySelector('.story-end-text').textContent = text;
+        const endText = document.querySelector('.story-end-text');
+        endText.textContent = total > 0 ? `${found}/${total}` : "";
+        endText.title = total > 0 && found < total ? "Replay to find the missing puzzle pieces." : "";
+        // Replaying is how to find the missing pieces.
+        this.domStoryEnd.querySelector('[data-action="reset-story"]')
+            ?.classList.toggle("attention", total > 0 && found < total);
         document.querySelector('.footer').style.display = "none";
 
         const puzzleArea = document.querySelector('.story-end-puzzle');
